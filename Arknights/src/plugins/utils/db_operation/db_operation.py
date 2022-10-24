@@ -1,11 +1,11 @@
 from typing import List, Union
 
-from Arknights.src.plugins.ark.utils.db_operation.database.CookiesDAL import CookiesDAL
-from Arknights.src.plugins.ark.utils.db_operation.database.UidDataDAL import UidDataDAL
-from Arknights.src.plugins.ark.utils.db_operation.database.db_config import async_session
+from ...utils.db_operation.database.CookiesDAL import CookiesDAL
+from ...utils.db_operation.database.UidDataDAL import UidDataDAL
+from ...utils.db_operation.database.db_config import async_session
 
 
-async def bind_db(userid, uid=None, mys=None):
+async def bind_db(userid, uid=None):
     async with async_session() as session:
         async with session.begin():
             UidData = UidDataDAL(session)

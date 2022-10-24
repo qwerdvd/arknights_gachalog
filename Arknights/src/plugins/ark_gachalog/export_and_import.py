@@ -19,7 +19,7 @@ async def import_gachalogs(history_url: str, uid: str) -> str:
     history_data: dict = json.loads(get(history_url).text)
     data_uid = history_data['info']['uid']
     if data_uid != uid:
-        return f'该抽卡记录UID{data_uid}与你绑定UID{uid}不符合！'
+        return f'该抽卡记录UD{data_uid}与你绑定UID{uid}不符合！'
     raw_data = history_data['list']
     result = {'新手祈愿': [], '常驻祈愿': [], '角色祈愿': [], '武器祈愿': []}
     for item in raw_data:

@@ -4,7 +4,7 @@ from sqlalchemy import update
 from sqlalchemy.orm import Session
 from sqlalchemy.future import select
 
-from Arknights.src.plugins.ark.utils.db_operation.database.models import UidData
+from ....utils.db_operation.database.models import UidData
 
 
 class UidDataDAL:

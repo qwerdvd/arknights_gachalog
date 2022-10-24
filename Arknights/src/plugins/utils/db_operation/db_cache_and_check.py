@@ -8,9 +8,9 @@ from shutil import copyfile
 from httpx import AsyncClient
 from nonebot.log import logger
 
-from Arknights.src.plugins.ark.utils.ark_api.arknights_api import GET_AUTHKEY_URL
-from ark_db_pool import ark_pool
-from Arknights.src.plugins.ark.utils.ark_api.get_ark_data import get_token_by_cookie
+from ...utils.ark_api.arknights_api import GET_AUTHKEY_URL
+from .ark_db_pool import ark_pool
+from ...utils.ark_api.get_ark_data import get_token_by_cookie
 
 
 async def check_db():

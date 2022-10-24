@@ -11,11 +11,11 @@ from nonebot.adapters.onebot.v11 import (
     MessageSegment,
 )
 
-from .add_ck import deal_ck
+from .add_ck import _deal_ck
 from ..config import priority
 # from ..utils.nonebot2.rule import FullCommand
 from ..utils.exception.handle_exception import handle_exception
-from Arknights.src.plugins.ark.utils.db_operation.db_operation import bind_db, delete_db
+from ..utils.db_operation.db_operation import bind_db, delete_db
 
 add_cookie = on_command('添加', permission=PRIVATE_FRIEND)
 bind = on_regex(
@@ -30,10 +30,10 @@ async def send_add_ck_msg(
 ):
     mes = args.extract_plain_text().strip().replace(' ', '')
     qid = event.user_id
-    im = await deal_ck(mes, qid)
+    im = await _deal_ck(mes, qid)
     if isinstance(im, str):
         await matcher.finish(im)
-    await matcher.finish(MessageSegment.image(im))
+    await matcher.finish(im, at_sender=True)
 
 
 # 群聊内 绑定uid的命令，会绑定至当前qq号上
@@ -48,9 +48,11 @@ async def send_link_uid_msg(
     logger.info('[绑定/解绑]UserID: {}'.format(qid))
 
     if args[0] in ('绑定'):
+        logger.info('[绑定]开始执行')
         if args[2] is None:
             await matcher.finish('请输入正确的uid！')
         if args[1] in ('uid', 'UID'):
+            logger.info('[绑定]开始执行[绑定uid]')
             im = await bind_db(qid, args[2])
         else:
             im = await bind_db(qid, None, args[2])

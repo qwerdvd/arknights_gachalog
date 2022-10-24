@@ -6,7 +6,7 @@ from typing import Any, Dict, Literal, Optional
 from nonebot.log import logger
 from aiohttp import ClientSession
 
-from Arknights.src.plugins.ark.utils.ark_api.arknights_api import (
+from ...utils.ark_api.arknights_api import (
     GET_GACHA_LOG_URL,
     GET_AUTHKEY_URL,
 )
