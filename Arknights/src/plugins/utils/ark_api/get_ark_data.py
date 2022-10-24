@@ -21,7 +21,7 @@ _HEADER = {
     'User-Agent': (
         'Mozilla/5.0 (iPhone; CPU iPhone OS 13_2_3 like Mac OS X) '
         'Mozilla/5.0 (Windows NT 10.0; Win64; x64)'
-        'AppleWebKit/537.36 (KHTML, like Gecko)'
+        'AppleWebKit/537.36 (KHTML, like Gecko)' # ignore
         'Chrome/106.0.0.0'
         'Safari/537.36'
     ),
@@ -61,7 +61,7 @@ async def usr_ark_basic_info(token: str) -> dict:
 
 async def get_token_by_cookie(cookie: str) -> dict:
     HEADER = copy.deepcopy(_HEADER)
-    # cookie = await get_stoken(uid)
+    # cookie = await get_token(uid)
     cookie = COOKIE
     if cookie == '该用户没有绑定过Cookie噢~' or cookie == '':
         return {}
