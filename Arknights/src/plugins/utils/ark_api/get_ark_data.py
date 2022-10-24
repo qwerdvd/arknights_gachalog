@@ -4,11 +4,13 @@ import asyncio
 from typing import Any, Dict, Literal, Optional
 
 from nonebot.log import logger
+import aiohttp
 from aiohttp import ClientSession
 
-from ...utils.ark_api.arknights_api import (
+from .arknights_api import (
     GET_GACHA_LOG_URL,
     GET_AUTHKEY_URL,
+    GET_UID_URL,
 )
 
 gacha_type_meta_data = {
@@ -28,6 +30,33 @@ _HEADER = {
 }
 
 COOKIE = 'ACCOUNT=s%3AdAlS78TUJAmBb1zSs6sFtCLn.64rk5SwFum2Sz2zCwaXTgVnPKK5jwTywT2e%2FsQKoKz8;'
+
+
+async def usr_ark_basic_info(token: str) -> dict:
+    """
+    :说明:
+      获取用户游戏基本信息，包含uid,channelMasterId和nickName。
+    :参数:
+      * token (str): 用户token。
+    :返回:
+      * result (dict): 用户基本信息。
+      {'status': 0, 'msg': 'OK', 'data': {'uid': '', 'guest': 0, 'channelMasterId': 1, 'nickName': ''}}
+    """
+    HEADER = copy.deepcopy(_HEADER)
+    payload = {
+        "appId": 1,
+        "channelMasterId": 1,
+        "channelToken": {
+            "token": f"{token}"
+        }
+    }
+    HEADER['Referer'] = 'https://ak.hypergryph.com'
+    HEADER['Origin'] = 'https://ak.hypergryph.com'
+    async with aiohttp.ClientSession() as session:
+        async with session.post(GET_UID_URL, headers=HEADER, json=payload) as response:
+            usr_basic_info = await response.json()
+            print(usr_basic_info)
+    return usr_basic_info
 
 
 async def get_token_by_cookie(cookie: str) -> dict:
@@ -145,3 +174,8 @@ async def get_gacha_log_by_token(
             full_data['List'].extend(data)
         await asyncio.sleep(0.5)
     return full_data
+
+
+if __name__ == "__main__":
+    _token = 'dAlS78TUJAmBb1zSs6sFtCLn'
+    _uid = asyncio.run(usr_ark_basic_info(_token))

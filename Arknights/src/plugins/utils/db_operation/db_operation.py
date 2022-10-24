@@ -1,15 +1,18 @@
 from typing import List, Union
+from nonebot.log import logger
 
-from ...utils.db_operation.database.CookiesDAL import CookiesDAL
-from ...utils.db_operation.database.UidDataDAL import UidDataDAL
-from ...utils.db_operation.database.db_config import async_session
+from .database.CookiesDAL import CookiesDAL
+from .database.UidDataDAL import UidDataDAL
+from .database.db_config import async_session
 
 
 async def bind_db(userid, uid=None):
+    logger.info(f'绑定数据库{userid} {uid}')
     async with async_session() as session:
         async with session.begin():
             UidData = UidDataDAL(session)
             im = await UidData.bind_db(userid, {'UID': uid})
+            logger.info(im)
             return im
 
 

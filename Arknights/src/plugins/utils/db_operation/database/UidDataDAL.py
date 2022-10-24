@@ -4,7 +4,7 @@ from sqlalchemy import update
 from sqlalchemy.orm import Session
 from sqlalchemy.future import select
 
-from ....utils.db_operation.database.models import UidData
+from .models import UidData
 
 
 class UidDataDAL:
@@ -128,7 +128,12 @@ class UidDataDAL:
                     _bind += (
                         f'绑定UID{new_uid}成功~\n当前绑定UID列表为{",".join(uid_list)}'
                     )
-
+            await self.db_session.flush()  # type: ignore
+        else:
+            new_data = UidData(USERID=userid, **data)
+            self.db_session.add(new_data)
+            if 'UID' in data:
+                _bind += f'绑定UID{data["UID"]}成功~'
         await self.db_session.flush()  # type: ignore
         return _bind
 
