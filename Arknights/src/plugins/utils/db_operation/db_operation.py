@@ -29,13 +29,12 @@ async def select_db(
 ) -> Union[List[str], str, None]:
     """
     :说明:
-      选择绑定uid/mys库
+      选择绑定uid库
     :参数:
       * userid (str): QQ号。
       * mode (str): 模式如下
-        * auto(默认): 自动选择(优先mys)
+        * auto(默认): 自动选择
         * uid: 选择uid库
-        * mys: 选择mys库
         * list: 返回uid列表
     :返回:
       * data (list): 返回获取值

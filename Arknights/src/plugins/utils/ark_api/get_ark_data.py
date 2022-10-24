@@ -13,6 +13,7 @@ from .arknights_api import (
     GET_UID_URL,
 )
 
+
 gacha_type_meta_data = {
     'List': {},
 }
@@ -75,8 +76,8 @@ async def get_token_by_cookie(cookie: str) -> dict:
         method='GET',
         header=HEADER,
     )
-
-    return authkey
+    token = authkey['data']['content']
+    return token
 
 
 async def _ark_request(
@@ -174,8 +175,3 @@ async def get_gacha_log_by_token(
             full_data['List'].extend(data)
         await asyncio.sleep(0.5)
     return full_data
-
-
-if __name__ == "__main__":
-    _token = 'dAlS78TUJAmBb1zSs6sFtCLn'
-    _uid = asyncio.run(usr_ark_basic_info(_token))

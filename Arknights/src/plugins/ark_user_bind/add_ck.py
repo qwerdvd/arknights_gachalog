@@ -5,6 +5,11 @@ from ..utils.db_operation.db_cache_and_check import refresh_ck
 from ..utils.db_operation.db_operation import select_db, token_db, cookies_db
 
 
+async def deal_ck(mes, qid):
+    im = await _deal_ck(mes, qid)
+    return im
+
+
 async def _deal_ck(mes, qid) -> str:
     simp_dict = SimpleCookie(mes)
     uid = await select_db(qid, 'uid')

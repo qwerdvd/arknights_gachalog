@@ -11,29 +11,31 @@ from nonebot.adapters.onebot.v11 import (
     MessageSegment,
 )
 
-from .add_ck import _deal_ck
+from .add_ck import _deal_ck, deal_ck
 from ..config import priority
 # from ..utils.nonebot2.rule import FullCommand
 from ..utils.exception.handle_exception import handle_exception
 from ..utils.db_operation.db_operation import bind_db, delete_db
 
-add_cookie = on_command('添加', permission=PRIVATE_FRIEND)
+# add_cookie = on_command('添加', permission=PRIVATE_FRIEND)
+add_cookie = on_command('添加', permission=PRIVATE_FRIEND, priority=priority)
 bind = on_regex(
     r'^(绑定|切换|解绑|删除)(uid|UID)([0-9]+)?$', priority=priority
 )
 
-
+# todo: 修复无法绑定Cookie的问题
 @add_cookie.handle()
 @handle_exception('Cookie', '校验失败！请输入正确的Cookies！')
 async def send_add_ck_msg(
-        event: MessageEvent, matcher: Matcher, args: Message = CommandArg()
+    event: MessageEvent, matcher: Matcher, args: Message = CommandArg()
 ):
+    logger.info(f'用户{event.user_id}请求添加Cookies')
     mes = args.extract_plain_text().strip().replace(' ', '')
     qid = event.user_id
-    im = await _deal_ck(mes, qid)
+    im = await deal_ck(mes, qid)
     if isinstance(im, str):
         await matcher.finish(im)
-    await matcher.finish(im, at_sender=True)
+    await matcher.finish(MessageSegment.image(im))
 
 
 # 群聊内 绑定uid的命令，会绑定至当前qq号上
