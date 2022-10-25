@@ -13,38 +13,36 @@ from nonebot.adapters.onebot.v11 import (
 
 from .add_ck import deal_ck
 from ..config import priority
-from .draw_user_card import get_user_card
+# from .draw_user_card import get_user_card
 from ..utils.nonebot2.rule import FullCommand
 from ..utils.exception.handle_exception import handle_exception
 from ..utils.db_operation.db_operation import bind_db, delete_db
 
-
 add_cookie = on_command('添加', permission=PRIVATE_FRIEND)
-bind_info = on_command(
-    '绑定信息', priority=priority, block=True, rule=FullCommand()
-)
+# bind_info = on_command(
+#     '绑定信息', priority=priority, block=True, rule=FullCommand()
+# )
 bind = on_regex(
     r'^(绑定|切换|解绑|删除)(uid|UID)([0-9]+)?$', priority=priority
 )
 
 
-# todo: 无法绑定Cookie的问题
-@bind_info.handle()
-async def send_bind_card(
-    event: MessageEvent,
-    matcher: Matcher,
-):
-    logger.info('开始执行[查询用户绑定状态]')
-    qid = event.user_id
-    im = await get_user_card(qid)
-    logger.info('[查询用户绑定状态]完成!等待图片发送中...')
-    await matcher.finish(MessageSegment.image(im))
+# @bind_info.handle()
+# async def send_bind_card(
+#         event: MessageEvent,
+#         matcher: Matcher,
+# ):
+#     logger.info('开始执行[查询用户绑定状态]')
+#     qid = event.user_id
+#     im = await get_user_card(qid)
+#     logger.info('[查询用户绑定状态]完成!等待图片发送中...')
+#     await matcher.finish(MessageSegment.image(im))
 
 
 @add_cookie.handle()
 @handle_exception('Cookie', '校验失败！请输入正确的Cookies！')
 async def send_add_ck_msg(
-    event: MessageEvent, matcher: Matcher, args: Message = CommandArg()
+        event: MessageEvent, matcher: Matcher, args: Message = CommandArg()
 ):
     logger.info('开始执行[添加Cookie]')
     mes = args.extract_plain_text().strip().replace(' ', '')
@@ -53,6 +51,7 @@ async def send_add_ck_msg(
     if isinstance(im, str):
         await matcher.finish(im)
     await matcher.finish(MessageSegment.image(im))
+
 
 # 群聊内 绑定uid的命令，会绑定至当前qq号上
 @bind.handle()

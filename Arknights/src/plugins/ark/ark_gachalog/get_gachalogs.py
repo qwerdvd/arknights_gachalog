@@ -2,8 +2,8 @@ import json
 from datetime import datetime
 from typing import Optional
 
-from Arknights.src.plugins.ark.ark.utils.ark_api.get_ark_data import get_gacha_log_by_token
-from Arknights.src.plugins.ark.ark.utils.download_resource.RESOURCE_PATH import PLAYER_PATH
+from ..utils.ark_api.get_ark_data import get_gacha_log_by_token
+from ..utils.download_resource.RESOURCE_PATH import PLAYER_PATH
 
 
 async def calculate_six_star_gacha_num(gacha_data: Optional[dict] = None):
