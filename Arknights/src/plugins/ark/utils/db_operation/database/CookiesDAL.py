@@ -15,7 +15,7 @@ class CookiesDAL:
     async def get_user_data(self, uid: str) -> Optional[NewCookiesTable]:
         try:
             await self.db_session.execute(
-                ('ALTER TABLE NewCookiesTable ' 'ADD COLUMN token TEXT')  # type: ignore
+                ('ALTER TABLE NewCookiesTable ' 'ADD COLUMN token TEXT;')  # type: ignore
             )
         except Exception:
             pass
@@ -128,6 +128,29 @@ class CookiesDAL:
             )
             await self.db_session.execute(sql)
             msg = f'UID{uid}账户的token绑定成功!'
+        else:
+            msg = '请先绑定Cookies~'
+        await self.db_session.flush()
+        return msg
+
+    async def add_channelMasterId_db(self, uid: str, channelMasterId: int) -> str:
+        """
+        :说明:
+          绑定channelMasterId
+        :参数:
+          * uid (int): UID。
+          * channelMasterId (int): channelMasterId。
+        :返回:
+          * msg (str): 绑定文字信息。
+        """
+        if await self.user_exists(uid):
+            sql = (
+                update(NewCookiesTable)
+                .where(NewCookiesTable.UID == uid)
+                .values(ChannelMasterId=channelMasterId)
+            )
+            await self.db_session.execute(sql)
+            msg = f'UID{uid}账户的channelMasterId绑定成功!'
         else:
             msg = '请先绑定Cookies~'
         await self.db_session.flush()

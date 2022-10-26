@@ -11,27 +11,21 @@ from ..db_operation.db_operation import owner_cookies, get_token
 from .arknights_api import (
     GET_GACHA_LOG_URL,
     GET_AUTHKEY_URL,
+    GET_AUTHKEY_URL_Bilibili,
     GET_UID_URL,
 )
-
-
-# gacha_type_meta_data = {
-#     'List': {},
-# }
 
 _HEADER = {
     'User-Agent': (
         'Mozilla/5.0 (iPhone; CPU iPhone OS 13_2_3 like Mac OS X) '
         'Mozilla/5.0 (Windows NT 10.0; Win64; x64)'
-        'AppleWebKit/537.36 (KHTML, like Gecko)' # ignore
+        'AppleWebKit/537.36 (KHTML, like Gecko)'
         'Chrome/106.0.0.0'
         'Safari/537.36'
     ),
     'Referer': 'https://ak.hypergryph.com/user/inquiryGacha',
     'Origin': 'https://ak.hypergryph.com',
 }
-
-# COOKIE = 'ACCOUNT=s%3AdAlS78TUJAmBb1zSs6sFtCLn.64rk5SwFum2Sz2zCwaXTgVnPKK5jwTywT2e%2FsQKoKz8;'
 
 
 async def usr_ark_basic_info(token: str) -> dict:
@@ -57,7 +51,6 @@ async def usr_ark_basic_info(token: str) -> dict:
     async with aiohttp.ClientSession() as session:
         async with session.post(GET_UID_URL, headers=HEADER, json=payload) as response:
             usr_basic_info = await response.json()
-            # print(usr_basic_info)
     return usr_basic_info
 
 
@@ -76,6 +69,12 @@ async def get_token_by_cookie(cookie: str) -> dict:
         method='GET',
         header=HEADER,
     )
+    if authkey == {}:
+        authkey = await _ark_request(
+            url=GET_AUTHKEY_URL_Bilibili,
+            method='GET',
+            header=HEADER,
+        )
     token = authkey['data']['content']
     return token
 

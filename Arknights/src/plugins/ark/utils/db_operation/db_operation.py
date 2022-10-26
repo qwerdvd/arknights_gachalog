@@ -133,6 +133,14 @@ async def token_db(s_cookies: str, uid: str) -> str:
             return im
 
 
+async def channelMasterId_db(channelMasterId: int, uid: str) -> str:
+    async with async_session() as session:
+        async with session.begin():
+            Cookies = CookiesDAL(session)
+            im = await Cookies.add_channelMasterId_db(uid, channelMasterId)
+            return im
+
+
 async def empty_cache():
     async with async_session() as session:
         async with session.begin():

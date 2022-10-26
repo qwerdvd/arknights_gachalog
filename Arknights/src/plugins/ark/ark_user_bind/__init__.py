@@ -59,6 +59,7 @@ async def send_add_ck_msg(
 async def send_link_uid_msg(
         event: MessageEvent, matcher: Matcher, args: Tuple[Any, ...] = RegexGroup()
 ):
+    im = []
     logger.info('开始执行[绑定/解绑用户信息]')
     logger.info('[绑定/解绑]参数: {}'.format(args))
     qid = event.user_id
