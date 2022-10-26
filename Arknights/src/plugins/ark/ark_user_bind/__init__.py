@@ -1,4 +1,4 @@
-from typing import Any, Tuple
+from typing import Any, Tuple, List
 
 from nonebot.log import logger
 from nonebot.matcher import Matcher
@@ -12,11 +12,12 @@ from nonebot.adapters.onebot.v11 import (
 )
 
 from .add_ck import deal_ck
+from .draw_user_card import get_user_card
 from ..config import priority
 # from .draw_user_card import get_user_card
 from ..utils.nonebot2.rule import FullCommand
 from ..utils.exception.handle_exception import handle_exception
-from ..utils.db_operation.db_operation import bind_db, delete_db
+from ..utils.db_operation.db_operation import bind_db, delete_db, get_user_bind_data, select_db
 
 add_cookie = on_command('添加', permission=PRIVATE_FRIEND)
 # bind_info = on_command(
@@ -34,9 +35,12 @@ bind = on_regex(
 # ):
 #     logger.info('开始执行[查询用户绑定状态]')
 #     qid = event.user_id
-#     im = await get_user_card(qid)
+#     # im = await get_user_card(qid)
+#     uid = await select_db(qid, 'uid')
+#     im = f'QID为{QID},UID为{UID}'
 #     logger.info('[查询用户绑定状态]完成!等待图片发送中...')
-#     await matcher.finish(MessageSegment.image(im))
+#     # await matcher.finish(MessageSegment.image(im))
+#     await matcher.finish(im)
 
 
 @add_cookie.handle()

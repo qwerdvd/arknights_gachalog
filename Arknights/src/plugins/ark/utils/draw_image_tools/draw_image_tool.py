@@ -44,7 +44,7 @@ SP_BG_PATH = BG_PATH / 'sp_bg'
 
 
 async def get_qq_avatar(
-    qid: Optional[Union[int, str]] = None, avatar_url: Optional[str] = None
+        qid: Optional[Union[int, str]] = None, avatar_url: Optional[str] = None
 ) -> Image.Image:
     if qid:
         avatar_url = f'http://q1.qlogo.cn/g?b=qq&nk={qid}&s=640'
@@ -55,9 +55,9 @@ async def get_qq_avatar(
 
 
 async def draw_pic_with_ring(
-    pic: Image.Image,
-    size: int,
-    bg_color: Optional[Tuple[int, int, int]] = None,
+        pic: Image.Image,
+        size: int,
+        bg_color: Optional[Tuple[int, int, int]] = None,
 ):
     img = Image.new('RGBA', (size, size))
     mask = mask_pic.resize((size, size))
@@ -74,7 +74,7 @@ async def draw_pic_with_ring(
 
 
 def crop_center_img(
-    img: Image.Image, based_w: int, based_h: int
+        img: Image.Image, based_w: int, based_h: int
 ) -> Image.Image:
     # 确定图片的长宽
     based_scale = '%.3f' % (based_w / based_h)
@@ -99,7 +99,7 @@ def crop_center_img(
 
 
 async def get_color_bg(
-    based_w: int, based_h: int, bg: Optional[str] = None
+        based_w: int, based_h: int, bg: Optional[str] = None
 ) -> Image.Image:
     image = ''
     if bg:
@@ -116,7 +116,7 @@ async def get_color_bg(
 
 
 async def get_simple_bg(
-    based_w: int, based_h: int, image: Union[str, None, Image.Image] = None
+        based_w: int, based_h: int, image: Union[str, None, Image.Image] = None
 ) -> Image.Image:
     if image:
         if isinstance(image, str):
@@ -134,7 +134,7 @@ async def get_simple_bg(
 
 class CustomizeImage:
     def __init__(
-        self, image: Union[str, Image.Image], based_w: int, based_h: int
+            self, image: Union[str, Image.Image], based_w: int, based_h: int
     ) -> None:
 
         self.bg_img = self.get_image(image, based_w, based_h)
@@ -147,7 +147,7 @@ class CustomizeImage:
 
     @staticmethod
     def get_image(
-        image: Union[str, Image.Image], based_w: int, based_h: int
+            image: Union[str, Image.Image], based_w: int, based_h: int
     ) -> Image.Image:
         # 获取背景图片
         if isinstance(image, Image.Image):
@@ -172,7 +172,7 @@ class CustomizeImage:
 
     @staticmethod
     def get_bg_color(
-        edit_bg: Image.Image, is_light: Optional[bool] = False
+            edit_bg: Image.Image, is_light: Optional[bool] = False
     ) -> Tuple[int, int, int]:
         # 获取背景主色
         color = 8
@@ -184,7 +184,7 @@ class CustomizeImage:
             based_light = 120
         temp = 9999
         for i in range(0, color):
-            bg = tuple(q.getpalette()[i * 3 : (i * 3) + 3])  # type: ignore
+            bg = tuple(q.getpalette()[i * 3: (i * 3) + 3])  # type: ignore
             light_value = bg[0] * 0.3 + bg[1] * 0.6 + bg[2] * 0.1
             if abs(light_value - based_light) < temp:
                 bg_color = bg
@@ -218,7 +218,7 @@ class CustomizeImage:
 
     @staticmethod
     def get_char_high_color(
-        bg_color: Tuple[int, int, int]
+            bg_color: Tuple[int, int, int]
     ) -> Tuple[int, int, int]:
         r = 140
         d = 20
@@ -233,7 +233,7 @@ class CustomizeImage:
 
     @staticmethod
     def get_bg_detail_color(
-        bg_color: Tuple[int, int, int]
+            bg_color: Tuple[int, int, int]
     ) -> Tuple[int, int, int]:
         r = 140
         if max(*bg_color) > 255 - r:
@@ -247,7 +247,7 @@ class CustomizeImage:
 
     @staticmethod
     def get_highlight_color(
-        color: Tuple[int, int, int]
+            color: Tuple[int, int, int]
     ) -> Tuple[int, int, int]:
         red_color = color[0]
         green_color = color[1]

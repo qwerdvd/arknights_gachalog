@@ -6,27 +6,29 @@ from aiohttp.client import ClientSession
 from aiohttp.client_exceptions import ClientConnectorError
 
 from .RESOURCE_PATH import (
+    RESOURCE_PATH,
     AVATAR_PATH,
-    BUILDING_SKILL_PATH,
-    ENEMY_PATH,
     ITEM_PATH,
-    ITEM_RARITY_IMG_PATH,
     PORTRAIT_PATH,
     PROFESSION_PATH,
-    # MAP_PATH
+    BUILDING_SKILL_PATH,
+    ENEMY_PATH,
+    ITEM_RARITY_IMG_PATH,
+    # MAP_PATH,
     SKIN_PATH,
+    TEMP_PATH,
+    PLAYER_PATH,
 )
 
 PATH_MAP = {
     1: AVATAR_PATH,
-    2: BUILDING_SKILL_PATH,
-    3: ENEMY_PATH,
-    4: ITEM_PATH,
-    5: ITEM_RARITY_IMG_PATH,
-    6: PORTRAIT_PATH,
-    7: PROFESSION_PATH,
-    # 8: MAP_PATH,
-    8: SKIN_PATH,
+    # 2: CHAR_STAND_PATH,
+    # 3: CHAR_SIDE_PATH,
+    # 4: GACHA_IMG_PATH,
+    # 5: WEAPON_PATH,
+    # 6: CHAR_NAMECARD_PATH,
+    # 7: REL_PATH,
+    # 8: ICON_PATH,
 }
 
 
@@ -41,14 +43,13 @@ async def download_file(
       * path (int): 资源保存路径
         '''
         1: AVATAR_PATH,
-        2: BUILDING_SKILL_PATH,
-        3: ENEMY_PATH,
-        4: ITEM_PATH,
-        5: ITEM_RARITY_IMG_PATH,
-        6: PORTRAIT_PATH,
-        7: PROFESSION_PATH,
-        # 8: MAP_PATH,
-        8: SKIN_PATH,
+        # 2: CHAR_STAND_PATH,
+        # 3: CHAR_SIDE_PATH,
+        # 4: GACHA_IMG_PATH,
+        # 5: WEAPON_PATH,
+        # 6: CHAR_NAMECARD_PATH,
+        # 7: REL_PATH,
+        # 8: ICON_PATH,
         '''
       * name (str): 资源保存名称
     :返回:
@@ -58,7 +59,7 @@ async def download_file(
         async with sess.get(url) as res:
             content = await res.read()
     except ClientConnectorError:
-        logger.warning(f"[https://github.com/yuanyan3060/Arknights-Bot-Resource/]{name}下载失败")
+        logger.warning(f"[prts.wiki]{name}下载失败")
         return url, path, name
     async with aiofiles.open(PATH_MAP[path] / name, "wb") as f:
         await f.write(content)
