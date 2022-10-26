@@ -1,18 +1,20 @@
 import json
 from datetime import datetime
 from typing import Optional
+from nonebot.log import logger
 
 from ..utils.ark_api.get_ark_data import get_gacha_log_by_token
 from ..utils.download_resource.RESOURCE_PATH import PLAYER_PATH
 
 
 async def calculate_gacha_num(star, gacha_data: Optional[dict] = None) -> int:
-    gacha_num = 0
+    gacha_num, i, j = 0, 0, 0
+    logger.info(f'star为{star}')
     for i in range(len(gacha_data['List'])):
         for j in range(len(gacha_data['List'][i]['chars'])):
             if gacha_data['List'][i]['chars'][j]['rarity'] == star:
                 gacha_num += 1
-                j += 1
+            j += 1
         i += 1
     return gacha_num
 
@@ -51,7 +53,7 @@ async def save_gachalogs(uid: str, raw_data: Optional[dict] = None):
     if raw_data is None:
         raw_data = await get_gacha_log_by_token(uid, gachalogs_history)
     else:
-        new_data = {}
+        new_data = {'List': []}
         if gachalogs_history:
             for i in ['List']:
                 for item in raw_data[i]:
@@ -68,24 +70,25 @@ async def save_gachalogs(uid: str, raw_data: Optional[dict] = None):
 
     # 校验值
     temp_data = {'List': []}
-    for i in ['List']:
-        for item in raw_data[i]:
-            if 'ts' in item:
-                temp_data[i].append(item)
+    # for i in ['List']:
+    for item in raw_data['List']:
+        if 'ts' in item:
+            temp_data['List'].append(item)
     raw_data = temp_data
 
     result['uid'] = uid
     result['data_time'] = current_time
-    star = 6
+    # 抽卡记录中的 star 为实际 star - 1
+    star = 5
     six_star_gacha_num = await calculate_gacha_num(star, raw_data)
     result['six_star_gacha_num'] = six_star_gacha_num
-    star = 5
+    star = 4
     five_star_gacha_num = await calculate_gacha_num(star, raw_data)
     result['five_star_gacha_num'] = five_star_gacha_num
-    star = 4
+    star = 3
     four_star_gacha_num = await calculate_gacha_num(star, raw_data)
     result['four_star_gacha_num'] = four_star_gacha_num
-    star = 3
+    star = 2
     three_star_gacha_num = await calculate_gacha_num(star, raw_data)
     result['three_star_gacha_num'] = three_star_gacha_num
     result['all_gacha_num'] = six_star_gacha_num + five_star_gacha_num + four_star_gacha_num + three_star_gacha_num

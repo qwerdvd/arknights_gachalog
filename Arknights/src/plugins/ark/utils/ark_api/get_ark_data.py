@@ -15,9 +15,9 @@ from .arknights_api import (
 )
 
 
-gacha_type_meta_data = {
-    'List': {},
-}
+# gacha_type_meta_data = {
+#     'List': {},
+# }
 
 _HEADER = {
     'User-Agent': (
@@ -57,7 +57,7 @@ async def usr_ark_basic_info(token: str) -> dict:
     async with aiohttp.ClientSession() as session:
         async with session.post(GET_UID_URL, headers=HEADER, json=payload) as response:
             usr_basic_info = await response.json()
-            print(usr_basic_info)
+            # print(usr_basic_info)
     return usr_basic_info
 
 
@@ -110,7 +110,7 @@ async def _ark_request(
             method, url=url, headers=header, params=params
         )
         text_data = await req.text()
-        print(text_data)
+        # print(text_data)
         if text_data.startswith('('):
             text_data = json.loads(text_data.replace("(", "").replace(")", ""))
             return text_data
@@ -175,4 +175,5 @@ async def get_gacha_log_by_token(
         else:
             full_data['List'].extend(data)
         await asyncio.sleep(0.5)
+    print(full_data)
     return full_data
