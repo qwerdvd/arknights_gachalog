@@ -7,6 +7,7 @@ from nonebot.log import logger
 import aiohttp
 from aiohttp import ClientSession
 
+from ..db_operation.db_operation import owner_cookies, get_token
 from .arknights_api import (
     GET_GACHA_LOG_URL,
     GET_AUTHKEY_URL,
@@ -30,7 +31,7 @@ _HEADER = {
     'Origin': 'https://ak.hypergryph.com',
 }
 
-COOKIE = 'ACCOUNT=s%3AdAlS78TUJAmBb1zSs6sFtCLn.64rk5SwFum2Sz2zCwaXTgVnPKK5jwTywT2e%2FsQKoKz8;'
+# COOKIE = 'ACCOUNT=s%3AdAlS78TUJAmBb1zSs6sFtCLn.64rk5SwFum2Sz2zCwaXTgVnPKK5jwTywT2e%2FsQKoKz8;'
 
 
 async def usr_ark_basic_info(token: str) -> dict:
@@ -62,11 +63,10 @@ async def usr_ark_basic_info(token: str) -> dict:
 
 async def get_token_by_cookie(cookie: str) -> dict:
     HEADER = copy.deepcopy(_HEADER)
-    # cookie = await get_token(uid)
-    cookie = COOKIE
+    COOKIE = f'ACCOUNT={cookie}'
     if cookie == '该用户没有绑定过Cookie噢~' or cookie == '':
         return {}
-    HEADER['Cookie'] = cookie
+    HEADER['Cookie'] = COOKIE
     HEADER['User-Agent'] = 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) ' \
                            'Chrome/106.0.0.0 Safari/537.36 '
     HEADER['sec-fetch-dest'] = 'document'
@@ -126,13 +126,14 @@ async def _ark_request(
 async def get_gacha_log_by_token(
         uid: str, old_data: Optional[dict] = None
 ) -> Optional[dict]:
-    token_rawdata = await get_token_by_cookie(uid)
-    if token_rawdata == {} or token_rawdata is None:
-        return None
-    if 'data' in token_rawdata and 'content' in token_rawdata['data']:
-        token = token_rawdata['data']['content']
-    else:
-        return None
+    # token_rawdata = await get_token_by_cookie(uid)
+    # if token_rawdata == {} or token_rawdata is None:
+    #     return None
+    # if 'data' in token_rawdata and 'content' in token_rawdata['data']:
+    #     token = token_rawdata['data']['content']
+    # else:
+    #     return None
+    token = await get_token(uid)
     full_data = old_data or {'List': []}
     temp = []
     end_id = 0

@@ -6,15 +6,15 @@ from ..utils.ark_api.get_ark_data import get_gacha_log_by_token
 from ..utils.download_resource.RESOURCE_PATH import PLAYER_PATH
 
 
-async def calculate_six_star_gacha_num(gacha_data: Optional[dict] = None):
-    six_star_gacha_num = 0
+async def calculate_gacha_num(star, gacha_data: Optional[dict] = None) -> int:
+    gacha_num = 0
     for i in range(len(gacha_data['List'])):
         for j in range(len(gacha_data['List'][i]['chars'])):
-            if gacha_data['List'][i]['chars'][j]['rarity'] == 6:
-                six_star_gacha_num += 1
+            if gacha_data['List'][i]['chars'][j]['rarity'] == star:
+                gacha_num += 1
                 j += 1
         i += 1
-    return six_star_gacha_num
+    return gacha_num
 
 
 async def save_gachalogs(uid: str, raw_data: Optional[dict] = None):
@@ -33,11 +33,19 @@ async def save_gachalogs(uid: str, raw_data: Optional[dict] = None):
 
     gachalogs_history = None
     old_six_star_gacha_num = 0
+    old_five_star_gacha_num = 0
+    old_four_star_gacha_num = 0
+    old_three_star_gacha_num = 0
+    old_all_gacha_num = 0
     if gachalogs_path.exists():
         with open(gachalogs_path, "r", encoding='UTF-8') as f:
             gachalogs_history = json.load(f)
         gachalogs_history = gachalogs_history['data']
-        old_six_star_gacha_num = await calculate_six_star_gacha_num(gachalogs_history)
+        old_six_star_gacha_num = gachalogs_history['six_star_gacha_num']
+        old_five_star_gacha_num = gachalogs_history['five_star_gacha_num']
+        old_four_star_gacha_num = gachalogs_history['four_star_gacha_num']
+        old_three_star_gacha_num = gachalogs_history['three_star_gacha_num']
+        old_all_gacha_num = gachalogs_history['all_gacha_num']
 
     # 获取新抽卡记录
     if raw_data is None:
@@ -68,15 +76,30 @@ async def save_gachalogs(uid: str, raw_data: Optional[dict] = None):
 
     result['uid'] = uid
     result['data_time'] = current_time
-    result['six_star_gacha_num'] = await calculate_six_star_gacha_num(raw_data)
+    star = 6
+    six_star_gacha_num = await calculate_gacha_num(star, raw_data)
+    result['six_star_gacha_num'] = six_star_gacha_num
+    star = 5
+    five_star_gacha_num = await calculate_gacha_num(star, raw_data)
+    result['five_star_gacha_num'] = five_star_gacha_num
+    star = 4
+    four_star_gacha_num = await calculate_gacha_num(star, raw_data)
+    result['four_star_gacha_num'] = four_star_gacha_num
+    star = 3
+    three_star_gacha_num = await calculate_gacha_num(star, raw_data)
+    result['three_star_gacha_num'] = three_star_gacha_num
+    result['all_gacha_num'] = six_star_gacha_num + five_star_gacha_num + four_star_gacha_num + three_star_gacha_num
     for i in ['List']:
         if len(raw_data[i]) > 1:
             raw_data[i].sort(key=lambda x: (-int(x['ts'])))
     result['data'] = raw_data
 
     # 计算数据
-    normal_add = result['six_star_gacha_num'] - old_six_star_gacha_num
-    all_add = normal_add
+    six_star_add = result['six_star_gacha_num'] - old_six_star_gacha_num
+    five_star_add = result['five_star_gacha_num'] - old_five_star_gacha_num
+    four_star_add = result['four_star_gacha_num'] - old_four_star_gacha_num
+    three_star_add = result['three_star_gacha_num'] - old_three_star_gacha_num
+    all_add = result['all_gacha_num'] - old_all_gacha_num
 
     # 保存文件
     with open(gachalogs_path, 'w', encoding='UTF-8') as file:
@@ -89,7 +112,7 @@ async def save_gachalogs(uid: str, raw_data: Optional[dict] = None):
     else:
         im = (
             f'UID{uid}数据更新成功！'
-            f'本次更新{all_add}个数据!'
+            f'本次更新{all_add}个数据!\n{six_star_add}个6星，{five_star_add}个5星\n{four_star_add}个4星，{three_star_add}个3星'
         )
         print(im)
     return im

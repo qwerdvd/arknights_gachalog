@@ -104,7 +104,6 @@ class CookiesDAL:
                 UID=int(uid),
                 Cookies=cookies,
                 QID=userid,
-                NUM=140,
                 Extra=None,
             )
             self.db_session.add(new_data)
