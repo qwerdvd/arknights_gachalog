@@ -7,7 +7,7 @@ from nonebot.log import logger
 import aiohttp
 from aiohttp import ClientSession
 
-from ..db_operation.db_operation import owner_cookies, get_token
+from ..db_operation.db_operation import owner_cookies, get_token, select_db, get_channelMasterId
 from .arknights_api import (
     GET_GACHA_LOG_URL,
     GET_AUTHKEY_URL,
@@ -54,9 +54,17 @@ async def usr_ark_basic_info(token: str) -> dict:
     return usr_basic_info
 
 
-async def get_token_by_cookie(cookie: str) -> dict:
+async def get_token_by_cookie(COOKIE: str, qid: int) -> dict:
+    cookie = COOKIE
     HEADER = copy.deepcopy(_HEADER)
-    COOKIE = f'ACCOUNT={cookie}'
+    uid = await select_db(qid)
+    channelMasterId = await get_channelMasterId(uid)
+    if channelMasterId == 1:
+        url = GET_AUTHKEY_URL
+        COOKIE = f'ACCOUNT={cookie}'
+    elif channelMasterId == 2:
+        url = GET_AUTHKEY_URL_Bilibili
+        COOKIE = f'ACCOUNT_AK_B={cookie}'
     if cookie == '该用户没有绑定过Cookie噢~' or cookie == '':
         return {}
     HEADER['Cookie'] = COOKIE
@@ -65,11 +73,12 @@ async def get_token_by_cookie(cookie: str) -> dict:
     HEADER['sec-fetch-dest'] = 'document'
     HEADER['sec-fetch-mode'] = 'navigate'
     authkey = await _ark_request(
-        url=GET_AUTHKEY_URL,
+        url=url,
         method='GET',
         header=HEADER,
     )
-    if authkey == {}:
+    logger.info(f'authkey: {authkey}')
+    if authkey['msg'] == '登录失效':
         authkey = await _ark_request(
             url=GET_AUTHKEY_URL_Bilibili,
             method='GET',
@@ -133,16 +142,21 @@ async def get_gacha_log_by_token(
     # else:
     #     return None
     token = await get_token(uid)
+    HEADER = copy.deepcopy(_HEADER)
+    channelMasterId = await get_channelMasterId(uid)
+    logger.info(f'channelMasterId: {channelMasterId}')
     full_data = old_data or {'List': []}
     temp = []
     end_id = 0
+    if channelMasterId == 2:
+        HEADER['Referer'] = 'https://ak.hypergryph.com/user/bilibili/gacha'
     for page in range(1, 999):
         raw_data = await _ark_request(
             url=GET_GACHA_LOG_URL,
             method='GET',
-            header=_HEADER,
+            header=HEADER,
             params={
-                'channelId': '1',
+                'channelId': channelMasterId,
                 'token': token,
                 'page': page,
                 'end_id': end_id,

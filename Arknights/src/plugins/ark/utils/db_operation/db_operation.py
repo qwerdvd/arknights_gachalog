@@ -82,6 +82,14 @@ async def cookies_db(uid: str, cookies: str, qid: int):
             return im
 
 
+async def channelMasterId_db(uid: str, channelMasterId: int):
+    async with async_session() as session:
+        async with session.begin():
+            Cookies = CookiesDAL(session)
+            im = await Cookies.add_channelMasterId_db(uid, channelMasterId)
+            return im
+
+
 async def error_db(cookies: str, error: str):
     async with async_session() as session:
         async with session.begin():
@@ -117,6 +125,15 @@ async def get_token(uid: str) -> str:
             return str(token)
 
 
+async def get_channelMasterId(uid: str) -> int:
+    async with async_session() as session:
+        async with session.begin():
+            Cookies = CookiesDAL(session)
+            logger.info(f'查询channelMasterId{uid}')
+            channelMasterId = await Cookies.get_user_channelMasterId(uid)
+            return int(channelMasterId)
+
+
 async def get_user_bind_data(uid: str) -> dict:
     async with async_session() as session:
         async with session.begin():
@@ -133,12 +150,12 @@ async def token_db(s_cookies: str, uid: str) -> str:
             return im
 
 
-async def channelMasterId_db(channelMasterId: int, uid: str) -> str:
-    async with async_session() as session:
-        async with session.begin():
-            Cookies = CookiesDAL(session)
-            im = await Cookies.add_channelMasterId_db(uid, channelMasterId)
-            return im
+# async def get_channelMasterId_db(channelMasterId: int, uid: str) -> str:
+#     async with async_session() as session:
+#         async with session.begin():
+#             Cookies = CookiesDAL(session)
+#             im = await Cookies.channelMasterId_db(uid, channelMasterId)
+#             return im
 
 
 async def empty_cache():

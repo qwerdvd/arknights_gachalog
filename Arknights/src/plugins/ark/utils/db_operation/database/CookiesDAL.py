@@ -1,4 +1,5 @@
 from typing import List, Optional
+from nonebot.log import logger
 
 from sqlalchemy.future import select
 from sqlalchemy import delete, update
@@ -74,6 +75,25 @@ class CookiesDAL:
         else:
             return '该用户没有绑定过token噢~'
 
+    async def get_user_channelMasterId(self, uid: str) -> Optional[str]:
+        """
+        :说明:
+          获取channelMasterId
+        :参数:
+          * uid (str): UID。
+        :返回:
+          * channelMasterId (str): channelMasterId。
+        """
+        data = await self.get_user_data(uid)
+        logger.info(data)
+        if data:
+            # 有可能返回None
+            logger.info(f'获取到的channelMasterId为{data.ChannelMasterId}')
+            data_raw = str(data.ChannelMasterId)
+            return data_raw
+        else:
+            return '该用户没有绑定过channelMasterId噢~'
+
     async def user_exists(self, uid: str) -> bool:
         data = await self.get_user_data(uid)
         if data:
@@ -129,7 +149,7 @@ class CookiesDAL:
             await self.db_session.execute(sql)
             msg = f'UID{uid}账户的token绑定成功!'
         else:
-            msg = '请先绑定Cookies~'
+            msg = f'UID{uid}的token绑定失败\n请先绑定Cookies~'
         await self.db_session.flush()
         return msg
 
@@ -152,7 +172,7 @@ class CookiesDAL:
             await self.db_session.execute(sql)
             msg = f'UID{uid}账户的channelMasterId绑定成功!'
         else:
-            msg = '请先绑定Cookies~'
+            msg = f'UID{uid}的channelMasterId绑定失败\n请先绑定Cookies~'
         await self.db_session.flush()
         return msg
 
