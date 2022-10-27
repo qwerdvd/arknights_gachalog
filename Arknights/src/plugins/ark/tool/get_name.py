@@ -11,7 +11,7 @@ for line in lines:
     raw = {'Name': '', 'Chinese_name': ''}
     raw['Name'] = line
     raw['Chinese_name'] = line
-    result.append[raw]
+    # result.append[raw]
 
     pattern = re.findall(r"\d+_(.+).png", line)
 

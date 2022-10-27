@@ -6,6 +6,18 @@ from nonebot.log import logger
 from ..utils.ark_api.get_ark_data import get_gacha_log_by_token
 from ..utils.download_resource.RESOURCE_PATH import PLAYER_PATH
 
+char_eng_lists = [
+    'one',
+    'two',
+    'three',
+    'four',
+    'five',
+    'six',
+    'seven',
+    'eight',
+    'nine',
+]
+
 
 async def calculate_gacha_num(star, gacha_data: Optional[dict] = None) -> int:
     gacha_num, i, j = 0, 0, 0
@@ -53,7 +65,7 @@ async def save_gachalogs(uid: str, raw_data: Optional[dict] = None):
     if raw_data is None:
         raw_data = await get_gacha_log_by_token(uid, gachalogs_history)
     else:
-        new_data = {'List': []}
+        new_data = {'List': [], '专属推荐干员寻访': [], '联合寻访': [], '常驻标准寻访': []}
         if gachalogs_history:
             for i in ['List']:
                 for item in raw_data[i]:
@@ -69,7 +81,7 @@ async def save_gachalogs(uid: str, raw_data: Optional[dict] = None):
         return '你还没有绑定过Cookie或者Cookie已失效~'
 
     # 校验值
-    temp_data = {'List': []}
+    temp_data = {'List': [], '专属推荐干员寻访': [], '联合寻访': [], '常驻标准寻访': []}
     # for i in ['List']:
     for item in raw_data['List']:
         if 'ts' in item:
@@ -78,20 +90,12 @@ async def save_gachalogs(uid: str, raw_data: Optional[dict] = None):
 
     result['uid'] = uid
     result['data_time'] = current_time
+    all_gacha_num = 0
     # 抽卡记录中的 star 为实际 star - 1
-    star = 5
-    six_star_gacha_num = await calculate_gacha_num(star, raw_data)
-    result['six_star_gacha_num'] = six_star_gacha_num
-    star = 4
-    five_star_gacha_num = await calculate_gacha_num(star, raw_data)
-    result['five_star_gacha_num'] = five_star_gacha_num
-    star = 3
-    four_star_gacha_num = await calculate_gacha_num(star, raw_data)
-    result['four_star_gacha_num'] = four_star_gacha_num
-    star = 2
-    three_star_gacha_num = await calculate_gacha_num(star, raw_data)
-    result['three_star_gacha_num'] = three_star_gacha_num
-    result['all_gacha_num'] = six_star_gacha_num + five_star_gacha_num + four_star_gacha_num + three_star_gacha_num
+    for i in range(2, 6):
+        all_gacha_num += await calculate_gacha_num(i, raw_data)
+        result[f'{char_eng_lists[i]}_star_gacha_num'] = await calculate_gacha_num(i, raw_data)
+    result['all_gacha_num'] = all_gacha_num
     for i in ['List']:
         if len(raw_data[i]) > 1:
             raw_data[i].sort(key=lambda x: (-int(x['ts'])))

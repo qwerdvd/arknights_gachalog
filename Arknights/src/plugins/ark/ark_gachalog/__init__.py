@@ -84,7 +84,7 @@ async def import_gacha_log_info(event: NoticeEvent, matcher: Matcher):
 #         '<ft color=(238,120,0)>抽卡记录</ft>\n'
 #         ' \n'
 #         '查询你的原神抽卡记录\n'
-#         '需要<ft color=(238,120,0)>绑定Stoken</ft>'
+#         '需要<ft color=(238,120,0)>绑定token</ft>'
 #     ),
 # )
 async def send_gacha_log_card_info(

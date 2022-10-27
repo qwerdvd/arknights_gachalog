@@ -12,7 +12,7 @@ from nonebot.adapters.onebot.v11 import (
 )
 
 from .add_ck import deal_ck
-from .draw_user_card import get_user_card
+# from .draw_user_card import get_user_card
 from ..config import priority
 # from .draw_user_card import get_user_card
 from ..utils.nonebot2.rule import FullCommand

@@ -7,7 +7,7 @@ from nonebot.log import logger
 import aiohttp
 from aiohttp import ClientSession
 
-from ..db_operation.db_operation import owner_cookies, get_token, select_db, get_channelMasterId
+from ..db_operation.db_operation import get_token, select_db, get_channelMasterId
 from .arknights_api import (
     GET_GACHA_LOG_URL,
     GET_AUTHKEY_URL,
@@ -26,6 +26,8 @@ _HEADER = {
     'Referer': 'https://ak.hypergryph.com/user/inquiryGacha',
     'Origin': 'https://ak.hypergryph.com',
 }
+
+gacha_type_meta_data = {'List': [], '专属推荐干员寻访': [], '联合寻访': [], '常驻标准寻访': []}
 
 
 async def usr_ark_basic_info(token: str) -> dict:
@@ -55,6 +57,7 @@ async def usr_ark_basic_info(token: str) -> dict:
 
 
 async def get_token_by_cookie(COOKIE: str, qid: int) -> dict:
+    url = ''
     cookie = COOKIE
     HEADER = copy.deepcopy(_HEADER)
     uid = await select_db(qid)
@@ -134,17 +137,9 @@ async def _ark_request(
 async def get_gacha_log_by_token(
         uid: str, old_data: Optional[dict] = None
 ) -> Optional[dict]:
-    # token_rawdata = await get_token_by_cookie(uid)
-    # if token_rawdata == {} or token_rawdata is None:
-    #     return None
-    # if 'data' in token_rawdata and 'content' in token_rawdata['data']:
-    #     token = token_rawdata['data']['content']
-    # else:
-    #     return None
     token = await get_token(uid)
     HEADER = copy.deepcopy(_HEADER)
     channelMasterId = await get_channelMasterId(uid)
-    logger.info(f'channelMasterId: {channelMasterId}')
     full_data = old_data or {'List': []}
     temp = []
     end_id = 0
