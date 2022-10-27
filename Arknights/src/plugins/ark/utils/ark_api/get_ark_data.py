@@ -27,7 +27,7 @@ _HEADER = {
     'Origin': 'https://ak.hypergryph.com',
 }
 
-gacha_type_meta_data = {'List': [], '专属推荐干员寻访': [], '联合寻访': [], '常驻标准寻访': []}
+gacha_type_meta_data = {'单up池': [], '专属推荐干员寻访': [], '联合寻访': [], '常驻标准寻访': []}
 
 
 async def usr_ark_basic_info(token: str) -> dict:
@@ -140,11 +140,13 @@ async def get_gacha_log_by_token(
     token = await get_token(uid)
     HEADER = copy.deepcopy(_HEADER)
     channelMasterId = await get_channelMasterId(uid)
-    full_data = old_data or {'List': []}
+    full_data = old_data or {'单up池': [], '专属推荐干员寻访': [], '联合寻访': [], '常驻标准寻访': []}
     temp = []
-    end_id = 0
     if channelMasterId == 2:
         HEADER['Referer'] = 'https://ak.hypergryph.com/user/bilibili/gacha'
+    # for gacha_type in gacha_type_meta_data:
+    #     print(gacha_type)
+    end_id = 0
     for page in range(1, 999):
         raw_data = await _ark_request(
             url=GET_GACHA_LOG_URL,
@@ -161,27 +163,63 @@ async def get_gacha_log_by_token(
         if 'data' in raw_data and 'list' in raw_data['data']:
             data = raw_data['data']['list']
         else:
-            logger.warning(raw_data)
             return {}
         if not data:
             break
         end_id = data[-1]['ts']
-        if data[-1] in full_data['List']:
-            for item in data:
-                if item not in full_data['List']:
-                    temp.append(item)
-            full_data['List'][0:0] = temp
-            temp = []
-            break
-        if len(full_data['List']) >= 1:
-            if int(data[-1]['ts']) <= int(
-                    full_data['List'][0]['ts']
-            ):
-                full_data['List'].extend(data)
+        # print(data)
+        # print(data)
+        # print(range(len(data)))
+        i = 0
+        flag = 0
+        # while flag == 0:
+        for i in range(len(data)):
+            if data[-i]['pool'] == '专属推荐干员寻访':
+                gacha_type = '专属推荐干员寻访'
+                if data[-i] not in full_data[gacha_type]:
+                    # print(f'{gacha_type}{data[-i]}')
+                    temp.append(data[-i])
+                full_data['gacha_type'][0:0] = temp
+                temp = []
+                # if (len(full_data[gacha_type])) >= 1:
+                #     if int(data[-1]['ts']) <= int(
+                #             full_data[gacha_type][0]['ts']
+                #     ):
+                #         full_data[gacha_type].extend(data)
+                #     else:
+                #         full_data[gacha_type][0:0] = data
+                # else:
+                #     full_data[gacha_type].extend(data)
+            elif data[-i]['pool'] == '联合寻访':
+                if data[-i] not in full_data['联合寻访']:
+                    # print(f'联合寻访{data[-i]}')
+                    temp.append(data[-i])
+                full_data['联合寻访'][0:0] = temp
+            elif data[-i]['pool'] == '常驻标准寻访':
+                if data[-i] not in full_data['常驻标准寻访']:
+                    # print(f'常驻标准寻访{data[-i]}')
+                    temp.append(data[-i])
+                full_data['常驻标准寻访'][0:0] = temp
             else:
-                full_data['List'][0:0] = data
-        else:
-            full_data['List'].extend(data)
+                if data[-i]['pool'] not in full_data['单up池']:
+                    # print(f'单up池{data[-i]}')
+                    temp.append(data[-i])
+                full_data['单up池'][0:0] = temp
+            temp = []
+            i += 1
+            # print(full_data)
+            # break
+        # print(full_data)
+        # for gacha_type in gacha_type_meta_data:
+        #     if (len(full_data[gacha_type])) >= 1:
+        #         if int(data[-1]['ts']) <= int(
+        #                 full_data[gacha_type][0]['ts']
+        #         ):
+        #             full_data[gacha_type].extend(data)
+        #         else:
+        #             full_data[gacha_type][0:0] = data
+        #     else:
+        #         full_data[gacha_type].extend(data)
         await asyncio.sleep(0.5)
-    print(full_data)
+    # print(full_data)
     return full_data

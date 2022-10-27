@@ -13,7 +13,7 @@ from nonebot.adapters.onebot.v11 import (
 from .get_gachalogs import save_gachalogs
 # from ..genshinuid_meta import register_menu
 from ..utils.nonebot2.rule import FullCommand
-# from .draw_gachalogs import draw_gachalogs_img
+from .draw_gachalogs import draw_gachalogs_img
 from ..utils.message.error_reply import UID_HINT
 from ..utils.db_operation.db_operation import select_db
 from ..utils.exception.handle_exception import handle_exception
@@ -95,8 +95,7 @@ async def send_gacha_log_card_info(
 
     uid = await select_db(event.user_id, mode='uid')
     if isinstance(uid, str):
-        im = ''
-        # im = await draw_gachalogs_img(uid)
+        im = await draw_gachalogs_img(uid)
         if isinstance(im, bytes):
             await matcher.finish(MessageSegment.image(im))
         else:

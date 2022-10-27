@@ -22,12 +22,15 @@ char_eng_lists = [
 async def calculate_gacha_num(star, gacha_data: Optional[dict] = None) -> int:
     gacha_num, i, j = 0, 0, 0
     logger.info(f'star为{star}')
-    for i in range(len(gacha_data['List'])):
-        for j in range(len(gacha_data['List'][i]['chars'])):
-            if gacha_data['List'][i]['chars'][j]['rarity'] == star:
-                gacha_num += 1
-            j += 1
-        i += 1
+    meta_data = {'单up池': [], '专属推荐干员寻访': [], '联合寻访': [], '常驻标准寻访': []}
+    print(gacha_data)
+    for gacha_type in meta_data:
+        for i in range(len(gacha_data[gacha_type])):
+            for j in range(len(gacha_data[gacha_type][i]['chars'])):
+                if gacha_data[gacha_type][i]['chars'][j]['rarity'] == star:
+                    gacha_num += 1
+                j += 1
+            i += 1
     return gacha_num
 
 
@@ -80,13 +83,13 @@ async def save_gachalogs(uid: str, raw_data: Optional[dict] = None):
     if not raw_data:
         return '你还没有绑定过Cookie或者Cookie已失效~'
 
-    # 校验值
-    temp_data = {'List': [], '专属推荐干员寻访': [], '联合寻访': [], '常驻标准寻访': []}
-    # for i in ['List']:
-    for item in raw_data['List']:
-        if 'ts' in item:
-            temp_data['List'].append(item)
-    raw_data = temp_data
+    # # 校验值
+    # temp_data = {'单up池': [], '专属推荐干员寻访': [], '联合寻访': [], '常驻标准寻访': []}
+    # # for i in ['List']:
+    # for item in ['单up池', '专属推荐干员寻访', '联合寻访', '常驻标准寻访']:
+    #     if 'ts' in item:
+    #         temp_data['List'].append(item)
+    # raw_data = temp_data
 
     result['uid'] = uid
     result['data_time'] = current_time
@@ -96,7 +99,7 @@ async def save_gachalogs(uid: str, raw_data: Optional[dict] = None):
         all_gacha_num += await calculate_gacha_num(i, raw_data)
         result[f'{char_eng_lists[i]}_star_gacha_num'] = await calculate_gacha_num(i, raw_data)
     result['all_gacha_num'] = all_gacha_num
-    for i in ['List']:
+    for i in ['单up池', '专属推荐干员寻访', '联合寻访', '常驻标准寻访']:
         if len(raw_data[i]) > 1:
             raw_data[i].sort(key=lambda x: (-int(x['ts'])))
     result['data'] = raw_data
