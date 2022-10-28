@@ -168,25 +168,27 @@ async def get_gacha_log_by_token(
         for i in range(len(data)):
             if data[-i]['pool'] == '专属推荐干员寻访':
                 gacha_type = '专属推荐干员寻访'
-                if data[-i] not in full_data['专属推荐干员寻访']:
+                if data[-i] not in full_data[gacha_type]:
                     temp.append(data[-i])
                 full_data[gacha_type][0:0] = temp
                 temp = []
             elif data[-i]['pool'] == '联合寻访':
-                if data[-i] not in full_data['联合寻访']:
+                gacha_type = '联合寻访'
+                if data[-i] not in full_data[gacha_type]:
                     temp.append(data[-i])
-                full_data['联合寻访'][0:0] = temp
+                full_data[gacha_type][0:0] = temp
                 temp = []
             elif data[-i]['pool'] == '常驻标准寻访':
                 gacha_type = '常驻标准寻访'
                 if data[-i] not in full_data[gacha_type]:
-                    print(f'常驻标准寻访{data[-i]}')
+                    temp.append(data[-i])
                 full_data[gacha_type][0:0] = temp
                 temp = []
             else:
-                if data[-i] not in full_data['单up池']:
+                gacha_type = '单up池'
+                if data[-i] not in full_data[gacha_type]:
                     temp.append(data[-i])
-                full_data['单up池'][0:0] = temp
+                full_data[gacha_type][0:0] = temp
                 temp = []
         temp = []
         await asyncio.sleep(0.5)
