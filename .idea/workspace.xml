@@ -4,19 +4,199 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ddad0908-cca9-49b4-b000-5588ceb95ace" name="变更" comment="fix: 修复抽卡记录逻辑错误">
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/pythonProject.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Arknights/data/players/646610432/gacha_logs.json" beforeDir="false" afterPath="$PROJECT_DIR$/Arknights/data/players/646610432/gacha_logs.json" afterDir="false" />
+    <list default="true" id="ddad0908-cca9-49b4-b000-5588ceb95ace" name="变更" comment="feat: 完成一部分抽卡记录的绘制">
+      <change afterPath="$PROJECT_DIR$/.idea/other.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Arknights/data/resource/avatar/char_003_kalts.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Arknights/data/resource/avatar/char_003_kalts_2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Arknights/data/resource/avatar/char_010_chen.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Arknights/data/resource/avatar/char_010_chen2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Arknights/data/resource/avatar/char_010_chen_2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Arknights/data/resource/avatar/char_010_chen_nian#2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Arknights/data/resource/avatar/char_017_huang.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Arknights/data/resource/avatar/char_017_huang_2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Arknights/data/resource/avatar/char_017_huang_as#1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Arknights/data/resource/avatar/char_1012_skadi2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Arknights/data/resource/avatar/char_1012_skadi2_2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Arknights/data/resource/avatar/char_1012_skadi2_boc#4.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Arknights/data/resource/avatar/char_1013_chen2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Arknights/data/resource/avatar/char_1013_chen2_2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Arknights/data/resource/avatar/char_1014_nearl2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Arknights/data/resource/avatar/char_1014_nearl2_2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Arknights/data/resource/avatar/char_1023_ghost2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Arknights/data/resource/avatar/char_1023_ghost2_2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Arknights/data/resource/avatar/char_1026_gvial2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Arknights/data/resource/avatar/char_1026_gvial2_2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Arknights/data/resource/avatar/char_103_angel.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Arknights/data/resource/avatar/char_103_angel_2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Arknights/data/resource/avatar/char_103_angel_kfc#1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Arknights/data/resource/avatar/char_103_angel_wild#1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Arknights/data/resource/avatar/char_112_siege.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Arknights/data/resource/avatar/char_112_siege_2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Arknights/data/resource/avatar/char_112_siege_striker#2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Arknights/data/resource/avatar/char_112_siege_wild#2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Arknights/data/resource/avatar/char_113_cqbw.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Arknights/data/resource/avatar/char_113_cqbw_2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Arknights/data/resource/avatar/char_113_cqbw_epoque#7.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Arknights/data/resource/avatar/char_134_ifrit.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Arknights/data/resource/avatar/char_134_ifrit_2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Arknights/data/resource/avatar/char_134_ifrit_kfc#1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Arknights/data/resource/avatar/char_134_ifrit_summer#1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Arknights/data/resource/avatar/char_136_hsguma.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Arknights/data/resource/avatar/char_136_hsguma_2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Arknights/data/resource/avatar/char_136_hsguma_nian#3.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Arknights/data/resource/avatar/char_172_svrash.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Arknights/data/resource/avatar/char_172_svrash_2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Arknights/data/resource/avatar/char_172_svrash_snow#1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Arknights/data/resource/avatar/char_172_svrash_summer#4.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Arknights/data/resource/avatar/char_179_cgbird.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Arknights/data/resource/avatar/char_179_cgbird_2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Arknights/data/resource/avatar/char_179_cgbird_witch#1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Arknights/data/resource/avatar/char_180_amgoat.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Arknights/data/resource/avatar/char_180_amgoat_2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Arknights/data/resource/avatar/char_180_amgoat_summer#5.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Arknights/data/resource/avatar/char_188_helage.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Arknights/data/resource/avatar/char_188_helage_2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Arknights/data/resource/avatar/char_188_helage_boc#2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Arknights/data/resource/avatar/char_197_poca.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Arknights/data/resource/avatar/char_197_poca_2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Arknights/data/resource/avatar/char_197_poca_epoque#12.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Arknights/data/resource/avatar/char_2013_cerber.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Arknights/data/resource/avatar/char_2013_cerber_2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Arknights/data/resource/avatar/char_2013_cerber_summer#4.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Arknights/data/resource/avatar/char_2013_cerber_whirlwind#2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Arknights/data/resource/avatar/char_2014_nian.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Arknights/data/resource/avatar/char_2014_nian_2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Arknights/data/resource/avatar/char_2014_nian_nian#4.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Arknights/data/resource/avatar/char_2015_dusk.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Arknights/data/resource/avatar/char_2015_dusk_2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Arknights/data/resource/avatar/char_2015_dusk_nian#7.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Arknights/data/resource/avatar/char_2023_ling.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Arknights/data/resource/avatar/char_2023_ling_2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Arknights/data/resource/avatar/char_202_demkni.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Arknights/data/resource/avatar/char_202_demkni_2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Arknights/data/resource/avatar/char_202_demkni_boc#1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Arknights/data/resource/avatar/char_202_demkni_test#1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Arknights/data/resource/avatar/char_206_gnosis.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Arknights/data/resource/avatar/char_206_gnosis_2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Arknights/data/resource/avatar/char_206_gnosis_boc#4.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Arknights/data/resource/avatar/char_213_mostma.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Arknights/data/resource/avatar/char_213_mostma_2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Arknights/data/resource/avatar/char_213_mostma_epoque#5.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Arknights/data/resource/avatar/char_222_bpipe.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Arknights/data/resource/avatar/char_222_bpipe_2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Arknights/data/resource/avatar/char_222_bpipe_race#1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Arknights/data/resource/avatar/char_225_haak.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Arknights/data/resource/avatar/char_225_haak_2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Arknights/data/resource/avatar/char_225_haak_nian#4.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Arknights/data/resource/avatar/char_225_haak_nian#5.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Arknights/data/resource/avatar/char_248_mgllan.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Arknights/data/resource/avatar/char_248_mgllan_2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Arknights/data/resource/avatar/char_248_mgllan_kitchen#1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Arknights/data/resource/avatar/char_250_phatom.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Arknights/data/resource/avatar/char_250_phatom_2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Arknights/data/resource/avatar/char_250_phatom_ghost#1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Arknights/data/resource/avatar/char_250_phatom_sale#4.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Arknights/data/resource/avatar/char_263_skadi.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Arknights/data/resource/avatar/char_263_skadi_2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Arknights/data/resource/avatar/char_263_skadi_summer#3.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Arknights/data/resource/avatar/char_264_f12yin.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Arknights/data/resource/avatar/char_264_f12yin_2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Arknights/data/resource/avatar/char_264_f12yin_boc#3.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Arknights/data/resource/avatar/char_264_f12yin_epoque#15.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Arknights/data/resource/avatar/char_291_aglina.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Arknights/data/resource/avatar/char_291_aglina_2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Arknights/data/resource/avatar/char_291_aglina_boc#1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Arknights/data/resource/avatar/char_291_aglina_summer#5.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Arknights/data/resource/avatar/char_293_thorns.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Arknights/data/resource/avatar/char_293_thorns_2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Arknights/data/resource/avatar/char_293_thorns_it#1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Arknights/data/resource/avatar/char_300_phenxi.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Arknights/data/resource/avatar/char_300_phenxi_2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Arknights/data/resource/avatar/char_311_mudrok.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Arknights/data/resource/avatar/char_311_mudrok_2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Arknights/data/resource/avatar/char_311_mudrok_ambienceSynesthesia#2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Arknights/data/resource/avatar/char_311_mudrok_summer#6.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Arknights/data/resource/avatar/char_322_lmlee.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Arknights/data/resource/avatar/char_322_lmlee_2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Arknights/data/resource/avatar/char_322_lmlee_witch#3.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Arknights/data/resource/avatar/char_332_archet.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Arknights/data/resource/avatar/char_332_archet_2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Arknights/data/resource/avatar/char_332_archet_shining#1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Arknights/data/resource/avatar/char_340_shwaz.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Arknights/data/resource/avatar/char_340_shwaz_2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Arknights/data/resource/avatar/char_340_shwaz_snow#1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Arknights/data/resource/avatar/char_340_shwaz_striker#1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Arknights/data/resource/avatar/char_344_beewax.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Arknights/data/resource/avatar/char_344_beewax_2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Arknights/data/resource/avatar/char_344_beewax_epoque#9.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Arknights/data/resource/avatar/char_350_surtr.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Arknights/data/resource/avatar/char_350_surtr_2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Arknights/data/resource/avatar/char_350_surtr_it#1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Arknights/data/resource/avatar/char_350_surtr_summer#9.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Arknights/data/resource/avatar/char_358_lisa.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Arknights/data/resource/avatar/char_358_lisa_2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Arknights/data/resource/avatar/char_358_lisa_lxh#1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Arknights/data/resource/avatar/char_358_lisa_wild#3.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Arknights/data/resource/avatar/char_362_saga.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Arknights/data/resource/avatar/char_362_saga_2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Arknights/data/resource/avatar/char_377_gdglow.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Arknights/data/resource/avatar/char_377_gdglow_2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Arknights/data/resource/avatar/char_391_rosmon.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Arknights/data/resource/avatar/char_391_rosmon_2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Arknights/data/resource/avatar/char_4009_irene.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Arknights/data/resource/avatar/char_4009_irene_2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Arknights/data/resource/avatar/char_400_weedy.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Arknights/data/resource/avatar/char_400_weedy_2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Arknights/data/resource/avatar/char_400_weedy_snow#2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Arknights/data/resource/avatar/char_4039_horn.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Arknights/data/resource/avatar/char_4039_horn_2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Arknights/data/resource/avatar/char_4046_ebnhlz.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Arknights/data/resource/avatar/char_4046_ebnhlz_2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Arknights/data/resource/avatar/char_4048_doroth.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Arknights/data/resource/avatar/char_4048_doroth_2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Arknights/data/resource/avatar/char_4055_bgsnow.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Arknights/data/resource/avatar/char_4055_bgsnow_2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Arknights/data/resource/avatar/char_4064_mlynar.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Arknights/data/resource/avatar/char_4064_mlynar_2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Arknights/data/resource/avatar/char_416_zumama.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Arknights/data/resource/avatar/char_416_zumama_2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Arknights/data/resource/avatar/char_416_zumama_boc#3.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Arknights/data/resource/avatar/char_420_flamtl.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Arknights/data/resource/avatar/char_420_flamtl_2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Arknights/data/resource/avatar/char_420_flamtl_game#2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Arknights/data/resource/avatar/char_423_blemsh.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Arknights/data/resource/avatar/char_423_blemsh_2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Arknights/data/resource/avatar/char_423_blemsh_witch#2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Arknights/data/resource/avatar/char_426_billro.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Arknights/data/resource/avatar/char_426_billro_2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Arknights/data/resource/avatar/char_426_billro_snow#3.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Arknights/data/resource/avatar/char_426_billro_summer#8.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Arknights/data/resource/avatar/char_430_fartth.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Arknights/data/resource/avatar/char_430_fartth_2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Arknights/data/resource/avatar/char_431_ashlok.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Arknights/data/resource/avatar/char_431_ashlok_2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Arknights/data/resource/avatar/char_437_mizuki.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Arknights/data/resource/avatar/char_437_mizuki_2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Arknights/data/resource/avatar/char_456_ash.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Arknights/data/resource/avatar/char_456_ash_2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Arknights/data/resource/avatar/char_456_ash_rainbow6#1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Arknights/data/resource/avatar/char_472_pasngr.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Arknights/data/resource/avatar/char_472_pasngr_2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Arknights/data/resource/avatar/char_474_glady.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Arknights/data/resource/avatar/char_474_glady_2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Arknights/data/resource/avatar/char_474_glady_boc#5.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Arknights/data/resource/avatar/char_479_sleach.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Arknights/data/resource/avatar/char_479_sleach_2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Arknights/data/resource/avatar/char_479_sleach_epoque#14.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Arknights/data/resource/avatar/char_485_pallas.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Arknights/data/resource/avatar/char_485_pallas_2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Arknights/data/resource/avatar/char_485_pallas_epoque#12.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Arknights/src/plugins/ark/utils/map/avatarId2Name_mapping_32.5.0.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Arknights/pie.png" beforeDir="false" afterPath="$PROJECT_DIR$/Arknights/pie.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Arknights/src/plugins/ark/ark_gachalog/draw_gachalogs.py" beforeDir="false" afterPath="$PROJECT_DIR$/Arknights/src/plugins/ark/ark_gachalog/draw_gachalogs.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Arknights/src/plugins/ark/ark_gachalog/texture2d/all_title.png" beforeDir="false" afterPath="$PROJECT_DIR$/Arknights/src/plugins/ark/ark_gachalog/texture2d/all_title.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Arknights/src/plugins/ark/ark_gachalog/texture2d/item_bg.png" beforeDir="false" afterPath="$PROJECT_DIR$/Arknights/src/plugins/ark/ark_gachalog/texture2d/item_bg.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Arknights/src/plugins/ark/utils/fonts/fonts.py" beforeDir="false" afterPath="$PROJECT_DIR$/Arknights/src/plugins/ark/utils/fonts/fonts.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Arknights/src/plugins/ark/utils/fonts/origin.ttf" beforeDir="false" afterPath="$PROJECT_DIR$/Arknights/src/plugins/ark/utils/fonts/origin.ttf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Arknights/src/plugins/ark/utils/alias/avatarId_and_name_covert.py" beforeDir="false" afterPath="$PROJECT_DIR$/Arknights/src/plugins/ark/utils/alias/avatarId_and_name_covert.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Arknights/src/plugins/ark/utils/map/avatarName2Element_mapping_32.5.0.json" beforeDir="false" afterPath="$PROJECT_DIR$/Arknights/src/plugins/ark/utils/map/avatarName2Element_mapping_32.5.0.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -58,21 +238,22 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/qwerdvd/PycharmProjects/pythonProject&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;run.code.analysis.last.selected.profile&quot;: &quot;aDefault&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;org.jetbrains.plugins.github.ui.GithubSettingsConfigurable&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "last_opened_file_path": "C:/Users/qwerdvd/PycharmProjects/pythonProject",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "run.code.analysis.last.selected.profile": "aDefault",
+    "settings.editor.selected.configurable": "org.jetbrains.plugins.github.ui.GithubSettingsConfigurable"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\qwerdvd\PycharmProjects\pythonProject\Arknights\src\plugins" />
@@ -161,7 +342,8 @@
       <workItem from="1666924223785" duration="3629000" />
       <workItem from="1666927886561" duration="199000" />
       <workItem from="1666928110043" duration="2474000" />
-      <workItem from="1666930829653" duration="13013000" />
+      <workItem from="1666930829653" duration="13218000" />
+      <workItem from="1666967475305" duration="3581000" />
     </task>
     <task id="LOCAL-00001" summary="init upload">
       <created>1666534120762</created>
@@ -380,7 +562,21 @@
       <option name="project" value="LOCAL" />
       <updated>1666927923194</updated>
     </task>
-    <option name="localTasksCounter" value="32" />
+    <task id="LOCAL-00032" summary="feat: 完成一部分抽卡记录的绘制">
+      <created>1666959660281</created>
+      <option name="number" value="00032" />
+      <option name="presentableId" value="LOCAL-00032" />
+      <option name="project" value="LOCAL" />
+      <updated>1666959660281</updated>
+    </task>
+    <task id="LOCAL-00033" summary="feat: 完成一部分抽卡记录的绘制">
+      <created>1666959673705</created>
+      <option name="number" value="00033" />
+      <option name="presentableId" value="LOCAL-00033" />
+      <option name="project" value="LOCAL" />
+      <updated>1666959673705</updated>
+    </task>
+    <option name="localTasksCounter" value="34" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -427,11 +623,12 @@
     <MESSAGE value="refactor: 重构抽卡记录逻辑，支持区分卡池列表" />
     <MESSAGE value="fix: 修复抽卡记录会重复增加的问题&#10;fix: 修复星级统计读取错误的问题&#10;fix: 修复新增抽卡记录保存错误的问题" />
     <MESSAGE value="fix: 修复抽卡记录逻辑错误" />
-    <option name="LAST_COMMIT_MESSAGE" value="fix: 修复抽卡记录逻辑错误" />
+    <MESSAGE value="feat: 完成一部分抽卡记录的绘制" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat: 完成一部分抽卡记录的绘制" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/pythonProject$get_name.coverage" NAME="get_name 覆盖结果" MODIFIED="1666791861728" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Arknights/src/plugins/ark/tool" />
-    <SUITE FILE_PATH="coverage/pythonProject$bot.coverage" NAME="bot 覆盖结果" MODIFIED="1666959063857" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Arknights" />
+    <SUITE FILE_PATH="coverage/pythonProject$bot.coverage" NAME="bot 覆盖结果" MODIFIED="1666969206700" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Arknights" />
     <SUITE FILE_PATH="coverage/pythonProject$arknights_api.coverage" NAME="arknights_api 覆盖结果" MODIFIED="1666624492540" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Arknights/src/plugins/utils/ark_api" />
     <SUITE FILE_PATH="coverage/pythonProject$get_ark_data.coverage" NAME="get_ark_data 覆盖结果" MODIFIED="1666624401369" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Arknights/src/plugins/utils/ark_api" />
     <SUITE FILE_PATH="coverage/pythonProject$cal_gacha_log.coverage" NAME="cal_gacha_log 覆盖结果" MODIFIED="1666839256371" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Arknights/src/plugins/ark/ark_gachalog" />

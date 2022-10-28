@@ -8,7 +8,8 @@ from typing import Tuple, Union
 import matplotlib
 from nonebot.log import logger
 from PIL import Image, ImageDraw
-from matplotlib import pyplot as plt, font_manager
+import numpy
+from matplotlib import pyplot as plt, font_manager, cm
 
 from ..utils.draw_image_tools.send_image_tool import convert_img
 from ..utils.draw_image_tools.draw_image_tool import get_simple_bg
@@ -42,23 +43,23 @@ green_color = (74, 189, 119)
 NOT_USED_POOL_MAP = {'常驻标准寻访'}
 
 
-async def _get_tag(level: int) -> Image.Image:
-    """
-    :获取标签
-    tag 1: 非酋
-    tag 2: 小非
-    tag 3: 稳定
-    tag 4: 小欧
-    tag 5: 欧皇
-    """
-    return Image.open(TEXT_PATH / f'tag_{level}.png')
+# async def _get_tag(level: int) -> Image.Image:
+#     """
+#     :获取标签
+#     tag 1: 非酋
+#     tag 2: 小非
+#     tag 3: 稳定
+#     tag 4: 小欧
+#     tag 5: 欧皇
+#     """
+#     return Image.open(TEXT_PATH / f'tag_{level}.png')
 
 
 async def _draw_card(
         img: Image.Image,
         xy_point: Tuple[int, int],
         # type: str,
-        # name: str,
+        name: str,
         gacha_num: int,
 ):
     card_img = Image.open(TEXT_PATH / 'item_bg.png')
@@ -83,9 +84,9 @@ async def _draw_card(
     #     .convert('RGBA')
     #     .resize((108, 108))
     # )
-    _id = 1
+    _id = await name_to_avatar_id(name)
     item_pic = (
-        Image.open(AVATAR_PATH / f'{_id}.jpg')
+        Image.open(AVATAR_PATH / f'char_{_id}_{name}.jpg')
         .convert('RGBA')
         .resize((300, 312))
     )
@@ -190,13 +191,29 @@ async def draw_gachalogs_img(uid: str) -> Union[bytes, str]:
     data = [six_star_num, five_star_num, four_star_num, three_star_num]
     explode = (0.1, 0.05, 0.025, 0)
     labels = ['six_star', 'five_star', 'four_star', 'three_star']
-    colors = ['red', 'orange', 'yellow', 'green']
+    # colors = ['red', 'orange', 'yellow', 'green']
     sizes = [data[0] / Num * 100, data[1] / Num * 100, data[2] / Num * 100, data[3] / Num * 100]
-    plt.pie(sizes, shadow=False, colors=colors, explode=explode, labels=labels)
-    plt.legend()
+    # ax = plt.subplots(figsize=(4, 4), facecolor='#cc00ff')
+    colors = cm.bone(numpy.arange(len(sizes)) / len(sizes))
+    plt.pie(sizes,
+            shadow=False,
+            colors=colors,
+            explode=explode,
+            # labels=labels,
+            autopct='%1.1f%%',
+            pctdistance=0.8,
+            # textprops={'fontsize': 15, 'color': '#8B1A1A'},
+            )
+    # plt.legend(loc='upper right', fontsize=10, bbox_to_anchor=(1, 1), borderaxespad=0.4)
     plt.axis('square')
-    plt.savefig('pie.png', format='png', bbox_inches='tight', transparent=True, dpi=600, facecolor='none')
-    pie = Image.open('./pie.png').resize((800, 800))
+    plt.savefig('pie.png',
+                format='png',
+                bbox_inches='tight',
+                transparent=True,
+                dpi=600,
+                facecolor='none'
+                )
+    pie = Image.open('./pie.png').resize((850, 850))
     bg_img.paste(pie, (100, 875), pie)
 
     # 处理title
@@ -204,40 +221,23 @@ async def draw_gachalogs_img(uid: str) -> Union[bytes, str]:
     type_list = ['单up池', '专属推荐干员寻访', '联合寻访', '常驻标准寻访']
     y_extend = 0
     for index, i in enumerate(type_list):
-        # title = Image.open(TEXT_PATH / 'gahca_title.png')
-        # # title_pic = (
-        # #     Image.open(STAND_PATH / f'{total_data[i]["item"]}.png')
-        # #     .convert('RGBA')
-        # #     .resize((1292, 792))
-        # # )
-        # temp_pic = Image.new('RGBA', (800, 300), (0, 0, 0, 0))
-        # # temp_pic.paste(title_pic, (-70, -56), title_pic)
-        # temp_mask = Image.new('RGBA', (800, 300), (0, 0, 0, 0))
-        # temp_mask.paste(temp_pic, (0, 0), title_mask)
-        # temp_mask.putalpha(
-        #     temp_mask.getchannel('A').point(
-        #         lambda x: round(x * 0.6) if x > 0 else 0
-        #     )
-        # )
-        # title = Image.alpha_composite(title, temp_mask)
-
-        if total_data[i]['avg'] == 0:
-            level = 3
-        else:
-            # 非酋 <= 90
-            # 小非 <= 80
-            # 稳定 <= 72
-            # 小欧 <= 60
-            # 欧皇 <= 43
-            # 武器统一减10
-            for num_index, num in enumerate([42, 58, 68, 75, 90]):
-                if i == '武器祈愿':
-                    num -= 10
-                if total_data[i]['avg'] <= num:
-                    level = 5 - num_index
-                    break
-            else:
-                level = 3
+        # if total_data[i]['avg'] == 0:
+        #     level = 3
+        # else:
+        #     # 非酋 <= 90
+        #     # 小非 <= 80
+        #     # 稳定 <= 72
+        #     # 小欧 <= 60
+        #     # 欧皇 <= 43
+        #     # 武器统一减10
+        #     for num_index, num in enumerate([42, 58, 68, 75, 90]):
+        #         if i == '武器祈愿':
+        #             num -= 10
+        #         if total_data[i]['avg'] <= num:
+        #             level = 5 - num_index
+        #             break
+        #     else:
+        #         level = 3
 
         # tag_pic = await _get_tag(level)
         # tag_pic = tag_pic.resize((208, 88))

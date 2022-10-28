@@ -6,7 +6,7 @@ from ...version import Arknights_version
 with open(
     Path(__file__).parents[1]
     / 'map'
-    / f'avatarName2Element_mapping_{Arknights_version}.json',
+    / f'avatarId2Name_mapping_{Arknights_version}.json',
     'r',
     encoding='utf8',
 ) as fp:
