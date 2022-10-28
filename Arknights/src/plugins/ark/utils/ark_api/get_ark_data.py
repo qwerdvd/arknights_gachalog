@@ -144,8 +144,6 @@ async def get_gacha_log_by_token(
     temp = []
     if channelMasterId == 2:
         HEADER['Referer'] = 'https://ak.hypergryph.com/user/bilibili/gacha'
-    # for gacha_type in gacha_type_meta_data:
-    #     print(gacha_type)
     end_id = 0
     for page in range(1, 999):
         raw_data = await _ark_request(
@@ -167,59 +165,29 @@ async def get_gacha_log_by_token(
         if not data:
             break
         end_id = data[-1]['ts']
-        # print(data)
-        # print(data)
-        # print(range(len(data)))
-        i = 0
-        flag = 0
-        # while flag == 0:
         for i in range(len(data)):
             if data[-i]['pool'] == '专属推荐干员寻访':
                 gacha_type = '专属推荐干员寻访'
-                if data[-i] not in full_data[gacha_type]:
-                    # print(f'{gacha_type}{data[-i]}')
+                if data[-i] not in full_data['专属推荐干员寻访']:
                     temp.append(data[-i])
-                full_data['gacha_type'][0:0] = temp
+                full_data[gacha_type][0:0] = temp
                 temp = []
-                # if (len(full_data[gacha_type])) >= 1:
-                #     if int(data[-1]['ts']) <= int(
-                #             full_data[gacha_type][0]['ts']
-                #     ):
-                #         full_data[gacha_type].extend(data)
-                #     else:
-                #         full_data[gacha_type][0:0] = data
-                # else:
-                #     full_data[gacha_type].extend(data)
             elif data[-i]['pool'] == '联合寻访':
                 if data[-i] not in full_data['联合寻访']:
-                    # print(f'联合寻访{data[-i]}')
                     temp.append(data[-i])
                 full_data['联合寻访'][0:0] = temp
+                temp = []
             elif data[-i]['pool'] == '常驻标准寻访':
-                if data[-i] not in full_data['常驻标准寻访']:
-                    # print(f'常驻标准寻访{data[-i]}')
-                    temp.append(data[-i])
-                full_data['常驻标准寻访'][0:0] = temp
+                gacha_type = '常驻标准寻访'
+                if data[-i] not in full_data[gacha_type]:
+                    print(f'常驻标准寻访{data[-i]}')
+                full_data[gacha_type][0:0] = temp
+                temp = []
             else:
-                if data[-i]['pool'] not in full_data['单up池']:
-                    # print(f'单up池{data[-i]}')
+                if data[-i] not in full_data['单up池']:
                     temp.append(data[-i])
                 full_data['单up池'][0:0] = temp
-            temp = []
-            i += 1
-            # print(full_data)
-            # break
-        # print(full_data)
-        # for gacha_type in gacha_type_meta_data:
-        #     if (len(full_data[gacha_type])) >= 1:
-        #         if int(data[-1]['ts']) <= int(
-        #                 full_data[gacha_type][0]['ts']
-        #         ):
-        #             full_data[gacha_type].extend(data)
-        #         else:
-        #             full_data[gacha_type][0:0] = data
-        #     else:
-        #         full_data[gacha_type].extend(data)
+                temp = []
+        temp = []
         await asyncio.sleep(0.5)
-    # print(full_data)
     return full_data

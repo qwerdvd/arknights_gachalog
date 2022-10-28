@@ -49,33 +49,31 @@ async def save_gachalogs(uid: str, raw_data: Optional[dict] = None):
     gachalogs_path = path / 'gacha_logs.json'
 
     gachalogs_history = None
-    old_six_star_gacha_num = 0
-    old_five_star_gacha_num = 0
-    old_four_star_gacha_num = 0
-    old_three_star_gacha_num = 0
+    old_six_star_gacha_num, old_five_star_gacha_num = 0, 0
+    old_four_star_gacha_num, old_three_star_gacha_num = 0, 0
     old_all_gacha_num = 0
     if gachalogs_path.exists():
         with open(gachalogs_path, "r", encoding='UTF-8') as f:
             gachalogs_history = json.load(f)
-        gachalogs_history = gachalogs_history['data']
         old_six_star_gacha_num = gachalogs_history['six_star_gacha_num']
         old_five_star_gacha_num = gachalogs_history['five_star_gacha_num']
         old_four_star_gacha_num = gachalogs_history['four_star_gacha_num']
         old_three_star_gacha_num = gachalogs_history['three_star_gacha_num']
         old_all_gacha_num = gachalogs_history['all_gacha_num']
+        gachalogs_history = gachalogs_history['data']
 
     # 获取新抽卡记录
     if raw_data is None:
         raw_data = await get_gacha_log_by_token(uid, gachalogs_history)
     else:
-        new_data = {'List': [], '专属推荐干员寻访': [], '联合寻访': [], '常驻标准寻访': []}
+        new_data = {'单up池': [], '专属推荐干员寻访': [], '联合寻访': [], '常驻标准寻访': []}
         if gachalogs_history:
-            for i in ['List']:
+            for i in ['单up池', '专属推荐干员寻访', '联合寻访', '常驻标准寻访']:
                 for item in raw_data[i]:
                     if item not in gachalogs_history[i]:
                         new_data[i].append(item)
             raw_data = new_data
-            for i in ['List']:
+            for i in ['单up池', '专属推荐干员寻访', '联合寻访', '常驻标准寻访']:
                 raw_data[i].extend(gachalogs_history[i])
 
     if raw_data == {}:
