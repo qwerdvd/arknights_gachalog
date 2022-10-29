@@ -15,6 +15,7 @@ from ..utils.draw_image_tools.send_image_tool import convert_img
 from ..utils.draw_image_tools.draw_image_tool import get_simple_bg
 from ..utils.fonts.fonts import font_origin, ys_font_origin
 from ..utils.alias.avatarId_and_name_covert import name_to_avatar_id
+from ..utils.alias.chName_to_enName import chName_to_enName
 # from ..utils.download_resource.RESOURCE_PATH import (
 #     CHAR_STAND_PATH as STAND_PATH,
 # )
@@ -30,6 +31,7 @@ title_mask = Image.open(TEXT_PATH / 'title_mask.png')
 up_tag = Image.open(TEXT_PATH / 'up.png')
 
 gs_font_110 = ys_font_origin(110)
+gs_font_45 = ys_font_origin(45)
 gs_font_23 = font_origin(23)
 gs_font_26 = font_origin(26)
 gs_font_28 = font_origin(28)
@@ -64,8 +66,8 @@ async def _draw_card(
 ):
     card_img = Image.open(TEXT_PATH / 'item_bg.png')
     card_img_draw = ImageDraw.Draw(card_img)
-    point = (1, 0)
-    text_point = (55, 124)
+    point = (0, 1)
+    text_point = (150, 370)
     # is_up = False
     # if type == '角色':
     #     if name not in ['莫娜', '迪卢克', '七七', '刻晴', '琴']:
@@ -85,21 +87,22 @@ async def _draw_card(
     #     .resize((108, 108))
     # )
     _id = await name_to_avatar_id(name)
+    _name = await chName_to_enName(name)
     item_pic = (
-        Image.open(AVATAR_PATH / f'char_{_id}_{name}.jpg')
+        Image.open(AVATAR_PATH / f'char_{_id}_{_name}.png')
         .convert('RGBA')
         .resize((300, 312))
     )
-    card_img.paste(item_pic, point)
+    card_img.paste(item_pic, point, item_pic)
     # card_img.paste(item_pic, point, item_pic)
-    if gacha_num >= 81:
+    if gacha_num >= 55:
         text_color = red_color
-    elif gacha_num <= 55:
+    elif gacha_num <= 30:
         text_color = green_color
     else:
         text_color = brown_color
     card_img_draw.text(
-        text_point, f'{gacha_num}抽', text_color, gs_font_23, 'mm'
+        text_point, f'{name}\n{gacha_num}抽', text_color, gs_font_45, 'mm', align='center'
     )
     # if is_up:
     #     card_img.paste(up_tag, (47, -2), up_tag)
@@ -144,7 +147,13 @@ async def draw_gachalogs_img(uid: str) -> Union[bytes, str]:
                     total_data[i]['total'] += 1
                 else:
                     num += 1
-        # total_data['List']['item'] = await name_to_avatar_id(total_data['List']['item'])
+        # 倒序循环删除十连中不为六星的数据
+        for j in range(len(total_data[i]['list'])):
+            for k in range(len(total_data[i]['list'][j]['chars']) - 1, -1, -1):
+                if total_data[i]['list'][j]['chars'][k]['rarity'] != 5:
+                    total_data[i]['list'][j]['chars'].pop(k)
+
+        total_data[i]['item'] = await name_to_avatar_id(total_data[i]['item'])
         total_data[i]['remain'] = num - 1
         if len(num_temp) == 0:
             total_data[i]['avg'] = 0
@@ -286,19 +295,22 @@ async def draw_gachalogs_img(uid: str) -> Union[bytes, str]:
         # bg_img.paste(title, (0, y), title)
         # bg_img.paste(title, (0, y), title)
         tasks = []
+        name = []
         for item_index, item in enumerate(total_data[i]['list']):
             item_x = (item_index % 6) * 350 + 100
             item_y = (item_index // 6) * 419 + y + title_y
             xy_point = (item_x, item_y)
-            tasks.append(
-                _draw_card(
-                    bg_img,
-                    xy_point,
-                    # item['item_type'],
-                    # item['name'],
-                    item['gacha_num'],
+            print(item)
+            for j in range(len(item['chars'])):
+                tasks.append(
+                    _draw_card(
+                        bg_img,
+                        xy_point,
+                        # item['item_type'],
+                        item['chars'][j]['name'],
+                        item['gacha_num'],
+                    )
                 )
-            )
         await asyncio.gather(*tasks)
         tasks.clear()
 
