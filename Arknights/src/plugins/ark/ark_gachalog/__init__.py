@@ -11,6 +11,7 @@ from nonebot.adapters.onebot.v11 import (
 )
 
 from .get_gachalogs import save_gachalogs
+from .get_recharge_record import save_recharge_record
 # from ..genshinuid_meta import register_menu
 from ..utils.nonebot2.rule import FullCommand
 from .draw_gachalogs import draw_gachalogs_img
@@ -20,6 +21,7 @@ from ..utils.exception.handle_exception import handle_exception
 from .export_and_import import export_gachalogs, import_gachalogs
 
 get_gacha_log = on_command('刷新抽卡记录', rule=FullCommand())
+get_recharge_record = on_command('刷新充值记录', rule=FullCommand())
 get_gacha_log_card = on_command('抽卡记录', rule=FullCommand())
 import_gacha_log = on_notice()
 export_gacha_log = on_command('导出抽卡记录', rule=FullCommand())
@@ -126,6 +128,33 @@ async def send_daily_info(
     uid = await select_db(event.user_id, mode='uid')
     if isinstance(uid, str):
         im = await save_gachalogs(uid)
+        await matcher.finish(im)
+    else:
+        await matcher.finish(UID_HINT)
+
+
+@get_recharge_record.handle()
+@handle_exception('刷新充值记录')
+# @register_menu(
+#     '刷新充值记录',
+#     '刷新充值记录',
+#     '刷新你的方舟充值记录本地缓存',
+#     detail_des=(
+#         '指令：'
+#         '<ft color=(238,120,0)>刷新充值记录</ft>\n'
+#         ' \n'
+#         '刷新你的方舟充值记录本地缓存\n'
+#         '需要<ft color=(238,120,0)>绑定token</ft>'
+#     ),
+# )
+async def send_recharge_record_info(
+    event: Union[GroupMessageEvent, PrivateMessageEvent],
+    matcher: Matcher,
+):
+    logger.info('开始执行[刷新充值记录]')
+    uid = await select_db(event.user_id, mode='uid')
+    if isinstance(uid, str):
+        im = await save_recharge_record(uid)
         await matcher.finish(im)
     else:
         await matcher.finish(UID_HINT)

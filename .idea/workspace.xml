@@ -4,12 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ddad0908-cca9-49b4-b000-5588ceb95ace" name="变更" comment="WIP: 角色头像的对应">
-      <change afterPath="$PROJECT_DIR$/Arknights/src/plugins/ark/utils/alias/chName_to_enName.py" afterDir="false" />
+    <list default="true" id="ddad0908-cca9-49b4-b000-5588ceb95ace" name="变更" comment="feat: 完成抽卡记录中角色头像的对应">
+      <change afterPath="$PROJECT_DIR$/Arknights/src/plugins/ark/ark_gachalog/get_recharge_record.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Arknights/pie.png" beforeDir="false" afterPath="$PROJECT_DIR$/Arknights/pie.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Arknights/src/plugins/ark/ark_gachalog/draw_gachalogs.py" beforeDir="false" afterPath="$PROJECT_DIR$/Arknights/src/plugins/ark/ark_gachalog/draw_gachalogs.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Arknights/src/plugins/ark/utils/map/avatarName2Element_mapping_32.5.0.json" beforeDir="false" afterPath="$PROJECT_DIR$/Arknights/src/plugins/ark/utils/map/chName_to_enName_mapping_32.5.0.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Arknights/src/plugins/ark/ark_gachalog/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/Arknights/src/plugins/ark/ark_gachalog/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Arknights/src/plugins/ark/ark_gachalog/get_gachalogs.py" beforeDir="false" afterPath="$PROJECT_DIR$/Arknights/src/plugins/ark/ark_gachalog/get_gachalogs.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Arknights/src/plugins/ark/utils/ark_api/arknights_api.py" beforeDir="false" afterPath="$PROJECT_DIR$/Arknights/src/plugins/ark/utils/ark_api/arknights_api.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Arknights/src/plugins/ark/utils/ark_api/get_ark_data.py" beforeDir="false" afterPath="$PROJECT_DIR$/Arknights/src/plugins/ark/utils/ark_api/get_ark_data.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -157,7 +158,7 @@
       <workItem from="1666928110043" duration="2474000" />
       <workItem from="1666930829653" duration="13218000" />
       <workItem from="1666967475305" duration="3725000" />
-      <workItem from="1667010970395" duration="4240000" />
+      <workItem from="1667010970395" duration="8577000" />
     </task>
     <task id="LOCAL-00001" summary="init upload">
       <created>1666534120762</created>
@@ -397,7 +398,14 @@
       <option name="project" value="LOCAL" />
       <updated>1666971198447</updated>
     </task>
-    <option name="localTasksCounter" value="35" />
+    <task id="LOCAL-00035" summary="feat: 完成抽卡记录中角色头像的对应">
+      <created>1667015249265</created>
+      <option name="number" value="00035" />
+      <option name="presentableId" value="LOCAL-00035" />
+      <option name="project" value="LOCAL" />
+      <updated>1667015249265</updated>
+    </task>
+    <option name="localTasksCounter" value="36" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -446,11 +454,12 @@
     <MESSAGE value="fix: 修复抽卡记录逻辑错误" />
     <MESSAGE value="feat: 完成一部分抽卡记录的绘制" />
     <MESSAGE value="WIP: 角色头像的对应" />
-    <option name="LAST_COMMIT_MESSAGE" value="WIP: 角色头像的对应" />
+    <MESSAGE value="feat: 完成抽卡记录中角色头像的对应" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat: 完成抽卡记录中角色头像的对应" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/pythonProject$get_name.coverage" NAME="get_name 覆盖结果" MODIFIED="1666791861728" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Arknights/src/plugins/ark/tool" />
-    <SUITE FILE_PATH="coverage/pythonProject$bot.coverage" NAME="bot 覆盖结果" MODIFIED="1667014581453" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Arknights" />
+    <SUITE FILE_PATH="coverage/pythonProject$bot.coverage" NAME="bot 覆盖结果" MODIFIED="1667019323362" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Arknights" />
     <SUITE FILE_PATH="coverage/pythonProject$arknights_api.coverage" NAME="arknights_api 覆盖结果" MODIFIED="1666624492540" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Arknights/src/plugins/utils/ark_api" />
     <SUITE FILE_PATH="coverage/pythonProject$get_ark_data.coverage" NAME="get_ark_data 覆盖结果" MODIFIED="1666624401369" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Arknights/src/plugins/utils/ark_api" />
     <SUITE FILE_PATH="coverage/pythonProject$cal_gacha_log.coverage" NAME="cal_gacha_log 覆盖结果" MODIFIED="1666839256371" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Arknights/src/plugins/ark/ark_gachalog" />

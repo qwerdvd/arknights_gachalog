@@ -13,6 +13,7 @@ from .arknights_api import (
     GET_AUTHKEY_URL,
     GET_AUTHKEY_URL_Bilibili,
     GET_UID_URL,
+    GET_RECHARGE_RECORD_URL,
 )
 
 _HEADER = {
@@ -192,4 +193,53 @@ async def get_gacha_log_by_token(
                 temp = []
         temp = []
         await asyncio.sleep(0.5)
+    return full_data
+
+
+async def get_recharge_record_by_token(
+        uid: str, old_data: Optional[dict] = None
+) -> Optional[dict]:
+    """
+    :说明:
+        获取充值记录。
+    :参数:
+        * uid (str): 用户UID。
+        * old_data (dict): 旧数据。
+    :返回:
+        * result (dict): 充值记录。
+    :提示：
+        * b服暂时查不了
+    """
+    token = await get_token(uid)
+    HEADER = copy.deepcopy(_HEADER)
+    channelMasterId = await get_channelMasterId(uid)
+    if channelMasterId == 2:
+        return {}
+    payload = {
+        "appId": 1,
+        "channelMasterId": channelMasterId,
+        "channelToken": {
+            "token": f"{token}"
+        }
+    }
+    HEADER['Referer'] = 'https://ak.hypergryph.com'
+    HEADER['Origin'] = 'https://ak.hypergryph.com'
+    full_data = old_data or []
+    temp = []
+    end_id = 0
+    async with aiohttp.ClientSession() as session:
+        async with session.post(GET_RECHARGE_RECORD_URL, headers=HEADER, json=payload) as response:
+            raw_data = await response.json()
+    await asyncio.sleep(0.9)
+    if 'data' in raw_data and raw_data['data']:
+        data = raw_data['data']
+    else:
+        return {}
+    end_id = data[-1]['orderId']
+    for i in range(len(data)):
+        if data[-i] not in full_data:
+            temp.append(data[-i])
+        full_data[0:0] = temp
+        temp = []
+    temp = []
     return full_data

@@ -9,3 +9,5 @@ GET_AUTHKEY_URL_Bilibili = WEB_URL + '/account/info/ak-b'
 GET_GACHA_LOG_URL = BASIC_URL + '/user/api/inquiry/gacha'
 
 GET_UID_URL = API_URL + '/u8/user/info/v1/basic'
+
+GET_RECHARGE_RECORD_URL = API_URL + '/u8/pay/v1/recent'

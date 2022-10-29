@@ -40,7 +40,7 @@ async def save_gachalogs(uid: str, raw_data: Optional[dict] = None):
         path.mkdir(parents=True, exist_ok=True)
     # 获取当前时间
     now = datetime.now()
-    current_time = now.strftime('%Y-%m-%d %H-%M-%S')
+    current_time = now.strftime('%Y-%m-%d %H:%M:%S')
 
     # 初始化最后保存的数据
     result = {}
@@ -80,14 +80,6 @@ async def save_gachalogs(uid: str, raw_data: Optional[dict] = None):
         return '你还没有绑定过Cookie噢~'
     if not raw_data:
         return '你还没有绑定过Cookie或者Cookie已失效~'
-
-    # # 校验值
-    # temp_data = {'单up池': [], '专属推荐干员寻访': [], '联合寻访': [], '常驻标准寻访': []}
-    # # for i in ['List']:
-    # for item in ['单up池', '专属推荐干员寻访', '联合寻访', '常驻标准寻访']:
-    #     if 'ts' in item:
-    #         temp_data['List'].append(item)
-    # raw_data = temp_data
 
     result['uid'] = uid
     result['data_time'] = current_time
