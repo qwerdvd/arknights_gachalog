@@ -20,15 +20,15 @@ from ..utils.db_operation.db_operation import select_db
 from ..utils.exception.handle_exception import handle_exception
 from .export_and_import import export_gachalogs, import_gachalogs
 
-get_gacha_log = on_command('刷新抽卡记录', rule=FullCommand())
-get_recharge_record = on_command('刷新充值记录', rule=FullCommand())
-get_gacha_log_card = on_command('抽卡记录', rule=FullCommand())
+get_gacha_log = on_command('ark刷新抽卡记录', rule=FullCommand())
+get_recharge_record = on_command('ark刷新充值记录', rule=FullCommand())
+get_gacha_log_card = on_command('ark抽卡记录', rule=FullCommand())
 import_gacha_log = on_notice()
-export_gacha_log = on_command('导出抽卡记录', rule=FullCommand())
+export_gacha_log = on_command('ark导出抽卡记录', rule=FullCommand())
 
 
 @export_gacha_log.handle()
-@handle_exception('导出抽卡记录')
+@handle_exception('ark导出抽卡记录')
 async def export_gacha_log_info(
     event: GroupMessageEvent,
     matcher: Matcher,
@@ -57,7 +57,7 @@ async def export_gacha_log_info(
 
 
 @import_gacha_log.handle()
-@handle_exception('导入抽卡记录')
+@handle_exception('ark导入抽卡记录')
 async def import_gacha_log_info(event: NoticeEvent, matcher: Matcher):
     args = event.dict()
     if args['notice_type'] != 'offline_file':
@@ -76,7 +76,7 @@ async def import_gacha_log_info(event: NoticeEvent, matcher: Matcher):
 
 
 @get_gacha_log_card.handle()
-@handle_exception('抽卡记录')
+@handle_exception('ark抽卡记录')
 # @register_menu(
 #     '查询抽卡记录',
 #     '抽卡记录',
@@ -93,7 +93,7 @@ async def send_gacha_log_card_info(
     event: Union[GroupMessageEvent, PrivateMessageEvent],
     matcher: Matcher,
 ):
-    logger.info('开始执行[抽卡记录]')
+    logger.info('ark开始执行[抽卡记录]')
 
     uid = await select_db(event.user_id, mode='uid')
     if isinstance(uid, str):
@@ -107,7 +107,7 @@ async def send_gacha_log_card_info(
 
 
 @get_gacha_log.handle()
-@handle_exception('刷新抽卡记录')
+@handle_exception('ark刷新抽卡记录')
 # @register_menu(
 #     '刷新抽卡记录',
 #     '刷新抽卡记录',
@@ -134,7 +134,7 @@ async def send_daily_info(
 
 
 @get_recharge_record.handle()
-@handle_exception('刷新充值记录')
+@handle_exception('ark刷新充值记录')
 # @register_menu(
 #     '刷新充值记录',
 #     '刷新充值记录',

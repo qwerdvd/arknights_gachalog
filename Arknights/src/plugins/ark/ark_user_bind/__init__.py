@@ -19,12 +19,12 @@ from ..utils.nonebot2.rule import FullCommand
 from ..utils.exception.handle_exception import handle_exception
 from ..utils.db_operation.db_operation import bind_db, delete_db, get_user_bind_data, select_db
 
-add_cookie = on_command('添加', permission=PRIVATE_FRIEND)
+add_cookie = on_command('ark添加', permission=PRIVATE_FRIEND)
 # bind_info = on_command(
 #     '绑定信息', priority=priority, block=True, rule=FullCommand()
 # )
 bind = on_regex(
-    r'^(绑定|切换|解绑|删除)(uid|UID)([0-9]+)?$', priority=priority
+    r'^(ark绑定|切换|解绑|删除)(uid|UID)([0-9]+)?$', priority=priority
 )
 
 
