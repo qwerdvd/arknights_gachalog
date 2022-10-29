@@ -163,23 +163,29 @@ async def draw_gachalogs_img(uid: str) -> Union[bytes, str]:
 
     # 常量偏移数据
     single_y = 1000
-    title_y = 2000
+    main_title_y = 2000
+    title_y = 190
 
     # 计算图片尺寸
     normal_y = (
                        1 + ((total_data['单up池']['total'] - 1) // 6)
-               ) * single_y + title_y
-    # char_y = (
-    #     1 + ((total_data['角色祈愿']['total'] - 1) // 6)
-    # ) * single_y + title_y
-    # weapon_y = (
-    #     1 + ((total_data['武器祈愿']['total'] - 1) // 6)
-    # ) * single_y + title_y
+               ) * single_y + main_title_y
+    # ['专属推荐干员寻访', '联合寻访', '常驻标准寻访']
+    list_1 = ['专属推荐干员寻访', '联合寻访', '常驻标准寻访']
+    changzhu_y = (
+        1 + ((total_data['常驻标准寻访']['total'] - 1) // 6)
+    ) * single_y + title_y
+    zhuanshu_y = (
+        1 + ((total_data['专属推荐干员寻访']['total'] - 1) // 6)
+    ) * single_y + title_y
+    lianhe_y = (
+        1 + ((total_data['联合寻访']['total'] - 1) // 6)
+    ) * single_y + title_y
 
     # 获取背景图片各项参数
     based_w = 2300
-    based_h = normal_y + 200
-    # based_h = normal_y + char_y + weapon_y + 200
+    # based_h = normal_y + 200
+    based_h = normal_y + changzhu_y + zhuanshu_y + lianhe_y + 200
     white_overlay = Image.new('RGBA', (based_w, based_h), (255, 255, 255, 220))
     bg_img = await get_simple_bg(based_w, based_h)
     bg_img.paste(white_overlay, (0, 0), white_overlay)
@@ -227,80 +233,29 @@ async def draw_gachalogs_img(uid: str) -> Union[bytes, str]:
 
     # 处理title
     # {'total': 0, 'avg': 0, 'remain': 0, 'list': []}
-    type_list = ['单up池', '专属推荐干员寻访', '联合寻访', '常驻标准寻访']
+    # 专属寻访先不计算
+    type_list = ['单up池', '常驻标准寻访', '联合寻访']
     y_extend = 0
     for index, i in enumerate(type_list):
-        # if total_data[i]['avg'] == 0:
-        #     level = 3
-        # else:
-        #     # 非酋 <= 90
-        #     # 小非 <= 80
-        #     # 稳定 <= 72
-        #     # 小欧 <= 60
-        #     # 欧皇 <= 43
-        #     # 武器统一减10
-        #     for num_index, num in enumerate([42, 58, 68, 75, 90]):
-        #         if i == '武器祈愿':
-        #             num -= 10
-        #         if total_data[i]['avg'] <= num:
-        #             level = 5 - num_index
-        #             break
-        #     else:
-        #         level = 3
-
-        # tag_pic = await _get_tag(level)
-        # tag_pic = tag_pic.resize((208, 88))
-        # # title.paste(tag_pic, (35, 54), tag_pic)
-        # title_draw = ImageDraw.Draw(title)
-        # # 卡池
-        # title_draw.text((245, 86), i, first_color, gs_font_40, 'lm')
-        # 抽卡时间
-        # if gacha_data['data'][i]:
-        #     ts = gacha_data['data'][i][0]['ts']
-        #     # first_time = datetime.datetime.strptime(first_timestamp, '%Y-%m-%d')
-        #     local_gacha_time = time.localtime(ts)
-        #     first_time = time.strftime('%Y-%m-%d %H:%M:%S', local_gacha_time)
-        # else:
-        #     first_time = '暂未抽过卡!'
-        # title_draw.text((245, 123), first_time, first_color, gs_font_28, 'lm')
-        # 平均抽卡数量
-        # title_draw.text(
-        #     (108, 209),
-        #     str(total_data[i]['avg']),
-        #     first_color,
-        #     gs_font_40,
-        #     'mm',
-        # )
-        # title_draw.text(
-        #     (261, 209),
-        #     str(gacha_data[f'{CHANGE_MAP[i]}_gacha_num']),
-        #     first_color,
-        #     gs_font_40,
-        #     'mm',
-        # )
-        # title_draw.text(
-        #     (104, 160),
-        #     str(total_data[i]['remain']),
-        #     red_color,
-        #     gs_font_28,
-        #     'mm',
-        # )
+        if index != 0:
+            title = Image.open(TEXT_PATH / f'pool_title_{index}.png')
         y_extend += (
-            (1 + ((total_data[type_list[index - 1]]['total'] - 1) // 6)) * 50
+            (1 + ((total_data[type_list[index - 1]]['total'] - 1) // 6)) * 419
             if index != 0
             else 0
         )
-        y = y_extend + 10
-        # y = index * title_y + y_extend + 500
+        y_1 = y_extend + 10
+        y = index * title_y + y_extend + 2000
         # bg_img.paste(title, (0, y), title)
-        # bg_img.paste(title, (0, y), title)
+        if index != 0:
+            bg_img.paste(title, (52, y), title)
         tasks = []
-        name = []
         for item_index, item in enumerate(total_data[i]['list']):
             item_x = (item_index % 6) * 350 + 100
-            item_y = (item_index // 6) * 419 + y + title_y
+            item_y = (item_index // 6) * 419 + y_1 + main_title_y
             xy_point = (item_x, item_y)
             print(item)
+            # if item['name'] == '单up池':
             for j in range(len(item['chars'])):
                 tasks.append(
                     _draw_card(
