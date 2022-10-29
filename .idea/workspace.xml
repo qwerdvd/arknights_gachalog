@@ -4,10 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ddad0908-cca9-49b4-b000-5588ceb95ace" name="变更" comment="feat: 初步完成抽卡记录绘图">
+    <list default="true" id="ddad0908-cca9-49b4-b000-5588ceb95ace" name="变更" comment="fix: 修改一部分相应头">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Arknights/ID_DATA.db" beforeDir="false" afterPath="$PROJECT_DIR$/Arknights/ID_DATA.db" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Arknights/src/plugins/ark/ark_gachalog/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/Arknights/src/plugins/ark/ark_gachalog/__init__.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Arknights/src/plugins/ark/ark_user_bind/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/Arknights/src/plugins/ark/ark_user_bind/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Arknights/src/plugins/ark/utils/db_operation/database/CookiesDAL.py" beforeDir="false" afterPath="$PROJECT_DIR$/Arknights/src/plugins/ark/utils/db_operation/database/CookiesDAL.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -156,7 +158,8 @@
       <workItem from="1666930829653" duration="13218000" />
       <workItem from="1666967475305" duration="3725000" />
       <workItem from="1667010970395" duration="8853000" />
-      <workItem from="1667026137083" duration="4098000" />
+      <workItem from="1667026137083" duration="5668000" />
+      <workItem from="1667033287262" duration="606000" />
     </task>
     <task id="LOCAL-00001" summary="init upload">
       <created>1666534120762</created>
@@ -417,7 +420,14 @@
       <option name="project" value="LOCAL" />
       <updated>1667029756047</updated>
     </task>
-    <option name="localTasksCounter" value="38" />
+    <task id="LOCAL-00038" summary="fix: 修改一部分相应头">
+      <created>1667030538881</created>
+      <option name="number" value="00038" />
+      <option name="presentableId" value="LOCAL-00038" />
+      <option name="project" value="LOCAL" />
+      <updated>1667030538881</updated>
+    </task>
+    <option name="localTasksCounter" value="39" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -469,11 +479,12 @@
     <MESSAGE value="feat: 完成抽卡记录中角色头像的对应" />
     <MESSAGE value="feat: 新增充值记录的保存" />
     <MESSAGE value="feat: 初步完成抽卡记录绘图" />
-    <option name="LAST_COMMIT_MESSAGE" value="feat: 初步完成抽卡记录绘图" />
+    <MESSAGE value="fix: 修改一部分相应头" />
+    <option name="LAST_COMMIT_MESSAGE" value="fix: 修改一部分相应头" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/pythonProject$get_name.coverage" NAME="get_name 覆盖结果" MODIFIED="1666791861728" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Arknights/src/plugins/ark/tool" />
-    <SUITE FILE_PATH="coverage/pythonProject$bot.coverage" NAME="bot 覆盖结果" MODIFIED="1667029055334" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Arknights" />
+    <SUITE FILE_PATH="coverage/pythonProject$bot.coverage" NAME="bot 覆盖结果" MODIFIED="1667033733928" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Arknights" />
     <SUITE FILE_PATH="coverage/pythonProject$arknights_api.coverage" NAME="arknights_api 覆盖结果" MODIFIED="1666624492540" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Arknights/src/plugins/utils/ark_api" />
     <SUITE FILE_PATH="coverage/pythonProject$get_ark_data.coverage" NAME="get_ark_data 覆盖结果" MODIFIED="1666624401369" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Arknights/src/plugins/utils/ark_api" />
     <SUITE FILE_PATH="coverage/pythonProject$cal_gacha_log.coverage" NAME="cal_gacha_log 覆盖结果" MODIFIED="1666839256371" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Arknights/src/plugins/ark/ark_gachalog" />

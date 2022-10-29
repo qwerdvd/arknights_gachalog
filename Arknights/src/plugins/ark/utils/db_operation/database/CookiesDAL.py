@@ -16,7 +16,7 @@ class CookiesDAL:
     async def get_user_data(self, uid: str) -> Optional[NewCookiesTable]:
         try:
             await self.db_session.execute(
-                ('ALTER TABLE NewCookiesTable ' 'ADD COLUMN token TEXT;')  # type: ignore
+                ('ALTER TABLE NewCookiesTable ' 'ADD COLUMN token TEXT')  # type: ignore
             )
         except Exception:
             pass
