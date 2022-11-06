@@ -1,0 +1,86 @@
+{
+  "1": {
+    "candidates": [
+      {
+        "blackboard": [
+          {
+            "key": "value",
+            "value": 3
+          },
+          {
+            "key": "def_penetrate",
+            "value": 0.4
+          }
+        ],
+        "description": "攻击重量较重（重量等级大于等于3）的敌人时，无视其防御力的40%",
+        "name": "深入骨髓",
+        "prefabKey": "1",
+        "rangeId": null,
+        "requiredPotentialRank": 0,
+        "unlockCondition": {
+          "level": 1,
+          "phase": 1
+        }
+      },
+      {
+        "blackboard": [
+          {
+            "key": "value",
+            "value": 3
+          },
+          {
+            "key": "def_penetrate",
+            "value": 0.6
+          }
+        ],
+        "description": "攻击重量较重（重量等级大于等于3）的敌人时，无视其防御力的60%",
+        "name": "深入骨髓",
+        "prefabKey": "1",
+        "rangeId": null,
+        "requiredPotentialRank": 0,
+        "unlockCondition": {
+          "level": 1,
+          "phase": 2
+        }
+      }
+    ]
+  },
+  "2": {
+    "candidates": [
+      {
+        "blackboard": [
+          {
+            "key": "atk",
+            "value": 0.08
+          }
+        ],
+        "description": "编入队伍时，所有【乌萨斯学生团】干员攻击力+8%",
+        "name": "学生楷模",
+        "prefabKey": "2",
+        "rangeId": null,
+        "requiredPotentialRank": 0,
+        "unlockCondition": {
+          "level": 1,
+          "phase": 2
+        }
+      },
+      {
+        "blackboard": [
+          {
+            "key": "atk",
+            "value": 0.1
+          }
+        ],
+        "description": "编入队伍时，所有【乌萨斯学生团】干员攻击力+10%<@ba.talpu>（+2%）</>",
+        "name": "学生楷模",
+        "prefabKey": "2",
+        "rangeId": null,
+        "requiredPotentialRank": 4,
+        "unlockCondition": {
+          "level": 1,
+          "phase": 2
+        }
+      }
+    ]
+  }
+}

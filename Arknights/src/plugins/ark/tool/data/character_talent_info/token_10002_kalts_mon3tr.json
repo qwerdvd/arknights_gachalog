@@ -1,0 +1,51 @@
+{
+  "1": {
+    "candidates": null
+  },
+  "2": {
+    "candidates": [
+      {
+        "blackboard": [
+          {
+            "key": "stun",
+            "value": 3
+          },
+          {
+            "key": "value",
+            "value": 1200
+          }
+        ],
+        "description": "-",
+        "name": null,
+        "prefabKey": "2",
+        "rangeId": "x-4",
+        "requiredPotentialRank": 0,
+        "unlockCondition": {
+          "level": 1,
+          "phase": 2
+        }
+      },
+      {
+        "blackboard": [
+          {
+            "key": "stun",
+            "value": 3.5
+          },
+          {
+            "key": "value",
+            "value": 1400
+          }
+        ],
+        "description": "-",
+        "name": null,
+        "prefabKey": "2",
+        "rangeId": "x-4",
+        "requiredPotentialRank": 4,
+        "unlockCondition": {
+          "level": 1,
+          "phase": 2
+        }
+      }
+    ]
+  }
+}

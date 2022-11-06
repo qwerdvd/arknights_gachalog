@@ -1,0 +1,90 @@
+{
+  "1": {
+    "candidates": [
+      {
+        "blackboard": [
+          {
+            "key": "attack_speed",
+            "value": 6
+          },
+          {
+            "key": "atk",
+            "value": 0.06
+          }
+        ],
+        "description": "未阻挡敌人时攻击速度+6，阻挡敌人时攻击力+6%",
+        "name": "万全",
+        "prefabKey": "1",
+        "rangeId": null,
+        "requiredPotentialRank": 0,
+        "unlockCondition": {
+          "level": 1,
+          "phase": 1
+        }
+      },
+      {
+        "blackboard": [
+          {
+            "key": "attack_speed",
+            "value": 8
+          },
+          {
+            "key": "atk",
+            "value": 0.08
+          }
+        ],
+        "description": "未阻挡敌人时攻击速度+8<@ba.talpu>（+2）</>，阻挡敌人时攻击力+8%<@ba.talpu>（+2%）</>",
+        "name": "万全",
+        "prefabKey": "1",
+        "rangeId": null,
+        "requiredPotentialRank": 4,
+        "unlockCondition": {
+          "level": 1,
+          "phase": 1
+        }
+      },
+      {
+        "blackboard": [
+          {
+            "key": "attack_speed",
+            "value": 12
+          },
+          {
+            "key": "atk",
+            "value": 0.12
+          }
+        ],
+        "description": "未阻挡敌人时攻击速度+12，阻挡敌人时攻击力+12%",
+        "name": "万全",
+        "prefabKey": "1",
+        "rangeId": null,
+        "requiredPotentialRank": 0,
+        "unlockCondition": {
+          "level": 1,
+          "phase": 2
+        }
+      },
+      {
+        "blackboard": [
+          {
+            "key": "attack_speed",
+            "value": 14
+          },
+          {
+            "key": "atk",
+            "value": 0.14
+          }
+        ],
+        "description": "未阻挡敌人时攻击速度+14<@ba.talpu>（+2）</>，阻挡敌人时攻击力+14%<@ba.talpu>（+2%）</>",
+        "name": "万全",
+        "prefabKey": "1",
+        "rangeId": null,
+        "requiredPotentialRank": 4,
+        "unlockCondition": {
+          "level": 1,
+          "phase": 2
+        }
+      }
+    ]
+  }
+}

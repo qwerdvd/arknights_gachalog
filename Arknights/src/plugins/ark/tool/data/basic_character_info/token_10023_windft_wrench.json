@@ -1,0 +1,71 @@
+{
+  "name": "可靠电池",
+  "profession": "TOKEN",
+  "subProfessionId": "notchar1",
+  "star": 5,
+  "elite": 2,
+  "max_level": 80,
+  "data": {
+    "atk": 100,
+    "attackSpeed": 100,
+    "baseAttackTime": 1,
+    "baseForceLevel": 0,
+    "blockCnt": 0,
+    "cost": 5,
+    "def": 0,
+    "frozenImmune": false,
+    "hpRecoveryPerSec": 0,
+    "levitateImmune": false,
+    "magicResistance": 0,
+    "massLevel": 0,
+    "maxDeckStackCnt": 3,
+    "maxDeployCount": 2,
+    "maxHp": 100,
+    "moveSpeed": 1,
+    "respawnTime": 15,
+    "silenceImmune": false,
+    "sleepImmune": false,
+    "spRecoveryPerSec": 1,
+    "stunImmune": false,
+    "tauntLevel": 0
+  },
+  "teamId": null,
+  "tokenKey": null,
+  "trait": {
+    "candidates": [
+      {
+        "blackboard": [],
+        "overrideDescripton": "部署后为一名友方术师或辅助干员提供攻击支援（持续20秒）",
+        "prefabKey": null,
+        "rangeId": null,
+        "requiredPotentialRank": 0,
+        "unlockCondition": {
+          "level": 1,
+          "phase": 0
+        }
+      },
+      {
+        "blackboard": [],
+        "overrideDescripton": "部署后为一名友方术师或辅助干员提供攻击支援（持续30秒）",
+        "prefabKey": null,
+        "rangeId": null,
+        "requiredPotentialRank": 0,
+        "unlockCondition": {
+          "level": 1,
+          "phase": 1
+        }
+      },
+      {
+        "blackboard": [],
+        "overrideDescripton": "部署后为一名友方术师或辅助干员提供攻击支援（持续30秒）",
+        "prefabKey": null,
+        "rangeId": null,
+        "requiredPotentialRank": 0,
+        "unlockCondition": {
+          "level": 1,
+          "phase": 2
+        }
+      }
+    ]
+  }
+}

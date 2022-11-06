@@ -1,0 +1,74 @@
+{
+  "1": {
+    "candidates": [
+      {
+        "blackboard": [
+          {
+            "key": "prob",
+            "value": 0.2
+          }
+        ],
+        "description": "获得20%的物理闪避",
+        "name": "功夫",
+        "prefabKey": "1",
+        "rangeId": null,
+        "requiredPotentialRank": 0,
+        "unlockCondition": {
+          "level": 1,
+          "phase": 1
+        }
+      },
+      {
+        "blackboard": [
+          {
+            "key": "prob",
+            "value": 0.23
+          }
+        ],
+        "description": "获得23%<@ba.talpu>（+3%）</>的物理闪避",
+        "name": "功夫",
+        "prefabKey": "1",
+        "rangeId": null,
+        "requiredPotentialRank": 4,
+        "unlockCondition": {
+          "level": 1,
+          "phase": 1
+        }
+      },
+      {
+        "blackboard": [
+          {
+            "key": "prob",
+            "value": 0.4
+          }
+        ],
+        "description": "获得40%的物理闪避",
+        "name": "功夫",
+        "prefabKey": "1",
+        "rangeId": null,
+        "requiredPotentialRank": 0,
+        "unlockCondition": {
+          "level": 1,
+          "phase": 2
+        }
+      },
+      {
+        "blackboard": [
+          {
+            "key": "prob",
+            "value": 0.43
+          }
+        ],
+        "description": "获得43%<@ba.talpu>（+3%）</>的物理闪避",
+        "name": "功夫",
+        "prefabKey": "1",
+        "rangeId": null,
+        "requiredPotentialRank": 4,
+        "unlockCondition": {
+          "level": 1,
+          "phase": 2
+        }
+      }
+    ]
+  }
+}

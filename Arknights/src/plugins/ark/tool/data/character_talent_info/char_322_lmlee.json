@@ -1,0 +1,131 @@
+{
+  "1": {
+    "candidates": [
+      {
+        "blackboard": [
+          {
+            "key": "lmlee_t_1[enemy].attack_speed",
+            "value": -7
+          },
+          {
+            "key": "lmlee_t_1[self].attack_speed",
+            "value": 7
+          },
+          {
+            "key": "cnt",
+            "value": 1
+          }
+        ],
+        "description": "老鲤阻挡目标时，使其攻击速度-7，且自身攻击速度+7；当周围八格内仅存在一个敌人时效果翻倍",
+        "name": "和气生财",
+        "prefabKey": "1",
+        "rangeId": null,
+        "requiredPotentialRank": 0,
+        "unlockCondition": {
+          "level": 1,
+          "phase": 1
+        }
+      },
+      {
+        "blackboard": [
+          {
+            "key": "lmlee_t_1[enemy].attack_speed",
+            "value": -8
+          },
+          {
+            "key": "lmlee_t_1[self].attack_speed",
+            "value": 8
+          },
+          {
+            "key": "cnt",
+            "value": 1
+          }
+        ],
+        "description": "老鲤阻挡目标时，使其攻击速度-8<@ba.talpu>（+1）</>，且自身攻击速度+8<@ba.talpu>（+1）</>；当周围八格内仅存在一个敌人时效果翻倍",
+        "name": "和气生财",
+        "prefabKey": "1",
+        "rangeId": null,
+        "requiredPotentialRank": 4,
+        "unlockCondition": {
+          "level": 1,
+          "phase": 1
+        }
+      },
+      {
+        "blackboard": [
+          {
+            "key": "lmlee_t_1[enemy].attack_speed",
+            "value": -14
+          },
+          {
+            "key": "lmlee_t_1[self].attack_speed",
+            "value": 14
+          },
+          {
+            "key": "cnt",
+            "value": 1
+          }
+        ],
+        "description": "老鲤阻挡目标时，使其攻击速度-14，且自身攻击速度+14；当周围八格内仅存在一个敌人时效果翻倍",
+        "name": "和气生财",
+        "prefabKey": "1",
+        "rangeId": null,
+        "requiredPotentialRank": 0,
+        "unlockCondition": {
+          "level": 1,
+          "phase": 2
+        }
+      },
+      {
+        "blackboard": [
+          {
+            "key": "lmlee_t_1[enemy].attack_speed",
+            "value": -15
+          },
+          {
+            "key": "lmlee_t_1[self].attack_speed",
+            "value": 15
+          },
+          {
+            "key": "cnt",
+            "value": 1
+          }
+        ],
+        "description": "老鲤阻挡目标时，使其攻击速度-15<@ba.talpu>（+1）</>，且自身攻击速度+15<@ba.talpu>（+1）</>；当周围八格内仅存在一个敌人时效果翻倍",
+        "name": "和气生财",
+        "prefabKey": "1",
+        "rangeId": null,
+        "requiredPotentialRank": 4,
+        "unlockCondition": {
+          "level": 1,
+          "phase": 2
+        }
+      }
+    ]
+  },
+  "2": {
+    "candidates": [
+      {
+        "blackboard": [
+          {
+            "key": "extra_cost",
+            "value": -5
+          },
+          {
+            "key": "stun",
+            "value": 3
+          }
+        ],
+        "description": "特性消耗费用时，若费用足够则额外消耗5费用，抵消自身受到的下一次<$ba.stun>晕眩</>/<$ba.frozen>冻结</>，并使攻击来源晕眩3秒",
+        "name": "有备无患",
+        "prefabKey": "2",
+        "rangeId": null,
+        "requiredPotentialRank": 0,
+        "unlockCondition": {
+          "level": 1,
+          "phase": 2
+        }
+      }
+    ]
+  }
+}

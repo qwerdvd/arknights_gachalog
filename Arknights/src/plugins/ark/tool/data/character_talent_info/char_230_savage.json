@@ -1,0 +1,56 @@
+{
+  "1": {
+    "candidates": [
+      {
+        "blackboard": [
+          {
+            "key": "cnt",
+            "value": 2
+          },
+          {
+            "key": "atk",
+            "value": 0.05
+          },
+          {
+            "key": "def",
+            "value": 0.05
+          }
+        ],
+        "description": "周围四格中有两格以上的高地地形时攻击力和防御力+5%",
+        "name": "山谷",
+        "prefabKey": "1",
+        "rangeId": null,
+        "requiredPotentialRank": 0,
+        "unlockCondition": {
+          "level": 1,
+          "phase": 1
+        }
+      },
+      {
+        "blackboard": [
+          {
+            "key": "cnt",
+            "value": 2
+          },
+          {
+            "key": "atk",
+            "value": 0.1
+          },
+          {
+            "key": "def",
+            "value": 0.1
+          }
+        ],
+        "description": "周围四格中有两格以上的高地地形时攻击力和防御力+10%",
+        "name": "山谷",
+        "prefabKey": "1",
+        "rangeId": null,
+        "requiredPotentialRank": 0,
+        "unlockCondition": {
+          "level": 1,
+          "phase": 2
+        }
+      }
+    ]
+  }
+}

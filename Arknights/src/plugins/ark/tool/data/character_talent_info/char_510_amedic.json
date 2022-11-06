@@ -1,0 +1,40 @@
+{
+  "1": {
+    "candidates": [
+      {
+        "blackboard": [
+          {
+            "key": "sp",
+            "value": 2
+          }
+        ],
+        "description": "治疗目标时使其获得+2技力",
+        "name": "攫升",
+        "prefabKey": "1",
+        "rangeId": null,
+        "requiredPotentialRank": 0,
+        "unlockCondition": {
+          "level": 1,
+          "phase": 1
+        }
+      },
+      {
+        "blackboard": [
+          {
+            "key": "sp",
+            "value": 3
+          }
+        ],
+        "description": "治疗目标时使其获得+3技力",
+        "name": "攫升",
+        "prefabKey": "1",
+        "rangeId": null,
+        "requiredPotentialRank": 0,
+        "unlockCondition": {
+          "level": 1,
+          "phase": 2
+        }
+      }
+    ]
+  }
+}

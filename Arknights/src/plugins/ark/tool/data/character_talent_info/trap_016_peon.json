@@ -1,0 +1,23 @@
+{
+  "1": {
+    "candidates": [
+      {
+        "blackboard": [
+          {
+            "key": "duration",
+            "value": 9
+          }
+        ],
+        "description": "-",
+        "name": null,
+        "prefabKey": "1",
+        "rangeId": null,
+        "requiredPotentialRank": 0,
+        "unlockCondition": {
+          "level": 1,
+          "phase": 0
+        }
+      }
+    ]
+  }
+}

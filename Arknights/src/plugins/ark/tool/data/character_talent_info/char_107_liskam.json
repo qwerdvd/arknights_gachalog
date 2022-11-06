@@ -1,0 +1,61 @@
+{
+  "1": {
+    "candidates": [
+      {
+        "blackboard": [
+          {
+            "key": "sp",
+            "value": 1
+          }
+        ],
+        "description": "受到攻击时，回复自己和周围一格内随机一名友方角色1点技力",
+        "name": "战术防御",
+        "prefabKey": "1",
+        "rangeId": "x-5",
+        "requiredPotentialRank": 0,
+        "unlockCondition": {
+          "level": 1,
+          "phase": 1
+        }
+      }
+    ]
+  },
+  "2": {
+    "candidates": [
+      {
+        "blackboard": [
+          {
+            "key": "magic_resistance",
+            "value": 10
+          }
+        ],
+        "description": "法术抗性+10",
+        "name": "雷抗",
+        "prefabKey": "2",
+        "rangeId": null,
+        "requiredPotentialRank": 0,
+        "unlockCondition": {
+          "level": 1,
+          "phase": 2
+        }
+      },
+      {
+        "blackboard": [
+          {
+            "key": "magic_resistance",
+            "value": 13
+          }
+        ],
+        "description": "法术抗性+13<@ba.talpu>（+3）</>",
+        "name": "雷抗",
+        "prefabKey": "2",
+        "rangeId": null,
+        "requiredPotentialRank": 4,
+        "unlockCondition": {
+          "level": 1,
+          "phase": 2
+        }
+      }
+    ]
+  }
+}

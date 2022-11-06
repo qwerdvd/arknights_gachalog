@@ -1,0 +1,27 @@
+{
+  "1": {
+    "candidates": [
+      {
+        "blackboard": [
+          {
+            "key": "max_hp",
+            "value": 0.12
+          },
+          {
+            "key": "def",
+            "value": 0.12
+          }
+        ],
+        "description": "生命上限和防御力各+12%",
+        "name": "装甲改良",
+        "prefabKey": "1",
+        "rangeId": null,
+        "requiredPotentialRank": 0,
+        "unlockCondition": {
+          "level": 30,
+          "phase": 0
+        }
+      }
+    ]
+  }
+}

@@ -1,0 +1,56 @@
+{
+  "1": {
+    "candidates": [
+      {
+        "blackboard": [
+          {
+            "key": "move_speed",
+            "value": -0.8
+          },
+          {
+            "key": "sp",
+            "value": 1
+          },
+          {
+            "key": "interval",
+            "value": 10
+          }
+        ],
+        "description": "造成致命伤害时使敌人保留1点生命并使其<$ba.dying>重伤</>（击杀者技力+1）；罗小黑不攻击<$ba.dying>重伤</>单位",
+        "name": "见习执行者",
+        "prefabKey": "1",
+        "rangeId": null,
+        "requiredPotentialRank": 0,
+        "unlockCondition": {
+          "level": 1,
+          "phase": 0
+        }
+      },
+      {
+        "blackboard": [
+          {
+            "key": "move_speed",
+            "value": -0.8
+          },
+          {
+            "key": "sp",
+            "value": 2
+          },
+          {
+            "key": "interval",
+            "value": 10
+          }
+        ],
+        "description": "造成致命伤害时使敌人保留1点生命并使其<$ba.dying>重伤</>（击杀者技力+2）；罗小黑不攻击<$ba.dying>重伤</>单位",
+        "name": "见习执行者",
+        "prefabKey": "1",
+        "rangeId": null,
+        "requiredPotentialRank": 0,
+        "unlockCondition": {
+          "level": 1,
+          "phase": 2
+        }
+      }
+    ]
+  }
+}

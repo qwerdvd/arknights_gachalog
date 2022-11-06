@@ -1,0 +1,156 @@
+{
+  "1": {
+    "candidates": [
+      {
+        "blackboard": [
+          {
+            "key": "duration",
+            "value": 10
+          },
+          {
+            "key": "atk",
+            "value": 0.1
+          },
+          {
+            "key": "def",
+            "value": 0.1
+          }
+        ],
+        "description": "部署后10秒内所有友方【近战位】单位的攻击力和防御力+10%",
+        "name": "战术整理·I",
+        "prefabKey": "1",
+        "rangeId": null,
+        "requiredPotentialRank": 0,
+        "unlockCondition": {
+          "level": 1,
+          "phase": 0
+        }
+      },
+      {
+        "blackboard": [
+          {
+            "key": "duration",
+            "value": 12
+          },
+          {
+            "key": "atk",
+            "value": 0.12
+          },
+          {
+            "key": "def",
+            "value": 0.12
+          }
+        ],
+        "description": "部署后12秒内所有友方【近战位】单位的攻击力和防御力+12%",
+        "name": "战术整理·II",
+        "prefabKey": "1",
+        "rangeId": null,
+        "requiredPotentialRank": 1,
+        "unlockCondition": {
+          "level": 1,
+          "phase": 0
+        }
+      },
+      {
+        "blackboard": [
+          {
+            "key": "duration",
+            "value": 14
+          },
+          {
+            "key": "atk",
+            "value": 0.14
+          },
+          {
+            "key": "def",
+            "value": 0.14
+          }
+        ],
+        "description": "部署后14秒内所有友方【近战位】单位的攻击力和防御力+14%",
+        "name": "战术整理·III",
+        "prefabKey": "1",
+        "rangeId": null,
+        "requiredPotentialRank": 2,
+        "unlockCondition": {
+          "level": 1,
+          "phase": 0
+        }
+      },
+      {
+        "blackboard": [
+          {
+            "key": "duration",
+            "value": 16
+          },
+          {
+            "key": "atk",
+            "value": 0.16
+          },
+          {
+            "key": "def",
+            "value": 0.16
+          }
+        ],
+        "description": "部署后16秒内所有友方【近战位】单位的攻击力和防御力+16%",
+        "name": "战术整理·IV",
+        "prefabKey": "1",
+        "rangeId": null,
+        "requiredPotentialRank": 3,
+        "unlockCondition": {
+          "level": 1,
+          "phase": 0
+        }
+      },
+      {
+        "blackboard": [
+          {
+            "key": "duration",
+            "value": 18
+          },
+          {
+            "key": "atk",
+            "value": 0.18
+          },
+          {
+            "key": "def",
+            "value": 0.18
+          }
+        ],
+        "description": "部署后18秒内所有友方【近战位】单位的攻击力和防御力+18%",
+        "name": "战术整理·V",
+        "prefabKey": "1",
+        "rangeId": null,
+        "requiredPotentialRank": 4,
+        "unlockCondition": {
+          "level": 1,
+          "phase": 0
+        }
+      },
+      {
+        "blackboard": [
+          {
+            "key": "duration",
+            "value": 20
+          },
+          {
+            "key": "atk",
+            "value": 0.2
+          },
+          {
+            "key": "def",
+            "value": 0.2
+          }
+        ],
+        "description": "部署后20秒内所有友方【近战位】单位的攻击力和防御力+20%",
+        "name": "战术整理·VI",
+        "prefabKey": "1",
+        "rangeId": null,
+        "requiredPotentialRank": 5,
+        "unlockCondition": {
+          "level": 1,
+          "phase": 0
+        }
+      }
+    ]
+  }
+}

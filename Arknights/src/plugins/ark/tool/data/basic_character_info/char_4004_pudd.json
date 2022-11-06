@@ -1,0 +1,78 @@
+{
+  "name": "布丁",
+  "profession": "CASTER",
+  "subProfessionId": "chain",
+  "star": 4,
+  "elite": 2,
+  "max_level": 70,
+  "data": {
+    "atk": 542,
+    "attackSpeed": 100,
+    "baseAttackTime": 2.3,
+    "baseForceLevel": 0,
+    "blockCnt": 1,
+    "cost": 31,
+    "def": 108,
+    "frozenImmune": false,
+    "hpRecoveryPerSec": 0,
+    "levitateImmune": false,
+    "magicResistance": 20,
+    "massLevel": 0,
+    "maxDeckStackCnt": 0,
+    "maxDeployCount": 1,
+    "maxHp": 1326,
+    "moveSpeed": 1,
+    "respawnTime": 70,
+    "silenceImmune": false,
+    "sleepImmune": false,
+    "spRecoveryPerSec": 1,
+    "stunImmune": false,
+    "tauntLevel": 0
+  },
+  "teamId": null,
+  "tokenKey": null,
+  "trait": {
+    "candidates": [
+      {
+        "blackboard": [
+          {
+            "key": "attack@max_target",
+            "value": 3
+          },
+          {
+            "key": "attack@sluggish",
+            "value": 0.5
+          }
+        ],
+        "overrideDescripton": "攻击造成<@ba.kw>法术伤害</>，且会在<@ba.kw>{attack@max_target}</>个敌人间跳跃，每次跳跃伤害降低15%并造成短暂<$ba.sluggish>停顿</>（精英2后更新）",
+        "prefabKey": "-1",
+        "rangeId": null,
+        "requiredPotentialRank": 0,
+        "unlockCondition": {
+          "level": 1,
+          "phase": 0
+        }
+      },
+      {
+        "blackboard": [
+          {
+            "key": "attack@max_target",
+            "value": 4
+          },
+          {
+            "key": "attack@sluggish",
+            "value": 0.5
+          }
+        ],
+        "overrideDescripton": "攻击造成<@ba.kw>法术伤害</>，且会在<@ba.kw>{attack@max_target}</>个敌人间跳跃，每次跳跃伤害降低15%并造成短暂<$ba.sluggish>停顿</>",
+        "prefabKey": "-1",
+        "rangeId": null,
+        "requiredPotentialRank": 0,
+        "unlockCondition": {
+          "level": 1,
+          "phase": 2
+        }
+      }
+    ]
+  }
+}

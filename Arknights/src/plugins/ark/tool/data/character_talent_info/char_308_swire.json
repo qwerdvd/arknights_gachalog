@@ -1,0 +1,108 @@
+{
+  "1": {
+    "candidates": [
+      {
+        "blackboard": [
+          {
+            "key": "atk",
+            "value": 0.03
+          }
+        ],
+        "description": "在场时周围8格内的近战友方单位攻击力+3%",
+        "name": "近距离作战指导",
+        "prefabKey": "1",
+        "rangeId": "x-4",
+        "requiredPotentialRank": 0,
+        "unlockCondition": {
+          "level": 1,
+          "phase": 0
+        }
+      },
+      {
+        "blackboard": [
+          {
+            "key": "atk",
+            "value": 0.05
+          }
+        ],
+        "description": "在场时周围8格内的近战友方单位攻击力+5%<@ba.talpu>（+2%）</>",
+        "name": "近距离作战指导",
+        "prefabKey": "1",
+        "rangeId": "x-4",
+        "requiredPotentialRank": 4,
+        "unlockCondition": {
+          "level": 1,
+          "phase": 0
+        }
+      },
+      {
+        "blackboard": [
+          {
+            "key": "atk",
+            "value": 0.06
+          }
+        ],
+        "description": "在场时周围8格内的近战友方单位攻击力+6%",
+        "name": "近距离作战指导",
+        "prefabKey": "1",
+        "rangeId": "x-4",
+        "requiredPotentialRank": 0,
+        "unlockCondition": {
+          "level": 1,
+          "phase": 1
+        }
+      },
+      {
+        "blackboard": [
+          {
+            "key": "atk",
+            "value": 0.08
+          }
+        ],
+        "description": "在场时周围8格内的近战友方单位攻击力+8%<@ba.talpu>（+2%）</>",
+        "name": "近距离作战指导",
+        "prefabKey": "1",
+        "rangeId": "x-4",
+        "requiredPotentialRank": 4,
+        "unlockCondition": {
+          "level": 1,
+          "phase": 1
+        }
+      },
+      {
+        "blackboard": [
+          {
+            "key": "atk",
+            "value": 0.1
+          }
+        ],
+        "description": "在场时周围8格内的近战友方单位攻击力+10%",
+        "name": "近距离作战指导",
+        "prefabKey": "1",
+        "rangeId": "x-4",
+        "requiredPotentialRank": 0,
+        "unlockCondition": {
+          "level": 1,
+          "phase": 2
+        }
+      },
+      {
+        "blackboard": [
+          {
+            "key": "atk",
+            "value": 0.12
+          }
+        ],
+        "description": "在场时周围8格内的近战友方单位攻击力+12%<@ba.talpu>（+2%）</>",
+        "name": "近距离作战指导",
+        "prefabKey": "1",
+        "rangeId": "x-4",
+        "requiredPotentialRank": 4,
+        "unlockCondition": {
+          "level": 1,
+          "phase": 2
+        }
+      }
+    ]
+  }
+}

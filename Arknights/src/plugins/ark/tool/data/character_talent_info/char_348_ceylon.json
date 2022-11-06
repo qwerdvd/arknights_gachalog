@@ -1,0 +1,90 @@
+{
+  "1": {
+    "candidates": [
+      {
+        "blackboard": [
+          {
+            "key": "ceylon_t_1[common].atk",
+            "value": 0.03
+          },
+          {
+            "key": "celyon_t_1[map].atk",
+            "value": 0.06
+          }
+        ],
+        "description": "攻击力+3%，当场地中存在水地形时改为攻击力+9%",
+        "name": "湖畔漫步者",
+        "prefabKey": "1",
+        "rangeId": null,
+        "requiredPotentialRank": 0,
+        "unlockCondition": {
+          "level": 1,
+          "phase": 1
+        }
+      },
+      {
+        "blackboard": [
+          {
+            "key": "ceylon_t_1[common].atk",
+            "value": 0.04
+          },
+          {
+            "key": "celyon_t_1[map].atk",
+            "value": 0.11
+          }
+        ],
+        "description": "攻击力+4%<@ba.talpu>（+1%）</>，当场地中存在水地形时改为攻击力+15%<@ba.talpu>（+6%）</>",
+        "name": "湖畔漫步者",
+        "prefabKey": "1",
+        "rangeId": null,
+        "requiredPotentialRank": 4,
+        "unlockCondition": {
+          "level": 1,
+          "phase": 1
+        }
+      },
+      {
+        "blackboard": [
+          {
+            "key": "ceylon_t_1[common].atk",
+            "value": 0.05
+          },
+          {
+            "key": "celyon_t_1[map].atk",
+            "value": 0.13
+          }
+        ],
+        "description": "攻击力+5%，当场地中存在水地形时改为攻击力+18%",
+        "name": "湖畔漫步者",
+        "prefabKey": "1",
+        "rangeId": null,
+        "requiredPotentialRank": 0,
+        "unlockCondition": {
+          "level": 1,
+          "phase": 2
+        }
+      },
+      {
+        "blackboard": [
+          {
+            "key": "ceylon_t_1[common].atk",
+            "value": 0.06
+          },
+          {
+            "key": "celyon_t_1[map].atk",
+            "value": 0.18
+          }
+        ],
+        "description": "攻击力+6%<@ba.talpu>（+1%）</>，当场地中存在水地形时改为攻击力+24%<@ba.talpu>（+6%）</>",
+        "name": "湖畔漫步者",
+        "prefabKey": "1",
+        "rangeId": null,
+        "requiredPotentialRank": 4,
+        "unlockCondition": {
+          "level": 1,
+          "phase": 2
+        }
+      }
+    ]
+  }
+}

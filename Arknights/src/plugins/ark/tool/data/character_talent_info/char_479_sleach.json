@@ -1,0 +1,111 @@
+{
+  "1": {
+    "candidates": [
+      {
+        "blackboard": [
+          {
+            "key": "sleach_t_1[ally].attack_speed",
+            "value": 5
+          },
+          {
+            "key": "sleach_t_1[enemy].attack_speed",
+            "value": -5
+          }
+        ],
+        "description": "部署时自身持有军旗；军旗周围8格的干员攻击速度+5，敌人的攻击速度-5",
+        "name": "不退之旗",
+        "prefabKey": "1",
+        "rangeId": null,
+        "requiredPotentialRank": 0,
+        "unlockCondition": {
+          "level": 1,
+          "phase": 1
+        }
+      },
+      {
+        "blackboard": [
+          {
+            "key": "sleach_t_1[ally].attack_speed",
+            "value": 7
+          },
+          {
+            "key": "sleach_t_1[enemy].attack_speed",
+            "value": -7
+          }
+        ],
+        "description": "部署时自身持有军旗；军旗周围8格的干员攻击速度+7<@ba.talpu>（+2）</>，敌人的攻击速度-7<@ba.talpu>（+2）</>",
+        "name": "不退之旗",
+        "prefabKey": "1",
+        "rangeId": null,
+        "requiredPotentialRank": 4,
+        "unlockCondition": {
+          "level": 1,
+          "phase": 1
+        }
+      },
+      {
+        "blackboard": [
+          {
+            "key": "sleach_t_1[ally].attack_speed",
+            "value": 10
+          },
+          {
+            "key": "sleach_t_1[enemy].attack_speed",
+            "value": -10
+          }
+        ],
+        "description": "部署时自身持有军旗；军旗周围8格的干员攻击速度+10，敌人的攻击速度-10",
+        "name": "不退之旗",
+        "prefabKey": "1",
+        "rangeId": null,
+        "requiredPotentialRank": 0,
+        "unlockCondition": {
+          "level": 1,
+          "phase": 2
+        }
+      },
+      {
+        "blackboard": [
+          {
+            "key": "sleach_t_1[ally].attack_speed",
+            "value": 12
+          },
+          {
+            "key": "sleach_t_1[enemy].attack_speed",
+            "value": -12
+          }
+        ],
+        "description": "部署时自身持有军旗；军旗周围8格的干员攻击速度+12<@ba.talpu>（+2）</>，敌人的攻击速度-12<@ba.talpu>（+2）</>",
+        "name": "不退之旗",
+        "prefabKey": "1",
+        "rangeId": null,
+        "requiredPotentialRank": 4,
+        "unlockCondition": {
+          "level": 1,
+          "phase": 2
+        }
+      }
+    ]
+  },
+  "2": {
+    "candidates": [
+      {
+        "blackboard": [
+          {
+            "key": "value",
+            "value": -2
+          }
+        ],
+        "description": "部署后，下一名部署的干员费用-2",
+        "name": "精神感召",
+        "prefabKey": "2",
+        "rangeId": null,
+        "requiredPotentialRank": 0,
+        "unlockCondition": {
+          "level": 1,
+          "phase": 2
+        }
+      }
+    ]
+  }
+}

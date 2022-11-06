@@ -1,0 +1,74 @@
+{
+  "1": {
+    "candidates": [
+      {
+        "blackboard": [
+          {
+            "key": "damage_scale",
+            "value": 1.07
+          }
+        ],
+        "description": "在场时，所有被阻挡的敌人受到法术伤害时提升7%",
+        "name": "法术狙击",
+        "prefabKey": "1",
+        "rangeId": null,
+        "requiredPotentialRank": 0,
+        "unlockCondition": {
+          "level": 1,
+          "phase": 1
+        }
+      },
+      {
+        "blackboard": [
+          {
+            "key": "damage_scale",
+            "value": 1.1
+          }
+        ],
+        "description": "在场时，所有被阻挡的敌人受到法术伤害时提升10%<@ba.talpu>（+3%）</>",
+        "name": "法术狙击",
+        "prefabKey": "1",
+        "rangeId": null,
+        "requiredPotentialRank": 4,
+        "unlockCondition": {
+          "level": 1,
+          "phase": 1
+        }
+      },
+      {
+        "blackboard": [
+          {
+            "key": "damage_scale",
+            "value": 1.15
+          }
+        ],
+        "description": "在场时，所有被阻挡的敌人受到法术伤害时伤害提升15%",
+        "name": "法术狙击",
+        "prefabKey": "1",
+        "rangeId": null,
+        "requiredPotentialRank": 0,
+        "unlockCondition": {
+          "level": 1,
+          "phase": 2
+        }
+      },
+      {
+        "blackboard": [
+          {
+            "key": "damage_scale",
+            "value": 1.18
+          }
+        ],
+        "description": "在场时，所有被阻挡的敌人受到法术伤害时伤害提升18%<@ba.talpu>（+3%）</>",
+        "name": "法术狙击",
+        "prefabKey": "1",
+        "rangeId": null,
+        "requiredPotentialRank": 4,
+        "unlockCondition": {
+          "level": 1,
+          "phase": 2
+        }
+      }
+    ]
+  }
+}

@@ -1,0 +1,90 @@
+{
+  "1": {
+    "candidates": [
+      {
+        "blackboard": [
+          {
+            "key": "delay",
+            "value": 6
+          },
+          {
+            "key": "atk",
+            "value": 0.25
+          }
+        ],
+        "description": "平时处于<$ba.invisible>隐匿</>状态，攻击时会解除<$ba.invisible>隐匿</>状态，且当次攻击的攻击力+25%。停止攻击6秒后，重新进入<$ba.invisible>隐匿</>状态",
+        "name": "隐匿的杀手·中级",
+        "prefabKey": "1",
+        "rangeId": null,
+        "requiredPotentialRank": 0,
+        "unlockCondition": {
+          "level": 1,
+          "phase": 1
+        }
+      },
+      {
+        "blackboard": [
+          {
+            "key": "delay",
+            "value": 6
+          },
+          {
+            "key": "atk",
+            "value": 0.29
+          }
+        ],
+        "description": "平时处于<$ba.invisible>隐匿</>状态，攻击时会解除<$ba.invisible>隐匿</>状态，且当次攻击的攻击力+29%<@ba.talpu>（+4%）</>。停止攻击6秒后，重新进入<$ba.invisible>隐匿</>状态",
+        "name": "隐匿的杀手·中级",
+        "prefabKey": "1",
+        "rangeId": null,
+        "requiredPotentialRank": 4,
+        "unlockCondition": {
+          "level": 1,
+          "phase": 1
+        }
+      },
+      {
+        "blackboard": [
+          {
+            "key": "delay",
+            "value": 5
+          },
+          {
+            "key": "atk",
+            "value": 0.5
+          }
+        ],
+        "description": "平时处于<$ba.invisible>隐匿</>状态，攻击时会解除<$ba.invisible>隐匿</>状态，且当次攻击的攻击力+50%。停止攻击5秒后，重新进入<$ba.invisible>隐匿</>状态",
+        "name": "隐匿的杀手·精英",
+        "prefabKey": "1",
+        "rangeId": null,
+        "requiredPotentialRank": 0,
+        "unlockCondition": {
+          "level": 1,
+          "phase": 2
+        }
+      },
+      {
+        "blackboard": [
+          {
+            "key": "delay",
+            "value": 5
+          },
+          {
+            "key": "atk",
+            "value": 0.54
+          }
+        ],
+        "description": "平时处于<$ba.invisible>隐匿</>状态，攻击时会解除<$ba.invisible>隐匿</>状态，且当次攻击的攻击力+54%<@ba.talpu>（+4%）</>。停止攻击5秒后，重新进入<$ba.invisible>隐匿</>状态",
+        "name": "隐匿的杀手·精英",
+        "prefabKey": "1",
+        "rangeId": null,
+        "requiredPotentialRank": 4,
+        "unlockCondition": {
+          "level": 1,
+          "phase": 2
+        }
+      }
+    ]
+  }
+}

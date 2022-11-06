@@ -1,0 +1,40 @@
+{
+  "1": {
+    "candidates": [
+      {
+        "blackboard": [
+          {
+            "key": "hp_recovery_per_sec_by_max_hp_ratio",
+            "value": 0.025
+          }
+        ],
+        "description": "技能未开启时，每秒恢复2.5%的最大生命",
+        "name": "沙原的庇护",
+        "prefabKey": "1",
+        "rangeId": null,
+        "requiredPotentialRank": 0,
+        "unlockCondition": {
+          "level": 1,
+          "phase": 1
+        }
+      },
+      {
+        "blackboard": [
+          {
+            "key": "hp_recovery_per_sec_by_max_hp_ratio",
+            "value": 0.04
+          }
+        ],
+        "description": "技能未开启时，每秒恢复4%的最大生命",
+        "name": "沙原的庇护",
+        "prefabKey": "1",
+        "rangeId": null,
+        "requiredPotentialRank": 0,
+        "unlockCondition": {
+          "level": 1,
+          "phase": 2
+        }
+      }
+    ]
+  }
+}

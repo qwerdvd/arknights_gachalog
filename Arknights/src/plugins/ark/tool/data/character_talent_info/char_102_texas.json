@@ -1,0 +1,40 @@
+{
+  "1": {
+    "candidates": [
+      {
+        "blackboard": [
+          {
+            "key": "cost",
+            "value": 1
+          }
+        ],
+        "description": "编入队伍后，额外获得1点初始部署费用",
+        "name": "战术快递",
+        "prefabKey": "1",
+        "rangeId": null,
+        "requiredPotentialRank": 0,
+        "unlockCondition": {
+          "level": 1,
+          "phase": 1
+        }
+      },
+      {
+        "blackboard": [
+          {
+            "key": "cost",
+            "value": 2
+          }
+        ],
+        "description": "编入队伍后，额外获得2点初始部署费用",
+        "name": "战术快递",
+        "prefabKey": "1",
+        "rangeId": null,
+        "requiredPotentialRank": 0,
+        "unlockCondition": {
+          "level": 1,
+          "phase": 2
+        }
+      }
+    ]
+  }
+}

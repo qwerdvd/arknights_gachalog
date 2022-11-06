@@ -1,0 +1,132 @@
+{
+  "1": {
+    "candidates": [
+      {
+        "blackboard": [
+          {
+            "key": "def",
+            "value": 0.1
+          },
+          {
+            "key": "duration",
+            "value": 15
+          }
+        ],
+        "description": "-",
+        "name": null,
+        "prefabKey": "1",
+        "rangeId": null,
+        "requiredPotentialRank": 0,
+        "unlockCondition": {
+          "level": 1,
+          "phase": 0
+        }
+      },
+      {
+        "blackboard": [
+          {
+            "key": "def",
+            "value": 0.13
+          },
+          {
+            "key": "duration",
+            "value": 15
+          }
+        ],
+        "description": "-",
+        "name": null,
+        "prefabKey": "1",
+        "rangeId": null,
+        "requiredPotentialRank": 4,
+        "unlockCondition": {
+          "level": 1,
+          "phase": 0
+        }
+      },
+      {
+        "blackboard": [
+          {
+            "key": "def",
+            "value": 0.2
+          },
+          {
+            "key": "duration",
+            "value": 25
+          }
+        ],
+        "description": "-",
+        "name": null,
+        "prefabKey": "1",
+        "rangeId": null,
+        "requiredPotentialRank": 0,
+        "unlockCondition": {
+          "level": 1,
+          "phase": 1
+        }
+      },
+      {
+        "blackboard": [
+          {
+            "key": "def",
+            "value": 0.23
+          },
+          {
+            "key": "duration",
+            "value": 25
+          }
+        ],
+        "description": "-",
+        "name": null,
+        "prefabKey": "1",
+        "rangeId": null,
+        "requiredPotentialRank": 4,
+        "unlockCondition": {
+          "level": 1,
+          "phase": 1
+        }
+      },
+      {
+        "blackboard": [
+          {
+            "key": "def",
+            "value": 0.3
+          },
+          {
+            "key": "duration",
+            "value": 25
+          }
+        ],
+        "description": "-",
+        "name": null,
+        "prefabKey": "1+",
+        "rangeId": null,
+        "requiredPotentialRank": 0,
+        "unlockCondition": {
+          "level": 1,
+          "phase": 2
+        }
+      },
+      {
+        "blackboard": [
+          {
+            "key": "def",
+            "value": 0.33
+          },
+          {
+            "key": "duration",
+            "value": 25
+          }
+        ],
+        "description": "-",
+        "name": null,
+        "prefabKey": "1+",
+        "rangeId": null,
+        "requiredPotentialRank": 4,
+        "unlockCondition": {
+          "level": 1,
+          "phase": 2
+        }
+      }
+    ]
+  }
+}

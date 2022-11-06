@@ -1,0 +1,86 @@
+{
+  "1": {
+    "candidates": [
+      {
+        "blackboard": [
+          {
+            "key": "stun",
+            "value": 3
+          }
+        ],
+        "description": "部署后立即对攻击范围内一个敌人投掷闪光弹，使其和周围敌人<$ba.stun>晕眩</>3秒",
+        "name": "辅助装备",
+        "prefabKey": "1",
+        "rangeId": null,
+        "requiredPotentialRank": 0,
+        "unlockCondition": {
+          "level": 1,
+          "phase": 1
+        }
+      },
+      {
+        "blackboard": [
+          {
+            "key": "stun",
+            "value": 4
+          }
+        ],
+        "description": "部署后立即对攻击范围内一个敌人投掷闪光弹，使其和周围敌人<$ba.stun>晕眩</>4秒",
+        "name": "辅助装备",
+        "prefabKey": "1",
+        "rangeId": null,
+        "requiredPotentialRank": 0,
+        "unlockCondition": {
+          "level": 1,
+          "phase": 2
+        }
+      }
+    ]
+  },
+  "2": {
+    "candidates": [
+      {
+        "blackboard": [
+          {
+            "key": "runtime_cost",
+            "value": -3
+          },
+          {
+            "key": "sp",
+            "value": 17
+          }
+        ],
+        "description": "首次部署时部署费用-3，部署后立即获得17技力",
+        "name": "突击手",
+        "prefabKey": "2",
+        "rangeId": null,
+        "requiredPotentialRank": 0,
+        "unlockCondition": {
+          "level": 1,
+          "phase": 2
+        }
+      },
+      {
+        "blackboard": [
+          {
+            "key": "runtime_cost",
+            "value": -3
+          },
+          {
+            "key": "sp",
+            "value": 20
+          }
+        ],
+        "description": "首次部署时部署费用-3，部署后立即获得20<@ba.talpu>（+3）</>技力",
+        "name": "突击手",
+        "prefabKey": "2",
+        "rangeId": null,
+        "requiredPotentialRank": 4,
+        "unlockCondition": {
+          "level": 1,
+          "phase": 2
+        }
+      }
+    ]
+  }
+}

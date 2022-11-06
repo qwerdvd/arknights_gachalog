@@ -1,0 +1,109 @@
+{
+  "1": {
+    "candidates": [
+      {
+        "blackboard": [
+          {
+            "key": "cnt",
+            "value": 3
+          }
+        ],
+        "description": "可以使用3个不阻挡敌人的无人机（最多同时部署3个），功能随技能选择而改变",
+        "name": "支援无人机·龙腾",
+        "prefabKey": "1",
+        "rangeId": null,
+        "requiredPotentialRank": 0,
+        "unlockCondition": {
+          "level": 1,
+          "phase": 0
+        }
+      },
+      {
+        "blackboard": [
+          {
+            "key": "cnt",
+            "value": 4
+          }
+        ],
+        "description": "可以使用4个不阻挡敌人的无人机（最多同时部署3个），功能随技能选择而改变",
+        "name": "支援无人机·龙腾",
+        "prefabKey": "1",
+        "rangeId": null,
+        "requiredPotentialRank": 0,
+        "unlockCondition": {
+          "level": 1,
+          "phase": 1
+        }
+      },
+      {
+        "blackboard": [
+          {
+            "key": "cnt",
+            "value": 5
+          }
+        ],
+        "description": "可以使用5个不阻挡敌人的无人机（最多同时部署3个），功能随技能选择而改变",
+        "name": "支援无人机·龙腾",
+        "prefabKey": "1",
+        "rangeId": null,
+        "requiredPotentialRank": 0,
+        "unlockCondition": {
+          "level": 1,
+          "phase": 2
+        }
+      }
+    ]
+  },
+  "2": {
+    "candidates": [
+      {
+        "blackboard": [],
+        "description": "无人机在部署后的12秒内处于<$ba.invisible>隐匿</>状态（不会成为敌方远程单位的攻击目标）",
+        "name": "光学折射配件",
+        "prefabKey": "2",
+        "rangeId": null,
+        "requiredPotentialRank": 0,
+        "unlockCondition": {
+          "level": 1,
+          "phase": 1
+        }
+      },
+      {
+        "blackboard": [],
+        "description": "无人机在部署后的14<@ba.talpu>（+2）</>秒内处于<$ba.invisible>隐匿</>状态（不会成为敌方远程单位的攻击目标）",
+        "name": "光学折射配件",
+        "prefabKey": "2",
+        "rangeId": null,
+        "requiredPotentialRank": 4,
+        "unlockCondition": {
+          "level": 1,
+          "phase": 1
+        }
+      },
+      {
+        "blackboard": [],
+        "description": "无人机在部署后的20秒内处于<$ba.invisible>隐匿</>状态（不会成为敌方远程单位的攻击目标）",
+        "name": "光学折射配件",
+        "prefabKey": "2",
+        "rangeId": null,
+        "requiredPotentialRank": 0,
+        "unlockCondition": {
+          "level": 1,
+          "phase": 2
+        }
+      },
+      {
+        "blackboard": [],
+        "description": "无人机在部署后的22<@ba.talpu>（+2）</>秒内处于<$ba.invisible>隐匿</>状态（不会成为敌方远程单位的攻击目标）",
+        "name": "光学折射配件",
+        "prefabKey": "2",
+        "rangeId": null,
+        "requiredPotentialRank": 4,
+        "unlockCondition": {
+          "level": 1,
+          "phase": 2
+        }
+      }
+    ]
+  }
+}

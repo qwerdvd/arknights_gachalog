@@ -1,0 +1,90 @@
+{
+  "1": {
+    "candidates": [
+      {
+        "blackboard": [
+          {
+            "key": "max_hp",
+            "value": 0.1
+          },
+          {
+            "key": "hp_recovery_per_sec_by_max_hp_ratio",
+            "value": 0
+          }
+        ],
+        "description": "生命上限+10%",
+        "name": "体力上限提升",
+        "prefabKey": "1",
+        "rangeId": null,
+        "requiredPotentialRank": 0,
+        "unlockCondition": {
+          "level": 1,
+          "phase": 1
+        }
+      },
+      {
+        "blackboard": [
+          {
+            "key": "max_hp",
+            "value": 0.12
+          },
+          {
+            "key": "hp_recovery_per_sec_by_max_hp_ratio",
+            "value": 0
+          }
+        ],
+        "description": "生命上限+12%<@ba.talpu>（+2%）</>",
+        "name": "体力上限提升",
+        "prefabKey": "1",
+        "rangeId": null,
+        "requiredPotentialRank": 4,
+        "unlockCondition": {
+          "level": 1,
+          "phase": 1
+        }
+      },
+      {
+        "blackboard": [
+          {
+            "key": "max_hp",
+            "value": 0.1
+          },
+          {
+            "key": "hp_recovery_per_sec_by_max_hp_ratio",
+            "value": 0.02
+          }
+        ],
+        "description": "生命上限+10%，每秒回复最大生命2%的生命",
+        "name": "深海再生力",
+        "prefabKey": "1",
+        "rangeId": null,
+        "requiredPotentialRank": 0,
+        "unlockCondition": {
+          "level": 1,
+          "phase": 2
+        }
+      },
+      {
+        "blackboard": [
+          {
+            "key": "max_hp",
+            "value": 0.12
+          },
+          {
+            "key": "hp_recovery_per_sec_by_max_hp_ratio",
+            "value": 0.025
+          }
+        ],
+        "description": "生命上限+12%<@ba.talpu>（+2%）</>，每秒回复最大生命2.5%<@ba.talpu>（+0.5%）</>的生命",
+        "name": "深海再生力",
+        "prefabKey": "1",
+        "rangeId": null,
+        "requiredPotentialRank": 4,
+        "unlockCondition": {
+          "level": 1,
+          "phase": 2
+        }
+      }
+    ]
+  }
+}

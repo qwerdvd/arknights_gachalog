@@ -1,0 +1,147 @@
+{
+  "1": {
+    "candidates": [
+      {
+        "blackboard": [
+          {
+            "key": "atk_scale",
+            "value": 1.4
+          },
+          {
+            "key": "prob",
+            "value": 0.2
+          },
+          {
+            "key": "atk",
+            "value": -0.1
+          },
+          {
+            "key": "duration",
+            "value": 3
+          }
+        ],
+        "description": "攻击时有20%的几率攻击力提升至140%，并在3秒内使目标攻击力降低10%（不可叠加）",
+        "name": "巨力重拳",
+        "prefabKey": "1",
+        "rangeId": null,
+        "requiredPotentialRank": 0,
+        "unlockCondition": {
+          "level": 1,
+          "phase": 1
+        }
+      },
+      {
+        "blackboard": [
+          {
+            "key": "atk_scale",
+            "value": 1.45
+          },
+          {
+            "key": "prob",
+            "value": 0.2
+          },
+          {
+            "key": "atk",
+            "value": -0.1
+          },
+          {
+            "key": "duration",
+            "value": 3
+          }
+        ],
+        "description": "攻击时有20%的几率攻击力提升至145%<@ba.talpu>（+5%）</>，并在3秒内使目标攻击力降低10%（不可叠加）",
+        "name": "巨力重拳",
+        "prefabKey": "1",
+        "rangeId": null,
+        "requiredPotentialRank": 4,
+        "unlockCondition": {
+          "level": 1,
+          "phase": 1
+        }
+      },
+      {
+        "blackboard": [
+          {
+            "key": "atk_scale",
+            "value": 1.6
+          },
+          {
+            "key": "prob",
+            "value": 0.2
+          },
+          {
+            "key": "atk",
+            "value": -0.15
+          },
+          {
+            "key": "duration",
+            "value": 3
+          }
+        ],
+        "description": "攻击时有20%的几率攻击力提升至160%，并在3秒内使目标攻击力降低15%（不可叠加）",
+        "name": "巨力重拳",
+        "prefabKey": "1",
+        "rangeId": null,
+        "requiredPotentialRank": 0,
+        "unlockCondition": {
+          "level": 1,
+          "phase": 2
+        }
+      },
+      {
+        "blackboard": [
+          {
+            "key": "atk_scale",
+            "value": 1.65
+          },
+          {
+            "key": "prob",
+            "value": 0.2
+          },
+          {
+            "key": "atk",
+            "value": -0.15
+          },
+          {
+            "key": "duration",
+            "value": 3
+          }
+        ],
+        "description": "攻击时有20%的几率攻击力提升至165%<@ba.talpu>（+5%）</>，并在3秒内使目标攻击力降低15%（不可叠加）",
+        "name": "巨力重拳",
+        "prefabKey": "1",
+        "rangeId": null,
+        "requiredPotentialRank": 4,
+        "unlockCondition": {
+          "level": 1,
+          "phase": 2
+        }
+      }
+    ]
+  },
+  "2": {
+    "candidates": [
+      {
+        "blackboard": [
+          {
+            "key": "def",
+            "value": 0.1
+          },
+          {
+            "key": "prob",
+            "value": 0.15
+          }
+        ],
+        "description": "防御力+10%，获得15%的物理闪避",
+        "name": "强壮肉体",
+        "prefabKey": "2",
+        "rangeId": null,
+        "requiredPotentialRank": 0,
+        "unlockCondition": {
+          "level": 1,
+          "phase": 2
+        }
+      }
+    ]
+  }
+}

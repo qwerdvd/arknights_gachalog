@@ -1,0 +1,108 @@
+{
+  "1": {
+    "candidates": [
+      {
+        "blackboard": [
+          {
+            "key": "value",
+            "value": 200
+          }
+        ],
+        "description": "部署后立即恢复全场友方单位200点生命",
+        "name": "救援喷雾·I",
+        "prefabKey": "1",
+        "rangeId": null,
+        "requiredPotentialRank": 0,
+        "unlockCondition": {
+          "level": 1,
+          "phase": 0
+        }
+      },
+      {
+        "blackboard": [
+          {
+            "key": "value",
+            "value": 260
+          }
+        ],
+        "description": "部署后立即恢复全场友方单位260点生命",
+        "name": "救援喷雾·II",
+        "prefabKey": "1",
+        "rangeId": null,
+        "requiredPotentialRank": 1,
+        "unlockCondition": {
+          "level": 1,
+          "phase": 0
+        }
+      },
+      {
+        "blackboard": [
+          {
+            "key": "value",
+            "value": 320
+          }
+        ],
+        "description": "部署后立即恢复全场友方单位320点生命",
+        "name": "救援喷雾·III",
+        "prefabKey": "1",
+        "rangeId": null,
+        "requiredPotentialRank": 2,
+        "unlockCondition": {
+          "level": 1,
+          "phase": 0
+        }
+      },
+      {
+        "blackboard": [
+          {
+            "key": "value",
+            "value": 380
+          }
+        ],
+        "description": "部署后立即恢复全场友方单位380点生命",
+        "name": "救援喷雾·IV",
+        "prefabKey": "1",
+        "rangeId": null,
+        "requiredPotentialRank": 3,
+        "unlockCondition": {
+          "level": 1,
+          "phase": 0
+        }
+      },
+      {
+        "blackboard": [
+          {
+            "key": "value",
+            "value": 440
+          }
+        ],
+        "description": "部署后立即恢复全场友方单位440点生命",
+        "name": "救援喷雾·V",
+        "prefabKey": "1",
+        "rangeId": null,
+        "requiredPotentialRank": 4,
+        "unlockCondition": {
+          "level": 1,
+          "phase": 0
+        }
+      },
+      {
+        "blackboard": [
+          {
+            "key": "value",
+            "value": 500
+          }
+        ],
+        "description": "部署后立即恢复全场友方单位500点生命",
+        "name": "救援喷雾·VI",
+        "prefabKey": "1",
+        "rangeId": null,
+        "requiredPotentialRank": 5,
+        "unlockCondition": {
+          "level": 1,
+          "phase": 0
+        }
+      }
+    ]
+  }
+}

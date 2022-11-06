@@ -1,0 +1,23 @@
+{
+  "1": {
+    "candidates": [
+      {
+        "blackboard": [
+          {
+            "key": "force",
+            "value": 1
+          }
+        ],
+        "description": "部署后立即爆炸，对前方一格造成伤害并小力度推动敌人，直接击倒前方一格的战场支柱",
+        "name": null,
+        "prefabKey": "1",
+        "rangeId": null,
+        "requiredPotentialRank": 0,
+        "unlockCondition": {
+          "level": 1,
+          "phase": 0
+        }
+      }
+    ]
+  }
+}

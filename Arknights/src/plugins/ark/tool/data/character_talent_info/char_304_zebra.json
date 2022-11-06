@@ -1,0 +1,74 @@
+{
+  "1": {
+    "candidates": [
+      {
+        "blackboard": [
+          {
+            "key": "prob",
+            "value": 0.1
+          }
+        ],
+        "description": "自身和周围8格内的高台干员获得10%的物理闪避",
+        "name": "条纹迷彩",
+        "prefabKey": "1",
+        "rangeId": "x-4",
+        "requiredPotentialRank": 0,
+        "unlockCondition": {
+          "level": 1,
+          "phase": 1
+        }
+      },
+      {
+        "blackboard": [
+          {
+            "key": "prob",
+            "value": 0.13
+          }
+        ],
+        "description": "自身和周围8格内的高台干员获得13%<@ba.talpu>（+3%）</>的物理闪避",
+        "name": "条纹迷彩",
+        "prefabKey": "1",
+        "rangeId": "x-4",
+        "requiredPotentialRank": 4,
+        "unlockCondition": {
+          "level": 1,
+          "phase": 1
+        }
+      },
+      {
+        "blackboard": [
+          {
+            "key": "prob",
+            "value": 0.2
+          }
+        ],
+        "description": "自身和周围8格内的高台干员获得20%的物理闪避",
+        "name": "条纹迷彩",
+        "prefabKey": "1",
+        "rangeId": "x-4",
+        "requiredPotentialRank": 0,
+        "unlockCondition": {
+          "level": 1,
+          "phase": 2
+        }
+      },
+      {
+        "blackboard": [
+          {
+            "key": "prob",
+            "value": 0.23
+          }
+        ],
+        "description": "自身和周围8格内的高台干员获得23%<@ba.talpu>（+3%）</>的物理闪避",
+        "name": "条纹迷彩",
+        "prefabKey": "1",
+        "rangeId": "x-4",
+        "requiredPotentialRank": 4,
+        "unlockCondition": {
+          "level": 1,
+          "phase": 2
+        }
+      }
+    ]
+  }
+}

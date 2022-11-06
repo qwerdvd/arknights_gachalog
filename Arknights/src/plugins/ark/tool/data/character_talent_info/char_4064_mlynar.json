@@ -1,0 +1,168 @@
+{
+  "1": {
+    "candidates": [
+      {
+        "blackboard": [
+          {
+            "key": "atk_scale_base",
+            "value": 1.05
+          },
+          {
+            "key": "cnt",
+            "value": 3
+          },
+          {
+            "key": "atk_scale_up",
+            "value": 1.1
+          },
+          {
+            "key": "damage_resistance",
+            "value": 0.1
+          }
+        ],
+        "description": "攻击敌人时攻击力提升至105%。周围存在3名及以上敌人时攻击力提升至110%且受到的伤害减少10%",
+        "name": "游侠",
+        "prefabKey": "1",
+        "rangeId": null,
+        "requiredPotentialRank": 0,
+        "unlockCondition": {
+          "level": 1,
+          "phase": 1
+        }
+      },
+      {
+        "blackboard": [
+          {
+            "key": "atk_scale_base",
+            "value": 1.08
+          },
+          {
+            "key": "cnt",
+            "value": 3
+          },
+          {
+            "key": "atk_scale_up",
+            "value": 1.13
+          },
+          {
+            "key": "damage_resistance",
+            "value": 0.1
+          }
+        ],
+        "description": "攻击敌人时攻击力提升至108%<@ba.talpu>（+3%）</>。周围存在3名及以上敌人时攻击力提升至113%<@ba.talpu>（+3%）</>且受到的伤害减少10%",
+        "name": "游侠",
+        "prefabKey": "1",
+        "rangeId": null,
+        "requiredPotentialRank": 2,
+        "unlockCondition": {
+          "level": 1,
+          "phase": 1
+        }
+      },
+      {
+        "blackboard": [
+          {
+            "key": "atk_scale_base",
+            "value": 1.1
+          },
+          {
+            "key": "cnt",
+            "value": 3
+          },
+          {
+            "key": "atk_scale_up",
+            "value": 1.15
+          },
+          {
+            "key": "damage_resistance",
+            "value": 0.15
+          }
+        ],
+        "description": "攻击敌人时攻击力提升至110%。周围存在3名及以上敌人时攻击力提升至115%且受到的伤害减少15%",
+        "name": "游侠",
+        "prefabKey": "1",
+        "rangeId": null,
+        "requiredPotentialRank": 0,
+        "unlockCondition": {
+          "level": 1,
+          "phase": 2
+        }
+      },
+      {
+        "blackboard": [
+          {
+            "key": "atk_scale_base",
+            "value": 1.13
+          },
+          {
+            "key": "cnt",
+            "value": 3
+          },
+          {
+            "key": "atk_scale_up",
+            "value": 1.18
+          },
+          {
+            "key": "damage_resistance",
+            "value": 0.15
+          }
+        ],
+        "description": "攻击敌人时攻击力提升至113%<@ba.talpu>（+3%）</>。周围存在3名及以上敌人时攻击力提升至118%<@ba.talpu>（+3%）</>且受到的伤害减少15%",
+        "name": "游侠",
+        "prefabKey": "1",
+        "rangeId": null,
+        "requiredPotentialRank": 2,
+        "unlockCondition": {
+          "level": 1,
+          "phase": 2
+        }
+      }
+    ]
+  },
+  "2": {
+    "candidates": [
+      {
+        "blackboard": [
+          {
+            "key": "taunt_level",
+            "value": 1
+          },
+          {
+            "key": "atk_scale",
+            "value": 0.15
+          }
+        ],
+        "description": "在场时，自身更容易受到攻击，所有卡西米尔干员被攻击时反弹相当于玛恩纳攻击力15%的真实伤害",
+        "name": "无动于衷",
+        "prefabKey": "2",
+        "rangeId": null,
+        "requiredPotentialRank": 0,
+        "unlockCondition": {
+          "level": 1,
+          "phase": 2
+        }
+      },
+      {
+        "blackboard": [
+          {
+            "key": "taunt_level",
+            "value": 1
+          },
+          {
+            "key": "atk_scale",
+            "value": 0.18
+          }
+        ],
+        "description": "在场时，自身更容易受到攻击，所有卡西米尔干员被攻击时反弹相当于玛恩纳攻击力18%<@ba.talpu>（+3%）</>的真实伤害",
+        "name": "无动于衷",
+        "prefabKey": "2",
+        "rangeId": null,
+        "requiredPotentialRank": 4,
+        "unlockCondition": {
+          "level": 1,
+          "phase": 2
+        }
+      }
+    ]
+  }
+}

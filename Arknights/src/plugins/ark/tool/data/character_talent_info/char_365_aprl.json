@@ -1,0 +1,48 @@
+{
+  "1": {
+    "candidates": [
+      {
+        "blackboard": [
+          {
+            "key": "respawn_time",
+            "value": -15
+          },
+          {
+            "key": "cost",
+            "value": 0
+          }
+        ],
+        "description": "自身再部署时间-15秒",
+        "name": "熟练猎手",
+        "prefabKey": "1",
+        "rangeId": null,
+        "requiredPotentialRank": 0,
+        "unlockCondition": {
+          "level": 1,
+          "phase": 1
+        }
+      },
+      {
+        "blackboard": [
+          {
+            "key": "respawn_time",
+            "value": -20
+          },
+          {
+            "key": "cost",
+            "value": -1
+          }
+        ],
+        "description": "自身再部署时间-20秒，自身部署费用-1",
+        "name": "熟练猎手",
+        "prefabKey": "1",
+        "rangeId": null,
+        "requiredPotentialRank": 0,
+        "unlockCondition": {
+          "level": 1,
+          "phase": 2
+        }
+      }
+    ]
+  }
+}

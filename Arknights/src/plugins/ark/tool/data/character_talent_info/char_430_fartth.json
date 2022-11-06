@@ -1,0 +1,111 @@
+{
+  "1": {
+    "candidates": [
+      {
+        "blackboard": [
+          {
+            "key": "atk",
+            "value": 0.1
+          },
+          {
+            "key": "delay",
+            "value": 10
+          }
+        ],
+        "description": "最近10秒内未受伤害时，攻击力+10%",
+        "name": "凝神",
+        "prefabKey": "1",
+        "rangeId": null,
+        "requiredPotentialRank": 0,
+        "unlockCondition": {
+          "level": 1,
+          "phase": 1
+        }
+      },
+      {
+        "blackboard": [
+          {
+            "key": "atk",
+            "value": 0.13
+          },
+          {
+            "key": "delay",
+            "value": 10
+          }
+        ],
+        "description": "最近10秒内未受伤害时，攻击力+13%<@ba.talpu>（+3%）</>",
+        "name": "凝神",
+        "prefabKey": "1",
+        "rangeId": null,
+        "requiredPotentialRank": 4,
+        "unlockCondition": {
+          "level": 1,
+          "phase": 1
+        }
+      },
+      {
+        "blackboard": [
+          {
+            "key": "atk",
+            "value": 0.15
+          },
+          {
+            "key": "delay",
+            "value": 10
+          }
+        ],
+        "description": "最近10秒内未受伤害时，攻击力+15%",
+        "name": "凝神",
+        "prefabKey": "1",
+        "rangeId": null,
+        "requiredPotentialRank": 0,
+        "unlockCondition": {
+          "level": 1,
+          "phase": 2
+        }
+      },
+      {
+        "blackboard": [
+          {
+            "key": "atk",
+            "value": 0.18
+          },
+          {
+            "key": "delay",
+            "value": 10
+          }
+        ],
+        "description": "最近10秒内未受伤害时，攻击力+18%<@ba.talpu>（+3%）</>",
+        "name": "凝神",
+        "prefabKey": "1",
+        "rangeId": null,
+        "requiredPotentialRank": 4,
+        "unlockCondition": {
+          "level": 1,
+          "phase": 2
+        }
+      }
+    ]
+  },
+  "2": {
+    "candidates": [
+      {
+        "blackboard": [
+          {
+            "key": "taunt_level",
+            "value": -1
+          }
+        ],
+        "description": "技能开启时不容易成为敌人的目标，且攻击无视目标的物理闪避",
+        "name": "屏息",
+        "prefabKey": "2",
+        "rangeId": null,
+        "requiredPotentialRank": 0,
+        "unlockCondition": {
+          "level": 1,
+          "phase": 2
+        }
+      }
+    ]
+  }
+}

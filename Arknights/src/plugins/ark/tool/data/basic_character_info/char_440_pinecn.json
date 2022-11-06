@@ -1,0 +1,54 @@
+{
+  "name": "松果",
+  "profession": "SNIPER",
+  "subProfessionId": "reaperrange",
+  "star": 4,
+  "elite": 2,
+  "max_level": 70,
+  "data": {
+    "atk": 667,
+    "attackSpeed": 100,
+    "baseAttackTime": 2.3,
+    "baseForceLevel": 0,
+    "blockCnt": 1,
+    "cost": 30,
+    "def": 167,
+    "frozenImmune": false,
+    "hpRecoveryPerSec": 0,
+    "levitateImmune": false,
+    "magicResistance": 0,
+    "massLevel": 0,
+    "maxDeckStackCnt": 0,
+    "maxDeployCount": 1,
+    "maxHp": 2200,
+    "moveSpeed": 1,
+    "respawnTime": 70,
+    "silenceImmune": false,
+    "sleepImmune": false,
+    "spRecoveryPerSec": 1,
+    "stunImmune": false,
+    "tauntLevel": 0
+  },
+  "teamId": null,
+  "tokenKey": null,
+  "trait": {
+    "candidates": [
+      {
+        "blackboard": [
+          {
+            "key": "atk_scale",
+            "value": 1.5
+          }
+        ],
+        "overrideDescripton": null,
+        "prefabKey": "-1",
+        "rangeId": "1-3",
+        "requiredPotentialRank": 0,
+        "unlockCondition": {
+          "level": 1,
+          "phase": 0
+        }
+      }
+    ]
+  }
+}

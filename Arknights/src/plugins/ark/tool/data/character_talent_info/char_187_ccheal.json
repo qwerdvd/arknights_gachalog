@@ -1,0 +1,106 @@
+{
+  "1": {
+    "candidates": [
+      {
+        "blackboard": [
+          {
+            "key": "atk",
+            "value": 0.05
+          },
+          {
+            "key": "def",
+            "value": 50
+          },
+          {
+            "key": "duration",
+            "value": 15
+          }
+        ],
+        "description": "部署后全体友方【医疗】职业干员攻击力+5%，防御力+50，持续15秒",
+        "name": "战地医师",
+        "prefabKey": "1",
+        "rangeId": null,
+        "requiredPotentialRank": 0,
+        "unlockCondition": {
+          "level": 1,
+          "phase": 1
+        }
+      },
+      {
+        "blackboard": [
+          {
+            "key": "atk",
+            "value": 0.07
+          },
+          {
+            "key": "def",
+            "value": 70
+          },
+          {
+            "key": "duration",
+            "value": 17
+          }
+        ],
+        "description": "部署后全体友方【医疗】职业干员攻击力+7%<@ba.talpu>（+2%）</>，防御力+70<@ba.talpu>（+20）</>，持续17<@ba.talpu>（+2）</>秒",
+        "name": "战地医师",
+        "prefabKey": "1",
+        "rangeId": null,
+        "requiredPotentialRank": 4,
+        "unlockCondition": {
+          "level": 1,
+          "phase": 1
+        }
+      },
+      {
+        "blackboard": [
+          {
+            "key": "atk",
+            "value": 0.1
+          },
+          {
+            "key": "def",
+            "value": 100
+          },
+          {
+            "key": "duration",
+            "value": 15
+          }
+        ],
+        "description": "部署后全体友方【医疗】职业干员攻击力+10%，防御力+100，持续15秒",
+        "name": "战地医师",
+        "prefabKey": "1",
+        "rangeId": null,
+        "requiredPotentialRank": 0,
+        "unlockCondition": {
+          "level": 1,
+          "phase": 2
+        }
+      },
+      {
+        "blackboard": [
+          {
+            "key": "atk",
+            "value": 0.12
+          },
+          {
+            "key": "def",
+            "value": 120
+          },
+          {
+            "key": "duration",
+            "value": 17
+          }
+        ],
+        "description": "部署后全体友方【医疗】职业干员攻击力+12%<@ba.talpu>（+2%）</>，防御力+120<@ba.talpu>（+20）</>，持续17<@ba.talpu>（+2）</>秒",
+        "name": "战地医师",
+        "prefabKey": "1",
+        "rangeId": null,
+        "requiredPotentialRank": 4,
+        "unlockCondition": {
+          "level": 1,
+          "phase": 2
+        }
+      }
+    ]
+  }
+}

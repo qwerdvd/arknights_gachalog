@@ -1,0 +1,40 @@
+{
+  "1": {
+    "candidates": [
+      {
+        "blackboard": [
+          {
+            "key": "attack_speed",
+            "value": 4
+          }
+        ],
+        "description": "攻击速度+4，优先攻击使用远程武器的敌人",
+        "name": "短板突破",
+        "prefabKey": "1",
+        "rangeId": null,
+        "requiredPotentialRank": 0,
+        "unlockCondition": {
+          "level": 1,
+          "phase": 1
+        }
+      },
+      {
+        "blackboard": [
+          {
+            "key": "attack_speed",
+            "value": 8
+          }
+        ],
+        "description": "攻击速度+8，优先攻击使用远程武器的敌人",
+        "name": "短板突破",
+        "prefabKey": "1",
+        "rangeId": null,
+        "requiredPotentialRank": 0,
+        "unlockCondition": {
+          "level": 55,
+          "phase": 1
+        }
+      }
+    ]
+  }
+}

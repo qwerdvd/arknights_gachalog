@@ -1,0 +1,91 @@
+{
+  "1": {
+    "candidates": [
+      {
+        "blackboard": [
+          {
+            "key": "atk",
+            "value": 0
+          }
+        ],
+        "description": "被动技能触发期间阻挡数降至0且获得<$ba.camou>迷彩</>",
+        "name": "注意力误导",
+        "prefabKey": "1",
+        "rangeId": null,
+        "requiredPotentialRank": 0,
+        "unlockCondition": {
+          "level": 1,
+          "phase": 0
+        }
+      },
+      {
+        "blackboard": [
+          {
+            "key": "atk",
+            "value": 0.08
+          }
+        ],
+        "description": "被动技能触发期间攻击力+8%，阻挡数降至0且获得<$ba.camou>迷彩</>",
+        "name": "注意力误导",
+        "prefabKey": "1",
+        "rangeId": null,
+        "requiredPotentialRank": 0,
+        "unlockCondition": {
+          "level": 1,
+          "phase": 1
+        }
+      },
+      {
+        "blackboard": [
+          {
+            "key": "atk",
+            "value": 0.11
+          }
+        ],
+        "description": "被动技能触发期间攻击力+11%<@ba.talpu>（+3%）</>，阻挡数降至0且获得<$ba.camou>迷彩</>",
+        "name": "注意力误导",
+        "prefabKey": "1",
+        "rangeId": null,
+        "requiredPotentialRank": 4,
+        "unlockCondition": {
+          "level": 1,
+          "phase": 1
+        }
+      },
+      {
+        "blackboard": [
+          {
+            "key": "atk",
+            "value": 0.15
+          }
+        ],
+        "description": "被动技能触发期间攻击力+15%，阻挡数降至0且获得<$ba.camou>迷彩</>",
+        "name": "注意力误导",
+        "prefabKey": "1",
+        "rangeId": null,
+        "requiredPotentialRank": 0,
+        "unlockCondition": {
+          "level": 1,
+          "phase": 2
+        }
+      },
+      {
+        "blackboard": [
+          {
+            "key": "atk",
+            "value": 0.18
+          }
+        ],
+        "description": "被动技能触发期间攻击力+18%<@ba.talpu>（+3%）</>，阻挡数降至0且获得<$ba.camou>迷彩</>",
+        "name": "注意力误导",
+        "prefabKey": "1",
+        "rangeId": null,
+        "requiredPotentialRank": 4,
+        "unlockCondition": {
+          "level": 1,
+          "phase": 2
+        }
+      }
+    ]
+  }
+}

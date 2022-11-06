@@ -1,0 +1,131 @@
+{
+  "1": {
+    "candidates": [
+      {
+        "blackboard": [
+          {
+            "key": "def",
+            "value": 0
+          },
+          {
+            "key": "respawn_time",
+            "value": 20
+          },
+          {
+            "key": "ability_range_forward_extend",
+            "value": 1
+          }
+        ],
+        "description": "攻击距离+1，再部署时间+20秒",
+        "name": "重火力",
+        "prefabKey": "1",
+        "rangeId": null,
+        "requiredPotentialRank": 0,
+        "unlockCondition": {
+          "level": 1,
+          "phase": 0
+        }
+      },
+      {
+        "blackboard": [
+          {
+            "key": "def",
+            "value": 0.05
+          },
+          {
+            "key": "respawn_time",
+            "value": 20
+          },
+          {
+            "key": "ability_range_forward_extend",
+            "value": 1
+          }
+        ],
+        "description": "攻击距离+1，防御力+5%，再部署时间+20秒",
+        "name": "重火力",
+        "prefabKey": "1",
+        "rangeId": null,
+        "requiredPotentialRank": 0,
+        "unlockCondition": {
+          "level": 1,
+          "phase": 1
+        }
+      },
+      {
+        "blackboard": [
+          {
+            "key": "def",
+            "value": 0.1
+          },
+          {
+            "key": "respawn_time",
+            "value": 20
+          },
+          {
+            "key": "ability_range_forward_extend",
+            "value": 1
+          }
+        ],
+        "description": "攻击距离+1，防御力+10%<@ba.talpu>（+5%）</>，再部署时间+20秒",
+        "name": "重火力",
+        "prefabKey": "1",
+        "rangeId": null,
+        "requiredPotentialRank": 4,
+        "unlockCondition": {
+          "level": 1,
+          "phase": 1
+        }
+      },
+      {
+        "blackboard": [
+          {
+            "key": "def",
+            "value": 0.1
+          },
+          {
+            "key": "respawn_time",
+            "value": 20
+          },
+          {
+            "key": "ability_range_forward_extend",
+            "value": 2
+          }
+        ],
+        "description": "攻击距离+2，防御力+10%，再部署时间+20秒",
+        "name": "重火力",
+        "prefabKey": "1",
+        "rangeId": null,
+        "requiredPotentialRank": 0,
+        "unlockCondition": {
+          "level": 1,
+          "phase": 2
+        }
+      },
+      {
+        "blackboard": [
+          {
+            "key": "def",
+            "value": 0.15
+          },
+          {
+            "key": "respawn_time",
+            "value": 20
+          },
+          {
+            "key": "ability_range_forward_extend",
+            "value": 2
+          }
+        ],
+        "description": "攻击距离+2，防御力+15%<@ba.talpu>（+5%）</>，再部署时间+20秒",
+        "name": "重火力",
+        "prefabKey": "1",
+        "rangeId": null,
+        "requiredPotentialRank": 4,
+        "unlockCondition": {
+          "level": 1,
+          "phase": 2
+        }
+      }
+    ]
+  }
+}

@@ -1,0 +1,74 @@
+{
+  "1": {
+    "candidates": [
+      {
+        "blackboard": [
+          {
+            "key": "atk_scale",
+            "value": 0.1
+          }
+        ],
+        "description": "技能未开启时每次受到攻击时对目标造成相当于龙舌兰攻击力10%的法术伤害",
+        "name": "伺机而动",
+        "prefabKey": "1",
+        "rangeId": null,
+        "requiredPotentialRank": 0,
+        "unlockCondition": {
+          "level": 1,
+          "phase": 1
+        }
+      },
+      {
+        "blackboard": [
+          {
+            "key": "atk_scale",
+            "value": 0.13
+          }
+        ],
+        "description": "技能未开启时每次受到攻击时对目标造成相当于龙舌兰攻击力13%<@ba.talpu>（+3%）</>的法术伤害",
+        "name": "伺机而动",
+        "prefabKey": "1",
+        "rangeId": null,
+        "requiredPotentialRank": 4,
+        "unlockCondition": {
+          "level": 1,
+          "phase": 1
+        }
+      },
+      {
+        "blackboard": [
+          {
+            "key": "atk_scale",
+            "value": 0.2
+          }
+        ],
+        "description": "技能未开启时每次受到攻击时对目标造成相当于龙舌兰攻击力20%的法术伤害",
+        "name": "伺机而动",
+        "prefabKey": "1",
+        "rangeId": null,
+        "requiredPotentialRank": 0,
+        "unlockCondition": {
+          "level": 1,
+          "phase": 2
+        }
+      },
+      {
+        "blackboard": [
+          {
+            "key": "atk_scale",
+            "value": 0.23
+          }
+        ],
+        "description": "技能未开启时每次受到攻击时对目标造成相当于龙舌兰攻击力23%<@ba.talpu>（+3%）</>的法术伤害",
+        "name": "伺机而动",
+        "prefabKey": "1",
+        "rangeId": null,
+        "requiredPotentialRank": 4,
+        "unlockCondition": {
+          "level": 1,
+          "phase": 2
+        }
+      }
+    ]
+  }
+}

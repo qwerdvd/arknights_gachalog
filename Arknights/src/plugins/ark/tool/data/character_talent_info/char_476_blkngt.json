@@ -1,0 +1,57 @@
+{
+  "1": {
+    "candidates": [
+      {
+        "blackboard": [
+          {
+            "key": "cnt",
+            "value": 1
+          }
+        ],
+        "description": "可以在战术点召唤眠兽协助作战，其被击败后会在20秒后自动刷新",
+        "name": "夜行",
+        "prefabKey": "1",
+        "rangeId": null,
+        "requiredPotentialRank": 0,
+        "unlockCondition": {
+          "level": 1,
+          "phase": 0
+        }
+      },
+      {
+        "blackboard": [
+          {
+            "key": "cnt",
+            "value": 1
+          }
+        ],
+        "description": "可以在战术点召唤眠兽协助作战，其被击败后会在17秒后自动刷新",
+        "name": "夜行",
+        "prefabKey": "1",
+        "rangeId": null,
+        "requiredPotentialRank": 0,
+        "unlockCondition": {
+          "level": 1,
+          "phase": 1
+        }
+      },
+      {
+        "blackboard": [
+          {
+            "key": "cnt",
+            "value": 1
+          }
+        ],
+        "description": "可以在战术点召唤眠兽协助作战，其被击败后会在15秒后自动刷新",
+        "name": "夜行",
+        "prefabKey": "1",
+        "rangeId": null,
+        "requiredPotentialRank": 0,
+        "unlockCondition": {
+          "level": 1,
+          "phase": 2
+        }
+      }
+    ]
+  }
+}

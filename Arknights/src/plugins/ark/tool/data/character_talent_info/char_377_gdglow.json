@@ -1,0 +1,144 @@
+{
+  "1": {
+    "candidates": [
+      {
+        "blackboard": [
+          {
+            "key": "attack@prob",
+            "value": 0.015
+          },
+          {
+            "key": "attack@atk_scale_2",
+            "value": 2
+          },
+          {
+            "key": "attack@max_stack_cnt",
+            "value": 40
+          }
+        ],
+        "description": "技能开启后浮游单元攻击时有10%概率自爆（回到干员身边）对小范围敌人造成澄闪200%攻击力的法术伤害",
+        "name": "信标的愤怒",
+        "prefabKey": "1",
+        "rangeId": null,
+        "requiredPotentialRank": 0,
+        "unlockCondition": {
+          "level": 1,
+          "phase": 1
+        }
+      },
+      {
+        "blackboard": [
+          {
+            "key": "attack@prob",
+            "value": 0.015
+          },
+          {
+            "key": "attack@atk_scale_2",
+            "value": 2.15
+          },
+          {
+            "key": "attack@max_stack_cnt",
+            "value": 40
+          }
+        ],
+        "description": "技能开启后浮游单元攻击时有10%概率自爆（回到干员身边）对小范围敌人造成澄闪215%<@ba.talpu>（+15%）</>攻击力的法术伤害",
+        "name": "信标的愤怒",
+        "prefabKey": "1",
+        "rangeId": null,
+        "requiredPotentialRank": 2,
+        "unlockCondition": {
+          "level": 1,
+          "phase": 1
+        }
+      },
+      {
+        "blackboard": [
+          {
+            "key": "attack@prob",
+            "value": 0.015
+          },
+          {
+            "key": "attack@atk_scale_2",
+            "value": 3
+          },
+          {
+            "key": "attack@max_stack_cnt",
+            "value": 40
+          }
+        ],
+        "description": "技能开启后浮游单元攻击时有10%概率自爆（回到干员身边）对小范围敌人造成澄闪300%攻击力的法术伤害",
+        "name": "信标的愤怒",
+        "prefabKey": "1",
+        "rangeId": null,
+        "requiredPotentialRank": 0,
+        "unlockCondition": {
+          "level": 1,
+          "phase": 2
+        }
+      },
+      {
+        "blackboard": [
+          {
+            "key": "attack@prob",
+            "value": 0.015
+          },
+          {
+            "key": "attack@atk_scale_2",
+            "value": 3.15
+          },
+          {
+            "key": "attack@max_stack_cnt",
+            "value": 40
+          }
+        ],
+        "description": "技能开启后浮游单元攻击时有10%概率自爆（回到干员身边）对小范围敌人造成澄闪315%<@ba.talpu>（+15%）</>攻击力的法术伤害",
+        "name": "信标的愤怒",
+        "prefabKey": "1",
+        "rangeId": null,
+        "requiredPotentialRank": 2,
+        "unlockCondition": {
+          "level": 1,
+          "phase": 2
+        }
+      }
+    ]
+  },
+  "2": {
+    "candidates": [
+      {
+        "blackboard": [
+          {
+            "key": "magic_resist_penetrate_fixed",
+            "value": 15
+          }
+        ],
+        "description": "自身与浮游单元无视敌人15点法术抗性",
+        "name": "精准导流",
+        "prefabKey": "2",
+        "rangeId": null,
+        "requiredPotentialRank": 0,
+        "unlockCondition": {
+          "level": 1,
+          "phase": 2
+        }
+      },
+      {
+        "blackboard": [
+          {
+            "key": "magic_resist_penetrate_fixed",
+            "value": 18
+          }
+        ],
+        "description": "自身与浮游单元无视敌人18<@ba.talpu>（+3）</>点法术抗性",
+        "name": "精准导流",
+        "prefabKey": "2",
+        "rangeId": null,
+        "requiredPotentialRank": 5,
+        "unlockCondition": {
+          "level": 1,
+          "phase": 2
+        }
+      }
+    ]
+  }
+}

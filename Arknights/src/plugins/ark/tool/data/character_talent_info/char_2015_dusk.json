@@ -1,0 +1,111 @@
+{
+  "1": {
+    "candidates": [
+      {
+        "blackboard": [
+          {
+            "key": "atk",
+            "value": 0.02
+          },
+          {
+            "key": "max_stack_cnt",
+            "value": 10
+          }
+        ],
+        "description": "击杀一名敌人获得2%攻击力，最多可叠加10层",
+        "name": "化境",
+        "prefabKey": "1",
+        "rangeId": null,
+        "requiredPotentialRank": 0,
+        "unlockCondition": {
+          "level": 1,
+          "phase": 1
+        }
+      },
+      {
+        "blackboard": [
+          {
+            "key": "atk",
+            "value": 0.02
+          },
+          {
+            "key": "max_stack_cnt",
+            "value": 13
+          }
+        ],
+        "description": "击杀一名敌人获得2%攻击力，最多可叠加13<@ba.talpu>（+3）</>层",
+        "name": "化境",
+        "prefabKey": "1",
+        "rangeId": null,
+        "requiredPotentialRank": 4,
+        "unlockCondition": {
+          "level": 1,
+          "phase": 1
+        }
+      },
+      {
+        "blackboard": [
+          {
+            "key": "atk",
+            "value": 0.02
+          },
+          {
+            "key": "max_stack_cnt",
+            "value": 15
+          }
+        ],
+        "description": "夕与\"小自在\"击杀一名敌人时，夕获得2%攻击力，最多可叠加15层",
+        "name": "化境",
+        "prefabKey": "1",
+        "rangeId": null,
+        "requiredPotentialRank": 0,
+        "unlockCondition": {
+          "level": 1,
+          "phase": 2
+        }
+      },
+      {
+        "blackboard": [
+          {
+            "key": "atk",
+            "value": 0.02
+          },
+          {
+            "key": "max_stack_cnt",
+            "value": 18
+          }
+        ],
+        "description": "夕与\"小自在\"击杀一名敌人时，夕获得2%攻击力，最多可叠加18<@ba.talpu>（+3）</>层",
+        "name": "化境",
+        "prefabKey": "1",
+        "rangeId": null,
+        "requiredPotentialRank": 4,
+        "unlockCondition": {
+          "level": 1,
+          "phase": 2
+        }
+      }
+    ]
+  },
+  "2": {
+    "candidates": [
+      {
+        "blackboard": [
+          {
+            "key": "attack@tokenduration",
+            "value": 25
+          }
+        ],
+        "description": "部署后首次攻击敌人时，在目标位置（可部署地面）召唤一个“小自在”（持续25秒）",
+        "name": "点睛",
+        "prefabKey": "2",
+        "rangeId": null,
+        "requiredPotentialRank": 0,
+        "unlockCondition": {
+          "level": 1,
+          "phase": 2
+        }
+      }
+    ]
+  }
+}

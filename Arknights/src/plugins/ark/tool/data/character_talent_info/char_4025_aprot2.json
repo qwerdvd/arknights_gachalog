@@ -1,0 +1,123 @@
+{
+  "1": {
+    "candidates": [
+      {
+        "blackboard": [
+          {
+            "key": "attack_speed",
+            "value": 10
+          },
+          {
+            "key": "atk",
+            "value": 0
+          }
+        ],
+        "description": "在【傀影与猩红孤钻】中，攻击速度+10",
+        "name": "回忆之地",
+        "prefabKey": "1",
+        "rangeId": null,
+        "requiredPotentialRank": 0,
+        "unlockCondition": {
+          "level": 1,
+          "phase": 0
+        }
+      },
+      {
+        "blackboard": [
+          {
+            "key": "attack_speed",
+            "value": 20
+          },
+          {
+            "key": "atk",
+            "value": 0.05
+          }
+        ],
+        "description": "在【傀影与猩红孤钻】中，攻击力+5%，攻击速度+20",
+        "name": "回忆之地",
+        "prefabKey": "1",
+        "rangeId": null,
+        "requiredPotentialRank": 0,
+        "unlockCondition": {
+          "level": 1,
+          "phase": 1
+        }
+      },
+      {
+        "blackboard": [
+          {
+            "key": "attack_speed",
+            "value": 30
+          },
+          {
+            "key": "atk",
+            "value": 0.15
+          }
+        ],
+        "description": "在【傀影与猩红孤钻】中，攻击力+15%，攻击速度+30",
+        "name": "回忆之地",
+        "prefabKey": "1",
+        "rangeId": null,
+        "requiredPotentialRank": 0,
+        "unlockCondition": {
+          "level": 1,
+          "phase": 2
+        }
+      }
+    ]
+  },
+  "2": {
+    "candidates": [
+      {
+        "blackboard": [
+          {
+            "key": "prob",
+            "value": 0.2
+          },
+          {
+            "key": "magic_resistance",
+            "value": -0.25
+          },
+          {
+            "key": "duration",
+            "value": 3
+          }
+        ],
+        "description": "攻击时有20%的几率使目标法术抗性-25%，持续3秒",
+        "name": "厄运宣告",
+        "prefabKey": "2",
+        "rangeId": null,
+        "requiredPotentialRank": 0,
+        "unlockCondition": {
+          "level": 1,
+          "phase": 2
+        }
+      },
+      {
+        "blackboard": [
+          {
+            "key": "prob",
+            "value": 0.25
+          },
+          {
+            "key": "magic_resistance",
+            "value": -0.25
+          },
+          {
+            "key": "duration",
+            "value": 3
+          }
+        ],
+        "description": "攻击时有25%<@ba.talpu>（+5%）</>的几率使目标法术抗性-25%，持续3秒",
+        "name": "厄运宣告",
+        "prefabKey": "2",
+        "rangeId": null,
+        "requiredPotentialRank": 4,
+        "unlockCondition": {
+          "level": 1,
+          "phase": 2
+        }
+      }
+    ]
+  }
+}

@@ -1,0 +1,90 @@
+{
+  "1": {
+    "candidates": [
+      {
+        "blackboard": [
+          {
+            "key": "duration",
+            "value": 3.1
+          },
+          {
+            "key": "poison_damage",
+            "value": 30
+          }
+        ],
+        "description": "攻击使目标中毒，在3秒内每秒受到30点法术伤害",
+        "name": "神经毒素",
+        "prefabKey": "1",
+        "rangeId": null,
+        "requiredPotentialRank": 0,
+        "unlockCondition": {
+          "level": 1,
+          "phase": 1
+        }
+      },
+      {
+        "blackboard": [
+          {
+            "key": "duration",
+            "value": 3.1
+          },
+          {
+            "key": "poison_damage",
+            "value": 40
+          }
+        ],
+        "description": "攻击使目标中毒，在3秒内每秒受到40<@ba.talpu>（+10）</>点法术伤害",
+        "name": "神经毒素",
+        "prefabKey": "1",
+        "rangeId": null,
+        "requiredPotentialRank": 4,
+        "unlockCondition": {
+          "level": 1,
+          "phase": 1
+        }
+      },
+      {
+        "blackboard": [
+          {
+            "key": "duration",
+            "value": 3.1
+          },
+          {
+            "key": "poison_damage",
+            "value": 75
+          }
+        ],
+        "description": "攻击使目标中毒，在3秒内每秒受到75点法术伤害",
+        "name": "神经毒素",
+        "prefabKey": "1",
+        "rangeId": null,
+        "requiredPotentialRank": 0,
+        "unlockCondition": {
+          "level": 1,
+          "phase": 2
+        }
+      },
+      {
+        "blackboard": [
+          {
+            "key": "duration",
+            "value": 3.1
+          },
+          {
+            "key": "poison_damage",
+            "value": 85
+          }
+        ],
+        "description": "攻击使目标中毒，在3秒内每秒受到85<@ba.talpu>（+10）</>点法术伤害",
+        "name": "神经毒素",
+        "prefabKey": "1",
+        "rangeId": null,
+        "requiredPotentialRank": 4,
+        "unlockCondition": {
+          "level": 1,
+          "phase": 2
+        }
+      }
+    ]
+  }
+}

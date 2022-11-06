@@ -1,0 +1,118 @@
+{
+  "1": {
+    "candidates": [
+      {
+        "blackboard": [
+          {
+            "key": "move_speed",
+            "value": -0.8
+          },
+          {
+            "key": "sp",
+            "value": 1
+          },
+          {
+            "key": "interval",
+            "value": 10
+          }
+        ],
+        "description": "造成致命伤害时使敌人保留1点生命并使其<$ba.dying>重伤</>（击杀者技力+1）；嵯峨不攻击<$ba.dying>重伤</>单位",
+        "name": "劝善",
+        "prefabKey": "1",
+        "rangeId": null,
+        "requiredPotentialRank": 0,
+        "unlockCondition": {
+          "level": 1,
+          "phase": 0
+        }
+      },
+      {
+        "blackboard": [
+          {
+            "key": "move_speed",
+            "value": -0.8
+          },
+          {
+            "key": "sp",
+            "value": 2
+          },
+          {
+            "key": "interval",
+            "value": 10
+          }
+        ],
+        "description": "造成致命伤害时使敌人保留1点生命并使其<$ba.dying>重伤</>（击杀者技力+2）；嵯峨不攻击<$ba.dying>重伤</>单位",
+        "name": "劝善",
+        "prefabKey": "1",
+        "rangeId": null,
+        "requiredPotentialRank": 0,
+        "unlockCondition": {
+          "level": 1,
+          "phase": 1
+        }
+      }
+    ]
+  },
+  "2": {
+    "candidates": [
+      {
+        "blackboard": [
+          {
+            "key": "hp_ratio",
+            "value": 0.4
+          },
+          {
+            "key": "hp_recovery_per_sec_by_max_hp_ratio",
+            "value": 0.05
+          },
+          {
+            "key": "prob",
+            "value": 0.7
+          },
+          {
+            "key": "duration",
+            "value": 15
+          }
+        ],
+        "description": "生命值低于40%时，仅一次获得70%物理闪避和每秒回复5%的最大生命，持续15秒",
+        "name": "清明",
+        "prefabKey": "2",
+        "rangeId": null,
+        "requiredPotentialRank": 0,
+        "unlockCondition": {
+          "level": 1,
+          "phase": 2
+        }
+      },
+      {
+        "blackboard": [
+          {
+            "key": "hp_ratio",
+            "value": 0.4
+          },
+          {
+            "key": "hp_recovery_per_sec_by_max_hp_ratio",
+            "value": 0.06
+          },
+          {
+            "key": "prob",
+            "value": 0.7
+          },
+          {
+            "key": "duration",
+            "value": 17
+          }
+        ],
+        "description": "生命值低于40%时，仅一次获得70%物理闪避和每秒回复6%<@ba.talpu>（+1%）</>的最大生命，持续17<@ba.talpu>（+2）</>秒",
+        "name": "清明",
+        "prefabKey": "2",
+        "rangeId": null,
+        "requiredPotentialRank": 4,
+        "unlockCondition": {
+          "level": 1,
+          "phase": 2
+        }
+      }
+    ]
+  }
+}

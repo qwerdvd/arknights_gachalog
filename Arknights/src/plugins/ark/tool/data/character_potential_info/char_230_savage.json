@@ -1,0 +1,71 @@
+{
+  "2": {
+    "buff": {
+      "attributes": {
+        "abnormalAntis": null,
+        "abnormalComboImmunes": null,
+        "abnormalCombos": null,
+        "abnormalFlags": null,
+        "abnormalImmunes": null,
+        "attributeModifiers": [
+          {
+            "attributeType": 1,
+            "fetchBaseValueFromSourceEntity": false,
+            "formulaItem": 0,
+            "loadFromBlackboard": false,
+            "value": 35
+          }
+        ]
+      }
+    },
+    "description": "攻击力+35",
+    "equivalentCost": null,
+    "type": 0
+  },
+  "3": {
+    "buff": {
+      "attributes": {
+        "abnormalAntis": null,
+        "abnormalComboImmunes": null,
+        "abnormalCombos": null,
+        "abnormalFlags": null,
+        "abnormalImmunes": null,
+        "attributeModifiers": [
+          {
+            "attributeType": 0,
+            "fetchBaseValueFromSourceEntity": false,
+            "formulaItem": 0,
+            "loadFromBlackboard": false,
+            "value": 250
+          }
+        ]
+      }
+    },
+    "description": "生命上限+250",
+    "equivalentCost": null,
+    "type": 0
+  },
+  "4": {
+    "buff": {
+      "attributes": {
+        "abnormalAntis": null,
+        "abnormalComboImmunes": null,
+        "abnormalCombos": null,
+        "abnormalFlags": null,
+        "abnormalImmunes": null,
+        "attributeModifiers": [
+          {
+            "attributeType": 2,
+            "fetchBaseValueFromSourceEntity": false,
+            "formulaItem": 0,
+            "loadFromBlackboard": false,
+            "value": 35
+          }
+        ]
+      }
+    },
+    "description": "防御力+35",
+    "equivalentCost": null,
+    "type": 0
+  }
+}

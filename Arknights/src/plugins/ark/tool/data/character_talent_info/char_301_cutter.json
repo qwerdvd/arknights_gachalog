@@ -1,0 +1,90 @@
+{
+  "1": {
+    "candidates": [
+      {
+        "blackboard": [
+          {
+            "key": "sp",
+            "value": 1
+          },
+          {
+            "key": "prob",
+            "value": 0.12
+          }
+        ],
+        "description": "造成伤害时有12%的几率额外回复1点技力",
+        "name": "光蚀刻痕",
+        "prefabKey": "1",
+        "rangeId": null,
+        "requiredPotentialRank": 0,
+        "unlockCondition": {
+          "level": 1,
+          "phase": 1
+        }
+      },
+      {
+        "blackboard": [
+          {
+            "key": "sp",
+            "value": 1
+          },
+          {
+            "key": "prob",
+            "value": 0.15
+          }
+        ],
+        "description": "造成伤害时有15%<@ba.talpu>（+3%）</>的几率额外回复1点技力",
+        "name": "光蚀刻痕",
+        "prefabKey": "1",
+        "rangeId": null,
+        "requiredPotentialRank": 4,
+        "unlockCondition": {
+          "level": 1,
+          "phase": 1
+        }
+      },
+      {
+        "blackboard": [
+          {
+            "key": "sp",
+            "value": 1
+          },
+          {
+            "key": "prob",
+            "value": 0.2
+          }
+        ],
+        "description": "造成伤害时有20%的几率额外回复1点技力",
+        "name": "光蚀刻痕",
+        "prefabKey": "1",
+        "rangeId": null,
+        "requiredPotentialRank": 0,
+        "unlockCondition": {
+          "level": 1,
+          "phase": 2
+        }
+      },
+      {
+        "blackboard": [
+          {
+            "key": "sp",
+            "value": 1
+          },
+          {
+            "key": "prob",
+            "value": 0.23
+          }
+        ],
+        "description": "造成伤害时有23%<@ba.talpu>（+3%）</>的几率额外回复1点技力",
+        "name": "光蚀刻痕",
+        "prefabKey": "1",
+        "rangeId": null,
+        "requiredPotentialRank": 4,
+        "unlockCondition": {
+          "level": 1,
+          "phase": 2
+        }
+      }
+    ]
+  }
+}

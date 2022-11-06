@@ -1,0 +1,54 @@
+{
+  "name": "梓兰",
+  "profession": "SUPPORT",
+  "subProfessionId": "slower",
+  "star": 3,
+  "elite": 1,
+  "max_level": 55,
+  "data": {
+    "atk": 378,
+    "attackSpeed": 100,
+    "baseAttackTime": 1.9,
+    "baseForceLevel": 0,
+    "blockCnt": 1,
+    "cost": 12,
+    "def": 83,
+    "frozenImmune": false,
+    "hpRecoveryPerSec": 0,
+    "levitateImmune": false,
+    "magicResistance": 15,
+    "massLevel": 0,
+    "maxDeckStackCnt": 0,
+    "maxDeployCount": 1,
+    "maxHp": 935,
+    "moveSpeed": 1,
+    "respawnTime": 70,
+    "silenceImmune": false,
+    "sleepImmune": false,
+    "spRecoveryPerSec": 1,
+    "stunImmune": false,
+    "tauntLevel": 0
+  },
+  "teamId": "reserve6",
+  "tokenKey": null,
+  "trait": {
+    "candidates": [
+      {
+        "blackboard": [
+          {
+            "key": "sluggish",
+            "value": 0.8
+          }
+        ],
+        "overrideDescripton": null,
+        "prefabKey": null,
+        "rangeId": null,
+        "requiredPotentialRank": 0,
+        "unlockCondition": {
+          "level": 1,
+          "phase": 0
+        }
+      }
+    ]
+  }
+}

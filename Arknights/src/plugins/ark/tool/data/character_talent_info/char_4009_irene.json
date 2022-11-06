@@ -1,0 +1,94 @@
+{
+  "1": {
+    "candidates": [
+      {
+        "blackboard": [
+          {
+            "key": "prob",
+            "value": 0.5
+          },
+          {
+            "key": "def_penetrate",
+            "value": 0.3
+          }
+        ],
+        "description": "对敌人造成物理伤害时有50%概率无视其30%防御力，对空中单位概率提升至100%",
+        "name": "审判之火",
+        "prefabKey": "1",
+        "rangeId": null,
+        "requiredPotentialRank": 0,
+        "unlockCondition": {
+          "level": 1,
+          "phase": 1
+        }
+      },
+      {
+        "blackboard": [
+          {
+            "key": "prob",
+            "value": 0.5
+          },
+          {
+            "key": "def_penetrate",
+            "value": 0.5
+          }
+        ],
+        "description": "对敌人造成物理伤害时有50%概率无视其50%防御力，对空中单位概率提升至100%",
+        "name": "审判之火",
+        "prefabKey": "1",
+        "rangeId": null,
+        "requiredPotentialRank": 0,
+        "unlockCondition": {
+          "level": 1,
+          "phase": 2
+        }
+      }
+    ]
+  },
+  "2": {
+    "candidates": [
+      {
+        "blackboard": [
+          {
+            "key": "attack_speed",
+            "value": 18
+          },
+          {
+            "key": "atk",
+            "value": 0
+          }
+        ],
+        "description": "攻击速度+18，场上有【海怪】敌人时效果翻倍",
+        "name": "净化之剑",
+        "prefabKey": "2",
+        "rangeId": null,
+        "requiredPotentialRank": 0,
+        "unlockCondition": {
+          "level": 1,
+          "phase": 2
+        }
+      },
+      {
+        "blackboard": [
+          {
+            "key": "attack_speed",
+            "value": 21
+          },
+          {
+            "key": "atk",
+            "value": 0
+          }
+        ],
+        "description": "攻击速度+21<@ba.talpu>（+3）</>，场上有【海怪】敌人时效果翻倍",
+        "name": "净化之剑",
+        "prefabKey": "2",
+        "rangeId": null,
+        "requiredPotentialRank": 4,
+        "unlockCondition": {
+          "level": 1,
+          "phase": 2
+        }
+      }
+    ]
+  }
+}

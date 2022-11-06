@@ -1,0 +1,47 @@
+{
+  "1": {
+    "candidates": [
+      {
+        "blackboard": [
+          {
+            "key": "wpnsts_t_1[ally].sp",
+            "value": 1
+          },
+          {
+            "key": "wpnsts_t_1[ally].interval",
+            "value": 2
+          },
+          {
+            "key": "wpnsts_t_1[enemy].sp",
+            "value": 1
+          },
+          {
+            "key": "wpnsts_t_1[enemy].interval",
+            "value": 2
+          },
+          {
+            "key": "duration",
+            "value": 20
+          },
+          {
+            "key": "stun",
+            "value": 5
+          },
+          {
+            "key": "blast_damage",
+            "value": 1000
+          }
+        ],
+        "description": "-",
+        "name": null,
+        "prefabKey": "1",
+        "rangeId": null,
+        "requiredPotentialRank": 0,
+        "unlockCondition": {
+          "level": 1,
+          "phase": 0
+        }
+      }
+    ]
+  }
+}

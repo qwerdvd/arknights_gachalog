@@ -1,0 +1,74 @@
+{
+  "1": {
+    "candidates": [
+      {
+        "blackboard": [
+          {
+            "key": "atk",
+            "value": 0.05
+          }
+        ],
+        "description": "在场时，所有【辅助】干员攻击力+5%",
+        "name": "园丁",
+        "prefabKey": "1",
+        "rangeId": null,
+        "requiredPotentialRank": 0,
+        "unlockCondition": {
+          "level": 1,
+          "phase": 1
+        }
+      },
+      {
+        "blackboard": [
+          {
+            "key": "atk",
+            "value": 0.07
+          }
+        ],
+        "description": "在场时，所有【辅助】干员攻击力+7%<@ba.talpu>（+2%）</>",
+        "name": "园丁",
+        "prefabKey": "1",
+        "rangeId": null,
+        "requiredPotentialRank": 4,
+        "unlockCondition": {
+          "level": 1,
+          "phase": 1
+        }
+      },
+      {
+        "blackboard": [
+          {
+            "key": "atk",
+            "value": 0.09
+          }
+        ],
+        "description": "在场时，所有【辅助】干员攻击力+9%",
+        "name": "园丁",
+        "prefabKey": "1",
+        "rangeId": null,
+        "requiredPotentialRank": 0,
+        "unlockCondition": {
+          "level": 1,
+          "phase": 2
+        }
+      },
+      {
+        "blackboard": [
+          {
+            "key": "atk",
+            "value": 0.11
+          }
+        ],
+        "description": "在场时，所有【辅助】干员攻击力+11%<@ba.talpu>（+2%）</>",
+        "name": "园丁",
+        "prefabKey": "1",
+        "rangeId": null,
+        "requiredPotentialRank": 4,
+        "unlockCondition": {
+          "level": 1,
+          "phase": 2
+        }
+      }
+    ]
+  }
+}

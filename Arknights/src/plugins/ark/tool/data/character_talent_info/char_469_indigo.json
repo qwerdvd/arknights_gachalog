@@ -1,0 +1,90 @@
+{
+  "1": {
+    "candidates": [
+      {
+        "blackboard": [
+          {
+            "key": "prob",
+            "value": 0.12
+          },
+          {
+            "key": "duration",
+            "value": 4
+          }
+        ],
+        "description": "攻击时有12%的几率使目标<$ba.root>束缚</>4秒，不以束缚状态的敌人为攻击目标",
+        "name": "柔光缚目",
+        "prefabKey": "1",
+        "rangeId": null,
+        "requiredPotentialRank": 0,
+        "unlockCondition": {
+          "level": 1,
+          "phase": 1
+        }
+      },
+      {
+        "blackboard": [
+          {
+            "key": "prob",
+            "value": 0.14
+          },
+          {
+            "key": "duration",
+            "value": 4
+          }
+        ],
+        "description": "攻击时有14%<@ba.talpu>（+2%）</>的几率使目标<$ba.root>束缚</>4秒，不以束缚状态的敌人为攻击目标",
+        "name": "柔光缚目",
+        "prefabKey": "1",
+        "rangeId": null,
+        "requiredPotentialRank": 4,
+        "unlockCondition": {
+          "level": 1,
+          "phase": 1
+        }
+      },
+      {
+        "blackboard": [
+          {
+            "key": "prob",
+            "value": 0.18
+          },
+          {
+            "key": "duration",
+            "value": 4
+          }
+        ],
+        "description": "攻击时有18%的几率使目标<$ba.root>束缚</>4秒，不以束缚状态的敌人为攻击目标",
+        "name": "柔光缚目",
+        "prefabKey": "1",
+        "rangeId": null,
+        "requiredPotentialRank": 0,
+        "unlockCondition": {
+          "level": 1,
+          "phase": 2
+        }
+      },
+      {
+        "blackboard": [
+          {
+            "key": "prob",
+            "value": 0.2
+          },
+          {
+            "key": "duration",
+            "value": 4
+          }
+        ],
+        "description": "攻击时有20%<@ba.talpu>（+2%）</>的几率使目标<$ba.root>束缚</>4秒，不以束缚状态的敌人为攻击目标",
+        "name": "柔光缚目",
+        "prefabKey": "1",
+        "rangeId": null,
+        "requiredPotentialRank": 4,
+        "unlockCondition": {
+          "level": 1,
+          "phase": 2
+        }
+      }
+    ]
+  }
+}

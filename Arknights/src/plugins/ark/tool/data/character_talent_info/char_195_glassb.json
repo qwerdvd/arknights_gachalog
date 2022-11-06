@@ -1,0 +1,48 @@
+{
+  "1": {
+    "candidates": [
+      {
+        "blackboard": [
+          {
+            "key": "def",
+            "value": -0.35
+          },
+          {
+            "key": "attack_speed",
+            "value": 18
+          }
+        ],
+        "description": "防御力-35%，但攻击速度+18",
+        "name": "探知者",
+        "prefabKey": "1",
+        "rangeId": null,
+        "requiredPotentialRank": 0,
+        "unlockCondition": {
+          "level": 1,
+          "phase": 2
+        }
+      },
+      {
+        "blackboard": [
+          {
+            "key": "def",
+            "value": -0.35
+          },
+          {
+            "key": "attack_speed",
+            "value": 21
+          }
+        ],
+        "description": "防御力-35%，但攻击速度+21<@ba.talpu>（+3）</>",
+        "name": "探知者",
+        "prefabKey": "1",
+        "rangeId": null,
+        "requiredPotentialRank": 4,
+        "unlockCondition": {
+          "level": 1,
+          "phase": 2
+        }
+      }
+    ]
+  }
+}

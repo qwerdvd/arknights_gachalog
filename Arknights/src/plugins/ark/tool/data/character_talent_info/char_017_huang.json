@@ -1,0 +1,168 @@
+{
+  "1": {
+    "candidates": [
+      {
+        "blackboard": [
+          {
+            "key": "hp_ratio",
+            "value": 0.25
+          },
+          {
+            "key": "huang_t_1[heal].hp_ratio",
+            "value": 0.5
+          },
+          {
+            "key": "huang_t_1[lock].min_hp_ratio",
+            "value": 0.5
+          },
+          {
+            "key": "huang_t_1[lock].duration",
+            "value": 3
+          }
+        ],
+        "description": "在生命值低于25%时，仅一次回复50%的生命值并在3秒内使生命值不低于50%",
+        "name": "紧急除颤",
+        "prefabKey": "1",
+        "rangeId": null,
+        "requiredPotentialRank": 0,
+        "unlockCondition": {
+          "level": 1,
+          "phase": 1
+        }
+      },
+      {
+        "blackboard": [
+          {
+            "key": "hp_ratio",
+            "value": 0.25
+          },
+          {
+            "key": "huang_t_1[heal].hp_ratio",
+            "value": 0.5
+          },
+          {
+            "key": "huang_t_1[lock].min_hp_ratio",
+            "value": 0.5
+          },
+          {
+            "key": "huang_t_1[lock].duration",
+            "value": 4
+          }
+        ],
+        "description": "在生命值低于25%时，仅一次回复50%的生命值并在4<@ba.talpu>（+1）</>秒内使生命值不低于50%",
+        "name": "紧急除颤",
+        "prefabKey": "1",
+        "rangeId": null,
+        "requiredPotentialRank": 2,
+        "unlockCondition": {
+          "level": 1,
+          "phase": 1
+        }
+      },
+      {
+        "blackboard": [
+          {
+            "key": "hp_ratio",
+            "value": 0.25
+          },
+          {
+            "key": "huang_t_1[heal].hp_ratio",
+            "value": 0.5
+          },
+          {
+            "key": "huang_t_1[lock].min_hp_ratio",
+            "value": 0.5
+          },
+          {
+            "key": "huang_t_1[lock].duration",
+            "value": 6
+          }
+        ],
+        "description": "在生命值低于25%时，仅一次回复50%的生命值并在6秒内使生命值不低于50%",
+        "name": "紧急除颤",
+        "prefabKey": "1",
+        "rangeId": null,
+        "requiredPotentialRank": 0,
+        "unlockCondition": {
+          "level": 1,
+          "phase": 2
+        }
+      },
+      {
+        "blackboard": [
+          {
+            "key": "hp_ratio",
+            "value": 0.25
+          },
+          {
+            "key": "huang_t_1[heal].hp_ratio",
+            "value": 0.5
+          },
+          {
+            "key": "huang_t_1[lock].min_hp_ratio",
+            "value": 0.5
+          },
+          {
+            "key": "huang_t_1[lock].duration",
+            "value": 7
+          }
+        ],
+        "description": "在生命值低于25%时，仅一次回复50%的生命值并在7<@ba.talpu>（+1）</>秒内使生命值不低于50%",
+        "name": "紧急除颤",
+        "prefabKey": "1",
+        "rangeId": null,
+        "requiredPotentialRank": 2,
+        "unlockCondition": {
+          "level": 1,
+          "phase": 2
+        }
+      }
+    ]
+  },
+  "2": {
+    "candidates": [
+      {
+        "blackboard": [
+          {
+            "key": "one_minus_status_resistance",
+            "value": -0.5
+          },
+          {
+            "key": "interval",
+            "value": 15
+          }
+        ],
+        "description": "在战场停留15秒后获得<$ba.buffres>抵抗</>",
+        "name": "严酷训练",
+        "prefabKey": "2",
+        "rangeId": null,
+        "requiredPotentialRank": 0,
+        "unlockCondition": {
+          "level": 1,
+          "phase": 2
+        }
+      },
+      {
+        "blackboard": [
+          {
+            "key": "one_minus_status_resistance",
+            "value": -0.5
+          },
+          {
+            "key": "interval",
+            "value": 12
+          }
+        ],
+        "description": "在战场停留12<@ba.talpu>（-3）</>秒后获得<$ba.buffres>抵抗</>",
+        "name": "严酷训练",
+        "prefabKey": "2",
+        "rangeId": null,
+        "requiredPotentialRank": 4,
+        "unlockCondition": {
+          "level": 1,
+          "phase": 2
+        }
+      }
+    ]
+  }
+}

@@ -1,0 +1,90 @@
+{
+  "1": {
+    "candidates": [
+      {
+        "blackboard": [
+          {
+            "key": "weak[magic][limit]",
+            "value": 5
+          },
+          {
+            "key": "damage_scale",
+            "value": 1.06
+          }
+        ],
+        "description": "攻击敌人时对目标施加6%的<$ba.magicfragile>【法术脆弱】</>，持续5秒",
+        "name": "朝开夕落",
+        "prefabKey": "1",
+        "rangeId": null,
+        "requiredPotentialRank": 0,
+        "unlockCondition": {
+          "level": 1,
+          "phase": 1
+        }
+      },
+      {
+        "blackboard": [
+          {
+            "key": "weak[magic][limit]",
+            "value": 5
+          },
+          {
+            "key": "damage_scale",
+            "value": 1.08
+          }
+        ],
+        "description": "攻击敌人时对目标施加8%<@ba.talpu>（+2%）</>的<$ba.magicfragile>【法术脆弱】</>，持续5秒",
+        "name": "朝开夕落",
+        "prefabKey": "1",
+        "rangeId": null,
+        "requiredPotentialRank": 4,
+        "unlockCondition": {
+          "level": 1,
+          "phase": 1
+        }
+      },
+      {
+        "blackboard": [
+          {
+            "key": "weak[magic][limit]",
+            "value": 5
+          },
+          {
+            "key": "damage_scale",
+            "value": 1.12
+          }
+        ],
+        "description": "攻击敌人时对目标施加12%的<$ba.magicfragile>【法术脆弱】</>，持续5秒",
+        "name": "朝开夕落",
+        "prefabKey": "1",
+        "rangeId": null,
+        "requiredPotentialRank": 0,
+        "unlockCondition": {
+          "level": 1,
+          "phase": 2
+        }
+      },
+      {
+        "blackboard": [
+          {
+            "key": "weak[magic][limit]",
+            "value": 5
+          },
+          {
+            "key": "damage_scale",
+            "value": 1.14
+          }
+        ],
+        "description": "攻击敌人时对目标施加14%<@ba.talpu>（+2%）</>的<$ba.magicfragile>【法术脆弱】</>，持续5秒",
+        "name": "朝开夕落",
+        "prefabKey": "1",
+        "rangeId": null,
+        "requiredPotentialRank": 4,
+        "unlockCondition": {
+          "level": 1,
+          "phase": 2
+        }
+      }
+    ]
+  }
+}

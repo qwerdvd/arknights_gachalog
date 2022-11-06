@@ -1,0 +1,106 @@
+{
+  "1": {
+    "candidates": [
+      {
+        "blackboard": [
+          {
+            "key": "atk",
+            "value": 0.05
+          },
+          {
+            "key": "respawn_time",
+            "value": -0.05
+          }
+        ],
+        "description": "攻击力+5%，所有干员的再部署时间-5%",
+        "name": "领袖",
+        "prefabKey": "1",
+        "rangeId": null,
+        "requiredPotentialRank": 0,
+        "unlockCondition": {
+          "level": 1,
+          "phase": 1
+        }
+      },
+      {
+        "blackboard": [
+          {
+            "key": "atk",
+            "value": 0.07
+          },
+          {
+            "key": "respawn_time",
+            "value": -0.07
+          }
+        ],
+        "description": "攻击力+7%<@ba.talpu>（+2%）</>，所有干员的再部署时间-7%<@ba.talpu>（+2%）</>",
+        "name": "领袖",
+        "prefabKey": "1",
+        "rangeId": null,
+        "requiredPotentialRank": 4,
+        "unlockCondition": {
+          "level": 1,
+          "phase": 1
+        }
+      },
+      {
+        "blackboard": [
+          {
+            "key": "atk",
+            "value": 0.1
+          },
+          {
+            "key": "respawn_time",
+            "value": -0.1
+          }
+        ],
+        "description": "攻击力+10%，所有干员的再部署时间-10%",
+        "name": "领袖",
+        "prefabKey": "1",
+        "rangeId": null,
+        "requiredPotentialRank": 0,
+        "unlockCondition": {
+          "level": 1,
+          "phase": 2
+        }
+      },
+      {
+        "blackboard": [
+          {
+            "key": "atk",
+            "value": 0.12
+          },
+          {
+            "key": "respawn_time",
+            "value": -0.12
+          }
+        ],
+        "description": "攻击力+12%<@ba.talpu>（+2%）</>，所有干员的再部署时间-12%<@ba.talpu>（+2%）</>",
+        "name": "领袖",
+        "prefabKey": "1",
+        "rangeId": null,
+        "requiredPotentialRank": 4,
+        "unlockCondition": {
+          "level": 1,
+          "phase": 2
+        }
+      }
+    ]
+  },
+  "2": {
+    "candidates": [
+      {
+        "blackboard": [],
+        "description": "攻击范围内敌人的<$ba.invisible>隐匿</>效果失效",
+        "name": "鹰眼视觉",
+        "prefabKey": "2",
+        "rangeId": null,
+        "requiredPotentialRank": 0,
+        "unlockCondition": {
+          "level": 1,
+          "phase": 2
+        }
+      }
+    ]
+  }
+}

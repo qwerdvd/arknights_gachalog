@@ -1,0 +1,120 @@
+{
+  "1": {
+    "candidates": [
+      {
+        "blackboard": [
+          {
+            "key": "value",
+            "value": 18
+          }
+        ],
+        "description": "每攻击到一个敌人回复自身18元素损伤，最大生效数等于阻挡数",
+        "name": "收割，给养",
+        "prefabKey": "2",
+        "rangeId": null,
+        "requiredPotentialRank": 0,
+        "unlockCondition": {
+          "level": 1,
+          "phase": 1
+        }
+      },
+      {
+        "blackboard": [
+          {
+            "key": "value",
+            "value": 23
+          }
+        ],
+        "description": "每攻击到一个敌人回复自身23<@ba.talpu>（+5）</>元素损伤，最大生效数等于阻挡数",
+        "name": "收割，给养",
+        "prefabKey": "2",
+        "rangeId": null,
+        "requiredPotentialRank": 4,
+        "unlockCondition": {
+          "level": 1,
+          "phase": 1
+        }
+      },
+      {
+        "blackboard": [
+          {
+            "key": "value",
+            "value": 30
+          }
+        ],
+        "description": "每攻击到一个敌人回复自身30元素损伤，最大生效数等于阻挡数",
+        "name": "收割，给养",
+        "prefabKey": "2",
+        "rangeId": null,
+        "requiredPotentialRank": 0,
+        "unlockCondition": {
+          "level": 1,
+          "phase": 2
+        }
+      },
+      {
+        "blackboard": [
+          {
+            "key": "value",
+            "value": 35
+          }
+        ],
+        "description": "每攻击到一个敌人回复自身35<@ba.talpu>（+5）</>元素损伤，最大生效数等于阻挡数",
+        "name": "收割，给养",
+        "prefabKey": "2",
+        "rangeId": null,
+        "requiredPotentialRank": 4,
+        "unlockCondition": {
+          "level": 1,
+          "phase": 2
+        }
+      }
+    ]
+  },
+  "2": {
+    "candidates": [
+      {
+        "blackboard": [
+          {
+            "key": "attack_speed",
+            "value": 10
+          },
+          {
+            "key": "block_cnt",
+            "value": 1
+          }
+        ],
+        "description": "在【水月与深蓝之树】中，攻击速度+10，阻挡数+1",
+        "name": "罹患，浸染",
+        "prefabKey": "1",
+        "rangeId": null,
+        "requiredPotentialRank": 0,
+        "unlockCondition": {
+          "level": 1,
+          "phase": 1
+        }
+      },
+      {
+        "blackboard": [
+          {
+            "key": "attack_speed",
+            "value": 25
+          },
+          {
+            "key": "block_cnt",
+            "value": 1
+          }
+        ],
+        "description": "在【水月与深蓝之树】中，攻击速度+25，阻挡数+1",
+        "name": "罹患，浸染",
+        "prefabKey": "1",
+        "rangeId": null,
+        "requiredPotentialRank": 0,
+        "unlockCondition": {
+          "level": 1,
+          "phase": 2
+        }
+      }
+    ]
+  }
+}

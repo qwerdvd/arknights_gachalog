@@ -1,0 +1,108 @@
+{
+  "1": {
+    "candidates": [
+      {
+        "blackboard": [
+          {
+            "key": "cnt",
+            "value": 2
+          }
+        ],
+        "description": "携带2个造型仪（最多部署3个），使一名近战位上的单位防御力+10%并获得1层<$ba.shield>护盾</>（持续15秒，防御加成不叠加）",
+        "name": "造型仪调试",
+        "prefabKey": "1",
+        "rangeId": null,
+        "requiredPotentialRank": 0,
+        "unlockCondition": {
+          "level": 1,
+          "phase": 0
+        }
+      },
+      {
+        "blackboard": [
+          {
+            "key": "cnt",
+            "value": 2
+          }
+        ],
+        "description": "携带2个造型仪（最多部署3个），使一名近战位上的单位防御力+13%<@ba.talpu>（+3%）</>并获得1层<$ba.shield>护盾</>（持续15秒，防御加成不叠加）",
+        "name": "造型仪调试",
+        "prefabKey": "1",
+        "rangeId": null,
+        "requiredPotentialRank": 4,
+        "unlockCondition": {
+          "level": 1,
+          "phase": 0
+        }
+      },
+      {
+        "blackboard": [
+          {
+            "key": "cnt",
+            "value": 3
+          }
+        ],
+        "description": "携带3个造型仪（最多部署3个），使一名近战位上的单位防御力+20%并获得1层<$ba.shield>护盾</>（持续25秒，防御加成不叠加）",
+        "name": "造型仪调试",
+        "prefabKey": "1",
+        "rangeId": null,
+        "requiredPotentialRank": 0,
+        "unlockCondition": {
+          "level": 1,
+          "phase": 1
+        }
+      },
+      {
+        "blackboard": [
+          {
+            "key": "cnt",
+            "value": 3
+          }
+        ],
+        "description": "携带3个造型仪（最多部署3个），使一名近战位上的单位防御力+23%<@ba.talpu>（+3%）</>并获得1层<$ba.shield>护盾</>（持续25秒，防御加成不叠加）",
+        "name": "造型仪调试",
+        "prefabKey": "1",
+        "rangeId": null,
+        "requiredPotentialRank": 4,
+        "unlockCondition": {
+          "level": 1,
+          "phase": 1
+        }
+      },
+      {
+        "blackboard": [
+          {
+            "key": "cnt",
+            "value": 3
+          }
+        ],
+        "description": "携带3个造型仪（最多部署3个），使一名近战位上的单位防御力+30%并获得2层<$ba.shield>护盾</>（持续25秒，防御加成不叠加）",
+        "name": "造型仪调试",
+        "prefabKey": "1",
+        "rangeId": null,
+        "requiredPotentialRank": 0,
+        "unlockCondition": {
+          "level": 1,
+          "phase": 2
+        }
+      },
+      {
+        "blackboard": [
+          {
+            "key": "cnt",
+            "value": 3
+          }
+        ],
+        "description": "携带3个造型仪（最多部署3个），使一名近战位上的单位防御力+33%<@ba.talpu>（+3%）</>并获得2层<$ba.shield>护盾</>（持续25秒，防御加成不叠加）",
+        "name": "造型仪调试",
+        "prefabKey": "1",
+        "rangeId": null,
+        "requiredPotentialRank": 4,
+        "unlockCondition": {
+          "level": 1,
+          "phase": 2
+        }
+      }
+    ]
+  }
+}

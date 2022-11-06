@@ -1,0 +1,118 @@
+{
+  "1": {
+    "candidates": [
+      {
+        "blackboard": [
+          {
+            "key": "status_resistance[limit]",
+            "value": 2
+          },
+          {
+            "key": "lumen_t_1[special].status_resistance[limit]",
+            "value": 4
+          },
+          {
+            "key": "one_minus_status_resistance",
+            "value": -0.5
+          },
+          {
+            "key": "lumen_t_1[special].one_minus_status_resistance",
+            "value": -0.5
+          },
+          {
+            "key": "hp_ratio",
+            "value": 0.75
+          }
+        ],
+        "description": "治疗的目标获得2秒<$ba.buffres>抵抗</>，若目标生命值高于75%则改为4秒<$ba.buffres>抵抗</>",
+        "name": "凡人之愿",
+        "prefabKey": "1",
+        "rangeId": null,
+        "requiredPotentialRank": 0,
+        "unlockCondition": {
+          "level": 1,
+          "phase": 1
+        }
+      },
+      {
+        "blackboard": [
+          {
+            "key": "status_resistance[limit]",
+            "value": 4
+          },
+          {
+            "key": "lumen_t_1[special].status_resistance[limit]",
+            "value": 6
+          },
+          {
+            "key": "one_minus_status_resistance",
+            "value": -0.5
+          },
+          {
+            "key": "lumen_t_1[special].one_minus_status_resistance",
+            "value": -0.5
+          },
+          {
+            "key": "hp_ratio",
+            "value": 0.75
+          }
+        ],
+        "description": "治疗的目标获得4秒<$ba.buffres>抵抗</>，若目标生命值高于75%则改为6秒<$ba.buffres>抵抗</>",
+        "name": "凡人之愿",
+        "prefabKey": "1",
+        "rangeId": null,
+        "requiredPotentialRank": 0,
+        "unlockCondition": {
+          "level": 1,
+          "phase": 2
+        }
+      }
+    ]
+  },
+  "2": {
+    "candidates": [
+      {
+        "blackboard": [
+          {
+            "key": "heal_scale",
+            "value": 0.8
+          },
+          {
+            "key": "duration",
+            "value": 12
+          }
+        ],
+        "description": "攻击范围内的友方受到异常状态时，立刻治疗目标相当于流明攻击力80%的生命，该效果有12秒冷却时间",
+        "name": "应急处理",
+        "prefabKey": "2",
+        "rangeId": null,
+        "requiredPotentialRank": 0,
+        "unlockCondition": {
+          "level": 1,
+          "phase": 2
+        }
+      },
+      {
+        "blackboard": [
+          {
+            "key": "heal_scale",
+            "value": 0.8
+          },
+          {
+            "key": "duration",
+            "value": 10
+          }
+        ],
+        "description": "攻击范围内的友方受到异常状态时，立刻治疗目标相当于流明攻击力80%的生命，该效果有10<@ba.talpu>（-2）</>秒冷却时间",
+        "name": "应急处理",
+        "prefabKey": "2",
+        "rangeId": null,
+        "requiredPotentialRank": 4,
+        "unlockCondition": {
+          "level": 1,
+          "phase": 2
+        }
+      }
+    ]
+  }
+}

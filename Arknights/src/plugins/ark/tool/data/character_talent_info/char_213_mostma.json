@@ -1,0 +1,78 @@
+{
+  "1": {
+    "candidates": [
+      {
+        "blackboard": [
+          {
+            "key": "sp_recovery_per_sec",
+            "value": 0.2
+          }
+        ],
+        "description": "在场时所有【术师】干员的技力自然回复速度+0.2/秒（同类效果取最高）",
+        "name": "技力光环·术师",
+        "prefabKey": "1",
+        "rangeId": null,
+        "requiredPotentialRank": 0,
+        "unlockCondition": {
+          "level": 1,
+          "phase": 1
+        }
+      },
+      {
+        "blackboard": [
+          {
+            "key": "sp_recovery_per_sec",
+            "value": 0.4
+          }
+        ],
+        "description": "在场时所有【术师】干员的技力自然回复速度+0.4/秒（同类效果取最高）",
+        "name": "技力光环·术师",
+        "prefabKey": "1",
+        "rangeId": null,
+        "requiredPotentialRank": 0,
+        "unlockCondition": {
+          "level": 1,
+          "phase": 2
+        }
+      }
+    ]
+  },
+  "2": {
+    "candidates": [
+      {
+        "blackboard": [
+          {
+            "key": "move_speed",
+            "value": -0.15
+          }
+        ],
+        "description": "攻击范围内的敌人移动速度-15%",
+        "name": "主观缓时",
+        "prefabKey": "2",
+        "rangeId": null,
+        "requiredPotentialRank": 0,
+        "unlockCondition": {
+          "level": 1,
+          "phase": 2
+        }
+      },
+      {
+        "blackboard": [
+          {
+            "key": "move_speed",
+            "value": -0.18
+          }
+        ],
+        "description": "攻击范围内的敌人移动速度-18%<@ba.talpu>（+3%）</>",
+        "name": "主观缓时",
+        "prefabKey": "2",
+        "rangeId": null,
+        "requiredPotentialRank": 4,
+        "unlockCondition": {
+          "level": 1,
+          "phase": 2
+        }
+      }
+    ]
+  }
+}

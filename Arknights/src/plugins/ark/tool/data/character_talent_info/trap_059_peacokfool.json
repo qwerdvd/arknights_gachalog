@@ -1,0 +1,59 @@
+{
+  "1": {
+    "candidates": [
+      {
+        "blackboard": [],
+        "description": null,
+        "name": null,
+        "prefabKey": "1",
+        "rangeId": null,
+        "requiredPotentialRank": 0,
+        "unlockCondition": {
+          "level": 1,
+          "phase": 0
+        }
+      }
+    ]
+  },
+  "2": {
+    "candidates": [
+      {
+        "blackboard": [],
+        "description": null,
+        "name": null,
+        "prefabKey": "2",
+        "rangeId": "1-1",
+        "requiredPotentialRank": 0,
+        "unlockCondition": {
+          "level": 1,
+          "phase": 0
+        }
+      }
+    ]
+  },
+  "3": {
+    "candidates": [
+      {
+        "blackboard": [
+          {
+            "key": "atk",
+            "value": 0
+          },
+          {
+            "key": "attack_speed",
+            "value": 50
+          }
+        ],
+        "description": null,
+        "name": null,
+        "prefabKey": "3",
+        "rangeId": null,
+        "requiredPotentialRank": 0,
+        "unlockCondition": {
+          "level": 1,
+          "phase": 0
+        }
+      }
+    ]
+  }
+}

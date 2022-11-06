@@ -1,0 +1,23 @@
+{
+  "1": {
+    "candidates": [
+      {
+        "blackboard": [
+          {
+            "key": "atk_scale",
+            "value": 1.5
+          }
+        ],
+        "description": "攻击飞行目标时，攻击力+50%",
+        "name": "空射大师",
+        "prefabKey": "1",
+        "rangeId": null,
+        "requiredPotentialRank": 0,
+        "unlockCondition": {
+          "level": 30,
+          "phase": 0
+        }
+      }
+    ]
+  }
+}

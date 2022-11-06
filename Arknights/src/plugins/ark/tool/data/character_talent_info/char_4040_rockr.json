@@ -1,0 +1,106 @@
+{
+  "1": {
+    "candidates": [
+      {
+        "blackboard": [
+          {
+            "key": "atk",
+            "value": 0.02
+          },
+          {
+            "key": "max_stack_cnt",
+            "value": 3
+          },
+          {
+            "key": "interval",
+            "value": 15
+          }
+        ],
+        "description": "每在场上停留15秒，攻击力+2%，最多可以叠加3次",
+        "name": "立于磐石",
+        "prefabKey": "1",
+        "rangeId": null,
+        "requiredPotentialRank": 0,
+        "unlockCondition": {
+          "level": 1,
+          "phase": 1
+        }
+      },
+      {
+        "blackboard": [
+          {
+            "key": "atk",
+            "value": 0.03
+          },
+          {
+            "key": "max_stack_cnt",
+            "value": 3
+          },
+          {
+            "key": "interval",
+            "value": 15
+          }
+        ],
+        "description": "每在场上停留15秒，攻击力+3%<@ba.talpu>（+1%）</>，最多可以叠加3次",
+        "name": "立于磐石",
+        "prefabKey": "1",
+        "rangeId": null,
+        "requiredPotentialRank": 4,
+        "unlockCondition": {
+          "level": 1,
+          "phase": 1
+        }
+      },
+      {
+        "blackboard": [
+          {
+            "key": "atk",
+            "value": 0.04
+          },
+          {
+            "key": "max_stack_cnt",
+            "value": 4
+          },
+          {
+            "key": "interval",
+            "value": 15
+          }
+        ],
+        "description": "每在场上停留15秒，攻击力+4%，最多可以叠加4次",
+        "name": "立于磐石",
+        "prefabKey": "1",
+        "rangeId": null,
+        "requiredPotentialRank": 0,
+        "unlockCondition": {
+          "level": 1,
+          "phase": 2
+        }
+      },
+      {
+        "blackboard": [
+          {
+            "key": "atk",
+            "value": 0.05
+          },
+          {
+            "key": "max_stack_cnt",
+            "value": 4
+          },
+          {
+            "key": "interval",
+            "value": 15
+          }
+        ],
+        "description": "每在场上停留15秒，攻击力+5%<@ba.talpu>（+1%）</>，最多可以叠加4次",
+        "name": "立于磐石",
+        "prefabKey": "1",
+        "rangeId": null,
+        "requiredPotentialRank": 4,
+        "unlockCondition": {
+          "level": 1,
+          "phase": 2
+        }
+      }
+    ]
+  }
+}

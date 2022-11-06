@@ -1,0 +1,131 @@
+{
+  "1": {
+    "candidates": [
+      {
+        "blackboard": [
+          {
+            "key": "cold",
+            "value": 1
+          },
+          {
+            "key": "damage_scale_cold",
+            "value": 1.15
+          },
+          {
+            "key": "damage_scale_freeze",
+            "value": 1.3
+          }
+        ],
+        "description": "攻击造成1秒<$ba.cold>寒冷</>；范围内<$ba.cold>寒冷</>的敌人受到15%的<$ba.fragile>脆弱</>，范围内<$ba.frozen>冻结</>的敌人<$ba.fragile>脆弱</>效果提升至2倍",
+        "name": "坚冰",
+        "prefabKey": "1",
+        "rangeId": null,
+        "requiredPotentialRank": 0,
+        "unlockCondition": {
+          "level": 1,
+          "phase": 1
+        }
+      },
+      {
+        "blackboard": [
+          {
+            "key": "cold",
+            "value": 1
+          },
+          {
+            "key": "damage_scale_cold",
+            "value": 1.17
+          },
+          {
+            "key": "damage_scale_freeze",
+            "value": 1.34
+          }
+        ],
+        "description": "攻击造成1秒<$ba.cold>寒冷</>；范围内<$ba.cold>寒冷</>的敌人受到17%<@ba.talpu>（+2%）</>的<$ba.fragile>脆弱</>，范围内<$ba.frozen>冻结</>的敌人<$ba.fragile>脆弱</>效果提升至2倍",
+        "name": "坚冰",
+        "prefabKey": "1",
+        "rangeId": null,
+        "requiredPotentialRank": 4,
+        "unlockCondition": {
+          "level": 1,
+          "phase": 1
+        }
+      },
+      {
+        "blackboard": [
+          {
+            "key": "cold",
+            "value": 1
+          },
+          {
+            "key": "damage_scale_cold",
+            "value": 1.25
+          },
+          {
+            "key": "damage_scale_freeze",
+            "value": 1.5
+          }
+        ],
+        "description": "攻击造成1秒<$ba.cold>寒冷</>；范围内<$ba.cold>寒冷</>的敌人受到25%的<$ba.fragile>脆弱</>，范围内<$ba.frozen>冻结</>的敌人<$ba.fragile>脆弱</>效果提升至2倍",
+        "name": "坚冰",
+        "prefabKey": "1",
+        "rangeId": null,
+        "requiredPotentialRank": 0,
+        "unlockCondition": {
+          "level": 1,
+          "phase": 2
+        }
+      },
+      {
+        "blackboard": [
+          {
+            "key": "cold",
+            "value": 1
+          },
+          {
+            "key": "damage_scale_cold",
+            "value": 1.27
+          },
+          {
+            "key": "damage_scale_freeze",
+            "value": 1.54
+          }
+        ],
+        "description": "攻击造成1秒<$ba.cold>寒冷</>；范围内<$ba.cold>寒冷</>的敌人受到27%<@ba.talpu>（+2%）</>的<$ba.fragile>脆弱</>，范围内<$ba.frozen>冻结</>的敌人<$ba.fragile>脆弱</>效果提升至2倍",
+        "name": "坚冰",
+        "prefabKey": "1",
+        "rangeId": null,
+        "requiredPotentialRank": 4,
+        "unlockCondition": {
+          "level": 1,
+          "phase": 2
+        }
+      }
+    ]
+  },
+  "2": {
+    "candidates": [
+      {
+        "blackboard": [
+          {
+            "key": "interval",
+            "value": 10
+          },
+          {
+            "key": "one_minus_status_resistance",
+            "value": -0.5
+          }
+        ],
+        "description": "灵知在场且部署后经过10秒时，使所有【喀兰贸易】干员获得<$ba.buffres>抵抗</>",
+        "name": "殊途同归",
+        "prefabKey": "2",
+        "rangeId": null,
+        "requiredPotentialRank": 0,
+        "unlockCondition": {
+          "level": 1,
+          "phase": 2
+        }
+      }
+    ]
+  }
+}

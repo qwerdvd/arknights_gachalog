@@ -1,0 +1,103 @@
+{
+  "1": {
+    "candidates": [
+      {
+        "blackboard": [
+          {
+            "key": "cnt",
+            "value": 2
+          }
+        ],
+        "description": "可以携带2个<支援装置>(最多可部署1个)，效果根据技能改变而改变",
+        "name": "战地工程师",
+        "prefabKey": "1",
+        "rangeId": null,
+        "requiredPotentialRank": 0,
+        "unlockCondition": {
+          "level": 1,
+          "phase": 0
+        }
+      },
+      {
+        "blackboard": [
+          {
+            "key": "cnt",
+            "value": 3
+          }
+        ],
+        "description": "可以携带2个<支援装置>(最多可部署2个)，效果根据技能改变而改变",
+        "name": "战地工程师",
+        "prefabKey": "1",
+        "rangeId": null,
+        "requiredPotentialRank": 0,
+        "unlockCondition": {
+          "level": 1,
+          "phase": 1
+        }
+      },
+      {
+        "blackboard": [
+          {
+            "key": "cnt",
+            "value": 3
+          }
+        ],
+        "description": "可以携带3个<支援装置>(最多可部署2个)，效果根据技能改变而改变",
+        "name": "战地工程师",
+        "prefabKey": "1",
+        "rangeId": null,
+        "requiredPotentialRank": 0,
+        "unlockCondition": {
+          "level": 1,
+          "phase": 2
+        }
+      }
+    ]
+  },
+  "2": {
+    "candidates": [
+      {
+        "blackboard": [
+          {
+            "key": "prob",
+            "value": 0.7
+          },
+          {
+            "key": "cnt",
+            "value": 1
+          }
+        ],
+        "description": "当白铁周围8格的自身装置损毁时，有70%的几率回收使白铁额外获得1个装置",
+        "name": "节约经费",
+        "prefabKey": "2",
+        "rangeId": "x-4",
+        "requiredPotentialRank": 0,
+        "unlockCondition": {
+          "level": 1,
+          "phase": 2
+        }
+      },
+      {
+        "blackboard": [
+          {
+            "key": "prob",
+            "value": 0.8
+          },
+          {
+            "key": "cnt",
+            "value": 1
+          }
+        ],
+        "description": "当白铁周围8格的自身装置损毁时，有80%<@ba.talpu>（+10%）</>的几率回收使白铁额外获得1个装置",
+        "name": "节约经费",
+        "prefabKey": "2",
+        "rangeId": "x-4",
+        "requiredPotentialRank": 4,
+        "unlockCondition": {
+          "level": 1,
+          "phase": 2
+        }
+      }
+    ]
+  }
+}

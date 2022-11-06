@@ -1,0 +1,49 @@
+{
+  "name": "骰子",
+  "profession": "TRAP",
+  "subProfessionId": "notchar2",
+  "star": 1,
+  "elite": 0,
+  "max_level": 30,
+  "data": {
+    "atk": 0,
+    "attackSpeed": 100,
+    "baseAttackTime": 1,
+    "baseForceLevel": 0,
+    "blockCnt": 0,
+    "cost": 3,
+    "def": 0,
+    "frozenImmune": false,
+    "hpRecoveryPerSec": 0,
+    "levitateImmune": false,
+    "magicResistance": 0,
+    "massLevel": 0,
+    "maxDeckStackCnt": 0,
+    "maxDeployCount": 1,
+    "maxHp": 100,
+    "moveSpeed": 1,
+    "respawnTime": 5,
+    "silenceImmune": false,
+    "sleepImmune": false,
+    "spRecoveryPerSec": 1,
+    "stunImmune": false,
+    "tauntLevel": 0
+  },
+  "teamId": null,
+  "tokenKey": null,
+  "trait": {
+    "candidates": [
+      {
+        "blackboard": [],
+        "overrideDescripton": "部署时消耗<@ba.vup>1</>掷骰次数，部署后根据掷骰结果使敌人的速度在<@ba.vup>15</>秒内降低，点数越大，效果越强\\n每场战斗仅可使用<@ba.vup>1</>次骰子",
+        "prefabKey": null,
+        "rangeId": null,
+        "requiredPotentialRank": 0,
+        "unlockCondition": {
+          "level": 1,
+          "phase": 0
+        }
+      }
+    ]
+  }
+}

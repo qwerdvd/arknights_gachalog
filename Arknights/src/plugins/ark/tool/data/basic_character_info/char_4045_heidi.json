@@ -1,0 +1,54 @@
+{
+  "name": "海蒂",
+  "profession": "SUPPORT",
+  "subProfessionId": "bard",
+  "star": 5,
+  "elite": 2,
+  "max_level": 80,
+  "data": {
+    "atk": 320,
+    "attackSpeed": 100,
+    "baseAttackTime": 1,
+    "baseForceLevel": 0,
+    "blockCnt": 1,
+    "cost": 9,
+    "def": 268,
+    "frozenImmune": false,
+    "hpRecoveryPerSec": 0,
+    "levitateImmune": false,
+    "magicResistance": 0,
+    "massLevel": 0,
+    "maxDeckStackCnt": 0,
+    "maxDeployCount": 1,
+    "maxHp": 1260,
+    "moveSpeed": 1,
+    "respawnTime": 80,
+    "silenceImmune": false,
+    "sleepImmune": false,
+    "spRecoveryPerSec": 1,
+    "stunImmune": false,
+    "tauntLevel": 0
+  },
+  "teamId": null,
+  "tokenKey": null,
+  "trait": {
+    "candidates": [
+      {
+        "blackboard": [
+          {
+            "key": "attack@atk_to_hp_recovery_ratio",
+            "value": 0.1
+          }
+        ],
+        "overrideDescripton": "不攻击，持续恢复范围内所有友军<@ba.kw>生命</>（每秒相当于自身攻击力<@ba.kw>{attack@atk_to_hp_recovery_ratio:0%}</>的生命），自身不受<$ba.inspire>鼓舞</>影响",
+        "prefabKey": "-1",
+        "rangeId": null,
+        "requiredPotentialRank": 0,
+        "unlockCondition": {
+          "level": 1,
+          "phase": 0
+        }
+      }
+    ]
+  }
+}

@@ -1,0 +1,111 @@
+{
+  "1": {
+    "candidates": [
+      {
+        "blackboard": [
+          {
+            "key": "hp_ratio",
+            "value": 0.4
+          },
+          {
+            "key": "damage_scale",
+            "value": 1.15
+          }
+        ],
+        "description": "攻击范围内的敌人生命少于40%时，令其获得15%的<$ba.fragile>脆弱</>效果",
+        "name": "虚弱化",
+        "prefabKey": "1",
+        "rangeId": null,
+        "requiredPotentialRank": 0,
+        "unlockCondition": {
+          "level": 1,
+          "phase": 1
+        }
+      },
+      {
+        "blackboard": [
+          {
+            "key": "hp_ratio",
+            "value": 0.4
+          },
+          {
+            "key": "damage_scale",
+            "value": 1.18
+          }
+        ],
+        "description": "攻击范围内的敌人生命少于40%时，令其获得18%<@ba.talpu>（+3%）</>的<$ba.fragile>脆弱</>效果",
+        "name": "虚弱化",
+        "prefabKey": "1",
+        "rangeId": null,
+        "requiredPotentialRank": 4,
+        "unlockCondition": {
+          "level": 1,
+          "phase": 1
+        }
+      },
+      {
+        "blackboard": [
+          {
+            "key": "hp_ratio",
+            "value": 0.4
+          },
+          {
+            "key": "damage_scale",
+            "value": 1.3
+          }
+        ],
+        "description": "攻击范围内的敌人生命少于40%时，令其获得30%的<$ba.fragile>脆弱</>效果",
+        "name": "虚弱化",
+        "prefabKey": "1",
+        "rangeId": null,
+        "requiredPotentialRank": 0,
+        "unlockCondition": {
+          "level": 1,
+          "phase": 2
+        }
+      },
+      {
+        "blackboard": [
+          {
+            "key": "hp_ratio",
+            "value": 0.4
+          },
+          {
+            "key": "damage_scale",
+            "value": 1.33
+          }
+        ],
+        "description": "攻击范围内的敌人生命少于40%时，令其获得33%<@ba.talpu>（+3%）</>的<$ba.fragile>脆弱</>效果",
+        "name": "虚弱化",
+        "prefabKey": "1",
+        "rangeId": null,
+        "requiredPotentialRank": 4,
+        "unlockCondition": {
+          "level": 1,
+          "phase": 2
+        }
+      }
+    ]
+  },
+  "2": {
+    "candidates": [
+      {
+        "blackboard": [
+          {
+            "key": "attack@max_target",
+            "value": 2
+          }
+        ],
+        "description": "攻击时同时攻击两个目标",
+        "name": "双响",
+        "prefabKey": "2",
+        "rangeId": null,
+        "requiredPotentialRank": 0,
+        "unlockCondition": {
+          "level": 1,
+          "phase": 2
+        }
+      }
+    ]
+  }
+}

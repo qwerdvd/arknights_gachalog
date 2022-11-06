@@ -1,0 +1,23 @@
+{
+  "1": {
+    "candidates": [
+      {
+        "blackboard": [
+          {
+            "key": "dupilr_trait[startdead].duration",
+            "value": 2
+          }
+        ],
+        "description": "可被相邻的我方单位攻击",
+        "name": null,
+        "prefabKey": "1",
+        "rangeId": null,
+        "requiredPotentialRank": 0,
+        "unlockCondition": {
+          "level": 1,
+          "phase": 0
+        }
+      }
+    ]
+  }
+}

@@ -1,0 +1,74 @@
+{
+  "1": {
+    "candidates": [
+      {
+        "blackboard": [
+          {
+            "key": "attack_speed",
+            "value": 4
+          }
+        ],
+        "description": "自身与周围8格友方干员攻速+4",
+        "name": "索敌援助",
+        "prefabKey": "1",
+        "rangeId": "x-4",
+        "requiredPotentialRank": 0,
+        "unlockCondition": {
+          "level": 1,
+          "phase": 1
+        }
+      },
+      {
+        "blackboard": [
+          {
+            "key": "attack_speed",
+            "value": 6
+          }
+        ],
+        "description": "自身与周围8格友方干员攻速+6<@ba.talpu>（+2）</>",
+        "name": "索敌援助",
+        "prefabKey": "1",
+        "rangeId": "x-4",
+        "requiredPotentialRank": 4,
+        "unlockCondition": {
+          "level": 1,
+          "phase": 1
+        }
+      },
+      {
+        "blackboard": [
+          {
+            "key": "attack_speed",
+            "value": 8
+          }
+        ],
+        "description": "自身与周围8格友方干员攻速+8",
+        "name": "索敌援助",
+        "prefabKey": "1",
+        "rangeId": "x-4",
+        "requiredPotentialRank": 0,
+        "unlockCondition": {
+          "level": 1,
+          "phase": 2
+        }
+      },
+      {
+        "blackboard": [
+          {
+            "key": "attack_speed",
+            "value": 10
+          }
+        ],
+        "description": "自身与周围8格友方干员攻速+10<@ba.talpu>（+2）</>",
+        "name": "索敌援助",
+        "prefabKey": "1",
+        "rangeId": "x-4",
+        "requiredPotentialRank": 4,
+        "unlockCondition": {
+          "level": 1,
+          "phase": 2
+        }
+      }
+    ]
+  }
+}

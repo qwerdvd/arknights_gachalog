@@ -1,0 +1,94 @@
+{
+  "1": {
+    "candidates": [
+      {
+        "blackboard": [
+          {
+            "key": "interval",
+            "value": 10
+          },
+          {
+            "key": "prob",
+            "value": 0.4
+          },
+          {
+            "key": "taunt_level",
+            "value": -1
+          }
+        ],
+        "description": "在战场停留10秒后获得40%的物理和法术闪避，且不容易成为敌人的攻击目标",
+        "name": "设伏",
+        "prefabKey": "1",
+        "rangeId": null,
+        "requiredPotentialRank": 0,
+        "unlockCondition": {
+          "level": 1,
+          "phase": 1
+        }
+      },
+      {
+        "blackboard": [
+          {
+            "key": "interval",
+            "value": 10
+          },
+          {
+            "key": "prob",
+            "value": 0.6
+          },
+          {
+            "key": "taunt_level",
+            "value": -1
+          }
+        ],
+        "description": "在战场停留10秒后获得60%的物理和法术闪避，且不容易成为敌人的攻击目标",
+        "name": "设伏",
+        "prefabKey": "1",
+        "rangeId": null,
+        "requiredPotentialRank": 0,
+        "unlockCondition": {
+          "level": 1,
+          "phase": 2
+        }
+      }
+    ]
+  },
+  "2": {
+    "candidates": [
+      {
+        "blackboard": [
+          {
+            "key": "damage_scale",
+            "value": 1.18
+          }
+        ],
+        "description": "攻击范围内的敌人在被<$ba.stun>晕眩</>时受到的物理伤害+18%",
+        "name": "落井下石",
+        "prefabKey": "2",
+        "rangeId": null,
+        "requiredPotentialRank": 0,
+        "unlockCondition": {
+          "level": 1,
+          "phase": 2
+        }
+      },
+      {
+        "blackboard": [
+          {
+            "key": "damage_scale",
+            "value": 1.21
+          }
+        ],
+        "description": "攻击范围内的敌人在被<$ba.stun>晕眩</>时受到的物理伤害+21%<@ba.talpu>（+3%）</>",
+        "name": "落井下石",
+        "prefabKey": "2",
+        "rangeId": null,
+        "requiredPotentialRank": 4,
+        "unlockCondition": {
+          "level": 1,
+          "phase": 2
+        }
+      }
+    ]
+  }
+}

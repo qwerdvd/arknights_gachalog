@@ -1,0 +1,156 @@
+{
+  "1": {
+    "candidates": [
+      {
+        "blackboard": [
+          {
+            "key": "duration",
+            "value": 10
+          },
+          {
+            "key": "damage_scale",
+            "value": 1.1
+          },
+          {
+            "key": "jnight_t.taunt_level",
+            "value": -1
+          }
+        ],
+        "description": "部署后10秒内攻击范围内所有友方远程位单位更不容易被攻击且敌方空中单位获得10%的<$ba.fragile>脆弱</>效果",
+        "name": "正义助威·I",
+        "prefabKey": "1",
+        "rangeId": null,
+        "requiredPotentialRank": 0,
+        "unlockCondition": {
+          "level": 1,
+          "phase": 0
+        }
+      },
+      {
+        "blackboard": [
+          {
+            "key": "duration",
+            "value": 12
+          },
+          {
+            "key": "damage_scale",
+            "value": 1.13
+          },
+          {
+            "key": "jnight_t.taunt_level",
+            "value": -1
+          }
+        ],
+        "description": "部署后12秒内攻击范围内所有友方远程位单位更不容易被攻击且敌方空中单位获得13%的<$ba.fragile>脆弱</>效果",
+        "name": "正义助威·II",
+        "prefabKey": "1",
+        "rangeId": null,
+        "requiredPotentialRank": 1,
+        "unlockCondition": {
+          "level": 1,
+          "phase": 0
+        }
+      },
+      {
+        "blackboard": [
+          {
+            "key": "duration",
+            "value": 14
+          },
+          {
+            "key": "damage_scale",
+            "value": 1.16
+          },
+          {
+            "key": "jnight_t.taunt_level",
+            "value": -1
+          }
+        ],
+        "description": "部署后14秒内攻击范围内所有友方远程位单位更不容易被攻击且敌方空中单位获得16%的<$ba.fragile>脆弱</>效果",
+        "name": "正义助威·III",
+        "prefabKey": "1",
+        "rangeId": null,
+        "requiredPotentialRank": 2,
+        "unlockCondition": {
+          "level": 1,
+          "phase": 0
+        }
+      },
+      {
+        "blackboard": [
+          {
+            "key": "duration",
+            "value": 16
+          },
+          {
+            "key": "damage_scale",
+            "value": 1.19
+          },
+          {
+            "key": "jnight_t.taunt_level",
+            "value": -1
+          }
+        ],
+        "description": "部署后16秒内攻击范围内所有友方远程位单位更不容易被攻击且敌方空中单位获得19%的<$ba.fragile>脆弱</>效果",
+        "name": "正义助威·IV",
+        "prefabKey": "1",
+        "rangeId": null,
+        "requiredPotentialRank": 3,
+        "unlockCondition": {
+          "level": 1,
+          "phase": 0
+        }
+      },
+      {
+        "blackboard": [
+          {
+            "key": "duration",
+            "value": 18
+          },
+          {
+            "key": "damage_scale",
+            "value": 1.22
+          },
+          {
+            "key": "jnight_t.taunt_level",
+            "value": -1
+          }
+        ],
+        "description": "部署后18秒内攻击范围内所有友方远程位单位更不容易被攻击且敌方空中单位获得22%的<$ba.fragile>脆弱</>效果",
+        "name": "正义助威·V",
+        "prefabKey": "1",
+        "rangeId": null,
+        "requiredPotentialRank": 4,
+        "unlockCondition": {
+          "level": 1,
+          "phase": 0
+        }
+      },
+      {
+        "blackboard": [
+          {
+            "key": "duration",
+            "value": 20
+          },
+          {
+            "key": "damage_scale",
+            "value": 1.25
+          },
+          {
+            "key": "jnight_t.taunt_level",
+            "value": -1
+          }
+        ],
+        "description": "部署后20秒内攻击范围内所有友方远程位单位更不容易被攻击且敌方空中单位获得25%的<$ba.fragile>脆弱</>效果",
+        "name": "正义助威·VI",
+        "prefabKey": "1",
+        "rangeId": null,
+        "requiredPotentialRank": 5,
+        "unlockCondition": {
+          "level": 1,
+          "phase": 0
+        }
+      }
+    ]
+  }
+}

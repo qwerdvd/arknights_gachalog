@@ -1,0 +1,90 @@
+{
+  "1": {
+    "candidates": [
+      {
+        "blackboard": [
+          {
+            "key": "attack_speed",
+            "value": 4
+          },
+          {
+            "key": "max_stack_cnt",
+            "value": 5
+          }
+        ],
+        "description": "每击杀一名敌人后获得+4攻击速度（最多叠加5次）",
+        "name": "摄魂",
+        "prefabKey": "1",
+        "rangeId": null,
+        "requiredPotentialRank": 0,
+        "unlockCondition": {
+          "level": 1,
+          "phase": 1
+        }
+      },
+      {
+        "blackboard": [
+          {
+            "key": "attack_speed",
+            "value": 4
+          },
+          {
+            "key": "max_stack_cnt",
+            "value": 6
+          }
+        ],
+        "description": "每击杀一名敌人后获得+4攻击速度（最多叠加6次<@ba.talpu>（+1）</>）",
+        "name": "摄魂",
+        "prefabKey": "1",
+        "rangeId": null,
+        "requiredPotentialRank": 4,
+        "unlockCondition": {
+          "level": 1,
+          "phase": 1
+        }
+      },
+      {
+        "blackboard": [
+          {
+            "key": "attack_speed",
+            "value": 6
+          },
+          {
+            "key": "max_stack_cnt",
+            "value": 5
+          }
+        ],
+        "description": "每击杀一名敌人后获得+6攻击速度（最多叠加5次）",
+        "name": "摄魂",
+        "prefabKey": "1",
+        "rangeId": null,
+        "requiredPotentialRank": 0,
+        "unlockCondition": {
+          "level": 1,
+          "phase": 2
+        }
+      },
+      {
+        "blackboard": [
+          {
+            "key": "attack_speed",
+            "value": 6
+          },
+          {
+            "key": "max_stack_cnt",
+            "value": 6
+          }
+        ],
+        "description": "每击杀一名敌人后获得+6攻击速度（最多叠加6次<@ba.talpu>（+1）</>）",
+        "name": "摄魂",
+        "prefabKey": "1",
+        "rangeId": null,
+        "requiredPotentialRank": 4,
+        "unlockCondition": {
+          "level": 1,
+          "phase": 2
+        }
+      }
+    ]
+  }
+}

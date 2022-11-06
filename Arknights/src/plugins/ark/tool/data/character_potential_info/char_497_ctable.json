@@ -1,0 +1,100 @@
+{
+  "2": {
+    "buff": {
+      "attributes": {
+        "abnormalAntis": null,
+        "abnormalComboImmunes": null,
+        "abnormalCombos": null,
+        "abnormalFlags": null,
+        "abnormalImmunes": null,
+        "attributeModifiers": [
+          {
+            "attributeType": 4,
+            "fetchBaseValueFromSourceEntity": false,
+            "formulaItem": 0,
+            "loadFromBlackboard": false,
+            "value": -1
+          }
+        ]
+      }
+    },
+    "description": "部署费用-1",
+    "equivalentCost": null,
+    "type": 0
+  },
+  "3": {
+    "buff": {
+      "attributes": {
+        "abnormalAntis": null,
+        "abnormalComboImmunes": null,
+        "abnormalCombos": null,
+        "abnormalFlags": null,
+        "abnormalImmunes": null,
+        "attributeModifiers": [
+          {
+            "attributeType": 21,
+            "fetchBaseValueFromSourceEntity": false,
+            "formulaItem": 0,
+            "loadFromBlackboard": false,
+            "value": -4
+          }
+        ]
+      }
+    },
+    "description": "再部署时间-4秒",
+    "equivalentCost": null,
+    "type": 0
+  },
+  "4": {
+    "buff": {
+      "attributes": {
+        "abnormalAntis": null,
+        "abnormalComboImmunes": null,
+        "abnormalCombos": null,
+        "abnormalFlags": null,
+        "abnormalImmunes": null,
+        "attributeModifiers": [
+          {
+            "attributeType": 7,
+            "fetchBaseValueFromSourceEntity": false,
+            "formulaItem": 0,
+            "loadFromBlackboard": false,
+            "value": 5
+          }
+        ]
+      }
+    },
+    "description": "攻击速度+5",
+    "equivalentCost": null,
+    "type": 0
+  },
+  "5": {
+    "buff": null,
+    "description": "天赋效果增强",
+    "equivalentCost": null,
+    "type": 1
+  },
+  "6": {
+    "buff": {
+      "attributes": {
+        "abnormalAntis": null,
+        "abnormalComboImmunes": null,
+        "abnormalCombos": null,
+        "abnormalFlags": null,
+        "abnormalImmunes": null,
+        "attributeModifiers": [
+          {
+            "attributeType": 4,
+            "fetchBaseValueFromSourceEntity": false,
+            "formulaItem": 0,
+            "loadFromBlackboard": false,
+            "value": -1
+          }
+        ]
+      }
+    },
+    "description": "部署费用-1",
+    "equivalentCost": null,
+    "type": 0
+  }
+}

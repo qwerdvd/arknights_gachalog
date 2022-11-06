@@ -1,0 +1,155 @@
+{
+  "1": {
+    "candidates": [
+      {
+        "blackboard": [
+          {
+            "key": "interval",
+            "value": 0.1
+          },
+          {
+            "key": "hp_ratio",
+            "value": 0.005
+          },
+          {
+            "key": "phenxi_t_1[peak_1].peak_performance.atk",
+            "value": 0.15
+          },
+          {
+            "key": "phenxi_t_1[peak_1].peak_performance.hp_ratio",
+            "value": 0.5
+          },
+          {
+            "key": "phenxi_t_1[peak_2].peak_performance.atk",
+            "value": 0.3
+          },
+          {
+            "key": "phenxi_t_1[peak_2].peak_performance.hp_ratio",
+            "value": 0.8
+          }
+        ],
+        "description": "自身生命会不断流失（该效果不会使生命降至0）；生命值高于50%时获得+15%攻击力的<$ba.strong>精力充沛</>；高于80%效果翻倍",
+        "name": "陈述苦难",
+        "prefabKey": "1",
+        "rangeId": null,
+        "requiredPotentialRank": 0,
+        "unlockCondition": {
+          "level": 1,
+          "phase": 0
+        }
+      },
+      {
+        "blackboard": [
+          {
+            "key": "interval",
+            "value": 0.1
+          },
+          {
+            "key": "hp_ratio",
+            "value": 0.005
+          },
+          {
+            "key": "phenxi_t_1[peak_1].peak_performance.atk",
+            "value": 0.2
+          },
+          {
+            "key": "phenxi_t_1[peak_1].peak_performance.hp_ratio",
+            "value": 0.5
+          },
+          {
+            "key": "phenxi_t_1[peak_2].peak_performance.atk",
+            "value": 0.4
+          },
+          {
+            "key": "phenxi_t_1[peak_2].peak_performance.hp_ratio",
+            "value": 0.8
+          }
+        ],
+        "description": "自身生命会不断流失（该效果不会使生命降至0）；生命值高于50%时获得+20%攻击力的<$ba.strong>精力充沛</>；高于80%效果翻倍",
+        "name": "陈述苦难",
+        "prefabKey": "1",
+        "rangeId": null,
+        "requiredPotentialRank": 0,
+        "unlockCondition": {
+          "level": 1,
+          "phase": 1
+        }
+      },
+      {
+        "blackboard": [
+          {
+            "key": "interval",
+            "value": 0.1
+          },
+          {
+            "key": "hp_ratio",
+            "value": 0.005
+          },
+          {
+            "key": "phenxi_t_1[peak_1].peak_performance.atk",
+            "value": 0.25
+          },
+          {
+            "key": "phenxi_t_1[peak_1].peak_performance.hp_ratio",
+            "value": 0.5
+          },
+          {
+            "key": "phenxi_t_1[peak_2].peak_performance.atk",
+            "value": 0.5
+          },
+          {
+            "key": "phenxi_t_1[peak_2].peak_performance.hp_ratio",
+            "value": 0.8
+          }
+        ],
+        "description": "自身生命会不断流失（该效果不会使生命降至0）；生命值高于50%时获得+25%攻击力的<$ba.strong>精力充沛</>；高于80%效果翻倍",
+        "name": "陈述苦难",
+        "prefabKey": "1",
+        "rangeId": null,
+        "requiredPotentialRank": 0,
+        "unlockCondition": {
+          "level": 1,
+          "phase": 2
+        }
+      }
+    ]
+  },
+  "2": {
+    "candidates": [
+      {
+        "blackboard": [
+          {
+            "key": "attack_speed",
+            "value": 27
+          }
+        ],
+        "description": "技能持续期间外，攻击速度+27",
+        "name": "宣告终局",
+        "prefabKey": "2",
+        "rangeId": null,
+        "requiredPotentialRank": 0,
+        "unlockCondition": {
+          "level": 1,
+          "phase": 2
+        }
+      },
+      {
+        "blackboard": [
+          {
+            "key": "attack_speed",
+            "value": 30
+          }
+        ],
+        "description": "技能持续期间外，攻击速度+30<@ba.talpu>（+3）</>",
+        "name": "宣告终局",
+        "prefabKey": "2",
+        "rangeId": null,
+        "requiredPotentialRank": 4,
+        "unlockCondition": {
+          "level": 1,
+          "phase": 2
+        }
+      }
+    ]
+  }
+}

@@ -1,0 +1,48 @@
+{
+  "1": {
+    "candidates": [
+      {
+        "blackboard": [
+          {
+            "key": "prob",
+            "value": 0.5
+          },
+          {
+            "key": "sp",
+            "value": 0.25
+          }
+        ],
+        "description": "技能结束后，50%几率立即回复25%的最大技力",
+        "name": "安可",
+        "prefabKey": "1",
+        "rangeId": null,
+        "requiredPotentialRank": 0,
+        "unlockCondition": {
+          "level": 1,
+          "phase": 1
+        }
+      },
+      {
+        "blackboard": [
+          {
+            "key": "prob",
+            "value": 0.5
+          },
+          {
+            "key": "sp",
+            "value": 0.5
+          }
+        ],
+        "description": "技能结束后，50%几率立即回复50%的最大技力",
+        "name": "安可",
+        "prefabKey": "1",
+        "rangeId": null,
+        "requiredPotentialRank": 0,
+        "unlockCondition": {
+          "level": 1,
+          "phase": 2
+        }
+      }
+    ]
+  }
+}

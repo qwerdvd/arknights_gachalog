@@ -1,0 +1,62 @@
+{
+  "name": "玛恩纳",
+  "profession": "WARRIOR",
+  "subProfessionId": "librator",
+  "star": 6,
+  "elite": 2,
+  "max_level": 90,
+  "data": {
+    "atk": 355,
+    "attackSpeed": 100,
+    "baseAttackTime": 1.2,
+    "baseForceLevel": 0,
+    "blockCnt": 3,
+    "cost": 12,
+    "def": 502,
+    "frozenImmune": false,
+    "hpRecoveryPerSec": 0,
+    "levitateImmune": false,
+    "magicResistance": 15,
+    "massLevel": 0,
+    "maxDeckStackCnt": 0,
+    "maxDeployCount": 1,
+    "maxHp": 3906,
+    "moveSpeed": 1,
+    "respawnTime": 70,
+    "silenceImmune": false,
+    "sleepImmune": false,
+    "spRecoveryPerSec": 1,
+    "stunImmune": false,
+    "tauntLevel": 0
+  },
+  "teamId": null,
+  "tokenKey": null,
+  "trait": {
+    "candidates": [
+      {
+        "blackboard": [
+          {
+            "key": "atk",
+            "value": 2
+          },
+          {
+            "key": "mid_stack_cnt",
+            "value": 20
+          },
+          {
+            "key": "max_stack_cnt",
+            "value": 40
+          }
+        ],
+        "overrideDescripton": "通常不攻击且阻挡数为0，技能未开启时<@ba.kw>{max_stack_cnt}</>秒内攻击力逐渐提升至最高<@ba.kw>+{atk:0%}</>且技能结束时重置攻击力",
+        "prefabKey": null,
+        "rangeId": null,
+        "requiredPotentialRank": 0,
+        "unlockCondition": {
+          "level": 1,
+          "phase": 0
+        }
+      }
+    ]
+  }
+}

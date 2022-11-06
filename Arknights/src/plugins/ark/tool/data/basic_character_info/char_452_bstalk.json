@@ -1,0 +1,54 @@
+{
+  "name": "豆苗",
+  "profession": "PIONEER",
+  "subProfessionId": "tactician",
+  "star": 4,
+  "elite": 2,
+  "max_level": 70,
+  "data": {
+    "atk": 405,
+    "attackSpeed": 100,
+    "baseAttackTime": 1,
+    "baseForceLevel": 0,
+    "blockCnt": 1,
+    "cost": 13,
+    "def": 125,
+    "frozenImmune": false,
+    "hpRecoveryPerSec": 0,
+    "levitateImmune": false,
+    "magicResistance": 0,
+    "massLevel": 0,
+    "maxDeckStackCnt": 0,
+    "maxDeployCount": 1,
+    "maxHp": 1569,
+    "moveSpeed": 1,
+    "respawnTime": 70,
+    "silenceImmune": false,
+    "sleepImmune": false,
+    "spRecoveryPerSec": 1,
+    "stunImmune": false,
+    "tauntLevel": 0
+  },
+  "teamId": null,
+  "tokenKey": "token_10014_bstalk_crab",
+  "trait": {
+    "candidates": [
+      {
+        "blackboard": [
+          {
+            "key": "atk_scale",
+            "value": 1.5
+          }
+        ],
+        "overrideDescripton": null,
+        "prefabKey": null,
+        "rangeId": null,
+        "requiredPotentialRank": 0,
+        "unlockCondition": {
+          "level": 1,
+          "phase": 0
+        }
+      }
+    ]
+  }
+}

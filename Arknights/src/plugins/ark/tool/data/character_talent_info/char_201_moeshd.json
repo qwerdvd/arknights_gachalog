@@ -1,0 +1,90 @@
+{
+  "1": {
+    "candidates": [
+      {
+        "blackboard": [
+          {
+            "key": "moeshd_t_1[self].prob",
+            "value": 0.1
+          },
+          {
+            "key": "moeshd_t_1[aura].prob",
+            "value": 0.05
+          }
+        ],
+        "description": "有10%的几率抵挡物理和法术伤害。周围四格内的友方单位获得一半该效果",
+        "name": "奇迹力场",
+        "prefabKey": "1",
+        "rangeId": "x-5",
+        "requiredPotentialRank": 0,
+        "unlockCondition": {
+          "level": 1,
+          "phase": 1
+        }
+      },
+      {
+        "blackboard": [
+          {
+            "key": "moeshd_t_1[self].prob",
+            "value": 0.13
+          },
+          {
+            "key": "moeshd_t_1[aura].prob",
+            "value": 0.065
+          }
+        ],
+        "description": "有13%<@ba.talpu>（+3%）</>的几率抵挡物理和法术伤害。周围四格内的友方单位获得一半该效果",
+        "name": "奇迹力场",
+        "prefabKey": "1",
+        "rangeId": "x-5",
+        "requiredPotentialRank": 4,
+        "unlockCondition": {
+          "level": 1,
+          "phase": 1
+        }
+      },
+      {
+        "blackboard": [
+          {
+            "key": "moeshd_t_1[self].prob",
+            "value": 0.2
+          },
+          {
+            "key": "moeshd_t_1[aura].prob",
+            "value": 0.1
+          }
+        ],
+        "description": "有20%的几率抵挡物理和法术伤害。周围四格内的友方单位获得一半该效果",
+        "name": "奇迹力场",
+        "prefabKey": "1",
+        "rangeId": "x-5",
+        "requiredPotentialRank": 0,
+        "unlockCondition": {
+          "level": 1,
+          "phase": 2
+        }
+      },
+      {
+        "blackboard": [
+          {
+            "key": "moeshd_t_1[self].prob",
+            "value": 0.23
+          },
+          {
+            "key": "moeshd_t_1[aura].prob",
+            "value": 0.115
+          }
+        ],
+        "description": "有23%<@ba.talpu>（+3%）</>的几率抵挡物理和法术伤害。周围四格内的友方单位获得一半该效果",
+        "name": "奇迹力场",
+        "prefabKey": "1",
+        "rangeId": "x-5",
+        "requiredPotentialRank": 4,
+        "unlockCondition": {
+          "level": 1,
+          "phase": 2
+        }
+      }
+    ]
+  }
+}

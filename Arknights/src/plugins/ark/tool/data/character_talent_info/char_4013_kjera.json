@@ -1,0 +1,106 @@
+{
+  "1": {
+    "candidates": [
+      {
+        "blackboard": [
+          {
+            "key": "atk",
+            "value": 0.05
+          },
+          {
+            "key": "cnt",
+            "value": 2
+          },
+          {
+            "key": "kjera_t_1[high].atk",
+            "value": 0.11
+          }
+        ],
+        "description": "攻击力+5%，攻击范围内存在2格以上的地面地形时，改为攻击力+11%",
+        "name": "低眉",
+        "prefabKey": "1",
+        "rangeId": null,
+        "requiredPotentialRank": 0,
+        "unlockCondition": {
+          "level": 1,
+          "phase": 1
+        }
+      },
+      {
+        "blackboard": [
+          {
+            "key": "atk",
+            "value": 0.08
+          },
+          {
+            "key": "cnt",
+            "value": 2
+          },
+          {
+            "key": "kjera_t_1[high].atk",
+            "value": 0.14
+          }
+        ],
+        "description": "攻击力+8%<@ba.talpu>（+3%）</>，攻击范围内存在2格以上的地面地形时，改为攻击力+14%<@ba.talpu>（+3%）</>",
+        "name": "低眉",
+        "prefabKey": "1",
+        "rangeId": null,
+        "requiredPotentialRank": 4,
+        "unlockCondition": {
+          "level": 1,
+          "phase": 1
+        }
+      },
+      {
+        "blackboard": [
+          {
+            "key": "atk",
+            "value": 0.1
+          },
+          {
+            "key": "cnt",
+            "value": 2
+          },
+          {
+            "key": "kjera_t_1[high].atk",
+            "value": 0.16
+          }
+        ],
+        "description": "攻击力+10%，攻击范围内存在2格以上的地面地形时，改为攻击力+16%",
+        "name": "低眉",
+        "prefabKey": "1",
+        "rangeId": null,
+        "requiredPotentialRank": 0,
+        "unlockCondition": {
+          "level": 1,
+          "phase": 2
+        }
+      },
+      {
+        "blackboard": [
+          {
+            "key": "atk",
+            "value": 0.13
+          },
+          {
+            "key": "cnt",
+            "value": 2
+          },
+          {
+            "key": "kjera_t_1[high].atk",
+            "value": 0.19
+          }
+        ],
+        "description": "攻击力+13%<@ba.talpu>（+3%）</>，攻击范围内存在2格以上的地面地形时，改为攻击力+19%<@ba.talpu>（+3%）</>",
+        "name": "低眉",
+        "prefabKey": "1",
+        "rangeId": null,
+        "requiredPotentialRank": 4,
+        "unlockCondition": {
+          "level": 1,
+          "phase": 2
+        }
+      }
+    ]
+  }
+}

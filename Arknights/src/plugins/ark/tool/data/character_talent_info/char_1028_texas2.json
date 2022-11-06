@@ -1,0 +1,94 @@
+{
+  "1": {
+    "candidates": [
+      {
+        "blackboard": [
+          {
+            "key": "atk",
+            "value": 0.1
+          },
+          {
+            "key": "hp_ratio",
+            "value": 1
+          }
+        ],
+        "description": "被动技能持续时间内攻击力+10%；首次击倒敌人时回复所有生命并重新释放被动技能",
+        "name": "德克萨斯传统",
+        "prefabKey": "1",
+        "rangeId": null,
+        "requiredPotentialRank": 0,
+        "unlockCondition": {
+          "level": 1,
+          "phase": 1
+        }
+      },
+      {
+        "blackboard": [
+          {
+            "key": "atk",
+            "value": 0.2
+          },
+          {
+            "key": "hp_ratio",
+            "value": 1
+          }
+        ],
+        "description": "被动技能持续时间内攻击力+20%；首次击倒敌人时回复所有生命并重新释放被动技能",
+        "name": "德克萨斯传统",
+        "prefabKey": "1",
+        "rangeId": null,
+        "requiredPotentialRank": 0,
+        "unlockCondition": {
+          "level": 1,
+          "phase": 2
+        }
+      }
+    ]
+  },
+  "2": {
+    "candidates": [
+      {
+        "blackboard": [
+          {
+            "key": "attack_speed",
+            "value": 8
+          },
+          {
+            "key": "damage_resistance",
+            "value": 0.25
+          }
+        ],
+        "description": "每次部署后击倒一名敌人之前，攻击速度+8，受到的所有伤害降低25%",
+        "name": "德克萨斯剑术",
+        "prefabKey": "2",
+        "rangeId": null,
+        "requiredPotentialRank": 0,
+        "unlockCondition": {
+          "level": 1,
+          "phase": 2
+        }
+      },
+      {
+        "blackboard": [
+          {
+            "key": "attack_speed",
+            "value": 10
+          },
+          {
+            "key": "damage_resistance",
+            "value": 0.3
+          }
+        ],
+        "description": "每次部署后击倒一名敌人之前，攻击速度+10<@ba.talpu>（+2）</>，受到的所有伤害降低30%<@ba.talpu>（+5%）</>",
+        "name": "德克萨斯剑术",
+        "prefabKey": "2",
+        "rangeId": null,
+        "requiredPotentialRank": 4,
+        "unlockCondition": {
+          "level": 1,
+          "phase": 2
+        }
+      }
+    ]
+  }
+}

@@ -1,0 +1,128 @@
+{
+  "1": {
+    "candidates": [
+      {
+        "blackboard": [
+          {
+            "key": "atk_scale",
+            "value": 1.1
+          },
+          {
+            "key": "prob",
+            "value": 0.25
+          }
+        ],
+        "description": "每次攻击有25%的概率攻击力提升至110%，且额外攻击一个目标",
+        "name": "精密填弹",
+        "prefabKey": "1",
+        "rangeId": null,
+        "requiredPotentialRank": 0,
+        "unlockCondition": {
+          "level": 1,
+          "phase": 1
+        }
+      },
+      {
+        "blackboard": [
+          {
+            "key": "atk_scale",
+            "value": 1.1
+          },
+          {
+            "key": "prob",
+            "value": 0.28
+          }
+        ],
+        "description": "每次攻击有28%<@ba.talpu>（+3%）</>的概率攻击力提升至110%，且额外攻击一个目标",
+        "name": "精密填弹",
+        "prefabKey": "1",
+        "rangeId": null,
+        "requiredPotentialRank": 2,
+        "unlockCondition": {
+          "level": 1,
+          "phase": 1
+        }
+      },
+      {
+        "blackboard": [
+          {
+            "key": "atk_scale",
+            "value": 1.3
+          },
+          {
+            "key": "prob",
+            "value": 0.25
+          }
+        ],
+        "description": "每次攻击有25%的概率攻击力提升至130%，且额外攻击一个目标",
+        "name": "精密填弹",
+        "prefabKey": "1",
+        "rangeId": null,
+        "requiredPotentialRank": 0,
+        "unlockCondition": {
+          "level": 1,
+          "phase": 2
+        }
+      },
+      {
+        "blackboard": [
+          {
+            "key": "atk_scale",
+            "value": 1.3
+          },
+          {
+            "key": "prob",
+            "value": 0.28
+          }
+        ],
+        "description": "每次攻击有28%<@ba.talpu>（+3%）</>的概率攻击力提升至130%，且额外攻击一个目标",
+        "name": "精密填弹",
+        "prefabKey": "1",
+        "rangeId": null,
+        "requiredPotentialRank": 2,
+        "unlockCondition": {
+          "level": 1,
+          "phase": 2
+        }
+      }
+    ]
+  },
+  "2": {
+    "candidates": [
+      {
+        "blackboard": [
+          {
+            "key": "sp",
+            "value": 6
+          }
+        ],
+        "description": "编入队伍时所有【先锋】干员的初始技力+6",
+        "name": "军事传统",
+        "prefabKey": "2",
+        "rangeId": null,
+        "requiredPotentialRank": 0,
+        "unlockCondition": {
+          "level": 1,
+          "phase": 2
+        }
+      },
+      {
+        "blackboard": [
+          {
+            "key": "sp",
+            "value": 8
+          }
+        ],
+        "description": "编入队伍时所有【先锋】干员的初始技力+8<@ba.talpu>（+2）</>",
+        "name": "军事传统",
+        "prefabKey": "2",
+        "rangeId": null,
+        "requiredPotentialRank": 4,
+        "unlockCondition": {
+          "level": 1,
+          "phase": 2
+        }
+      }
+    ]
+  }
+}

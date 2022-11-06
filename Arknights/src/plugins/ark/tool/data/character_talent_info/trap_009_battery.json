@@ -1,0 +1,27 @@
+{
+  "1": {
+    "candidates": [
+      {
+        "blackboard": [
+          {
+            "key": "interval",
+            "value": 4
+          },
+          {
+            "key": "sp",
+            "value": 3
+          }
+        ],
+        "description": "每4秒回复友方单位3点技力",
+        "name": null,
+        "prefabKey": "1",
+        "rangeId": "1-1",
+        "requiredPotentialRank": 0,
+        "unlockCondition": {
+          "level": 1,
+          "phase": 0
+        }
+      }
+    ]
+  }
+}

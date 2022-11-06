@@ -1,0 +1,94 @@
+{
+  "1": {
+    "candidates": [
+      {
+        "blackboard": [
+          {
+            "key": "hp_recovery_per_sec_by_max_hp_ratio",
+            "value": 0.015
+          },
+          {
+            "key": "damage_resistance",
+            "value": 0.15
+          }
+        ],
+        "description": "在场时，所有【深海猎人】干员每秒回复1.5%最大生命值且受到【海怪】敌人的物理与法术伤害降低15%",
+        "name": "阿戈尔的波涛",
+        "prefabKey": "1",
+        "rangeId": null,
+        "requiredPotentialRank": 0,
+        "unlockCondition": {
+          "level": 1,
+          "phase": 1
+        }
+      },
+      {
+        "blackboard": [
+          {
+            "key": "hp_recovery_per_sec_by_max_hp_ratio",
+            "value": 0.025
+          },
+          {
+            "key": "damage_resistance",
+            "value": 0.25
+          }
+        ],
+        "description": "在场时，所有【深海猎人】干员每秒回复2.5%最大生命值且受到【海怪】敌人的物理与法术伤害降低25%",
+        "name": "阿戈尔的波涛",
+        "prefabKey": "1",
+        "rangeId": null,
+        "requiredPotentialRank": 0,
+        "unlockCondition": {
+          "level": 1,
+          "phase": 2
+        }
+      }
+    ]
+  },
+  "2": {
+    "candidates": [
+      {
+        "blackboard": [
+          {
+            "key": "value",
+            "value": 3
+          },
+          {
+            "key": "atk_scale",
+            "value": 1.3
+          }
+        ],
+        "description": "攻击重量小于等于3的敌人时攻击力提升至130%",
+        "name": "弱肉强食",
+        "prefabKey": "2",
+        "rangeId": null,
+        "requiredPotentialRank": 0,
+        "unlockCondition": {
+          "level": 1,
+          "phase": 2
+        }
+      },
+      {
+        "blackboard": [
+          {
+            "key": "value",
+            "value": 3
+          },
+          {
+            "key": "atk_scale",
+            "value": 1.36
+          }
+        ],
+        "description": "攻击重量小于等于3的敌人时攻击力提升至136%<@ba.talpu>（+6%）</>",
+        "name": "弱肉强食",
+        "prefabKey": "2",
+        "rangeId": null,
+        "requiredPotentialRank": 4,
+        "unlockCondition": {
+          "level": 1,
+          "phase": 2
+        }
+      }
+    ]
+  }
+}

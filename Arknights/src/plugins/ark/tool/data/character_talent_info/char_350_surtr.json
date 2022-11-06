@@ -1,0 +1,146 @@
+{
+  "1": {
+    "candidates": [
+      {
+        "blackboard": [
+          {
+            "key": "magic_resist_penetrate_fixed",
+            "value": 12
+          }
+        ],
+        "description": "无视攻击目标12法术抗性",
+        "name": "熔火",
+        "prefabKey": "1",
+        "rangeId": null,
+        "requiredPotentialRank": 0,
+        "unlockCondition": {
+          "level": 1,
+          "phase": 1
+        }
+      },
+      {
+        "blackboard": [
+          {
+            "key": "magic_resist_penetrate_fixed",
+            "value": 14
+          }
+        ],
+        "description": "无视攻击目标14<@ba.talpu>（+2）</>法术抗性",
+        "name": "熔火",
+        "prefabKey": "1",
+        "rangeId": null,
+        "requiredPotentialRank": 4,
+        "unlockCondition": {
+          "level": 1,
+          "phase": 1
+        }
+      },
+      {
+        "blackboard": [
+          {
+            "key": "magic_resist_penetrate_fixed",
+            "value": 20
+          }
+        ],
+        "description": "无视攻击目标20法术抗性",
+        "name": "熔火",
+        "prefabKey": "1",
+        "rangeId": null,
+        "requiredPotentialRank": 0,
+        "unlockCondition": {
+          "level": 1,
+          "phase": 2
+        }
+      },
+      {
+        "blackboard": [
+          {
+            "key": "magic_resist_penetrate_fixed",
+            "value": 22
+          }
+        ],
+        "description": "无视攻击目标22<@ba.talpu>（+2）</>法术抗性",
+        "name": "熔火",
+        "prefabKey": "1",
+        "rangeId": null,
+        "requiredPotentialRank": 4,
+        "unlockCondition": {
+          "level": 1,
+          "phase": 2
+        }
+      }
+    ]
+  },
+  "2": {
+    "candidates": [
+      {
+        "blackboard": [
+          {
+            "key": "surtr_t_2[withdraw].interval",
+            "value": 4
+          }
+        ],
+        "description": "受到致命伤害时持续使生命值不低于1，4秒后强制退出战场",
+        "name": "余烬",
+        "prefabKey": "2",
+        "rangeId": null,
+        "requiredPotentialRank": 0,
+        "unlockCondition": {
+          "level": 1,
+          "phase": 1
+        }
+      },
+      {
+        "blackboard": [
+          {
+            "key": "surtr_t_2[withdraw].interval",
+            "value": 5
+          }
+        ],
+        "description": "受到致命伤害时持续使生命值不低于1，5<@ba.talpu>（+1）</>秒后强制退出战场",
+        "name": "余烬",
+        "prefabKey": "2",
+        "rangeId": null,
+        "requiredPotentialRank": 2,
+        "unlockCondition": {
+          "level": 1,
+          "phase": 1
+        }
+      },
+      {
+        "blackboard": [
+          {
+            "key": "surtr_t_2[withdraw].interval",
+            "value": 8
+          }
+        ],
+        "description": "受到致命伤害时持续使生命值不低于1，8秒后强制退出战场",
+        "name": "余烬",
+        "prefabKey": "2",
+        "rangeId": null,
+        "requiredPotentialRank": 0,
+        "unlockCondition": {
+          "level": 1,
+          "phase": 2
+        }
+      },
+      {
+        "blackboard": [
+          {
+            "key": "surtr_t_2[withdraw].interval",
+            "value": 9
+          }
+        ],
+        "description": "受到致命伤害时持续使生命值不低于1，9<@ba.talpu>（+1）</>秒后强制退出战场",
+        "name": "余烬",
+        "prefabKey": "2",
+        "rangeId": null,
+        "requiredPotentialRank": 2,
+        "unlockCondition": {
+          "level": 1,
+          "phase": 2
+        }
+      }
+    ]
+  }
+}

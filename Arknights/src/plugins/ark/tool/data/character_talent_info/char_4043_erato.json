@@ -1,0 +1,57 @@
+{
+  "1": {
+    "candidates": [
+      {
+        "blackboard": [
+          {
+            "key": "def_penetrate",
+            "value": 0
+          }
+        ],
+        "description": "自身可以攻击<$ba.sleep>沉睡</>的敌人",
+        "name": "琴音入梦",
+        "prefabKey": "1",
+        "rangeId": null,
+        "requiredPotentialRank": 0,
+        "unlockCondition": {
+          "level": 1,
+          "phase": 0
+        }
+      },
+      {
+        "blackboard": [
+          {
+            "key": "def_penetrate",
+            "value": 0.4
+          }
+        ],
+        "description": "自身可以攻击<$ba.sleep>沉睡</>的敌人，并且攻击<$ba.sleep>沉睡</>敌人时无视其防御力的40%",
+        "name": "琴音入梦",
+        "prefabKey": "1",
+        "rangeId": null,
+        "requiredPotentialRank": 0,
+        "unlockCondition": {
+          "level": 1,
+          "phase": 1
+        }
+      },
+      {
+        "blackboard": [
+          {
+            "key": "def_penetrate",
+            "value": 0.5
+          }
+        ],
+        "description": "自身可以攻击<$ba.sleep>沉睡</>的敌人，并且攻击<$ba.sleep>沉睡</>敌人时无视其防御力的50%",
+        "name": "琴音入梦",
+        "prefabKey": "1",
+        "rangeId": null,
+        "requiredPotentialRank": 0,
+        "unlockCondition": {
+          "level": 1,
+          "phase": 2
+        }
+      }
+    ]
+  }
+}

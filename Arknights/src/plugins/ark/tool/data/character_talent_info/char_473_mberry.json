@@ -1,0 +1,74 @@
+{
+  "1": {
+    "candidates": [
+      {
+        "blackboard": [
+          {
+            "key": "atk",
+            "value": 0.06
+          }
+        ],
+        "description": "场上存在桑葚和另外至少一名【医疗】干员时，所有【医疗】干员的攻击力+6%",
+        "name": "助手",
+        "prefabKey": "1",
+        "rangeId": null,
+        "requiredPotentialRank": 0,
+        "unlockCondition": {
+          "level": 1,
+          "phase": 1
+        }
+      },
+      {
+        "blackboard": [
+          {
+            "key": "atk",
+            "value": 0.07
+          }
+        ],
+        "description": "场上存在桑葚和另外至少一名【医疗】干员时，所有【医疗】干员的攻击力+7%<@ba.talpu>（+1%）</>",
+        "name": "助手",
+        "prefabKey": "1",
+        "rangeId": null,
+        "requiredPotentialRank": 4,
+        "unlockCondition": {
+          "level": 1,
+          "phase": 1
+        }
+      },
+      {
+        "blackboard": [
+          {
+            "key": "atk",
+            "value": 0.1
+          }
+        ],
+        "description": "场上存在桑葚和另外至少一名【医疗】干员时，所有【医疗】干员的攻击力+10%",
+        "name": "助手",
+        "prefabKey": "1",
+        "rangeId": null,
+        "requiredPotentialRank": 0,
+        "unlockCondition": {
+          "level": 1,
+          "phase": 2
+        }
+      },
+      {
+        "blackboard": [
+          {
+            "key": "atk",
+            "value": 0.11
+          }
+        ],
+        "description": "场上存在桑葚和另外至少一名【医疗】干员时，所有【医疗】干员的攻击力+11%<@ba.talpu>（+1%）</>",
+        "name": "助手",
+        "prefabKey": "1",
+        "rangeId": null,
+        "requiredPotentialRank": 4,
+        "unlockCondition": {
+          "level": 1,
+          "phase": 2
+        }
+      }
+    ]
+  }
+}

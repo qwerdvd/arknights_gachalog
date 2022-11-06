@@ -1,0 +1,54 @@
+{
+  "name": "承曦格雷伊",
+  "profession": "SNIPER",
+  "subProfessionId": "bombarder",
+  "star": 5,
+  "elite": 2,
+  "max_level": 80,
+  "data": {
+    "atk": 628,
+    "attackSpeed": 100,
+    "baseAttackTime": 2.1,
+    "baseForceLevel": 0,
+    "blockCnt": 1,
+    "cost": 24,
+    "def": 240,
+    "frozenImmune": false,
+    "hpRecoveryPerSec": 0,
+    "levitateImmune": false,
+    "magicResistance": 15,
+    "massLevel": 0,
+    "maxDeckStackCnt": 0,
+    "maxDeployCount": 1,
+    "maxHp": 1730,
+    "moveSpeed": 1,
+    "respawnTime": 70,
+    "silenceImmune": false,
+    "sleepImmune": false,
+    "spRecoveryPerSec": 1,
+    "stunImmune": false,
+    "tauntLevel": 0
+  },
+  "teamId": null,
+  "tokenKey": null,
+  "trait": {
+    "candidates": [
+      {
+        "blackboard": [
+          {
+            "key": "attack@append_atk_scale",
+            "value": 0.5
+          }
+        ],
+        "overrideDescripton": null,
+        "prefabKey": "-1",
+        "rangeId": null,
+        "requiredPotentialRank": 0,
+        "unlockCondition": {
+          "level": 1,
+          "phase": 0
+        }
+      }
+    ]
+  }
+}

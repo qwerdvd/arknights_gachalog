@@ -1,0 +1,82 @@
+{
+  "1": {
+    "candidates": [
+      {
+        "blackboard": [],
+        "description": null,
+        "name": null,
+        "prefabKey": "1",
+        "rangeId": null,
+        "requiredPotentialRank": 0,
+        "unlockCondition": {
+          "level": 1,
+          "phase": 0
+        }
+      }
+    ]
+  },
+  "2": {
+    "candidates": [
+      {
+        "blackboard": [],
+        "description": null,
+        "name": null,
+        "prefabKey": "2",
+        "rangeId": null,
+        "requiredPotentialRank": 0,
+        "unlockCondition": {
+          "level": 1,
+          "phase": 0
+        }
+      }
+    ]
+  },
+  "3": {
+    "candidates": [
+      {
+        "blackboard": [],
+        "description": null,
+        "name": null,
+        "prefabKey": "3",
+        "rangeId": null,
+        "requiredPotentialRank": 0,
+        "unlockCondition": {
+          "level": 1,
+          "phase": 0
+        }
+      }
+    ]
+  },
+  "4": {
+    "candidates": [
+      {
+        "blackboard": [],
+        "description": null,
+        "name": null,
+        "prefabKey": "4",
+        "rangeId": null,
+        "requiredPotentialRank": 0,
+        "unlockCondition": {
+          "level": 1,
+          "phase": 0
+        }
+      }
+    ]
+  },
+  "5": {
+    "candidates": [
+      {
+        "blackboard": [],
+        "description": null,
+        "name": null,
+        "prefabKey": "5",
+        "rangeId": null,
+        "requiredPotentialRank": 0,
+        "unlockCondition": {
+          "level": 1,
+          "phase": 0
+        }
+      }
+    ]
+  }
+}

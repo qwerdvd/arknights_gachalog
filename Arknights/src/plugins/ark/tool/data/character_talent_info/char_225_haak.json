@@ -1,0 +1,131 @@
+{
+  "1": {
+    "candidates": [
+      {
+        "blackboard": [
+          {
+            "key": "hp_ratio",
+            "value": 0.13
+          },
+          {
+            "key": "atk_scale",
+            "value": 1.3
+          },
+          {
+            "key": "sluggish",
+            "value": 1
+          },
+          {
+            "key": "stun",
+            "value": 0.6
+          }
+        ],
+        "description": "每次攻击时会随机触发下列效果之一：回复自身生命13%；当次攻击力提升至130%；目标<$ba.sluggish>停顿</>1秒；目标<$ba.stun>晕眩</>0.6秒",
+        "name": "混合药物射击",
+        "prefabKey": "1",
+        "rangeId": null,
+        "requiredPotentialRank": 0,
+        "unlockCondition": {
+          "level": 1,
+          "phase": 0
+        }
+      },
+      {
+        "blackboard": [
+          {
+            "key": "hp_ratio",
+            "value": 0.14
+          },
+          {
+            "key": "atk_scale",
+            "value": 1.4
+          },
+          {
+            "key": "sluggish",
+            "value": 1.2
+          },
+          {
+            "key": "stun",
+            "value": 0.8
+          }
+        ],
+        "description": "每次攻击时会随机触发下列效果之一：回复自身生命14%；当次攻击力提升至140%；目标<$ba.sluggish>停顿</>1.2秒；目标<$ba.stun>晕眩</>0.8秒",
+        "name": "混合药物射击",
+        "prefabKey": "1",
+        "rangeId": null,
+        "requiredPotentialRank": 0,
+        "unlockCondition": {
+          "level": 1,
+          "phase": 1
+        }
+      },
+      {
+        "blackboard": [
+          {
+            "key": "hp_ratio",
+            "value": 0.15
+          },
+          {
+            "key": "atk_scale",
+            "value": 1.5
+          },
+          {
+            "key": "sluggish",
+            "value": 1.4
+          },
+          {
+            "key": "stun",
+            "value": 1
+          }
+        ],
+        "description": "每次攻击时会随机触发下列效果之一：回复自身生命15%；当次攻击力提升至150%；目标<$ba.sluggish>停顿</>1.4秒；目标<$ba.stun>晕眩</>1秒",
+        "name": "混合药物射击",
+        "prefabKey": "1",
+        "rangeId": null,
+        "requiredPotentialRank": 0,
+        "unlockCondition": {
+          "level": 1,
+          "phase": 2
+        }
+      }
+    ]
+  },
+  "2": {
+    "candidates": [
+      {
+        "blackboard": [
+          {
+            "key": "heal_scale",
+            "value": 1.2
+          }
+        ],
+        "description": "自身受到的治疗量+20%",
+        "name": "药剂扩散",
+        "prefabKey": "2",
+        "rangeId": null,
+        "requiredPotentialRank": 0,
+        "unlockCondition": {
+          "level": 1,
+          "phase": 2
+        }
+      },
+      {
+        "blackboard": [
+          {
+            "key": "heal_scale",
+            "value": 1.25
+          }
+        ],
+        "description": "自身受到的治疗量+25%<@ba.talpu>（+5%）</>",
+        "name": "药剂扩散",
+        "prefabKey": "2",
+        "rangeId": null,
+        "requiredPotentialRank": 4,
+        "unlockCondition": {
+          "level": 1,
+          "phase": 2
+        }
+      }
+    ]
+  }
+}

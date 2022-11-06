@@ -1,0 +1,106 @@
+{
+  "1": {
+    "candidates": [
+      {
+        "blackboard": [
+          {
+            "key": "def",
+            "value": 0.05
+          },
+          {
+            "key": "atk",
+            "value": 0
+          },
+          {
+            "key": "taunt_level",
+            "value": 0
+          }
+        ],
+        "description": "技能未开启时，周围四格友方单位的防御力+5%",
+        "name": "地质学者",
+        "prefabKey": "1",
+        "rangeId": "x-5",
+        "requiredPotentialRank": 0,
+        "unlockCondition": {
+          "level": 1,
+          "phase": 1
+        }
+      },
+      {
+        "blackboard": [
+          {
+            "key": "def",
+            "value": 0.07
+          },
+          {
+            "key": "atk",
+            "value": 0
+          },
+          {
+            "key": "taunt_level",
+            "value": 0
+          }
+        ],
+        "description": "技能未开启时，周围四格友方单位的防御力+7%<@ba.talpu>（+2%）</>",
+        "name": "地质学者",
+        "prefabKey": "1",
+        "rangeId": "x-5",
+        "requiredPotentialRank": 4,
+        "unlockCondition": {
+          "level": 1,
+          "phase": 1
+        }
+      },
+      {
+        "blackboard": [
+          {
+            "key": "def",
+            "value": 0.1
+          },
+          {
+            "key": "atk",
+            "value": 0
+          },
+          {
+            "key": "taunt_level",
+            "value": -1
+          }
+        ],
+        "description": "技能未开启时，周围四格友方单位的防御力+10%；技能开启时，自身不容易受到敌人攻击",
+        "name": "地质学者",
+        "prefabKey": "1",
+        "rangeId": "x-5",
+        "requiredPotentialRank": 0,
+        "unlockCondition": {
+          "level": 1,
+          "phase": 2
+        }
+      },
+      {
+        "blackboard": [
+          {
+            "key": "def",
+            "value": 0.12
+          },
+          {
+            "key": "atk",
+            "value": 0
+          },
+          {
+            "key": "taunt_level",
+            "value": -1
+          }
+        ],
+        "description": "技能未开启时，周围四格友方单位的防御力+12%<@ba.talpu>（+2%）</>；技能开启时，自身不容易受到敌人攻击",
+        "name": "地质学者",
+        "prefabKey": "1",
+        "rangeId": "x-5",
+        "requiredPotentialRank": 4,
+        "unlockCondition": {
+          "level": 1,
+          "phase": 2
+        }
+      }
+    ]
+  }
+}

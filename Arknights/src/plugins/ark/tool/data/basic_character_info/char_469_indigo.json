@@ -1,0 +1,54 @@
+{
+  "name": "深靛",
+  "profession": "CASTER",
+  "subProfessionId": "mystic",
+  "star": 4,
+  "elite": 2,
+  "max_level": 70,
+  "data": {
+    "atk": 1116,
+    "attackSpeed": 100,
+    "baseAttackTime": 3,
+    "baseForceLevel": 0,
+    "blockCnt": 1,
+    "cost": 23,
+    "def": 117,
+    "frozenImmune": false,
+    "hpRecoveryPerSec": 0,
+    "levitateImmune": false,
+    "magicResistance": 20,
+    "massLevel": 0,
+    "maxDeckStackCnt": 0,
+    "maxDeployCount": 1,
+    "maxHp": 1435,
+    "moveSpeed": 1,
+    "respawnTime": 70,
+    "silenceImmune": false,
+    "sleepImmune": false,
+    "spRecoveryPerSec": 1,
+    "stunImmune": false,
+    "tauntLevel": 0
+  },
+  "teamId": null,
+  "tokenKey": null,
+  "trait": {
+    "candidates": [
+      {
+        "blackboard": [
+          {
+            "key": "times",
+            "value": 3
+          }
+        ],
+        "overrideDescripton": null,
+        "prefabKey": null,
+        "rangeId": null,
+        "requiredPotentialRank": 0,
+        "unlockCondition": {
+          "level": 1,
+          "phase": 0
+        }
+      }
+    ]
+  }
+}

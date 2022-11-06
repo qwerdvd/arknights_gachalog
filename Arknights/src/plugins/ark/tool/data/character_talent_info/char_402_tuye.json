@@ -1,0 +1,90 @@
+{
+  "1": {
+    "candidates": [
+      {
+        "blackboard": [
+          {
+            "key": "delay",
+            "value": 4
+          },
+          {
+            "key": "heal_scale_2",
+            "value": 1.3
+          }
+        ],
+        "description": "4秒内未进行治疗后，下次治疗时的治疗量提升至攻击力的130%",
+        "name": "蓄水",
+        "prefabKey": "1",
+        "rangeId": null,
+        "requiredPotentialRank": 0,
+        "unlockCondition": {
+          "level": 1,
+          "phase": 1
+        }
+      },
+      {
+        "blackboard": [
+          {
+            "key": "delay",
+            "value": 4
+          },
+          {
+            "key": "heal_scale_2",
+            "value": 1.35
+          }
+        ],
+        "description": "4秒内未进行治疗后，下次治疗时的治疗量提升至攻击力的135%<@ba.talpu>（+5%）</>",
+        "name": "蓄水",
+        "prefabKey": "1",
+        "rangeId": null,
+        "requiredPotentialRank": 4,
+        "unlockCondition": {
+          "level": 1,
+          "phase": 1
+        }
+      },
+      {
+        "blackboard": [
+          {
+            "key": "delay",
+            "value": 4
+          },
+          {
+            "key": "heal_scale_2",
+            "value": 1.5
+          }
+        ],
+        "description": "4秒内未进行治疗后，下次治疗时的治疗量提升至攻击力的150%",
+        "name": "蓄水",
+        "prefabKey": "1",
+        "rangeId": null,
+        "requiredPotentialRank": 0,
+        "unlockCondition": {
+          "level": 1,
+          "phase": 2
+        }
+      },
+      {
+        "blackboard": [
+          {
+            "key": "delay",
+            "value": 4
+          },
+          {
+            "key": "heal_scale_2",
+            "value": 1.55
+          }
+        ],
+        "description": "4秒内未进行治疗后，下次治疗时的治疗量提升至攻击力的155%<@ba.talpu>（+5%）</>",
+        "name": "蓄水",
+        "prefabKey": "1",
+        "rangeId": null,
+        "requiredPotentialRank": 4,
+        "unlockCondition": {
+          "level": 1,
+          "phase": 2
+        }
+      }
+    ]
+  }
+}

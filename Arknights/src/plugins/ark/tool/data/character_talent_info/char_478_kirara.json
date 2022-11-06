@@ -1,0 +1,90 @@
+{
+  "1": {
+    "candidates": [
+      {
+        "blackboard": [
+          {
+            "key": "hp_recovery_per_sec_by_max_hp_ratio",
+            "value": 0.01
+          },
+          {
+            "key": "kirara_t_2.hp_recovery_per_sec_by_max_hp_ratio",
+            "value": 0.02
+          }
+        ],
+        "description": "每秒回复1%生命值，周围8格没有友方干员时，改为每秒回复2%生命值",
+        "name": "离群独守",
+        "prefabKey": "1",
+        "rangeId": null,
+        "requiredPotentialRank": 0,
+        "unlockCondition": {
+          "level": 1,
+          "phase": 1
+        }
+      },
+      {
+        "blackboard": [
+          {
+            "key": "hp_recovery_per_sec_by_max_hp_ratio",
+            "value": 0.01
+          },
+          {
+            "key": "kirara_t_2.hp_recovery_per_sec_by_max_hp_ratio",
+            "value": 0.025
+          }
+        ],
+        "description": "每秒回复1%生命值，周围8格没有友方干员时，改为每秒回复2.5%<@ba.talpu>（+0.5%）</>生命值",
+        "name": "离群独守",
+        "prefabKey": "1",
+        "rangeId": null,
+        "requiredPotentialRank": 4,
+        "unlockCondition": {
+          "level": 1,
+          "phase": 1
+        }
+      },
+      {
+        "blackboard": [
+          {
+            "key": "hp_recovery_per_sec_by_max_hp_ratio",
+            "value": 0.02
+          },
+          {
+            "key": "kirara_t_2.hp_recovery_per_sec_by_max_hp_ratio",
+            "value": 0.035
+          }
+        ],
+        "description": "每秒回复2%生命值，周围8格没有友方干员时，改为每秒回复3.5%生命值",
+        "name": "离群独守",
+        "prefabKey": "1",
+        "rangeId": null,
+        "requiredPotentialRank": 0,
+        "unlockCondition": {
+          "level": 1,
+          "phase": 2
+        }
+      },
+      {
+        "blackboard": [
+          {
+            "key": "hp_recovery_per_sec_by_max_hp_ratio",
+            "value": 0.02
+          },
+          {
+            "key": "kirara_t_2.hp_recovery_per_sec_by_max_hp_ratio",
+            "value": 0.04
+          }
+        ],
+        "description": "每秒回复2%生命值，周围8格没有友方干员时，改为每秒回复4%<@ba.talpu>（+0.5%）</>生命值",
+        "name": "离群独守",
+        "prefabKey": "1",
+        "rangeId": null,
+        "requiredPotentialRank": 4,
+        "unlockCondition": {
+          "level": 1,
+          "phase": 2
+        }
+      }
+    ]
+  }
+}

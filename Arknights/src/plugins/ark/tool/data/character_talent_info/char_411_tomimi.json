@@ -1,0 +1,108 @@
+{
+  "1": {
+    "candidates": [
+      {
+        "blackboard": [
+          {
+            "key": "atk",
+            "value": 0.5
+          }
+        ],
+        "description": "技能开启时，攻击范围缩小，攻击变为物理伤害（只攻击地面敌人），攻击力+50%",
+        "name": "荒野法术",
+        "prefabKey": "1",
+        "rangeId": null,
+        "requiredPotentialRank": 0,
+        "unlockCondition": {
+          "level": 1,
+          "phase": 0
+        }
+      },
+      {
+        "blackboard": [
+          {
+            "key": "atk",
+            "value": 0.7
+          }
+        ],
+        "description": "技能开启时，攻击范围缩小，攻击变为物理伤害（只攻击地面敌人），攻击力+70%<@ba.talpu>（+20%）</>",
+        "name": "荒野法术",
+        "prefabKey": "1",
+        "rangeId": null,
+        "requiredPotentialRank": 4,
+        "unlockCondition": {
+          "level": 1,
+          "phase": 0
+        }
+      },
+      {
+        "blackboard": [
+          {
+            "key": "atk",
+            "value": 0.75
+          }
+        ],
+        "description": "技能开启时，攻击范围缩小，攻击变为物理伤害（只攻击地面敌人），攻击力+75%",
+        "name": "荒野法术",
+        "prefabKey": "1",
+        "rangeId": null,
+        "requiredPotentialRank": 0,
+        "unlockCondition": {
+          "level": 1,
+          "phase": 1
+        }
+      },
+      {
+        "blackboard": [
+          {
+            "key": "atk",
+            "value": 0.95
+          }
+        ],
+        "description": "技能开启时，攻击范围缩小，攻击变为物理伤害（只攻击地面敌人），攻击力+95%<@ba.talpu>（+20%）</>",
+        "name": "荒野法术",
+        "prefabKey": "1",
+        "rangeId": null,
+        "requiredPotentialRank": 4,
+        "unlockCondition": {
+          "level": 1,
+          "phase": 1
+        }
+      },
+      {
+        "blackboard": [
+          {
+            "key": "atk",
+            "value": 1
+          }
+        ],
+        "description": "技能开启时，攻击范围缩小，攻击变为物理伤害（只攻击地面敌人），攻击力+100%",
+        "name": "荒野法术",
+        "prefabKey": "1",
+        "rangeId": null,
+        "requiredPotentialRank": 0,
+        "unlockCondition": {
+          "level": 1,
+          "phase": 2
+        }
+      },
+      {
+        "blackboard": [
+          {
+            "key": "atk",
+            "value": 1.2
+          }
+        ],
+        "description": "技能开启时，攻击范围缩小，攻击变为物理伤害（只攻击地面敌人），攻击力+120%<@ba.talpu>（+20%）</>",
+        "name": "荒野法术",
+        "prefabKey": "1",
+        "rangeId": null,
+        "requiredPotentialRank": 4,
+        "unlockCondition": {
+          "level": 1,
+          "phase": 2
+        }
+      }
+    ]
+  }
+}

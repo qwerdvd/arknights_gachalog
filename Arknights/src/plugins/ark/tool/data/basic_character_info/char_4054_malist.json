@@ -1,0 +1,66 @@
+{
+  "name": "至简",
+  "profession": "CASTER",
+  "subProfessionId": "funnel",
+  "star": 5,
+  "elite": 2,
+  "max_level": 80,
+  "data": {
+    "atk": 320,
+    "attackSpeed": 100,
+    "baseAttackTime": 1.3,
+    "baseForceLevel": 0,
+    "blockCnt": 1,
+    "cost": 23,
+    "def": 120,
+    "frozenImmune": false,
+    "hpRecoveryPerSec": 0,
+    "levitateImmune": false,
+    "magicResistance": 20,
+    "massLevel": 0,
+    "maxDeckStackCnt": 0,
+    "maxDeployCount": 1,
+    "maxHp": 1400,
+    "moveSpeed": 1,
+    "respawnTime": 80,
+    "silenceImmune": false,
+    "sleepImmune": false,
+    "spRecoveryPerSec": 1,
+    "stunImmune": false,
+    "tauntLevel": 0
+  },
+  "teamId": null,
+  "tokenKey": null,
+  "trait": {
+    "candidates": [
+      {
+        "blackboard": [
+          {
+            "key": "init_atk_scale",
+            "value": 0.2
+          },
+          {
+            "key": "delta_atk_scale",
+            "value": 0.15
+          },
+          {
+            "key": "max_atk_scale",
+            "value": 1.1
+          },
+          {
+            "key": "max_stack_cnt",
+            "value": 6
+          }
+        ],
+        "overrideDescripton": "操作<@ba.kw>浮游单元</>造成<@ba.kw>法术伤害</>\\n单元攻击同一敌人伤害提升（最高造成干员110%攻击力的伤害）",
+        "prefabKey": null,
+        "rangeId": null,
+        "requiredPotentialRank": 0,
+        "unlockCondition": {
+          "level": 1,
+          "phase": 0
+        }
+      }
+    ]
+  }
+}

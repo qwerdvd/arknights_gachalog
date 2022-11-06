@@ -1,0 +1,102 @@
+{
+  "1": {
+    "candidates": [
+      {
+        "blackboard": [
+          {
+            "key": "atk_scale",
+            "value": 1.2
+          },
+          {
+            "key": "times_2",
+            "value": 1
+          }
+        ],
+        "description": "储存的攻击能量造成的伤害提升至120%，可额外储存1份只用于攻击精英或领袖敌人的攻击能量",
+        "name": "强弱法",
+        "prefabKey": "1",
+        "rangeId": null,
+        "requiredPotentialRank": 0,
+        "unlockCondition": {
+          "level": 1,
+          "phase": 1
+        }
+      },
+      {
+        "blackboard": [
+          {
+            "key": "atk_scale",
+            "value": 1.35
+          },
+          {
+            "key": "times_2",
+            "value": 1
+          }
+        ],
+        "description": "储存的攻击能量造成的伤害提升至135%，可额外储存1份只用于攻击精英或领袖敌人的攻击能量",
+        "name": "强弱法",
+        "prefabKey": "1",
+        "rangeId": null,
+        "requiredPotentialRank": 0,
+        "unlockCondition": {
+          "level": 1,
+          "phase": 2
+        }
+      }
+    ]
+  },
+  "2": {
+    "candidates": [
+      {
+        "blackboard": [
+          {
+            "key": "atk_scale",
+            "value": 0.15
+          },
+          {
+            "key": "cnt",
+            "value": 0
+          },
+          {
+            "key": "range_radius",
+            "value": 1.1
+          }
+        ],
+        "description": "若攻击目标周围没有其他敌人，攻击对其额外造成相当于攻击力15%的法术伤害",
+        "name": "倚音",
+        "prefabKey": "2",
+        "rangeId": null,
+        "requiredPotentialRank": 0,
+        "unlockCondition": {
+          "level": 1,
+          "phase": 2
+        }
+      },
+      {
+        "blackboard": [
+          {
+            "key": "atk_scale",
+            "value": 0.17
+          },
+          {
+            "key": "cnt",
+            "value": 0
+          },
+          {
+            "key": "range_radius",
+            "value": 1.1
+          }
+        ],
+        "description": "若攻击目标周围没有其他敌人，攻击对其额外造成相当于攻击力17%<@ba.talpu>（+2%）</>的法术伤害",
+        "name": "倚音",
+        "prefabKey": "2",
+        "rangeId": null,
+        "requiredPotentialRank": 4,
+        "unlockCondition": {
+          "level": 1,
+          "phase": 2
+        }
+      }
+    ]
+  }
+}

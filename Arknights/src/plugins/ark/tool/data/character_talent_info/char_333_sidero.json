@@ -1,0 +1,56 @@
+{
+  "1": {
+    "candidates": [
+      {
+        "blackboard": [
+          {
+            "key": "times",
+            "value": 7
+          },
+          {
+            "key": "attack_speed",
+            "value": 15
+          },
+          {
+            "key": "one_minus_status_resistance",
+            "value": -0.5
+          }
+        ],
+        "description": "击杀7个敌人后获得攻击速度+15和<$ba.buffres>抵抗</>",
+        "name": "佣兵之韧",
+        "prefabKey": "1",
+        "rangeId": null,
+        "requiredPotentialRank": 0,
+        "unlockCondition": {
+          "level": 1,
+          "phase": 2
+        }
+      },
+      {
+        "blackboard": [
+          {
+            "key": "times",
+            "value": 5
+          },
+          {
+            "key": "attack_speed",
+            "value": 15
+          },
+          {
+            "key": "one_minus_status_resistance",
+            "value": -0.5
+          }
+        ],
+        "description": "击杀5<@ba.talpu>（-2）</>个敌人后获得攻击速度+15和<$ba.buffres>抵抗</>",
+        "name": "佣兵之韧",
+        "prefabKey": "1",
+        "rangeId": null,
+        "requiredPotentialRank": 4,
+        "unlockCondition": {
+          "level": 1,
+          "phase": 2
+        }
+      }
+    ]
+  }
+}

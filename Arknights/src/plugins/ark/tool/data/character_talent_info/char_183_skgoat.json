@@ -1,0 +1,40 @@
+{
+  "1": {
+    "candidates": [
+      {
+        "blackboard": [
+          {
+            "key": "sluggish",
+            "value": 0.1
+          }
+        ],
+        "description": "略微延长特性<$ba.sluggish>停顿</>的持续时间",
+        "name": "地质勘探",
+        "prefabKey": "1",
+        "rangeId": null,
+        "requiredPotentialRank": 0,
+        "unlockCondition": {
+          "level": 1,
+          "phase": 2
+        }
+      },
+      {
+        "blackboard": [
+          {
+            "key": "sluggish",
+            "value": 0.13
+          }
+        ],
+        "description": "稍微延长特性<$ba.sluggish>停顿</>的持续时间",
+        "name": "地质勘探",
+        "prefabKey": "1",
+        "rangeId": null,
+        "requiredPotentialRank": 4,
+        "unlockCondition": {
+          "level": 1,
+          "phase": 2
+        }
+      }
+    ]
+  }
+}

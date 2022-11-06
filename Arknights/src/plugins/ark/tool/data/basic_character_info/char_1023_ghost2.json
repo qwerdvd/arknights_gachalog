@@ -1,0 +1,62 @@
+{
+  "name": "归溟幽灵鲨",
+  "profession": "SPECIAL",
+  "subProfessionId": "dollkeeper",
+  "star": 6,
+  "elite": 2,
+  "max_level": 90,
+  "data": {
+    "atk": 737,
+    "attackSpeed": 100,
+    "baseAttackTime": 1.2,
+    "baseForceLevel": 0,
+    "blockCnt": 2,
+    "cost": 16,
+    "def": 322,
+    "frozenImmune": false,
+    "hpRecoveryPerSec": 0,
+    "levitateImmune": false,
+    "magicResistance": 0,
+    "massLevel": 0,
+    "maxDeckStackCnt": 0,
+    "maxDeployCount": 1,
+    "maxHp": 2803,
+    "moveSpeed": 1,
+    "respawnTime": 70,
+    "silenceImmune": false,
+    "sleepImmune": false,
+    "spRecoveryPerSec": 1,
+    "stunImmune": false,
+    "tauntLevel": 0
+  },
+  "teamId": null,
+  "tokenKey": null,
+  "trait": {
+    "candidates": [
+      {
+        "blackboard": [
+          {
+            "key": "duration",
+            "value": 20
+          },
+          {
+            "key": "atk",
+            "value": 0
+          },
+          {
+            "key": "max_hp",
+            "value": 0
+          }
+        ],
+        "overrideDescripton": "受到致命伤时不撤退，切换成<替身>作战（替身阻挡数为0），持续20秒后自身再次替换<替身>",
+        "prefabKey": "-1",
+        "rangeId": "x-4",
+        "requiredPotentialRank": 0,
+        "unlockCondition": {
+          "level": 1,
+          "phase": 0
+        }
+      }
+    ]
+  }
+}

@@ -1,0 +1,54 @@
+{
+  "name": "迷迭香",
+  "profession": "SNIPER",
+  "subProfessionId": "bombarder",
+  "star": 6,
+  "elite": 2,
+  "max_level": 90,
+  "data": {
+    "atk": 688,
+    "attackSpeed": 100,
+    "baseAttackTime": 2.1,
+    "baseForceLevel": 0,
+    "blockCnt": 1,
+    "cost": 25,
+    "def": 245,
+    "frozenImmune": false,
+    "hpRecoveryPerSec": 0,
+    "levitateImmune": false,
+    "magicResistance": 15,
+    "massLevel": 0,
+    "maxDeckStackCnt": 0,
+    "maxDeployCount": 1,
+    "maxHp": 1944,
+    "moveSpeed": 1,
+    "respawnTime": 70,
+    "silenceImmune": false,
+    "sleepImmune": false,
+    "spRecoveryPerSec": 1,
+    "stunImmune": false,
+    "tauntLevel": 0
+  },
+  "teamId": null,
+  "tokenKey": "token_10012_rosmon_shield",
+  "trait": {
+    "candidates": [
+      {
+        "blackboard": [
+          {
+            "key": "attack@append_atk_scale",
+            "value": 0.5
+          }
+        ],
+        "overrideDescripton": null,
+        "prefabKey": "-1",
+        "rangeId": null,
+        "requiredPotentialRank": 0,
+        "unlockCondition": {
+          "level": 1,
+          "phase": 0
+        }
+      }
+    ]
+  }
+}

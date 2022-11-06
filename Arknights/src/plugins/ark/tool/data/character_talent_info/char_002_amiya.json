@@ -1,0 +1,60 @@
+{
+  "1": {
+    "candidates": [
+      {
+        "blackboard": [],
+        "description": "？？？？？",
+        "name": "？？？",
+        "prefabKey": "#",
+        "rangeId": null,
+        "requiredPotentialRank": 0,
+        "unlockCondition": {
+          "level": 1,
+          "phase": 0
+        }
+      },
+      {
+        "blackboard": [
+          {
+            "key": "amiya_t_1[atk].sp",
+            "value": 2
+          },
+          {
+            "key": "amiya_t_1[kill].sp",
+            "value": 8
+          }
+        ],
+        "description": "攻击敌人时额外回复2点技力，消灭敌人后额外获得8点技力",
+        "name": "情绪吸收",
+        "prefabKey": "1",
+        "rangeId": null,
+        "requiredPotentialRank": 0,
+        "unlockCondition": {
+          "level": 1,
+          "phase": 2
+        }
+      },
+      {
+        "blackboard": [
+          {
+            "key": "amiya_t_1[atk].sp",
+            "value": 3
+          },
+          {
+            "key": "amiya_t_1[kill].sp",
+            "value": 10
+          }
+        ],
+        "description": "攻击敌人时额外回复3<@ba.talpu>（+1）</>点技力，消灭敌人后额外获得10<@ba.talpu>（+2）</>点技力",
+        "name": "情绪吸收",
+        "prefabKey": "1",
+        "rangeId": null,
+        "requiredPotentialRank": 5,
+        "unlockCondition": {
+          "level": 1,
+          "phase": 2
+        }
+      }
+    ]
+  }
+}

@@ -1,0 +1,93 @@
+{
+  "1": {
+    "candidates": [
+      {
+        "blackboard": [
+          {
+            "key": "min_attack_speed",
+            "value": 50
+          },
+          {
+            "key": "max_attack_speed",
+            "value": 0
+          },
+          {
+            "key": "max_hp_ratio",
+            "value": 1
+          },
+          {
+            "key": "min_hp_ratio",
+            "value": 0.5
+          }
+        ],
+        "description": "根据已损失的生命值，提高攻击速度（损失50%生命值时达到最大可提升攻击速度50）",
+        "name": "认真模式",
+        "prefabKey": "1",
+        "rangeId": null,
+        "requiredPotentialRank": 0,
+        "unlockCondition": {
+          "level": 1,
+          "phase": 0
+        }
+      },
+      {
+        "blackboard": [
+          {
+            "key": "min_attack_speed",
+            "value": 75
+          },
+          {
+            "key": "max_attack_speed",
+            "value": 0
+          },
+          {
+            "key": "max_hp_ratio",
+            "value": 1
+          },
+          {
+            "key": "min_hp_ratio",
+            "value": 0.4
+          }
+        ],
+        "description": "根据已损失的生命值，提高攻击速度（损失60%生命值时达到最大可提升攻击速度75）",
+        "name": "认真模式",
+        "prefabKey": "1",
+        "rangeId": null,
+        "requiredPotentialRank": 0,
+        "unlockCondition": {
+          "level": 1,
+          "phase": 1
+        }
+      },
+      {
+        "blackboard": [
+          {
+            "key": "min_attack_speed",
+            "value": 100
+          },
+          {
+            "key": "max_attack_speed",
+            "value": 0
+          },
+          {
+            "key": "max_hp_ratio",
+            "value": 1
+          },
+          {
+            "key": "min_hp_ratio",
+            "value": 0.3
+          }
+        ],
+        "description": "根据已损失的生命值，提高攻击速度（损失70%生命值时达到最大可提升攻击速度100）",
+        "name": "认真模式",
+        "prefabKey": "1",
+        "rangeId": null,
+        "requiredPotentialRank": 0,
+        "unlockCondition": {
+          "level": 1,
+          "phase": 2
+        }
+      }
+    ]
+  }
+}

@@ -1,0 +1,115 @@
+{
+  "1": {
+    "candidates": [
+      {
+        "blackboard": [
+          {
+            "key": "spareshot_chen.prob",
+            "value": 0.15
+          },
+          {
+            "key": "prob",
+            "value": 0
+          }
+        ],
+        "description": "在场时自身弹药类技能攻击时15%概率不消耗对应弹药（同类效果取最高）",
+        "name": "节约风气",
+        "prefabKey": "1",
+        "rangeId": null,
+        "requiredPotentialRank": 0,
+        "unlockCondition": {
+          "level": 1,
+          "phase": 1
+        }
+      },
+      {
+        "blackboard": [
+          {
+            "key": "spareshot_chen.prob",
+            "value": 0.17
+          },
+          {
+            "key": "prob",
+            "value": 0
+          }
+        ],
+        "description": "在场时自身弹药类技能攻击时17%<@ba.talpu>（+2%）</>概率不消耗对应弹药（同类效果取最高）",
+        "name": "节约风气",
+        "prefabKey": "1",
+        "rangeId": null,
+        "requiredPotentialRank": 4,
+        "unlockCondition": {
+          "level": 1,
+          "phase": 1
+        }
+      },
+      {
+        "blackboard": [
+          {
+            "key": "spareshot_chen.prob",
+            "value": 0.2
+          },
+          {
+            "key": "prob",
+            "value": 0.1
+          }
+        ],
+        "description": "在场时自身弹药类技能攻击时20%概率不消耗对应弹药，其他【狙击】干员的弹药类技能改为10%概率不消耗（同类效果取最高）",
+        "name": "节约风气",
+        "prefabKey": "1",
+        "rangeId": null,
+        "requiredPotentialRank": 0,
+        "unlockCondition": {
+          "level": 1,
+          "phase": 2
+        }
+      },
+      {
+        "blackboard": [
+          {
+            "key": "spareshot_chen.prob",
+            "value": 0.22
+          },
+          {
+            "key": "prob",
+            "value": 0.1
+          }
+        ],
+        "description": "在场时自身弹药类技能攻击时22%<@ba.talpu>（+2%）</>概率不消耗对应弹药，其他【狙击】干员的弹药类技能改为10%概率不消耗（同类效果取最高）",
+        "name": "节约风气",
+        "prefabKey": "1",
+        "rangeId": null,
+        "requiredPotentialRank": 4,
+        "unlockCondition": {
+          "level": 1,
+          "phase": 2
+        }
+      }
+    ]
+  },
+  "2": {
+    "candidates": [
+      {
+        "blackboard": [
+          {
+            "key": "chen2_t_2[common].attack_speed",
+            "value": 8
+          },
+          {
+            "key": "chen2_t_2[map].attack_speed",
+            "value": 4
+          }
+        ],
+        "description": "攻击速度+8，当场地中存在水地形时改为攻击速度+12",
+        "name": "假日余韵",
+        "prefabKey": "2",
+        "rangeId": null,
+        "requiredPotentialRank": 0,
+        "unlockCondition": {
+          "level": 1,
+          "phase": 2
+        }
+      }
+    ]
+  }
+}

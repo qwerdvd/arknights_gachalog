@@ -1,0 +1,57 @@
+{
+  "1": {
+    "candidates": [
+      {
+        "blackboard": [
+          {
+            "key": "cnt",
+            "value": 3
+          }
+        ],
+        "description": "可以使用3个移动摄影车。摄影车周围8格内敌人的<$ba.invisible>隐匿</>效果失效",
+        "name": "摄影小队",
+        "prefabKey": "1",
+        "rangeId": null,
+        "requiredPotentialRank": 0,
+        "unlockCondition": {
+          "level": 1,
+          "phase": 0
+        }
+      },
+      {
+        "blackboard": [
+          {
+            "key": "cnt",
+            "value": 4
+          }
+        ],
+        "description": "可以使用4个移动摄影车。摄影车周围8格内敌人的<$ba.invisible>隐匿</>效果失效",
+        "name": "摄影小队",
+        "prefabKey": "1",
+        "rangeId": null,
+        "requiredPotentialRank": 0,
+        "unlockCondition": {
+          "level": 1,
+          "phase": 1
+        }
+      },
+      {
+        "blackboard": [
+          {
+            "key": "cnt",
+            "value": 5
+          }
+        ],
+        "description": "可以使用5个移动摄影车。摄影车周围8格内敌人的<$ba.invisible>隐匿</>效果失效",
+        "name": "摄影小队",
+        "prefabKey": "1",
+        "rangeId": null,
+        "requiredPotentialRank": 0,
+        "unlockCondition": {
+          "level": 1,
+          "phase": 2
+        }
+      }
+    ]
+  }
+}

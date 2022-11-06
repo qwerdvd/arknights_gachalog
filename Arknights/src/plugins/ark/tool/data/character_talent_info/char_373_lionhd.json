@@ -1,0 +1,90 @@
+{
+  "1": {
+    "candidates": [
+      {
+        "blackboard": [
+          {
+            "key": "atk",
+            "value": 0.03
+          },
+          {
+            "key": "max_valid_stack_cnt",
+            "value": 5
+          }
+        ],
+        "description": "攻击范围内每有一个敌人，自身攻击力+3%（最多可叠加5层）",
+        "name": "破片杀伤",
+        "prefabKey": "1",
+        "rangeId": null,
+        "requiredPotentialRank": 0,
+        "unlockCondition": {
+          "level": 1,
+          "phase": 1
+        }
+      },
+      {
+        "blackboard": [
+          {
+            "key": "atk",
+            "value": 0.03
+          },
+          {
+            "key": "max_valid_stack_cnt",
+            "value": 6
+          }
+        ],
+        "description": "攻击范围内每有一个敌人，自身攻击力+3%（最多可叠加6层<@ba.talpu>（+1）</>）",
+        "name": "破片杀伤",
+        "prefabKey": "1",
+        "rangeId": null,
+        "requiredPotentialRank": 4,
+        "unlockCondition": {
+          "level": 1,
+          "phase": 1
+        }
+      },
+      {
+        "blackboard": [
+          {
+            "key": "atk",
+            "value": 0.04
+          },
+          {
+            "key": "max_valid_stack_cnt",
+            "value": 5
+          }
+        ],
+        "description": "攻击范围内每有一个敌人，自身攻击力+4%（最多可叠加5层）",
+        "name": "破片杀伤",
+        "prefabKey": "1",
+        "rangeId": null,
+        "requiredPotentialRank": 0,
+        "unlockCondition": {
+          "level": 1,
+          "phase": 2
+        }
+      },
+      {
+        "blackboard": [
+          {
+            "key": "atk",
+            "value": 0.04
+          },
+          {
+            "key": "max_valid_stack_cnt",
+            "value": 6
+          }
+        ],
+        "description": "攻击范围内每有一个敌人，自身攻击力+4%（最多可叠加6层<@ba.talpu>（+1）</>）",
+        "name": "破片杀伤",
+        "prefabKey": "1",
+        "rangeId": null,
+        "requiredPotentialRank": 4,
+        "unlockCondition": {
+          "level": 1,
+          "phase": 2
+        }
+      }
+    ]
+  }
+}

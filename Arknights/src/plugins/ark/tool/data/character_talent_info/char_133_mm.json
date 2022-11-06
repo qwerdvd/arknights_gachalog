@@ -1,0 +1,90 @@
+{
+  "1": {
+    "candidates": [
+      {
+        "blackboard": [
+          {
+            "key": "attack_speed",
+            "value": 4
+          },
+          {
+            "key": "atk",
+            "value": 0.04
+          }
+        ],
+        "description": "攻击力+4%，攻击速度+4",
+        "name": "维多利亚探员",
+        "prefabKey": "1",
+        "rangeId": null,
+        "requiredPotentialRank": 0,
+        "unlockCondition": {
+          "level": 1,
+          "phase": 1
+        }
+      },
+      {
+        "blackboard": [
+          {
+            "key": "attack_speed",
+            "value": 5
+          },
+          {
+            "key": "atk",
+            "value": 0.05
+          }
+        ],
+        "description": "攻击力+5%<@ba.talpu>（+1%）</>，攻击速度+5<@ba.talpu>（+1）</>",
+        "name": "维多利亚探员",
+        "prefabKey": "1",
+        "rangeId": null,
+        "requiredPotentialRank": 4,
+        "unlockCondition": {
+          "level": 1,
+          "phase": 1
+        }
+      },
+      {
+        "blackboard": [
+          {
+            "key": "attack_speed",
+            "value": 7
+          },
+          {
+            "key": "atk",
+            "value": 0.07
+          }
+        ],
+        "description": "攻击力+7%，攻击速度+7",
+        "name": "维多利亚探员",
+        "prefabKey": "1",
+        "rangeId": null,
+        "requiredPotentialRank": 0,
+        "unlockCondition": {
+          "level": 1,
+          "phase": 2
+        }
+      },
+      {
+        "blackboard": [
+          {
+            "key": "attack_speed",
+            "value": 8
+          },
+          {
+            "key": "atk",
+            "value": 0.08
+          }
+        ],
+        "description": "攻击力+8%<@ba.talpu>（+1%）</>，攻击速度+8<@ba.talpu>（+1）</>",
+        "name": "维多利亚探员",
+        "prefabKey": "1",
+        "rangeId": null,
+        "requiredPotentialRank": 4,
+        "unlockCondition": {
+          "level": 1,
+          "phase": 2
+        }
+      }
+    ]
+  }
+}

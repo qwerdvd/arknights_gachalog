@@ -1,0 +1,111 @@
+{
+  "1": {
+    "candidates": [
+      {
+        "blackboard": [
+          {
+            "key": "default.interval",
+            "value": 3.5
+          }
+        ],
+        "description": "使攻击范围内一名友方干员每3.5秒额外获得1点技力，每秒流失0.4%生命，持续时间无限",
+        "name": "战地补给",
+        "prefabKey": "2",
+        "rangeId": null,
+        "requiredPotentialRank": 0,
+        "unlockCondition": {
+          "level": 1,
+          "phase": 0
+        }
+      }
+    ]
+  },
+  "2": {
+    "candidates": [
+      {
+        "blackboard": [
+          {
+            "key": "max_deck_stack_cnt",
+            "value": 2
+          },
+          {
+            "key": "max_deploy_count",
+            "value": 0
+          }
+        ],
+        "description": null,
+        "name": null,
+        "prefabKey": "1",
+        "rangeId": null,
+        "requiredPotentialRank": 0,
+        "unlockCondition": {
+          "level": 1,
+          "phase": 0
+        }
+      },
+      {
+        "blackboard": [
+          {
+            "key": "max_deck_stack_cnt",
+            "value": 2
+          },
+          {
+            "key": "max_deploy_count",
+            "value": 1
+          }
+        ],
+        "description": null,
+        "name": null,
+        "prefabKey": "1",
+        "rangeId": null,
+        "requiredPotentialRank": 0,
+        "unlockCondition": {
+          "level": 1,
+          "phase": 1
+        }
+      },
+      {
+        "blackboard": [
+          {
+            "key": "max_deck_stack_cnt",
+            "value": 3
+          },
+          {
+            "key": "max_deploy_count",
+            "value": 1
+          }
+        ],
+        "description": null,
+        "name": null,
+        "prefabKey": "1",
+        "rangeId": null,
+        "requiredPotentialRank": 0,
+        "unlockCondition": {
+          "level": 1,
+          "phase": 2
+        }
+      }
+    ]
+  },
+  "3": {
+    "candidates": [
+      {
+        "blackboard": [
+          {
+            "key": "hp_ratio",
+            "value": 0.004
+          }
+        ],
+        "description": null,
+        "name": null,
+        "prefabKey": "3",
+        "rangeId": null,
+        "requiredPotentialRank": 0,
+        "unlockCondition": {
+          "level": 1,
+          "phase": 0
+        }
+      }
+    ]
+  }
+}

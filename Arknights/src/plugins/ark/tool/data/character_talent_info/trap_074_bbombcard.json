@@ -1,0 +1,27 @@
+{
+  "1": {
+    "candidates": [
+      {
+        "blackboard": [
+          {
+            "key": "damage",
+            "value": 500
+          },
+          {
+            "key": "stun",
+            "value": 5
+          }
+        ],
+        "description": null,
+        "name": null,
+        "prefabKey": "1",
+        "rangeId": null,
+        "requiredPotentialRank": 0,
+        "unlockCondition": {
+          "level": 1,
+          "phase": 0
+        }
+      }
+    ]
+  }
+}

@@ -1,0 +1,108 @@
+{
+  "1": {
+    "candidates": [
+      {
+        "blackboard": [
+          {
+            "key": "damage_scale",
+            "value": 1.5
+          }
+        ],
+        "description": "<替身>出现时对其周围8格内所有敌方单位造成相当于其攻击力150%的法术伤害",
+        "name": "折纸生花",
+        "prefabKey": "1",
+        "rangeId": null,
+        "requiredPotentialRank": 0,
+        "unlockCondition": {
+          "level": 1,
+          "phase": 0
+        }
+      },
+      {
+        "blackboard": [
+          {
+            "key": "damage_scale",
+            "value": 1.55
+          }
+        ],
+        "description": "<替身>出现时对其周围8格内所有敌方单位造成相当于其攻击力155%<@ba.talpu>（+5）</>的法术伤害",
+        "name": "折纸生花",
+        "prefabKey": "1",
+        "rangeId": null,
+        "requiredPotentialRank": 4,
+        "unlockCondition": {
+          "level": 1,
+          "phase": 0
+        }
+      },
+      {
+        "blackboard": [
+          {
+            "key": "damage_scale",
+            "value": 2.25
+          }
+        ],
+        "description": "<替身>出现时对其周围8格内所有敌方单位造成相当于其攻击力225%的法术伤害",
+        "name": "折纸生花",
+        "prefabKey": "1",
+        "rangeId": null,
+        "requiredPotentialRank": 0,
+        "unlockCondition": {
+          "level": 1,
+          "phase": 1
+        }
+      },
+      {
+        "blackboard": [
+          {
+            "key": "damage_scale",
+            "value": 2.3
+          }
+        ],
+        "description": "<替身>出现时对其周围8格内所有敌方单位造成相当于其攻击力230%<@ba.talpu>（+5）</>的法术伤害",
+        "name": "折纸生花",
+        "prefabKey": "1",
+        "rangeId": null,
+        "requiredPotentialRank": 4,
+        "unlockCondition": {
+          "level": 1,
+          "phase": 1
+        }
+      },
+      {
+        "blackboard": [
+          {
+            "key": "damage_scale",
+            "value": 2.7
+          }
+        ],
+        "description": "<替身>出现时对其周围8格内所有敌方单位造成相当于其攻击力270%的法术伤害",
+        "name": "折纸生花",
+        "prefabKey": "1",
+        "rangeId": null,
+        "requiredPotentialRank": 0,
+        "unlockCondition": {
+          "level": 1,
+          "phase": 2
+        }
+      },
+      {
+        "blackboard": [
+          {
+            "key": "damage_scale",
+            "value": 2.75
+          }
+        ],
+        "description": "<替身>出现时对其周围8格内所有敌方单位造成相当于其攻击力275%<@ba.talpu>（+5）</>的法术伤害",
+        "name": "折纸生花",
+        "prefabKey": "1",
+        "rangeId": null,
+        "requiredPotentialRank": 4,
+        "unlockCondition": {
+          "level": 1,
+          "phase": 2
+        }
+      }
+    ]
+  }
+}

@@ -1,0 +1,90 @@
+{
+  "1": {
+    "candidates": [
+      {
+        "blackboard": [
+          {
+            "key": "cnt",
+            "value": 2
+          },
+          {
+            "key": "def",
+            "value": 0.08
+          }
+        ],
+        "description": "阻挡两个及以上的敌人时，防御力+8%",
+        "name": "雪境巡逻员",
+        "prefabKey": "1",
+        "rangeId": null,
+        "requiredPotentialRank": 0,
+        "unlockCondition": {
+          "level": 1,
+          "phase": 1
+        }
+      },
+      {
+        "blackboard": [
+          {
+            "key": "cnt",
+            "value": 2
+          },
+          {
+            "key": "def",
+            "value": 0.11
+          }
+        ],
+        "description": "阻挡两个及以上的敌人时，防御力+11%<@ba.talpu>（+3%）</>",
+        "name": "雪境巡逻员",
+        "prefabKey": "1",
+        "rangeId": null,
+        "requiredPotentialRank": 4,
+        "unlockCondition": {
+          "level": 1,
+          "phase": 1
+        }
+      },
+      {
+        "blackboard": [
+          {
+            "key": "cnt",
+            "value": 2
+          },
+          {
+            "key": "def",
+            "value": 0.16
+          }
+        ],
+        "description": "当阻挡住两个及以上的敌人时，防御力+16%",
+        "name": "雪境巡逻员",
+        "prefabKey": "1",
+        "rangeId": null,
+        "requiredPotentialRank": 0,
+        "unlockCondition": {
+          "level": 1,
+          "phase": 2
+        }
+      },
+      {
+        "blackboard": [
+          {
+            "key": "cnt",
+            "value": 2
+          },
+          {
+            "key": "def",
+            "value": 0.19
+          }
+        ],
+        "description": "阻挡两个及以上的敌人时，防御力+19%<@ba.talpu>（+3%）</>",
+        "name": "雪境巡逻员",
+        "prefabKey": "1",
+        "rangeId": null,
+        "requiredPotentialRank": 4,
+        "unlockCondition": {
+          "level": 1,
+          "phase": 2
+        }
+      }
+    ]
+  }
+}

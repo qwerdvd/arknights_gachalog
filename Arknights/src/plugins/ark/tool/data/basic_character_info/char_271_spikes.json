@@ -1,0 +1,54 @@
+{
+  "name": "芳汀",
+  "profession": "WARRIOR",
+  "subProfessionId": "lord",
+  "star": 4,
+  "elite": 2,
+  "max_level": 70,
+  "data": {
+    "atk": 640,
+    "attackSpeed": 100,
+    "baseAttackTime": 1.3,
+    "baseForceLevel": 0,
+    "blockCnt": 2,
+    "cost": 18,
+    "def": 340,
+    "frozenImmune": false,
+    "hpRecoveryPerSec": 0,
+    "levitateImmune": false,
+    "magicResistance": 10,
+    "massLevel": 0,
+    "maxDeckStackCnt": 0,
+    "maxDeployCount": 1,
+    "maxHp": 2250,
+    "moveSpeed": 1,
+    "respawnTime": 70,
+    "silenceImmune": false,
+    "sleepImmune": false,
+    "spRecoveryPerSec": 1,
+    "stunImmune": false,
+    "tauntLevel": 0
+  },
+  "teamId": null,
+  "tokenKey": null,
+  "trait": {
+    "candidates": [
+      {
+        "blackboard": [
+          {
+            "key": "atk_scale",
+            "value": 0.8
+          }
+        ],
+        "overrideDescripton": null,
+        "prefabKey": null,
+        "rangeId": null,
+        "requiredPotentialRank": 0,
+        "unlockCondition": {
+          "level": 1,
+          "phase": 0
+        }
+      }
+    ]
+  }
+}

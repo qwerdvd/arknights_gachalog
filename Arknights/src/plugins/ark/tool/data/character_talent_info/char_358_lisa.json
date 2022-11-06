@@ -1,0 +1,78 @@
+{
+  "1": {
+    "candidates": [
+      {
+        "blackboard": [
+          {
+            "key": "sp_recovery_per_sec",
+            "value": 0.2
+          }
+        ],
+        "description": "在场时所有【辅助】干员的技力自然回复速度+0.2/秒（同类效果取最高）",
+        "name": "技力光环·辅助",
+        "prefabKey": "1",
+        "rangeId": null,
+        "requiredPotentialRank": 0,
+        "unlockCondition": {
+          "level": 1,
+          "phase": 1
+        }
+      },
+      {
+        "blackboard": [
+          {
+            "key": "sp_recovery_per_sec",
+            "value": 0.4
+          }
+        ],
+        "description": "在场时所有【辅助】干员的技力自然回复速度+0.4/秒（同类效果取最高）",
+        "name": "技力光环·辅助",
+        "prefabKey": "1",
+        "rangeId": null,
+        "requiredPotentialRank": 0,
+        "unlockCondition": {
+          "level": 1,
+          "phase": 2
+        }
+      }
+    ]
+  },
+  "2": {
+    "candidates": [
+      {
+        "blackboard": [
+          {
+            "key": "damage_scale",
+            "value": 1.2
+          }
+        ],
+        "description": "攻击范围内被<$ba.sluggish>停顿</>的敌人在下一瞬间起还会受到等长时间的20%的<$ba.fragile>脆弱</>效果",
+        "name": "画地为牢",
+        "prefabKey": "2",
+        "rangeId": null,
+        "requiredPotentialRank": 0,
+        "unlockCondition": {
+          "level": 1,
+          "phase": 2
+        }
+      },
+      {
+        "blackboard": [
+          {
+            "key": "damage_scale",
+            "value": 1.23
+          }
+        ],
+        "description": "攻击范围内被<$ba.sluggish>停顿</>的敌人在下一瞬间起还会受到等长时间的23%<@ba.talpu>（+3%）</>的<$ba.fragile>脆弱</>效果",
+        "name": "画地为牢",
+        "prefabKey": "2",
+        "rangeId": null,
+        "requiredPotentialRank": 4,
+        "unlockCondition": {
+          "level": 1,
+          "phase": 2
+        }
+      }
+    ]
+  }
+}

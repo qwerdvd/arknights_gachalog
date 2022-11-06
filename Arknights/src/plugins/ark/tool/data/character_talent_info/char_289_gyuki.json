@@ -1,0 +1,48 @@
+{
+  "1": {
+    "candidates": [
+      {
+        "blackboard": [
+          {
+            "key": "def",
+            "value": -0.2
+          },
+          {
+            "key": "max_hp",
+            "value": 0.2
+          }
+        ],
+        "description": "防御力-20%，但最大生命值+20%",
+        "name": "恶鬼体质",
+        "prefabKey": "1",
+        "rangeId": null,
+        "requiredPotentialRank": 0,
+        "unlockCondition": {
+          "level": 1,
+          "phase": 2
+        }
+      },
+      {
+        "blackboard": [
+          {
+            "key": "def",
+            "value": -0.2
+          },
+          {
+            "key": "max_hp",
+            "value": 0.23
+          }
+        ],
+        "description": "防御力-20%，但最大生命值+23%<@ba.talpu>（+3%）</>",
+        "name": "恶鬼体质",
+        "prefabKey": "1",
+        "rangeId": null,
+        "requiredPotentialRank": 4,
+        "unlockCondition": {
+          "level": 1,
+          "phase": 2
+        }
+      }
+    ]
+  }
+}

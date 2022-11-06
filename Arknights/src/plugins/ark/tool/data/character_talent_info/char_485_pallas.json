@@ -1,0 +1,86 @@
+{
+  "1": {
+    "candidates": [
+      {
+        "blackboard": [
+          {
+            "key": "peak_performance.hp_ratio",
+            "value": 0.8
+          },
+          {
+            "key": "peak_performance.atk",
+            "value": 0.15
+          }
+        ],
+        "description": "在场时，所有【米诺斯】干员生命值高于80%时获得+15%攻击力的<$ba.strong>精力充沛</>",
+        "name": "英雄的诞生",
+        "prefabKey": "1",
+        "rangeId": null,
+        "requiredPotentialRank": 0,
+        "unlockCondition": {
+          "level": 1,
+          "phase": 1
+        }
+      },
+      {
+        "blackboard": [
+          {
+            "key": "peak_performance.hp_ratio",
+            "value": 0.8
+          },
+          {
+            "key": "peak_performance.atk",
+            "value": 0.25
+          }
+        ],
+        "description": "在场时，所有【米诺斯】干员生命值高于80%时获得+25%攻击力的<$ba.strong>精力充沛</>",
+        "name": "英雄的诞生",
+        "prefabKey": "1",
+        "rangeId": null,
+        "requiredPotentialRank": 0,
+        "unlockCondition": {
+          "level": 1,
+          "phase": 2
+        }
+      }
+    ]
+  },
+  "2": {
+    "candidates": [
+      {
+        "blackboard": [
+          {
+            "key": "value",
+            "value": 40
+          }
+        ],
+        "description": "每攻击一名敌人时为自身与身前一格的我方干员恢复40点生命值",
+        "name": "女神的振奋",
+        "prefabKey": "2",
+        "rangeId": null,
+        "requiredPotentialRank": 0,
+        "unlockCondition": {
+          "level": 1,
+          "phase": 2
+        }
+      },
+      {
+        "blackboard": [
+          {
+            "key": "value",
+            "value": 45
+          }
+        ],
+        "description": "每攻击一名敌人时为自身与身前一格的我方干员恢复45<@ba.talpu>（+5）</>点生命值",
+        "name": "女神的振奋",
+        "prefabKey": "2",
+        "rangeId": null,
+        "requiredPotentialRank": 4,
+        "unlockCondition": {
+          "level": 1,
+          "phase": 2
+        }
+      }
+    ]
+  }
+}

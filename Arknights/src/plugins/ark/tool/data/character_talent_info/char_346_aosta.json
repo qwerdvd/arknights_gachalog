@@ -1,0 +1,90 @@
+{
+  "1": {
+    "candidates": [
+      {
+        "blackboard": [
+          {
+            "key": "atk_scale",
+            "value": 0.12
+          },
+          {
+            "key": "duration",
+            "value": 3
+          }
+        ],
+        "description": "攻击使未被阻挡的敌人流血，每秒受到相当于奥斯塔攻击力12%的法术伤害（不受特性影响），持续3秒",
+        "name": "尖钉",
+        "prefabKey": "1",
+        "rangeId": null,
+        "requiredPotentialRank": 0,
+        "unlockCondition": {
+          "level": 1,
+          "phase": 1
+        }
+      },
+      {
+        "blackboard": [
+          {
+            "key": "atk_scale",
+            "value": 0.14
+          },
+          {
+            "key": "duration",
+            "value": 3
+          }
+        ],
+        "description": "攻击使未被阻挡的敌人流血，每秒受到相当于奥斯塔攻击力14%<@ba.talpu>（+2%）</>的法术伤害（不受特性影响），持续3秒",
+        "name": "尖钉",
+        "prefabKey": "1",
+        "rangeId": null,
+        "requiredPotentialRank": 4,
+        "unlockCondition": {
+          "level": 1,
+          "phase": 1
+        }
+      },
+      {
+        "blackboard": [
+          {
+            "key": "atk_scale",
+            "value": 0.18
+          },
+          {
+            "key": "duration",
+            "value": 3
+          }
+        ],
+        "description": "攻击使未被阻挡的敌人流血，每秒受到相当于奥斯塔攻击力18%的法术伤害（不受特性影响），持续3秒",
+        "name": "尖钉",
+        "prefabKey": "1",
+        "rangeId": null,
+        "requiredPotentialRank": 0,
+        "unlockCondition": {
+          "level": 1,
+          "phase": 2
+        }
+      },
+      {
+        "blackboard": [
+          {
+            "key": "atk_scale",
+            "value": 0.2
+          },
+          {
+            "key": "duration",
+            "value": 3
+          }
+        ],
+        "description": "攻击使未被阻挡的敌人流血，每秒受到相当于奥斯塔攻击力20%<@ba.talpu>（+2%）</>的法术伤害（不受特性影响），持续3秒",
+        "name": "尖钉",
+        "prefabKey": "1",
+        "rangeId": null,
+        "requiredPotentialRank": 4,
+        "unlockCondition": {
+          "level": 1,
+          "phase": 2
+        }
+      }
+    ]
+  }
+}

@@ -1,0 +1,54 @@
+{
+  "name": "狮蝎",
+  "profession": "SPECIAL",
+  "subProfessionId": "stalker",
+  "star": 5,
+  "elite": 2,
+  "max_level": 80,
+  "data": {
+    "atk": 811,
+    "attackSpeed": 100,
+    "baseAttackTime": 3.5,
+    "baseForceLevel": 0,
+    "blockCnt": 0,
+    "cost": 20,
+    "def": 343,
+    "frozenImmune": false,
+    "hpRecoveryPerSec": 0,
+    "levitateImmune": false,
+    "magicResistance": 30,
+    "massLevel": 0,
+    "maxDeckStackCnt": 0,
+    "maxDeployCount": 1,
+    "maxHp": 1630,
+    "moveSpeed": 1,
+    "respawnTime": 70,
+    "silenceImmune": false,
+    "sleepImmune": false,
+    "spRecoveryPerSec": 1,
+    "stunImmune": false,
+    "tauntLevel": -1
+  },
+  "teamId": null,
+  "tokenKey": null,
+  "trait": {
+    "candidates": [
+      {
+        "blackboard": [
+          {
+            "key": "prob",
+            "value": 0.5
+          }
+        ],
+        "overrideDescripton": null,
+        "prefabKey": null,
+        "rangeId": null,
+        "requiredPotentialRank": 0,
+        "unlockCondition": {
+          "level": 1,
+          "phase": 0
+        }
+      }
+    ]
+  }
+}

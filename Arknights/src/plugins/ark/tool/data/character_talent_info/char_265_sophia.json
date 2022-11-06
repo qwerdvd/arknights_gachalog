@@ -1,0 +1,180 @@
+{
+  "1": {
+    "candidates": [
+      {
+        "blackboard": [
+          {
+            "key": "attack_speed",
+            "value": 2
+          },
+          {
+            "key": "def",
+            "value": 0.04
+          },
+          {
+            "key": "sophia_t_1_less.attack_speed",
+            "value": 1
+          },
+          {
+            "key": "sophia_t_1_less.def",
+            "value": 0.02
+          }
+        ],
+        "description": "在场时阻挡数大于等于3的友方近战单位攻速+2，防御+4%",
+        "name": "责骂",
+        "prefabKey": "1",
+        "rangeId": null,
+        "requiredPotentialRank": 0,
+        "unlockCondition": {
+          "level": 1,
+          "phase": 0
+        }
+      },
+      {
+        "blackboard": [
+          {
+            "key": "attack_speed",
+            "value": 4
+          },
+          {
+            "key": "def",
+            "value": 0.06
+          },
+          {
+            "key": "sophia_t_1_less.attack_speed",
+            "value": 2
+          },
+          {
+            "key": "sophia_t_1_less.def",
+            "value": 0.03
+          }
+        ],
+        "description": "在场时阻挡数大于等于3的友方近战单位攻速+4<@ba.talpu>（+2）</>，防御+6%<@ba.talpu>（+2%）</>",
+        "name": "责骂",
+        "prefabKey": "1",
+        "rangeId": null,
+        "requiredPotentialRank": 4,
+        "unlockCondition": {
+          "level": 1,
+          "phase": 0
+        }
+      },
+      {
+        "blackboard": [
+          {
+            "key": "attack_speed",
+            "value": 4
+          },
+          {
+            "key": "def",
+            "value": 0.08
+          },
+          {
+            "key": "sophia_t_1_less.attack_speed",
+            "value": 2
+          },
+          {
+            "key": "sophia_t_1_less.def",
+            "value": 0.04
+          }
+        ],
+        "description": "在场时阻挡数大于等于3的友方近战单位攻速+4，防御+8%",
+        "name": "责骂",
+        "prefabKey": "1",
+        "rangeId": null,
+        "requiredPotentialRank": 0,
+        "unlockCondition": {
+          "level": 1,
+          "phase": 1
+        }
+      },
+      {
+        "blackboard": [
+          {
+            "key": "attack_speed",
+            "value": 6
+          },
+          {
+            "key": "def",
+            "value": 0.1
+          },
+          {
+            "key": "sophia_t_1_less.attack_speed",
+            "value": 3
+          },
+          {
+            "key": "sophia_t_1_less.def",
+            "value": 0.05
+          }
+        ],
+        "description": "在场时阻挡数大于等于3的友方近战单位攻速+6<@ba.talpu>（+2）</>，防御+10%<@ba.talpu>（+2%）</>",
+        "name": "责骂",
+        "prefabKey": "1",
+        "rangeId": null,
+        "requiredPotentialRank": 4,
+        "unlockCondition": {
+          "level": 1,
+          "phase": 1
+        }
+      },
+      {
+        "blackboard": [
+          {
+            "key": "attack_speed",
+            "value": 6
+          },
+          {
+            "key": "def",
+            "value": 0.12
+          },
+          {
+            "key": "sophia_t_1_less.attack_speed",
+            "value": 3
+          },
+          {
+            "key": "sophia_t_1_less.def",
+            "value": 0.06
+          }
+        ],
+        "description": "在场时阻挡数大于等于3的友方近战单位攻速+6，防御+12%",
+        "name": "责骂",
+        "prefabKey": "1",
+        "rangeId": null,
+        "requiredPotentialRank": 0,
+        "unlockCondition": {
+          "level": 1,
+          "phase": 2
+        }
+      },
+      {
+        "blackboard": [
+          {
+            "key": "attack_speed",
+            "value": 8
+          },
+          {
+            "key": "def",
+            "value": 0.14
+          },
+          {
+            "key": "sophia_t_1_less.attack_speed",
+            "value": 4
+          },
+          {
+            "key": "sophia_t_1_less.def",
+            "value": 0.07
+          }
+        ],
+        "description": "在场时阻挡数大于等于3的友方近战单位攻速+8<@ba.talpu>（+2）</>，防御+14%<@ba.talpu>（+2%）</>",
+        "name": "责骂",
+        "prefabKey": "1",
+        "rangeId": null,
+        "requiredPotentialRank": 4,
+        "unlockCondition": {
+          "level": 1,
+          "phase": 2
+        }
+      }
+    ]
+  }
+}

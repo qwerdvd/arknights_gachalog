@@ -1,0 +1,90 @@
+{
+  "1": {
+    "candidates": [
+      {
+        "blackboard": [
+          {
+            "key": "prob",
+            "value": 0.1
+          },
+          {
+            "key": "duration",
+            "value": 3
+          }
+        ],
+        "description": "治疗友方单位后为其提供持续3秒的10%物理闪避",
+        "name": "烟雾加装",
+        "prefabKey": "1",
+        "rangeId": null,
+        "requiredPotentialRank": 0,
+        "unlockCondition": {
+          "level": 1,
+          "phase": 1
+        }
+      },
+      {
+        "blackboard": [
+          {
+            "key": "prob",
+            "value": 0.15
+          },
+          {
+            "key": "duration",
+            "value": 3
+          }
+        ],
+        "description": "治疗友方单位后为其提供持续3秒的15%<@ba.talpu>（+5%）</>物理闪避",
+        "name": "烟雾加装",
+        "prefabKey": "1",
+        "rangeId": null,
+        "requiredPotentialRank": 4,
+        "unlockCondition": {
+          "level": 1,
+          "phase": 1
+        }
+      },
+      {
+        "blackboard": [
+          {
+            "key": "prob",
+            "value": 0.2
+          },
+          {
+            "key": "duration",
+            "value": 3
+          }
+        ],
+        "description": "治疗友方单位后为其提供持续3秒的20%物理闪避",
+        "name": "烟雾加装",
+        "prefabKey": "1",
+        "rangeId": null,
+        "requiredPotentialRank": 0,
+        "unlockCondition": {
+          "level": 55,
+          "phase": 1
+        }
+      },
+      {
+        "blackboard": [
+          {
+            "key": "prob",
+            "value": 0.25
+          },
+          {
+            "key": "duration",
+            "value": 3
+          }
+        ],
+        "description": "治疗友方单位后为其提供持续3秒的25%<@ba.talpu>（+5%）</>物理闪避",
+        "name": "烟雾加装",
+        "prefabKey": "1",
+        "rangeId": null,
+        "requiredPotentialRank": 4,
+        "unlockCondition": {
+          "level": 55,
+          "phase": 1
+        }
+      }
+    ]
+  }
+}

@@ -1,0 +1,117 @@
+{
+  "2": {
+    "buff": {
+      "attributes": {
+        "abnormalAntis": null,
+        "abnormalComboImmunes": null,
+        "abnormalCombos": null,
+        "abnormalFlags": null,
+        "abnormalImmunes": null,
+        "attributeModifiers": [
+          {
+            "attributeType": 4,
+            "fetchBaseValueFromSourceEntity": false,
+            "formulaItem": 0,
+            "loadFromBlackboard": false,
+            "value": -1
+          }
+        ]
+      }
+    },
+    "description": "部署费用-1",
+    "equivalentCost": null,
+    "type": 0
+  },
+  "3": {
+    "buff": {
+      "attributes": {
+        "abnormalAntis": null,
+        "abnormalComboImmunes": null,
+        "abnormalCombos": null,
+        "abnormalFlags": null,
+        "abnormalImmunes": null,
+        "attributeModifiers": [
+          {
+            "attributeType": 21,
+            "fetchBaseValueFromSourceEntity": false,
+            "formulaItem": 0,
+            "loadFromBlackboard": false,
+            "value": -4
+          }
+        ]
+      }
+    },
+    "description": "再部署时间-4秒",
+    "equivalentCost": null,
+    "type": 0
+  },
+  "4": {
+    "buff": {
+      "attributes": {
+        "abnormalAntis": null,
+        "abnormalComboImmunes": null,
+        "abnormalCombos": null,
+        "abnormalFlags": null,
+        "abnormalImmunes": null,
+        "attributeModifiers": [
+          {
+            "attributeType": 2,
+            "fetchBaseValueFromSourceEntity": false,
+            "formulaItem": 0,
+            "loadFromBlackboard": false,
+            "value": 27
+          }
+        ]
+      }
+    },
+    "description": "防御力+27",
+    "equivalentCost": null,
+    "type": 0
+  },
+  "5": {
+    "buff": {
+      "attributes": {
+        "abnormalAntis": null,
+        "abnormalComboImmunes": null,
+        "abnormalCombos": null,
+        "abnormalFlags": null,
+        "abnormalImmunes": null,
+        "attributeModifiers": [
+          {
+            "attributeType": 21,
+            "fetchBaseValueFromSourceEntity": false,
+            "formulaItem": 0,
+            "loadFromBlackboard": false,
+            "value": -6
+          }
+        ]
+      }
+    },
+    "description": "再部署时间-6秒",
+    "equivalentCost": null,
+    "type": 0
+  },
+  "6": {
+    "buff": {
+      "attributes": {
+        "abnormalAntis": null,
+        "abnormalComboImmunes": null,
+        "abnormalCombos": null,
+        "abnormalFlags": null,
+        "abnormalImmunes": null,
+        "attributeModifiers": [
+          {
+            "attributeType": 4,
+            "fetchBaseValueFromSourceEntity": false,
+            "formulaItem": 0,
+            "loadFromBlackboard": false,
+            "value": -1
+          }
+        ]
+      }
+    },
+    "description": "部署费用-1",
+    "equivalentCost": null,
+    "type": 0
+  }
+}

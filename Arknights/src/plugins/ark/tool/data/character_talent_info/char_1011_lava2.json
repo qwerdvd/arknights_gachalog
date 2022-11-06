@@ -1,0 +1,90 @@
+{
+  "1": {
+    "candidates": [
+      {
+        "blackboard": [
+          {
+            "key": "lava2_t_1[ally].sp",
+            "value": 2
+          },
+          {
+            "key": "lava2_t_1[self].sp",
+            "value": 15
+          }
+        ],
+        "description": "首次部署后立即获得15点技力，每次部署时使在场术师干员技力+2，在场时其余友方术师干员初始技力+2",
+        "name": "咒术阵线",
+        "prefabKey": "1",
+        "rangeId": null,
+        "requiredPotentialRank": 0,
+        "unlockCondition": {
+          "level": 1,
+          "phase": 1
+        }
+      },
+      {
+        "blackboard": [
+          {
+            "key": "lava2_t_1[ally].sp",
+            "value": 3
+          },
+          {
+            "key": "lava2_t_1[self].sp",
+            "value": 20
+          }
+        ],
+        "description": "首次部署后立即获得20<@ba.talpu>（+5）</>点技力，每次部署时使在场术师干员技力+3<@ba.talpu>（+1）</>，在场时其余友方术师干员初始技力+3<@ba.talpu>（+1）</>",
+        "name": "咒术阵线",
+        "prefabKey": "1",
+        "rangeId": null,
+        "requiredPotentialRank": 4,
+        "unlockCondition": {
+          "level": 1,
+          "phase": 1
+        }
+      },
+      {
+        "blackboard": [
+          {
+            "key": "lava2_t_1[ally].sp",
+            "value": 4
+          },
+          {
+            "key": "lava2_t_1[self].sp",
+            "value": 30
+          }
+        ],
+        "description": "首次部署后立即获得30点技力，每次部署时使在场术师干员技力+4，在场时其余友方术师干员初始技力+4",
+        "name": "咒术阵线",
+        "prefabKey": "1",
+        "rangeId": null,
+        "requiredPotentialRank": 0,
+        "unlockCondition": {
+          "level": 1,
+          "phase": 2
+        }
+      },
+      {
+        "blackboard": [
+          {
+            "key": "lava2_t_1[ally].sp",
+            "value": 5
+          },
+          {
+            "key": "lava2_t_1[self].sp",
+            "value": 35
+          }
+        ],
+        "description": "首次部署后立即获得35<@ba.talpu>（+5）</>点技力，每次部署时使在场术师干员技力+5<@ba.talpu>（+1）</>，在场时其余友方术师干员初始技力+5<@ba.talpu>（+1）</>",
+        "name": "咒术阵线",
+        "prefabKey": "1",
+        "rangeId": null,
+        "requiredPotentialRank": 4,
+        "unlockCondition": {
+          "level": 1,
+          "phase": 2
+        }
+      }
+    ]
+  }
+}

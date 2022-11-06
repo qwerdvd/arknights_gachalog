@@ -1,0 +1,69 @@
+{
+  "1": {
+    "candidates": [
+      {
+        "blackboard": [
+          {
+            "key": "block_cnt",
+            "value": 1
+          },
+          {
+            "key": "interval",
+            "value": 20
+          }
+        ],
+        "description": "-",
+        "name": null,
+        "prefabKey": "1",
+        "rangeId": null,
+        "requiredPotentialRank": 0,
+        "unlockCondition": {
+          "level": 1,
+          "phase": 0
+        }
+      },
+      {
+        "blackboard": [
+          {
+            "key": "block_cnt",
+            "value": 1
+          },
+          {
+            "key": "interval",
+            "value": 17
+          }
+        ],
+        "description": "-",
+        "name": null,
+        "prefabKey": "1",
+        "rangeId": null,
+        "requiredPotentialRank": 0,
+        "unlockCondition": {
+          "level": 1,
+          "phase": 1
+        }
+      },
+      {
+        "blackboard": [
+          {
+            "key": "block_cnt",
+            "value": 1
+          },
+          {
+            "key": "interval",
+            "value": 15
+          }
+        ],
+        "description": "-",
+        "name": null,
+        "prefabKey": "1",
+        "rangeId": null,
+        "requiredPotentialRank": 0,
+        "unlockCondition": {
+          "level": 1,
+          "phase": 2
+        }
+      }
+    ]
+  }
+}

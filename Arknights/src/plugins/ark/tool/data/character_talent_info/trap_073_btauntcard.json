@@ -1,0 +1,55 @@
+{
+  "1": {
+    "candidates": [
+      {
+        "blackboard": [
+          {
+            "key": "value",
+            "value": 1
+          },
+          {
+            "key": "range_num",
+            "value": 4
+          },
+          {
+            "key": "can_select_num",
+            "value": 1
+          },
+          {
+            "key": "sell_card_gold",
+            "value": 15
+          },
+          {
+            "key": "life_duration",
+            "value": 25
+          }
+        ],
+        "description": null,
+        "name": null,
+        "prefabKey": "1",
+        "rangeId": null,
+        "requiredPotentialRank": 0,
+        "unlockCondition": {
+          "level": 1,
+          "phase": 0
+        }
+      }
+    ]
+  },
+  "2": {
+    "candidates": [
+      {
+        "blackboard": [],
+        "description": null,
+        "name": null,
+        "prefabKey": "2",
+        "rangeId": null,
+        "requiredPotentialRank": 0,
+        "unlockCondition": {
+          "level": 1,
+          "phase": 0
+        }
+      }
+    ]
+  }
+}

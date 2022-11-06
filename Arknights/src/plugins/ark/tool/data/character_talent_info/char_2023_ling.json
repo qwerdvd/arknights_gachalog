@@ -1,0 +1,161 @@
+{
+  "1": {
+    "candidates": [
+      {
+        "blackboard": [
+          {
+            "key": "cnt",
+            "value": 3
+          }
+        ],
+        "description": "可以使用3个召唤物（最多同时部署3个），功能随技能选择而改变",
+        "name": "挑灯问梦",
+        "prefabKey": "1",
+        "rangeId": null,
+        "requiredPotentialRank": 0,
+        "unlockCondition": {
+          "level": 1,
+          "phase": 0
+        }
+      },
+      {
+        "blackboard": [
+          {
+            "key": "cnt",
+            "value": 4
+          }
+        ],
+        "description": "可以使用4个召唤物（最多同时部署3个），功能随技能选择而改变",
+        "name": "挑灯问梦",
+        "prefabKey": "1",
+        "rangeId": null,
+        "requiredPotentialRank": 0,
+        "unlockCondition": {
+          "level": 1,
+          "phase": 1
+        }
+      },
+      {
+        "blackboard": [
+          {
+            "key": "cnt",
+            "value": 5
+          }
+        ],
+        "description": "可以使用5个召唤物（最多同时部署3个），功能随技能选择而改变",
+        "name": "挑灯问梦",
+        "prefabKey": "1",
+        "rangeId": null,
+        "requiredPotentialRank": 0,
+        "unlockCondition": {
+          "level": 1,
+          "phase": 2
+        }
+      }
+    ]
+  },
+  "2": {
+    "candidates": [
+      {
+        "blackboard": [
+          {
+            "key": "max_stack_cnt",
+            "value": 5
+          },
+          {
+            "key": "sp",
+            "value": 2
+          },
+          {
+            "key": "atk",
+            "value": 0.02
+          }
+        ],
+        "description": "召唤物被击倒/吸收/回收时令额外获得2点技力、攻击力+2%（攻击力加成最多叠加5层）",
+        "name": "随付笺咏醉屠苏",
+        "prefabKey": "2",
+        "rangeId": null,
+        "requiredPotentialRank": 0,
+        "unlockCondition": {
+          "level": 1,
+          "phase": 1
+        }
+      },
+      {
+        "blackboard": [
+          {
+            "key": "max_stack_cnt",
+            "value": 5
+          },
+          {
+            "key": "sp",
+            "value": 3
+          },
+          {
+            "key": "atk",
+            "value": 0.02
+          }
+        ],
+        "description": "召唤物被击倒/吸收/回收时令额外获得3<@ba.talpu>(+1)</>点技力、攻击力+2%（攻击力加成最多叠加5层）",
+        "name": "随付笺咏醉屠苏",
+        "prefabKey": "2",
+        "rangeId": null,
+        "requiredPotentialRank": 4,
+        "unlockCondition": {
+          "level": 1,
+          "phase": 1
+        }
+      },
+      {
+        "blackboard": [
+          {
+            "key": "max_stack_cnt",
+            "value": 5
+          },
+          {
+            "key": "sp",
+            "value": 3
+          },
+          {
+            "key": "atk",
+            "value": 0.03
+          }
+        ],
+        "description": "召唤物被击倒/吸收/回收时令额外获得3点技力、攻击力+3%（攻击力加成最多叠加5层）",
+        "name": "随付笺咏醉屠苏",
+        "prefabKey": "2",
+        "rangeId": null,
+        "requiredPotentialRank": 0,
+        "unlockCondition": {
+          "level": 1,
+          "phase": 2
+        }
+      },
+      {
+        "blackboard": [
+          {
+            "key": "max_stack_cnt",
+            "value": 5
+          },
+          {
+            "key": "sp",
+            "value": 4
+          },
+          {
+            "key": "atk",
+            "value": 0.03
+          }
+        ],
+        "description": "召唤物被击倒/吸收/回收时令额外获得4<@ba.talpu>(+1)</>点技力、攻击力+3%（攻击力加成最多叠加5层）",
+        "name": "随付笺咏醉屠苏",
+        "prefabKey": "2",
+        "rangeId": null,
+        "requiredPotentialRank": 4,
+        "unlockCondition": {
+          "level": 1,
+          "phase": 2
+        }
+      }
+    ]
+  }
+}

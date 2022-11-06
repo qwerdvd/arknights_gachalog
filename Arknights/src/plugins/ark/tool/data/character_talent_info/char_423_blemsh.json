@@ -1,0 +1,95 @@
+{
+  "1": {
+    "candidates": [
+      {
+        "blackboard": [
+          {
+            "key": "sp",
+            "value": 1
+          }
+        ],
+        "description": "在场时所有受击回复的技能在干员攻击时也回复1点技力",
+        "name": "剑盾骑士",
+        "prefabKey": "1",
+        "rangeId": null,
+        "requiredPotentialRank": 0,
+        "unlockCondition": {
+          "level": 1,
+          "phase": 1
+        }
+      }
+    ]
+  },
+  "2": {
+    "candidates": [
+      {
+        "blackboard": [
+          {
+            "key": "atk_scale",
+            "value": 1.2
+          }
+        ],
+        "description": "自身可以攻击并优先攻击<$ba.sleep>沉睡</>的目标且攻击力提升至120%",
+        "name": "仁慈",
+        "prefabKey": "2",
+        "rangeId": null,
+        "requiredPotentialRank": 0,
+        "unlockCondition": {
+          "level": 1,
+          "phase": 1
+        }
+      },
+      {
+        "blackboard": [
+          {
+            "key": "atk_scale",
+            "value": 1.24
+          }
+        ],
+        "description": "自身可以攻击并优先攻击<$ba.sleep>沉睡</>的目标且攻击力提升至124%<@ba.talpu>（+4%）</>",
+        "name": "仁慈",
+        "prefabKey": "2",
+        "rangeId": null,
+        "requiredPotentialRank": 4,
+        "unlockCondition": {
+          "level": 1,
+          "phase": 1
+        }
+      },
+      {
+        "blackboard": [
+          {
+            "key": "atk_scale",
+            "value": 1.4
+          }
+        ],
+        "description": "自身可以攻击并优先攻击<$ba.sleep>沉睡</>的目标且攻击力提升至140%",
+        "name": "仁慈",
+        "prefabKey": "2",
+        "rangeId": null,
+        "requiredPotentialRank": 0,
+        "unlockCondition": {
+          "level": 1,
+          "phase": 2
+        }
+      },
+      {
+        "blackboard": [
+          {
+            "key": "atk_scale",
+            "value": 1.44
+          }
+        ],
+        "description": "自身可以攻击并优先攻击<$ba.sleep>沉睡</>的目标且攻击力提升至144%<@ba.talpu>（+4%）</>",
+        "name": "仁慈",
+        "prefabKey": "2",
+        "rangeId": null,
+        "requiredPotentialRank": 4,
+        "unlockCondition": {
+          "level": 1,
+          "phase": 2
+        }
+      }
+    ]
+  }
+}

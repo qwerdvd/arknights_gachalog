@@ -1,0 +1,73 @@
+{
+  "1": {
+    "candidates": [
+      {
+        "blackboard": [
+          {
+            "key": "cost",
+            "value": -1
+          }
+        ],
+        "description": "自身部署费用-1",
+        "name": "快速部署",
+        "prefabKey": "1",
+        "rangeId": null,
+        "requiredPotentialRank": 0,
+        "unlockCondition": {
+          "level": 1,
+          "phase": 1
+        }
+      },
+      {
+        "blackboard": [
+          {
+            "key": "cost",
+            "value": -1
+          },
+          {
+            "key": "def",
+            "value": 0.06
+          },
+          {
+            "key": "cond.cost",
+            "value": 10
+          }
+        ],
+        "description": "自身部署费用-1，所有初始部署费用不超过10的单位防御力提升6%",
+        "name": "小个子支援",
+        "prefabKey": "1+",
+        "rangeId": null,
+        "requiredPotentialRank": 0,
+        "unlockCondition": {
+          "level": 1,
+          "phase": 2
+        }
+      },
+      {
+        "blackboard": [
+          {
+            "key": "cost",
+            "value": -1
+          },
+          {
+            "key": "def",
+            "value": 0.08
+          },
+          {
+            "key": "cond.cost",
+            "value": 10
+          }
+        ],
+        "description": "自身部署费用-1，所有初始部署费用不超过10的单位防御力提升8%<@ba.talpu>（+2%）</>",
+        "name": "小个子支援",
+        "prefabKey": "1+",
+        "rangeId": null,
+        "requiredPotentialRank": 4,
+        "unlockCondition": {
+          "level": 1,
+          "phase": 2
+        }
+      }
+    ]
+  }
+}

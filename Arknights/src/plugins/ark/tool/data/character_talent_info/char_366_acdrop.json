@@ -1,0 +1,48 @@
+{
+  "1": {
+    "candidates": [
+      {
+        "blackboard": [
+          {
+            "key": "atk_scale",
+            "value": 0.2
+          },
+          {
+            "key": "atk_scale_2",
+            "value": 0.3
+          }
+        ],
+        "description": "每次攻击至少造成20%攻击力的伤害（当敌人在正前方两格时提升至30%）",
+        "name": "滑射技巧",
+        "prefabKey": "1",
+        "rangeId": null,
+        "requiredPotentialRank": 0,
+        "unlockCondition": {
+          "level": 1,
+          "phase": 1
+        }
+      },
+      {
+        "blackboard": [
+          {
+            "key": "atk_scale",
+            "value": 0.25
+          },
+          {
+            "key": "atk_scale_2",
+            "value": 0.4
+          }
+        ],
+        "description": "每次攻击至少造成25%攻击力的伤害（当敌人在正前方两格时提升至40%）",
+        "name": "滑射技巧",
+        "prefabKey": "1",
+        "rangeId": null,
+        "requiredPotentialRank": 0,
+        "unlockCondition": {
+          "level": 1,
+          "phase": 2
+        }
+      }
+    ]
+  }
+}

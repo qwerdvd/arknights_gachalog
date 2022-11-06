@@ -1,0 +1,178 @@
+{
+  "1": {
+    "candidates": [
+      {
+        "blackboard": [
+          {
+            "key": "cnt",
+            "value": 4
+          },
+          {
+            "key": "attack@max_cnt",
+            "value": 0
+          }
+        ],
+        "description": "可以使用4个共振装置（最多拥有6个），踩上去的第一个敌人会触发其效果",
+        "name": "共振装置",
+        "prefabKey": "1",
+        "rangeId": null,
+        "requiredPotentialRank": 0,
+        "unlockCondition": {
+          "level": 1,
+          "phase": 0
+        }
+      },
+      {
+        "blackboard": [
+          {
+            "key": "cnt",
+            "value": 6
+          },
+          {
+            "key": "attack@max_cnt",
+            "value": 0
+          }
+        ],
+        "description": "可以使用6<@ba.talpu>（+2）</>个共振装置（最多拥有6个），踩上去的第一个敌人会触发其效果",
+        "name": "共振装置",
+        "prefabKey": "1",
+        "rangeId": null,
+        "requiredPotentialRank": 2,
+        "unlockCondition": {
+          "level": 1,
+          "phase": 0
+        }
+      },
+      {
+        "blackboard": [
+          {
+            "key": "cnt",
+            "value": 6
+          },
+          {
+            "key": "attack@max_cnt",
+            "value": 1
+          }
+        ],
+        "description": "可以使用6个共振装置（最多拥有8个），踩上去的第一个敌人会触发其效果，部署后立刻在攻击范围内召唤1个共振装置",
+        "name": "共振装置",
+        "prefabKey": "1",
+        "rangeId": null,
+        "requiredPotentialRank": 0,
+        "unlockCondition": {
+          "level": 1,
+          "phase": 1
+        }
+      },
+      {
+        "blackboard": [
+          {
+            "key": "cnt",
+            "value": 8
+          },
+          {
+            "key": "attack@max_cnt",
+            "value": 1
+          }
+        ],
+        "description": "可以使用8<@ba.talpu>（+2）</>个共振装置（最多拥有8个），踩上去的第一个敌人会触发其效果，部署后立刻在攻击范围内召唤1个共振装置",
+        "name": "共振装置",
+        "prefabKey": "1",
+        "rangeId": null,
+        "requiredPotentialRank": 2,
+        "unlockCondition": {
+          "level": 1,
+          "phase": 1
+        }
+      },
+      {
+        "blackboard": [
+          {
+            "key": "cnt",
+            "value": 8
+          },
+          {
+            "key": "attack@max_cnt",
+            "value": 2
+          }
+        ],
+        "description": "可以使用8个共振装置（最多拥有10个），踩上去的第一个敌人会触发其效果，部署后立刻在攻击范围内召唤2个共振装置",
+        "name": "共振装置",
+        "prefabKey": "1",
+        "rangeId": null,
+        "requiredPotentialRank": 0,
+        "unlockCondition": {
+          "level": 1,
+          "phase": 2
+        }
+      },
+      {
+        "blackboard": [
+          {
+            "key": "cnt",
+            "value": 10
+          },
+          {
+            "key": "attack@max_cnt",
+            "value": 2
+          }
+        ],
+        "description": "可以使用10<@ba.talpu>（+2）</>个共振装置（最多拥有10个），踩上去的第一个敌人会触发其效果，部署后立刻在攻击范围内召唤2个共振装置",
+        "name": "共振装置",
+        "prefabKey": "1",
+        "rangeId": null,
+        "requiredPotentialRank": 2,
+        "unlockCondition": {
+          "level": 1,
+          "phase": 2
+        }
+      }
+    ]
+  },
+  "2": {
+    "candidates": [
+      {
+        "blackboard": [
+          {
+            "key": "atk",
+            "value": 0.02
+          },
+          {
+            "key": "max_stack_cnt",
+            "value": 10
+          }
+        ],
+        "description": "陷阱触发后，多萝西获得2%的攻击力，最多叠加10层",
+        "name": "梦想家",
+        "prefabKey": "2",
+        "rangeId": null,
+        "requiredPotentialRank": 0,
+        "unlockCondition": {
+          "level": 1,
+          "phase": 2
+        }
+      },
+      {
+        "blackboard": [
+          {
+            "key": "atk",
+            "value": 0.02
+          },
+          {
+            "key": "max_stack_cnt",
+            "value": 12
+          }
+        ],
+        "description": "陷阱触发后，多萝西获得2%的攻击力，最多叠加12<@ba.talpu>（+2）</>层",
+        "name": "梦想家",
+        "prefabKey": "2",
+        "rangeId": null,
+        "requiredPotentialRank": 4,
+        "unlockCondition": {
+          "level": 1,
+          "phase": 2
+        }
+      }
+    ]
+  }
+}

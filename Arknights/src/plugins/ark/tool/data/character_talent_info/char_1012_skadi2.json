@@ -1,0 +1,86 @@
+{
+  "1": {
+    "candidates": [
+      {
+        "blackboard": [
+          {
+            "key": "cnt",
+            "value": 1
+          }
+        ],
+        "description": "可以使用一个持续15秒的海嗣，海嗣的攻击范围视为自身攻击范围的延伸",
+        "name": "远古血亲",
+        "prefabKey": "1",
+        "rangeId": null,
+        "requiredPotentialRank": 0,
+        "unlockCondition": {
+          "level": 1,
+          "phase": 1
+        }
+      },
+      {
+        "blackboard": [
+          {
+            "key": "cnt",
+            "value": 1
+          }
+        ],
+        "description": "可以使用一个持续25秒的海嗣，海嗣的攻击范围视为自身攻击范围的延伸",
+        "name": "远古血亲",
+        "prefabKey": "1",
+        "rangeId": null,
+        "requiredPotentialRank": 0,
+        "unlockCondition": {
+          "level": 1,
+          "phase": 2
+        }
+      }
+    ]
+  },
+  "2": {
+    "candidates": [
+      {
+        "blackboard": [
+          {
+            "key": "skadi2_t_2[atk][1].atk",
+            "value": 0.06
+          },
+          {
+            "key": "skadi2_t_2[atk][2].atk",
+            "value": 0.15
+          }
+        ],
+        "description": "自身或海嗣攻击范围内存在我方干员时，自身攻击力+6%；存在【深海猎人】干员时改为攻击力+15%",
+        "name": "捕食习性",
+        "prefabKey": "2",
+        "rangeId": null,
+        "requiredPotentialRank": 0,
+        "unlockCondition": {
+          "level": 1,
+          "phase": 2
+        }
+      },
+      {
+        "blackboard": [
+          {
+            "key": "skadi2_t_2[atk][1].atk",
+            "value": 0.09
+          },
+          {
+            "key": "skadi2_t_2[atk][2].atk",
+            "value": 0.18
+          }
+        ],
+        "description": "自身或海嗣攻击范围内存在我方干员时，自身攻击力+9%<@ba.talpu>（+3%）</>；存在【深海猎人】干员时改为攻击力+18%<@ba.talpu>（+3%）</>",
+        "name": "捕食习性",
+        "prefabKey": "2",
+        "rangeId": null,
+        "requiredPotentialRank": 4,
+        "unlockCondition": {
+          "level": 1,
+          "phase": 2
+        }
+      }
+    ]
+  }
+}

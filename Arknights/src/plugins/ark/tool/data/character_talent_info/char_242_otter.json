@@ -1,0 +1,57 @@
+{
+  "1": {
+    "candidates": [
+      {
+        "blackboard": [
+          {
+            "key": "cnt",
+            "value": 3
+          }
+        ],
+        "description": "可以使用3个机械水獭召唤物。被机械水獭阻挡的敌人攻击速度-10",
+        "name": "机械水獭",
+        "prefabKey": "1",
+        "rangeId": null,
+        "requiredPotentialRank": 0,
+        "unlockCondition": {
+          "level": 1,
+          "phase": 0
+        }
+      },
+      {
+        "blackboard": [
+          {
+            "key": "cnt",
+            "value": 4
+          }
+        ],
+        "description": "可以使用4个机械水獭召唤物。被机械水獭阻挡的敌人攻击速度-25",
+        "name": "机械水獭",
+        "prefabKey": "1",
+        "rangeId": null,
+        "requiredPotentialRank": 0,
+        "unlockCondition": {
+          "level": 1,
+          "phase": 1
+        }
+      },
+      {
+        "blackboard": [
+          {
+            "key": "cnt",
+            "value": 5
+          }
+        ],
+        "description": "可以使用5个机械水獭召唤物。被机械水獭阻挡的敌人攻击速度-25",
+        "name": "机械水獭",
+        "prefabKey": "1",
+        "rangeId": null,
+        "requiredPotentialRank": 0,
+        "unlockCondition": {
+          "level": 1,
+          "phase": 2
+        }
+      }
+    ]
+  }
+}

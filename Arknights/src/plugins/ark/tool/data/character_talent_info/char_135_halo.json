@@ -1,0 +1,56 @@
+{
+  "1": {
+    "candidates": [
+      {
+        "blackboard": [
+          {
+            "key": "max_stack_cnt",
+            "value": 5
+          },
+          {
+            "key": "interval",
+            "value": 15
+          },
+          {
+            "key": "attack_speed",
+            "value": 3
+          }
+        ],
+        "description": "每在场上停留15秒，攻击速度+3，最多可以叠加5次",
+        "name": "科研热忱",
+        "prefabKey": "1",
+        "rangeId": null,
+        "requiredPotentialRank": 0,
+        "unlockCondition": {
+          "level": 1,
+          "phase": 1
+        }
+      },
+      {
+        "blackboard": [
+          {
+            "key": "max_stack_cnt",
+            "value": 5
+          },
+          {
+            "key": "interval",
+            "value": 15
+          },
+          {
+            "key": "attack_speed",
+            "value": 4
+          }
+        ],
+        "description": "每在场上停留15秒，攻击速度+4，最多可以叠加5次",
+        "name": "科研热忱",
+        "prefabKey": "1",
+        "rangeId": null,
+        "requiredPotentialRank": 0,
+        "unlockCondition": {
+          "level": 1,
+          "phase": 2
+        }
+      }
+    ]
+  }
+}

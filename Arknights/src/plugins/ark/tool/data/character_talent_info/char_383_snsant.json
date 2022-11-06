@@ -1,0 +1,90 @@
+{
+  "1": {
+    "candidates": [
+      {
+        "blackboard": [
+          {
+            "key": "skill@delta_force",
+            "value": 0
+          },
+          {
+            "key": "skill@silence",
+            "value": 4
+          }
+        ],
+        "description": "在拖拽【感染生物】时，使其失去特殊能力4秒",
+        "name": "捕虫专家",
+        "prefabKey": "1",
+        "rangeId": null,
+        "requiredPotentialRank": 0,
+        "unlockCondition": {
+          "level": 1,
+          "phase": 1
+        }
+      },
+      {
+        "blackboard": [
+          {
+            "key": "skill@delta_force",
+            "value": 0
+          },
+          {
+            "key": "skill@silence",
+            "value": 8
+          }
+        ],
+        "description": "在拖拽【感染生物】时，使其失去特殊能力8<@ba.talpu>（+4）</>秒",
+        "name": "捕虫专家",
+        "prefabKey": "1",
+        "rangeId": null,
+        "requiredPotentialRank": 4,
+        "unlockCondition": {
+          "level": 1,
+          "phase": 1
+        }
+      },
+      {
+        "blackboard": [
+          {
+            "key": "skill@delta_force",
+            "value": 1
+          },
+          {
+            "key": "skill@silence",
+            "value": 4
+          }
+        ],
+        "description": "在拖拽【感染生物】时，力度提升一个等级并额外使其失去特殊能力4秒",
+        "name": "捕虫专家",
+        "prefabKey": "1",
+        "rangeId": null,
+        "requiredPotentialRank": 0,
+        "unlockCondition": {
+          "level": 1,
+          "phase": 2
+        }
+      },
+      {
+        "blackboard": [
+          {
+            "key": "skill@delta_force",
+            "value": 1
+          },
+          {
+            "key": "skill@silence",
+            "value": 8
+          }
+        ],
+        "description": "在拖拽【感染生物】时，力度提升一个等级并额外使其失去特殊能力8<@ba.talpu>（+4）</>秒",
+        "name": "捕虫专家",
+        "prefabKey": "1",
+        "rangeId": null,
+        "requiredPotentialRank": 4,
+        "unlockCondition": {
+          "level": 1,
+          "phase": 2
+        }
+      }
+    ]
+  }
+}

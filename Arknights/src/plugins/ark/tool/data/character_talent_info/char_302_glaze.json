@@ -1,0 +1,48 @@
+{
+  "1": {
+    "candidates": [
+      {
+        "blackboard": [
+          {
+            "key": "buff_prob",
+            "value": 0.25
+          },
+          {
+            "key": "stun",
+            "value": 2
+          }
+        ],
+        "description": "攻击原本攻击范围以外的目标时，有25%的几率使其<$ba.stun>晕眩</>2秒",
+        "name": "精确打击",
+        "prefabKey": "1",
+        "rangeId": null,
+        "requiredPotentialRank": 0,
+        "unlockCondition": {
+          "level": 1,
+          "phase": 2
+        }
+      },
+      {
+        "blackboard": [
+          {
+            "key": "buff_prob",
+            "value": 0.28
+          },
+          {
+            "key": "stun",
+            "value": 2
+          }
+        ],
+        "description": "攻击原本攻击范围以外的目标时，有28%<@ba.talpu>（+3%）</>的几率使其<$ba.stun>晕眩</>2秒",
+        "name": "精确打击",
+        "prefabKey": "1",
+        "rangeId": null,
+        "requiredPotentialRank": 4,
+        "unlockCondition": {
+          "level": 1,
+          "phase": 2
+        }
+      }
+    ]
+  }
+}

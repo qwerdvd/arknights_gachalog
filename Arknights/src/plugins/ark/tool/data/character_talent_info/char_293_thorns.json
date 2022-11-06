@@ -1,0 +1,152 @@
+{
+  "1": {
+    "candidates": [
+      {
+        "blackboard": [
+          {
+            "key": "damage[normal]",
+            "value": 65
+          },
+          {
+            "key": "damage[ranged]",
+            "value": 130
+          },
+          {
+            "key": "duration",
+            "value": 3
+          }
+        ],
+        "description": "攻击使目标中毒，在3秒内每秒受到65点法术伤害（对会远程攻击的目标伤害加倍）",
+        "name": "神经腐蚀",
+        "prefabKey": "1",
+        "rangeId": null,
+        "requiredPotentialRank": 0,
+        "unlockCondition": {
+          "level": 1,
+          "phase": 1
+        }
+      },
+      {
+        "blackboard": [
+          {
+            "key": "damage[normal]",
+            "value": 80
+          },
+          {
+            "key": "damage[ranged]",
+            "value": 160
+          },
+          {
+            "key": "duration",
+            "value": 3
+          }
+        ],
+        "description": "攻击使目标中毒，在3秒内每秒受到80<@ba.talpu>（+15）</>点法术伤害（对会远程攻击的目标伤害加倍）",
+        "name": "神经腐蚀",
+        "prefabKey": "1",
+        "rangeId": null,
+        "requiredPotentialRank": 4,
+        "unlockCondition": {
+          "level": 1,
+          "phase": 1
+        }
+      },
+      {
+        "blackboard": [
+          {
+            "key": "damage[normal]",
+            "value": 125
+          },
+          {
+            "key": "damage[ranged]",
+            "value": 250
+          },
+          {
+            "key": "duration",
+            "value": 3
+          }
+        ],
+        "description": "攻击使目标中毒，在3秒内每秒受到125点法术伤害（对会远程攻击的目标伤害加倍）",
+        "name": "神经腐蚀",
+        "prefabKey": "1",
+        "rangeId": null,
+        "requiredPotentialRank": 0,
+        "unlockCondition": {
+          "level": 1,
+          "phase": 2
+        }
+      },
+      {
+        "blackboard": [
+          {
+            "key": "damage[normal]",
+            "value": 140
+          },
+          {
+            "key": "damage[ranged]",
+            "value": 280
+          },
+          {
+            "key": "duration",
+            "value": 3
+          }
+        ],
+        "description": "攻击使目标中毒，在3秒内每秒受到140<@ba.talpu>（+15）</>点法术伤害（对会远程攻击的目标伤害加倍）",
+        "name": "神经腐蚀",
+        "prefabKey": "1",
+        "rangeId": null,
+        "requiredPotentialRank": 4,
+        "unlockCondition": {
+          "level": 1,
+          "phase": 2
+        }
+      }
+    ]
+  },
+  "2": {
+    "candidates": [
+      {
+        "blackboard": [
+          {
+            "key": "delay",
+            "value": 2
+          },
+          {
+            "key": "hp_recovery_per_sec_by_max_hp_ratio",
+            "value": 0.035
+          }
+        ],
+        "description": "如果2秒内没有主动攻击过，每秒恢复最大生命3.5%的生命",
+        "name": "故土潮声",
+        "prefabKey": "2",
+        "rangeId": null,
+        "requiredPotentialRank": 0,
+        "unlockCondition": {
+          "level": 1,
+          "phase": 2
+        }
+      },
+      {
+        "blackboard": [
+          {
+            "key": "delay",
+            "value": 2
+          },
+          {
+            "key": "hp_recovery_per_sec_by_max_hp_ratio",
+            "value": 0.04
+          }
+        ],
+        "description": "如果2秒内没有主动攻击过，每秒恢复最大生命4%<@ba.talpu>（+0.5%）</>的生命",
+        "name": "故土潮声",
+        "prefabKey": "2",
+        "rangeId": null,
+        "requiredPotentialRank": 2,
+        "unlockCondition": {
+          "level": 1,
+          "phase": 2
+        }
+      }
+    ]
+  }
+}

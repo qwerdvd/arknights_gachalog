@@ -1,0 +1,74 @@
+{
+  "1": {
+    "candidates": [
+      {
+        "blackboard": [
+          {
+            "key": "hp_ratio",
+            "value": 0.07
+          }
+        ],
+        "description": "周围8格内有敌人倒下时，恢复自身最大生命值7%的生命",
+        "name": "自愈能力",
+        "prefabKey": "1",
+        "rangeId": "x-4",
+        "requiredPotentialRank": 0,
+        "unlockCondition": {
+          "level": 1,
+          "phase": 1
+        }
+      },
+      {
+        "blackboard": [
+          {
+            "key": "hp_ratio",
+            "value": 0.09
+          }
+        ],
+        "description": "周围8格内有敌人倒下时，恢复自身最大生命值9%<@ba.talpu>（+2%）</>的生命",
+        "name": "自愈能力",
+        "prefabKey": "1",
+        "rangeId": "x-4",
+        "requiredPotentialRank": 4,
+        "unlockCondition": {
+          "level": 1,
+          "phase": 1
+        }
+      },
+      {
+        "blackboard": [
+          {
+            "key": "hp_ratio",
+            "value": 0.12
+          }
+        ],
+        "description": "周围8格内有敌人倒下时，恢复自身最大生命值12%的生命",
+        "name": "自愈能力",
+        "prefabKey": "1",
+        "rangeId": "x-4",
+        "requiredPotentialRank": 0,
+        "unlockCondition": {
+          "level": 1,
+          "phase": 2
+        }
+      },
+      {
+        "blackboard": [
+          {
+            "key": "hp_ratio",
+            "value": 0.14
+          }
+        ],
+        "description": "周围8格内有敌人倒下时，恢复自身最大生命值14%<@ba.talpu>（+2%）</>的生命",
+        "name": "自愈能力",
+        "prefabKey": "1",
+        "rangeId": "x-4",
+        "requiredPotentialRank": 4,
+        "unlockCondition": {
+          "level": 1,
+          "phase": 2
+        }
+      }
+    ]
+  }
+}

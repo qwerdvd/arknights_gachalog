@@ -1,0 +1,95 @@
+{
+  "1": {
+    "candidates": [
+      {
+        "blackboard": [
+          {
+            "key": "atk",
+            "value": 0.07
+          }
+        ],
+        "description": "编入队伍时，所有【深海猎人】干员的攻击力+7%",
+        "name": "深海掠食者",
+        "prefabKey": "1",
+        "rangeId": null,
+        "requiredPotentialRank": 0,
+        "unlockCondition": {
+          "level": 1,
+          "phase": 1
+        }
+      },
+      {
+        "blackboard": [
+          {
+            "key": "atk",
+            "value": 0.09
+          }
+        ],
+        "description": "编入队伍时，所有【深海猎人】干员的攻击力+9%<@ba.talpu>（+2%）</>",
+        "name": "深海掠食者",
+        "prefabKey": "1",
+        "rangeId": null,
+        "requiredPotentialRank": 4,
+        "unlockCondition": {
+          "level": 1,
+          "phase": 1
+        }
+      },
+      {
+        "blackboard": [
+          {
+            "key": "atk",
+            "value": 0.14
+          }
+        ],
+        "description": "编入队伍时，所有【深海猎人】干员的攻击力+14%",
+        "name": "深海掠食者",
+        "prefabKey": "1",
+        "rangeId": null,
+        "requiredPotentialRank": 0,
+        "unlockCondition": {
+          "level": 1,
+          "phase": 2
+        }
+      },
+      {
+        "blackboard": [
+          {
+            "key": "atk",
+            "value": 0.16
+          }
+        ],
+        "description": "编入队伍时，所有【深海猎人】干员的攻击力+16%<@ba.talpu>（+2%）</>",
+        "name": "深海掠食者",
+        "prefabKey": "1",
+        "rangeId": null,
+        "requiredPotentialRank": 4,
+        "unlockCondition": {
+          "level": 1,
+          "phase": 2
+        }
+      }
+    ]
+  },
+  "2": {
+    "candidates": [
+      {
+        "blackboard": [
+          {
+            "key": "respawn_time",
+            "value": -10
+          }
+        ],
+        "description": "自身再部署时间-10秒",
+        "name": "迅捷出击",
+        "prefabKey": "2",
+        "rangeId": null,
+        "requiredPotentialRank": 0,
+        "unlockCondition": {
+          "level": 1,
+          "phase": 2
+        }
+      }
+    ]
+  }
+}

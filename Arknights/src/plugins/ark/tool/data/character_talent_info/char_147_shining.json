@@ -1,0 +1,146 @@
+{
+  "1": {
+    "candidates": [
+      {
+        "blackboard": [
+          {
+            "key": "def",
+            "value": 20
+          }
+        ],
+        "description": "攻击范围内的友方单位防御力+20",
+        "name": "黑恶魔的庇护",
+        "prefabKey": "1",
+        "rangeId": null,
+        "requiredPotentialRank": 0,
+        "unlockCondition": {
+          "level": 1,
+          "phase": 0
+        }
+      },
+      {
+        "blackboard": [
+          {
+            "key": "def",
+            "value": 25
+          }
+        ],
+        "description": "攻击范围内的友方单位防御力+25<@ba.talpu>（+5）</>",
+        "name": "黑恶魔的庇护",
+        "prefabKey": "1",
+        "rangeId": null,
+        "requiredPotentialRank": 5,
+        "unlockCondition": {
+          "level": 1,
+          "phase": 0
+        }
+      },
+      {
+        "blackboard": [
+          {
+            "key": "def",
+            "value": 40
+          }
+        ],
+        "description": "攻击范围内的友方单位防御力+40",
+        "name": "黑恶魔的庇护",
+        "prefabKey": "1",
+        "rangeId": null,
+        "requiredPotentialRank": 0,
+        "unlockCondition": {
+          "level": 1,
+          "phase": 1
+        }
+      },
+      {
+        "blackboard": [
+          {
+            "key": "def",
+            "value": 45
+          }
+        ],
+        "description": "攻击范围内的友方单位防御力+45<@ba.talpu>（+5）</>",
+        "name": "黑恶魔的庇护",
+        "prefabKey": "1",
+        "rangeId": null,
+        "requiredPotentialRank": 5,
+        "unlockCondition": {
+          "level": 1,
+          "phase": 1
+        }
+      },
+      {
+        "blackboard": [
+          {
+            "key": "def",
+            "value": 60
+          }
+        ],
+        "description": "攻击范围内的友方单位防御力+60",
+        "name": "黑恶魔的庇护",
+        "prefabKey": "1",
+        "rangeId": null,
+        "requiredPotentialRank": 0,
+        "unlockCondition": {
+          "level": 1,
+          "phase": 2
+        }
+      },
+      {
+        "blackboard": [
+          {
+            "key": "def",
+            "value": 65
+          }
+        ],
+        "description": "攻击范围内的友方单位防御力+65<@ba.talpu>（+5）</>",
+        "name": "黑恶魔的庇护",
+        "prefabKey": "1",
+        "rangeId": null,
+        "requiredPotentialRank": 5,
+        "unlockCondition": {
+          "level": 1,
+          "phase": 2
+        }
+      }
+    ]
+  },
+  "2": {
+    "candidates": [
+      {
+        "blackboard": [
+          {
+            "key": "attack_speed",
+            "value": 10
+          }
+        ],
+        "description": "攻击速度+10",
+        "name": "法典",
+        "prefabKey": "2",
+        "rangeId": null,
+        "requiredPotentialRank": 0,
+        "unlockCondition": {
+          "level": 1,
+          "phase": 2
+        }
+      },
+      {
+        "blackboard": [
+          {
+            "key": "attack_speed",
+            "value": 13
+          }
+        ],
+        "description": "攻击速度+13<@ba.talpu>（+3）</>",
+        "name": "法典",
+        "prefabKey": "2",
+        "rangeId": null,
+        "requiredPotentialRank": 2,
+        "unlockCondition": {
+          "level": 1,
+          "phase": 2
+        }
+      }
+    ]
+  }
+}

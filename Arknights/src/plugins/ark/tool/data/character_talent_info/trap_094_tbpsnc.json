@@ -1,0 +1,18 @@
+{
+  "1": {
+    "candidates": [
+      {
+        "blackboard": [],
+        "description": "使全场所有友方单位每秒受到<@ba.vup>15</>点真实伤害(可叠加)",
+        "name": null,
+        "prefabKey": "1",
+        "rangeId": null,
+        "requiredPotentialRank": 0,
+        "unlockCondition": {
+          "level": 1,
+          "phase": 0
+        }
+      }
+    ]
+  }
+}

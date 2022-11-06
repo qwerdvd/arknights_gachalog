@@ -1,0 +1,56 @@
+{
+  "1": {
+    "candidates": [
+      {
+        "blackboard": [
+          {
+            "key": "cost",
+            "value": -2
+          },
+          {
+            "key": "respawn_time",
+            "value": -8
+          },
+          {
+            "key": "stun",
+            "value": 10
+          }
+        ],
+        "description": "部署费用-2，再部署时间-8秒，但部署后<$ba.stun>晕眩</>10秒",
+        "name": "稳妥降落",
+        "prefabKey": "1",
+        "rangeId": null,
+        "requiredPotentialRank": 0,
+        "unlockCondition": {
+          "level": 1,
+          "phase": 0
+        }
+      },
+      {
+        "blackboard": [
+          {
+            "key": "cost",
+            "value": -4
+          },
+          {
+            "key": "respawn_time",
+            "value": -15
+          },
+          {
+            "key": "stun",
+            "value": 10
+          }
+        ],
+        "description": "部署费用-4，再部署时间-15秒，但部署后<$ba.stun>晕眩</>10秒",
+        "name": "稳妥降落",
+        "prefabKey": "1",
+        "rangeId": null,
+        "requiredPotentialRank": 0,
+        "unlockCondition": {
+          "level": 1,
+          "phase": 2
+        }
+      }
+    ]
+  }
+}

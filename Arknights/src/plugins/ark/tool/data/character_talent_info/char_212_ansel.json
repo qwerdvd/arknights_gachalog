@@ -1,0 +1,74 @@
+{
+  "1": {
+    "candidates": [
+      {
+        "blackboard": [
+          {
+            "key": "attack@prob",
+            "value": 0.07
+          }
+        ],
+        "description": "有7%的几率额外治疗一名友方单位",
+        "name": "附加治疗",
+        "prefabKey": "1",
+        "rangeId": null,
+        "requiredPotentialRank": 0,
+        "unlockCondition": {
+          "level": 1,
+          "phase": 1
+        }
+      },
+      {
+        "blackboard": [
+          {
+            "key": "attack@prob",
+            "value": 0.1
+          }
+        ],
+        "description": "有10%<@ba.talpu>（+3%）</>的几率额外治疗一名友方单位",
+        "name": "附加治疗",
+        "prefabKey": "1",
+        "rangeId": null,
+        "requiredPotentialRank": 4,
+        "unlockCondition": {
+          "level": 1,
+          "phase": 1
+        }
+      },
+      {
+        "blackboard": [
+          {
+            "key": "attack@prob",
+            "value": 0.15
+          }
+        ],
+        "description": "有15%的几率额外治疗一名友方单位",
+        "name": "附加治疗",
+        "prefabKey": "1",
+        "rangeId": null,
+        "requiredPotentialRank": 0,
+        "unlockCondition": {
+          "level": 55,
+          "phase": 1
+        }
+      },
+      {
+        "blackboard": [
+          {
+            "key": "attack@prob",
+            "value": 0.18
+          }
+        ],
+        "description": "有18%<@ba.talpu>（+3%）</>的几率额外治疗一名友方单位",
+        "name": "附加治疗",
+        "prefabKey": "1",
+        "rangeId": null,
+        "requiredPotentialRank": 4,
+        "unlockCondition": {
+          "level": 55,
+          "phase": 1
+        }
+      }
+    ]
+  }
+}

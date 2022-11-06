@@ -1,0 +1,27 @@
+{
+  "1": {
+    "candidates": [
+      {
+        "blackboard": [
+          {
+            "key": "base_attack_time",
+            "value": 0.2
+          },
+          {
+            "key": "atk",
+            "value": 0.2
+          }
+        ],
+        "description": "攻击间隔略微增大，但攻击力+20%",
+        "name": "重型手里剑",
+        "prefabKey": "1",
+        "rangeId": null,
+        "requiredPotentialRank": 0,
+        "unlockCondition": {
+          "level": 1,
+          "phase": 2
+        }
+      }
+    ]
+  }
+}

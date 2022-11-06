@@ -1,0 +1,56 @@
+{
+  "1": {
+    "candidates": [
+      {
+        "blackboard": [
+          {
+            "key": "flag",
+            "value": 0
+          },
+          {
+            "key": "value",
+            "value": -1
+          },
+          {
+            "key": "max_stack_cnt",
+            "value": 1
+          }
+        ],
+        "description": "首次部署后，所有未部署的【近卫】干员的部署费用-1",
+        "name": "一致向前",
+        "prefabKey": "1",
+        "rangeId": null,
+        "requiredPotentialRank": 0,
+        "unlockCondition": {
+          "level": 1,
+          "phase": 1
+        }
+      },
+      {
+        "blackboard": [
+          {
+            "key": "flag",
+            "value": 1
+          },
+          {
+            "key": "value",
+            "value": -1
+          },
+          {
+            "key": "max_stack_cnt",
+            "value": 5
+          }
+        ],
+        "description": "部署后，所有未部署的【近卫】干员的部署费用-1（每个干员每次被部署前，最多可被减少5费）",
+        "name": "一致向前",
+        "prefabKey": "1",
+        "rangeId": null,
+        "requiredPotentialRank": 0,
+        "unlockCondition": {
+          "level": 1,
+          "phase": 2
+        }
+      }
+    ]
+  }
+}

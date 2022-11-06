@@ -1,0 +1,95 @@
+{
+  "1": {
+    "candidates": [
+      {
+        "blackboard": [
+          {
+            "key": "cnt",
+            "value": 1
+          }
+        ],
+        "description": "可以在战术点召唤由初始两只“狼影”构成的狼群协助作战，“狼影”的数量每30秒增加一只（至多3只；每只“狼影”使狼群阻挡数+1且攻击额外造成一次伤害）",
+        "name": "狼群领袖",
+        "prefabKey": "1",
+        "rangeId": null,
+        "requiredPotentialRank": 0,
+        "unlockCondition": {
+          "level": 1,
+          "phase": 0
+        }
+      },
+      {
+        "blackboard": [
+          {
+            "key": "cnt",
+            "value": 1
+          }
+        ],
+        "description": "可以在战术点召唤由初始两只“狼影”构成的狼群协助作战，“狼影”的数量每27秒增加一只（至多3只；每只“狼影”使狼群阻挡数+1且攻击额外造成一次伤害）",
+        "name": "狼群领袖",
+        "prefabKey": "1",
+        "rangeId": null,
+        "requiredPotentialRank": 0,
+        "unlockCondition": {
+          "level": 1,
+          "phase": 1
+        }
+      },
+      {
+        "blackboard": [
+          {
+            "key": "cnt",
+            "value": 1
+          }
+        ],
+        "description": "可以在战术点召唤由初始两只“狼影”构成的狼群协助作战，“狼影”的数量每25秒增加一只（至多3只；每只“狼影”使狼群阻挡数+1且攻击额外造成一次伤害）",
+        "name": "狼群领袖",
+        "prefabKey": "1",
+        "rangeId": null,
+        "requiredPotentialRank": 0,
+        "unlockCondition": {
+          "level": 1,
+          "phase": 2
+        }
+      }
+    ]
+  },
+  "2": {
+    "candidates": [
+      {
+        "blackboard": [
+          {
+            "key": "def_penetrate_fixed",
+            "value": 175
+          }
+        ],
+        "description": "敌人被狼群阻挡时，伺夜和狼群对其的攻击无视其175防御力",
+        "name": "狼群天性",
+        "prefabKey": "2",
+        "rangeId": null,
+        "requiredPotentialRank": 0,
+        "unlockCondition": {
+          "level": 1,
+          "phase": 2
+        }
+      },
+      {
+        "blackboard": [
+          {
+            "key": "def_penetrate_fixed",
+            "value": 200
+          }
+        ],
+        "description": "敌人被狼群阻挡时，伺夜和狼群对其的攻击无视其200<@ba.talpu>（+25）</>防御力",
+        "name": "狼群天性",
+        "prefabKey": "2",
+        "rangeId": null,
+        "requiredPotentialRank": 4,
+        "unlockCondition": {
+          "level": 1,
+          "phase": 2
+        }
+      }
+    ]
+  }
+}

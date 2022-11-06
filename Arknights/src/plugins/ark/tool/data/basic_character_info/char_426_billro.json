@@ -1,0 +1,58 @@
+{
+  "name": "卡涅利安",
+  "profession": "CASTER",
+  "subProfessionId": "phalanx",
+  "star": 6,
+  "elite": 2,
+  "max_level": 90,
+  "data": {
+    "atk": 846,
+    "attackSpeed": 100,
+    "baseAttackTime": 2,
+    "baseForceLevel": 0,
+    "blockCnt": 1,
+    "cost": 24,
+    "def": 228,
+    "frozenImmune": false,
+    "hpRecoveryPerSec": 0,
+    "levitateImmune": false,
+    "magicResistance": 15,
+    "massLevel": 0,
+    "maxDeckStackCnt": 0,
+    "maxDeployCount": 1,
+    "maxHp": 2106,
+    "moveSpeed": 1,
+    "respawnTime": 70,
+    "silenceImmune": false,
+    "sleepImmune": false,
+    "spRecoveryPerSec": 1,
+    "stunImmune": false,
+    "tauntLevel": 0
+  },
+  "teamId": null,
+  "tokenKey": null,
+  "trait": {
+    "candidates": [
+      {
+        "blackboard": [
+          {
+            "key": "def",
+            "value": 2
+          },
+          {
+            "key": "magic_resistance",
+            "value": 20
+          }
+        ],
+        "overrideDescripton": null,
+        "prefabKey": null,
+        "rangeId": null,
+        "requiredPotentialRank": 0,
+        "unlockCondition": {
+          "level": 1,
+          "phase": 0
+        }
+      }
+    ]
+  }
+}

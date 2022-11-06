@@ -1,0 +1,68 @@
+{
+  "1": {
+    "candidates": [
+      {
+        "blackboard": [],
+        "description": "触发闪避时，下次攻击变为二连击",
+        "name": "前锋剑术",
+        "prefabKey": "1",
+        "rangeId": null,
+        "requiredPotentialRank": 0,
+        "unlockCondition": {
+          "level": 1,
+          "phase": 1
+        }
+      },
+      {
+        "blackboard": [],
+        "description": "触发闪避时，下次攻击变为二连击并攻击所有阻挡的敌人",
+        "name": "前锋剑术",
+        "prefabKey": "1+",
+        "rangeId": null,
+        "requiredPotentialRank": 0,
+        "unlockCondition": {
+          "level": 1,
+          "phase": 2
+        }
+      }
+    ]
+  },
+  "2": {
+    "candidates": [
+      {
+        "blackboard": [
+          {
+            "key": "prob",
+            "value": 0.22
+          }
+        ],
+        "description": "在场时，所有【卡西米尔】势力的干员获得22%的物理闪避",
+        "name": "红松骑士团团长",
+        "prefabKey": "2",
+        "rangeId": null,
+        "requiredPotentialRank": 0,
+        "unlockCondition": {
+          "level": 1,
+          "phase": 2
+        }
+      },
+      {
+        "blackboard": [
+          {
+            "key": "prob",
+            "value": 0.25
+          }
+        ],
+        "description": "在场时，所有【卡西米尔】势力的干员获得25%<@ba.talpu>（+3%）</>的物理闪避",
+        "name": "红松骑士团团长",
+        "prefabKey": "2",
+        "rangeId": null,
+        "requiredPotentialRank": 4,
+        "unlockCondition": {
+          "level": 1,
+          "phase": 2
+        }
+      }
+    ]
+  }
+}

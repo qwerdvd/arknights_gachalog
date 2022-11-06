@@ -1,0 +1,156 @@
+{
+  "1": {
+    "candidates": [
+      {
+        "blackboard": [
+          {
+            "key": "cnt",
+            "value": 2
+          },
+          {
+            "key": "atk",
+            "value": 0.05
+          },
+          {
+            "key": "duration",
+            "value": 20
+          }
+        ],
+        "description": "携带2个仅对术师和辅助干员生效的可靠电池（最多部署2个），使装备者攻击力+5%（持续20秒）",
+        "name": "共进",
+        "prefabKey": "1",
+        "rangeId": null,
+        "requiredPotentialRank": 0,
+        "unlockCondition": {
+          "level": 1,
+          "phase": 0
+        }
+      },
+      {
+        "blackboard": [
+          {
+            "key": "cnt",
+            "value": 2
+          },
+          {
+            "key": "atk",
+            "value": 0.07
+          },
+          {
+            "key": "duration",
+            "value": 20
+          }
+        ],
+        "description": "携带2个仅对术师和辅助干员生效的可靠电池（最多部署2个），使装备者攻击力+7%<@ba.talpu>（+2%）</>（持续20秒）",
+        "name": "共进",
+        "prefabKey": "1",
+        "rangeId": null,
+        "requiredPotentialRank": 4,
+        "unlockCondition": {
+          "level": 1,
+          "phase": 0
+        }
+      },
+      {
+        "blackboard": [
+          {
+            "key": "cnt",
+            "value": 3
+          },
+          {
+            "key": "atk",
+            "value": 0.1
+          },
+          {
+            "key": "duration",
+            "value": 30
+          }
+        ],
+        "description": "携带3个仅对术师和辅助干员生效的可靠电池（最多部署2个），使装备者攻击力+10%（持续30秒）",
+        "name": "共进",
+        "prefabKey": "1",
+        "rangeId": null,
+        "requiredPotentialRank": 0,
+        "unlockCondition": {
+          "level": 1,
+          "phase": 1
+        }
+      },
+      {
+        "blackboard": [
+          {
+            "key": "cnt",
+            "value": 3
+          },
+          {
+            "key": "atk",
+            "value": 0.12
+          },
+          {
+            "key": "duration",
+            "value": 30
+          }
+        ],
+        "description": "携带3个仅对术师和辅助干员生效的可靠电池（最多部署2个），使装备者攻击力+12%<@ba.talpu>（+2%）</>（持续30秒）",
+        "name": "共进",
+        "prefabKey": "1",
+        "rangeId": null,
+        "requiredPotentialRank": 4,
+        "unlockCondition": {
+          "level": 1,
+          "phase": 1
+        }
+      },
+      {
+        "blackboard": [
+          {
+            "key": "cnt",
+            "value": 3
+          },
+          {
+            "key": "atk",
+            "value": 0.15
+          },
+          {
+            "key": "duration",
+            "value": 30
+          }
+        ],
+        "description": "携带3个仅对术师和辅助干员生效的可靠电池（最多部署2个），使装备者攻击力+15%（持续30秒）",
+        "name": "共进",
+        "prefabKey": "1",
+        "rangeId": null,
+        "requiredPotentialRank": 0,
+        "unlockCondition": {
+          "level": 1,
+          "phase": 2
+        }
+      },
+      {
+        "blackboard": [
+          {
+            "key": "cnt",
+            "value": 3
+          },
+          {
+            "key": "atk",
+            "value": 0.17
+          },
+          {
+            "key": "duration",
+            "value": 30
+          }
+        ],
+        "description": "携带3个仅对术师和辅助干员生效的可靠电池（最多部署2个），使装备者攻击力+17%<@ba.talpu>（+2%）</>（持续30秒）",
+        "name": "共进",
+        "prefabKey": "1",
+        "rangeId": null,
+        "requiredPotentialRank": 4,
+        "unlockCondition": {
+          "level": 1,
+          "phase": 2
+        }
+      }
+    ]
+  }
+}

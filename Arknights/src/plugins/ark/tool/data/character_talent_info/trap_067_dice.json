@@ -1,0 +1,34 @@
+{
+  "1": {
+    "candidates": [
+      {
+        "blackboard": [],
+        "description": "场上所有敌人攻击速度<@ba.vup>-20</>，移动速度<@ba.vup>-50%</>",
+        "name": null,
+        "prefabKey": "1",
+        "rangeId": null,
+        "requiredPotentialRank": 0,
+        "unlockCondition": {
+          "level": 1,
+          "phase": 0
+        }
+      }
+    ]
+  },
+  "2": {
+    "candidates": [
+      {
+        "blackboard": [],
+        "description": "场上所有敌人攻击速度<@ba.vup>-30</>，移动速度<@ba.vup>-70%</>",
+        "name": null,
+        "prefabKey": "1",
+        "rangeId": null,
+        "requiredPotentialRank": 0,
+        "unlockCondition": {
+          "level": 1,
+          "phase": 0
+        }
+      }
+    ]
+  }
+}

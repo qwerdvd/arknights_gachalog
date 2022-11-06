@@ -1,0 +1,56 @@
+{
+  "1": {
+    "candidates": [
+      {
+        "blackboard": [
+          {
+            "key": "cnt",
+            "value": 1
+          }
+        ],
+        "description": "可以使用一个虚影，虚影拥有和自己一样的技能，拥有独立的再部署时间",
+        "name": "镜中虚影",
+        "prefabKey": "1",
+        "rangeId": null,
+        "requiredPotentialRank": 0,
+        "unlockCondition": {
+          "level": 1,
+          "phase": 1
+        }
+      },
+      {
+        "blackboard": [
+          {
+            "key": "cnt",
+            "value": 1
+          }
+        ],
+        "description": "可以使用一个属性更强的虚影，虚影拥有和自己一样的技能，拥有独立的再部署时间",
+        "name": "镜中虚影",
+        "prefabKey": "1",
+        "rangeId": null,
+        "requiredPotentialRank": 0,
+        "unlockCondition": {
+          "level": 1,
+          "phase": 2
+        }
+      }
+    ]
+  },
+  "2": {
+    "candidates": [
+      {
+        "blackboard": [],
+        "description": "虚影的再部署时间-10秒",
+        "name": "虚影精通",
+        "prefabKey": "#",
+        "rangeId": null,
+        "requiredPotentialRank": 0,
+        "unlockCondition": {
+          "level": 1,
+          "phase": 2
+        }
+      }
+    ]
+  }
+}

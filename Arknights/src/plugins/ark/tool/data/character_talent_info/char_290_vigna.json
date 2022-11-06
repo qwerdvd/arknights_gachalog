@@ -1,0 +1,106 @@
+{
+  "1": {
+    "candidates": [
+      {
+        "blackboard": [
+          {
+            "key": "atk",
+            "value": 0.5
+          },
+          {
+            "key": "prob1",
+            "value": 0.1
+          },
+          {
+            "key": "prob2",
+            "value": 0.3
+          }
+        ],
+        "description": "攻击时，10%几率当次攻击的攻击力+50%。技能中这个几率提高到30%",
+        "name": "蛮力穿刺",
+        "prefabKey": "1",
+        "rangeId": null,
+        "requiredPotentialRank": 0,
+        "unlockCondition": {
+          "level": 1,
+          "phase": 1
+        }
+      },
+      {
+        "blackboard": [
+          {
+            "key": "atk",
+            "value": 0.6
+          },
+          {
+            "key": "prob1",
+            "value": 0.1
+          },
+          {
+            "key": "prob2",
+            "value": 0.3
+          }
+        ],
+        "description": "攻击时，10%几率当次攻击的攻击力+60%<@ba.talpu>（+10%）</>。技能中这个几率提高到30%",
+        "name": "蛮力穿刺",
+        "prefabKey": "1",
+        "rangeId": null,
+        "requiredPotentialRank": 4,
+        "unlockCondition": {
+          "level": 1,
+          "phase": 1
+        }
+      },
+      {
+        "blackboard": [
+          {
+            "key": "atk",
+            "value": 1
+          },
+          {
+            "key": "prob1",
+            "value": 0.1
+          },
+          {
+            "key": "prob2",
+            "value": 0.3
+          }
+        ],
+        "description": "攻击时，10%几率当次攻击的攻击力+100%。技能中这个几率提高到30%",
+        "name": "蛮力穿刺",
+        "prefabKey": "1",
+        "rangeId": null,
+        "requiredPotentialRank": 0,
+        "unlockCondition": {
+          "level": 1,
+          "phase": 2
+        }
+      },
+      {
+        "blackboard": [
+          {
+            "key": "atk",
+            "value": 1.1
+          },
+          {
+            "key": "prob1",
+            "value": 0.1
+          },
+          {
+            "key": "prob2",
+            "value": 0.3
+          }
+        ],
+        "description": "攻击时，10%几率当次攻击的攻击力+110%<@ba.talpu>（+10%）</>。技能中这个几率提高到30%",
+        "name": "蛮力穿刺",
+        "prefabKey": "1",
+        "rangeId": null,
+        "requiredPotentialRank": 4,
+        "unlockCondition": {
+          "level": 1,
+          "phase": 2
+        }
+      }
+    ]
+  }
+}

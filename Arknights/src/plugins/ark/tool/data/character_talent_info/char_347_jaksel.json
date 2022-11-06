@@ -1,0 +1,106 @@
+{
+  "1": {
+    "candidates": [
+      {
+        "blackboard": [
+          {
+            "key": "prob",
+            "value": 0.15
+          },
+          {
+            "key": "charge_atk_speed_on_evade.attack_speed",
+            "value": 6
+          },
+          {
+            "key": "charge_atk_speed_on_evade.duration",
+            "value": 5
+          }
+        ],
+        "description": "获得15%的物理闪避，闪避成功后攻击速度+6（持续5秒，不可叠加）",
+        "name": "极速闪避",
+        "prefabKey": "1",
+        "rangeId": null,
+        "requiredPotentialRank": 0,
+        "unlockCondition": {
+          "level": 1,
+          "phase": 1
+        }
+      },
+      {
+        "blackboard": [
+          {
+            "key": "prob",
+            "value": 0.18
+          },
+          {
+            "key": "charge_atk_speed_on_evade.attack_speed",
+            "value": 6
+          },
+          {
+            "key": "charge_atk_speed_on_evade.duration",
+            "value": 5
+          }
+        ],
+        "description": "获得18%<@ba.talpu>（+3%）</>的物理闪避，闪避成功后攻击速度+6（持续5秒，不可叠加）",
+        "name": "极速闪避",
+        "prefabKey": "1",
+        "rangeId": null,
+        "requiredPotentialRank": 4,
+        "unlockCondition": {
+          "level": 1,
+          "phase": 1
+        }
+      },
+      {
+        "blackboard": [
+          {
+            "key": "prob",
+            "value": 0.3
+          },
+          {
+            "key": "charge_atk_speed_on_evade.attack_speed",
+            "value": 12
+          },
+          {
+            "key": "charge_atk_speed_on_evade.duration",
+            "value": 5
+          }
+        ],
+        "description": "获得30%的物理闪避，闪避成功后攻击速度+12（持续5秒，不可叠加）",
+        "name": "极速闪避",
+        "prefabKey": "1",
+        "rangeId": null,
+        "requiredPotentialRank": 0,
+        "unlockCondition": {
+          "level": 1,
+          "phase": 2
+        }
+      },
+      {
+        "blackboard": [
+          {
+            "key": "prob",
+            "value": 0.33
+          },
+          {
+            "key": "charge_atk_speed_on_evade.attack_speed",
+            "value": 12
+          },
+          {
+            "key": "charge_atk_speed_on_evade.duration",
+            "value": 5
+          }
+        ],
+        "description": "获得33%<@ba.talpu>（+3%）</>的物理闪避，闪避成功后攻击速度+12（持续5秒，不可叠加）",
+        "name": "极速闪避",
+        "prefabKey": "1",
+        "rangeId": null,
+        "requiredPotentialRank": 4,
+        "unlockCondition": {
+          "level": 1,
+          "phase": 2
+        }
+      }
+    ]
+  }
+}

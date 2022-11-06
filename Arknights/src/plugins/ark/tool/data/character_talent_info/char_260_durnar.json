@@ -1,0 +1,48 @@
+{
+  "1": {
+    "candidates": [
+      {
+        "blackboard": [
+          {
+            "key": "atk",
+            "value": 0.04
+          },
+          {
+            "key": "def",
+            "value": 0.04
+          }
+        ],
+        "description": "攻击力+4%，防御力+4%",
+        "name": "攻守兼备",
+        "prefabKey": "1",
+        "rangeId": null,
+        "requiredPotentialRank": 0,
+        "unlockCondition": {
+          "level": 1,
+          "phase": 1
+        }
+      },
+      {
+        "blackboard": [
+          {
+            "key": "atk",
+            "value": 0.07
+          },
+          {
+            "key": "def",
+            "value": 0.07
+          }
+        ],
+        "description": "攻击力+7%，防御力+7%",
+        "name": "攻守兼备",
+        "prefabKey": "1",
+        "rangeId": null,
+        "requiredPotentialRank": 0,
+        "unlockCondition": {
+          "level": 1,
+          "phase": 2
+        }
+      }
+    ]
+  }
+}

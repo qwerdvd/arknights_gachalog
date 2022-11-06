@@ -1,0 +1,131 @@
+{
+  "1": {
+    "candidates": [
+      {
+        "blackboard": [
+          {
+            "key": "min_attack_speed",
+            "value": 50
+          },
+          {
+            "key": "max_attack_speed",
+            "value": 0
+          },
+          {
+            "key": "max_hp_ratio",
+            "value": 1
+          },
+          {
+            "key": "min_hp_ratio",
+            "value": 0.5
+          }
+        ],
+        "description": "根据已损失的生命值，提高攻击速度（损失50%生命值时达到最大可提升攻击速度50）",
+        "name": "月盈星亏",
+        "prefabKey": "1",
+        "rangeId": null,
+        "requiredPotentialRank": 0,
+        "unlockCondition": {
+          "level": 1,
+          "phase": 0
+        }
+      },
+      {
+        "blackboard": [
+          {
+            "key": "min_attack_speed",
+            "value": 75
+          },
+          {
+            "key": "max_attack_speed",
+            "value": 0
+          },
+          {
+            "key": "max_hp_ratio",
+            "value": 1
+          },
+          {
+            "key": "min_hp_ratio",
+            "value": 0.4
+          }
+        ],
+        "description": "根据已损失的生命值，提高攻击速度（损失60%生命值时达到最大可提升攻击速度75）",
+        "name": "月盈星亏",
+        "prefabKey": "1",
+        "rangeId": null,
+        "requiredPotentialRank": 0,
+        "unlockCondition": {
+          "level": 1,
+          "phase": 1
+        }
+      },
+      {
+        "blackboard": [
+          {
+            "key": "min_attack_speed",
+            "value": 100
+          },
+          {
+            "key": "max_attack_speed",
+            "value": 0
+          },
+          {
+            "key": "max_hp_ratio",
+            "value": 1
+          },
+          {
+            "key": "min_hp_ratio",
+            "value": 0.3
+          }
+        ],
+        "description": "根据已损失的生命值，提高攻击速度（损失70%生命值时达到最大可提升攻击速度100）",
+        "name": "月盈星亏",
+        "prefabKey": "1",
+        "rangeId": null,
+        "requiredPotentialRank": 0,
+        "unlockCondition": {
+          "level": 1,
+          "phase": 2
+        }
+      }
+    ]
+  },
+  "2": {
+    "candidates": [
+      {
+        "blackboard": [
+          {
+            "key": "hp_recovery_per_sec",
+            "value": 60
+          }
+        ],
+        "description": "未阻挡敌人时每秒回复60生命",
+        "name": "运筹帷幄",
+        "prefabKey": "2",
+        "rangeId": null,
+        "requiredPotentialRank": 0,
+        "unlockCondition": {
+          "level": 1,
+          "phase": 2
+        }
+      },
+      {
+        "blackboard": [
+          {
+            "key": "hp_recovery_per_sec",
+            "value": 70
+          }
+        ],
+        "description": "未阻挡敌人时每秒回复70<@ba.talpu>（+10）</>生命",
+        "name": "运筹帷幄",
+        "prefabKey": "2",
+        "rangeId": null,
+        "requiredPotentialRank": 4,
+        "unlockCondition": {
+          "level": 1,
+          "phase": 2
+        }
+      }
+    ]
+  }
+}

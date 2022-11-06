@@ -1,0 +1,106 @@
+{
+  "1": {
+    "candidates": [
+      {
+        "blackboard": [
+          {
+            "key": "atk",
+            "value": 0.04
+          },
+          {
+            "key": "ashlok_t_1.atk",
+            "value": 0.08
+          },
+          {
+            "key": "cnt",
+            "value": 4
+          }
+        ],
+        "description": "攻击力+4%，周身四格为地面时改为攻击力+8%",
+        "name": "炮术研习",
+        "prefabKey": "1",
+        "rangeId": null,
+        "requiredPotentialRank": 0,
+        "unlockCondition": {
+          "level": 1,
+          "phase": 1
+        }
+      },
+      {
+        "blackboard": [
+          {
+            "key": "atk",
+            "value": 0.06
+          },
+          {
+            "key": "ashlok_t_1.atk",
+            "value": 0.1
+          },
+          {
+            "key": "cnt",
+            "value": 4
+          }
+        ],
+        "description": "攻击力+6%<@ba.talpu>（+2%）</>，周身四格为地面时改为攻击力+10%<@ba.talpu>（+2%）</>",
+        "name": "炮术研习",
+        "prefabKey": "1",
+        "rangeId": null,
+        "requiredPotentialRank": 4,
+        "unlockCondition": {
+          "level": 1,
+          "phase": 1
+        }
+      },
+      {
+        "blackboard": [
+          {
+            "key": "atk",
+            "value": 0.08
+          },
+          {
+            "key": "ashlok_t_1.atk",
+            "value": 0.16
+          },
+          {
+            "key": "cnt",
+            "value": 4
+          }
+        ],
+        "description": "攻击力+8%，周身四格为地面时改为攻击力+16%",
+        "name": "炮术研习",
+        "prefabKey": "1",
+        "rangeId": null,
+        "requiredPotentialRank": 0,
+        "unlockCondition": {
+          "level": 1,
+          "phase": 2
+        }
+      },
+      {
+        "blackboard": [
+          {
+            "key": "atk",
+            "value": 0.1
+          },
+          {
+            "key": "ashlok_t_1.atk",
+            "value": 0.18
+          },
+          {
+            "key": "cnt",
+            "value": 4
+          }
+        ],
+        "description": "攻击力+10%<@ba.talpu>（+2%）</>，周身四格为地面时改为攻击力+18%<@ba.talpu>（+2%）</>",
+        "name": "炮术研习",
+        "prefabKey": "1",
+        "rangeId": null,
+        "requiredPotentialRank": 4,
+        "unlockCondition": {
+          "level": 1,
+          "phase": 2
+        }
+      }
+    ]
+  }
+}

@@ -1,0 +1,102 @@
+{
+  "1": {
+    "candidates": [
+      {
+        "blackboard": [
+          {
+            "key": "interval",
+            "value": 5
+          },
+          {
+            "key": "sp",
+            "value": 1
+          }
+        ],
+        "description": "在场时每5秒回复全场友方角色1点攻击/受击技力",
+        "name": "呵斥",
+        "prefabKey": "1",
+        "rangeId": null,
+        "requiredPotentialRank": 0,
+        "unlockCondition": {
+          "level": 1,
+          "phase": 1
+        }
+      },
+      {
+        "blackboard": [
+          {
+            "key": "interval",
+            "value": 4
+          },
+          {
+            "key": "sp",
+            "value": 1
+          }
+        ],
+        "description": "在场时每4秒回复全场友方角色1点攻击/受击技力",
+        "name": "呵斥",
+        "prefabKey": "1",
+        "rangeId": null,
+        "requiredPotentialRank": 0,
+        "unlockCondition": {
+          "level": 1,
+          "phase": 2
+        }
+      }
+    ]
+  },
+  "2": {
+    "candidates": [
+      {
+        "blackboard": [
+          {
+            "key": "atk",
+            "value": 0.05
+          },
+          {
+            "key": "def",
+            "value": 0.05
+          },
+          {
+            "key": "prob",
+            "value": 0.1
+          }
+        ],
+        "description": "攻击力+5%，防御力+5%，物理闪避+10%",
+        "name": "持刀格斗术",
+        "prefabKey": "2",
+        "rangeId": null,
+        "requiredPotentialRank": 0,
+        "unlockCondition": {
+          "level": 1,
+          "phase": 2
+        }
+      },
+      {
+        "blackboard": [
+          {
+            "key": "atk",
+            "value": 0.06
+          },
+          {
+            "key": "def",
+            "value": 0.06
+          },
+          {
+            "key": "prob",
+            "value": 0.13
+          }
+        ],
+        "description": "攻击力+6%<@ba.talpu>（+1%）</>，防御力+6%<@ba.talpu>（+1%）</>，物理闪避+13%<@ba.talpu>（+3%）</>",
+        "name": "持刀格斗术",
+        "prefabKey": "2",
+        "rangeId": null,
+        "requiredPotentialRank": 4,
+        "unlockCondition": {
+          "level": 1,
+          "phase": 2
+        }
+      }
+    ]
+  }
+}

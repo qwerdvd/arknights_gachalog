@@ -1,0 +1,91 @@
+{
+  "1": {
+    "candidates": [
+      {
+        "blackboard": [
+          {
+            "key": "atk_scale",
+            "value": 1
+          }
+        ],
+        "description": "优先攻击【无人机】单位",
+        "name": "结构分解",
+        "prefabKey": "1",
+        "rangeId": null,
+        "requiredPotentialRank": 0,
+        "unlockCondition": {
+          "level": 1,
+          "phase": 0
+        }
+      },
+      {
+        "blackboard": [
+          {
+            "key": "atk_scale",
+            "value": 1.2
+          }
+        ],
+        "description": "优先攻击【无人机】单位，且攻击【无人机】时攻击力+20%",
+        "name": "结构分解",
+        "prefabKey": "1",
+        "rangeId": null,
+        "requiredPotentialRank": 0,
+        "unlockCondition": {
+          "level": 1,
+          "phase": 1
+        }
+      },
+      {
+        "blackboard": [
+          {
+            "key": "atk_scale",
+            "value": 1.23
+          }
+        ],
+        "description": "优先攻击【无人机】单位，且攻击【无人机】时攻击力+23%<@ba.talpu>（+3%）</>",
+        "name": "结构分解",
+        "prefabKey": "1",
+        "rangeId": null,
+        "requiredPotentialRank": 4,
+        "unlockCondition": {
+          "level": 1,
+          "phase": 1
+        }
+      },
+      {
+        "blackboard": [
+          {
+            "key": "atk_scale",
+            "value": 1.4
+          }
+        ],
+        "description": "优先攻击【无人机】单位，且攻击【无人机】时攻击力+40%",
+        "name": "结构分解",
+        "prefabKey": "1",
+        "rangeId": null,
+        "requiredPotentialRank": 0,
+        "unlockCondition": {
+          "level": 1,
+          "phase": 2
+        }
+      },
+      {
+        "blackboard": [
+          {
+            "key": "atk_scale",
+            "value": 1.43
+          }
+        ],
+        "description": "优先攻击【无人机】单位，且攻击【无人机】时攻击力+43%<@ba.talpu>（+3%）</>",
+        "name": "结构分解",
+        "prefabKey": "1",
+        "rangeId": null,
+        "requiredPotentialRank": 4,
+        "unlockCondition": {
+          "level": 1,
+          "phase": 2
+        }
+      }
+    ]
+  }
+}

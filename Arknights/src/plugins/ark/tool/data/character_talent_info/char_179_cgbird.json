@@ -1,0 +1,129 @@
+{
+  "1": {
+    "candidates": [
+      {
+        "blackboard": [
+          {
+            "key": "magic_resistance",
+            "value": 5
+          }
+        ],
+        "description": "攻击范围内的友方单位法术抗性+5",
+        "name": "白恶魔的庇护",
+        "prefabKey": "1",
+        "rangeId": null,
+        "requiredPotentialRank": 0,
+        "unlockCondition": {
+          "level": 1,
+          "phase": 0
+        }
+      },
+      {
+        "blackboard": [
+          {
+            "key": "magic_resistance",
+            "value": 7
+          }
+        ],
+        "description": "攻击范围内的友方单位法术抗性+7<@ba.talpu>（+2）</>",
+        "name": "白恶魔的庇护",
+        "prefabKey": "1",
+        "rangeId": null,
+        "requiredPotentialRank": 4,
+        "unlockCondition": {
+          "level": 1,
+          "phase": 0
+        }
+      },
+      {
+        "blackboard": [
+          {
+            "key": "magic_resistance",
+            "value": 10
+          }
+        ],
+        "description": "攻击范围内的友方单位法术抗性+10",
+        "name": "白恶魔的庇护",
+        "prefabKey": "1",
+        "rangeId": null,
+        "requiredPotentialRank": 0,
+        "unlockCondition": {
+          "level": 1,
+          "phase": 1
+        }
+      },
+      {
+        "blackboard": [
+          {
+            "key": "magic_resistance",
+            "value": 12
+          }
+        ],
+        "description": "攻击范围内的友方单位法术抗性+12<@ba.talpu>（+2）</>",
+        "name": "白恶魔的庇护",
+        "prefabKey": "1",
+        "rangeId": null,
+        "requiredPotentialRank": 4,
+        "unlockCondition": {
+          "level": 1,
+          "phase": 1
+        }
+      },
+      {
+        "blackboard": [
+          {
+            "key": "magic_resistance",
+            "value": 15
+          }
+        ],
+        "description": "攻击范围内的友方单位法术抗性+15",
+        "name": "白恶魔的庇护",
+        "prefabKey": "1",
+        "rangeId": null,
+        "requiredPotentialRank": 0,
+        "unlockCondition": {
+          "level": 1,
+          "phase": 2
+        }
+      },
+      {
+        "blackboard": [
+          {
+            "key": "magic_resistance",
+            "value": 17
+          }
+        ],
+        "description": "攻击范围内的友方单位法术抗性+17<@ba.talpu>（+2）</>",
+        "name": "白恶魔的庇护",
+        "prefabKey": "1",
+        "rangeId": null,
+        "requiredPotentialRank": 4,
+        "unlockCondition": {
+          "level": 1,
+          "phase": 2
+        }
+      }
+    ]
+  },
+  "2": {
+    "candidates": [
+      {
+        "blackboard": [
+          {
+            "key": "cnt",
+            "value": 2
+          }
+        ],
+        "description": "可以使用幻影。幻影无法攻击和阻挡敌人，拥有75法术抗性，30%的物理闪避，并且更容易吸引敌人的攻击，同时每秒流失3%的最大生命",
+        "name": "转瞬即逝的幻影",
+        "prefabKey": "2",
+        "rangeId": null,
+        "requiredPotentialRank": 0,
+        "unlockCondition": {
+          "level": 1,
+          "phase": 2
+        }
+      }
+    ]
+  }
+}

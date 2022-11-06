@@ -1,0 +1,23 @@
+{
+  "1": {
+    "candidates": [
+      {
+        "blackboard": [
+          {
+            "key": "prob",
+            "value": 0.5
+          }
+        ],
+        "description": "获得50%的法术闪避",
+        "name": "小个子的幸运",
+        "prefabKey": "1",
+        "rangeId": null,
+        "requiredPotentialRank": 0,
+        "unlockCondition": {
+          "level": 30,
+          "phase": 0
+        }
+      }
+    ]
+  }
+}

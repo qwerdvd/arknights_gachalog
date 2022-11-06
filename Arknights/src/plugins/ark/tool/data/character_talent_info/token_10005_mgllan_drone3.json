@@ -1,0 +1,169 @@
+{
+  "1": {
+    "candidates": [
+      {
+        "blackboard": [
+          {
+            "key": "max_deck_stack_cnt",
+            "value": 3
+          },
+          {
+            "key": "max_deploy_count",
+            "value": 2
+          }
+        ],
+        "description": "TOKEN数+3",
+        "name": null,
+        "prefabKey": "1",
+        "rangeId": null,
+        "requiredPotentialRank": 0,
+        "unlockCondition": {
+          "level": 1,
+          "phase": 0
+        }
+      },
+      {
+        "blackboard": [
+          {
+            "key": "max_deck_stack_cnt",
+            "value": 4
+          },
+          {
+            "key": "max_deploy_count",
+            "value": 2
+          }
+        ],
+        "description": "TOKEN数+4",
+        "name": null,
+        "prefabKey": "1",
+        "rangeId": null,
+        "requiredPotentialRank": 0,
+        "unlockCondition": {
+          "level": 1,
+          "phase": 1
+        }
+      },
+      {
+        "blackboard": [
+          {
+            "key": "max_deck_stack_cnt",
+            "value": 5
+          },
+          {
+            "key": "max_deploy_count",
+            "value": 2
+          }
+        ],
+        "description": "TOKEN数+5",
+        "name": null,
+        "prefabKey": "1",
+        "rangeId": null,
+        "requiredPotentialRank": 0,
+        "unlockCondition": {
+          "level": 1,
+          "phase": 2
+        }
+      }
+    ]
+  },
+  "2": {
+    "candidates": [
+      {
+        "blackboard": [
+          {
+            "key": "hidden_duration",
+            "value": 12
+          }
+        ],
+        "description": "部署后<$ba.invisible>隐匿</>12秒",
+        "name": null,
+        "prefabKey": "2",
+        "rangeId": null,
+        "requiredPotentialRank": 0,
+        "unlockCondition": {
+          "level": 1,
+          "phase": 1
+        }
+      },
+      {
+        "blackboard": [
+          {
+            "key": "hidden_duration",
+            "value": 14
+          }
+        ],
+        "description": "部署后<$ba.invisible>隐匿</>14秒",
+        "name": null,
+        "prefabKey": "2",
+        "rangeId": null,
+        "requiredPotentialRank": 4,
+        "unlockCondition": {
+          "level": 1,
+          "phase": 1
+        }
+      },
+      {
+        "blackboard": [
+          {
+            "key": "hidden_duration",
+            "value": 20
+          }
+        ],
+        "description": "部署后<$ba.invisible>隐匿</>20秒",
+        "name": null,
+        "prefabKey": "2",
+        "rangeId": null,
+        "requiredPotentialRank": 0,
+        "unlockCondition": {
+          "level": 1,
+          "phase": 2
+        }
+      },
+      {
+        "blackboard": [
+          {
+            "key": "hidden_duration",
+            "value": 22
+          }
+        ],
+        "description": "部署后<$ba.invisible>隐匿</>22秒",
+        "name": null,
+        "prefabKey": "2",
+        "rangeId": null,
+        "requiredPotentialRank": 4,
+        "unlockCondition": {
+          "level": 1,
+          "phase": 2
+        }
+      }
+    ]
+  },
+  "3": {
+    "candidates": [
+      {
+        "blackboard": [],
+        "description": null,
+        "name": null,
+        "prefabKey": "10",
+        "rangeId": null,
+        "requiredPotentialRank": 0,
+        "unlockCondition": {
+          "level": 1,
+          "phase": 2
+        }
+      },
+      {
+        "blackboard": [],
+        "description": null,
+        "name": null,
+        "prefabKey": "10",
+        "rangeId": null,
+        "requiredPotentialRank": 4,
+        "unlockCondition": {
+          "level": 1,
+          "phase": 2
+        }
+      }
+    ]
+  }
+}

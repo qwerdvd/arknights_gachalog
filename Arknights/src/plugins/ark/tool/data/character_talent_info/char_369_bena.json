@@ -1,0 +1,111 @@
+{
+  "1": {
+    "candidates": [
+      {
+        "blackboard": [
+          {
+            "key": "damage_resistance",
+            "value": 0
+          },
+          {
+            "key": "talent_override_rangeid_flag",
+            "value": 1
+          }
+        ],
+        "description": "<替身>攻击造成法术伤害",
+        "name": "贝娜的量角器",
+        "prefabKey": "1",
+        "rangeId": "x-4",
+        "requiredPotentialRank": 0,
+        "unlockCondition": {
+          "level": 1,
+          "phase": 0
+        }
+      },
+      {
+        "blackboard": [
+          {
+            "key": "damage_resistance",
+            "value": 0.2
+          },
+          {
+            "key": "talent_override_rangeid_flag",
+            "value": 1
+          }
+        ],
+        "description": "<替身>攻击造成法术伤害且受到的物理与法术伤害减少20%",
+        "name": "贝娜的量角器",
+        "prefabKey": "1",
+        "rangeId": "x-4",
+        "requiredPotentialRank": 0,
+        "unlockCondition": {
+          "level": 1,
+          "phase": 1
+        }
+      },
+      {
+        "blackboard": [
+          {
+            "key": "damage_resistance",
+            "value": 0.23
+          },
+          {
+            "key": "talent_override_rangeid_flag",
+            "value": 1
+          }
+        ],
+        "description": "<替身>攻击造成法术伤害且受到的物理与法术伤害减少23%<@ba.talpu>（+3）</>",
+        "name": "贝娜的量角器",
+        "prefabKey": "1",
+        "rangeId": "x-4",
+        "requiredPotentialRank": 4,
+        "unlockCondition": {
+          "level": 1,
+          "phase": 1
+        }
+      },
+      {
+        "blackboard": [
+          {
+            "key": "damage_resistance",
+            "value": 0.4
+          },
+          {
+            "key": "talent_override_rangeid_flag",
+            "value": 1
+          }
+        ],
+        "description": "<替身>攻击造成法术伤害且受到的物理与法术伤害减少40%",
+        "name": "贝娜的量角器",
+        "prefabKey": "1",
+        "rangeId": "x-4",
+        "requiredPotentialRank": 0,
+        "unlockCondition": {
+          "level": 1,
+          "phase": 2
+        }
+      },
+      {
+        "blackboard": [
+          {
+            "key": "damage_resistance",
+            "value": 0.43
+          },
+          {
+            "key": "talent_override_rangeid_flag",
+            "value": 1
+          }
+        ],
+        "description": "<替身>攻击造成法术伤害且受到的物理与法术伤害减少43%<@ba.talpu>（+3）</>",
+        "name": "贝娜的量角器",
+        "prefabKey": "1",
+        "rangeId": "x-4",
+        "requiredPotentialRank": 4,
+        "unlockCondition": {
+          "level": 1,
+          "phase": 2
+        }
+      }
+    ]
+  }
+}

@@ -1,0 +1,74 @@
+{
+  "1": {
+    "candidates": [
+      {
+        "blackboard": [
+          {
+            "key": "damage_scale",
+            "value": 1.07
+          }
+        ],
+        "description": "在场时所有被阻挡的敌方单位受到的物理伤害提高7%",
+        "name": "弱点拆解",
+        "prefabKey": "1",
+        "rangeId": null,
+        "requiredPotentialRank": 0,
+        "unlockCondition": {
+          "level": 1,
+          "phase": 1
+        }
+      },
+      {
+        "blackboard": [
+          {
+            "key": "damage_scale",
+            "value": 1.09
+          }
+        ],
+        "description": "在场时所有被阻挡的敌方单位受到的物理伤害提高9%<@ba.talpu>（+2%）</>",
+        "name": "弱点拆解",
+        "prefabKey": "1",
+        "rangeId": null,
+        "requiredPotentialRank": 4,
+        "unlockCondition": {
+          "level": 1,
+          "phase": 1
+        }
+      },
+      {
+        "blackboard": [
+          {
+            "key": "damage_scale",
+            "value": 1.14
+          }
+        ],
+        "description": "在场时所有被阻挡的敌方单位受到的物理伤害提高14%",
+        "name": "弱点拆解",
+        "prefabKey": "1",
+        "rangeId": null,
+        "requiredPotentialRank": 0,
+        "unlockCondition": {
+          "level": 1,
+          "phase": 2
+        }
+      },
+      {
+        "blackboard": [
+          {
+            "key": "damage_scale",
+            "value": 1.16
+          }
+        ],
+        "description": "在场时所有被阻挡的敌方单位受到的物理伤害提高16%<@ba.talpu>（+2%）</>",
+        "name": "弱点拆解",
+        "prefabKey": "1",
+        "rangeId": null,
+        "requiredPotentialRank": 4,
+        "unlockCondition": {
+          "level": 1,
+          "phase": 2
+        }
+      }
+    ]
+  }
+}

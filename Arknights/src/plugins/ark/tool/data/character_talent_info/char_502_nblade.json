@@ -1,0 +1,23 @@
+{
+  "1": {
+    "candidates": [
+      {
+        "blackboard": [
+          {
+            "key": "respawn_time",
+            "value": -30
+          }
+        ],
+        "description": "再部署时间-30秒",
+        "name": "快速重新部署",
+        "prefabKey": "1",
+        "rangeId": null,
+        "requiredPotentialRank": 0,
+        "unlockCondition": {
+          "level": 30,
+          "phase": 0
+        }
+      }
+    ]
+  }
+}
