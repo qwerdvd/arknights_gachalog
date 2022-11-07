@@ -1,0 +1,56 @@
+{
+  "skcom_atk_up[3]": {
+    "name": "攻击力强化·γ型",
+    "rangeId": null,
+    "description": "攻击力<@ba.vup>+{atk:0%}</>",
+    "skillType": 1,
+    "durationType": 0,
+    "spData": {
+      "spType": 1,
+      "levelUpCost": null,
+      "maxChargeTime": 1,
+      "spCost": 30,
+      "initSp": 15,
+      "increment": 1.0
+    },
+    "prefabId": "skcom_atk_up",
+    "duration": 30.0,
+    "blackboard": [
+      {
+        "key": "atk",
+        "value": 1.0
+      }
+    ]
+  },
+  "skchr_skfire_2": {
+    "name": "天坠之火",
+    "rangeId": null,
+    "description": "攻击间隔<@ba.vdown>增大</>，攻击变为从天空召唤陨石；陨石需要时间降落，落地后对大范围敌人造成相当于攻击力<@ba.vup>{attack@atk_scale:0%}</>的法术伤害，并使所有命中目标<$ba.stun>晕眩</><@ba.vup>{attack@stun}</>秒",
+    "skillType": 1,
+    "durationType": 0,
+    "spData": {
+      "spType": 1,
+      "levelUpCost": null,
+      "maxChargeTime": 1,
+      "spCost": 25,
+      "initSp": 0,
+      "increment": 1.0
+    },
+    "prefabId": "skchr_skfire_2",
+    "duration": 40.0,
+    "blackboard": [
+      {
+        "key": "base_attack_time",
+        "value": 0.7
+      },
+      {
+        "key": "attack@atk_scale",
+        "value": 2.4
+      },
+      {
+        "key": "attack@stun",
+        "value": 1.0
+      }
+    ]
+  }
+}

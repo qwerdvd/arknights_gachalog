@@ -1,0 +1,80 @@
+{
+  "skchr_pianst_1": {
+    "name": "纷飞十指",
+    "rangeId": null,
+    "description": "攻击力<@ba.vup>+{atk:0%}</>，法术抗性<@ba.vup>+{magic_resistance:0%}</>",
+    "skillType": 1,
+    "durationType": 0,
+    "spData": {
+      "spType": 1,
+      "levelUpCost": null,
+      "maxChargeTime": 1,
+      "spCost": 35,
+      "initSp": 20,
+      "increment": 1.0
+    },
+    "prefabId": "skchr_pianst_1",
+    "duration": 35.0,
+    "blackboard": [
+      {
+        "key": "atk",
+        "value": 0.8
+      },
+      {
+        "key": "magic_resistance",
+        "value": 1.0
+      }
+    ]
+  },
+  "skchr_pianst_2": {
+    "name": "曲惊四座",
+    "rangeId": null,
+    "description": "生命上限<@ba.vup>+{max_hp:0%}</>，自身更容易受到敌人攻击，每次受到攻击使自身攻击力提升<@ba.vup>+{atk:0%}</>（最多<@ba.vup>{max_stack_cnt}</>层），技能结束时对周围所有敌人造成相当于攻击力<@ba.vup>{atk_scale:0%}</>的法术伤害",
+    "skillType": 1,
+    "durationType": 0,
+    "spData": {
+      "spType": 1,
+      "levelUpCost": null,
+      "maxChargeTime": 1,
+      "spCost": 30,
+      "initSp": 10,
+      "increment": 1.0
+    },
+    "prefabId": "skchr_pianst_2",
+    "duration": 20.0,
+    "blackboard": [
+      {
+        "key": "max_hp",
+        "value": 1.0
+      },
+      {
+        "key": "atk",
+        "value": 0.3
+      },
+      {
+        "key": "max_stack_cnt",
+        "value": 10.0
+      },
+      {
+        "key": "atk_scale",
+        "value": 2.5
+      },
+      {
+        "key": "pianst_s_2_fxbound_1",
+        "value": 3.0
+      },
+      {
+        "key": "pianst_s_2_fxbound_2",
+        "value": 7.0
+      },
+      {
+        "key": "interval",
+        "value": 18.6
+      },
+      {
+        "key": "taunt_level",
+        "value": 1.0
+      }
+    ]
+  }
+}

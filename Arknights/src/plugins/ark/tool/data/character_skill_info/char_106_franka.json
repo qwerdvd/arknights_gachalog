@@ -1,0 +1,56 @@
+{
+  "skcom_quickattack[3]": {
+    "name": "迅捷打击·γ型",
+    "rangeId": null,
+    "description": "攻击力<@ba.vup>+{atk:0%}</>，攻击速度<@ba.vup>+{attack_speed}</>",
+    "skillType": 1,
+    "durationType": 0,
+    "spData": {
+      "spType": 1,
+      "levelUpCost": null,
+      "maxChargeTime": 1,
+      "spCost": 35,
+      "initSp": 15,
+      "increment": 1.0
+    },
+    "prefabId": "skcom_quickattack",
+    "duration": 35.0,
+    "blackboard": [
+      {
+        "key": "atk",
+        "value": 0.45
+      },
+      {
+        "key": "attack_speed",
+        "value": 45.0
+      }
+    ]
+  },
+  "skchr_franka_2": {
+    "name": "极致锋度",
+    "rangeId": null,
+    "description": "防御力<@ba.vdown>降至0</>，攻击力<@ba.vup>+{atk:0%}</>，天赋无视防御的概率提高至<@ba.vup>{talent_scale}倍</>",
+    "skillType": 1,
+    "durationType": 0,
+    "spData": {
+      "spType": 1,
+      "levelUpCost": null,
+      "maxChargeTime": 1,
+      "spCost": 20,
+      "initSp": 10,
+      "increment": 1.0
+    },
+    "prefabId": "skchr_franka_2",
+    "duration": 30.0,
+    "blackboard": [
+      {
+        "key": "atk",
+        "value": 1.0
+      },
+      {
+        "key": "talent_scale",
+        "value": 2.5
+      }
+    ]
+  }
+}

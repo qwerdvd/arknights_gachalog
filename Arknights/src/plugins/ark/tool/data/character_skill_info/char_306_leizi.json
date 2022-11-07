@@ -1,0 +1,48 @@
+{
+  "skcom_atk_up[3]": {
+    "name": "攻击力强化·γ型",
+    "rangeId": null,
+    "description": "攻击力<@ba.vup>+{atk:0%}</>",
+    "skillType": 1,
+    "durationType": 0,
+    "spData": {
+      "spType": 1,
+      "levelUpCost": null,
+      "maxChargeTime": 1,
+      "spCost": 30,
+      "initSp": 15,
+      "increment": 1.0
+    },
+    "prefabId": "skcom_atk_up",
+    "duration": 30.0,
+    "blackboard": [
+      {
+        "key": "atk",
+        "value": 1.0
+      }
+    ]
+  },
+  "skchr_leizi_2": {
+    "name": "初雷",
+    "rangeId": null,
+    "description": "攻击力<@ba.vup>+{atk:0%}</>，攻击在跳跃时<@ba.vup>不再降低伤害</>",
+    "skillType": 1,
+    "durationType": 0,
+    "spData": {
+      "spType": 1,
+      "levelUpCost": null,
+      "maxChargeTime": 1,
+      "spCost": 80,
+      "initSp": 50,
+      "increment": 1.0
+    },
+    "prefabId": "skchr_leizi_2",
+    "duration": 35.0,
+    "blackboard": [
+      {
+        "key": "atk",
+        "value": 1.5
+      }
+    ]
+  }
+}

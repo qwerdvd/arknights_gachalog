@@ -1,0 +1,56 @@
+{
+  "skchr_erato_1": {
+    "name": "安眠旋律",
+    "rangeId": null,
+    "description": "下一次攻击使敌人陷入<$ba.sleep>沉睡</><@ba.vup>{sleep}</>秒，并造成相当于攻击力<@ba.vup>{atk_scale:0%}</>的物理伤害",
+    "skillType": 2,
+    "durationType": 0,
+    "spData": {
+      "spType": 1,
+      "levelUpCost": null,
+      "maxChargeTime": 1,
+      "spCost": 9,
+      "initSp": 0,
+      "increment": 1.0
+    },
+    "prefabId": "skchr_erato_1",
+    "duration": 0.0,
+    "blackboard": [
+      {
+        "key": "atk_scale",
+        "value": 2.4
+      },
+      {
+        "key": "sleep",
+        "value": 5.0
+      }
+    ]
+  },
+  "skchr_erato_2": {
+    "name": "英雄赞歌",
+    "rangeId": null,
+    "description": "攻击力<@ba.vup>+{atk:0%}</>，攻击速度<@ba.vup>+{attack_speed}</>，优先攻击<$ba.sleep>沉睡</>的目标",
+    "skillType": 1,
+    "durationType": 0,
+    "spData": {
+      "spType": 1,
+      "levelUpCost": null,
+      "maxChargeTime": 1,
+      "spCost": 25,
+      "initSp": 15,
+      "increment": 1.0
+    },
+    "prefabId": "skchr_erato_2",
+    "duration": 20.0,
+    "blackboard": [
+      {
+        "key": "atk",
+        "value": 0.5
+      },
+      {
+        "key": "attack_speed",
+        "value": 50.0
+      }
+    ]
+  }
+}

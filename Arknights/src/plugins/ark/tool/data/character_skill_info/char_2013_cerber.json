@@ -1,0 +1,83 @@
+{
+  "skchr_cerber_1": {
+    "name": "“很冰的斧”",
+    "rangeId": null,
+    "description": "下次攻击的攻击力提升至<@ba.vup>{atk_scale:0%}</>，优先攻击没有被阻挡的目标，并令目标<$ba.root>束缚</><@ba.vup>{duration}</>秒\\n<@ba.rem>可充能{cnt}次</>",
+    "skillType": 2,
+    "durationType": 0,
+    "spData": {
+      "spType": 1,
+      "levelUpCost": null,
+      "maxChargeTime": 3,
+      "spCost": 6,
+      "initSp": 0,
+      "increment": 1.0
+    },
+    "prefabId": "skchr_cerber_1",
+    "duration": -1.0,
+    "blackboard": [
+      {
+        "key": "atk_scale",
+        "value": 2.1
+      },
+      {
+        "key": "duration",
+        "value": 3.0
+      },
+      {
+        "key": "cnt",
+        "value": 3.0
+      }
+    ]
+  },
+  "skchr_cerber_2": {
+    "name": "“很热的刀”",
+    "rangeId": null,
+    "description": "攻击间隔<@ba.vup>超大幅度缩短</>，优先攻击防御力最高的目标",
+    "skillType": 1,
+    "durationType": 0,
+    "spData": {
+      "spType": 1,
+      "levelUpCost": null,
+      "maxChargeTime": 1,
+      "spCost": 40,
+      "initSp": 25,
+      "increment": 1.0
+    },
+    "prefabId": "skchr_cerber_2",
+    "duration": 40.0,
+    "blackboard": [
+      {
+        "key": "base_attack_time",
+        "value": 0.33
+      }
+    ]
+  },
+  "skchr_cerber_3": {
+    "name": "“很重的枪”",
+    "rangeId": "3-3",
+    "description": "攻击范围<@ba.vup>扩大</>，攻击力<@ba.vup>+{atk:0%}</>，伤害类型变为<@ba.vup>物理</>，优先攻击防御力最低的目标，并令其失去特殊能力<@ba.vup>{attack@silence}</>秒",
+    "skillType": 1,
+    "durationType": 0,
+    "spData": {
+      "spType": 1,
+      "levelUpCost": null,
+      "maxChargeTime": 1,
+      "spCost": 80,
+      "initSp": 55,
+      "increment": 1.0
+    },
+    "prefabId": "skchr_cerber_3",
+    "duration": 60.0,
+    "blackboard": [
+      {
+        "key": "atk",
+        "value": 2.1
+      },
+      {
+        "key": "attack@silence",
+        "value": 5.0
+      }
+    ]
+  }
+}

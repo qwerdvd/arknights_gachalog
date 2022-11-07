@@ -1,0 +1,29 @@
+{
+  "sktok_beewax": {
+    "name": "沙之碑召唤",
+    "rangeId": "x-4",
+    "description": "出现时会对附近的敌人造成相当于攻击力<@ba.vup>{atk_scale:0%}</>的法术伤害，并使其<$ba.stun>晕眩</><@ba.vup>{stun}</>秒",
+    "skillType": 2,
+    "durationType": 0,
+    "spData": {
+      "spType": 1,
+      "levelUpCost": null,
+      "maxChargeTime": 0,
+      "spCost": 25,
+      "initSp": 10,
+      "increment": 1.0
+    },
+    "prefabId": "sktok_beewax",
+    "duration": 0.0,
+    "blackboard": [
+      {
+        "key": "atk_scale",
+        "value": 3.0
+      },
+      {
+        "key": "stun",
+        "value": 3.0
+      }
+    ]
+  }
+}

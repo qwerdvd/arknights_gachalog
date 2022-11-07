@@ -1,0 +1,76 @@
+{
+  "skcom_assist_cost[3]": {
+    "name": "支援号令·γ型",
+    "rangeId": null,
+    "description": "停止攻击，持续时间内回复总共<@ba.vup>{value}</>点部署费用",
+    "skillType": 1,
+    "durationType": 0,
+    "spData": {
+      "spType": 1,
+      "levelUpCost": null,
+      "maxChargeTime": 1,
+      "spCost": 26,
+      "initSp": 15,
+      "increment": 1.0
+    },
+    "prefabId": null,
+    "duration": 8.0,
+    "blackboard": [
+      {
+        "key": "value",
+        "value": 18.0
+      },
+      {
+        "key": "interval",
+        "value": 0.44
+      },
+      {
+        "key": "cost",
+        "value": 1.0
+      }
+    ]
+  },
+  "skchr_elysm_2": {
+    "name": "聆听",
+    "rangeId": "x-2",
+    "description": "停止攻击，逐渐回复总共<@ba.vup>{value}</>点部署费用，并在持续时间内锁定周围至多<@ba.vup>{max_target}</>个敌人\\n被锁定的单位移动速度<@ba.vup>-{-move_speed:0%}</>，防御力<@ba.vup>-{-def:0%}</>，失去<$ba.invisible>隐匿</>效果",
+    "skillType": 1,
+    "durationType": 0,
+    "spData": {
+      "spType": 1,
+      "levelUpCost": null,
+      "maxChargeTime": 1,
+      "spCost": 30,
+      "initSp": 16,
+      "increment": 1.0
+    },
+    "prefabId": "skchr_elysm_2",
+    "duration": 15.0,
+    "blackboard": [
+      {
+        "key": "max_target",
+        "value": 4.0
+      },
+      {
+        "key": "move_speed",
+        "value": -0.6
+      },
+      {
+        "key": "def",
+        "value": -0.35
+      },
+      {
+        "key": "value",
+        "value": 20.0
+      },
+      {
+        "key": "interval",
+        "value": 0.75
+      },
+      {
+        "key": "cost",
+        "value": 1.0
+      }
+    ]
+  }
+}

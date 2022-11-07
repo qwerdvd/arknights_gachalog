@@ -1,0 +1,68 @@
+{
+  "skchr_nightm_1": {
+    "name": "灵魂汲取",
+    "rangeId": null,
+    "description": "每次攻击对敌人造成伤害的同时会对范围内至多<@ba.vup>{attack@max_target}</>名友方单位恢复相当于伤害量<@ba.vup>{attack@heal_scale:0%}</>的生命值",
+    "skillType": 1,
+    "durationType": 0,
+    "spData": {
+      "spType": 1,
+      "levelUpCost": null,
+      "maxChargeTime": 1,
+      "spCost": 80,
+      "initSp": 50,
+      "increment": 1.0
+    },
+    "prefabId": "skchr_nightm_1",
+    "duration": 60.0,
+    "blackboard": [
+      {
+        "key": "attack@heal_scale",
+        "value": 1.0
+      },
+      {
+        "key": "attack@max_target",
+        "value": 2.0
+      }
+    ]
+  },
+  "skchr_nightm_2": {
+    "name": "夜魇魔影",
+    "rangeId": null,
+    "description": "立即对攻击范围内最多<@ba.vup>{max_target}</>名敌人施加梦魇效果：\\n敌人的移动速度<@ba.vup>-{-move_speed:0%}</>，并令其在移动时受到正比于距离的<@ba.vup>真实</>伤害，持续<@ba.vup>{duration}</>秒",
+    "skillType": 2,
+    "durationType": 0,
+    "spData": {
+      "spType": 1,
+      "levelUpCost": null,
+      "maxChargeTime": 1,
+      "spCost": 20,
+      "initSp": 0,
+      "increment": 1.0
+    },
+    "prefabId": "skchr_nightm_2",
+    "duration": -1.0,
+    "blackboard": [
+      {
+        "key": "move_speed",
+        "value": -0.6
+      },
+      {
+        "key": "max_target",
+        "value": 5.0
+      },
+      {
+        "key": "interval",
+        "value": 0.066
+      },
+      {
+        "key": "value",
+        "value": 1200.0
+      },
+      {
+        "key": "duration",
+        "value": 10.0
+      }
+    ]
+  }
+}

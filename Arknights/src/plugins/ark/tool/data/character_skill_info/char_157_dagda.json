@@ -1,0 +1,56 @@
+{
+  "skchr_dagda_1": {
+    "name": "反制技巧",
+    "rangeId": null,
+    "description": "使下次受到的物理伤害减少<@ba.vup>{damage_resistance:0%}</>，触发后下次攻击的攻击力提高至<@ba.vup>{attack@defensive_atk_scale:0%}</>",
+    "skillType": 2,
+    "durationType": 0,
+    "spData": {
+      "spType": 4,
+      "levelUpCost": null,
+      "maxChargeTime": 1,
+      "spCost": 4,
+      "initSp": 3,
+      "increment": 1.0
+    },
+    "prefabId": "skchr_dagda_1",
+    "duration": 0.0,
+    "blackboard": [
+      {
+        "key": "damage_resistance",
+        "value": 0.6
+      },
+      {
+        "key": "attack@defensive_atk_scale",
+        "value": 2.1
+      }
+    ]
+  },
+  "skchr_dagda_2": {
+    "name": "精准捕杀",
+    "rangeId": null,
+    "description": "攻击力<@ba.vup>+{atk:0%}</>，攻击变为二连击，天赋发动概率提升至<@ba.vup>{talent@prob:0%}</>",
+    "skillType": 1,
+    "durationType": 0,
+    "spData": {
+      "spType": 1,
+      "levelUpCost": null,
+      "maxChargeTime": 1,
+      "spCost": 30,
+      "initSp": 15,
+      "increment": 1.0
+    },
+    "prefabId": "skchr_dagda_2",
+    "duration": 15.0,
+    "blackboard": [
+      {
+        "key": "atk",
+        "value": 0.35
+      },
+      {
+        "key": "talent@prob",
+        "value": 0.6
+      }
+    ]
+  }
+}

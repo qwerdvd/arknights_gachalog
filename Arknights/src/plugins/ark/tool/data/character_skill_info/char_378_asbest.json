@@ -1,0 +1,60 @@
+{
+  "skchr_asbest_1": {
+    "name": "固守模式",
+    "rangeId": null,
+    "description": "抵消下一次受到的<@ba.vup>法术</>伤害，且技能持续时间内受到的<@ba.vup>法术</>伤害<@ba.vup>-{fake:0%}</>",
+    "skillType": 1,
+    "durationType": 0,
+    "spData": {
+      "spType": 1,
+      "levelUpCost": null,
+      "maxChargeTime": 1,
+      "spCost": 20,
+      "initSp": 0,
+      "increment": 1.0
+    },
+    "prefabId": "skchr_asbest_1",
+    "duration": 20.0,
+    "blackboard": [
+      {
+        "key": "damage_scale",
+        "value": 0.7
+      },
+      {
+        "key": "fake",
+        "value": 0.3
+      }
+    ]
+  },
+  "skchr_asbest_2": {
+    "name": "火电模式",
+    "rangeId": "3-13",
+    "description": "攻击间隔<@ba.vdown>增大</>，攻击力<@ba.vup>+{atk:0%}</>，防御力<@ba.vup>+{def:0%}</>，攻击范围<@ba.vup>更加扩大</>，攻击变为群体攻击",
+    "skillType": 1,
+    "durationType": 0,
+    "spData": {
+      "spType": 1,
+      "levelUpCost": null,
+      "maxChargeTime": 1,
+      "spCost": 50,
+      "initSp": 30,
+      "increment": 1.0
+    },
+    "prefabId": "skchr_asbest_2",
+    "duration": 50.0,
+    "blackboard": [
+      {
+        "key": "atk",
+        "value": 0.9
+      },
+      {
+        "key": "def",
+        "value": 0.6
+      },
+      {
+        "key": "base_attack_time",
+        "value": 0.4
+      }
+    ]
+  }
+}

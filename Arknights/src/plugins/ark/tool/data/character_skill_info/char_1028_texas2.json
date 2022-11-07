@@ -1,0 +1,119 @@
+{
+  "skchr_texas2_1": {
+    "name": "细雨无声",
+    "rangeId": null,
+    "description": "部署后攻击力<@ba.vup>+{atk:0%}</>，攻击使命中目标失去特殊能力<@ba.vup>{attack@silence}</>秒，期间目标每秒受到<@ba.vup>{attack@texas2_s_1[dot].dot_damage}</>点法术伤害",
+    "skillType": 0,
+    "durationType": 0,
+    "spData": {
+      "spType": 8,
+      "levelUpCost": null,
+      "maxChargeTime": 1,
+      "spCost": 0,
+      "initSp": 0,
+      "increment": 1.0
+    },
+    "prefabId": "skchr_texas2_1",
+    "duration": 12.0,
+    "blackboard": [
+      {
+        "key": "atk",
+        "value": 0.7
+      },
+      {
+        "key": "attack@texas2_s_1[dot].duration",
+        "value": 10.0
+      },
+      {
+        "key": "attack@texas2_s_1[dot].dot_damage",
+        "value": 400.0
+      },
+      {
+        "key": "attack@texas2_s_1[dot].interval",
+        "value": 1.0
+      },
+      {
+        "key": "attack@silence",
+        "value": 10.0
+      }
+    ]
+  },
+  "skchr_texas2_2": {
+    "name": "阵雨连绵",
+    "rangeId": "x-4",
+    "description": "部署后立即对周围所有敌人造成相当于攻击力<@ba.vup>{atk_scale:0%}</>的法术伤害，并使命中目标在<@ba.vup>{debuff_duration}</>秒内法术抗性<@ba.vup>-{-magic_resistance:0%}</>；攻击力<@ba.vup>+{atk:0%}</>，攻击变为二连击并造成法术伤害",
+    "skillType": 0,
+    "durationType": 0,
+    "spData": {
+      "spType": 8,
+      "levelUpCost": null,
+      "maxChargeTime": 1,
+      "spCost": 0,
+      "initSp": 0,
+      "increment": 1.0
+    },
+    "prefabId": "skchr_texas2_2",
+    "duration": 10.0,
+    "blackboard": [
+      {
+        "key": "atk",
+        "value": 0.55
+      },
+      {
+        "key": "magic_resistance",
+        "value": -0.3
+      },
+      {
+        "key": "atk_scale",
+        "value": 2.4
+      },
+      {
+        "key": "debuff_duration",
+        "value": 10.0
+      }
+    ]
+  },
+  "skchr_texas2_3": {
+    "name": "剑雨滂沱",
+    "rangeId": "x-4",
+    "description": "部署后立即对周围所有敌人造成两次相当于攻击力<@ba.vup>{appear.atk_scale:0%}</>的法术伤害并使目标<$ba.stun>晕眩</><@ba.vup>{appear.stun}</>秒，之后每秒释放剑雨攻击范围内最多<@ba.vup>{max_target}</>个不同的目标，造成攻击力<@ba.vup>{atk_scale:0%}</>的法术伤害和<@ba.vup>{stun}</>秒<$ba.stun>晕眩</>",
+    "skillType": 0,
+    "durationType": 0,
+    "spData": {
+      "spType": 8,
+      "levelUpCost": null,
+      "maxChargeTime": 1,
+      "spCost": 0,
+      "initSp": 0,
+      "increment": 1.0
+    },
+    "prefabId": "skchr_texas2_3",
+    "duration": 8.0,
+    "blackboard": [
+      {
+        "key": "atk_scale",
+        "value": 1.3
+      },
+      {
+        "key": "stun",
+        "value": 0.2
+      },
+      {
+        "key": "max_target",
+        "value": 4.0
+      },
+      {
+        "key": "texas2_s_3[sword].interval",
+        "value": 1.0
+      },
+      {
+        "key": "appear.atk_scale",
+        "value": 1.65
+      },
+      {
+        "key": "appear.stun",
+        "value": 2.0
+      }
+    ]
+  }
+}

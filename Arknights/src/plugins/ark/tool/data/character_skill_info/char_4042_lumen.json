@@ -1,0 +1,95 @@
+{
+  "skchr_lumen_1": {
+    "name": "沐雨",
+    "rangeId": null,
+    "description": "下次攻击使目标和周围的友军每秒受到相当于<@ba.vup>{aura.heal_scale:0%}</>流明攻击力的治疗效果，持续<@ba.vup>{aura.projectile_life_time}</>秒",
+    "skillType": 2,
+    "durationType": 0,
+    "spData": {
+      "spType": 1,
+      "levelUpCost": null,
+      "maxChargeTime": 1,
+      "spCost": 10,
+      "initSp": 0,
+      "increment": 1.0
+    },
+    "prefabId": "skchr_lumen_1",
+    "duration": -1.0,
+    "blackboard": [
+      {
+        "key": "aura.heal_scale",
+        "value": 0.55
+      },
+      {
+        "key": "aura.projectile_life_time",
+        "value": 5.0
+      },
+      {
+        "key": "aura.interval",
+        "value": 1.0
+      }
+    ]
+  },
+  "skchr_lumen_2": {
+    "name": "沛霖",
+    "rangeId": null,
+    "description": "立刻恢复攻击范围内最多<@ba.vup>{max_target}</>名友方单位相当于攻击力<@ba.vup>{heal_scale:0%}</>的生命；\\n<$ba.charged>蓄力</>额外效果：并解除目标所受的<$ba.debuff>异常状态</>",
+    "skillType": 1,
+    "durationType": 0,
+    "spData": {
+      "spType": 1,
+      "levelUpCost": null,
+      "maxChargeTime": 2,
+      "spCost": 13,
+      "initSp": 5,
+      "increment": 1.0
+    },
+    "prefabId": "skchr_lumen_2",
+    "duration": -1.0,
+    "blackboard": [
+      {
+        "key": "heal_scale",
+        "value": 2.6
+      },
+      {
+        "key": "max_target",
+        "value": 3.0
+      }
+    ]
+  },
+  "skchr_lumen_3": {
+    "name": "灯火不灭",
+    "rangeId": null,
+    "description": "攻击力<@ba.vup>+{atk:0%}</>，攻击速度<@ba.vup>+{attack_speed}</>，优先治疗处于<$ba.debuff>异常状态</>中的单位；只在治疗<$ba.debuff>异常状态</>中的单位时会消耗子弹，使该次治疗量提升至攻击力的<@ba.vup>{heal_scale:0%}</>并解除目标所受的<$ba.debuff>异常状态</>\\n<@ba.rem>攻击装有<@ba.vup>{attack@trigger_time}</>发子弹，打完后技能结束（期间可随时停止技能）</>",
+    "skillType": 1,
+    "durationType": 0,
+    "spData": {
+      "spType": 1,
+      "levelUpCost": null,
+      "maxChargeTime": 1,
+      "spCost": 50,
+      "initSp": 0,
+      "increment": 1.0
+    },
+    "prefabId": "skchr_lumen_3",
+    "duration": -1.0,
+    "blackboard": [
+      {
+        "key": "attack_speed",
+        "value": 30.0
+      },
+      {
+        "key": "heal_scale",
+        "value": 2.0
+      },
+      {
+        "key": "attack@trigger_time",
+        "value": 8.0
+      },
+      {
+        "key": "atk",
+        "value": 0.55
+      }
+    ]
+  }
+}

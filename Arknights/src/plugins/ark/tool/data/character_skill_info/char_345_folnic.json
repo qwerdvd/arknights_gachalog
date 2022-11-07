@@ -1,0 +1,56 @@
+{
+  "skchr_folnic_1": {
+    "name": "最大剂量输注",
+    "rangeId": null,
+    "description": "攻击范围<@ba.vup>+{ability_range_forward_extend}格</>，攻击力<@ba.vup>+{atk:0%}</>",
+    "skillType": 1,
+    "durationType": 0,
+    "spData": {
+      "spType": 1,
+      "levelUpCost": null,
+      "maxChargeTime": 1,
+      "spCost": 30,
+      "initSp": 20,
+      "increment": 1.0
+    },
+    "prefabId": "skchr_folnic_1",
+    "duration": 40.0,
+    "blackboard": [
+      {
+        "key": "atk",
+        "value": 0.8
+      },
+      {
+        "key": "ability_range_forward_extend",
+        "value": 2.0
+      }
+    ]
+  },
+  "skchr_folnic_2": {
+    "name": "复合型药物弹片",
+    "rangeId": null,
+    "description": "攻击变为射出复合药剂弹片（优先选择敌人），弹片击中时回复周围友方单位相当于攻击力<@ba.vup>{attack@heal_scale:0%}</>的生命，并对敌人造成相当于攻击力<@ba.vup>{attack@atk_scale:0%}</>的法术伤害",
+    "skillType": 1,
+    "durationType": 0,
+    "spData": {
+      "spType": 1,
+      "levelUpCost": null,
+      "maxChargeTime": 1,
+      "spCost": 40,
+      "initSp": 20,
+      "increment": 1.0
+    },
+    "prefabId": "skchr_folnic_2",
+    "duration": 30.0,
+    "blackboard": [
+      {
+        "key": "attack@heal_scale",
+        "value": 1.5
+      },
+      {
+        "key": "attack@atk_scale",
+        "value": 2.0
+      }
+    ]
+  }
+}

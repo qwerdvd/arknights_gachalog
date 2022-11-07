@@ -1,0 +1,20 @@
+{
+  "sktok_gunctrl": {
+    "name": "开火",
+    "rangeId": null,
+    "description": "-",
+    "skillType": 2,
+    "durationType": 0,
+    "spData": {
+      "spType": 1,
+      "levelUpCost": null,
+      "maxChargeTime": 1,
+      "spCost": 120,
+      "initSp": 60,
+      "increment": 1.0
+    },
+    "prefabId": "sktok_gunctrl",
+    "duration": -1.0,
+    "blackboard": []
+  }
+}

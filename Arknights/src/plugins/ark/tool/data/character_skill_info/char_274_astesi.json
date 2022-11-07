@@ -1,0 +1,60 @@
+{
+  "skchr_astesi_1": {
+    "name": "星座守护",
+    "rangeId": null,
+    "description": "攻击力<@ba.vup>+{atk:0%}</>，防御力<@ba.vup>+{def:0%}</>",
+    "skillType": 1,
+    "durationType": 0,
+    "spData": {
+      "spType": 1,
+      "levelUpCost": null,
+      "maxChargeTime": 1,
+      "spCost": 30,
+      "initSp": 10,
+      "increment": 1.0
+    },
+    "prefabId": "skchr_astesi_1",
+    "duration": 30.0,
+    "blackboard": [
+      {
+        "key": "atk",
+        "value": 0.5
+      },
+      {
+        "key": "def",
+        "value": 0.8
+      }
+    ]
+  },
+  "skchr_astesi_2": {
+    "name": "星辉剑",
+    "rangeId": null,
+    "description": "攻击力<@ba.vup>+{atk:0%}</>，防御力<@ba.vup>+{def:0%}</>，阻挡数<@ba.vup>+{block_cnt}</>，同时攻击阻挡的所有敌人",
+    "skillType": 1,
+    "durationType": 0,
+    "spData": {
+      "spType": 1,
+      "levelUpCost": null,
+      "maxChargeTime": 1,
+      "spCost": 20,
+      "initSp": 10,
+      "increment": 1.0
+    },
+    "prefabId": "skchr_astesi_2",
+    "duration": 15.0,
+    "blackboard": [
+      {
+        "key": "atk",
+        "value": 0.8
+      },
+      {
+        "key": "def",
+        "value": 0.8
+      },
+      {
+        "key": "block_cnt",
+        "value": 1.0
+      }
+    ]
+  }
+}

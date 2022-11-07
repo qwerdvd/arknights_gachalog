@@ -1,0 +1,83 @@
+{
+  "skchr_svrash_1": {
+    "name": "强力击·γ型",
+    "rangeId": null,
+    "description": "下次攻击的攻击力提高至<@ba.vup>{atk_scale:0%}</>",
+    "skillType": 2,
+    "durationType": 0,
+    "spData": {
+      "spType": 2,
+      "levelUpCost": null,
+      "maxChargeTime": 1,
+      "spCost": 2,
+      "initSp": 0,
+      "increment": 1.0
+    },
+    "prefabId": "skchr_svrash_1",
+    "duration": 0.0,
+    "blackboard": [
+      {
+        "key": "atk_scale",
+        "value": 2.9
+      }
+    ]
+  },
+  "skchr_svrash_2": {
+    "name": "雪境生存法则",
+    "rangeId": "1-2",
+    "description": "<@ba.rem>可以在下列状态和初始状态间切换：</>\\n攻击范围<@ba.vdown>缩小</>，防御力<@ba.vup>+{def:0%}</>，每秒恢复最大生命的<@ba.vup>{HP_RECOVERY_PER_SEC_BY_MAX_HP_RATIO:0.0%}</>",
+    "skillType": 1,
+    "durationType": 0,
+    "spData": {
+      "spType": 1,
+      "levelUpCost": null,
+      "maxChargeTime": 1,
+      "spCost": 5,
+      "initSp": 0,
+      "increment": 1.0
+    },
+    "prefabId": "skchr_svrash_2",
+    "duration": 0.0,
+    "blackboard": [
+      {
+        "key": "def",
+        "value": 1.0
+      },
+      {
+        "key": "hp_recovery_per_sec_by_max_hp_ratio",
+        "value": 0.06
+      }
+    ]
+  },
+  "skchr_svrash_3": {
+    "name": "真银斩",
+    "rangeId": "3-7",
+    "description": "防御力<@ba.vdown>-{-def:0%}</>，攻击力<@ba.vup>+{atk:0%}</>，攻击范围<@ba.vup>扩大</>，同时攻击至多<@ba.vup>{attack@max_target}</>个目标（视为近距离攻击）",
+    "skillType": 1,
+    "durationType": 0,
+    "spData": {
+      "spType": 1,
+      "levelUpCost": null,
+      "maxChargeTime": 1,
+      "spCost": 90,
+      "initSp": 75,
+      "increment": 1.0
+    },
+    "prefabId": "skchr_svrash_3",
+    "duration": 30.0,
+    "blackboard": [
+      {
+        "key": "def",
+        "value": -0.7
+      },
+      {
+        "key": "atk",
+        "value": 2.0
+      },
+      {
+        "key": "attack@max_target",
+        "value": 6.0
+      }
+    ]
+  }
+}

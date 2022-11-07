@@ -1,0 +1,99 @@
+{
+  "skchr_judge_1": {
+    "name": "一锤定音",
+    "rangeId": null,
+    "description": "下次攻击额外造成相当于攻击力<@ba.vup>{atk_scale_2:0%}</>的法术伤害\\n<$ba.charged>蓄力</>额外效果：攻击时攻击力提升至<@ba.vup>{judge_s_1_enhance_checker.atk_scale:0%}</>并使目标晕眩<@ba.vup>{stun}</>秒",
+    "skillType": 2,
+    "durationType": 0,
+    "spData": {
+      "spType": 1,
+      "levelUpCost": null,
+      "maxChargeTime": 2,
+      "spCost": 3,
+      "initSp": 0,
+      "increment": 1.0
+    },
+    "prefabId": "skchr_judge_1",
+    "duration": -1.0,
+    "blackboard": [
+      {
+        "key": "atk_scale_2",
+        "value": 2.0
+      },
+      {
+        "key": "judge_s_1_enhance_checker.atk_scale",
+        "value": 2.0
+      },
+      {
+        "key": "stun",
+        "value": 5.0
+      }
+    ]
+  },
+  "skchr_judge_2": {
+    "name": "坚心苦修",
+    "rangeId": "x-4",
+    "description": "停止攻击，获得<@ba.vup>{damage_resistance:0%}</>的<$ba.protect>庇护</>，每秒对周围所有地面敌人造成相当于攻击力<@ba.vup>{atk_scale:0%}</>的法术伤害，技能期间第一天赋的<$ba.barrier>屏障</>获取效果提升<@ba.vup>{shield_scale:0%}</>",
+    "skillType": 1,
+    "durationType": 0,
+    "spData": {
+      "spType": 1,
+      "levelUpCost": null,
+      "maxChargeTime": 1,
+      "spCost": 30,
+      "initSp": 20,
+      "increment": 1.0
+    },
+    "prefabId": "skchr_judge_2",
+    "duration": 20.0,
+    "blackboard": [
+      {
+        "key": "damage_resistance",
+        "value": 0.6
+      },
+      {
+        "key": "atk_scale",
+        "value": 1.4
+      },
+      {
+        "key": "shield_scale",
+        "value": 1.0
+      }
+    ]
+  },
+  "skchr_judge_3": {
+    "name": "披荆斩棘",
+    "rangeId": null,
+    "description": "立即获得相当于生命上限<@ba.vup>{hp_ratio:0%}</>的<$ba.barrier>屏障</>，攻击间隔<@ba.vdown>增大</>，攻击力<@ba.vup>+{atk:0%}</>，自身更容易受到敌人攻击",
+    "skillType": 1,
+    "durationType": 0,
+    "spData": {
+      "spType": 4,
+      "levelUpCost": null,
+      "maxChargeTime": 1,
+      "spCost": 20,
+      "initSp": 0,
+      "increment": 1.0
+    },
+    "prefabId": "skchr_judge_3",
+    "duration": 30.0,
+    "blackboard": [
+      {
+        "key": "hp_ratio",
+        "value": 1.3
+      },
+      {
+        "key": "base_attack_time",
+        "value": 0.9
+      },
+      {
+        "key": "atk",
+        "value": 4.0
+      },
+      {
+        "key": "taunt_level",
+        "value": 1.0
+      }
+    ]
+  }
+}

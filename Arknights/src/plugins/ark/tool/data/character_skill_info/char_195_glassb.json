@@ -1,0 +1,52 @@
+{
+  "skchr_glassb_1": {
+    "name": "专心致志",
+    "rangeId": null,
+    "description": "攻击间隔<@ba.vup>极大幅度缩短</>",
+    "skillType": 1,
+    "durationType": 0,
+    "spData": {
+      "spType": 1,
+      "levelUpCost": null,
+      "maxChargeTime": 1,
+      "spCost": 40,
+      "initSp": 20,
+      "increment": 1.0
+    },
+    "prefabId": "skchr_glassb_1",
+    "duration": 30.0,
+    "blackboard": [
+      {
+        "key": "base_attack_time",
+        "value": -1.1
+      }
+    ]
+  },
+  "skchr_glassb_2": {
+    "name": "文学风暴",
+    "rangeId": "x-2",
+    "description": "攻击力<@ba.vup>+{atk:0%}</>，攻击范围<@ba.vup>扩大</>，额外攻击<@ba.vup>两</>个目标",
+    "skillType": 1,
+    "durationType": 0,
+    "spData": {
+      "spType": 1,
+      "levelUpCost": null,
+      "maxChargeTime": 1,
+      "spCost": 50,
+      "initSp": 30,
+      "increment": 1.0
+    },
+    "prefabId": "skchr_glassb_2",
+    "duration": 25.0,
+    "blackboard": [
+      {
+        "key": "atk",
+        "value": 0.75
+      },
+      {
+        "key": "attack@max_target",
+        "value": 3.0
+      }
+    ]
+  }
+}

@@ -1,0 +1,56 @@
+{
+  "skchr_zebra_1": {
+    "name": "应急迷彩",
+    "rangeId": "x-4",
+    "description": "下一次攻击会使周围血量不足一半的一名友方干员获得<$ba.camou>迷彩</>并每秒恢复<@ba.vup>{HP_RECOVERY_PER_SEC}</>点生命，持续<@ba.vup>{duration}</>秒（不会对已有该技能效果的干员重复释放）\\n<@ba.rem>可充能{cnt}次</>",
+    "skillType": 2,
+    "durationType": 0,
+    "spData": {
+      "spType": 1,
+      "levelUpCost": null,
+      "maxChargeTime": 2,
+      "spCost": 4,
+      "initSp": 0,
+      "increment": 1.0
+    },
+    "prefabId": "skchr_zebra_1",
+    "duration": 4.0,
+    "blackboard": [
+      {
+        "key": "hp_recovery_per_sec",
+        "value": 70.0
+      },
+      {
+        "key": "cnt",
+        "value": 2.0
+      }
+    ]
+  },
+  "skchr_zebra_2": {
+    "name": "群体迷彩",
+    "rangeId": "x-5",
+    "description": "停止攻击敌人；防御力<@ba.vup>+{def:0%}</>，生命上限<@ba.vup>+{max_hp:0%}</>，使自身和周围4格内的友方干员获得<$ba.camou>迷彩</>",
+    "skillType": 1,
+    "durationType": 0,
+    "spData": {
+      "spType": 1,
+      "levelUpCost": null,
+      "maxChargeTime": 1,
+      "spCost": 40,
+      "initSp": 25,
+      "increment": 1.0
+    },
+    "prefabId": "skchr_zebra_2",
+    "duration": 20.0,
+    "blackboard": [
+      {
+        "key": "max_hp",
+        "value": 0.55
+      },
+      {
+        "key": "def",
+        "value": 0.55
+      }
+    ]
+  }
+}

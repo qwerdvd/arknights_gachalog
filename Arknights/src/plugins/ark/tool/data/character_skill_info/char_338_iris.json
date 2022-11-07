@@ -1,0 +1,60 @@
+{
+  "skchr_iris_1": {
+    "name": "童话守卫者",
+    "rangeId": "4-1",
+    "description": "攻击范围<@ba.vup>改变</>，攻击间隔<@ba.vup>大幅度缩短</>，每次攻击造成相当于攻击力<@ba.vup>{attack@atk_scale:0%}</>的法术伤害",
+    "skillType": 1,
+    "durationType": 0,
+    "spData": {
+      "spType": 1,
+      "levelUpCost": null,
+      "maxChargeTime": 1,
+      "spCost": 15,
+      "initSp": 5,
+      "increment": 1.0
+    },
+    "prefabId": "skchr_iris_1",
+    "duration": 5.0,
+    "blackboard": [
+      {
+        "key": "attack@atk_scale",
+        "value": 0.5
+      },
+      {
+        "key": "base_attack_time",
+        "value": 0.2
+      }
+    ]
+  },
+  "skchr_iris_2": {
+    "name": "梦乡摇篮",
+    "rangeId": null,
+    "description": "立即使攻击范围内的至多<@ba.vup>{max_target}</>个敌人陷入<$ba.sleep>沉睡</><@ba.vup>{sleep}</>秒，在其醒来时会对周围小范围内所有敌人造成相当于攻击力<@ba.vup>{atk_scale:0%}</>的法术伤害",
+    "skillType": 1,
+    "durationType": 0,
+    "spData": {
+      "spType": 1,
+      "levelUpCost": null,
+      "maxChargeTime": 1,
+      "spCost": 30,
+      "initSp": 10,
+      "increment": 1.0
+    },
+    "prefabId": "skchr_iris_2",
+    "duration": 0.0,
+    "blackboard": [
+      {
+        "key": "max_target",
+        "value": 2.0
+      },
+      {
+        "key": "atk_scale",
+        "value": 3.0
+      },
+      {
+        "key": "sleep",
+        "value": 7.0
+      }
+    ]
+  }
+}

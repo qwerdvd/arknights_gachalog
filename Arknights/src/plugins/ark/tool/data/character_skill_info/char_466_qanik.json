@@ -1,0 +1,68 @@
+{
+  "skchr_qanik_1": {
+    "name": "冻风",
+    "rangeId": null,
+    "description": "攻击速度<@ba.vup>+{attack_speed}</>，优先攻击空中单位",
+    "skillType": 1,
+    "durationType": 0,
+    "spData": {
+      "spType": 1,
+      "levelUpCost": null,
+      "maxChargeTime": 1,
+      "spCost": 30,
+      "initSp": 15,
+      "increment": 1.0
+    },
+    "prefabId": "skchr_qanik_1",
+    "duration": 30.0,
+    "blackboard": [
+      {
+        "key": "attack_speed",
+        "value": 90.0
+      },
+      {
+        "key": "mode",
+        "value": 1.0
+      }
+    ]
+  },
+  "skchr_qanik_2": {
+    "name": "坠雪",
+    "rangeId": null,
+    "description": "使范围内最多<@ba.vup>{max_target}</>名地面敌人每<@ba.vup>{interval}</>秒受到一次相当于攻击力<@ba.vup>{trigger_atk_scale:0%}</>的法术伤害并<$ba.levitate>浮空</><@ba.vup>{levitate_duration}</>秒，目标<$ba.levitate>浮空</>结束时会对周围小范围内所有敌人造成相当于攻击力<@ba.vup>{critical_damage_scale:0%}</>的法术伤害",
+    "skillType": 1,
+    "durationType": 0,
+    "spData": {
+      "spType": 1,
+      "levelUpCost": null,
+      "maxChargeTime": 1,
+      "spCost": 30,
+      "initSp": 10,
+      "increment": 1.0
+    },
+    "prefabId": "skchr_qanik_2",
+    "duration": 7.0,
+    "blackboard": [
+      {
+        "key": "max_target",
+        "value": 2.0
+      },
+      {
+        "key": "interval",
+        "value": 0.5
+      },
+      {
+        "key": "trigger_atk_scale",
+        "value": 0.75
+      },
+      {
+        "key": "critical_damage_scale",
+        "value": 3.0
+      },
+      {
+        "key": "levitate_duration",
+        "value": 7.0
+      }
+    ]
+  }
+}

@@ -1,0 +1,60 @@
+{
+  "skcom_magic_rage[3]": {
+    "name": "战术咏唱·γ型",
+    "rangeId": null,
+    "description": "攻击速度<@ba.vup>+{attack_speed}</>",
+    "skillType": 1,
+    "durationType": 0,
+    "spData": {
+      "spType": 1,
+      "levelUpCost": null,
+      "maxChargeTime": 1,
+      "spCost": 30,
+      "initSp": 15,
+      "increment": 1.0
+    },
+    "prefabId": "skcom_attack_speed_up",
+    "duration": 30.0,
+    "blackboard": [
+      {
+        "key": "attack_speed",
+        "value": 90.0
+      }
+    ]
+  },
+  "skchr_rockr_2": {
+    "name": "自负此轭",
+    "rangeId": null,
+    "description": "攻击速度<@ba.vup>+{attack_speed}</>，释放浮游单元锁定敌人攻击\\n<$ba.overdrive>过载</>：特性浮游单元伤害上限提升至<@ba.vup>{scale}</>倍，攻击力<@ba.vup>+{atk:0%}</>，技能结束后<$ba.stun>晕眩</>过载持续时间的等长时间\\n<@ba.rem>浮游单元锁敌后直至敌人被击杀或技能结束后返回干员身边，可随时主动关闭技能</>",
+    "skillType": 1,
+    "durationType": 0,
+    "spData": {
+      "spType": 1,
+      "levelUpCost": null,
+      "maxChargeTime": 1,
+      "spCost": 40,
+      "initSp": 25,
+      "increment": 1.0
+    },
+    "prefabId": "skchr_rockr_2",
+    "duration": 40.0,
+    "blackboard": [
+      {
+        "key": "atk",
+        "value": 0.5
+      },
+      {
+        "key": "attack_speed",
+        "value": 80.0
+      },
+      {
+        "key": "attack@cnt",
+        "value": 0.0
+      },
+      {
+        "key": "scale",
+        "value": 2.0
+      }
+    ]
+  }
+}

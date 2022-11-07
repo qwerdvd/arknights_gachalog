@@ -1,0 +1,60 @@
+{
+  "skchr_ceylon_1": {
+    "name": "集中式水疗",
+    "rangeId": null,
+    "description": "下次治疗时的治疗量提升至攻击力的<@ba.vup>{heal_scale:0%}</>，并且不会因特性效果而降低\\n<@ba.rem>可以充能{cnt}次</>",
+    "skillType": 2,
+    "durationType": 0,
+    "spData": {
+      "spType": 1,
+      "levelUpCost": null,
+      "maxChargeTime": 3,
+      "spCost": 8,
+      "initSp": 0,
+      "increment": 1.0
+    },
+    "prefabId": "skchr_ceylon_1",
+    "duration": 0.0,
+    "blackboard": [
+      {
+        "key": "heal_scale",
+        "value": 2.0
+      },
+      {
+        "key": "cnt",
+        "value": 3.0
+      }
+    ]
+  },
+  "skchr_ceylon_2": {
+    "name": "水灵庇护",
+    "rangeId": null,
+    "description": "攻击力<@ba.vup>+{atk:0%}</>，治疗目标数+1，持续时间内攻击范围内的友方单位获得<$ba.buffres>抵抗</>",
+    "skillType": 1,
+    "durationType": 0,
+    "spData": {
+      "spType": 1,
+      "levelUpCost": null,
+      "maxChargeTime": 1,
+      "spCost": 80,
+      "initSp": 40,
+      "increment": 1.0
+    },
+    "prefabId": "skchr_ceylon_2",
+    "duration": 40.0,
+    "blackboard": [
+      {
+        "key": "attack@max_target",
+        "value": 2.0
+      },
+      {
+        "key": "atk",
+        "value": 0.6
+      },
+      {
+        "key": "one_minus_status_resistance",
+        "value": -0.5
+      }
+    ]
+  }
+}

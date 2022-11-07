@@ -1,0 +1,56 @@
+{
+  "skchr_slbell_1": {
+    "name": "传音回响",
+    "rangeId": null,
+    "description": "同时攻击<@ba.vup>{attack@max_target}</>个目标，攻击范围内所有敌人攻击速度<@ba.vup>-{-attack_speed}</>",
+    "skillType": 1,
+    "durationType": 0,
+    "spData": {
+      "spType": 1,
+      "levelUpCost": null,
+      "maxChargeTime": 1,
+      "spCost": 40,
+      "initSp": 25,
+      "increment": 1.0
+    },
+    "prefabId": "skchr_slbell_1",
+    "duration": 20.0,
+    "blackboard": [
+      {
+        "key": "attack_speed",
+        "value": -60.0
+      },
+      {
+        "key": "attack@max_target",
+        "value": 2.0
+      }
+    ]
+  },
+  "skchr_slbell_2": {
+    "name": "自然震慑",
+    "rangeId": null,
+    "description": "攻击范围内所有敌人防御力<@ba.vup>-{-def:0%}</>，法术抗性<@ba.vup>-{-magic_resistance:0%}</>",
+    "skillType": 1,
+    "durationType": 0,
+    "spData": {
+      "spType": 1,
+      "levelUpCost": null,
+      "maxChargeTime": 1,
+      "spCost": 40,
+      "initSp": 20,
+      "increment": 1.0
+    },
+    "prefabId": "skchr_slbell_2",
+    "duration": 25.0,
+    "blackboard": [
+      {
+        "key": "def",
+        "value": -0.6
+      },
+      {
+        "key": "magic_resistance",
+        "value": -0.3
+      }
+    ]
+  }
+}

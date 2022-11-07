@@ -1,0 +1,29 @@
+{
+  "sktok_ling_soul2": {
+    "name": "笑鸣瑟",
+    "rangeId": null,
+    "description": "技能结束时回收生命值低于一半的召唤物",
+    "skillType": 0,
+    "durationType": 0,
+    "spData": {
+      "spType": 8,
+      "levelUpCost": null,
+      "maxChargeTime": 0,
+      "spCost": 0,
+      "initSp": 0,
+      "increment": 0.0
+    },
+    "prefabId": "sktok_ling_soul2",
+    "duration": -1.0,
+    "blackboard": [
+      {
+        "key": "2.atk_scale",
+        "value": 4.5
+      },
+      {
+        "key": "2.duration",
+        "value": 3.0
+      }
+    ]
+  }
+}

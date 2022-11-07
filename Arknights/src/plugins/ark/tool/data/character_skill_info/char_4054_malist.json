@@ -1,0 +1,56 @@
+{
+  "skcom_quickattack[3]": {
+    "name": "迅捷打击·γ型",
+    "rangeId": null,
+    "description": "攻击力<@ba.vup>+{atk:0%}</>，攻击速度<@ba.vup>+{attack_speed}</>",
+    "skillType": 1,
+    "durationType": 0,
+    "spData": {
+      "spType": 1,
+      "levelUpCost": null,
+      "maxChargeTime": 1,
+      "spCost": 35,
+      "initSp": 15,
+      "increment": 1.0
+    },
+    "prefabId": "skcom_quickattack",
+    "duration": 35.0,
+    "blackboard": [
+      {
+        "key": "atk",
+        "value": 0.45
+      },
+      {
+        "key": "attack_speed",
+        "value": 45.0
+      }
+    ]
+  },
+  "skchr_malist_2": {
+    "name": "神工意匠",
+    "rangeId": null,
+    "description": "下次攻击造成相当于攻击力<@ba.vup>{atk_scale:0%}</>的法术伤害，并连续攻击两次\\n<@ba.rem>可充能{ct}次</>",
+    "skillType": 2,
+    "durationType": 0,
+    "spData": {
+      "spType": 1,
+      "levelUpCost": null,
+      "maxChargeTime": 3,
+      "spCost": 5,
+      "initSp": 4,
+      "increment": 1.0
+    },
+    "prefabId": "skchr_malist_2",
+    "duration": 0.0,
+    "blackboard": [
+      {
+        "key": "atk_scale",
+        "value": 2.0
+      },
+      {
+        "key": "ct",
+        "value": 3.0
+      }
+    ]
+  }
+}

@@ -1,0 +1,52 @@
+{
+  "skcom_atk_up[2]": {
+    "name": "攻击力强化·β型",
+    "rangeId": null,
+    "description": "攻击力<@ba.vup>+{atk:0%}</>",
+    "skillType": 1,
+    "durationType": 0,
+    "spData": {
+      "spType": 1,
+      "levelUpCost": null,
+      "maxChargeTime": 1,
+      "spCost": 35,
+      "initSp": 10,
+      "increment": 1.0
+    },
+    "prefabId": "skcom_atk_up",
+    "duration": 25.0,
+    "blackboard": [
+      {
+        "key": "atk",
+        "value": 0.8
+      }
+    ]
+  },
+  "skchr_skgoat_2": {
+    "name": "流沙化",
+    "rangeId": null,
+    "description": "<@ba.vdown>停止攻击</>；攻击范围内的敌方单位每<@ba.vup>{interval:0.0}</>秒受到一次<$ba.sluggish>停顿</>效果",
+    "skillType": 1,
+    "durationType": 0,
+    "spData": {
+      "spType": 1,
+      "levelUpCost": null,
+      "maxChargeTime": 1,
+      "spCost": 40,
+      "initSp": 15,
+      "increment": 1.0
+    },
+    "prefabId": "skchr_skgoat_2",
+    "duration": 25.0,
+    "blackboard": [
+      {
+        "key": "interval",
+        "value": 1.4
+      },
+      {
+        "key": "sluggish",
+        "value": 0.8
+      }
+    ]
+  }
+}

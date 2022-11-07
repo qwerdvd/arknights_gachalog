@@ -1,0 +1,29 @@
+{
+  "sktok_mound": {
+    "name": "风沙掩体",
+    "rangeId": null,
+    "description": "加固状态：阻挡<@ba.vup>沙尘暴</>，不再受到<@ba.vup>沙尘暴</>的伤害但可以被<高能源石炸弹>直接摧毁。",
+    "skillType": 2,
+    "durationType": 0,
+    "spData": {
+      "spType": 1,
+      "levelUpCost": null,
+      "maxChargeTime": 1,
+      "spCost": 10,
+      "initSp": 10,
+      "increment": 0.0
+    },
+    "prefabId": "sktok_mound",
+    "duration": 0.0,
+    "blackboard": [
+      {
+        "key": "hp_ratio",
+        "value": 1.0
+      },
+      {
+        "key": "def",
+        "value": 400.0
+      }
+    ]
+  }
+}

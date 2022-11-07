@@ -1,0 +1,29 @@
+{
+  "skchr_aprot_1": {
+    "name": "速战速决",
+    "rangeId": null,
+    "description": "攻击间隔<@ba.vup>较大幅度缩短</>，生命上限<@ba.vup>+{max_hp:0%}</>，同时攻击所有阻挡的敌人",
+    "skillType": 1,
+    "durationType": 0,
+    "spData": {
+      "spType": 1,
+      "levelUpCost": null,
+      "maxChargeTime": 1,
+      "spCost": 30,
+      "initSp": 15,
+      "increment": 1.0
+    },
+    "prefabId": "skchr_aprot_1",
+    "duration": 30.0,
+    "blackboard": [
+      {
+        "key": "base_attack_time",
+        "value": -0.45
+      },
+      {
+        "key": "max_hp",
+        "value": 0.5
+      }
+    ]
+  }
+}

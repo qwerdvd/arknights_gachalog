@@ -1,0 +1,52 @@
+{
+  "skcom_magic_rage[2]": {
+    "name": "战术咏唱·β型",
+    "rangeId": null,
+    "description": "攻击速度<@ba.vup>+{attack_speed}</>",
+    "skillType": 1,
+    "durationType": 0,
+    "spData": {
+      "spType": 1,
+      "levelUpCost": null,
+      "maxChargeTime": 1,
+      "spCost": 35,
+      "initSp": 10,
+      "increment": 1.0
+    },
+    "prefabId": "skcom_attack_speed_up",
+    "duration": 25.0,
+    "blackboard": [
+      {
+        "key": "attack_speed",
+        "value": 75.0
+      }
+    ]
+  },
+  "skchr_fmout_2": {
+    "name": "命运",
+    "rangeId": "3-3",
+    "description": "攻击力<@ba.vup>+{atk:0%}</>，攻击范围<@ba.vup>扩大</>，同时攻击攻击范围内所有敌人\\n<@ba.rem>技能时间结束后远山停止攻击{time}秒</>",
+    "skillType": 1,
+    "durationType": 0,
+    "spData": {
+      "spType": 1,
+      "levelUpCost": null,
+      "maxChargeTime": 1,
+      "spCost": 85,
+      "initSp": 50,
+      "increment": 1.0
+    },
+    "prefabId": "skchr_fmout_2",
+    "duration": 30.0,
+    "blackboard": [
+      {
+        "key": "atk",
+        "value": 1.0
+      },
+      {
+        "key": "time",
+        "value": 10.0
+      }
+    ]
+  }
+}

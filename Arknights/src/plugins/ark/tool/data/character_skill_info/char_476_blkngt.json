@@ -1,0 +1,72 @@
+{
+  "skchr_blkngt_1": {
+    "name": "半醒",
+    "rangeId": null,
+    "description": "立刻获得<@ba.vup>{cost}</>点部署费用，眠兽进入休眠，期间每秒恢复<@ba.vup>{hp_recovery_per_sec_by_max_hp_ratio:0%}</>最大生命；眠兽受到伤害时醒来，攻击力<@ba.vup>+{blkngt_hypnos_s_1[rage].atk:0%}</>，攻击速度<@ba.vup>+{blkngt_hypnos_s_1[rage].attack_speed:0%}</>，持续<@ba.vup>{blkngt_hypnos_s_1[rage].duration}</>秒",
+    "skillType": 1,
+    "durationType": 0,
+    "spData": {
+      "spType": 1,
+      "levelUpCost": null,
+      "maxChargeTime": 1,
+      "spCost": 25,
+      "initSp": 17,
+      "increment": 1.0
+    },
+    "prefabId": "skchr_blkngt_1",
+    "duration": 10.0,
+    "blackboard": [
+      {
+        "key": "cost",
+        "value": 11.0
+      },
+      {
+        "key": "hp_recovery_per_sec_by_max_hp_ratio",
+        "value": 0.14
+      },
+      {
+        "key": "blkngt_hypnos_s_1[rage].atk",
+        "value": 0.55
+      },
+      {
+        "key": "blkngt_hypnos_s_1[rage].attack_speed",
+        "value": 0.55
+      },
+      {
+        "key": "blkngt_hypnos_s_1[rage].duration",
+        "value": 10.0
+      }
+    ]
+  },
+  "skchr_blkngt_2": {
+    "name": "安眠",
+    "rangeId": null,
+    "description": "立即使战术点周围的所有地面敌人陷入<@ba.vup>{blkngt_s_2.duration}</>秒<$ba.sleep>沉睡</>并获得<@ba.vup>{cost}</>点部署费用；<@ba.vup>{blkngt_s_2.duration}</>秒内眠兽的攻击变为群体法术攻击，攻击<$ba.sleep>沉睡</>的目标时攻击力提升至<@ba.vup>{blkngt_s_2.atk_scale:0%}</>\\n<@ba.rem>可充能2次</>",
+    "skillType": 1,
+    "durationType": 0,
+    "spData": {
+      "spType": 1,
+      "levelUpCost": null,
+      "maxChargeTime": 2,
+      "spCost": 16,
+      "initSp": 10,
+      "increment": 1.0
+    },
+    "prefabId": "skchr_blkngt_2",
+    "duration": 0.0,
+    "blackboard": [
+      {
+        "key": "blkngt_s_2.atk_scale",
+        "value": 2.1
+      },
+      {
+        "key": "cost",
+        "value": 4.0
+      },
+      {
+        "key": "blkngt_s_2.duration",
+        "value": 6.0
+      }
+    ]
+  }
+}

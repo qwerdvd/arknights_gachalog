@@ -1,0 +1,83 @@
+{
+  "skchr_helage_1": {
+    "name": "新月",
+    "rangeId": null,
+    "description": "下次攻击的攻击力提升至<@ba.vup>{atk_scale:0%}</>，并连续攻击两次",
+    "skillType": 2,
+    "durationType": 0,
+    "spData": {
+      "spType": 2,
+      "levelUpCost": null,
+      "maxChargeTime": 1,
+      "spCost": 2,
+      "initSp": 0,
+      "increment": 1.0
+    },
+    "prefabId": "skchr_helage_1",
+    "duration": 0.0,
+    "blackboard": [
+      {
+        "key": "atk_scale",
+        "value": 1.75
+      }
+    ]
+  },
+  "skchr_helage_2": {
+    "name": "弦月",
+    "rangeId": null,
+    "description": "攻击力<@ba.vup>+{atk:0%}</>，攻击变为二连击，获得<@ba.vup>{prob:0%}</>的物理闪避",
+    "skillType": 1,
+    "durationType": 0,
+    "spData": {
+      "spType": 1,
+      "levelUpCost": null,
+      "maxChargeTime": 1,
+      "spCost": 25,
+      "initSp": 15,
+      "increment": 1.0
+    },
+    "prefabId": "skchr_helage_2",
+    "duration": 13.0,
+    "blackboard": [
+      {
+        "key": "atk",
+        "value": 0.8
+      },
+      {
+        "key": "prob",
+        "value": 0.75
+      }
+    ]
+  },
+  "skchr_helage_3": {
+    "name": "满月",
+    "rangeId": null,
+    "description": "攻击力<@ba.vup>+{atk:0%}</>，攻击范围<@ba.vup>+{ability_range_forward_extend}</>格，最多可以同时攻击<@ba.vup>{attack@max_target}</>个目标",
+    "skillType": 1,
+    "durationType": 0,
+    "spData": {
+      "spType": 1,
+      "levelUpCost": null,
+      "maxChargeTime": 1,
+      "spCost": 35,
+      "initSp": 15,
+      "increment": 1.0
+    },
+    "prefabId": "skchr_helage_3",
+    "duration": 15.0,
+    "blackboard": [
+      {
+        "key": "atk",
+        "value": 1.0
+      },
+      {
+        "key": "ability_range_forward_extend",
+        "value": 2.0
+      },
+      {
+        "key": "attack@max_target",
+        "value": 3.0
+      }
+    ]
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "skcom_range_extend": {
+    "name": "治疗范围强化",
+    "rangeId": null,
+    "description": "攻击范围<@ba.vup>+{ABILITY_RANGE_FORWARD_EXTEND}格</>，攻击力<@ba.vup>+{atk:0%}</>",
+    "skillType": 1,
+    "durationType": 0,
+    "spData": {
+      "spType": 1,
+      "levelUpCost": null,
+      "maxChargeTime": 1,
+      "spCost": 35,
+      "initSp": 10,
+      "increment": 1.0
+    },
+    "prefabId": "skcom_range_extend",
+    "duration": 25.0,
+    "blackboard": [
+      {
+        "key": "atk",
+        "value": 0.4
+      },
+      {
+        "key": "ability_range_forward_extend",
+        "value": 2.0
+      }
+    ]
+  }
+}

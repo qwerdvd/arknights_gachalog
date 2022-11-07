@@ -1,0 +1,95 @@
+{
+  "skchr_vigil_1": {
+    "name": "领袖的呼唤",
+    "rangeId": null,
+    "description": "立即获得<@ba.vup>{cost}</>点部署费用，并增加一只“狼影”",
+    "skillType": 2,
+    "durationType": 0,
+    "spData": {
+      "spType": 1,
+      "levelUpCost": null,
+      "maxChargeTime": 1,
+      "spCost": 21,
+      "initSp": 5,
+      "increment": 1.0
+    },
+    "prefabId": "skchr_vigil_1",
+    "duration": 0.0,
+    "blackboard": [
+      {
+        "key": "cost",
+        "value": 7.0
+      }
+    ]
+  },
+  "skchr_vigil_2": {
+    "name": "领袖的馈赠",
+    "rangeId": null,
+    "description": "立即获得<@ba.vup>{cost}</>点部署费用，并使狼群下次攻击的攻击力提升至<@ba.vup>{vigil_wolf_s_2.atk_scale:0%}</>且狼群恢复<@ba.vup>{vigil_wolf_s_2.hp_ratio:0%}</>生命值；若狼群击倒敌人则额外获得<@ba.vup>{vigil_wolf_s_2.cost}</>点部署费用",
+    "skillType": 2,
+    "durationType": 0,
+    "spData": {
+      "spType": 1,
+      "levelUpCost": null,
+      "maxChargeTime": 1,
+      "spCost": 5,
+      "initSp": 4,
+      "increment": 1.0
+    },
+    "prefabId": "skchr_vigil_2",
+    "duration": 0.0,
+    "blackboard": [
+      {
+        "key": "cost",
+        "value": 2.0
+      },
+      {
+        "key": "vigil_wolf_s_2.atk_scale",
+        "value": 2.0
+      },
+      {
+        "key": "vigil_wolf_s_2.hp_ratio",
+        "value": 0.2
+      },
+      {
+        "key": "vigil_wolf_s_2.cost",
+        "value": 1.0
+      }
+    ]
+  },
+  "skchr_vigil_3": {
+    "name": "领袖的尊严",
+    "rangeId": null,
+    "description": "技能持续时间内逐渐获得<@ba.vup>{value}</>点部署费用，攻击变为<@ba.vup>三连击</>；狼群与伺夜攻击被狼群阻挡的单位造成伤害时，额外造成相当于伺夜攻击力<@ba.vup>{attack@vigil_s_3.atk_scale:0%}</>的法术伤害",
+    "skillType": 1,
+    "durationType": 0,
+    "spData": {
+      "spType": 1,
+      "levelUpCost": null,
+      "maxChargeTime": 1,
+      "spCost": 35,
+      "initSp": 10,
+      "increment": 1.0
+    },
+    "prefabId": "skchr_vigil_3",
+    "duration": 15.0,
+    "blackboard": [
+      {
+        "key": "attack@vigil_s_3.atk_scale",
+        "value": 0.5
+      },
+      {
+        "key": "value",
+        "value": 12.0
+      },
+      {
+        "key": "interval",
+        "value": 1.25
+      },
+      {
+        "key": "cost",
+        "value": 1.0
+      }
+    ]
+  }
+}

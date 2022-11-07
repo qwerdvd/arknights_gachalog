@@ -1,0 +1,83 @@
+{
+  "skcom_atk_up[3]": {
+    "name": "攻击力强化·γ型",
+    "rangeId": null,
+    "description": "攻击力<@ba.vup>+{atk:0%}</>",
+    "skillType": 1,
+    "durationType": 0,
+    "spData": {
+      "spType": 1,
+      "levelUpCost": null,
+      "maxChargeTime": 1,
+      "spCost": 30,
+      "initSp": 15,
+      "increment": 1.0
+    },
+    "prefabId": "skcom_atk_up",
+    "duration": 30.0,
+    "blackboard": [
+      {
+        "key": "atk",
+        "value": 1.0
+      }
+    ]
+  },
+  "skchr_mostma_2": {
+    "name": "荒时之锁",
+    "rangeId": null,
+    "description": "攻击范围内的敌人全部<$ba.stun>晕眩</>，且每秒受到攻击力<@ba.vup>{atk_scale:0%}</>的法术伤害",
+    "skillType": 1,
+    "durationType": 0,
+    "spData": {
+      "spType": 1,
+      "levelUpCost": null,
+      "maxChargeTime": 1,
+      "spCost": 50,
+      "initSp": 30,
+      "increment": 1.0
+    },
+    "prefabId": "skchr_mostma_2",
+    "duration": 7.0,
+    "blackboard": [
+      {
+        "key": "atk_scale",
+        "value": 1.4
+      }
+    ]
+  },
+  "skchr_mostma_3": {
+    "name": "序时之匙",
+    "rangeId": "3-15",
+    "description": "攻击范围<@ba.vup>扩大</>，攻击变为向外扩散的波纹，攻击力<@ba.vup>+{atk:0%}</>，第二天赋的效果提升至<@ba.vup>{talent_scale:0}</>倍，<@ba.vup>小力度地</>击退攻击目标",
+    "skillType": 1,
+    "durationType": 0,
+    "spData": {
+      "spType": 1,
+      "levelUpCost": null,
+      "maxChargeTime": 1,
+      "spCost": 110,
+      "initSp": 80,
+      "increment": 1.0
+    },
+    "prefabId": "skchr_mostma_3",
+    "duration": 27.0,
+    "blackboard": [
+      {
+        "key": "atk",
+        "value": 1.7
+      },
+      {
+        "key": "attack@force",
+        "value": 0.0
+      },
+      {
+        "key": "talent_scale",
+        "value": 3.0
+      },
+      {
+        "key": "base_attack_time",
+        "value": 0.0
+      }
+    ]
+  }
+}

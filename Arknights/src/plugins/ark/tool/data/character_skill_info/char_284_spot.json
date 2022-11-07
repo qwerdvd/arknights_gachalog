@@ -1,0 +1,29 @@
+{
+  "skchr_spot_1": {
+    "name": "次级治疗模式",
+    "rangeId": "x-4",
+    "description": "攻击力<@ba.vup>+{atk:0%}</>，停止攻击并专心对周围的友方角色进行治疗",
+    "skillType": 1,
+    "durationType": 0,
+    "spData": {
+      "spType": 1,
+      "levelUpCost": null,
+      "maxChargeTime": 1,
+      "spCost": 40,
+      "initSp": 25,
+      "increment": 1.0
+    },
+    "prefabId": "skchr_spot_1",
+    "duration": 25.0,
+    "blackboard": [
+      {
+        "key": "atk",
+        "value": 0.45
+      },
+      {
+        "key": "base_attack_time",
+        "value": 1.3
+      }
+    ]
+  }
+}

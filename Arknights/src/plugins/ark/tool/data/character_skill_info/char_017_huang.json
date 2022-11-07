@@ -1,0 +1,87 @@
+{
+  "skchr_huang_1": {
+    "name": "强力击·γ型",
+    "rangeId": null,
+    "description": "下次攻击的攻击力提高至<@ba.vup>{atk_scale:0%}</>",
+    "skillType": 2,
+    "durationType": 0,
+    "spData": {
+      "spType": 2,
+      "levelUpCost": null,
+      "maxChargeTime": 1,
+      "spCost": 2,
+      "initSp": 0,
+      "increment": 1.0
+    },
+    "prefabId": "skchr_huang_1",
+    "duration": 0.0,
+    "blackboard": [
+      {
+        "key": "atk_scale",
+        "value": 2.9
+      }
+    ]
+  },
+  "skchr_huang_2": {
+    "name": "链锯延伸模块",
+    "rangeId": "2-2",
+    "description": "攻击力<@ba.vup>+{atk:0%}</>，防御力<@ba.vup>+{def:0%}</>，攻击距离<@ba.vup>加长</>\\n<@ba.rem>持续时间无限</>",
+    "skillType": 2,
+    "durationType": 0,
+    "spData": {
+      "spType": 1,
+      "levelUpCost": null,
+      "maxChargeTime": 1,
+      "spCost": 70,
+      "initSp": 0,
+      "increment": 1.0
+    },
+    "prefabId": "skchr_huang_2",
+    "duration": -1.0,
+    "blackboard": [
+      {
+        "key": "atk",
+        "value": 1.0
+      },
+      {
+        "key": "def",
+        "value": 0.35
+      }
+    ]
+  },
+  "skchr_huang_3": {
+    "name": "沸腾爆裂",
+    "rangeId": null,
+    "description": "技能开启后，攻击力和防御力逐渐增至<@ba.vup>+{atk:0%}</>并对前方一格内的敌方单位进行切割。技能结束时对附近所有敌人造成此时攻击力<@ba.vup>{damage_by_atk_scale:0%}</>的物理伤害，自己流失<@ba.vdown>{hp_ratio:0%}</>的生命值",
+    "skillType": 1,
+    "durationType": 0,
+    "spData": {
+      "spType": 1,
+      "levelUpCost": null,
+      "maxChargeTime": 1,
+      "spCost": 35,
+      "initSp": 25,
+      "increment": 1.0
+    },
+    "prefabId": "skchr_huang_3",
+    "duration": 10.0,
+    "blackboard": [
+      {
+        "key": "atk",
+        "value": 0.8
+      },
+      {
+        "key": "def",
+        "value": 0.8
+      },
+      {
+        "key": "hp_ratio",
+        "value": 0.25
+      },
+      {
+        "key": "damage_by_atk_scale",
+        "value": 4.0
+      }
+    ]
+  }
+}

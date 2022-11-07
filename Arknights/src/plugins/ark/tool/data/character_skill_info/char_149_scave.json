@@ -1,0 +1,52 @@
+{
+  "skcom_charge_cost[2]": {
+    "name": "冲锋号令·β型",
+    "rangeId": null,
+    "description": "立即获得<@ba.vup>{cost}</>点部署费用",
+    "skillType": 2,
+    "durationType": 0,
+    "spData": {
+      "spType": 1,
+      "levelUpCost": null,
+      "maxChargeTime": 1,
+      "spCost": 30,
+      "initSp": 13,
+      "increment": 1.0
+    },
+    "prefabId": "skcom_charge_cost",
+    "duration": 0.0,
+    "blackboard": [
+      {
+        "key": "cost",
+        "value": 9.0
+      }
+    ]
+  },
+  "skchr_scave_2": {
+    "name": "冲锋号令·攻击",
+    "rangeId": null,
+    "description": "立即获得<@ba.vup>{cost}</>点部署费用\\n攻击力<@ba.vup>+{atk:0%}</>",
+    "skillType": 1,
+    "durationType": 0,
+    "spData": {
+      "spType": 1,
+      "levelUpCost": null,
+      "maxChargeTime": 1,
+      "spCost": 30,
+      "initSp": 18,
+      "increment": 1.0
+    },
+    "prefabId": "skchr_scave_2",
+    "duration": 15.0,
+    "blackboard": [
+      {
+        "key": "atk",
+        "value": 0.7
+      },
+      {
+        "key": "cost",
+        "value": 11.0
+      }
+    ]
+  }
+}

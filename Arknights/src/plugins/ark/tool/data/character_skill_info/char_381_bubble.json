@@ -1,0 +1,56 @@
+{
+  "skcom_def_up[2]": {
+    "name": "防御力强化·β型",
+    "rangeId": null,
+    "description": "防御力<@ba.vup>+{def:0%}</>",
+    "skillType": 1,
+    "durationType": 0,
+    "spData": {
+      "spType": 1,
+      "levelUpCost": null,
+      "maxChargeTime": 1,
+      "spCost": 35,
+      "initSp": 10,
+      "increment": 1.0
+    },
+    "prefabId": "skcom_def_up",
+    "duration": 35.0,
+    "blackboard": [
+      {
+        "key": "def",
+        "value": 0.8
+      }
+    ]
+  },
+  "skchr_bubble_2": {
+    "name": "“挨打”",
+    "rangeId": null,
+    "description": "停止攻击敌人；防御力<@ba.vup>+{def:0%}</>，自身更易受敌人攻击，每次受到攻击时对目标造成相当于泡泡防御力<@ba.vup>{atk_scale:0%}</>的物理伤害",
+    "skillType": 1,
+    "durationType": 0,
+    "spData": {
+      "spType": 1,
+      "levelUpCost": null,
+      "maxChargeTime": 1,
+      "spCost": 45,
+      "initSp": 0,
+      "increment": 1.0
+    },
+    "prefabId": "skchr_bubble_2",
+    "duration": 25.0,
+    "blackboard": [
+      {
+        "key": "def",
+        "value": 1.2
+      },
+      {
+        "key": "taunt_level",
+        "value": 1.0
+      },
+      {
+        "key": "atk_scale",
+        "value": 0.5
+      }
+    ]
+  }
+}

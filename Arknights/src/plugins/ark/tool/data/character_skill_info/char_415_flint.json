@@ -1,0 +1,64 @@
+{
+  "skchr_flint_1": {
+    "name": "不息",
+    "rangeId": null,
+    "description": "下次攻击的攻击力提高至<@ba.vup>{atk_scale:0%}</>，将目标朝攻击方向以<@ba.vup>小力度</>推开并造成1秒<$ba.sluggish>停顿</>",
+    "skillType": 2,
+    "durationType": 0,
+    "spData": {
+      "spType": 2,
+      "levelUpCost": null,
+      "maxChargeTime": 1,
+      "spCost": 4,
+      "initSp": 0,
+      "increment": 1.0
+    },
+    "prefabId": "skchr_flint_1",
+    "duration": 0.0,
+    "blackboard": [
+      {
+        "key": "atk_scale",
+        "value": 2.3
+      },
+      {
+        "key": "force",
+        "value": 0.0
+      },
+      {
+        "key": "sluggish",
+        "value": 1.0
+      }
+    ]
+  },
+  "skchr_flint_2": {
+    "name": "锋芒毕露",
+    "rangeId": null,
+    "description": "阻挡数变为0，攻击力<@ba.vup>+{atk:0%}</>，攻击速度<@ba.vup>+{attack_speed}</>，每次攻击对目标造成0.3秒<$ba.sluggish>停顿</>",
+    "skillType": 1,
+    "durationType": 0,
+    "spData": {
+      "spType": 1,
+      "levelUpCost": null,
+      "maxChargeTime": 1,
+      "spCost": 35,
+      "initSp": 25,
+      "increment": 1.0
+    },
+    "prefabId": "skchr_flint_2",
+    "duration": 20.0,
+    "blackboard": [
+      {
+        "key": "atk",
+        "value": 0.55
+      },
+      {
+        "key": "attack_speed",
+        "value": 55.0
+      },
+      {
+        "key": "attack@sluggish",
+        "value": 0.3
+      }
+    ]
+  }
+}

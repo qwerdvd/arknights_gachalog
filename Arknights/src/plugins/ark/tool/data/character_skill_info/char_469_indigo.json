@@ -1,0 +1,64 @@
+{
+  "skchr_indigo_1": {
+    "name": "灯塔守卫者",
+    "rangeId": "4-1",
+    "description": "攻击范围<@ba.vup>改变</>，攻击间隔<@ba.vup>大幅度缩短</>，每次攻击造成相当于攻击力<@ba.vup>{attack@atk_scale:0%}</>的法术伤害",
+    "skillType": 1,
+    "durationType": 0,
+    "spData": {
+      "spType": 1,
+      "levelUpCost": null,
+      "maxChargeTime": 1,
+      "spCost": 15,
+      "initSp": 5,
+      "increment": 1.0
+    },
+    "prefabId": "skchr_indigo_1",
+    "duration": 4.0,
+    "blackboard": [
+      {
+        "key": "attack@atk_scale",
+        "value": 0.5
+      },
+      {
+        "key": "base_attack_time",
+        "value": -0.8
+      }
+    ]
+  },
+  "skchr_indigo_2": {
+    "name": "光影迷宫",
+    "rangeId": null,
+    "description": "攻击间隔<@ba.vup>缩短</>，天赋的触发几率提升至<@ba.vup>{talent_scale:0.0}</>倍，攻击范围内处于<$ba.root>束缚</>状态的敌人每<@ba.vup>{indigo_s_2[damage].interval}</>秒受到相当于深靛攻击力<@ba.vup>{indigo_s_2[damage].atk_scale:0%}</>的法术伤害",
+    "skillType": 1,
+    "durationType": 0,
+    "spData": {
+      "spType": 1,
+      "levelUpCost": null,
+      "maxChargeTime": 1,
+      "spCost": 40,
+      "initSp": 20,
+      "increment": 1.0
+    },
+    "prefabId": "skchr_indigo_2",
+    "duration": 20.0,
+    "blackboard": [
+      {
+        "key": "base_attack_time",
+        "value": 0.6
+      },
+      {
+        "key": "talent_scale",
+        "value": 3.0
+      },
+      {
+        "key": "indigo_s_2[damage].atk_scale",
+        "value": 0.2
+      },
+      {
+        "key": "indigo_s_2[damage].interval",
+        "value": 0.5
+      }
+    ]
+  }
+}

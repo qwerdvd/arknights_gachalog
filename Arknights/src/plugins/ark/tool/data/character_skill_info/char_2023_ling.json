@@ -1,0 +1,111 @@
+{
+  "skchr_ling_1": {
+    "name": "重进酒",
+    "rangeId": null,
+    "description": "被动：召唤物可部署在近战位\\n开启：自身与召唤物攻击力<@ba.vup>+{atk:0%}</>，攻击速度<@ba.vup>+{attack_speed}</>，召唤物伤害类型变为<@ba.vup>法术</>\\n<@ba.rem>技能开启时获得1个召唤物</>",
+    "skillType": 1,
+    "durationType": 0,
+    "spData": {
+      "spType": 1,
+      "levelUpCost": null,
+      "maxChargeTime": 1,
+      "spCost": 25,
+      "initSp": 15,
+      "increment": 1.0
+    },
+    "prefabId": "skchr_ling_1",
+    "duration": 25.0,
+    "blackboard": [
+      {
+        "key": "atk",
+        "value": 0.5
+      },
+      {
+        "key": "attack_speed",
+        "value": 50.0
+      },
+      {
+        "key": "cnt",
+        "value": 1.0
+      }
+    ]
+  },
+  "skchr_ling_2": {
+    "name": "笑鸣瑟",
+    "rangeId": null,
+    "description": "被动：召唤物可部署在远程位，攻击造成<@ba.vup>法术</>伤害\\n开启：令与召唤物对攻击范围内<@ba.vup>两名</>敌人造成<@ba.vup>{atk_scale:0%}</>攻击力的法术伤害并<$ba.root>束缚</><@ba.vup>{ling_s2_unmovable.duration}</>秒\\n<@ba.rem>技能结束时回收生命值低于一半的召唤物。可充能{value}次</>",
+    "skillType": 1,
+    "durationType": 0,
+    "spData": {
+      "spType": 1,
+      "levelUpCost": null,
+      "maxChargeTime": 2,
+      "spCost": 13,
+      "initSp": 5,
+      "increment": 1.0
+    },
+    "prefabId": "skchr_ling_2",
+    "duration": -1.0,
+    "blackboard": [
+      {
+        "key": "atk_scale",
+        "value": 4.5
+      },
+      {
+        "key": "cnt",
+        "value": 1.0
+      },
+      {
+        "key": "ling_s2_unmovable.duration",
+        "value": 3.0
+      },
+      {
+        "key": "value",
+        "value": 2.0
+      },
+      {
+        "key": "hp_ratio",
+        "value": 0.5
+      }
+    ]
+  },
+  "skchr_ling_3": {
+    "name": "宁作吾",
+    "rangeId": null,
+    "description": "被动：召唤物可部署在近战位且攻击范围内存在其他召唤物时与其合并为<@ba.vup>高级</>形态\\n开启：自身与召唤物攻击力<@ba.vup>+{atk:0%}</>，防御力<@ba.vup>+{def:0%}</>，召唤物每<@ba.vup>{interval}</>秒对周围四格敌人造成<@ba.vup>{atk_scale:0%}</>令攻击力的法术伤害\\n<@ba.rem>技能结束时获得1个召唤物</>",
+    "skillType": 1,
+    "durationType": 0,
+    "spData": {
+      "spType": 1,
+      "levelUpCost": null,
+      "maxChargeTime": 1,
+      "spCost": 40,
+      "initSp": 15,
+      "increment": 1.0
+    },
+    "prefabId": "skchr_ling_3",
+    "duration": 30.0,
+    "blackboard": [
+      {
+        "key": "atk",
+        "value": 1.0
+      },
+      {
+        "key": "def",
+        "value": 1.0
+      },
+      {
+        "key": "atk_scale",
+        "value": 0.2
+      },
+      {
+        "key": "interval",
+        "value": 0.5
+      },
+      {
+        "key": "cnt",
+        "value": 1.0
+      }
+    ]
+  }
+}

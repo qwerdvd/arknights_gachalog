@@ -1,0 +1,64 @@
+{
+  "skcom_charge_cost[3]": {
+    "name": "冲锋号令·γ型",
+    "rangeId": null,
+    "description": "立即获得<@ba.vup>{cost}</>点部署费用",
+    "skillType": 2,
+    "durationType": 0,
+    "spData": {
+      "spType": 1,
+      "levelUpCost": null,
+      "maxChargeTime": 1,
+      "spCost": 35,
+      "initSp": 20,
+      "increment": 1.0
+    },
+    "prefabId": "skcom_charge_cost",
+    "duration": 0.0,
+    "blackboard": [
+      {
+        "key": "cost",
+        "value": 12.0
+      }
+    ]
+  },
+  "skchr_headbr_2": {
+    "name": "乌萨斯战吼",
+    "rangeId": null,
+    "description": "技能持续时间内逐渐获得<@ba.vup>{value}</>点部署费用\\n所有先锋干员攻击力和防御力<@ba.vup>+{atk:0%}</>，并在击杀敌人时额外获得<@ba.vup>1</>点部署费用",
+    "skillType": 1,
+    "durationType": 0,
+    "spData": {
+      "spType": 1,
+      "levelUpCost": null,
+      "maxChargeTime": 1,
+      "spCost": 35,
+      "initSp": 20,
+      "increment": 1.0
+    },
+    "prefabId": "skchr_headbr_2",
+    "duration": 10.0,
+    "blackboard": [
+      {
+        "key": "value",
+        "value": 12.0
+      },
+      {
+        "key": "atk",
+        "value": 0.6
+      },
+      {
+        "key": "def",
+        "value": 0.6
+      },
+      {
+        "key": "interval",
+        "value": 0.83
+      },
+      {
+        "key": "cost",
+        "value": 1.0
+      }
+    ]
+  }
+}

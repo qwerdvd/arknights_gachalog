@@ -1,0 +1,29 @@
+{
+  "sktok_vodfox_token": {
+    "name": "诅咒娃娃",
+    "rangeId": null,
+    "description": "范围内的敌人攻击力和防御力<@ba.vup>-{-atk:0%}</>",
+    "skillType": 0,
+    "durationType": 0,
+    "spData": {
+      "spType": 8,
+      "levelUpCost": null,
+      "maxChargeTime": 0,
+      "spCost": 0,
+      "initSp": 0,
+      "increment": 0.0
+    },
+    "prefabId": "sktok_vodfox_token",
+    "duration": 15.0,
+    "blackboard": [
+      {
+        "key": "atk",
+        "value": -0.5
+      },
+      {
+        "key": "def",
+        "value": -0.5
+      }
+    ]
+  }
+}

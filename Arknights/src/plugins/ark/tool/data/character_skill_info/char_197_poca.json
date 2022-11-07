@@ -1,0 +1,87 @@
+{
+  "skcom_atk_up[3]": {
+    "name": "攻击力强化·γ型",
+    "rangeId": null,
+    "description": "攻击力<@ba.vup>+{atk:0%}</>",
+    "skillType": 1,
+    "durationType": 0,
+    "spData": {
+      "spType": 1,
+      "levelUpCost": null,
+      "maxChargeTime": 1,
+      "spCost": 30,
+      "initSp": 15,
+      "increment": 1.0
+    },
+    "prefabId": "skcom_atk_up",
+    "duration": 30.0,
+    "blackboard": [
+      {
+        "key": "atk",
+        "value": 1.0
+      }
+    ]
+  },
+  "skchr_poca_2": {
+    "name": "分裂射击",
+    "rangeId": null,
+    "description": "攻击力<@ba.vup>+{atk:0%}</>，可以额外攻击<@ba.vup>一</>个敌人",
+    "skillType": 1,
+    "durationType": 0,
+    "spData": {
+      "spType": 1,
+      "levelUpCost": null,
+      "maxChargeTime": 1,
+      "spCost": 65,
+      "initSp": 45,
+      "increment": 1.0
+    },
+    "prefabId": "skchr_poca_2",
+    "duration": 60.0,
+    "blackboard": [
+      {
+        "key": "atk",
+        "value": 0.9
+      },
+      {
+        "key": "attack@max_target",
+        "value": 2.0
+      }
+    ]
+  },
+  "skchr_poca_3": {
+    "name": "雪崩击",
+    "rangeId": null,
+    "description": "攻击力<@ba.vup>+{atk:0%}</>，立即向至多<@ba.vup>{max_target}</>个重量最重的敌人发射束缚叉枪；技能持续时间内所有目标受到<$ba.root><@ba.vup>束缚</></>效果，每秒受到一次攻击",
+    "skillType": 1,
+    "durationType": 0,
+    "spData": {
+      "spType": 1,
+      "levelUpCost": null,
+      "maxChargeTime": 1,
+      "spCost": 30,
+      "initSp": 15,
+      "increment": 1.0
+    },
+    "prefabId": "skchr_poca_3",
+    "duration": 8.0,
+    "blackboard": [
+      {
+        "key": "max_target",
+        "value": 4.0
+      },
+      {
+        "key": "hit_interval",
+        "value": 1.0
+      },
+      {
+        "key": "atk",
+        "value": 0.25
+      },
+      {
+        "key": "hit_duration",
+        "value": 8.0
+      }
+    ]
+  }
+}

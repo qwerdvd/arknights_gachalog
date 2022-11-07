@@ -1,0 +1,91 @@
+{
+  "skcom_quickattack[3]": {
+    "name": "迅捷打击·γ型",
+    "rangeId": null,
+    "description": "攻击力<@ba.vup>+{atk:0%}</>，攻击速度<@ba.vup>+{attack_speed}</>",
+    "skillType": 1,
+    "durationType": 0,
+    "spData": {
+      "spType": 1,
+      "levelUpCost": null,
+      "maxChargeTime": 1,
+      "spCost": 35,
+      "initSp": 15,
+      "increment": 1.0
+    },
+    "prefabId": "skcom_quickattack",
+    "duration": 35.0,
+    "blackboard": [
+      {
+        "key": "atk",
+        "value": 0.45
+      },
+      {
+        "key": "attack_speed",
+        "value": 45.0
+      }
+    ]
+  },
+  "skchr_bpipe_2": {
+    "name": "高效冲击",
+    "rangeId": null,
+    "description": "下一次的攻击力提升至<@ba.vup>{atk_scale:0%}</>，且额外攻击一次\\n<@ba.rem>可充能{cnt}次</>",
+    "skillType": 2,
+    "durationType": 0,
+    "spData": {
+      "spType": 1,
+      "levelUpCost": null,
+      "maxChargeTime": 3,
+      "spCost": 4,
+      "initSp": 0,
+      "increment": 1.0
+    },
+    "prefabId": "skchr_bpipe_2",
+    "duration": 0.0,
+    "blackboard": [
+      {
+        "key": "atk_scale",
+        "value": 2.0
+      },
+      {
+        "key": "cnt",
+        "value": 3.0
+      }
+    ]
+  },
+  "skchr_bpipe_3": {
+    "name": "闭膛连发",
+    "rangeId": null,
+    "description": "攻击间隔<@ba.vdown>增大</>，阻挡数<@ba.vup>+{block_cnt}</>，攻击力和防御力<@ba.vup>+{atk:0%}</>，攻击变为<@ba.vup>三连击</>",
+    "skillType": 1,
+    "durationType": 0,
+    "spData": {
+      "spType": 1,
+      "levelUpCost": null,
+      "maxChargeTime": 1,
+      "spCost": 40,
+      "initSp": 25,
+      "increment": 1.0
+    },
+    "prefabId": "skchr_bpipe_3",
+    "duration": 20.0,
+    "blackboard": [
+      {
+        "key": "atk",
+        "value": 1.2
+      },
+      {
+        "key": "def",
+        "value": 1.2
+      },
+      {
+        "key": "base_attack_time",
+        "value": 0.7
+      },
+      {
+        "key": "block_cnt",
+        "value": 1.0
+      }
+    ]
+  }
+}

@@ -1,0 +1,111 @@
+{
+  "skchr_gvial2_1": {
+    "name": "精准痛击",
+    "rangeId": null,
+    "description": "攻击力<@ba.vup>+{atk:0%}</>，每次攻击治疗自身相当于造成伤害<@ba.vup>{heal_scale:0%}</>的生命值",
+    "skillType": 1,
+    "durationType": 0,
+    "spData": {
+      "spType": 1,
+      "levelUpCost": null,
+      "maxChargeTime": 1,
+      "spCost": 25,
+      "initSp": 10,
+      "increment": 1.0
+    },
+    "prefabId": "skchr_gvial2_1",
+    "duration": 25.0,
+    "blackboard": [
+      {
+        "key": "atk",
+        "value": 0.8
+      },
+      {
+        "key": "heal_scale",
+        "value": 0.4
+      }
+    ]
+  },
+  "skchr_gvial2_2": {
+    "name": "链锯强袭",
+    "rangeId": "2-5",
+    "description": "攻击范围<@ba.vup>扩大</>，攻击力<@ba.vup>+{atk:0%}</>，防御力<@ba.vup>+{def:0%}</>；攻击到未被阻挡的敌人时，将其<@ba.vup>中等力度地</>拖拽至面前",
+    "skillType": 1,
+    "durationType": 0,
+    "spData": {
+      "spType": 1,
+      "levelUpCost": null,
+      "maxChargeTime": 1,
+      "spCost": 35,
+      "initSp": 25,
+      "increment": 1.0
+    },
+    "prefabId": "skchr_gvial2_2",
+    "duration": 40.0,
+    "blackboard": [
+      {
+        "key": "atk",
+        "value": 1.8
+      },
+      {
+        "key": "def",
+        "value": 0.5
+      },
+      {
+        "key": "block_cnt",
+        "value": 0.0
+      },
+      {
+        "key": "attack@force",
+        "value": 1.0
+      }
+    ]
+  },
+  "skchr_gvial2_3": {
+    "name": "丛林之魂",
+    "rangeId": null,
+    "description": "攻击力<@ba.vup>+{atk:0%}</>，攻击速度<@ba.vup>+{attack_speed}</>，阻挡数<@ba.vup>+{block_cnt}</>，技能期间暂时只受到<@ba.vup>{damage_resistance:0%}</>的伤害，其余伤害延后至技能结束，变为持续<@ba.vup>{final_duration}</>秒等量的生命流失效果",
+    "skillType": 1,
+    "durationType": 0,
+    "spData": {
+      "spType": 1,
+      "levelUpCost": null,
+      "maxChargeTime": 1,
+      "spCost": 35,
+      "initSp": 25,
+      "increment": 1.0
+    },
+    "prefabId": "skchr_gvial2_3",
+    "duration": 25.0,
+    "blackboard": [
+      {
+        "key": "atk",
+        "value": 1.4
+      },
+      {
+        "key": "attack_speed",
+        "value": 100.0
+      },
+      {
+        "key": "damage_resistance",
+        "value": 0.5
+      },
+      {
+        "key": "final_duration",
+        "value": 20.0
+      },
+      {
+        "key": "interval",
+        "value": 0.1
+      },
+      {
+        "key": "priority",
+        "value": 1000.0
+      },
+      {
+        "key": "block_cnt",
+        "value": 2.0
+      }
+    ]
+  }
+}

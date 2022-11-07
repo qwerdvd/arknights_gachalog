@@ -1,0 +1,87 @@
+{
+  "skchr_demkni_1": {
+    "name": "急救",
+    "rangeId": "x-4",
+    "description": "下一次攻击会为周围血量不足一半的一名友方单位恢复相当于攻击力<@ba.vup>{heal_scale:0%}的生命</>\\n<@ba.rem>可充能{ct}次</>",
+    "skillType": 2,
+    "durationType": 0,
+    "spData": {
+      "spType": 1,
+      "levelUpCost": null,
+      "maxChargeTime": 3,
+      "spCost": 4,
+      "initSp": 0,
+      "increment": 1.0
+    },
+    "prefabId": "skchr_demkni_1",
+    "duration": 0.0,
+    "blackboard": [
+      {
+        "key": "heal_scale",
+        "value": 1.8
+      },
+      {
+        "key": "ct",
+        "value": 3.0
+      }
+    ]
+  },
+  "skchr_demkni_2": {
+    "name": "药物配置",
+    "rangeId": "x-2",
+    "description": "治疗附近一定范围内的所有友军相当于塞雷娅攻击力<@ba.vup>{heal_scale:0%}</>的生命",
+    "skillType": 2,
+    "durationType": 0,
+    "spData": {
+      "spType": 1,
+      "levelUpCost": null,
+      "maxChargeTime": 1,
+      "spCost": 7,
+      "initSp": 0,
+      "increment": 1.0
+    },
+    "prefabId": "skchr_demkni_2",
+    "duration": 0.0,
+    "blackboard": [
+      {
+        "key": "heal_scale",
+        "value": 1.4
+      }
+    ]
+  },
+  "skchr_demkni_3": {
+    "name": "钙质化",
+    "rangeId": "x-3",
+    "description": "附近所有友军每秒回复相当于塞雷娅攻击力<@ba.vup>{attack@heal_scale:0%}</>的生命\\n附近所有敌军受到的法术伤害<@ba.vup>+{fake.b:0%}</>，移动速度<@ba.vup>-{-demkni_s_3.move_speed:0%}</>",
+    "skillType": 1,
+    "durationType": 0,
+    "spData": {
+      "spType": 1,
+      "levelUpCost": null,
+      "maxChargeTime": 1,
+      "spCost": 80,
+      "initSp": 70,
+      "increment": 1.0
+    },
+    "prefabId": "skchr_demkni_3",
+    "duration": 30.0,
+    "blackboard": [
+      {
+        "key": "attack@heal_scale",
+        "value": 0.35
+      },
+      {
+        "key": "demkni_s_3.move_speed",
+        "value": -0.6
+      },
+      {
+        "key": "demkni_s_3.damage_scale",
+        "value": 1.55
+      },
+      {
+        "key": "fake.b",
+        "value": 0.55
+      }
+    ]
+  }
+}

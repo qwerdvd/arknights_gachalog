@@ -1,0 +1,25 @@
+{
+  "skcom_heal_self[1]": {
+    "name": "生命回复·α型",
+    "rangeId": null,
+    "description": "立即恢复最大生命的<@ba.vup>{heal_scale:0%}</>",
+    "skillType": 1,
+    "durationType": 0,
+    "spData": {
+      "spType": 1,
+      "levelUpCost": null,
+      "maxChargeTime": 1,
+      "spCost": 20,
+      "initSp": 10,
+      "increment": 1.0
+    },
+    "prefabId": "skcom_heal_self",
+    "duration": 0.0,
+    "blackboard": [
+      {
+        "key": "heal_scale",
+        "value": 0.4
+      }
+    ]
+  }
+}

@@ -1,0 +1,72 @@
+{
+  "skchr_liskam_1": {
+    "name": "充能防御",
+    "rangeId": null,
+    "description": "抵挡下一次伤害，在<@ba.vup>{duration}</>秒内防御力<@ba.vup>+{def:0%}</>\\n<@ba.rem>技能自动开启</>",
+    "skillType": 2,
+    "durationType": 0,
+    "spData": {
+      "spType": 4,
+      "levelUpCost": null,
+      "maxChargeTime": 1,
+      "spCost": 18,
+      "initSp": 0,
+      "increment": 1.0
+    },
+    "prefabId": "skchr_liskam_1",
+    "duration": -1.0,
+    "blackboard": [
+      {
+        "key": "def",
+        "value": 1.0
+      },
+      {
+        "key": "duration",
+        "value": 8.0
+      }
+    ]
+  },
+  "skchr_liskam_2": {
+    "name": "反击电弧",
+    "rangeId": null,
+    "description": "攻击间隔<@ba.vdown>增大</>，攻击力<@ba.vup>+{atk:0%}</>，每次攻击对最多<@ba.vup>{attack@max_target}</>个敌人造成<@ba.vup>法术伤害</>，并有<@ba.vup>{attack@buff_prob:0%}</>概率使命中目标<$ba.stun>晕眩</><@ba.vup>{attack@stun}</>秒\\n<@ba.rem>持续时间结束后雷蛇<$ba.stun>晕眩</>{stun}秒</>",
+    "skillType": 1,
+    "durationType": 0,
+    "spData": {
+      "spType": 4,
+      "levelUpCost": null,
+      "maxChargeTime": 1,
+      "spCost": 34,
+      "initSp": 0,
+      "increment": 1.0
+    },
+    "prefabId": "skchr_liskam_2",
+    "duration": 20.0,
+    "blackboard": [
+      {
+        "key": "atk",
+        "value": 2.0
+      },
+      {
+        "key": "base_attack_time",
+        "value": 0.7
+      },
+      {
+        "key": "attack@buff_prob",
+        "value": 0.25
+      },
+      {
+        "key": "attack@stun",
+        "value": 1.0
+      },
+      {
+        "key": "stun",
+        "value": 5.0
+      },
+      {
+        "key": "attack@max_target",
+        "value": 4.0
+      }
+    ]
+  }
+}

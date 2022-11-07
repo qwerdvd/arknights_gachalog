@@ -1,0 +1,95 @@
+{
+  "skchr_zumama_1": {
+    "name": "轻型挂斧",
+    "rangeId": null,
+    "description": "攻击力<@ba.vup>+{atk:0%}</>，防御力<@ba.vup>+{def:0%}</>",
+    "skillType": 0,
+    "durationType": 0,
+    "spData": {
+      "spType": 8,
+      "levelUpCost": null,
+      "maxChargeTime": 0,
+      "spCost": 0,
+      "initSp": 0,
+      "increment": 0.0
+    },
+    "prefabId": "skchr_zumama_1",
+    "duration": 0.0,
+    "blackboard": [
+      {
+        "key": "def",
+        "value": 0.25
+      },
+      {
+        "key": "atk",
+        "value": 0.25
+      }
+    ]
+  },
+  "skchr_zumama_2": {
+    "name": "震慑劈砍",
+    "rangeId": null,
+    "description": "攻击间隔<@ba.vdown>略微增大</>，攻击力<@ba.vup>+{atk:0%}</>，技能期间持续使阻挡的敌人全部<$ba.stun>晕眩</>",
+    "skillType": 1,
+    "durationType": 0,
+    "spData": {
+      "spType": 1,
+      "levelUpCost": null,
+      "maxChargeTime": 1,
+      "spCost": 28,
+      "initSp": 15,
+      "increment": 1.0
+    },
+    "prefabId": "skchr_zumama_2",
+    "duration": 18.0,
+    "blackboard": [
+      {
+        "key": "atk",
+        "value": 1.8
+      },
+      {
+        "key": "base_attack_time",
+        "value": 0.4
+      }
+    ]
+  },
+  "skchr_zumama_3": {
+    "name": "钢铁意志",
+    "rangeId": null,
+    "description": "攻击力<@ba.vup>+{atk:0%}</>，防御力<@ba.vup>+{def:0%}</>，阻挡数<@ba.vup>+{block_cnt}</>，每秒恢复<@ba.vup>{hp_recovery_per_sec_by_max_hp_ratio:0%}</>生命\\n<@ba.rem>技能结束后自身<$ba.stun>晕眩</>{stun}秒</>",
+    "skillType": 1,
+    "durationType": 0,
+    "spData": {
+      "spType": 1,
+      "levelUpCost": null,
+      "maxChargeTime": 1,
+      "spCost": 45,
+      "initSp": 25,
+      "increment": 1.0
+    },
+    "prefabId": "skchr_zumama_3",
+    "duration": 35.0,
+    "blackboard": [
+      {
+        "key": "atk",
+        "value": 2.3
+      },
+      {
+        "key": "def",
+        "value": 1.6
+      },
+      {
+        "key": "block_cnt",
+        "value": 2.0
+      },
+      {
+        "key": "hp_recovery_per_sec_by_max_hp_ratio",
+        "value": 0.06
+      },
+      {
+        "key": "stun",
+        "value": 5.0
+      }
+    ]
+  }
+}

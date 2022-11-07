@@ -1,0 +1,29 @@
+{
+  "sktok_emp": {
+    "name": "EMP爆炸",
+    "rangeId": "x-4",
+    "description": "消耗<@ba.vup>{cost}</>点部署费用，立即对周围所有敌人造成伤害，并使全部命中目标<$ba.stun>晕眩</><@ba.vup>{stun}</>秒",
+    "skillType": 1,
+    "durationType": 0,
+    "spData": {
+      "spType": 1,
+      "levelUpCost": null,
+      "maxChargeTime": 1,
+      "spCost": 5,
+      "initSp": 0,
+      "increment": 1.0
+    },
+    "prefabId": "sktok_emp",
+    "duration": 0.0,
+    "blackboard": [
+      {
+        "key": "stun",
+        "value": 15.0
+      },
+      {
+        "key": "cost",
+        "value": 10.0
+      }
+    ]
+  }
+}

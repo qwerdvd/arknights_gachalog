@@ -1,0 +1,60 @@
+{
+  "skchr_mantic_1": {
+    "name": "蝎毒",
+    "rangeId": null,
+    "description": "每次攻击会在<@ba.vup>{duration}</>秒内令命中目标移动速度<@ba.vup>-{-move_speed:0%}</>",
+    "skillType": 0,
+    "durationType": 0,
+    "spData": {
+      "spType": 8,
+      "levelUpCost": null,
+      "maxChargeTime": 0,
+      "spCost": 0,
+      "initSp": 0,
+      "increment": 0.0
+    },
+    "prefabId": "skchr_mantic_1",
+    "duration": -1.0,
+    "blackboard": [
+      {
+        "key": "move_speed",
+        "value": -0.5
+      },
+      {
+        "key": "duration",
+        "value": 5.0
+      }
+    ]
+  },
+  "skchr_mantic_2": {
+    "name": "蓄力毒尾击",
+    "rangeId": null,
+    "description": "攻击前摇和攻击间隔<@ba.vdown>增大</>，攻击力<@ba.vup>+{atk:0%}</>，使命中目标<$ba.stun>晕眩</><@ba.vup>{attack@stun:0.0}</>秒",
+    "skillType": 1,
+    "durationType": 0,
+    "spData": {
+      "spType": 1,
+      "levelUpCost": null,
+      "maxChargeTime": 1,
+      "spCost": 20,
+      "initSp": 10,
+      "increment": 1.0
+    },
+    "prefabId": "skchr_mantic_2",
+    "duration": 40.0,
+    "blackboard": [
+      {
+        "key": "base_attack_time",
+        "value": 1.7
+      },
+      {
+        "key": "atk",
+        "value": 0.9
+      },
+      {
+        "key": "attack@stun",
+        "value": 1.0
+      }
+    ]
+  }
+}

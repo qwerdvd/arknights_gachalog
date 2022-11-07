@@ -1,0 +1,25 @@
+{
+  "sktok_aidkit": {
+    "name": "急救",
+    "rangeId": "1-1",
+    "description": "恢复攻击范围内一名友方单位<@ba.vup>1000</>生命值",
+    "skillType": 0,
+    "durationType": 0,
+    "spData": {
+      "spType": 8,
+      "levelUpCost": null,
+      "maxChargeTime": 0,
+      "spCost": 0,
+      "initSp": 0,
+      "increment": 0.0
+    },
+    "prefabId": "sktok_aidkit",
+    "duration": -1.0,
+    "blackboard": [
+      {
+        "key": "value",
+        "value": 1000.0
+      }
+    ]
+  }
+}

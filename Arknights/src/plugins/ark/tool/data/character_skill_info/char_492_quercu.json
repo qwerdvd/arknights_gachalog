@@ -1,0 +1,52 @@
+{
+  "skchr_quercu_1": {
+    "name": "大地的慈悲",
+    "rangeId": null,
+    "description": "攻击力<@ba.vup>+{atk:0%}</>\\n<@ba.rem>技能持续时间无限，可主动关闭技能</>",
+    "skillType": 1,
+    "durationType": 0,
+    "spData": {
+      "spType": 1,
+      "levelUpCost": null,
+      "maxChargeTime": 1,
+      "spCost": 40,
+      "initSp": 0,
+      "increment": 1.0
+    },
+    "prefabId": "skchr_quercu_1",
+    "duration": -1.0,
+    "blackboard": [
+      {
+        "key": "atk",
+        "value": 0.4
+      }
+    ]
+  },
+  "skchr_quercu_2": {
+    "name": "生灵的回响",
+    "rangeId": null,
+    "description": "攻击速度<@ba.vup>+{attack_speed}</>，并在治疗目标时为其恢复<@ba.vup>1</>点技力",
+    "skillType": 1,
+    "durationType": 0,
+    "spData": {
+      "spType": 1,
+      "levelUpCost": null,
+      "maxChargeTime": 1,
+      "spCost": 25,
+      "initSp": 15,
+      "increment": 1.0
+    },
+    "prefabId": "skchr_quercu_2",
+    "duration": 17.0,
+    "blackboard": [
+      {
+        "key": "attack_speed",
+        "value": 60.0
+      },
+      {
+        "key": "sp",
+        "value": 1.0
+      }
+    ]
+  }
+}

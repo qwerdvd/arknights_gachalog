@@ -1,0 +1,91 @@
+{
+  "skchr_kalts_1": {
+    "name": "指令：结构加固",
+    "rangeId": null,
+    "description": "自身和Mon3tr的防御力<@ba.vup>+{def:0%}</>，且自身获得<@ba.vup>{prob:0%}</>的物理格挡",
+    "skillType": 1,
+    "durationType": 0,
+    "spData": {
+      "spType": 1,
+      "levelUpCost": null,
+      "maxChargeTime": 1,
+      "spCost": 20,
+      "initSp": 10,
+      "increment": 1.0
+    },
+    "prefabId": "skchr_kalts_1",
+    "duration": 40.0,
+    "blackboard": [
+      {
+        "key": "def",
+        "value": 1.5
+      },
+      {
+        "key": "attack@def",
+        "value": 1.5
+      },
+      {
+        "key": "prob",
+        "value": 0.5
+      }
+    ]
+  },
+  "skchr_kalts_2": {
+    "name": "指令：战术协同",
+    "rangeId": null,
+    "description": "自身的攻击速度<@ba.vup>+{attack_speed}</>，Mon3tr的攻击力<@ba.vup>+{attack@atk:0%}</>，Mon3tr可以攻击阻挡的所有敌人\\n<@ba.rem>该技能与Mon3tr</><$ba.binding><@ba.rem>绑定</></>",
+    "skillType": 1,
+    "durationType": 0,
+    "spData": {
+      "spType": 1,
+      "levelUpCost": null,
+      "maxChargeTime": 1,
+      "spCost": 8,
+      "initSp": 0,
+      "increment": 1.0
+    },
+    "prefabId": "skchr_kalts_2",
+    "duration": 20.0,
+    "blackboard": [
+      {
+        "key": "attack_speed",
+        "value": 100.0
+      },
+      {
+        "key": "attack@atk",
+        "value": 0.9
+      }
+    ]
+  },
+  "skchr_kalts_3": {
+    "name": "指令：熔毁",
+    "rangeId": null,
+    "description": "Mon3tr的防御力<@ba.vup>+{attack@def:0%}</>，技能期间攻击力从<@ba.vup>+{attack@atk:0%}</>逐渐降低至+0%且伤害类型变为<@ba.vup>真实</>，此期间如果未击杀任何敌人则技能结束后流失最大生命的<@ba.vup>{attack@hp_ratio:0%}</>。<@ba.rem>该技能与Mon3tr</><$ba.binding><@ba.rem>绑定</></>",
+    "skillType": 1,
+    "durationType": 0,
+    "spData": {
+      "spType": 1,
+      "levelUpCost": null,
+      "maxChargeTime": 1,
+      "spCost": 15,
+      "initSp": 0,
+      "increment": 1.0
+    },
+    "prefabId": "skchr_kalts_3",
+    "duration": 20.0,
+    "blackboard": [
+      {
+        "key": "attack@atk",
+        "value": 2.6
+      },
+      {
+        "key": "attack@def",
+        "value": 2.0
+      },
+      {
+        "key": "attack@hp_ratio",
+        "value": 0.5
+      }
+    ]
+  }
+}

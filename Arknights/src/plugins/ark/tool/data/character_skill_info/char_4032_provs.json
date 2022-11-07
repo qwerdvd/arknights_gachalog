@@ -1,0 +1,68 @@
+{
+  "skchr_provs_1": {
+    "name": "纠纷起诉",
+    "rangeId": null,
+    "description": "下次攻击造成相当于攻击力<@ba.vup>{atk_scale:0%}</>的法术伤害，并稍微延长特性的<$ba.sluggish>停顿</>持续时间\\n<@ba.rem>可充能{ct}次</>",
+    "skillType": 2,
+    "durationType": 1,
+    "spData": {
+      "spType": 1,
+      "levelUpCost": null,
+      "maxChargeTime": 3,
+      "spCost": 5,
+      "initSp": 0,
+      "increment": 1.0
+    },
+    "prefabId": "skchr_provs_1",
+    "duration": -1.0,
+    "blackboard": [
+      {
+        "key": "atk_scale",
+        "value": 3.0
+      },
+      {
+        "key": "sluggish",
+        "value": 1.6
+      },
+      {
+        "key": "ct",
+        "value": 3.0
+      }
+    ]
+  },
+  "skchr_provs_2": {
+    "name": "致胜立论",
+    "rangeId": "y-2",
+    "description": "对攻击范围内所有单位造成一次相当于攻击力<@ba.vup>{atk_scale:0%}</>的法术伤害使其<$ba.sluggish>停顿</>并失去特殊能力，持续<@ba.vup>{sluggish}秒</>，之后自身攻击间隔极大幅度缩短",
+    "skillType": 1,
+    "durationType": 2,
+    "spData": {
+      "spType": 1,
+      "levelUpCost": null,
+      "maxChargeTime": 1,
+      "spCost": 25,
+      "initSp": 15,
+      "increment": 1.0
+    },
+    "prefabId": "skchr_provs_2",
+    "duration": 10.0,
+    "blackboard": [
+      {
+        "key": "atk_scale",
+        "value": 3.5
+      },
+      {
+        "key": "sluggish",
+        "value": 10.0
+      },
+      {
+        "key": "silence",
+        "value": 10.0
+      },
+      {
+        "key": "base_attack_time",
+        "value": -1.1
+      }
+    ]
+  }
+}

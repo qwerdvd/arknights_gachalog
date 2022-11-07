@@ -1,0 +1,56 @@
+{
+  "skcom_atk_up[3]": {
+    "name": "攻击力强化·γ型",
+    "rangeId": null,
+    "description": "攻击力<@ba.vup>+{atk:0%}</>",
+    "skillType": 1,
+    "durationType": 0,
+    "spData": {
+      "spType": 1,
+      "levelUpCost": null,
+      "maxChargeTime": 1,
+      "spCost": 30,
+      "initSp": 15,
+      "increment": 1.0
+    },
+    "prefabId": "skcom_atk_up",
+    "duration": 30.0,
+    "blackboard": [
+      {
+        "key": "atk",
+        "value": 1.0
+      }
+    ]
+  },
+  "skchr_cuttle_2": {
+    "name": "阻滞射击战术",
+    "rangeId": null,
+    "description": "攻击力<@ba.vup>+{atk:0%}</>，但普通攻击不再以生命值低于<@ba.vup>50%</>的敌人为目标，被击中的目标在<@ba.vup>{attack@duration}</>秒内移动速度<@ba.vup>-{-attack@move_speed:0%}</>",
+    "skillType": 1,
+    "durationType": 0,
+    "spData": {
+      "spType": 1,
+      "levelUpCost": null,
+      "maxChargeTime": 1,
+      "spCost": 30,
+      "initSp": 15,
+      "increment": 1.0
+    },
+    "prefabId": "skchr_cuttle_2",
+    "duration": 30.0,
+    "blackboard": [
+      {
+        "key": "atk",
+        "value": 2.4
+      },
+      {
+        "key": "attack@move_speed",
+        "value": -0.4
+      },
+      {
+        "key": "attack@duration",
+        "value": 6.0
+      }
+    ]
+  }
+}

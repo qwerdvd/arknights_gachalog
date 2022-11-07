@@ -1,0 +1,99 @@
+{
+  "skchr_ifrit_1": {
+    "name": "狂热",
+    "rangeId": null,
+    "description": "攻击力<@ba.vup>+{atk:0%}</>，攻击速度<@ba.vup>+{attack_speed}</>",
+    "skillType": 1,
+    "durationType": 0,
+    "spData": {
+      "spType": 1,
+      "levelUpCost": null,
+      "maxChargeTime": 1,
+      "spCost": 40,
+      "initSp": 20,
+      "increment": 1.0
+    },
+    "prefabId": "skchr_ifrit_1",
+    "duration": 20.0,
+    "blackboard": [
+      {
+        "key": "attack_speed",
+        "value": 80.0
+      },
+      {
+        "key": "atk",
+        "value": 0.2
+      }
+    ]
+  },
+  "skchr_ifrit_2": {
+    "name": "炎爆",
+    "rangeId": null,
+    "description": "下次攻击造成相当于攻击力<@ba.vup>{atk_scale:0%}</>的法术伤害，命中目标在<@ba.vup>3</>秒内防御力<@ba.vup>-{-def}</>并持续受到灼烧伤害\\n<@ba.rem>可充能{ct}次</>",
+    "skillType": 2,
+    "durationType": 0,
+    "spData": {
+      "spType": 1,
+      "levelUpCost": null,
+      "maxChargeTime": 3,
+      "spCost": 7,
+      "initSp": 0,
+      "increment": 1.0
+    },
+    "prefabId": "skchr_ifrit_2",
+    "duration": -1.0,
+    "blackboard": [
+      {
+        "key": "atk_scale",
+        "value": 2.5
+      },
+      {
+        "key": "burn.atk_scale",
+        "value": 0.33
+      },
+      {
+        "key": "def",
+        "value": -300.0
+      },
+      {
+        "key": "duration",
+        "value": 3.01
+      },
+      {
+        "key": "ct",
+        "value": 3.0
+      }
+    ]
+  },
+  "skchr_ifrit_3": {
+    "name": "灼地",
+    "rangeId": null,
+    "description": "对攻击范围内的地面敌人造成每秒相当于攻击力<@ba.vup>{atk_scale:0%}</>的法术伤害，命中目标的法术抗性<@ba.vup>-{-magic_resistance}</>\\n<@ba.rem>自己每秒流失最大生命值的{hp_ratio:0%}</>",
+    "skillType": 1,
+    "durationType": 0,
+    "spData": {
+      "spType": 1,
+      "levelUpCost": null,
+      "maxChargeTime": 1,
+      "spCost": 28,
+      "initSp": 0,
+      "increment": 1.0
+    },
+    "prefabId": "skchr_ifrit_3",
+    "duration": 20.0,
+    "blackboard": [
+      {
+        "key": "atk_scale",
+        "value": 1.4
+      },
+      {
+        "key": "hp_ratio",
+        "value": 0.02
+      },
+      {
+        "key": "magic_resistance",
+        "value": -20.0
+      }
+    ]
+  }
+}

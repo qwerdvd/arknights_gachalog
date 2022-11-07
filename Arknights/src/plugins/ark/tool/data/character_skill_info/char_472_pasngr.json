@@ -1,0 +1,115 @@
+{
+  "skchr_pasngr_1": {
+    "name": "电能之触",
+    "rangeId": null,
+    "description": "下次攻击时攻击力提升至<@ba.vup>{pasngr_s_1.atk_scale:0%}</>，最多在<@ba.vup>{pasngr_s_1.max_target}</>个目标间跳跃，攻击造成的<$ba.sluggish>停顿</>时间延长至<@ba.vup>{pasngr_s_1.sluggish}</>秒",
+    "skillType": 2,
+    "durationType": 0,
+    "spData": {
+      "spType": 1,
+      "levelUpCost": null,
+      "maxChargeTime": 1,
+      "spCost": 5,
+      "initSp": 0,
+      "increment": 1.0
+    },
+    "prefabId": "skchr_pasngr_1",
+    "duration": -1.0,
+    "blackboard": [
+      {
+        "key": "pasngr_s_1.atk_scale",
+        "value": 2.5
+      },
+      {
+        "key": "pasngr_s_1.sluggish",
+        "value": 1.5
+      },
+      {
+        "key": "pasngr_s_1.max_target",
+        "value": 4.0
+      }
+    ]
+  },
+  "skchr_pasngr_2": {
+    "name": "聚焦指令",
+    "rangeId": null,
+    "description": "攻击距离<@ba.vup>+{ability_range_forward_extend}</>，攻击力<@ba.vup>+{atk:0%}</>，攻击间隔<@ba.vup>较大幅度缩短</>，攻击最大弹跳次数提升至<@ba.vup>{attack@max_target}</>",
+    "skillType": 1,
+    "durationType": 0,
+    "spData": {
+      "spType": 1,
+      "levelUpCost": null,
+      "maxChargeTime": 1,
+      "spCost": 40,
+      "initSp": 20,
+      "increment": 1.0
+    },
+    "prefabId": "skchr_pasngr_2",
+    "duration": 35.0,
+    "blackboard": [
+      {
+        "key": "base_attack_time",
+        "value": -0.5
+      },
+      {
+        "key": "ability_range_forward_extend",
+        "value": 1.0
+      },
+      {
+        "key": "atk",
+        "value": 0.3
+      },
+      {
+        "key": "attack@max_target",
+        "value": 5.0
+      }
+    ]
+  },
+  "skchr_pasngr_3": {
+    "name": "辉煌裂片",
+    "rangeId": "x-3",
+    "description": "立即寻找大范围内生命值最高的目标，在其位置生成持续<@ba.vup>{duration}</>秒的雷暴区域，期间每<@ba.vup>{interval}</>秒以<@ba.vup>{atk_scale:0%}</>的攻击力对雷暴区域内的随机敌人进行一次额外攻击；<@ba.rem>可充能{ct}次</>",
+    "skillType": 1,
+    "durationType": 0,
+    "spData": {
+      "spType": 1,
+      "levelUpCost": null,
+      "maxChargeTime": 2,
+      "spCost": 30,
+      "initSp": 0,
+      "increment": 1.0
+    },
+    "prefabId": "skchr_pasngr_3",
+    "duration": -1.0,
+    "blackboard": [
+      {
+        "key": "atk_scale",
+        "value": 1.5
+      },
+      {
+        "key": "duration",
+        "value": 4.0
+      },
+      {
+        "key": "ct",
+        "value": 2.0
+      },
+      {
+        "key": "projectile_delay_time",
+        "value": 4.0
+      },
+      {
+        "key": "interval",
+        "value": 0.5
+      },
+      {
+        "key": "chain.max_target",
+        "value": 4.0
+      },
+      {
+        "key": "sluggish",
+        "value": 0.5
+      }
+    ]
+  }
+}

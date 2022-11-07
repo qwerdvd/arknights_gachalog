@@ -1,0 +1,119 @@
+{
+  "skchr_horn_1": {
+    "name": "照明榴弹",
+    "rangeId": null,
+    "description": "下次攻击时造成<@ba.vup>{atk_scale:0%}</>攻击力的物理伤害，若为远程攻击则溅射范围<@ba.vup>扩大</>且在周围产生一个持续<@ba.vup>{projectile_delay_time}</>秒的照明区域使敌人<$ba.invisible>隐匿</>失效\\n<@ba.rem>可充能{cnt}次</>",
+    "skillType": 2,
+    "durationType": 0,
+    "spData": {
+      "spType": 1,
+      "levelUpCost": null,
+      "maxChargeTime": 2,
+      "spCost": 5,
+      "initSp": 0,
+      "increment": 1.0
+    },
+    "prefabId": "skchr_horn_1",
+    "duration": -1.0,
+    "blackboard": [
+      {
+        "key": "atk_scale",
+        "value": 2.8
+      },
+      {
+        "key": "projectile_delay_time",
+        "value": 8.0
+      },
+      {
+        "key": "projectile_range",
+        "value": 1.7
+      },
+      {
+        "key": "cnt",
+        "value": 2.0
+      }
+    ]
+  },
+  "skchr_horn_2": {
+    "name": "暴风号令",
+    "rangeId": null,
+    "description": "每次攻击造成<@ba.vup>{attack@s2.atk_scale:0%}</>攻击力的物理溅射伤害\\n<$ba.overdrive>过载</>：每次攻击额外造成<@ba.vup>{attack@s2.magic_atk_scale:0%}</>攻击力的<@ba.vup>法术</>溅射伤害，主动关闭时发射剩余全部弹药并流失<@ba.vdown>{attack@s2.hp_ratio:0%}</>生命值\\n<@ba.rem>技能拥有10枚弹药，可随时主动关闭</>",
+    "skillType": 1,
+    "durationType": 0,
+    "spData": {
+      "spType": 1,
+      "levelUpCost": null,
+      "maxChargeTime": 1,
+      "spCost": 25,
+      "initSp": 18,
+      "increment": 1.0
+    },
+    "prefabId": "skchr_horn_2",
+    "duration": -1.0,
+    "blackboard": [
+      {
+        "key": "attack@s2.atk_scale",
+        "value": 2.4
+      },
+      {
+        "key": "attack@s2.magic_atk_scale",
+        "value": 0.6
+      },
+      {
+        "key": "attack@s2.hp_ratio",
+        "value": 0.6
+      },
+      {
+        "key": "attack@s2.trigger_time",
+        "value": 10.0
+      },
+      {
+        "key": "hp_ratio",
+        "value": 0.6
+      }
+    ]
+  },
+  "skchr_horn_3": {
+    "name": "终极防线",
+    "rangeId": null,
+    "description": "攻击力<@ba.vup>+{atk:0%}</>，攻击间隔<@ba.vup>大幅缩短</>\\n<$ba.overdrive>过载</>：攻击力改为<@ba.vup>+{horn_s_3[overload_start].atk:0%}</>，逐渐流失生命（{horn_s_3[overload_start].damage_duration}秒后到达最大生命{horn_s_3[overload_start].hp_ratio:0%}/秒）<@ba.rem>该技能可随时主动关闭</>",
+    "skillType": 1,
+    "durationType": 0,
+    "spData": {
+      "spType": 1,
+      "levelUpCost": null,
+      "maxChargeTime": 1,
+      "spCost": 35,
+      "initSp": 25,
+      "increment": 1.0
+    },
+    "prefabId": "skchr_horn_3",
+    "duration": 24.0,
+    "blackboard": [
+      {
+        "key": "atk",
+        "value": 0.7
+      },
+      {
+        "key": "base_attack_time",
+        "value": -1.8
+      },
+      {
+        "key": "horn_s_3[overload_start].atk",
+        "value": 1.4
+      },
+      {
+        "key": "horn_s_3[overload_start].interval",
+        "value": 0.2
+      },
+      {
+        "key": "horn_s_3[overload_start].hp_ratio",
+        "value": 0.12
+      },
+      {
+        "key": "horn_s_3[overload_start].damage_duration",
+        "value": 12.0
+      }
+    ]
+  }
+}

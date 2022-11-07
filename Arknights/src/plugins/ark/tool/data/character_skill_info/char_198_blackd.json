@@ -1,0 +1,64 @@
+{
+  "skcom_charge_cost[2]": {
+    "name": "冲锋号令·β型",
+    "rangeId": null,
+    "description": "立即获得<@ba.vup>{cost}</>点部署费用",
+    "skillType": 2,
+    "durationType": 0,
+    "spData": {
+      "spType": 1,
+      "levelUpCost": null,
+      "maxChargeTime": 1,
+      "spCost": 30,
+      "initSp": 13,
+      "increment": 1.0
+    },
+    "prefabId": "skcom_charge_cost",
+    "duration": 0.0,
+    "blackboard": [
+      {
+        "key": "cost",
+        "value": 9.0
+      }
+    ]
+  },
+  "skchr_blackd_2": {
+    "name": "冲锋号令·防御",
+    "rangeId": null,
+    "description": "立即获得<@ba.vup>{blackd_s_2[once].cost}</>点部署费用\\n技能持续期间内逐渐获得<@ba.vup>{blackd_s_2[period].trig_cnt}</>点部署费用，防御力<@ba.vup>+{blackd_s_2[period].def:0%}</>",
+    "skillType": 1,
+    "durationType": 0,
+    "spData": {
+      "spType": 1,
+      "levelUpCost": null,
+      "maxChargeTime": 1,
+      "spCost": 30,
+      "initSp": 17,
+      "increment": 1.0
+    },
+    "prefabId": "skchr_blackd_2",
+    "duration": 15.0,
+    "blackboard": [
+      {
+        "key": "blackd_s_2[period].def",
+        "value": 0.8
+      },
+      {
+        "key": "blackd_s_2[period].cost",
+        "value": 1.0
+      },
+      {
+        "key": "blackd_s_2[period].interval",
+        "value": 1.87
+      },
+      {
+        "key": "blackd_s_2[period].trig_cnt",
+        "value": 8.0
+      },
+      {
+        "key": "blackd_s_2[once].cost",
+        "value": 3.0
+      }
+    ]
+  }
+}

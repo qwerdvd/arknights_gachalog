@@ -1,0 +1,56 @@
+{
+  "skcom_atk_up[3]": {
+    "name": "攻击力强化·γ型",
+    "rangeId": null,
+    "description": "攻击力<@ba.vup>+{atk:0%}</>",
+    "skillType": 1,
+    "durationType": 0,
+    "spData": {
+      "spType": 1,
+      "levelUpCost": null,
+      "maxChargeTime": 1,
+      "spCost": 30,
+      "initSp": 15,
+      "increment": 1.0
+    },
+    "prefabId": "skcom_atk_up",
+    "duration": 30.0,
+    "blackboard": [
+      {
+        "key": "atk",
+        "value": 1.0
+      }
+    ]
+  },
+  "skchr_sesa_2": {
+    "name": "延时震荡零件",
+    "rangeId": null,
+    "description": "攻击变为发射一个延迟引爆的榴弹，爆炸后造成相当于攻击力<@ba.vup>{attack@atk_scale:0%}</>的物理伤害，并在<@ba.vup>{attack@duration}</>秒内使目标攻击速度<@ba.vup>-{-attack@attack_speed}</>",
+    "skillType": 1,
+    "durationType": 0,
+    "spData": {
+      "spType": 1,
+      "levelUpCost": null,
+      "maxChargeTime": 1,
+      "spCost": 40,
+      "initSp": 20,
+      "increment": 1.0
+    },
+    "prefabId": "skchr_sesa_2",
+    "duration": 30.0,
+    "blackboard": [
+      {
+        "key": "attack@atk_scale",
+        "value": 2.4
+      },
+      {
+        "key": "attack@attack_speed",
+        "value": -20.0
+      },
+      {
+        "key": "attack@duration",
+        "value": 3.0
+      }
+    ]
+  }
+}

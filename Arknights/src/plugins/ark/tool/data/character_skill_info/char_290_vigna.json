@@ -1,0 +1,52 @@
+{
+  "skchr_vigna_1": {
+    "name": "攻击力强化·β型",
+    "rangeId": null,
+    "description": "攻击力<@ba.vup>+{atk:0%}</>",
+    "skillType": 1,
+    "durationType": 0,
+    "spData": {
+      "spType": 1,
+      "levelUpCost": null,
+      "maxChargeTime": 1,
+      "spCost": 35,
+      "initSp": 10,
+      "increment": 1.0
+    },
+    "prefabId": "skchr_vigna_1",
+    "duration": 25.0,
+    "blackboard": [
+      {
+        "key": "atk",
+        "value": 0.8
+      }
+    ]
+  },
+  "skchr_vigna_2": {
+    "name": "槌音",
+    "rangeId": null,
+    "description": "攻击间隔<@ba.vdown>略微增大</>，攻击力<@ba.vup>+{atk:0%}</>",
+    "skillType": 1,
+    "durationType": 0,
+    "spData": {
+      "spType": 1,
+      "levelUpCost": null,
+      "maxChargeTime": 1,
+      "spCost": 25,
+      "initSp": 10,
+      "increment": 1.0
+    },
+    "prefabId": "skchr_vigna_2",
+    "duration": 30.0,
+    "blackboard": [
+      {
+        "key": "atk",
+        "value": 2.0
+      },
+      {
+        "key": "base_attack_time",
+        "value": 0.5
+      }
+    ]
+  }
+}

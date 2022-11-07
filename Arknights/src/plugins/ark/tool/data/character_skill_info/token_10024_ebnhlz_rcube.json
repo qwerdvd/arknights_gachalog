@@ -1,0 +1,29 @@
+{
+  "sktok_ebnhlz_token": {
+    "name": "闪回",
+    "rangeId": null,
+    "description": "敌人接近时会激活，激活后对周围所有敌人造成法术伤害并令以<@ba.vup>中等力度</>拖拽敌人至自身中心",
+    "skillType": 2,
+    "durationType": 0,
+    "spData": {
+      "spType": 8,
+      "levelUpCost": null,
+      "maxChargeTime": 0,
+      "spCost": 0,
+      "initSp": 0,
+      "increment": 1.0
+    },
+    "prefabId": "sktok_ebnhlz_token",
+    "duration": 0.0,
+    "blackboard": [
+      {
+        "key": "atk_scale",
+        "value": 2.45
+      },
+      {
+        "key": "force",
+        "value": 1.0
+      }
+    ]
+  }
+}

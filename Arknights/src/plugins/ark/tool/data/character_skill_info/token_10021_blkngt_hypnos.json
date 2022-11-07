@@ -1,0 +1,38 @@
+{
+  "sktok_blkngt_hypnos_s_1": {
+    "name": "食梦",
+    "rangeId": null,
+    "description": "可以攻击并优先攻击<$ba.sleep>沉睡</>的目标",
+    "skillType": 0,
+    "durationType": 0,
+    "spData": {
+      "spType": 8,
+      "levelUpCost": null,
+      "maxChargeTime": 0,
+      "spCost": 0,
+      "initSp": 0,
+      "increment": 1.0
+    },
+    "prefabId": null,
+    "duration": 0.0,
+    "blackboard": []
+  },
+  "sktok_blkngt_hypnos_s_2": {
+    "name": "食梦",
+    "rangeId": null,
+    "description": "可以攻击并优先攻击<$ba.sleep>沉睡</>的目标",
+    "skillType": 0,
+    "durationType": 0,
+    "spData": {
+      "spType": 8,
+      "levelUpCost": null,
+      "maxChargeTime": 0,
+      "spCost": 0,
+      "initSp": 0,
+      "increment": 1.0
+    },
+    "prefabId": null,
+    "duration": 0.0,
+    "blackboard": []
+  }
+}

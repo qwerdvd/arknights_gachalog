@@ -1,0 +1,33 @@
+{
+  "sktok_vgctrl": {
+    "name": "复仇黑手",
+    "rangeId": null,
+    "description": "触发复仇状态",
+    "skillType": 2,
+    "durationType": 0,
+    "spData": {
+      "spType": 1,
+      "levelUpCost": null,
+      "maxChargeTime": 1,
+      "spCost": 500,
+      "initSp": 400,
+      "increment": 3.0
+    },
+    "prefabId": "sktok_vgctrl",
+    "duration": 35.0,
+    "blackboard": [
+      {
+        "key": "max_hp",
+        "value": 0.0
+      },
+      {
+        "key": "atk",
+        "value": 0.2
+      },
+      {
+        "key": "def",
+        "value": 0.15
+      }
+    ]
+  }
+}

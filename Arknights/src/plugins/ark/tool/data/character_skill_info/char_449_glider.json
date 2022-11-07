@@ -1,0 +1,60 @@
+{
+  "skchr_glider_1": {
+    "name": "精神护理",
+    "rangeId": null,
+    "description": "下次治疗以<$ba.dt.element>元素损伤</>最严重的2名干员为目标，并使其<@ba.vup>{glider_s_1.duration}</>秒内每秒恢复蜜莓攻击力<@ba.vup>{glider_s_1.ep_heal_ratio:0%}</>的元素损伤",
+    "skillType": 2,
+    "durationType": 0,
+    "spData": {
+      "spType": 1,
+      "levelUpCost": null,
+      "maxChargeTime": 1,
+      "spCost": 4,
+      "initSp": 0,
+      "increment": 1.0
+    },
+    "prefabId": "skchr_glider_1",
+    "duration": 0.0,
+    "blackboard": [
+      {
+        "key": "glider_s_1.duration",
+        "value": 3.0
+      },
+      {
+        "key": "glider_s_1.interval",
+        "value": 1.0
+      },
+      {
+        "key": "glider_s_1.ep_heal_ratio",
+        "value": 1.0
+      }
+    ]
+  },
+  "skchr_glider_2": {
+    "name": "振奋",
+    "rangeId": null,
+    "description": "攻击力<@ba.vup>+{atk:0%}</>，每次治疗以<$ba.dt.element>元素损伤</>最严重的<@ba.vup>{attack@max_target}</>名干员为目标",
+    "skillType": 1,
+    "durationType": 0,
+    "spData": {
+      "spType": 1,
+      "levelUpCost": null,
+      "maxChargeTime": 1,
+      "spCost": 45,
+      "initSp": 20,
+      "increment": 1.0
+    },
+    "prefabId": "skchr_glider_2",
+    "duration": 25.0,
+    "blackboard": [
+      {
+        "key": "atk",
+        "value": 0.5
+      },
+      {
+        "key": "attack@max_target",
+        "value": 3.0
+      }
+    ]
+  }
+}

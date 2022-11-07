@@ -1,0 +1,56 @@
+{
+  "skchr_chnut_1": {
+    "name": "积微成著",
+    "rangeId": null,
+    "description": "立即进行一次治疗，并且该次治疗<$ba.dt.element>元素损伤</>回复量提升至<@ba.vup>{trait_scale:0%}</>\\n<@ba.rem>可以充能{cnt}次</>",
+    "skillType": 1,
+    "durationType": 0,
+    "spData": {
+      "spType": 1,
+      "levelUpCost": null,
+      "maxChargeTime": 2,
+      "spCost": 10,
+      "initSp": 8,
+      "increment": 1.0
+    },
+    "prefabId": "skchr_chnut_1",
+    "duration": 0.0,
+    "blackboard": [
+      {
+        "key": "trait_scale",
+        "value": 3.0
+      },
+      {
+        "key": "cnt",
+        "value": 2.0
+      }
+    ]
+  },
+  "skchr_chnut_2": {
+    "name": "厚土迸发",
+    "rangeId": "3-2",
+    "description": "攻击范围<@ba.vdown>缩小</>，攻击速度<@ba.vup>+{attack_speed}</>，连续治疗同一目标时，治疗量和<$ba.dt.element>元素损伤</>回复量提高至<@ba.vup>{attack@heal_continuously_scale:0%}</>",
+    "skillType": 1,
+    "durationType": 0,
+    "spData": {
+      "spType": 1,
+      "levelUpCost": null,
+      "maxChargeTime": 1,
+      "spCost": 70,
+      "initSp": 40,
+      "increment": 1.0
+    },
+    "prefabId": "skchr_chnut_2",
+    "duration": 35.0,
+    "blackboard": [
+      {
+        "key": "attack_speed",
+        "value": 130.0
+      },
+      {
+        "key": "attack@heal_continuously_scale",
+        "value": 1.5
+      }
+    ]
+  }
+}

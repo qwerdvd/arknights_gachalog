@@ -1,0 +1,29 @@
+{
+  "skchr_acast_1": {
+    "name": "“为我所为”",
+    "rangeId": null,
+    "description": "自身攻击速度<@ba.vup>+{attack_speed}</>，所有【术师】干员攻击力<@ba.vup>+{atk:0%}</>",
+    "skillType": 1,
+    "durationType": 0,
+    "spData": {
+      "spType": 1,
+      "levelUpCost": null,
+      "maxChargeTime": 1,
+      "spCost": 40,
+      "initSp": 20,
+      "increment": 1.0
+    },
+    "prefabId": "skchr_acast_1",
+    "duration": 30.0,
+    "blackboard": [
+      {
+        "key": "atk",
+        "value": 0.4
+      },
+      {
+        "key": "attack_speed",
+        "value": 70.0
+      }
+    ]
+  }
+}

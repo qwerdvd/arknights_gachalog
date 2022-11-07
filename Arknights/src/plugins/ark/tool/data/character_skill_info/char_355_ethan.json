@@ -1,0 +1,56 @@
+{
+  "skchr_ethan_1": {
+    "name": "花式回旋",
+    "rangeId": null,
+    "description": "普通攻击时对击中目标额外造成每秒<@ba.vup>{attack@poison_damage}</>的法术伤害，持续<@ba.vup>{attack@duration}</>秒",
+    "skillType": 0,
+    "durationType": 0,
+    "spData": {
+      "spType": 8,
+      "levelUpCost": null,
+      "maxChargeTime": 0,
+      "spCost": 0,
+      "initSp": 0,
+      "increment": 0.0
+    },
+    "prefabId": "skchr_ethan_1",
+    "duration": 0.0,
+    "blackboard": [
+      {
+        "key": "attack@poison_damage",
+        "value": 100.0
+      },
+      {
+        "key": "attack@duration",
+        "value": 4.0
+      }
+    ]
+  },
+  "skchr_ethan_2": {
+    "name": "十字悬挂",
+    "rangeId": null,
+    "description": "攻击力<@ba.vup>+{atk:0%}</>，天赋的触发几率提升至<@ba.vup>{talent_scale:0.0}</>倍",
+    "skillType": 1,
+    "durationType": 0,
+    "spData": {
+      "spType": 1,
+      "levelUpCost": null,
+      "maxChargeTime": 1,
+      "spCost": 25,
+      "initSp": 0,
+      "increment": 1.0
+    },
+    "prefabId": "skchr_ethan_2",
+    "duration": 30.0,
+    "blackboard": [
+      {
+        "key": "atk",
+        "value": 0.7
+      },
+      {
+        "key": "talent_scale",
+        "value": 3.0
+      }
+    ]
+  }
+}

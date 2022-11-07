@@ -1,0 +1,48 @@
+{
+  "skchr_excu_1": {
+    "name": "铳口收束",
+    "rangeId": null,
+    "description": "攻击力<@ba.vup>+{atk:0%}</>，攻击时对攻击范围内的所有敌人应用特性加成",
+    "skillType": 1,
+    "durationType": 0,
+    "spData": {
+      "spType": 1,
+      "levelUpCost": null,
+      "maxChargeTime": 1,
+      "spCost": 45,
+      "initSp": 25,
+      "increment": 1.0
+    },
+    "prefabId": "skchr_excu_1",
+    "duration": 35.0,
+    "blackboard": [
+      {
+        "key": "atk",
+        "value": 0.7
+      }
+    ]
+  },
+  "skchr_excu_2": {
+    "name": "最终旅程",
+    "rangeId": null,
+    "description": "普通攻击变为二连击，且攻击间隔<@ba.vup>较大幅度缩短</>",
+    "skillType": 1,
+    "durationType": 0,
+    "spData": {
+      "spType": 1,
+      "levelUpCost": null,
+      "maxChargeTime": 1,
+      "spCost": 70,
+      "initSp": 35,
+      "increment": 1.0
+    },
+    "prefabId": "skchr_excu_2",
+    "duration": 20.0,
+    "blackboard": [
+      {
+        "key": "base_attack_time",
+        "value": -0.9
+      }
+    ]
+  }
+}

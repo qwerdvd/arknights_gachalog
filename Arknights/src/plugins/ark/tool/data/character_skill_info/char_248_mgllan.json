@@ -1,0 +1,79 @@
+{
+  "skchr_mgllan_1": {
+    "name": "高效制冷模块",
+    "rangeId": null,
+    "description": "被动效果：使自身和无人机攻击范围内的敌方单位每<@ba.vup>{attack@interval}</>秒<$ba.sluggish>停顿</><@ba.vup>{attack@sluggish}</>秒\\n主动开启：<$ba.sluggish>停顿</>变为<$ba.root>束缚</><@ba.vup>{attack@frozen_duration}</>秒，<@ba.rem>技能结束时回收所有无人机</>",
+    "skillType": 1,
+    "durationType": 0,
+    "spData": {
+      "spType": 1,
+      "levelUpCost": null,
+      "maxChargeTime": 1,
+      "spCost": 30,
+      "initSp": 20,
+      "increment": 1.0
+    },
+    "prefabId": "skchr_mgllan_1",
+    "duration": 15.0,
+    "blackboard": [
+      {
+        "key": "attack@interval",
+        "value": 3.0
+      },
+      {
+        "key": "attack@frozen_duration",
+        "value": 2.5
+      },
+      {
+        "key": "attack@sluggish",
+        "value": 1.0
+      }
+    ]
+  },
+  "skchr_mgllan_2": {
+    "name": "激光开采模块",
+    "rangeId": null,
+    "description": "被动效果：无人机可以部署在近战位，进行单体法术攻击\\n主动开启：麦哲伦和她的无人机攻击速度<@ba.vup>+{attack_speed}</>，无人机变为<@ba.vup>群体</>攻击，<@ba.rem>技能结束时回收所有无人机</>",
+    "skillType": 1,
+    "durationType": 0,
+    "spData": {
+      "spType": 1,
+      "levelUpCost": null,
+      "maxChargeTime": 1,
+      "spCost": 38,
+      "initSp": 25,
+      "increment": 1.0
+    },
+    "prefabId": "skchr_mgllan_2",
+    "duration": 15.0,
+    "blackboard": [
+      {
+        "key": "attack_speed",
+        "value": 150.0
+      }
+    ]
+  },
+  "skchr_mgllan_3": {
+    "name": "武装打击模块",
+    "rangeId": null,
+    "description": "被动效果：无人机可以部署在远程位，进行群体物理攻击\\n主动开启：麦哲伦和她的无人机攻击力<@ba.vup>+{atk:0%}</>，无人机攻击的爆炸范围<@ba.vup>扩大</>，<@ba.rem>技能结束时回收所有无人机</>",
+    "skillType": 1,
+    "durationType": 0,
+    "spData": {
+      "spType": 1,
+      "levelUpCost": null,
+      "maxChargeTime": 1,
+      "spCost": 38,
+      "initSp": 25,
+      "increment": 1.0
+    },
+    "prefabId": "skchr_mgllan_3",
+    "duration": 15.0,
+    "blackboard": [
+      {
+        "key": "atk",
+        "value": 1.5
+      }
+    ]
+  }
+}

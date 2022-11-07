@@ -1,0 +1,56 @@
+{
+  "skchr_ncdeer_1": {
+    "name": "人间降吉",
+    "rangeId": null,
+    "description": "攻击力<@ba.vup>+{atk:0%}</>",
+    "skillType": 1,
+    "durationType": 0,
+    "spData": {
+      "spType": 1,
+      "levelUpCost": null,
+      "maxChargeTime": 1,
+      "spCost": 30,
+      "initSp": 12,
+      "increment": 1.0
+    },
+    "prefabId": "skchr_ncdeer_1",
+    "duration": 25.0,
+    "blackboard": [
+      {
+        "key": "atk",
+        "value": 0.6
+      }
+    ]
+  },
+  "skchr_ncdeer_2": {
+    "name": "仙山去远",
+    "rangeId": null,
+    "description": "攻击速度<@ba.vup>+{attack_speed}</>，自身获得<@ba.vup>{prob:0%}</>的远程物理抵挡，天赋的触发条件变为<@ba.vup>{talent@hp_ratio:0%}</>生命时触发",
+    "skillType": 1,
+    "durationType": 0,
+    "spData": {
+      "spType": 1,
+      "levelUpCost": null,
+      "maxChargeTime": 1,
+      "spCost": 40,
+      "initSp": 30,
+      "increment": 1.0
+    },
+    "prefabId": "skchr_ncdeer_2",
+    "duration": 20.0,
+    "blackboard": [
+      {
+        "key": "attack_speed",
+        "value": 50.0
+      },
+      {
+        "key": "talent@hp_ratio",
+        "value": 1.0
+      },
+      {
+        "key": "prob",
+        "value": 0.7
+      }
+    ]
+  }
+}

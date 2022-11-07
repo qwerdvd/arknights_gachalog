@@ -1,0 +1,25 @@
+{
+  "skchr_midn_1": {
+    "name": "武器附魔·α型",
+    "rangeId": null,
+    "description": "攻击力<@ba.vup>+{atk:0%}</>，普通攻击的伤害类型变为<@ba.vup>法术</>",
+    "skillType": 1,
+    "durationType": 0,
+    "spData": {
+      "spType": 1,
+      "levelUpCost": null,
+      "maxChargeTime": 1,
+      "spCost": 70,
+      "initSp": 30,
+      "increment": 1.0
+    },
+    "prefabId": "skchr_midn_1",
+    "duration": 40.0,
+    "blackboard": [
+      {
+        "key": "atk",
+        "value": 0.35
+      }
+    ]
+  }
+}

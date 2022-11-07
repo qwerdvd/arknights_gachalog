@@ -1,0 +1,103 @@
+{
+  "skchr_nearl2_1": {
+    "name": "灿焰长刃",
+    "rangeId": "2-2",
+    "description": "攻击范围<@ba.vup>扩大</>，攻击力<@ba.vup>+{atk:0%}</>，攻击速度<@ba.vup>+{attack_speed}</>\\n<@ba.rem>持续时间无限</>",
+    "skillType": 2,
+    "durationType": 0,
+    "spData": {
+      "spType": 1,
+      "levelUpCost": null,
+      "maxChargeTime": 1,
+      "spCost": 60,
+      "initSp": 0,
+      "increment": 1.0
+    },
+    "prefabId": "skchr_nearl2_1",
+    "duration": -1.0,
+    "blackboard": [
+      {
+        "key": "atk",
+        "value": 0.7
+      },
+      {
+        "key": "attack_speed",
+        "value": 50.0
+      }
+    ]
+  },
+  "skchr_nearl2_2": {
+    "name": "逐夜烁光",
+    "rangeId": null,
+    "description": "被动效果：部署<@ba.vup>不消耗</>部署位。\\n部署后攻击力<@ba.vup>+{atk:0%}</>，获得<@ba.vup>{times}</>层<$ba.shield>护盾</>。技能结束后自动撤退，本次再部署时间延长<@ba.vup>{value:0%}</>，上一名部署干员势力为【卡西米尔】时本次再部署时间<@ba.vup>不再延长</>",
+    "skillType": 0,
+    "durationType": 0,
+    "spData": {
+      "spType": 8,
+      "levelUpCost": null,
+      "maxChargeTime": 1,
+      "spCost": 0,
+      "initSp": 0,
+      "increment": 0.0
+    },
+    "prefabId": "skchr_nearl2_2",
+    "duration": 27.0,
+    "blackboard": [
+      {
+        "key": "atk",
+        "value": 1.6
+      },
+      {
+        "key": "times",
+        "value": 4.0
+      },
+      {
+        "key": "respawn_time",
+        "value": 1.25
+      },
+      {
+        "key": "nearl2_s_2[withdraw][combo].respawn_time",
+        "value": 1.0
+      },
+      {
+        "key": "value",
+        "value": 0.25
+      }
+    ]
+  },
+  "skchr_nearl2_3": {
+    "name": "耀阳颔首",
+    "rangeId": "2-1",
+    "description": "在周围四格可部署地面召唤一把\"耀阳\"对周围敌人造成<@ba.vup>{value:0%}</>耀骑士临光攻击力的真实伤害并<$ba.stun>晕眩</><@ba.vup>{value2}</>秒，自身攻击范围<@ba.vup>扩大</>，攻击力<@ba.vup>+{atk:0%}</>、防御力<@ba.vup>+{def:0%}</>，攻击自身与\"耀阳\"阻挡的单位时伤害类型变为<@ba.vup>真实</>",
+    "skillType": 1,
+    "durationType": 0,
+    "spData": {
+      "spType": 1,
+      "levelUpCost": null,
+      "maxChargeTime": 1,
+      "spCost": 40,
+      "initSp": 25,
+      "increment": 1.0
+    },
+    "prefabId": "skchr_nearl2_3",
+    "duration": 25.0,
+    "blackboard": [
+      {
+        "key": "atk",
+        "value": 1.4
+      },
+      {
+        "key": "def",
+        "value": 1.0
+      },
+      {
+        "key": "value",
+        "value": 1.1
+      },
+      {
+        "key": "value2",
+        "value": 3.0
+      }
+    ]
+  }
+}

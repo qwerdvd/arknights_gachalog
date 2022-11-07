@@ -1,0 +1,91 @@
+{
+  "sktok_skadi2_1": {
+    "name": "共鸣",
+    "rangeId": null,
+    "description": "攻击范围视为浊心斯卡蒂攻击范围的延伸",
+    "skillType": 0,
+    "durationType": 0,
+    "spData": {
+      "spType": 8,
+      "levelUpCost": null,
+      "maxChargeTime": 0,
+      "spCost": 0,
+      "initSp": 0,
+      "increment": 0.0
+    },
+    "prefabId": "sktok_skadi2_1",
+    "duration": -1.0,
+    "blackboard": [
+      {
+        "key": "max_hp",
+        "value": 1.7
+      },
+      {
+        "key": "attack@atk_to_hp_recovery_ratio",
+        "value": 0.8
+      },
+      {
+        "key": "damage_resistance",
+        "value": 0.5
+      }
+    ]
+  },
+  "sktok_skadi2_2": {
+    "name": "共鸣",
+    "rangeId": null,
+    "description": "攻击范围视为浊心斯卡蒂攻击范围的延伸",
+    "skillType": 0,
+    "durationType": 0,
+    "spData": {
+      "spType": 8,
+      "levelUpCost": null,
+      "maxChargeTime": 0,
+      "spCost": 0,
+      "initSp": 0,
+      "increment": 0.0
+    },
+    "prefabId": "sktok_skadi2_2",
+    "duration": -1.0,
+    "blackboard": [
+      {
+        "key": "atk",
+        "value": 0.6
+      },
+      {
+        "key": "def",
+        "value": 0.6
+      },
+      {
+        "key": "attack@atk_to_hp_recovery_ratio",
+        "value": 0.2
+      }
+    ]
+  },
+  "sktok_skadi2_3": {
+    "name": "共鸣",
+    "rangeId": null,
+    "description": "攻击范围视为浊心斯卡蒂攻击范围的延伸",
+    "skillType": 0,
+    "durationType": 0,
+    "spData": {
+      "spType": 8,
+      "levelUpCost": null,
+      "maxChargeTime": 0,
+      "spCost": 0,
+      "initSp": 0,
+      "increment": 0.0
+    },
+    "prefabId": "sktok_skadi2_3",
+    "duration": -1.0,
+    "blackboard": [
+      {
+        "key": "atk_scale",
+        "value": 0.7
+      },
+      {
+        "key": "atk",
+        "value": 1.1
+      }
+    ]
+  }
+}

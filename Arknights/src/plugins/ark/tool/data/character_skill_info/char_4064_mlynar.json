@@ -1,0 +1,95 @@
+{
+  "skchr_mlynar_1": {
+    "name": "未声张的怒火",
+    "rangeId": null,
+    "description": "攻击造成相当于<@ba.vup>{attack@atk_scale:0%}</>攻击力的物理伤害，防御力<@ba.vup>+{def:0%}</>",
+    "skillType": 1,
+    "durationType": 0,
+    "spData": {
+      "spType": 1,
+      "levelUpCost": null,
+      "maxChargeTime": 1,
+      "spCost": 30,
+      "initSp": 15,
+      "increment": 1.0
+    },
+    "prefabId": "skchr_mlynar_1",
+    "duration": 30.0,
+    "blackboard": [
+      {
+        "key": "attack@atk_scale",
+        "value": 2.0
+      },
+      {
+        "key": "def",
+        "value": 0.6
+      }
+    ]
+  },
+  "skchr_mlynar_2": {
+    "name": "未宽解的悲哀",
+    "rangeId": "2-3",
+    "description": "攻击间隔<@ba.vdown>延长</>，攻击范围<@ba.vup>扩大</>，攻击造成相当于<@ba.vup>{attack@atk_scale:0%}</>攻击力的<@ba.vup>二</>连击。\\n<@ba.rem>技能期间若击倒敌人，技能结束时特性效果不重置，可主动关闭（期间可随时停止技能）</>",
+    "skillType": 1,
+    "durationType": 0,
+    "spData": {
+      "spType": 1,
+      "levelUpCost": null,
+      "maxChargeTime": 1,
+      "spCost": 25,
+      "initSp": 10,
+      "increment": 1.0
+    },
+    "prefabId": "skchr_mlynar_2",
+    "duration": 20.0,
+    "blackboard": [
+      {
+        "key": "attack@atk_scale",
+        "value": 1.9
+      },
+      {
+        "key": "base_attack_time",
+        "value": 0.3
+      }
+    ]
+  },
+  "skchr_mlynar_3": {
+    "name": "未照耀的荣光",
+    "rangeId": "3-18",
+    "description": "攻击范围<@ba.vup>扩大</>，特性提升至<@ba.vup>{trait_up}</>倍（每击倒一名敌人时特性倍率<@ba.vup>{per_kill_reduce:0%}</>），攻击对<@ba.vup>{attack@max_target}</>个目标造成相当于<@ba.vup>{attack@atk_scale:0%}</>攻击力的物理伤害。范围内所有敌人受到卡西米尔干员攻击时额外附带玛恩纳<@ba.vup>{atk_scale:0%}</>攻击力的<@ba.vup>真实</>伤害",
+    "skillType": 1,
+    "durationType": 0,
+    "spData": {
+      "spType": 1,
+      "levelUpCost": null,
+      "maxChargeTime": 1,
+      "spCost": 42,
+      "initSp": 20,
+      "increment": 1.0
+    },
+    "prefabId": "skchr_mlynar_3",
+    "duration": 28.0,
+    "blackboard": [
+      {
+        "key": "attack@atk_scale",
+        "value": 1.8
+      },
+      {
+        "key": "atk_scale",
+        "value": 0.12
+      },
+      {
+        "key": "attack@max_target",
+        "value": 5.0
+      },
+      {
+        "key": "trait_up",
+        "value": 2.0
+      },
+      {
+        "key": "per_kill_reduce",
+        "value": -0.1
+      }
+    ]
+  }
+}

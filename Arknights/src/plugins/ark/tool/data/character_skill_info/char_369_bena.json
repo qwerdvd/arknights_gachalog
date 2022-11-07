@@ -1,0 +1,64 @@
+{
+  "skchr_bena_1": {
+    "name": "奋力修剪",
+    "rangeId": null,
+    "description": "生命上限<@ba.vdown>{max_hp:0%}</>，攻击力<@ba.vup>+{atk:0%}</>，无视攻击目标<@ba.vup>{def_penetrate:0%}</>的防御力",
+    "skillType": 1,
+    "durationType": 0,
+    "spData": {
+      "spType": 1,
+      "levelUpCost": null,
+      "maxChargeTime": 1,
+      "spCost": 35,
+      "initSp": 25,
+      "increment": 1.0
+    },
+    "prefabId": "skchr_bena_1",
+    "duration": 20.0,
+    "blackboard": [
+      {
+        "key": "max_hp",
+        "value": -0.5
+      },
+      {
+        "key": "atk",
+        "value": 1.0
+      },
+      {
+        "key": "def_penetrate",
+        "value": 0.35
+      }
+    ]
+  },
+  "skchr_bena_2": {
+    "name": "快速修剪",
+    "rangeId": null,
+    "description": "攻击力<@ba.vup>+{atk:0%}</>，攻击速度<@ba.vup>+{attack_speed}</>，每次攻击到敌人时使自身流失<@ba.vdown>{hp_ratio:0%}</>的生命",
+    "skillType": 1,
+    "durationType": 0,
+    "spData": {
+      "spType": 1,
+      "levelUpCost": null,
+      "maxChargeTime": 1,
+      "spCost": 25,
+      "initSp": 18,
+      "increment": 1.0
+    },
+    "prefabId": "skchr_bena_2",
+    "duration": 22.0,
+    "blackboard": [
+      {
+        "key": "atk",
+        "value": 0.9
+      },
+      {
+        "key": "attack_speed",
+        "value": 80.0
+      },
+      {
+        "key": "hp_ratio",
+        "value": 0.04
+      }
+    ]
+  }
+}

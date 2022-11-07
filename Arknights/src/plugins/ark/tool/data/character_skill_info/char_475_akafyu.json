@@ -1,0 +1,56 @@
+{
+  "skchr_akafyu_1": {
+    "name": "信影流·雷刀之势",
+    "rangeId": null,
+    "description": "阻挡数变为0，攻击力<@ba.vup>+{atk:0%}</>，攻击变为二连击",
+    "skillType": 1,
+    "durationType": 0,
+    "spData": {
+      "spType": 1,
+      "levelUpCost": null,
+      "maxChargeTime": 1,
+      "spCost": 16,
+      "initSp": 0,
+      "increment": 1.0
+    },
+    "prefabId": "skchr_akafyu_1",
+    "duration": 12.0,
+    "blackboard": [
+      {
+        "key": "atk",
+        "value": 0.8
+      }
+    ]
+  },
+  "skchr_akafyu_2": {
+    "name": "信影流·十文字胜",
+    "rangeId": null,
+    "description": "立即流失<@ba.vdown>{hp_ratio:0%}</>当前生命，获得一层<$ba.shield>护盾</>（技能结束后消失），攻击力<@ba.vup>+{atk:0%}</>，防御力<@ba.vup>+{def:0%}</>",
+    "skillType": 1,
+    "durationType": 0,
+    "spData": {
+      "spType": 1,
+      "levelUpCost": null,
+      "maxChargeTime": 1,
+      "spCost": 25,
+      "initSp": 15,
+      "increment": 1.0
+    },
+    "prefabId": "skchr_akafyu_2",
+    "duration": 20.0,
+    "blackboard": [
+      {
+        "key": "atk",
+        "value": 1.0
+      },
+      {
+        "key": "def",
+        "value": 1.2
+      },
+      {
+        "key": "hp_ratio",
+        "value": 0.5
+      }
+    ]
+  }
+}

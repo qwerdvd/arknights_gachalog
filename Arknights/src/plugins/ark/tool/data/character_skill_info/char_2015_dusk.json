@@ -1,0 +1,91 @@
+{
+  "skchr_dusk_1": {
+    "name": "工笔入化",
+    "rangeId": null,
+    "description": "下一次攻击溅射范围<@ba.vup>扩大</>，造成相当于攻击力<@ba.vup>{atk_scale:0%}</>的法术伤害\\n<@ba.rem>可充能{cnt}次</>",
+    "skillType": 2,
+    "durationType": 0,
+    "spData": {
+      "spType": 1,
+      "levelUpCost": null,
+      "maxChargeTime": 3,
+      "spCost": 5,
+      "initSp": 0,
+      "increment": 1.0
+    },
+    "prefabId": "skchr_dusk_1",
+    "duration": -1.0,
+    "blackboard": [
+      {
+        "key": "atk_scale",
+        "value": 2.5
+      },
+      {
+        "key": "cnt",
+        "value": 3.0
+      }
+    ]
+  },
+  "skchr_dusk_2": {
+    "name": "泼墨淋漓",
+    "rangeId": "3-3",
+    "description": "攻击范围<@ba.vup>扩大</>，攻击力<@ba.vup>+{atk:0%}</>，攻击速度<@ba.vup>+{attack_speed}</>，攻击范围内的所有敌人且对生命值低于一半的敌人造成的法术伤害提升至<@ba.vup>{damage_scale:0%}</>",
+    "skillType": 1,
+    "durationType": 0,
+    "spData": {
+      "spType": 1,
+      "levelUpCost": null,
+      "maxChargeTime": 1,
+      "spCost": 38,
+      "initSp": 25,
+      "increment": 1.0
+    },
+    "prefabId": "skchr_dusk_2",
+    "duration": 20.0,
+    "blackboard": [
+      {
+        "key": "atk",
+        "value": 0.55
+      },
+      {
+        "key": "attack_speed",
+        "value": 55.0
+      },
+      {
+        "key": "hp_ratio",
+        "value": 0.5
+      },
+      {
+        "key": "damage_scale",
+        "value": 1.3
+      }
+    ]
+  },
+  "skchr_dusk_3": {
+    "name": "写意胜形",
+    "rangeId": "3-15",
+    "description": "攻击间隔<@ba.vdown>增大</>，优先攻击未阻挡的敌人，攻击范围与溅射范围<@ba.vup>扩大</>，攻击力<@ba.vup>+{atk:0%}</>，每次攻击时在目标位置（可部署地面）召唤/刷新一个<@ba.vup>\"小自在\"</>（持续25秒）",
+    "skillType": 1,
+    "durationType": 0,
+    "spData": {
+      "spType": 1,
+      "levelUpCost": null,
+      "maxChargeTime": 1,
+      "spCost": 100,
+      "initSp": 70,
+      "increment": 1.0
+    },
+    "prefabId": "skchr_dusk_3",
+    "duration": 60.0,
+    "blackboard": [
+      {
+        "key": "base_attack_time",
+        "value": 0.4
+      },
+      {
+        "key": "atk",
+        "value": 1.2
+      }
+    ]
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "sktok_normbox": {
+    "name": "诱人珍宝",
+    "rangeId": null,
+    "description": "击破额外获得2源石锭",
+    "skillType": 0,
+    "durationType": 0,
+    "spData": {
+      "spType": 8,
+      "levelUpCost": null,
+      "maxChargeTime": 0,
+      "spCost": 0,
+      "initSp": 0,
+      "increment": 0.0
+    },
+    "prefabId": null,
+    "duration": -1.0,
+    "blackboard": []
+  }
+}

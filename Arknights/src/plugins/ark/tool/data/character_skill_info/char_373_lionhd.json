@@ -1,0 +1,64 @@
+{
+  "skcom_atk_up[3]": {
+    "name": "攻击力强化·γ型",
+    "rangeId": null,
+    "description": "攻击力<@ba.vup>+{atk:0%}</>",
+    "skillType": 1,
+    "durationType": 0,
+    "spData": {
+      "spType": 1,
+      "levelUpCost": null,
+      "maxChargeTime": 1,
+      "spCost": 30,
+      "initSp": 15,
+      "increment": 1.0
+    },
+    "prefabId": "skcom_atk_up",
+    "duration": 30.0,
+    "blackboard": [
+      {
+        "key": "atk",
+        "value": 1.0
+      }
+    ]
+  },
+  "skchr_lionhd_2": {
+    "name": "解构与爆破",
+    "rangeId": "3-3",
+    "description": "攻击范围<@ba.vup>扩大</>，立即对攻击范围内的所有敌人造成相当于攻击力<@ba.vup>{atk_scale:0%}</>的法术伤害且使其在<@ba.vup>{duration}</>秒内法术抗性<@ba.vup>-{-magic_resistance:0%}</>\\n<@ba.rem>可充能{ct}次</>",
+    "skillType": 1,
+    "durationType": 0,
+    "spData": {
+      "spType": 1,
+      "levelUpCost": null,
+      "maxChargeTime": 3,
+      "spCost": 10,
+      "initSp": 0,
+      "increment": 1.0
+    },
+    "prefabId": "skchr_lionhd_2",
+    "duration": -1.0,
+    "blackboard": [
+      {
+        "key": "atk_scale",
+        "value": 2.3
+      },
+      {
+        "key": "magic_resistance",
+        "value": -0.15
+      },
+      {
+        "key": "duration",
+        "value": 6.0
+      },
+      {
+        "key": "ct",
+        "value": 3.0
+      },
+      {
+        "key": "talent_range_flag",
+        "value": 1.0
+      }
+    ]
+  }
+}

@@ -1,0 +1,64 @@
+{
+  "skchr_bldsk_1": {
+    "name": "紧急包扎",
+    "rangeId": null,
+    "description": "下次治疗额外回复目标最大生命值的<@ba.vup>{hp_ratio:0%}</>\\n<@ba.rem>只当目标生命值不满一半时才会触发，可充能{ct}次</>",
+    "skillType": 2,
+    "durationType": 0,
+    "spData": {
+      "spType": 2,
+      "levelUpCost": null,
+      "maxChargeTime": 4,
+      "spCost": 4,
+      "initSp": 0,
+      "increment": 1.0
+    },
+    "prefabId": "skchr_bldsk_1",
+    "duration": 0.0,
+    "blackboard": [
+      {
+        "key": "hp_ratio",
+        "value": 0.25
+      },
+      {
+        "key": "ct",
+        "value": 4.0
+      }
+    ]
+  },
+  "skchr_bldsk_2": {
+    "name": "不稳定血浆",
+    "rangeId": null,
+    "description": "自身和攻击范围内随机一名我方单位获得以下状态：\\n攻击力<@ba.vup>+{atk:0%}</>，每秒流失<@ba.vdown>{hp_ratio:0%}</>最大生命值，持续<@ba.vup>{duration}</>秒",
+    "skillType": 1,
+    "durationType": 0,
+    "spData": {
+      "spType": 1,
+      "levelUpCost": null,
+      "maxChargeTime": 1,
+      "spCost": 60,
+      "initSp": 50,
+      "increment": 1.0
+    },
+    "prefabId": "skchr_bldsk_2",
+    "duration": -1.0,
+    "blackboard": [
+      {
+        "key": "atk",
+        "value": 0.9
+      },
+      {
+        "key": "hp_ratio",
+        "value": 0.03
+      },
+      {
+        "key": "interval",
+        "value": 1.0
+      },
+      {
+        "key": "duration",
+        "value": 15.0
+      }
+    ]
+  }
+}

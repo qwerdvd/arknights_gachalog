@@ -1,0 +1,64 @@
+{
+  "skchr_tomimi_1": {
+    "name": "部族技艺",
+    "rangeId": "1-2",
+    "description": "攻击速度<@ba.vup>+{attack_speed}</>",
+    "skillType": 1,
+    "durationType": 0,
+    "spData": {
+      "spType": 1,
+      "levelUpCost": null,
+      "maxChargeTime": 1,
+      "spCost": 30,
+      "initSp": 15,
+      "increment": 1.0
+    },
+    "prefabId": "skchr_tomimi_1",
+    "duration": 30.0,
+    "blackboard": [
+      {
+        "key": "attack_speed",
+        "value": 90.0
+      }
+    ]
+  },
+  "skchr_tomimi_2": {
+    "name": "嘉维尔保护方案",
+    "rangeId": "1-2",
+    "description": "每次攻击有<@ba.vup>{attack@tomimi_s_2.prob:0%}</>的概率随机触发下列效果之一：目标<$ba.stun>晕眩</><@ba.vup>{attack@tomimi_s_2.stun}</>秒；当次攻击力提升至<@ba.vup>{attack@tomimi_s_2.atk_scale:0%}</>；当次攻击造成群体伤害",
+    "skillType": 1,
+    "durationType": 0,
+    "spData": {
+      "spType": 1,
+      "levelUpCost": null,
+      "maxChargeTime": 1,
+      "spCost": 30,
+      "initSp": 20,
+      "increment": 1.0
+    },
+    "prefabId": "skchr_tomimi_2",
+    "duration": 30.0,
+    "blackboard": [
+      {
+        "key": "attack@tomimi_s_2.stun",
+        "value": 1.6
+      },
+      {
+        "key": "attack@tomimi_s_2.atk_scale",
+        "value": 2.2
+      },
+      {
+        "key": "attack@tomimi_s_2.prob",
+        "value": 1.0
+      },
+      {
+        "key": "base_attack_time",
+        "value": 0.0
+      },
+      {
+        "key": "atk",
+        "value": 0.0
+      }
+    ]
+  }
+}

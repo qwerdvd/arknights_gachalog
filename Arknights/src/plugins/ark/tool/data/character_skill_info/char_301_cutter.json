@@ -1,0 +1,60 @@
+{
+  "skchr_cutter_1": {
+    "name": "红移",
+    "rangeId": "3-12",
+    "description": "立即投掷<@ba.vup>{times}</>把飞刀随机攻击前方的敌人，每把造成相当于攻击力<@ba.vup>{atk_scale:0%}</>的物理伤害",
+    "skillType": 1,
+    "durationType": 0,
+    "spData": {
+      "spType": 2,
+      "levelUpCost": null,
+      "maxChargeTime": 1,
+      "spCost": 11,
+      "initSp": 5,
+      "increment": 1.0
+    },
+    "prefabId": "skchr_cutter_1",
+    "duration": 0.0,
+    "blackboard": [
+      {
+        "key": "atk_scale",
+        "value": 3.4
+      },
+      {
+        "key": "times",
+        "value": 4.0
+      }
+    ]
+  },
+  "skchr_cutter_2": {
+    "name": "绯红刺刀",
+    "rangeId": "x-1",
+    "description": "对周围最多<@ba.vup>{max_target}</>个敌人造成相当于攻击力<@ba.vup>{atk_scale:0%}</>的物理伤害\\n<@ba.rem>对飞行单位的攻击力系数加倍</>",
+    "skillType": 1,
+    "durationType": 0,
+    "spData": {
+      "spType": 2,
+      "levelUpCost": null,
+      "maxChargeTime": 1,
+      "spCost": 12,
+      "initSp": 5,
+      "increment": 1.0
+    },
+    "prefabId": "skchr_cutter_2",
+    "duration": 0.0,
+    "blackboard": [
+      {
+        "key": "max_target",
+        "value": 6.0
+      },
+      {
+        "key": "atk_scale",
+        "value": 4.5
+      },
+      {
+        "key": "cutter_s_2[drone].atk_scale",
+        "value": 2.0
+      }
+    ]
+  }
+}

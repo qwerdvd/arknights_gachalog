@@ -1,0 +1,87 @@
+{
+  "skchr_haak_1": {
+    "name": "快速射击",
+    "rangeId": null,
+    "description": "攻击速度<@ba.vup>+{attack_speed}</>",
+    "skillType": 1,
+    "durationType": 0,
+    "spData": {
+      "spType": 1,
+      "levelUpCost": null,
+      "maxChargeTime": 1,
+      "spCost": 30,
+      "initSp": 20,
+      "increment": 1.0
+    },
+    "prefabId": "skchr_haak_1",
+    "duration": 30.0,
+    "blackboard": [
+      {
+        "key": "attack_speed",
+        "value": 100.0
+      }
+    ]
+  },
+  "skchr_haak_2": {
+    "name": "爆发剂·γ型",
+    "rangeId": null,
+    "description": "立即对前方最近（优先选取正前方）的一名友方单位用<@ba.vup>{damage}</>的攻击力攻击<@ba.vup>15</>次，之后持续时间内使自身和目标防御力和生命上限<@ba.vup>+{max_hp:0%}</>",
+    "skillType": 1,
+    "durationType": 0,
+    "spData": {
+      "spType": 1,
+      "levelUpCost": null,
+      "maxChargeTime": 1,
+      "spCost": 30,
+      "initSp": 25,
+      "increment": 1.0
+    },
+    "prefabId": "skchr_haak_2",
+    "duration": 30.0,
+    "blackboard": [
+      {
+        "key": "max_hp",
+        "value": 0.8
+      },
+      {
+        "key": "def",
+        "value": 0.8
+      },
+      {
+        "key": "damage",
+        "value": 500.0
+      }
+    ]
+  },
+  "skchr_haak_3": {
+    "name": "爆发剂·榴莲味",
+    "rangeId": null,
+    "description": "立即对前方最近（优先选取正前方）的一名友方单位用<@ba.vup>{damage}</>的攻击力攻击<@ba.vup>15</>次，之后持续时间内使自身和目标攻击力<@ba.vup>+{atk:0%}</>，攻击速度<@ba.vup>+{attack_speed}</>",
+    "skillType": 1,
+    "durationType": 0,
+    "spData": {
+      "spType": 1,
+      "levelUpCost": null,
+      "maxChargeTime": 1,
+      "spCost": 35,
+      "initSp": 30,
+      "increment": 1.0
+    },
+    "prefabId": "skchr_haak_3",
+    "duration": 20.0,
+    "blackboard": [
+      {
+        "key": "atk",
+        "value": 0.5
+      },
+      {
+        "key": "attack_speed",
+        "value": 50.0
+      },
+      {
+        "key": "damage",
+        "value": 500.0
+      }
+    ]
+  }
+}

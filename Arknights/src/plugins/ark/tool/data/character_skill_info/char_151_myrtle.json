@@ -1,0 +1,68 @@
+{
+  "skcom_assist_cost[2]": {
+    "name": "支援号令·β型",
+    "rangeId": null,
+    "description": "停止攻击，持续时间内回复总共<@ba.vup>{value}</>点部署费用",
+    "skillType": 1,
+    "durationType": 0,
+    "spData": {
+      "spType": 1,
+      "levelUpCost": null,
+      "maxChargeTime": 1,
+      "spCost": 22,
+      "initSp": 13,
+      "increment": 1.0
+    },
+    "prefabId": null,
+    "duration": 8.0,
+    "blackboard": [
+      {
+        "key": "value",
+        "value": 14.0
+      },
+      {
+        "key": "interval",
+        "value": 0.57
+      },
+      {
+        "key": "cost",
+        "value": 1.0
+      }
+    ]
+  },
+  "skchr_myrtle_2": {
+    "name": "治愈之翼",
+    "rangeId": "x-4",
+    "description": "停止攻击，持续时间内回复总共<@ba.vup>{value}</>点部署费用，并每秒治疗周围一名友方单位相当于桃金娘攻击力<@ba.vup>{attack@heal_scale:0%}</>的生命",
+    "skillType": 1,
+    "durationType": 0,
+    "spData": {
+      "spType": 1,
+      "levelUpCost": null,
+      "maxChargeTime": 1,
+      "spCost": 24,
+      "initSp": 10,
+      "increment": 1.0
+    },
+    "prefabId": "skchr_myrtle_2",
+    "duration": 16.0,
+    "blackboard": [
+      {
+        "key": "attack@heal_scale",
+        "value": 0.5
+      },
+      {
+        "key": "interval",
+        "value": 1.0
+      },
+      {
+        "key": "value",
+        "value": 16.0
+      },
+      {
+        "key": "cost",
+        "value": 1.0
+      }
+    ]
+  }
+}

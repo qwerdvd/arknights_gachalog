@@ -1,0 +1,56 @@
+{
+  "skchr_tknogi_1": {
+    "name": "迹无",
+    "rangeId": null,
+    "description": "攻击范围内的友军获得<@ba.vup>{attack@prob:0%}</>的物理闪避与法术闪避，并使敌人的<$ba.invisible>隐匿</>效果失效",
+    "skillType": 1,
+    "durationType": 0,
+    "spData": {
+      "spType": 1,
+      "levelUpCost": null,
+      "maxChargeTime": 1,
+      "spCost": 50,
+      "initSp": 25,
+      "increment": 1.0
+    },
+    "prefabId": "skchr_tknogi_1",
+    "duration": 35.0,
+    "blackboard": [
+      {
+        "key": "attack@prob",
+        "value": 0.35
+      }
+    ]
+  },
+  "skchr_tknogi_2": {
+    "name": "森廻",
+    "rangeId": null,
+    "description": "停止攻击，天赋的触发条件变为<@ba.vup>{talent@hp_ratio:0%}</>生命且<$ba.protect>庇护</>效果提升至<@ba.vup>{talent_scale}</>倍，每秒恢复攻击范围内友军相当于月禾攻击力<@ba.vup>{attack@atk_to_hp_recovery_ratio:0%}</>的生命",
+    "skillType": 1,
+    "durationType": 0,
+    "spData": {
+      "spType": 1,
+      "levelUpCost": null,
+      "maxChargeTime": 1,
+      "spCost": 48,
+      "initSp": 23,
+      "increment": 1.0
+    },
+    "prefabId": "skchr_tknogi_2",
+    "duration": 20.0,
+    "blackboard": [
+      {
+        "key": "talent@hp_ratio",
+        "value": 0.6
+      },
+      {
+        "key": "talent_scale",
+        "value": 2.3
+      },
+      {
+        "key": "attack@atk_to_hp_recovery_ratio",
+        "value": 0.12
+      }
+    ]
+  }
+}

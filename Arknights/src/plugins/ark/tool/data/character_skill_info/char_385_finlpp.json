@@ -1,0 +1,52 @@
+{
+  "skchr_finlpp_1": {
+    "name": "治愈水波",
+    "rangeId": null,
+    "description": "立即恢复攻击范围内所有友方单位相当于攻击力<@ba.vup>{heal_scale:0%}</>的生命",
+    "skillType": 1,
+    "durationType": 0,
+    "spData": {
+      "spType": 1,
+      "levelUpCost": null,
+      "maxChargeTime": 1,
+      "spCost": 20,
+      "initSp": 10,
+      "increment": 1.0
+    },
+    "prefabId": "skchr_finlpp_1",
+    "duration": 0.0,
+    "blackboard": [
+      {
+        "key": "heal_scale",
+        "value": 3.5
+      }
+    ]
+  },
+  "skchr_finlpp_2": {
+    "name": "涌泉",
+    "rangeId": null,
+    "description": "攻击间隔<@ba.vup>大幅度缩短</>，每次随机回复攻击范围内已受伤的一名单位相当于攻击力<@ba.vup>{attack@heal_scale:0%}</>的生命值",
+    "skillType": 1,
+    "durationType": 0,
+    "spData": {
+      "spType": 1,
+      "levelUpCost": null,
+      "maxChargeTime": 1,
+      "spCost": 60,
+      "initSp": 30,
+      "increment": 1.0
+    },
+    "prefabId": "skchr_finlpp_2",
+    "duration": 25.0,
+    "blackboard": [
+      {
+        "key": "attack@heal_scale",
+        "value": 0.5
+      },
+      {
+        "key": "base_attack_time",
+        "value": 0.12
+      }
+    ]
+  }
+}

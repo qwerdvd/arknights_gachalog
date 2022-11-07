@@ -1,0 +1,60 @@
+{
+  "skchr_frncat_1": {
+    "name": "挠伤",
+    "rangeId": null,
+    "description": "下次攻击时攻击力<@ba.vup>+{atk:0%}</>，<@ba.vup>{frncat_s_1[debuff].duration}</>秒内使击中目标攻击力<@ba.vup>-{-frncat_s_1[debuff].atk:0%}</>",
+    "skillType": 2,
+    "durationType": 0,
+    "spData": {
+      "spType": 2,
+      "levelUpCost": null,
+      "maxChargeTime": 1,
+      "spCost": 4,
+      "initSp": 0,
+      "increment": 1.0
+    },
+    "prefabId": "skchr_frncat_1",
+    "duration": 0.0,
+    "blackboard": [
+      {
+        "key": "atk",
+        "value": 0.75
+      },
+      {
+        "key": "frncat_s_1[debuff].atk",
+        "value": -0.4
+      },
+      {
+        "key": "frncat_s_1[debuff].duration",
+        "value": 5.0
+      }
+    ]
+  },
+  "skchr_frncat_2": {
+    "name": "炸毛",
+    "rangeId": null,
+    "description": "攻击力和防御力各<@ba.vup>+{atk:0%}</>",
+    "skillType": 1,
+    "durationType": 0,
+    "spData": {
+      "spType": 1,
+      "levelUpCost": null,
+      "maxChargeTime": 1,
+      "spCost": 80,
+      "initSp": 45,
+      "increment": 1.0
+    },
+    "prefabId": "skchr_frncat_2",
+    "duration": 40.0,
+    "blackboard": [
+      {
+        "key": "atk",
+        "value": 0.75
+      },
+      {
+        "key": "def",
+        "value": 0.75
+      }
+    ]
+  }
+}

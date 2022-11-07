@@ -1,0 +1,56 @@
+{
+  "skchr_swire_1": {
+    "name": "指挥调度",
+    "rangeId": "x-2",
+    "description": "第一天赋生效范围<@ba.vup>大幅度扩大</>，效果提升至<@ba.vup>{talent_scale}</>倍",
+    "skillType": 1,
+    "durationType": 0,
+    "spData": {
+      "spType": 1,
+      "levelUpCost": null,
+      "maxChargeTime": 1,
+      "spCost": 40,
+      "initSp": 20,
+      "increment": 1.0
+    },
+    "prefabId": "skchr_swire_1",
+    "duration": 35.0,
+    "blackboard": [
+      {
+        "key": "talent_scale",
+        "value": 2.0
+      },
+      {
+        "key": "talent_range_flag",
+        "value": 1.0
+      }
+    ]
+  },
+  "skchr_swire_2": {
+    "name": "协同作战",
+    "rangeId": null,
+    "description": "攻击力<@ba.vup>+{atk:0%}</>，第一天赋效果提升至<@ba.vup>{talent_scale}</>倍",
+    "skillType": 1,
+    "durationType": 0,
+    "spData": {
+      "spType": 2,
+      "levelUpCost": null,
+      "maxChargeTime": 1,
+      "spCost": 45,
+      "initSp": 20,
+      "increment": 1.0
+    },
+    "prefabId": "skchr_swire_2",
+    "duration": 30.0,
+    "blackboard": [
+      {
+        "key": "talent_scale",
+        "value": 3.0
+      },
+      {
+        "key": "atk",
+        "value": 0.8
+      }
+    ]
+  }
+}

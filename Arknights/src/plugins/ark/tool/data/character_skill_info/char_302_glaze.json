@@ -1,0 +1,56 @@
+{
+  "skchr_glaze_1": {
+    "name": "阻挡弹",
+    "rangeId": null,
+    "description": "攻击范围<@ba.vup>+{ability_range_forward_extend}格</>，且攻击会使目标<$ba.sluggish>停顿</><@ba.vup>{attack@sluggish}</>秒",
+    "skillType": 1,
+    "durationType": 0,
+    "spData": {
+      "spType": 1,
+      "levelUpCost": null,
+      "maxChargeTime": 1,
+      "spCost": 25,
+      "initSp": 10,
+      "increment": 1.0
+    },
+    "prefabId": "skchr_glaze_1",
+    "duration": 36.0,
+    "blackboard": [
+      {
+        "key": "ability_range_forward_extend",
+        "value": 1.0
+      },
+      {
+        "key": "attack@sluggish",
+        "value": 1.2
+      }
+    ]
+  },
+  "skchr_glaze_2": {
+    "name": "雷达定位",
+    "rangeId": null,
+    "description": "攻击力<@ba.vup>+{atk:0%}</>，攻击范围<@ba.vup>扩大至整个战场</>，但攻击间隔<@ba.vdown>略微增大</>，且在攻击超出原本攻击范围的敌方单位时攻击前摇<@ba.vdown>增大</>",
+    "skillType": 1,
+    "durationType": 0,
+    "spData": {
+      "spType": 1,
+      "levelUpCost": null,
+      "maxChargeTime": 1,
+      "spCost": 25,
+      "initSp": 10,
+      "increment": 1.0
+    },
+    "prefabId": "skchr_glaze_2",
+    "duration": 40.0,
+    "blackboard": [
+      {
+        "key": "atk",
+        "value": 1.0
+      },
+      {
+        "key": "base_attack_time",
+        "value": 0.9
+      }
+    ]
+  }
+}

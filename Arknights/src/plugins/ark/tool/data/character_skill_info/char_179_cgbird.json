@@ -1,0 +1,91 @@
+{
+  "skcom_heal_up[3]": {
+    "name": "治疗强化·γ型",
+    "rangeId": null,
+    "description": "攻击力<@ba.vup>+{atk:0%}</>",
+    "skillType": 1,
+    "durationType": 0,
+    "spData": {
+      "spType": 1,
+      "levelUpCost": null,
+      "maxChargeTime": 1,
+      "spCost": 30,
+      "initSp": 20,
+      "increment": 1.0
+    },
+    "prefabId": "skcom_heal_up",
+    "duration": 30.0,
+    "blackboard": [
+      {
+        "key": "atk",
+        "value": 0.9
+      }
+    ]
+  },
+  "skchr_cgbird_2": {
+    "name": "法术护盾",
+    "rangeId": null,
+    "description": "下次治疗使所有目标获得一个持续<@ba.vup>{duration}</>秒的<$ba.barrier>屏障</>\\n屏障能吸收相当于夜莺攻击力<@ba.vup>{atk_scale:0%}</>的<@ba.vup>法术</>伤害，同时使目标法术抗性<@ba.vup>+{magic_resistance}</>；<@ba.rem>可充能{ct}次</>",
+    "skillType": 2,
+    "durationType": 0,
+    "spData": {
+      "spType": 1,
+      "levelUpCost": null,
+      "maxChargeTime": 3,
+      "spCost": 8,
+      "initSp": 0,
+      "increment": 1.0
+    },
+    "prefabId": "skchr_cgbird_2",
+    "duration": -1.0,
+    "blackboard": [
+      {
+        "key": "atk_scale",
+        "value": 0.9
+      },
+      {
+        "key": "magic_resistance",
+        "value": 20.0
+      },
+      {
+        "key": "duration",
+        "value": 5.0
+      },
+      {
+        "key": "ct",
+        "value": 3.0
+      }
+    ]
+  },
+  "skchr_cgbird_3": {
+    "name": "圣域",
+    "rangeId": "y-4",
+    "description": "攻击范围<@ba.vup>扩大</>，攻击力<@ba.vup>+{atk:0%}</>，攻击范围内的友方单位法术抗性<@ba.vup>+{magic_resistance:0%}</>并获得<@ba.vup>{prob:0%}</>的法术闪避",
+    "skillType": 1,
+    "durationType": 0,
+    "spData": {
+      "spType": 1,
+      "levelUpCost": null,
+      "maxChargeTime": 1,
+      "spCost": 120,
+      "initSp": 115,
+      "increment": 1.0
+    },
+    "prefabId": "skchr_cgbird_3",
+    "duration": 60.0,
+    "blackboard": [
+      {
+        "key": "atk",
+        "value": 0.8
+      },
+      {
+        "key": "magic_resistance",
+        "value": 1.5
+      },
+      {
+        "key": "prob",
+        "value": 0.25
+      }
+    ]
+  }
+}

@@ -1,0 +1,64 @@
+{
+  "skchr_bstalk_1": {
+    "name": "定点指令",
+    "rangeId": null,
+    "description": "立即获得<@ba.vup>{cost}</>点部署费用，并立刻刷新援军（如已存在则恢复其所有生命值）",
+    "skillType": 1,
+    "durationType": 0,
+    "spData": {
+      "spType": 1,
+      "levelUpCost": null,
+      "maxChargeTime": 1,
+      "spCost": 30,
+      "initSp": 15,
+      "increment": 1.0
+    },
+    "prefabId": "skchr_bstalk_1",
+    "duration": 0.0,
+    "blackboard": [
+      {
+        "key": "cost",
+        "value": 8.0
+      }
+    ]
+  },
+  "skchr_bstalk_2": {
+    "name": "“大家一起上”",
+    "rangeId": null,
+    "description": "立即在战术点周围四格的所有近战位临时召唤磐蟹（不包括战术点本身）；技能持续时间内回复总共<@ba.vup>{value}</>点部署费用，所有磐蟹的防御力<@ba.vup>+{attack@def:0%}</>",
+    "skillType": 1,
+    "durationType": 0,
+    "spData": {
+      "spType": 1,
+      "levelUpCost": null,
+      "maxChargeTime": 1,
+      "spCost": 40,
+      "initSp": 20,
+      "increment": 1.0
+    },
+    "prefabId": "skchr_bstalk_2",
+    "duration": 15.0,
+    "blackboard": [
+      {
+        "key": "value",
+        "value": 12.0
+      },
+      {
+        "key": "attack@def",
+        "value": 0.7
+      },
+      {
+        "key": "attack@atk",
+        "value": 0.0
+      },
+      {
+        "key": "interval",
+        "value": 1.25
+      },
+      {
+        "key": "cost",
+        "value": 1.0
+      }
+    ]
+  }
+}

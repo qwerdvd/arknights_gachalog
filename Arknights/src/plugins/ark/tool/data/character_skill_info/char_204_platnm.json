@@ -1,0 +1,52 @@
+{
+  "skcom_atk_up[3]": {
+    "name": "攻击力强化·γ型",
+    "rangeId": null,
+    "description": "攻击力<@ba.vup>+{atk:0%}</>",
+    "skillType": 1,
+    "durationType": 0,
+    "spData": {
+      "spType": 1,
+      "levelUpCost": null,
+      "maxChargeTime": 1,
+      "spCost": 30,
+      "initSp": 15,
+      "increment": 1.0
+    },
+    "prefabId": "skcom_atk_up",
+    "duration": 30.0,
+    "blackboard": [
+      {
+        "key": "atk",
+        "value": 1.0
+      }
+    ]
+  },
+  "skchr_platnm_2": {
+    "name": "天马视域",
+    "rangeId": "3-10",
+    "description": "攻击速度略微<@ba.vdown>降低</>，但攻击力<@ba.vup>+{atk:0%}</>，攻击范围<@ba.vup>扩大</>\\n<@ba.rem>持续时间无限</>",
+    "skillType": 2,
+    "durationType": 0,
+    "spData": {
+      "spType": 1,
+      "levelUpCost": null,
+      "maxChargeTime": 1,
+      "spCost": 50,
+      "initSp": 0,
+      "increment": 1.0
+    },
+    "prefabId": "skchr_platnm_2",
+    "duration": 0.0,
+    "blackboard": [
+      {
+        "key": "attack_speed",
+        "value": -20.0
+      },
+      {
+        "key": "atk",
+        "value": 1.0
+      }
+    ]
+  }
+}

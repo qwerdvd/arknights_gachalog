@@ -1,0 +1,52 @@
+{
+  "skchr_spikes_1": {
+    "name": "小玩笑",
+    "rangeId": null,
+    "description": "阻挡数变为0，攻击变为二连击，每次攻击造成相当于攻击力<@ba.vup>{attack@atk_scale:0%}</>的物理伤害",
+    "skillType": 1,
+    "durationType": 0,
+    "spData": {
+      "spType": 1,
+      "levelUpCost": null,
+      "maxChargeTime": 1,
+      "spCost": 25,
+      "initSp": 15,
+      "increment": 1.0
+    },
+    "prefabId": "skchr_spikes_1",
+    "duration": 15.0,
+    "blackboard": [
+      {
+        "key": "attack@atk_scale",
+        "value": 1.5
+      }
+    ]
+  },
+  "skchr_spikes_2": {
+    "name": "致命恶作剧",
+    "rangeId": "3-1",
+    "description": "攻击范围扩大，远程攻击不再降低攻击力，攻击造成相当于攻击力<@ba.vup>{attack@atk_scale:0%}</>的法术伤害，额外攻击一名目标",
+    "skillType": 1,
+    "durationType": 0,
+    "spData": {
+      "spType": 1,
+      "levelUpCost": null,
+      "maxChargeTime": 1,
+      "spCost": 30,
+      "initSp": 15,
+      "increment": 1.0
+    },
+    "prefabId": "skchr_spikes_2",
+    "duration": 20.0,
+    "blackboard": [
+      {
+        "key": "attack@atk_scale",
+        "value": 1.6
+      },
+      {
+        "key": "attack@max_target",
+        "value": 2.0
+      }
+    ]
+  }
+}

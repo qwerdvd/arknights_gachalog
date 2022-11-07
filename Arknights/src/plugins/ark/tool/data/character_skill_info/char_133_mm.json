@@ -1,0 +1,68 @@
+{
+  "skchr_mm_1": {
+    "name": "麻痹弹",
+    "rangeId": null,
+    "description": "下次攻击的攻击力提高至<@ba.vup>{atk_scale:0%}</>，并使目标<$ba.sluggish>停顿</><@ba.vup>{sluggish:0.0}</>秒",
+    "skillType": 2,
+    "durationType": 0,
+    "spData": {
+      "spType": 2,
+      "levelUpCost": null,
+      "maxChargeTime": 1,
+      "spCost": 3,
+      "initSp": 0,
+      "increment": 1.0
+    },
+    "prefabId": "skchr_mm_1",
+    "duration": 0.0,
+    "blackboard": [
+      {
+        "key": "atk_scale",
+        "value": 2.0
+      },
+      {
+        "key": "sluggish",
+        "value": 2.5
+      }
+    ]
+  },
+  "skchr_mm_2": {
+    "name": "束缚电击",
+    "rangeId": null,
+    "description": "攻击间隔<@ba.vdown>略微增大</>，攻击力<@ba.vup>+{atk:0%}</>，击中目标时使其<$ba.sluggish>停顿</><@ba.vup>{attack@sluggish:0.0}</>秒，另外还有<@ba.vup>{attack@prob:0%}</>的几率使其<$ba.stun>晕眩</><@ba.vup>{attack@stun:0.0}</>秒",
+    "skillType": 1,
+    "durationType": 0,
+    "spData": {
+      "spType": 1,
+      "levelUpCost": null,
+      "maxChargeTime": 1,
+      "spCost": 20,
+      "initSp": 0,
+      "increment": 1.0
+    },
+    "prefabId": "skchr_mm_2",
+    "duration": 30.0,
+    "blackboard": [
+      {
+        "key": "base_attack_time",
+        "value": 0.5
+      },
+      {
+        "key": "atk",
+        "value": 1.2
+      },
+      {
+        "key": "attack@stun",
+        "value": 1.2
+      },
+      {
+        "key": "attack@prob",
+        "value": 0.3
+      },
+      {
+        "key": "attack@sluggish",
+        "value": 1.0
+      }
+    ]
+  }
+}

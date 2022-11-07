@@ -1,0 +1,64 @@
+{
+  "skchr_shotst_1": {
+    "name": "碎甲击",
+    "rangeId": null,
+    "description": "下一次攻击造成相当于攻击力<@ba.vup>{atk_scale:0%}</>的物理伤害，{duration}秒内使命中目标的防御力<@ba.vup>-{-def:0%}</>",
+    "skillType": 2,
+    "durationType": 0,
+    "spData": {
+      "spType": 2,
+      "levelUpCost": null,
+      "maxChargeTime": 1,
+      "spCost": 4,
+      "initSp": 0,
+      "increment": 1.0
+    },
+    "prefabId": "skchr_shotst_1",
+    "duration": -1.0,
+    "blackboard": [
+      {
+        "key": "atk_scale",
+        "value": 1.8
+      },
+      {
+        "key": "def",
+        "value": -0.35
+      },
+      {
+        "key": "duration",
+        "value": 5.0
+      }
+    ]
+  },
+  "skchr_shotst_2": {
+    "name": "碎甲击·扩散",
+    "rangeId": null,
+    "description": "立即对攻击范围内至多<@ba.vup>5</>个敌人造成相当于攻击力<@ba.vup>{atk_scale:0%}</>的物理伤害，<@ba.vup>{duration}</>秒内使命中目标的防御力<@ba.vup>-{-def:0%}</>",
+    "skillType": 1,
+    "durationType": 0,
+    "spData": {
+      "spType": 2,
+      "levelUpCost": null,
+      "maxChargeTime": 1,
+      "spCost": 15,
+      "initSp": 0,
+      "increment": 1.0
+    },
+    "prefabId": "skchr_shotst_2",
+    "duration": -1.0,
+    "blackboard": [
+      {
+        "key": "atk_scale",
+        "value": 2.0
+      },
+      {
+        "key": "def",
+        "value": -0.4
+      },
+      {
+        "key": "duration",
+        "value": 5.0
+      }
+    ]
+  }
+}

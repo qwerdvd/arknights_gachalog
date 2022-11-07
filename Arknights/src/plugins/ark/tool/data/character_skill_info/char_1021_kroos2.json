@@ -1,0 +1,52 @@
+{
+  "skchr_kroos2_1": {
+    "name": "无痕",
+    "rangeId": null,
+    "description": "攻击力<@ba.vup>+{atk:0%}</>，攻击变为<@ba.vup>2</>连射，并获得<$ba.camou>迷彩</>",
+    "skillType": 1,
+    "durationType": 0,
+    "spData": {
+      "spType": 2,
+      "levelUpCost": null,
+      "maxChargeTime": 1,
+      "spCost": 15,
+      "initSp": 10,
+      "increment": 1.0
+    },
+    "prefabId": "skchr_kroos2_1",
+    "duration": 15.0,
+    "blackboard": [
+      {
+        "key": "atk",
+        "value": 0.4
+      }
+    ]
+  },
+  "skchr_kroos2_2": {
+    "name": "封喉",
+    "rangeId": null,
+    "description": "攻击间隔<@ba.vup>较大幅度缩短</>，攻击变为<@ba.vup>2</>连射，击中目标<@ba.vup>{attack@max_stack_count}</>次后技能剩余时间内攻击变为<@ba.vup>4</>连射",
+    "skillType": 1,
+    "durationType": 0,
+    "spData": {
+      "spType": 1,
+      "levelUpCost": null,
+      "maxChargeTime": 1,
+      "spCost": 35,
+      "initSp": 25,
+      "increment": 1.0
+    },
+    "prefabId": "skchr_kroos2_2",
+    "duration": 30.0,
+    "blackboard": [
+      {
+        "key": "base_attack_time",
+        "value": -0.375
+      },
+      {
+        "key": "attack@max_stack_count",
+        "value": 32.0
+      }
+    ]
+  }
+}

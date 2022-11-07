@@ -1,0 +1,68 @@
+{
+  "skchr_tachak_1": {
+    "name": "燃烧榴弹",
+    "rangeId": null,
+    "description": "发射燃烧榴弹在目标周围四格产生<@ba.vup>{projectile_delay_time:0}</>秒的燃烧区域，范围内的地面敌人每秒受到相当于战车攻击力<@ba.vup>{atk_scale:0%}</>的法术伤害；战车攻击燃烧范围内目标时无视其<@ba.vup>{def_penetrate_fixed}</>的防御力",
+    "skillType": 1,
+    "durationType": 0,
+    "spData": {
+      "spType": 2,
+      "levelUpCost": null,
+      "maxChargeTime": 1,
+      "spCost": 15,
+      "initSp": 0,
+      "increment": 1.0
+    },
+    "prefabId": "skchr_tachak_1",
+    "duration": 0.0,
+    "blackboard": [
+      {
+        "key": "projectile_delay_time",
+        "value": 6.0
+      },
+      {
+        "key": "atk_scale",
+        "value": 0.7
+      },
+      {
+        "key": "def_penetrate_fixed",
+        "value": 200.0
+      },
+      {
+        "key": "interval",
+        "value": 1.0
+      }
+    ]
+  },
+  "skchr_tachak_2": {
+    "name": "倾泻弹药",
+    "rangeId": "3-12",
+    "description": "攻击间隔大幅度缩短，随机攻击范围内的目标，每次攻击有<@ba.vup>{prob:0%}</>的概率攻击力提升至<@ba.vup>{atk_scale:0%}</>",
+    "skillType": 1,
+    "durationType": 0,
+    "spData": {
+      "spType": 2,
+      "levelUpCost": null,
+      "maxChargeTime": 1,
+      "spCost": 25,
+      "initSp": 0,
+      "increment": 1.0
+    },
+    "prefabId": "skchr_tachak_2",
+    "duration": 4.0,
+    "blackboard": [
+      {
+        "key": "base_attack_time",
+        "value": -0.85
+      },
+      {
+        "key": "prob",
+        "value": 0.15
+      },
+      {
+        "key": "atk_scale",
+        "value": 2.0
+      }
+    ]
+  }
+}

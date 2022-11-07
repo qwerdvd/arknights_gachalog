@@ -1,0 +1,68 @@
+{
+  "skchr_ctable_1": {
+    "name": "观火",
+    "rangeId": null,
+    "description": "部署后攻击力<@ba.vup>+{atk:0%}</>，每次攻击时获得<@ba.vup>{cost}</>点部署费用",
+    "skillType": 0,
+    "durationType": 0,
+    "spData": {
+      "spType": 8,
+      "levelUpCost": null,
+      "maxChargeTime": 1,
+      "spCost": 0,
+      "initSp": 0,
+      "increment": 1.0
+    },
+    "prefabId": "skchr_ctable_1",
+    "duration": 20.0,
+    "blackboard": [
+      {
+        "key": "atk",
+        "value": 1.0
+      },
+      {
+        "key": "attack_speed",
+        "value": 0.0
+      },
+      {
+        "key": "cost",
+        "value": 1.0
+      }
+    ]
+  },
+  "skchr_ctable_2": {
+    "name": "浮光",
+    "rangeId": null,
+    "description": "攻击力<@ba.vup>+{atk:0%}</>，攻击速度<@ba.vup>+{attack_speed}</>，自身获得<$ba.camou>迷彩</>，每次攻击时获得<@ba.vup>{cost}</>点部署费用。\\n<@ba.rem>攻击装有{attack@trigger_time}发弹药，打完后结束（可随时停止技能）</>",
+    "skillType": 1,
+    "durationType": 0,
+    "spData": {
+      "spType": 1,
+      "levelUpCost": null,
+      "maxChargeTime": 1,
+      "spCost": 25,
+      "initSp": 20,
+      "increment": 1.0
+    },
+    "prefabId": "skchr_ctable_2",
+    "duration": 0.0,
+    "blackboard": [
+      {
+        "key": "atk",
+        "value": 0.4
+      },
+      {
+        "key": "attack_speed",
+        "value": 50.0
+      },
+      {
+        "key": "cost",
+        "value": 1.0
+      },
+      {
+        "key": "attack@trigger_time",
+        "value": 18.0
+      }
+    ]
+  }
+}

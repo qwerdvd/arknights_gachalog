@@ -1,0 +1,29 @@
+{
+  "skchr_aguard_1": {
+    "name": "亮剑",
+    "rangeId": null,
+    "description": "防御力<@ba.vdown>降至0</>，生命上限<@ba.vup>+{max_hp:0%}</>，每次攻击的攻击力提升至<@ba.vup>{attack@atk_scale:0%}</>",
+    "skillType": 1,
+    "durationType": 0,
+    "spData": {
+      "spType": 1,
+      "levelUpCost": null,
+      "maxChargeTime": 1,
+      "spCost": 30,
+      "initSp": 10,
+      "increment": 1.0
+    },
+    "prefabId": "skchr_aguard_1",
+    "duration": 30.0,
+    "blackboard": [
+      {
+        "key": "max_hp",
+        "value": 0.5
+      },
+      {
+        "key": "attack@atk_scale",
+        "value": 3.0
+      }
+    ]
+  }
+}

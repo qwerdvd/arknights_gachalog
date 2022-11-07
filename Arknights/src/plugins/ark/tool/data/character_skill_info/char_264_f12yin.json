@@ -1,0 +1,103 @@
+{
+  "skchr_f12yin_1": {
+    "name": "左勾扫拳",
+    "rangeId": null,
+    "description": "下次攻击的攻击力提升至<@ba.vup>{atk_scale:0%}</>，额外攻击一个目标",
+    "skillType": 2,
+    "durationType": 0,
+    "spData": {
+      "spType": 2,
+      "levelUpCost": null,
+      "maxChargeTime": 1,
+      "spCost": 3,
+      "initSp": 0,
+      "increment": 1.0
+    },
+    "prefabId": "skchr_f12yin_1",
+    "duration": 0.0,
+    "blackboard": [
+      {
+        "key": "atk_scale",
+        "value": 2.3
+      },
+      {
+        "key": "max_target",
+        "value": 2.0
+      }
+    ]
+  },
+  "skchr_f12yin_2": {
+    "name": "横扫架势",
+    "rangeId": "0-1",
+    "description": "<@ba.rem>可以在下列状态和初始状态间切换：</>\\n防御力<@ba.vdown>-{-def:0%}</>，攻击距离<@ba.vdown>缩短</>，攻击力<@ba.vup>+{atk:0%}</>，阻挡数<@ba.vup>+{block_cnt}</>，同时攻击阻挡的所有敌人，每秒恢复最大生命的<@ba.vup>{HP_RECOVERY_PER_SEC_BY_MAX_HP_RATIO:0.0%}</>",
+    "skillType": 1,
+    "durationType": 0,
+    "spData": {
+      "spType": 1,
+      "levelUpCost": null,
+      "maxChargeTime": 1,
+      "spCost": 5,
+      "initSp": 0,
+      "increment": 1.0
+    },
+    "prefabId": "skchr_f12yin_2",
+    "duration": 0.0,
+    "blackboard": [
+      {
+        "key": "atk",
+        "value": 0.8
+      },
+      {
+        "key": "def",
+        "value": -0.2
+      },
+      {
+        "key": "hp_recovery_per_sec_by_max_hp_ratio",
+        "value": 0.07
+      },
+      {
+        "key": "block_cnt",
+        "value": 1.0
+      }
+    ]
+  },
+  "skchr_f12yin_3": {
+    "name": "震地碎岩击",
+    "rangeId": "x-5",
+    "description": "攻击间隔<@ba.vdown>增大</>，攻击力<@ba.vup>+{atk:0%}</>，攻击变为<@ba.vup>2</>连击，第一天赋的发动几率提升至<@ba.vup>{talent@prob:0%}</>，每次攻击周围最多<@ba.vup>{attack@max_target}</>个敌人并将其<@ba.vup>中等力度地</>推动",
+    "skillType": 1,
+    "durationType": 0,
+    "spData": {
+      "spType": 1,
+      "levelUpCost": null,
+      "maxChargeTime": 1,
+      "spCost": 40,
+      "initSp": 25,
+      "increment": 1.0
+    },
+    "prefabId": "skchr_f12yin_3",
+    "duration": 30.0,
+    "blackboard": [
+      {
+        "key": "base_attack_time",
+        "value": 0.7
+      },
+      {
+        "key": "atk",
+        "value": 1.0
+      },
+      {
+        "key": "talent@prob",
+        "value": 0.75
+      },
+      {
+        "key": "attack@force",
+        "value": 1.0
+      },
+      {
+        "key": "attack@max_target",
+        "value": 4.0
+      }
+    ]
+  }
+}

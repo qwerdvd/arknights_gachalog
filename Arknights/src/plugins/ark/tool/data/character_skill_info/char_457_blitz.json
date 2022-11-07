@@ -1,0 +1,64 @@
+{
+  "skchr_blitz_1": {
+    "name": "闪光护盾",
+    "rangeId": "2-5",
+    "description": "前方范围内所有敌人<$ba.stun>晕眩</>且特殊能力失效，持续<@ba.vup>{stun}</>秒；<@ba.rem>每次部署后可发动4次技能</>",
+    "skillType": 1,
+    "durationType": 0,
+    "spData": {
+      "spType": 1,
+      "levelUpCost": null,
+      "maxChargeTime": 1,
+      "spCost": 15,
+      "initSp": 15,
+      "increment": 1.0
+    },
+    "prefabId": "skchr_blitz_1",
+    "duration": 0.0,
+    "blackboard": [
+      {
+        "key": "stun",
+        "value": 4.5
+      },
+      {
+        "key": "silence",
+        "value": 4.5
+      }
+    ]
+  },
+  "skchr_blitz_2": {
+    "name": "突破防线",
+    "rangeId": null,
+    "description": "对所有阻挡单位造成一次相当于攻击力<@ba.vup>{atk_scale:0%}</>的物理伤害并<$ba.stun>晕眩</><@ba.vup>{stun}</>秒。自身攻击速度<@ba.vup>+{attack_speed}</>，第一天赋效果提升至<@ba.vup>{talent_scale}</>倍",
+    "skillType": 1,
+    "durationType": 0,
+    "spData": {
+      "spType": 1,
+      "levelUpCost": null,
+      "maxChargeTime": 1,
+      "spCost": 35,
+      "initSp": 20,
+      "increment": 1.0
+    },
+    "prefabId": "skchr_blitz_2",
+    "duration": 7.0,
+    "blackboard": [
+      {
+        "key": "atk_scale",
+        "value": 2.0
+      },
+      {
+        "key": "stun",
+        "value": 7.0
+      },
+      {
+        "key": "attack_speed",
+        "value": 200.0
+      },
+      {
+        "key": "talent_scale",
+        "value": 1.5
+      }
+    ]
+  }
+}

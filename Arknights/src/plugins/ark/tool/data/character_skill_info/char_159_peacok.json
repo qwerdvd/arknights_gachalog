@@ -1,0 +1,72 @@
+{
+  "skchr_peacok_1": {
+    "name": "断罪",
+    "rangeId": null,
+    "description": "下次攻击的攻击力提升至<@ba.vup>{atk_scale:0%}</>（有<@ba.vup>{peacok_s_1[crit].prob:0%}</>的概率变为<@ba.vup>{atk_scale_fake:0%}</>）\\n<@ba.rem>可充能3次</>",
+    "skillType": 2,
+    "durationType": 0,
+    "spData": {
+      "spType": 1,
+      "levelUpCost": null,
+      "maxChargeTime": 3,
+      "spCost": 4,
+      "initSp": 0,
+      "increment": 1.0
+    },
+    "prefabId": "skchr_peacok_1",
+    "duration": 0.0,
+    "blackboard": [
+      {
+        "key": "atk_scale",
+        "value": 2.0
+      },
+      {
+        "key": "peacok_s_1[crit].prob",
+        "value": 0.05
+      },
+      {
+        "key": "peacok_s_1[crit].atk_scale",
+        "value": 4.0
+      },
+      {
+        "key": "atk_scale_fake",
+        "value": 8.0
+      }
+    ]
+  },
+  "skchr_peacok_2": {
+    "name": "创世纪",
+    "rangeId": "x-1",
+    "description": "使周围所有敌人立即受到攻击力<@ba.vup>{success.atk_scale:0%}</>的法术伤害并失去特殊能力<@ba.vup>{success.silence}</>秒\\n<@ba.rem>有{prob:0%}的几率失败，失败时范围内的所有友方单位全部<$ba.stun>晕眩</>{failure.stun}秒</>",
+    "skillType": 1,
+    "durationType": 0,
+    "spData": {
+      "spType": 1,
+      "levelUpCost": null,
+      "maxChargeTime": 1,
+      "spCost": 12,
+      "initSp": 5,
+      "increment": 1.0
+    },
+    "prefabId": "skchr_peacok_2",
+    "duration": 0.0,
+    "blackboard": [
+      {
+        "key": "prob",
+        "value": 0.5
+      },
+      {
+        "key": "success.atk_scale",
+        "value": 3.5
+      },
+      {
+        "key": "success.silence",
+        "value": 5.0
+      },
+      {
+        "key": "failure.stun",
+        "value": 5.0
+      }
+    ]
+  }
+}

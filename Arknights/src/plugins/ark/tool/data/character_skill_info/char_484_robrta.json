@@ -1,0 +1,60 @@
+{
+  "skchr_robrta_1": {
+    "name": "叙拉古式上妆",
+    "rangeId": null,
+    "description": "攻击力<@ba.vup>+{atk:0%}</>，防御力<@ba.vup>+{def:0%}</>",
+    "skillType": 1,
+    "durationType": 0,
+    "spData": {
+      "spType": 1,
+      "levelUpCost": null,
+      "maxChargeTime": 1,
+      "spCost": 25,
+      "initSp": 15,
+      "increment": 1.0
+    },
+    "prefabId": "skchr_robrta_1",
+    "duration": 35.0,
+    "blackboard": [
+      {
+        "key": "atk",
+        "value": 0.5
+      },
+      {
+        "key": "def",
+        "value": 0.5
+      }
+    ]
+  },
+  "skchr_robrta_2": {
+    "name": "全自动造型仪",
+    "rangeId": null,
+    "description": "停止攻击，阻挡数<@ba.vup>+{block_cnt}</>，防御力<@ba.vup>+{def:0%}</>，技能结束时获得一个造型仪",
+    "skillType": 1,
+    "durationType": 0,
+    "spData": {
+      "spType": 1,
+      "levelUpCost": null,
+      "maxChargeTime": 1,
+      "spCost": 30,
+      "initSp": 10,
+      "increment": 1.0
+    },
+    "prefabId": "skchr_robrta_2",
+    "duration": 25.0,
+    "blackboard": [
+      {
+        "key": "block_cnt",
+        "value": 1.0
+      },
+      {
+        "key": "def",
+        "value": 0.8
+      },
+      {
+        "key": "robrta_s_2[recharge].cnt",
+        "value": 1.0
+      }
+    ]
+  }
+}

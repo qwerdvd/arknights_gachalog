@@ -1,0 +1,79 @@
+{
+  "skcom_quickattack[3]": {
+    "name": "迅捷打击·γ型",
+    "rangeId": null,
+    "description": "攻击力<@ba.vup>+{atk:0%}</>，攻击速度<@ba.vup>+{attack_speed}</>",
+    "skillType": 1,
+    "durationType": 0,
+    "spData": {
+      "spType": 1,
+      "levelUpCost": null,
+      "maxChargeTime": 1,
+      "spCost": 35,
+      "initSp": 15,
+      "increment": 1.0
+    },
+    "prefabId": "skcom_quickattack",
+    "duration": 35.0,
+    "blackboard": [
+      {
+        "key": "atk",
+        "value": 0.45
+      },
+      {
+        "key": "attack_speed",
+        "value": 45.0
+      }
+    ]
+  },
+  "skchr_fartth_2": {
+    "name": "同盟支援",
+    "rangeId": null,
+    "description": "可以攻击到范围外被阻挡的敌方单位，攻击速度<@ba.vup>+{attack_speed}</>",
+    "skillType": 1,
+    "durationType": 0,
+    "spData": {
+      "spType": 1,
+      "levelUpCost": null,
+      "maxChargeTime": 1,
+      "spCost": 40,
+      "initSp": 25,
+      "increment": 1.0
+    },
+    "prefabId": "skchr_fartth_2",
+    "duration": 35.0,
+    "blackboard": [
+      {
+        "key": "attack_speed",
+        "value": 110.0
+      }
+    ]
+  },
+  "skchr_fartth_3": {
+    "name": "光羽箭",
+    "rangeId": null,
+    "description": "攻击范围改为前方<@ba.rem>无限长的直线</>，攻击力<@ba.vup>+{atk:0%}</>，攻击原本范围以外的目标时，造成的伤害提高至<@ba.vup>{damage_scale:0%}</>",
+    "skillType": 1,
+    "durationType": 0,
+    "spData": {
+      "spType": 1,
+      "levelUpCost": null,
+      "maxChargeTime": 1,
+      "spCost": 20,
+      "initSp": 10,
+      "increment": 1.0
+    },
+    "prefabId": "skchr_fartth_3",
+    "duration": 20.0,
+    "blackboard": [
+      {
+        "key": "atk",
+        "value": 1.4
+      },
+      {
+        "key": "damage_scale",
+        "value": 1.4
+      }
+    ]
+  }
+}

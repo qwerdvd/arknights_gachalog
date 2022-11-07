@@ -1,0 +1,84 @@
+{
+  "skchr_ccheal_1": {
+    "name": "活力再生",
+    "rangeId": null,
+    "description": "下次治疗时为目标增加一个增益，每秒持续恢复相当于嘉维尔攻击力<@ba.vup>{heal_scale:0%}</>（血量低于一半时为<@ba.vup>{heal_scale_2:0%}</>）的生命，持续<@ba.vup>{duration}</>秒\\n<@ba.rem>可充能{ct}次</>",
+    "skillType": 2,
+    "durationType": 0,
+    "spData": {
+      "spType": 1,
+      "levelUpCost": null,
+      "maxChargeTime": 3,
+      "spCost": 8,
+      "initSp": 0,
+      "increment": 1.0
+    },
+    "prefabId": "skchr_ccheal_1",
+    "duration": -1.0,
+    "blackboard": [
+      {
+        "key": "heal_scale",
+        "value": 0.35
+      },
+      {
+        "key": "heal_scale_2",
+        "value": 0.7
+      },
+      {
+        "key": "hp_ratio",
+        "value": 0.5
+      },
+      {
+        "key": "interval",
+        "value": 1.0
+      },
+      {
+        "key": "duration",
+        "value": 5.0
+      },
+      {
+        "key": "ct",
+        "value": 3.0
+      }
+    ]
+  },
+  "skchr_ccheal_2": {
+    "name": "活力再生·广域",
+    "rangeId": null,
+    "description": "立即为攻击范围内所有友方单位增加一个增益，每秒持续恢复相当于嘉维尔攻击力<@ba.vup>{heal_scale:0%}</>（血量低于一半时为<@ba.vup>{heal_scale_2:0%}</>）的生命，持续<@ba.vup>{duration}</>秒",
+    "skillType": 1,
+    "durationType": 0,
+    "spData": {
+      "spType": 1,
+      "levelUpCost": null,
+      "maxChargeTime": 1,
+      "spCost": 60,
+      "initSp": 50,
+      "increment": 1.0
+    },
+    "prefabId": "skchr_ccheal_2",
+    "duration": -1.0,
+    "blackboard": [
+      {
+        "key": "heal_scale",
+        "value": 0.3
+      },
+      {
+        "key": "heal_scale_2",
+        "value": 0.8
+      },
+      {
+        "key": "hp_ratio",
+        "value": 0.5
+      },
+      {
+        "key": "interval",
+        "value": 1.0
+      },
+      {
+        "key": "duration",
+        "value": 10.0
+      }
+    ]
+  }
+}

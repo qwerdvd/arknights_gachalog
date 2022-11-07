@@ -1,0 +1,48 @@
+{
+  "skchr_aprl_1": {
+    "name": "精准射击",
+    "rangeId": null,
+    "description": "下次攻击的攻击力提高至<@ba.vup>{atk_scale:0%}</>",
+    "skillType": 2,
+    "durationType": 0,
+    "spData": {
+      "spType": 2,
+      "levelUpCost": null,
+      "maxChargeTime": 1,
+      "spCost": 3,
+      "initSp": 0,
+      "increment": 1.0
+    },
+    "prefabId": "skchr_aprl_1",
+    "duration": 0.0,
+    "blackboard": [
+      {
+        "key": "atk_scale",
+        "value": 2.3
+      }
+    ]
+  },
+  "skchr_aprl_2": {
+    "name": "灵活伪装",
+    "rangeId": null,
+    "description": "部署后攻击力<@ba.vup>+{atk:0%}</>，获得<$ba.camou>迷彩</>",
+    "skillType": 0,
+    "durationType": 0,
+    "spData": {
+      "spType": 8,
+      "levelUpCost": null,
+      "maxChargeTime": 1,
+      "spCost": 0,
+      "initSp": 0,
+      "increment": 0.0
+    },
+    "prefabId": "skchr_aprl_2",
+    "duration": 26.0,
+    "blackboard": [
+      {
+        "key": "atk",
+        "value": 1.0
+      }
+    ]
+  }
+}
