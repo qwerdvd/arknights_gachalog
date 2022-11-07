@@ -1,0 +1,153 @@
+{
+  "enemy_name": "enemy_1219_mtrbty_2",
+  "level": [
+    {
+      "level": 0,
+      "enemyData": {
+        "name": {
+          "m_defined": true,
+          "m_value": "万国信使，奥伦"
+        },
+        "description": {
+          "m_defined": true,
+          "m_value": "携带弹药时使用远程攻击并使目标无法攻击或治疗一段时间，对“冰淇淋机”造成额外法术伤害，弹药上限：<@eb.key>1</>"
+        },
+        "prefabKey": {
+          "m_defined": true,
+          "m_value": "enemy_1219_mtrbty_2"
+        },
+        "attributes": {
+          "maxHp": {
+            "m_defined": true,
+            "m_value": 23000
+          },
+          "atk": {
+            "m_defined": true,
+            "m_value": 700
+          },
+          "def": {
+            "m_defined": true,
+            "m_value": 550
+          },
+          "magicResistance": {
+            "m_defined": true,
+            "m_value": 60.0
+          },
+          "cost": {
+            "m_defined": false,
+            "m_value": 0
+          },
+          "blockCnt": {
+            "m_defined": false,
+            "m_value": 0
+          },
+          "moveSpeed": {
+            "m_defined": true,
+            "m_value": 0.8
+          },
+          "attackSpeed": {
+            "m_defined": true,
+            "m_value": 100.0
+          },
+          "baseAttackTime": {
+            "m_defined": true,
+            "m_value": 2.7
+          },
+          "respawnTime": {
+            "m_defined": false,
+            "m_value": 0
+          },
+          "hpRecoveryPerSec": {
+            "m_defined": false,
+            "m_value": 0.0
+          },
+          "spRecoveryPerSec": {
+            "m_defined": false,
+            "m_value": 0.0
+          },
+          "maxDeployCount": {
+            "m_defined": false,
+            "m_value": 0
+          },
+          "massLevel": {
+            "m_defined": true,
+            "m_value": 4
+          },
+          "baseForceLevel": {
+            "m_defined": false,
+            "m_value": 0
+          },
+          "tauntLevel": {
+            "m_defined": false,
+            "m_value": 0
+          },
+          "stunImmune": {
+            "m_defined": false,
+            "m_value": false
+          },
+          "silenceImmune": {
+            "m_defined": false,
+            "m_value": false
+          },
+          "sleepImmune": {
+            "m_defined": false,
+            "m_value": false
+          },
+          "frozenImmune": {
+            "m_defined": false,
+            "m_value": false
+          },
+          "levitateImmune": {
+            "m_defined": false,
+            "m_value": false
+          }
+        },
+        "lifePointReduce": {
+          "m_defined": true,
+          "m_value": 1
+        },
+        "levelType": {
+          "m_defined": true,
+          "m_value": 1
+        },
+        "rangeRadius": {
+          "m_defined": true,
+          "m_value": 2.5
+        },
+        "numOfExtraDrops": {
+          "m_defined": false,
+          "m_value": 0
+        },
+        "talentBlackboard": [
+          {
+            "key": "shotbuff.attack@headshot_atk_scale",
+            "value": 1.5,
+            "valueStr": null
+          },
+          {
+            "key": "shotbuff.attack@headshot_disarmed_duration",
+            "value": 10.0,
+            "valueStr": null
+          },
+          {
+            "key": "shotbuff.attack@headshot_sp",
+            "value": -1.0,
+            "valueStr": null
+          },
+          {
+            "key": "shotbuff.attack@headshot_trapdamage",
+            "value": 5000.0,
+            "valueStr": null
+          }
+        ],
+        "skills": null,
+        "spData": {
+          "spType": 1,
+          "maxSp": 1,
+          "initSp": 1,
+          "increment": 0.0
+        }
+      }
+    }
+  ]
+}

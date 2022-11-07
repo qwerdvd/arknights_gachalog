@@ -1,0 +1,237 @@
+{
+  "enemy_name": "enemy_2018_csdoll",
+  "level": [
+    {
+      "level": 0,
+      "enemyData": {
+        "name": {
+          "m_defined": true,
+          "m_value": "伤心的大锁"
+        },
+        "description": {
+          "m_defined": true,
+          "m_value": "剧团报幕人的作品之一，耐久极高且具有<@eb.key>强大的自愈能力</>，释放的护盾存在期间会不断出现额外的敌人。"
+        },
+        "prefabKey": {
+          "m_defined": true,
+          "m_value": "enemy_2018_csdoll"
+        },
+        "attributes": {
+          "maxHp": {
+            "m_defined": true,
+            "m_value": 300000
+          },
+          "atk": {
+            "m_defined": true,
+            "m_value": 800
+          },
+          "def": {
+            "m_defined": true,
+            "m_value": 700
+          },
+          "magicResistance": {
+            "m_defined": true,
+            "m_value": 60.0
+          },
+          "cost": {
+            "m_defined": false,
+            "m_value": 0
+          },
+          "blockCnt": {
+            "m_defined": false,
+            "m_value": 0
+          },
+          "moveSpeed": {
+            "m_defined": true,
+            "m_value": 1.0
+          },
+          "attackSpeed": {
+            "m_defined": false,
+            "m_value": 0.0
+          },
+          "baseAttackTime": {
+            "m_defined": true,
+            "m_value": 4.0
+          },
+          "respawnTime": {
+            "m_defined": false,
+            "m_value": 0
+          },
+          "hpRecoveryPerSec": {
+            "m_defined": false,
+            "m_value": 0.0
+          },
+          "spRecoveryPerSec": {
+            "m_defined": false,
+            "m_value": 0.0
+          },
+          "maxDeployCount": {
+            "m_defined": false,
+            "m_value": 0
+          },
+          "massLevel": {
+            "m_defined": true,
+            "m_value": 10
+          },
+          "baseForceLevel": {
+            "m_defined": false,
+            "m_value": 0
+          },
+          "tauntLevel": {
+            "m_defined": false,
+            "m_value": 0
+          },
+          "stunImmune": {
+            "m_defined": true,
+            "m_value": true
+          },
+          "silenceImmune": {
+            "m_defined": true,
+            "m_value": true
+          },
+          "sleepImmune": {
+            "m_defined": true,
+            "m_value": true
+          },
+          "frozenImmune": {
+            "m_defined": true,
+            "m_value": true
+          },
+          "levitateImmune": {
+            "m_defined": true,
+            "m_value": true
+          }
+        },
+        "lifePointReduce": {
+          "m_defined": true,
+          "m_value": 30
+        },
+        "levelType": {
+          "m_defined": true,
+          "m_value": 2
+        },
+        "rangeRadius": {
+          "m_defined": false,
+          "m_value": 99.0
+        },
+        "numOfExtraDrops": {
+          "m_defined": false,
+          "m_value": 0
+        },
+        "talentBlackboard": [
+          {
+            "key": "summon.csdoll_summon[1].duration",
+            "value": 90.0,
+            "valueStr": null
+          },
+          {
+            "key": "summon.csdoll_summon[1].interval",
+            "value": 24.0,
+            "valueStr": null
+          },
+          {
+            "key": "summon.csdoll_summon[1].branch_id",
+            "value": 0.0,
+            "valueStr": "csdoll_1"
+          },
+          {
+            "key": "summon.csdoll_summon[2].duration",
+            "value": 180.0,
+            "valueStr": null
+          },
+          {
+            "key": "summon.csdoll_summon[2].interval",
+            "value": 20.0,
+            "valueStr": null
+          },
+          {
+            "key": "summon.csdoll_summon[2].branch_id",
+            "value": 0.0,
+            "valueStr": "csdoll_2"
+          },
+          {
+            "key": "summon.csdoll_summon[3].interval",
+            "value": 16.0,
+            "valueStr": null
+          },
+          {
+            "key": "summon.csdoll_summon[3].branch_id",
+            "value": 0.0,
+            "valueStr": "csdoll_3"
+          },
+          {
+            "key": "hprecovery.hp_recovery_per_sec_by_max_hp_ratio",
+            "value": 0.0025,
+            "valueStr": null
+          },
+          {
+            "key": "aoetrigger.stack_cnt",
+            "value": 20.0,
+            "valueStr": null
+          },
+          {
+            "key": "aoe.atk_scale",
+            "value": 1.5,
+            "valueStr": null
+          },
+          {
+            "key": "aoetrigger.warning_stack_cnt",
+            "value": 10.0,
+            "valueStr": null
+          },
+          {
+            "key": "movespeedup.move_speed",
+            "value": 2.0,
+            "valueStr": null
+          }
+        ],
+        "skills": [
+          {
+            "prefabKey": "shield",
+            "priority": 1,
+            "cooldown": 45.0,
+            "initCooldown": 60.0,
+            "spCost": 0,
+            "blackboard": [
+              {
+                "key": "hp_ratio",
+                "value": 0.05,
+                "valueStr": null
+              },
+              {
+                "key": "interval",
+                "value": 20.0,
+                "valueStr": null
+              },
+              {
+                "key": "branch_id",
+                "value": 0.0,
+                "valueStr": "csdoll_rush"
+              }
+            ]
+          },
+          {
+            "prefabKey": "Doom",
+            "priority": 0,
+            "cooldown": 480.0,
+            "initCooldown": 480.0,
+            "spCost": 0,
+            "blackboard": [
+              {
+                "key": "value",
+                "value": -30.0,
+                "valueStr": null
+              },
+              {
+                "key": "atk_scale",
+                "value": 2.0,
+                "valueStr": null
+              }
+            ]
+          }
+        ],
+        "spData": null
+      }
+    }
+  ]
+}

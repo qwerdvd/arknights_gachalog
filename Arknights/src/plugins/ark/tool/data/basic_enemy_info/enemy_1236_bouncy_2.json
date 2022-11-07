@@ -1,0 +1,143 @@
+{
+  "enemy_name": "enemy_1236_bouncy_2",
+  "level": [
+    {
+      "level": 0,
+      "enemyData": {
+        "name": {
+          "m_defined": true,
+          "m_value": "清洗弹力球"
+        },
+        "description": {
+          "m_defined": true,
+          "m_value": "部署后延一个方向滚动，使碰撞到的敌人晕眩1秒，并清除滚过地板上的菌毯"
+        },
+        "prefabKey": {
+          "m_defined": true,
+          "m_value": "enemy_1236_bouncy_2"
+        },
+        "attributes": {
+          "maxHp": {
+            "m_defined": true,
+            "m_value": 80000
+          },
+          "atk": {
+            "m_defined": true,
+            "m_value": 2000
+          },
+          "def": {
+            "m_defined": true,
+            "m_value": 600
+          },
+          "magicResistance": {
+            "m_defined": true,
+            "m_value": 30.0
+          },
+          "cost": {
+            "m_defined": false,
+            "m_value": 0
+          },
+          "blockCnt": {
+            "m_defined": false,
+            "m_value": 0
+          },
+          "moveSpeed": {
+            "m_defined": true,
+            "m_value": 1.2
+          },
+          "attackSpeed": {
+            "m_defined": true,
+            "m_value": 100.0
+          },
+          "baseAttackTime": {
+            "m_defined": true,
+            "m_value": 1.5
+          },
+          "respawnTime": {
+            "m_defined": false,
+            "m_value": 0
+          },
+          "hpRecoveryPerSec": {
+            "m_defined": false,
+            "m_value": 0.0
+          },
+          "spRecoveryPerSec": {
+            "m_defined": false,
+            "m_value": 0.0
+          },
+          "maxDeployCount": {
+            "m_defined": false,
+            "m_value": 0
+          },
+          "massLevel": {
+            "m_defined": true,
+            "m_value": -2
+          },
+          "baseForceLevel": {
+            "m_defined": false,
+            "m_value": 0
+          },
+          "tauntLevel": {
+            "m_defined": false,
+            "m_value": 0
+          },
+          "stunImmune": {
+            "m_defined": false,
+            "m_value": false
+          },
+          "silenceImmune": {
+            "m_defined": false,
+            "m_value": false
+          },
+          "sleepImmune": {
+            "m_defined": false,
+            "m_value": false
+          },
+          "frozenImmune": {
+            "m_defined": false,
+            "m_value": false
+          },
+          "levitateImmune": {
+            "m_defined": false,
+            "m_value": false
+          }
+        },
+        "lifePointReduce": {
+          "m_defined": true,
+          "m_value": 1
+        },
+        "levelType": {
+          "m_defined": false,
+          "m_value": 0
+        },
+        "rangeRadius": {
+          "m_defined": true,
+          "m_value": 1.5
+        },
+        "numOfExtraDrops": {
+          "m_defined": false,
+          "m_value": 0
+        },
+        "talentBlackboard": [
+          {
+            "key": "crash.stun",
+            "value": 1.0,
+            "valueStr": null
+          },
+          {
+            "key": "friction.friction_factor",
+            "value": 0.6,
+            "valueStr": null
+          },
+          {
+            "key": "suicide.duration",
+            "value": 2.0,
+            "valueStr": null
+          }
+        ],
+        "skills": null,
+        "spData": null
+      }
+    }
+  ]
+}

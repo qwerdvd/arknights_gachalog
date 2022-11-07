@@ -1,0 +1,497 @@
+{
+  "enemy_name": "enemy_1519_bgball",
+  "level": [
+    {
+      "level": 0,
+      "enemyData": {
+        "name": {
+          "m_defined": true,
+          "m_value": "“进化的本质”"
+        },
+        "description": {
+          "m_defined": true,
+          "m_value": "不应行于这片大地的狂人，不应存于彼端世界的奇物，二者的结合诞生出了这一超越生物常理的“进化”之节点"
+        },
+        "prefabKey": {
+          "m_defined": true,
+          "m_value": "enemy_1519_bgball"
+        },
+        "attributes": {
+          "maxHp": {
+            "m_defined": true,
+            "m_value": 50000
+          },
+          "atk": {
+            "m_defined": true,
+            "m_value": 700
+          },
+          "def": {
+            "m_defined": true,
+            "m_value": 500
+          },
+          "magicResistance": {
+            "m_defined": true,
+            "m_value": 50.0
+          },
+          "cost": {
+            "m_defined": false,
+            "m_value": 0
+          },
+          "blockCnt": {
+            "m_defined": false,
+            "m_value": 0
+          },
+          "moveSpeed": {
+            "m_defined": true,
+            "m_value": 1.0
+          },
+          "attackSpeed": {
+            "m_defined": true,
+            "m_value": 100.0
+          },
+          "baseAttackTime": {
+            "m_defined": true,
+            "m_value": 5.0
+          },
+          "respawnTime": {
+            "m_defined": false,
+            "m_value": 0
+          },
+          "hpRecoveryPerSec": {
+            "m_defined": false,
+            "m_value": 0.0
+          },
+          "spRecoveryPerSec": {
+            "m_defined": false,
+            "m_value": 0.0
+          },
+          "maxDeployCount": {
+            "m_defined": false,
+            "m_value": 0
+          },
+          "massLevel": {
+            "m_defined": true,
+            "m_value": 6
+          },
+          "baseForceLevel": {
+            "m_defined": false,
+            "m_value": 0
+          },
+          "tauntLevel": {
+            "m_defined": false,
+            "m_value": 0
+          },
+          "stunImmune": {
+            "m_defined": true,
+            "m_value": true
+          },
+          "silenceImmune": {
+            "m_defined": true,
+            "m_value": true
+          },
+          "sleepImmune": {
+            "m_defined": true,
+            "m_value": true
+          },
+          "frozenImmune": {
+            "m_defined": true,
+            "m_value": true
+          },
+          "levitateImmune": {
+            "m_defined": true,
+            "m_value": true
+          }
+        },
+        "lifePointReduce": {
+          "m_defined": true,
+          "m_value": 2
+        },
+        "levelType": {
+          "m_defined": true,
+          "m_value": 2
+        },
+        "rangeRadius": {
+          "m_defined": false,
+          "m_value": 0.0
+        },
+        "numOfExtraDrops": {
+          "m_defined": false,
+          "m_value": 0
+        },
+        "talentBlackboard": [
+          {
+            "key": "mode_1.hp_ratio",
+            "value": 0.6,
+            "valueStr": null
+          },
+          {
+            "key": "mode_2.hp_ratio",
+            "value": 0.2,
+            "valueStr": null
+          },
+          {
+            "key": "mode_1.damage_resistance",
+            "value": 0.8,
+            "valueStr": null
+          },
+          {
+            "key": "mode_1.direction",
+            "value": 3.0,
+            "valueStr": null
+          },
+          {
+            "key": "mode_1_summoni.interval",
+            "value": 5.0,
+            "valueStr": null
+          },
+          {
+            "key": "mode_1_summon.branch_id",
+            "value": 0.0,
+            "valueStr": "branch_1"
+          },
+          {
+            "key": "mode_2.damage_resistance",
+            "value": 0.8,
+            "valueStr": null
+          },
+          {
+            "key": "mode_2.direction",
+            "value": 1.0,
+            "valueStr": null
+          },
+          {
+            "key": "mode_2_summon.branch_id",
+            "value": 0.0,
+            "valueStr": "branch_2"
+          },
+          {
+            "key": "mode_2_summon.interval",
+            "value": 3.0,
+            "valueStr": null
+          },
+          {
+            "key": "mode_3.damage_resistance",
+            "value": 0.99,
+            "valueStr": null
+          },
+          {
+            "key": "mode_3.interval",
+            "value": 1.0,
+            "valueStr": null
+          },
+          {
+            "key": "mode_3.damage",
+            "value": 300.0,
+            "valueStr": null
+          },
+          {
+            "key": "mode_3_summon.interval",
+            "value": 2.0,
+            "valueStr": null
+          },
+          {
+            "key": "mode_3_summon.branch_id",
+            "value": 0.0,
+            "valueStr": "branch_3"
+          },
+          {
+            "key": "mode_1.evolve_time",
+            "value": 100.0,
+            "valueStr": null
+          },
+          {
+            "key": "mode_2.evolve_time",
+            "value": 100.0,
+            "valueStr": null
+          }
+        ],
+        "skills": [
+          {
+            "prefabKey": "SwitchToMode3",
+            "priority": 0,
+            "cooldown": 0.0,
+            "initCooldown": 0.0,
+            "spCost": 0,
+            "blackboard": [
+              {
+                "key": "invincible_after_skill_duration",
+                "value": 10.0,
+                "valueStr": null
+              }
+            ]
+          },
+          {
+            "prefabKey": "SwitchToMode2",
+            "priority": 0,
+            "cooldown": 5.0,
+            "initCooldown": 5.0,
+            "spCost": 0,
+            "blackboard": [
+              {
+                "key": "invincible_after_skill_duration",
+                "value": 10.0,
+                "valueStr": null
+              }
+            ]
+          },
+          {
+            "prefabKey": "M1AttackWarning",
+            "priority": 0,
+            "cooldown": 32.0,
+            "initCooldown": 32.0,
+            "spCost": 0,
+            "blackboard": null
+          },
+          {
+            "prefabKey": "M1Effect",
+            "priority": 0,
+            "cooldown": 0.0,
+            "initCooldown": 0.0,
+            "spCost": 0,
+            "blackboard": null
+          },
+          {
+            "prefabKey": "M1RealAttack",
+            "priority": 0,
+            "cooldown": 0.0,
+            "initCooldown": 0.0,
+            "spCost": 0,
+            "blackboard": [
+              {
+                "key": "damage",
+                "value": 600.0,
+                "valueStr": null
+              }
+            ]
+          },
+          {
+            "prefabKey": "M2AttackWarning",
+            "priority": 0,
+            "cooldown": 15.0,
+            "initCooldown": 15.0,
+            "spCost": 0,
+            "blackboard": null
+          },
+          {
+            "prefabKey": "M2Effect",
+            "priority": 0,
+            "cooldown": 0.0,
+            "initCooldown": 0.0,
+            "spCost": 0,
+            "blackboard": null
+          },
+          {
+            "prefabKey": "M2RealAttack",
+            "priority": 0,
+            "cooldown": 0.0,
+            "initCooldown": 0.0,
+            "spCost": 0,
+            "blackboard": [
+              {
+                "key": "damage",
+                "value": 700.0,
+                "valueStr": null
+              }
+            ]
+          },
+          {
+            "prefabKey": "M3AttackWarning",
+            "priority": 0,
+            "cooldown": 0.0,
+            "initCooldown": 0.0,
+            "spCost": 0,
+            "blackboard": null
+          },
+          {
+            "prefabKey": "M3Effect",
+            "priority": 0,
+            "cooldown": 0.0,
+            "initCooldown": 0.0,
+            "spCost": 0,
+            "blackboard": null
+          },
+          {
+            "prefabKey": "M3RealAttack",
+            "priority": 0,
+            "cooldown": 0.0,
+            "initCooldown": 0.0,
+            "spCost": 0,
+            "blackboard": [
+              {
+                "key": "damage",
+                "value": 800.0,
+                "valueStr": null
+              }
+            ]
+          }
+        ],
+        "spData": null
+      }
+    },
+    {
+      "level": 1,
+      "enemyData": {
+        "name": {
+          "m_defined": false,
+          "m_value": null
+        },
+        "description": {
+          "m_defined": false,
+          "m_value": null
+        },
+        "prefabKey": {
+          "m_defined": false,
+          "m_value": null
+        },
+        "attributes": {
+          "maxHp": {
+            "m_defined": true,
+            "m_value": 70000
+          },
+          "atk": {
+            "m_defined": true,
+            "m_value": 900
+          },
+          "def": {
+            "m_defined": false,
+            "m_value": 0
+          },
+          "magicResistance": {
+            "m_defined": false,
+            "m_value": 0.0
+          },
+          "cost": {
+            "m_defined": false,
+            "m_value": 0
+          },
+          "blockCnt": {
+            "m_defined": false,
+            "m_value": 0
+          },
+          "moveSpeed": {
+            "m_defined": false,
+            "m_value": 0.0
+          },
+          "attackSpeed": {
+            "m_defined": false,
+            "m_value": 0.0
+          },
+          "baseAttackTime": {
+            "m_defined": false,
+            "m_value": 0.0
+          },
+          "respawnTime": {
+            "m_defined": false,
+            "m_value": 0
+          },
+          "hpRecoveryPerSec": {
+            "m_defined": false,
+            "m_value": 0.0
+          },
+          "spRecoveryPerSec": {
+            "m_defined": false,
+            "m_value": 0.0
+          },
+          "maxDeployCount": {
+            "m_defined": false,
+            "m_value": 0
+          },
+          "massLevel": {
+            "m_defined": false,
+            "m_value": 0
+          },
+          "baseForceLevel": {
+            "m_defined": false,
+            "m_value": 0
+          },
+          "tauntLevel": {
+            "m_defined": false,
+            "m_value": 0
+          },
+          "stunImmune": {
+            "m_defined": false,
+            "m_value": false
+          },
+          "silenceImmune": {
+            "m_defined": false,
+            "m_value": false
+          },
+          "sleepImmune": {
+            "m_defined": false,
+            "m_value": false
+          },
+          "frozenImmune": {
+            "m_defined": false,
+            "m_value": false
+          },
+          "levitateImmune": {
+            "m_defined": false,
+            "m_value": false
+          }
+        },
+        "lifePointReduce": {
+          "m_defined": false,
+          "m_value": 0
+        },
+        "levelType": {
+          "m_defined": false,
+          "m_value": 0
+        },
+        "rangeRadius": {
+          "m_defined": false,
+          "m_value": 0.0
+        },
+        "numOfExtraDrops": {
+          "m_defined": false,
+          "m_value": 0
+        },
+        "talentBlackboard": null,
+        "skills": [
+          {
+            "prefabKey": "M1RealAttack",
+            "priority": 0,
+            "cooldown": 0.0,
+            "initCooldown": 0.0,
+            "spCost": 0,
+            "blackboard": [
+              {
+                "key": "damage",
+                "value": 900.0,
+                "valueStr": null
+              }
+            ]
+          },
+          {
+            "prefabKey": "M2RealAttack",
+            "priority": 0,
+            "cooldown": 0.0,
+            "initCooldown": 0.0,
+            "spCost": 0,
+            "blackboard": [
+              {
+                "key": "damage",
+                "value": 1000.0,
+                "valueStr": null
+              }
+            ]
+          },
+          {
+            "prefabKey": "M3RealAttack",
+            "priority": 0,
+            "cooldown": 0.0,
+            "initCooldown": 0.0,
+            "spCost": 0,
+            "blackboard": [
+              {
+                "key": "damage",
+                "value": 1200.0,
+                "valueStr": null
+              }
+            ]
+          }
+        ],
+        "spData": null
+      }
+    }
+  ]
+}

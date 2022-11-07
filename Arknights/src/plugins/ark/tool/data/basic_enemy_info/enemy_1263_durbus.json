@@ -1,0 +1,133 @@
+{
+  "enemy_name": "enemy_1263_durbus",
+  "level": [
+    {
+      "level": 0,
+      "enemyData": {
+        "name": {
+          "m_defined": true,
+          "m_value": "全封闭沙滩车"
+        },
+        "description": {
+          "m_defined": true,
+          "m_value": "大家都喜欢的沙滩接驳车，只能被阻挡数大于等于3的单位阻挡，可以<@eb.key>装载最多3名乘客</>"
+        },
+        "prefabKey": {
+          "m_defined": true,
+          "m_value": "enemy_1263_durbus"
+        },
+        "attributes": {
+          "maxHp": {
+            "m_defined": true,
+            "m_value": 20000
+          },
+          "atk": {
+            "m_defined": true,
+            "m_value": 800
+          },
+          "def": {
+            "m_defined": true,
+            "m_value": 1000
+          },
+          "magicResistance": {
+            "m_defined": true,
+            "m_value": 10.0
+          },
+          "cost": {
+            "m_defined": false,
+            "m_value": 0
+          },
+          "blockCnt": {
+            "m_defined": false,
+            "m_value": 0
+          },
+          "moveSpeed": {
+            "m_defined": true,
+            "m_value": 1.3
+          },
+          "attackSpeed": {
+            "m_defined": false,
+            "m_value": 100.0
+          },
+          "baseAttackTime": {
+            "m_defined": true,
+            "m_value": 3.5
+          },
+          "respawnTime": {
+            "m_defined": false,
+            "m_value": 0
+          },
+          "hpRecoveryPerSec": {
+            "m_defined": false,
+            "m_value": 0.0
+          },
+          "spRecoveryPerSec": {
+            "m_defined": false,
+            "m_value": 0.0
+          },
+          "maxDeployCount": {
+            "m_defined": false,
+            "m_value": 0
+          },
+          "massLevel": {
+            "m_defined": true,
+            "m_value": 4
+          },
+          "baseForceLevel": {
+            "m_defined": false,
+            "m_value": 0
+          },
+          "tauntLevel": {
+            "m_defined": false,
+            "m_value": 0
+          },
+          "stunImmune": {
+            "m_defined": false,
+            "m_value": false
+          },
+          "silenceImmune": {
+            "m_defined": true,
+            "m_value": true
+          },
+          "sleepImmune": {
+            "m_defined": false,
+            "m_value": false
+          },
+          "frozenImmune": {
+            "m_defined": false,
+            "m_value": false
+          },
+          "levitateImmune": {
+            "m_defined": false,
+            "m_value": false
+          }
+        },
+        "lifePointReduce": {
+          "m_defined": true,
+          "m_value": 1
+        },
+        "levelType": {
+          "m_defined": true,
+          "m_value": 1
+        },
+        "rangeRadius": {
+          "m_defined": false,
+          "m_value": 0.0
+        },
+        "numOfExtraDrops": {
+          "m_defined": false,
+          "m_value": 0
+        },
+        "talentBlackboard": [
+          {
+            "key": "Bus.max_cnt",
+            "value": 3.0,
+            "valueStr": null
+          }
+        ],
+        "skills": null,
+        "spData": null
+      }
+    }
+  ]
+}

@@ -1,0 +1,158 @@
+{
+  "enemy_name": "enemy_1225_dkmage_2",
+  "level": [
+    {
+      "level": 0,
+      "enemyData": {
+        "name": {
+          "m_defined": true,
+          "m_value": "萨卡兹子裔链术师组长"
+        },
+        "description": {
+          "m_defined": true,
+          "m_value": "攻击造成<@eb.key>法术伤害</>与<@eb.key>凋亡损伤</>，且会在4个敌人间跳跃，每次跳跃伤害降低；首次倒下后重生为<@eb.key><慷慨之赐></>。"
+        },
+        "prefabKey": {
+          "m_defined": true,
+          "m_value": "enemy_1225_dkmage_2"
+        },
+        "attributes": {
+          "maxHp": {
+            "m_defined": true,
+            "m_value": 16000
+          },
+          "atk": {
+            "m_defined": true,
+            "m_value": 550
+          },
+          "def": {
+            "m_defined": true,
+            "m_value": 550
+          },
+          "magicResistance": {
+            "m_defined": true,
+            "m_value": 50.0
+          },
+          "cost": {
+            "m_defined": false,
+            "m_value": 0
+          },
+          "blockCnt": {
+            "m_defined": false,
+            "m_value": 0
+          },
+          "moveSpeed": {
+            "m_defined": true,
+            "m_value": 0.7
+          },
+          "attackSpeed": {
+            "m_defined": true,
+            "m_value": 100.0
+          },
+          "baseAttackTime": {
+            "m_defined": true,
+            "m_value": 4.0
+          },
+          "respawnTime": {
+            "m_defined": false,
+            "m_value": 0
+          },
+          "hpRecoveryPerSec": {
+            "m_defined": false,
+            "m_value": 0.0
+          },
+          "spRecoveryPerSec": {
+            "m_defined": false,
+            "m_value": 0.0
+          },
+          "maxDeployCount": {
+            "m_defined": false,
+            "m_value": 0
+          },
+          "massLevel": {
+            "m_defined": true,
+            "m_value": 3
+          },
+          "baseForceLevel": {
+            "m_defined": false,
+            "m_value": 0
+          },
+          "tauntLevel": {
+            "m_defined": false,
+            "m_value": 0
+          },
+          "stunImmune": {
+            "m_defined": false,
+            "m_value": false
+          },
+          "silenceImmune": {
+            "m_defined": false,
+            "m_value": false
+          },
+          "sleepImmune": {
+            "m_defined": false,
+            "m_value": false
+          },
+          "frozenImmune": {
+            "m_defined": false,
+            "m_value": false
+          },
+          "levitateImmune": {
+            "m_defined": false,
+            "m_value": false
+          }
+        },
+        "lifePointReduce": {
+          "m_defined": false,
+          "m_value": 0
+        },
+        "levelType": {
+          "m_defined": true,
+          "m_value": 1
+        },
+        "rangeRadius": {
+          "m_defined": true,
+          "m_value": 2.2
+        },
+        "numOfExtraDrops": {
+          "m_defined": false,
+          "m_value": 0
+        },
+        "talentBlackboard": [
+          {
+            "key": "epdamage.attack@ep_damage_ratio",
+            "value": 0.3,
+            "valueStr": null
+          },
+          {
+            "key": "epdamage.attack@max_target",
+            "value": 4.0,
+            "valueStr": null
+          },
+          {
+            "key": "epdamage.attack@chain.atk_scale",
+            "value": 0.85,
+            "valueStr": null
+          },
+          {
+            "key": "deathrattle.enemy_key",
+            "value": 0.0,
+            "valueStr": "enemy_1221_dzomg_2"
+          },
+          {
+            "key": "deathrattle.delay",
+            "value": 1.0,
+            "valueStr": null
+          },
+          {
+            "key": "epdamage.attack@projectile_range",
+            "value": 1.6,
+            "valueStr": null
+          }
+        ],
+        "skills": null,
+        "spData": null
+      }
+    }
+  ]
+}

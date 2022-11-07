@@ -1,0 +1,138 @@
+{
+  "enemy_name": "enemy_1144_merlgd_2",
+  "level": [
+    {
+      "level": 0,
+      "enemyData": {
+        "name": {
+          "m_defined": true,
+          "m_value": "传奇战争幽灵"
+        },
+        "description": {
+          "m_defined": true,
+          "m_value": "实力恐怖的强大佣兵，操纵<@eb.key>多种高级空援无人机</>协助作战，在场时<@eb.key>所有空援无人机移动速度大幅度提升</>。"
+        },
+        "prefabKey": {
+          "m_defined": true,
+          "m_value": "enemy_1144_merlgd_2"
+        },
+        "attributes": {
+          "maxHp": {
+            "m_defined": true,
+            "m_value": 12000
+          },
+          "atk": {
+            "m_defined": true,
+            "m_value": 1400
+          },
+          "def": {
+            "m_defined": true,
+            "m_value": 500
+          },
+          "magicResistance": {
+            "m_defined": true,
+            "m_value": 60.0
+          },
+          "cost": {
+            "m_defined": false,
+            "m_value": 0
+          },
+          "blockCnt": {
+            "m_defined": false,
+            "m_value": 0
+          },
+          "moveSpeed": {
+            "m_defined": true,
+            "m_value": 1.2
+          },
+          "attackSpeed": {
+            "m_defined": true,
+            "m_value": 100.0
+          },
+          "baseAttackTime": {
+            "m_defined": true,
+            "m_value": 3.0
+          },
+          "respawnTime": {
+            "m_defined": false,
+            "m_value": 0
+          },
+          "hpRecoveryPerSec": {
+            "m_defined": false,
+            "m_value": 0.0
+          },
+          "spRecoveryPerSec": {
+            "m_defined": false,
+            "m_value": 0.0
+          },
+          "maxDeployCount": {
+            "m_defined": false,
+            "m_value": 0
+          },
+          "massLevel": {
+            "m_defined": true,
+            "m_value": 3
+          },
+          "baseForceLevel": {
+            "m_defined": false,
+            "m_value": 0
+          },
+          "tauntLevel": {
+            "m_defined": false,
+            "m_value": 0
+          },
+          "stunImmune": {
+            "m_defined": false,
+            "m_value": false
+          },
+          "silenceImmune": {
+            "m_defined": true,
+            "m_value": true
+          },
+          "sleepImmune": {
+            "m_defined": false,
+            "m_value": false
+          },
+          "frozenImmune": {
+            "m_defined": false,
+            "m_value": false
+          },
+          "levitateImmune": {
+            "m_defined": false,
+            "m_value": false
+          }
+        },
+        "lifePointReduce": {
+          "m_defined": true,
+          "m_value": 1
+        },
+        "levelType": {
+          "m_defined": true,
+          "m_value": 1
+        },
+        "rangeRadius": {
+          "m_defined": false,
+          "m_value": 0.0
+        },
+        "numOfExtraDrops": {
+          "m_defined": false,
+          "m_value": 0
+        },
+        "talentBlackboard": [
+          {
+            "key": "AirSupSpeedUp.move_speed",
+            "value": 2.0,
+            "valueStr": null
+          },
+          {
+            "key": "HalfHPCallDef.hp_ratio",
+            "value": 0.5,
+            "valueStr": null
+          }
+        ],
+        "skills": null,
+        "spData": null
+      }
+    }
+  ]
+}

@@ -1,0 +1,127 @@
+{
+  "enemy_name": "enemy_1212_mtrfol_2",
+  "level": [
+    {
+      "level": 0,
+      "enemyData": {
+        "name": {
+          "m_defined": true,
+          "m_value": "寻路者精锐战士"
+        },
+        "description": {
+          "m_defined": true,
+          "m_value": "为先导的理念所感召，聚集在他身边的战士。实力强劲，为了实现寻路者共同的目标而奋战。"
+        },
+        "prefabKey": {
+          "m_defined": true,
+          "m_value": "enemy_1212_mtrfol_2"
+        },
+        "attributes": {
+          "maxHp": {
+            "m_defined": true,
+            "m_value": 4800
+          },
+          "atk": {
+            "m_defined": true,
+            "m_value": 400
+          },
+          "def": {
+            "m_defined": true,
+            "m_value": 200
+          },
+          "magicResistance": {
+            "m_defined": true,
+            "m_value": 0.0
+          },
+          "cost": {
+            "m_defined": false,
+            "m_value": 0
+          },
+          "blockCnt": {
+            "m_defined": false,
+            "m_value": 0
+          },
+          "moveSpeed": {
+            "m_defined": true,
+            "m_value": 1.1
+          },
+          "attackSpeed": {
+            "m_defined": true,
+            "m_value": 100.0
+          },
+          "baseAttackTime": {
+            "m_defined": true,
+            "m_value": 2.5
+          },
+          "respawnTime": {
+            "m_defined": false,
+            "m_value": 0
+          },
+          "hpRecoveryPerSec": {
+            "m_defined": false,
+            "m_value": 0.0
+          },
+          "spRecoveryPerSec": {
+            "m_defined": false,
+            "m_value": 0.0
+          },
+          "maxDeployCount": {
+            "m_defined": false,
+            "m_value": 0
+          },
+          "massLevel": {
+            "m_defined": true,
+            "m_value": 1
+          },
+          "baseForceLevel": {
+            "m_defined": false,
+            "m_value": 0
+          },
+          "tauntLevel": {
+            "m_defined": false,
+            "m_value": 0
+          },
+          "stunImmune": {
+            "m_defined": false,
+            "m_value": false
+          },
+          "silenceImmune": {
+            "m_defined": false,
+            "m_value": false
+          },
+          "sleepImmune": {
+            "m_defined": false,
+            "m_value": false
+          },
+          "frozenImmune": {
+            "m_defined": false,
+            "m_value": false
+          },
+          "levitateImmune": {
+            "m_defined": false,
+            "m_value": false
+          }
+        },
+        "lifePointReduce": {
+          "m_defined": true,
+          "m_value": 1
+        },
+        "levelType": {
+          "m_defined": false,
+          "m_value": 0
+        },
+        "rangeRadius": {
+          "m_defined": false,
+          "m_value": 0.0
+        },
+        "numOfExtraDrops": {
+          "m_defined": false,
+          "m_value": 0
+        },
+        "talentBlackboard": null,
+        "skills": null,
+        "spData": null
+      }
+    }
+  ]
+}

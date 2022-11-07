@@ -1,0 +1,143 @@
+{
+  "enemy_name": "enemy_1259_durwar_2",
+  "level": [
+    {
+      "level": 0,
+      "enemyData": {
+        "name": {
+          "m_defined": true,
+          "m_value": "湖畔救生员"
+        },
+        "description": {
+          "m_defined": true,
+          "m_value": "到处闲逛的专业救生员，损失一定生命后获得持续更长一段时间的<@eb.key>100%物理闪避</>"
+        },
+        "prefabKey": {
+          "m_defined": true,
+          "m_value": "enemy_1259_durwar_2"
+        },
+        "attributes": {
+          "maxHp": {
+            "m_defined": true,
+            "m_value": 6000
+          },
+          "atk": {
+            "m_defined": true,
+            "m_value": 420
+          },
+          "def": {
+            "m_defined": true,
+            "m_value": 250
+          },
+          "magicResistance": {
+            "m_defined": true,
+            "m_value": 50.0
+          },
+          "cost": {
+            "m_defined": false,
+            "m_value": 0
+          },
+          "blockCnt": {
+            "m_defined": false,
+            "m_value": 0
+          },
+          "moveSpeed": {
+            "m_defined": true,
+            "m_value": 0.95
+          },
+          "attackSpeed": {
+            "m_defined": false,
+            "m_value": 100.0
+          },
+          "baseAttackTime": {
+            "m_defined": true,
+            "m_value": 0.4
+          },
+          "respawnTime": {
+            "m_defined": false,
+            "m_value": 0
+          },
+          "hpRecoveryPerSec": {
+            "m_defined": false,
+            "m_value": 0.0
+          },
+          "spRecoveryPerSec": {
+            "m_defined": false,
+            "m_value": 0.0
+          },
+          "maxDeployCount": {
+            "m_defined": false,
+            "m_value": 0
+          },
+          "massLevel": {
+            "m_defined": true,
+            "m_value": 2
+          },
+          "baseForceLevel": {
+            "m_defined": false,
+            "m_value": 0
+          },
+          "tauntLevel": {
+            "m_defined": false,
+            "m_value": 0
+          },
+          "stunImmune": {
+            "m_defined": false,
+            "m_value": false
+          },
+          "silenceImmune": {
+            "m_defined": false,
+            "m_value": false
+          },
+          "sleepImmune": {
+            "m_defined": false,
+            "m_value": false
+          },
+          "frozenImmune": {
+            "m_defined": false,
+            "m_value": false
+          },
+          "levitateImmune": {
+            "m_defined": false,
+            "m_value": false
+          }
+        },
+        "lifePointReduce": {
+          "m_defined": true,
+          "m_value": 1
+        },
+        "levelType": {
+          "m_defined": false,
+          "m_value": 0
+        },
+        "rangeRadius": {
+          "m_defined": false,
+          "m_value": 0.0
+        },
+        "numOfExtraDrops": {
+          "m_defined": false,
+          "m_value": 0
+        },
+        "talentBlackboard": [
+          {
+            "key": "Evade.prob",
+            "value": 1.0,
+            "valueStr": null
+          },
+          {
+            "key": "Evade.duration",
+            "value": 20.0,
+            "valueStr": null
+          },
+          {
+            "key": "Evade.hp_ratio",
+            "value": 0.5,
+            "valueStr": null
+          }
+        ],
+        "skills": null,
+        "spData": null
+      }
+    }
+  ]
+}

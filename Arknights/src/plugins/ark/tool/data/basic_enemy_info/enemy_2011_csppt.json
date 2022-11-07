@@ -1,0 +1,127 @@
+{
+  "enemy_name": "enemy_2011_csppt",
+  "level": [
+    {
+      "level": 0,
+      "enemyData": {
+        "name": {
+          "m_defined": true,
+          "m_value": "剧场组装体"
+        },
+        "description": {
+          "m_defined": true,
+          "m_value": "猩红剧团道具师负责维护的巨型组装体，<@eb.key>阻挡能力大于等于4</>的作战人员才能阻挡，攻击对自身周围造成<@eb.key>溅射</>伤害。"
+        },
+        "prefabKey": {
+          "m_defined": true,
+          "m_value": "enemy_2011_csppt"
+        },
+        "attributes": {
+          "maxHp": {
+            "m_defined": true,
+            "m_value": 24000
+          },
+          "atk": {
+            "m_defined": true,
+            "m_value": 1200
+          },
+          "def": {
+            "m_defined": true,
+            "m_value": 300
+          },
+          "magicResistance": {
+            "m_defined": true,
+            "m_value": 30.0
+          },
+          "cost": {
+            "m_defined": false,
+            "m_value": 0
+          },
+          "blockCnt": {
+            "m_defined": false,
+            "m_value": 0
+          },
+          "moveSpeed": {
+            "m_defined": true,
+            "m_value": 0.5
+          },
+          "attackSpeed": {
+            "m_defined": false,
+            "m_value": 0.0
+          },
+          "baseAttackTime": {
+            "m_defined": true,
+            "m_value": 5.0
+          },
+          "respawnTime": {
+            "m_defined": false,
+            "m_value": 0
+          },
+          "hpRecoveryPerSec": {
+            "m_defined": false,
+            "m_value": 0.0
+          },
+          "spRecoveryPerSec": {
+            "m_defined": false,
+            "m_value": 0.0
+          },
+          "maxDeployCount": {
+            "m_defined": false,
+            "m_value": 0
+          },
+          "massLevel": {
+            "m_defined": true,
+            "m_value": 5
+          },
+          "baseForceLevel": {
+            "m_defined": false,
+            "m_value": 0
+          },
+          "tauntLevel": {
+            "m_defined": false,
+            "m_value": 0
+          },
+          "stunImmune": {
+            "m_defined": false,
+            "m_value": false
+          },
+          "silenceImmune": {
+            "m_defined": false,
+            "m_value": false
+          },
+          "sleepImmune": {
+            "m_defined": false,
+            "m_value": false
+          },
+          "frozenImmune": {
+            "m_defined": false,
+            "m_value": false
+          },
+          "levitateImmune": {
+            "m_defined": false,
+            "m_value": false
+          }
+        },
+        "lifePointReduce": {
+          "m_defined": true,
+          "m_value": 2
+        },
+        "levelType": {
+          "m_defined": true,
+          "m_value": 1
+        },
+        "rangeRadius": {
+          "m_defined": true,
+          "m_value": 1.3
+        },
+        "numOfExtraDrops": {
+          "m_defined": false,
+          "m_value": 0
+        },
+        "talentBlackboard": null,
+        "skills": null,
+        "spData": null
+      }
+    }
+  ]
+}

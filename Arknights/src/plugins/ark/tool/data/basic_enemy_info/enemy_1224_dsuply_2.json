@@ -1,0 +1,143 @@
+{
+  "enemy_name": "enemy_1224_dsuply_2",
+  "level": [
+    {
+      "level": 0,
+      "enemyData": {
+        "name": {
+          "m_defined": true,
+          "m_value": "萨卡兹子裔改装补给车"
+        },
+        "description": {
+          "m_defined": true,
+          "m_value": "在场时，重生造物的<@eb.key>攻击力提升</>且攻击附带<@eb.key>凋亡损伤</>。"
+        },
+        "prefabKey": {
+          "m_defined": true,
+          "m_value": "enemy_1224_dsuply_2"
+        },
+        "attributes": {
+          "maxHp": {
+            "m_defined": true,
+            "m_value": 9000
+          },
+          "atk": {
+            "m_defined": true,
+            "m_value": 420
+          },
+          "def": {
+            "m_defined": true,
+            "m_value": 600
+          },
+          "magicResistance": {
+            "m_defined": true,
+            "m_value": 10.0
+          },
+          "cost": {
+            "m_defined": false,
+            "m_value": 0
+          },
+          "blockCnt": {
+            "m_defined": false,
+            "m_value": 0
+          },
+          "moveSpeed": {
+            "m_defined": true,
+            "m_value": 0.7
+          },
+          "attackSpeed": {
+            "m_defined": true,
+            "m_value": 100.0
+          },
+          "baseAttackTime": {
+            "m_defined": true,
+            "m_value": 1.7
+          },
+          "respawnTime": {
+            "m_defined": false,
+            "m_value": 0
+          },
+          "hpRecoveryPerSec": {
+            "m_defined": false,
+            "m_value": 0.0
+          },
+          "spRecoveryPerSec": {
+            "m_defined": false,
+            "m_value": 0.0
+          },
+          "maxDeployCount": {
+            "m_defined": false,
+            "m_value": 0
+          },
+          "massLevel": {
+            "m_defined": true,
+            "m_value": 4
+          },
+          "baseForceLevel": {
+            "m_defined": false,
+            "m_value": 0
+          },
+          "tauntLevel": {
+            "m_defined": false,
+            "m_value": 0
+          },
+          "stunImmune": {
+            "m_defined": false,
+            "m_value": false
+          },
+          "silenceImmune": {
+            "m_defined": false,
+            "m_value": false
+          },
+          "sleepImmune": {
+            "m_defined": false,
+            "m_value": false
+          },
+          "frozenImmune": {
+            "m_defined": false,
+            "m_value": false
+          },
+          "levitateImmune": {
+            "m_defined": false,
+            "m_value": false
+          }
+        },
+        "lifePointReduce": {
+          "m_defined": false,
+          "m_value": 0
+        },
+        "levelType": {
+          "m_defined": true,
+          "m_value": 1
+        },
+        "rangeRadius": {
+          "m_defined": true,
+          "m_value": 1.6
+        },
+        "numOfExtraDrops": {
+          "m_defined": false,
+          "m_value": 0
+        },
+        "talentBlackboard": [
+          {
+            "key": "aura.enemy_dsuply_2_t[attr_buff].atk",
+            "value": 0.1,
+            "valueStr": null
+          },
+          {
+            "key": "aura.enemy_dsuply_2_t[attr_buff].max_valid_stack_cnt",
+            "value": 5.0,
+            "valueStr": null
+          },
+          {
+            "key": "aura.ep_damage_ratio",
+            "value": 0.1,
+            "valueStr": null
+          }
+        ],
+        "skills": null,
+        "spData": null
+      }
+    }
+  ]
+}

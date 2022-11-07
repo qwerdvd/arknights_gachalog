@@ -1,0 +1,147 @@
+{
+  "enemy_name": "enemy_2004_balloon",
+  "level": [
+    {
+      "level": 0,
+      "enemyData": {
+        "name": {
+          "m_defined": true,
+          "m_value": "喷气人"
+        },
+        "description": {
+          "m_defined": true,
+          "m_value": "一个背着自制喷气背包的怪人，被阻挡后会<@eb.key>飞起来</>一段时间"
+        },
+        "prefabKey": {
+          "m_defined": true,
+          "m_value": "enemy_2004_balloon"
+        },
+        "attributes": {
+          "maxHp": {
+            "m_defined": true,
+            "m_value": 58000
+          },
+          "atk": {
+            "m_defined": true,
+            "m_value": 400
+          },
+          "def": {
+            "m_defined": true,
+            "m_value": 280
+          },
+          "magicResistance": {
+            "m_defined": true,
+            "m_value": 30.0
+          },
+          "cost": {
+            "m_defined": false,
+            "m_value": 0
+          },
+          "blockCnt": {
+            "m_defined": false,
+            "m_value": 0
+          },
+          "moveSpeed": {
+            "m_defined": true,
+            "m_value": 0.8
+          },
+          "attackSpeed": {
+            "m_defined": true,
+            "m_value": 100.0
+          },
+          "baseAttackTime": {
+            "m_defined": true,
+            "m_value": 2.0
+          },
+          "respawnTime": {
+            "m_defined": false,
+            "m_value": 0
+          },
+          "hpRecoveryPerSec": {
+            "m_defined": true,
+            "m_value": 0.0
+          },
+          "spRecoveryPerSec": {
+            "m_defined": true,
+            "m_value": 0.0
+          },
+          "maxDeployCount": {
+            "m_defined": false,
+            "m_value": 0
+          },
+          "massLevel": {
+            "m_defined": true,
+            "m_value": 3
+          },
+          "baseForceLevel": {
+            "m_defined": false,
+            "m_value": 0
+          },
+          "tauntLevel": {
+            "m_defined": false,
+            "m_value": 0
+          },
+          "stunImmune": {
+            "m_defined": true,
+            "m_value": false
+          },
+          "silenceImmune": {
+            "m_defined": true,
+            "m_value": true
+          },
+          "sleepImmune": {
+            "m_defined": false,
+            "m_value": false
+          },
+          "frozenImmune": {
+            "m_defined": false,
+            "m_value": false
+          },
+          "levitateImmune": {
+            "m_defined": false,
+            "m_value": false
+          }
+        },
+        "lifePointReduce": {
+          "m_defined": true,
+          "m_value": 5
+        },
+        "levelType": {
+          "m_defined": true,
+          "m_value": 2
+        },
+        "rangeRadius": {
+          "m_defined": false,
+          "m_value": 0.0
+        },
+        "numOfExtraDrops": {
+          "m_defined": false,
+          "m_value": 0
+        },
+        "talentBlackboard": null,
+        "skills": [
+          {
+            "prefabKey": "TakeOff",
+            "priority": 0,
+            "cooldown": 25.0,
+            "initCooldown": 1.0,
+            "spCost": 0,
+            "blackboard": [
+              {
+                "key": "duration",
+                "value": 7.0,
+                "valueStr": null
+              },
+              {
+                "key": "balloon_s[fly].move_speed",
+                "value": 0.5,
+                "valueStr": null
+              }
+            ]
+          }
+        ],
+        "spData": null
+      }
+    }
+  ]
+}

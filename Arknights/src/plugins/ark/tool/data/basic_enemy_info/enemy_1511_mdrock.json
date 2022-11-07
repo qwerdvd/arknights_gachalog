@@ -1,0 +1,369 @@
+{
+  "enemy_name": "enemy_1511_mdrock",
+  "level": [
+    {
+      "level": 0,
+      "enemyData": {
+        "name": {
+          "m_defined": true,
+          "m_value": "泥岩"
+        },
+        "description": {
+          "m_defined": true,
+          "m_value": "年龄不详，性别不详，履历不详。"
+        },
+        "prefabKey": {
+          "m_defined": true,
+          "m_value": "enemy_1511_mdrock"
+        },
+        "attributes": {
+          "maxHp": {
+            "m_defined": true,
+            "m_value": 45000
+          },
+          "atk": {
+            "m_defined": true,
+            "m_value": 800
+          },
+          "def": {
+            "m_defined": true,
+            "m_value": 1000
+          },
+          "magicResistance": {
+            "m_defined": true,
+            "m_value": 30.0
+          },
+          "cost": {
+            "m_defined": false,
+            "m_value": 0
+          },
+          "blockCnt": {
+            "m_defined": false,
+            "m_value": 0
+          },
+          "moveSpeed": {
+            "m_defined": true,
+            "m_value": 0.6
+          },
+          "attackSpeed": {
+            "m_defined": true,
+            "m_value": 100.0
+          },
+          "baseAttackTime": {
+            "m_defined": true,
+            "m_value": 4.5
+          },
+          "respawnTime": {
+            "m_defined": false,
+            "m_value": 0
+          },
+          "hpRecoveryPerSec": {
+            "m_defined": false,
+            "m_value": 0.0
+          },
+          "spRecoveryPerSec": {
+            "m_defined": false,
+            "m_value": 0.0
+          },
+          "maxDeployCount": {
+            "m_defined": false,
+            "m_value": 0
+          },
+          "massLevel": {
+            "m_defined": true,
+            "m_value": 6
+          },
+          "baseForceLevel": {
+            "m_defined": false,
+            "m_value": 0
+          },
+          "tauntLevel": {
+            "m_defined": false,
+            "m_value": 0
+          },
+          "stunImmune": {
+            "m_defined": true,
+            "m_value": false
+          },
+          "silenceImmune": {
+            "m_defined": true,
+            "m_value": true
+          },
+          "sleepImmune": {
+            "m_defined": false,
+            "m_value": false
+          },
+          "frozenImmune": {
+            "m_defined": false,
+            "m_value": false
+          },
+          "levitateImmune": {
+            "m_defined": false,
+            "m_value": false
+          }
+        },
+        "lifePointReduce": {
+          "m_defined": true,
+          "m_value": 2
+        },
+        "levelType": {
+          "m_defined": true,
+          "m_value": 2
+        },
+        "rangeRadius": {
+          "m_defined": false,
+          "m_value": 0.0
+        },
+        "numOfExtraDrops": {
+          "m_defined": false,
+          "m_value": 0
+        },
+        "talentBlackboard": [
+          {
+            "key": "charge.attack@enemy_mdrock_s_1[charge].atk",
+            "value": 0.6,
+            "valueStr": null
+          },
+          {
+            "key": "shield.dynamic",
+            "value": 5500.0,
+            "valueStr": null
+          },
+          {
+            "key": "shield.max_hp",
+            "value": 0.5,
+            "valueStr": null
+          },
+          {
+            "key": "shield.attack_speed",
+            "value": 50.0,
+            "valueStr": null
+          }
+        ],
+        "skills": [
+          {
+            "prefabKey": "RefreshShield",
+            "priority": 1,
+            "cooldown": 17.0,
+            "initCooldown": 17.0,
+            "spCost": 0,
+            "blackboard": [
+              {
+                "key": "dynamic",
+                "value": 5500.0,
+                "valueStr": null
+              },
+              {
+                "key": "max_hp",
+                "value": 0.5,
+                "valueStr": null
+              },
+              {
+                "key": "attack_speed",
+                "value": 50.0,
+                "valueStr": null
+              }
+            ]
+          },
+          {
+            "prefabKey": "occupy",
+            "priority": 0,
+            "cooldown": 35.0,
+            "initCooldown": 35.0,
+            "spCost": 0,
+            "blackboard": [
+              {
+                "key": "sp",
+                "value": -1.0,
+                "valueStr": null
+              }
+            ]
+          }
+        ],
+        "spData": null
+      }
+    },
+    {
+      "level": 1,
+      "enemyData": {
+        "name": {
+          "m_defined": false,
+          "m_value": null
+        },
+        "description": {
+          "m_defined": false,
+          "m_value": null
+        },
+        "prefabKey": {
+          "m_defined": false,
+          "m_value": null
+        },
+        "attributes": {
+          "maxHp": {
+            "m_defined": true,
+            "m_value": 55000
+          },
+          "atk": {
+            "m_defined": true,
+            "m_value": 1000
+          },
+          "def": {
+            "m_defined": false,
+            "m_value": 0
+          },
+          "magicResistance": {
+            "m_defined": false,
+            "m_value": 0.0
+          },
+          "cost": {
+            "m_defined": false,
+            "m_value": 0
+          },
+          "blockCnt": {
+            "m_defined": false,
+            "m_value": 0
+          },
+          "moveSpeed": {
+            "m_defined": false,
+            "m_value": 0.0
+          },
+          "attackSpeed": {
+            "m_defined": false,
+            "m_value": 0.0
+          },
+          "baseAttackTime": {
+            "m_defined": false,
+            "m_value": 0.0
+          },
+          "respawnTime": {
+            "m_defined": false,
+            "m_value": 0
+          },
+          "hpRecoveryPerSec": {
+            "m_defined": false,
+            "m_value": 0.0
+          },
+          "spRecoveryPerSec": {
+            "m_defined": false,
+            "m_value": 0.0
+          },
+          "maxDeployCount": {
+            "m_defined": false,
+            "m_value": 0
+          },
+          "massLevel": {
+            "m_defined": false,
+            "m_value": 0
+          },
+          "baseForceLevel": {
+            "m_defined": false,
+            "m_value": 0
+          },
+          "tauntLevel": {
+            "m_defined": false,
+            "m_value": 0
+          },
+          "stunImmune": {
+            "m_defined": true,
+            "m_value": false
+          },
+          "silenceImmune": {
+            "m_defined": true,
+            "m_value": true
+          },
+          "sleepImmune": {
+            "m_defined": false,
+            "m_value": false
+          },
+          "frozenImmune": {
+            "m_defined": false,
+            "m_value": false
+          },
+          "levitateImmune": {
+            "m_defined": false,
+            "m_value": false
+          }
+        },
+        "lifePointReduce": {
+          "m_defined": false,
+          "m_value": 0
+        },
+        "levelType": {
+          "m_defined": false,
+          "m_value": 0
+        },
+        "rangeRadius": {
+          "m_defined": false,
+          "m_value": 0.0
+        },
+        "numOfExtraDrops": {
+          "m_defined": false,
+          "m_value": 0
+        },
+        "talentBlackboard": [
+          {
+            "key": "charge.attack@enemy_mdrock_s_1[charge].atk",
+            "value": 0.6,
+            "valueStr": null
+          },
+          {
+            "key": "dynamic",
+            "value": 6667.0,
+            "valueStr": null
+          },
+          {
+            "key": "attack_speed",
+            "value": 50.0,
+            "valueStr": null
+          },
+          {
+            "key": "max_hp",
+            "value": 0.5,
+            "valueStr": null
+          }
+        ],
+        "skills": [
+          {
+            "prefabKey": "RefreshShield",
+            "priority": 1,
+            "cooldown": 15.0,
+            "initCooldown": 15.0,
+            "spCost": 0,
+            "blackboard": [
+              {
+                "key": "max_hp",
+                "value": 0.5,
+                "valueStr": null
+              },
+              {
+                "key": "dynamic",
+                "value": 6667.0,
+                "valueStr": null
+              },
+              {
+                "key": "attack_speed",
+                "value": 50.0,
+                "valueStr": null
+              }
+            ]
+          },
+          {
+            "prefabKey": "occupy",
+            "priority": 0,
+            "cooldown": 35.0,
+            "initCooldown": 35.0,
+            "spCost": 0,
+            "blackboard": [
+              {
+                "key": "sp",
+                "value": -1.0,
+                "valueStr": null
+              }
+            ]
+          }
+        ],
+        "spData": null
+      }
+    }
+  ]
+}

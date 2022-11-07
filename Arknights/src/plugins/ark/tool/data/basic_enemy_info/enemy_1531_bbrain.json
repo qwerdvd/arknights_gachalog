@@ -1,0 +1,339 @@
+{
+  "enemy_name": "enemy_1531_bbrain",
+  "level": [
+    {
+      "level": 0,
+      "enemyData": {
+        "name": {
+          "m_defined": true,
+          "m_value": "“唤醒”"
+        },
+        "description": {
+          "m_defined": true,
+          "m_value": "多萝西亲手制造的“梦境”，在这里，人们不必再忍受跋涉之苦。"
+        },
+        "prefabKey": {
+          "m_defined": true,
+          "m_value": "enemy_1531_bbrain"
+        },
+        "attributes": {
+          "maxHp": {
+            "m_defined": true,
+            "m_value": 37500
+          },
+          "atk": {
+            "m_defined": true,
+            "m_value": 1200
+          },
+          "def": {
+            "m_defined": true,
+            "m_value": 650
+          },
+          "magicResistance": {
+            "m_defined": true,
+            "m_value": 50.0
+          },
+          "cost": {
+            "m_defined": false,
+            "m_value": 0
+          },
+          "blockCnt": {
+            "m_defined": false,
+            "m_value": 0
+          },
+          "moveSpeed": {
+            "m_defined": true,
+            "m_value": 0.5
+          },
+          "attackSpeed": {
+            "m_defined": false,
+            "m_value": 100.0
+          },
+          "baseAttackTime": {
+            "m_defined": true,
+            "m_value": 5.0
+          },
+          "respawnTime": {
+            "m_defined": false,
+            "m_value": 0
+          },
+          "hpRecoveryPerSec": {
+            "m_defined": false,
+            "m_value": 0.0
+          },
+          "spRecoveryPerSec": {
+            "m_defined": false,
+            "m_value": 0.0
+          },
+          "maxDeployCount": {
+            "m_defined": false,
+            "m_value": 0
+          },
+          "massLevel": {
+            "m_defined": true,
+            "m_value": 10
+          },
+          "baseForceLevel": {
+            "m_defined": false,
+            "m_value": 0
+          },
+          "tauntLevel": {
+            "m_defined": false,
+            "m_value": 0
+          },
+          "stunImmune": {
+            "m_defined": true,
+            "m_value": true
+          },
+          "silenceImmune": {
+            "m_defined": true,
+            "m_value": true
+          },
+          "sleepImmune": {
+            "m_defined": true,
+            "m_value": true
+          },
+          "frozenImmune": {
+            "m_defined": true,
+            "m_value": true
+          },
+          "levitateImmune": {
+            "m_defined": true,
+            "m_value": true
+          }
+        },
+        "lifePointReduce": {
+          "m_defined": true,
+          "m_value": 2
+        },
+        "levelType": {
+          "m_defined": true,
+          "m_value": 2
+        },
+        "rangeRadius": {
+          "m_defined": false,
+          "m_value": 0.0
+        },
+        "numOfExtraDrops": {
+          "m_defined": false,
+          "m_value": 0
+        },
+        "talentBlackboard": [
+          {
+            "key": "Reborn.duration",
+            "value": 10.0,
+            "valueStr": null
+          },
+          {
+            "key": "DamageSplit.damage_resistance",
+            "value": 0.5,
+            "valueStr": null
+          },
+          {
+            "key": "M2.atk",
+            "value": 0.25,
+            "valueStr": null
+          }
+        ],
+        "skills": [
+          {
+            "prefabKey": "Blink",
+            "priority": 1,
+            "cooldown": 38.0,
+            "initCooldown": 50.0,
+            "spCost": 0,
+            "blackboard": [
+              {
+                "key": "cooldown_0",
+                "value": 38.0,
+                "valueStr": null
+              }
+            ]
+          },
+          {
+            "prefabKey": "AttackUDLR",
+            "priority": 0,
+            "cooldown": 5.0,
+            "initCooldown": 5.0,
+            "spCost": 0,
+            "blackboard": null
+          },
+          {
+            "prefabKey": "AttackLR",
+            "priority": 0,
+            "cooldown": 5.0,
+            "initCooldown": 5.0,
+            "spCost": 0,
+            "blackboard": null
+          },
+          {
+            "prefabKey": "Aoe",
+            "priority": 10,
+            "cooldown": 0.0,
+            "initCooldown": 0.0,
+            "spCost": 0,
+            "blackboard": [
+              {
+                "key": "aoe_prepare_duration",
+                "value": 3.0,
+                "valueStr": null
+              },
+              {
+                "key": "atk_scale",
+                "value": 5.0,
+                "valueStr": null
+              }
+            ]
+          },
+          {
+            "prefabKey": "AoeM2",
+            "priority": 10,
+            "cooldown": 0.0,
+            "initCooldown": 0.0,
+            "spCost": 0,
+            "blackboard": [
+              {
+                "key": "aoe_prepare_duration",
+                "value": 3.0,
+                "valueStr": null
+              },
+              {
+                "key": "stun",
+                "value": 15.0,
+                "valueStr": null
+              },
+              {
+                "key": "atk_scale",
+                "value": 5.0,
+                "valueStr": null
+              }
+            ]
+          }
+        ],
+        "spData": null
+      }
+    },
+    {
+      "level": 1,
+      "enemyData": {
+        "name": {
+          "m_defined": false,
+          "m_value": null
+        },
+        "description": {
+          "m_defined": false,
+          "m_value": null
+        },
+        "prefabKey": {
+          "m_defined": false,
+          "m_value": null
+        },
+        "attributes": {
+          "maxHp": {
+            "m_defined": true,
+            "m_value": 50000
+          },
+          "atk": {
+            "m_defined": true,
+            "m_value": 1350
+          },
+          "def": {
+            "m_defined": true,
+            "m_value": 750
+          },
+          "magicResistance": {
+            "m_defined": false,
+            "m_value": 70.0
+          },
+          "cost": {
+            "m_defined": false,
+            "m_value": 0
+          },
+          "blockCnt": {
+            "m_defined": false,
+            "m_value": 0
+          },
+          "moveSpeed": {
+            "m_defined": false,
+            "m_value": 0.0
+          },
+          "attackSpeed": {
+            "m_defined": false,
+            "m_value": 0.0
+          },
+          "baseAttackTime": {
+            "m_defined": false,
+            "m_value": 0.0
+          },
+          "respawnTime": {
+            "m_defined": false,
+            "m_value": 0
+          },
+          "hpRecoveryPerSec": {
+            "m_defined": false,
+            "m_value": 0.0
+          },
+          "spRecoveryPerSec": {
+            "m_defined": false,
+            "m_value": 0.0
+          },
+          "maxDeployCount": {
+            "m_defined": false,
+            "m_value": 0
+          },
+          "massLevel": {
+            "m_defined": false,
+            "m_value": 0
+          },
+          "baseForceLevel": {
+            "m_defined": false,
+            "m_value": 0
+          },
+          "tauntLevel": {
+            "m_defined": false,
+            "m_value": 0
+          },
+          "stunImmune": {
+            "m_defined": false,
+            "m_value": false
+          },
+          "silenceImmune": {
+            "m_defined": false,
+            "m_value": false
+          },
+          "sleepImmune": {
+            "m_defined": false,
+            "m_value": false
+          },
+          "frozenImmune": {
+            "m_defined": false,
+            "m_value": false
+          },
+          "levitateImmune": {
+            "m_defined": false,
+            "m_value": false
+          }
+        },
+        "lifePointReduce": {
+          "m_defined": false,
+          "m_value": 0
+        },
+        "levelType": {
+          "m_defined": false,
+          "m_value": 0
+        },
+        "rangeRadius": {
+          "m_defined": false,
+          "m_value": 0.0
+        },
+        "numOfExtraDrops": {
+          "m_defined": false,
+          "m_value": 0
+        },
+        "talentBlackboard": null,
+        "skills": null,
+        "spData": null
+      }
+    }
+  ]
+}

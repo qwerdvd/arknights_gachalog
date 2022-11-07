@@ -1,0 +1,158 @@
+{
+  "enemy_name": "enemy_5007_lancfd",
+  "level": [
+    {
+      "level": 0,
+      "enemyData": {
+        "name": {
+          "m_defined": true,
+          "m_value": "萨卡兹穿刺哥（暂命名）"
+        },
+        "description": {
+          "m_defined": true,
+          "m_value": "(在这里填介绍)比火车更轻巧！比冲撞更致命！下次一定要为他准备一个旗鼓相当的杜林人对手。"
+        },
+        "prefabKey": {
+          "m_defined": true,
+          "m_value": "enemy_5007_lancfd"
+        },
+        "attributes": {
+          "maxHp": {
+            "m_defined": true,
+            "m_value": 8000
+          },
+          "atk": {
+            "m_defined": true,
+            "m_value": 450
+          },
+          "def": {
+            "m_defined": true,
+            "m_value": 400
+          },
+          "magicResistance": {
+            "m_defined": true,
+            "m_value": 50.0
+          },
+          "cost": {
+            "m_defined": false,
+            "m_value": 0
+          },
+          "blockCnt": {
+            "m_defined": false,
+            "m_value": 0
+          },
+          "moveSpeed": {
+            "m_defined": true,
+            "m_value": 0.5
+          },
+          "attackSpeed": {
+            "m_defined": true,
+            "m_value": 100.0
+          },
+          "baseAttackTime": {
+            "m_defined": true,
+            "m_value": 3.0
+          },
+          "respawnTime": {
+            "m_defined": false,
+            "m_value": 0
+          },
+          "hpRecoveryPerSec": {
+            "m_defined": false,
+            "m_value": 0.0
+          },
+          "spRecoveryPerSec": {
+            "m_defined": false,
+            "m_value": 0.0
+          },
+          "maxDeployCount": {
+            "m_defined": false,
+            "m_value": 0
+          },
+          "massLevel": {
+            "m_defined": false,
+            "m_value": 0
+          },
+          "baseForceLevel": {
+            "m_defined": false,
+            "m_value": 0
+          },
+          "tauntLevel": {
+            "m_defined": false,
+            "m_value": 0
+          },
+          "stunImmune": {
+            "m_defined": false,
+            "m_value": false
+          },
+          "silenceImmune": {
+            "m_defined": false,
+            "m_value": false
+          },
+          "sleepImmune": {
+            "m_defined": false,
+            "m_value": false
+          },
+          "frozenImmune": {
+            "m_defined": false,
+            "m_value": false
+          },
+          "levitateImmune": {
+            "m_defined": false,
+            "m_value": false
+          }
+        },
+        "lifePointReduce": {
+          "m_defined": false,
+          "m_value": 0
+        },
+        "levelType": {
+          "m_defined": false,
+          "m_value": 0
+        },
+        "rangeRadius": {
+          "m_defined": false,
+          "m_value": 0.0
+        },
+        "numOfExtraDrops": {
+          "m_defined": false,
+          "m_value": 0
+        },
+        "talentBlackboard": [
+          {
+            "key": "rush.dlancer_t[trigger].move_speed",
+            "value": 1.0,
+            "valueStr": null
+          },
+          {
+            "key": "rush.dlancer_t[trigger].interval",
+            "value": 0.3,
+            "valueStr": null
+          },
+          {
+            "key": "rush.dlancer_t[trigger].trig_cnt",
+            "value": 15.0,
+            "valueStr": null
+          },
+          {
+            "key": "crash.atk_scale",
+            "value": 130.0,
+            "valueStr": null
+          },
+          {
+            "key": "crash_bleed.value",
+            "value": 300.0,
+            "valueStr": null
+          },
+          {
+            "key": "crash_bleed.interval",
+            "value": 0.5,
+            "valueStr": null
+          }
+        ],
+        "skills": null,
+        "spData": null
+      }
+    }
+  ]
+}

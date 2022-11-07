@@ -1,0 +1,148 @@
+{
+  "enemy_name": "enemy_2006_flsnip",
+  "level": [
+    {
+      "level": 0,
+      "enemyData": {
+        "name": {
+          "m_defined": true,
+          "m_value": "锈锤战士"
+        },
+        "description": {
+          "m_defined": true,
+          "m_value": "通常时进行远程物理攻击，可以射出造成<@eb.key>极高法术伤害</>的弩箭"
+        },
+        "prefabKey": {
+          "m_defined": true,
+          "m_value": "enemy_2006_flsnip"
+        },
+        "attributes": {
+          "maxHp": {
+            "m_defined": true,
+            "m_value": 40000
+          },
+          "atk": {
+            "m_defined": true,
+            "m_value": 1200
+          },
+          "def": {
+            "m_defined": true,
+            "m_value": 550
+          },
+          "magicResistance": {
+            "m_defined": true,
+            "m_value": 40.0
+          },
+          "cost": {
+            "m_defined": false,
+            "m_value": 0
+          },
+          "blockCnt": {
+            "m_defined": false,
+            "m_value": 0
+          },
+          "moveSpeed": {
+            "m_defined": true,
+            "m_value": 0.4
+          },
+          "attackSpeed": {
+            "m_defined": true,
+            "m_value": 100.0
+          },
+          "baseAttackTime": {
+            "m_defined": true,
+            "m_value": 5.0
+          },
+          "respawnTime": {
+            "m_defined": false,
+            "m_value": 0
+          },
+          "hpRecoveryPerSec": {
+            "m_defined": true,
+            "m_value": 0.0
+          },
+          "spRecoveryPerSec": {
+            "m_defined": true,
+            "m_value": 0.0
+          },
+          "maxDeployCount": {
+            "m_defined": false,
+            "m_value": 0
+          },
+          "massLevel": {
+            "m_defined": true,
+            "m_value": 5
+          },
+          "baseForceLevel": {
+            "m_defined": false,
+            "m_value": 0
+          },
+          "tauntLevel": {
+            "m_defined": false,
+            "m_value": 0
+          },
+          "stunImmune": {
+            "m_defined": true,
+            "m_value": false
+          },
+          "silenceImmune": {
+            "m_defined": true,
+            "m_value": true
+          },
+          "sleepImmune": {
+            "m_defined": false,
+            "m_value": false
+          },
+          "frozenImmune": {
+            "m_defined": false,
+            "m_value": false
+          },
+          "levitateImmune": {
+            "m_defined": false,
+            "m_value": false
+          }
+        },
+        "lifePointReduce": {
+          "m_defined": true,
+          "m_value": 30
+        },
+        "levelType": {
+          "m_defined": true,
+          "m_value": 2
+        },
+        "rangeRadius": {
+          "m_defined": true,
+          "m_value": 20.0
+        },
+        "numOfExtraDrops": {
+          "m_defined": false,
+          "m_value": 0
+        },
+        "talentBlackboard": [
+          {
+            "key": "invincible.duration",
+            "value": 60.0,
+            "valueStr": null
+          }
+        ],
+        "skills": [
+          {
+            "prefabKey": "CriticalHit",
+            "priority": 1,
+            "cooldown": 18.0,
+            "initCooldown": 18.0,
+            "spCost": 0,
+            "blackboard": [
+              {
+                "key": "atk_scale",
+                "value": 3.0,
+                "valueStr": null
+              }
+            ]
+          }
+        ],
+        "spData": null
+      }
+    }
+  ]
+}

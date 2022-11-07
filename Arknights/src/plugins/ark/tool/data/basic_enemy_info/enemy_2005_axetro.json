@@ -1,0 +1,148 @@
+{
+  "enemy_name": "enemy_2005_axetro",
+  "level": [
+    {
+      "level": 0,
+      "enemyData": {
+        "name": {
+          "m_defined": true,
+          "m_value": "“遗弃者”"
+        },
+        "description": {
+          "m_defined": true,
+          "m_value": "一位被源石严重侵蚀的保安，<@eb.key>连续攻击</>时会提高攻击力和攻击速度，4秒不攻击后<@eb.key>清空</>"
+        },
+        "prefabKey": {
+          "m_defined": true,
+          "m_value": "enemy_2005_axetro"
+        },
+        "attributes": {
+          "maxHp": {
+            "m_defined": true,
+            "m_value": 50000
+          },
+          "atk": {
+            "m_defined": true,
+            "m_value": 500
+          },
+          "def": {
+            "m_defined": true,
+            "m_value": 300
+          },
+          "magicResistance": {
+            "m_defined": true,
+            "m_value": 30.0
+          },
+          "cost": {
+            "m_defined": false,
+            "m_value": 0
+          },
+          "blockCnt": {
+            "m_defined": false,
+            "m_value": 0
+          },
+          "moveSpeed": {
+            "m_defined": true,
+            "m_value": 0.6
+          },
+          "attackSpeed": {
+            "m_defined": true,
+            "m_value": 100.0
+          },
+          "baseAttackTime": {
+            "m_defined": true,
+            "m_value": 3.0
+          },
+          "respawnTime": {
+            "m_defined": false,
+            "m_value": 0
+          },
+          "hpRecoveryPerSec": {
+            "m_defined": true,
+            "m_value": 0.0
+          },
+          "spRecoveryPerSec": {
+            "m_defined": true,
+            "m_value": 0.0
+          },
+          "maxDeployCount": {
+            "m_defined": false,
+            "m_value": 0
+          },
+          "massLevel": {
+            "m_defined": true,
+            "m_value": 3
+          },
+          "baseForceLevel": {
+            "m_defined": false,
+            "m_value": 0
+          },
+          "tauntLevel": {
+            "m_defined": false,
+            "m_value": 0
+          },
+          "stunImmune": {
+            "m_defined": true,
+            "m_value": false
+          },
+          "silenceImmune": {
+            "m_defined": false,
+            "m_value": false
+          },
+          "sleepImmune": {
+            "m_defined": false,
+            "m_value": false
+          },
+          "frozenImmune": {
+            "m_defined": false,
+            "m_value": false
+          },
+          "levitateImmune": {
+            "m_defined": false,
+            "m_value": false
+          }
+        },
+        "lifePointReduce": {
+          "m_defined": true,
+          "m_value": 5
+        },
+        "levelType": {
+          "m_defined": true,
+          "m_value": 2
+        },
+        "rangeRadius": {
+          "m_defined": true,
+          "m_value": 2.5
+        },
+        "numOfExtraDrops": {
+          "m_defined": false,
+          "m_value": 0
+        },
+        "talentBlackboard": [
+          {
+            "key": "atkup.atk",
+            "value": 0.07,
+            "valueStr": null
+          },
+          {
+            "key": "atkup.attack_speed",
+            "value": 5.0,
+            "valueStr": null
+          },
+          {
+            "key": "atkup.max_stack_cnt",
+            "value": 28.0,
+            "valueStr": null
+          },
+          {
+            "key": "checker.delay",
+            "value": 4.0,
+            "valueStr": null
+          }
+        ],
+        "skills": null,
+        "spData": null
+      }
+    }
+  ]
+}

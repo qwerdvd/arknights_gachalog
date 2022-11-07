@@ -1,0 +1,436 @@
+{
+  "enemy_name": "enemy_1530_white",
+  "level": [
+    {
+      "level": 0,
+      "enemyData": {
+        "name": {
+          "m_defined": true,
+          "m_value": "白垩，“尘世遗骸”"
+        },
+        "description": {
+          "m_defined": true,
+          "m_value": "他试图拯救在场的所有人，拯救他的方法却只剩下一种。"
+        },
+        "prefabKey": {
+          "m_defined": true,
+          "m_value": "enemy_1530_white"
+        },
+        "attributes": {
+          "maxHp": {
+            "m_defined": true,
+            "m_value": 60000
+          },
+          "atk": {
+            "m_defined": true,
+            "m_value": 800
+          },
+          "def": {
+            "m_defined": true,
+            "m_value": 400
+          },
+          "magicResistance": {
+            "m_defined": true,
+            "m_value": 20.0
+          },
+          "cost": {
+            "m_defined": false,
+            "m_value": 0
+          },
+          "blockCnt": {
+            "m_defined": false,
+            "m_value": 0
+          },
+          "moveSpeed": {
+            "m_defined": true,
+            "m_value": 0.4
+          },
+          "attackSpeed": {
+            "m_defined": true,
+            "m_value": 100.0
+          },
+          "baseAttackTime": {
+            "m_defined": true,
+            "m_value": 5.0
+          },
+          "respawnTime": {
+            "m_defined": false,
+            "m_value": 0
+          },
+          "hpRecoveryPerSec": {
+            "m_defined": false,
+            "m_value": 0.0
+          },
+          "spRecoveryPerSec": {
+            "m_defined": false,
+            "m_value": 0.0
+          },
+          "maxDeployCount": {
+            "m_defined": false,
+            "m_value": 0
+          },
+          "massLevel": {
+            "m_defined": true,
+            "m_value": 10
+          },
+          "baseForceLevel": {
+            "m_defined": false,
+            "m_value": 0
+          },
+          "tauntLevel": {
+            "m_defined": false,
+            "m_value": 0
+          },
+          "stunImmune": {
+            "m_defined": true,
+            "m_value": true
+          },
+          "silenceImmune": {
+            "m_defined": true,
+            "m_value": true
+          },
+          "sleepImmune": {
+            "m_defined": true,
+            "m_value": true
+          },
+          "frozenImmune": {
+            "m_defined": true,
+            "m_value": true
+          },
+          "levitateImmune": {
+            "m_defined": true,
+            "m_value": true
+          }
+        },
+        "lifePointReduce": {
+          "m_defined": true,
+          "m_value": 2
+        },
+        "levelType": {
+          "m_defined": true,
+          "m_value": 2
+        },
+        "rangeRadius": {
+          "m_defined": false,
+          "m_value": 0.0
+        },
+        "numOfExtraDrops": {
+          "m_defined": false,
+          "m_value": 0
+        },
+        "talentBlackboard": [
+          {
+            "key": "ChangeCircuit.duration",
+            "value": 10.0,
+            "valueStr": null
+          },
+          {
+            "key": "ChangeCircuit.atk_scale",
+            "value": 0.05,
+            "valueStr": null
+          },
+          {
+            "key": "P1_Attack.attack@range_scale",
+            "value": 2.2,
+            "valueStr": null
+          },
+          {
+            "key": "P1_Attack.attack@projectile_range",
+            "value": 0.8,
+            "valueStr": null
+          },
+          {
+            "key": "P1_Attack.attack@stun",
+            "value": 6.0,
+            "valueStr": null
+          },
+          {
+            "key": "P1_Passive.def",
+            "value": 800.0,
+            "valueStr": null
+          },
+          {
+            "key": "P1_Passive.magic_resistance",
+            "value": 50.0,
+            "valueStr": null
+          },
+          {
+            "key": "P1_Crazy_Time.duration",
+            "value": 5.0,
+            "valueStr": null
+          },
+          {
+            "key": "P1_Crazy_Time.base_attack_time",
+            "value": -4.5,
+            "valueStr": null
+          },
+          {
+            "key": "P2_Attack.attack@range_scale",
+            "value": 3.2,
+            "valueStr": null
+          },
+          {
+            "key": "P2_Attack.attack@projectile_range",
+            "value": 1.2,
+            "valueStr": null
+          },
+          {
+            "key": "P2_Attack.attack@stun",
+            "value": 6.0,
+            "valueStr": null
+          },
+          {
+            "key": "P2_Passive.atk",
+            "value": 0.25,
+            "valueStr": null
+          },
+          {
+            "key": "P2_Crazy_Time.duration",
+            "value": 5.0,
+            "valueStr": null
+          },
+          {
+            "key": "P2_Crazy_Time.base_attack_time",
+            "value": -4.65,
+            "valueStr": null
+          },
+          {
+            "key": "Reborn.duration",
+            "value": 2.5,
+            "valueStr": null
+          },
+          {
+            "key": "InReborn.attack@projectile_range",
+            "value": 1.0,
+            "valueStr": null
+          },
+          {
+            "key": "InReborn.base_attack_time",
+            "value": -4.0,
+            "valueStr": null
+          },
+          {
+            "key": "InReborn.enemy_white_reborn_per_attack.base_attack_time",
+            "value": 0.1,
+            "valueStr": null
+          },
+          {
+            "key": "InReborn.duration",
+            "value": 40.0,
+            "valueStr": null
+          },
+          {
+            "key": "Reborn.branch_id",
+            "value": 0.0,
+            "valueStr": "white_summon"
+          }
+        ],
+        "skills": [
+          {
+            "prefabKey": "P1_Resonance",
+            "priority": 1,
+            "cooldown": 30.0,
+            "initCooldown": 10.0,
+            "spCost": 0,
+            "blackboard": null
+          },
+          {
+            "prefabKey": "P2_Resonance",
+            "priority": 1,
+            "cooldown": 30.0,
+            "initCooldown": 10.0,
+            "spCost": 0,
+            "blackboard": null
+          },
+          {
+            "prefabKey": "P1_Crazy",
+            "priority": 2,
+            "cooldown": 60.0,
+            "initCooldown": 60.0,
+            "spCost": 0,
+            "blackboard": null
+          },
+          {
+            "prefabKey": "P1_Crazy_End",
+            "priority": 5,
+            "cooldown": 0.0,
+            "initCooldown": 0.0,
+            "spCost": 0,
+            "blackboard": [
+              {
+                "key": "hp_ratio",
+                "value": 0.25,
+                "valueStr": null
+              }
+            ]
+          },
+          {
+            "prefabKey": "P2_Crazy",
+            "priority": 2,
+            "cooldown": 60.0,
+            "initCooldown": 60.0,
+            "spCost": 0,
+            "blackboard": null
+          },
+          {
+            "prefabKey": "P2_Crazy_End",
+            "priority": 5,
+            "cooldown": 0.0,
+            "initCooldown": 0.0,
+            "spCost": 0,
+            "blackboard": [
+              {
+                "key": "hp_ratio",
+                "value": 0.25,
+                "valueStr": null
+              }
+            ]
+          },
+          {
+            "prefabKey": "RebornEndInvincible",
+            "priority": 5,
+            "cooldown": 0.0,
+            "initCooldown": 0.0,
+            "spCost": 0,
+            "blackboard": [
+              {
+                "key": "duration",
+                "value": 5.0,
+                "valueStr": null
+              }
+            ]
+          }
+        ],
+        "spData": null
+      }
+    },
+    {
+      "level": 1,
+      "enemyData": {
+        "name": {
+          "m_defined": false,
+          "m_value": null
+        },
+        "description": {
+          "m_defined": false,
+          "m_value": null
+        },
+        "prefabKey": {
+          "m_defined": false,
+          "m_value": null
+        },
+        "attributes": {
+          "maxHp": {
+            "m_defined": true,
+            "m_value": 100000
+          },
+          "atk": {
+            "m_defined": true,
+            "m_value": 1000
+          },
+          "def": {
+            "m_defined": true,
+            "m_value": 500
+          },
+          "magicResistance": {
+            "m_defined": false,
+            "m_value": 0.0
+          },
+          "cost": {
+            "m_defined": false,
+            "m_value": 0
+          },
+          "blockCnt": {
+            "m_defined": false,
+            "m_value": 0
+          },
+          "moveSpeed": {
+            "m_defined": false,
+            "m_value": 0.0
+          },
+          "attackSpeed": {
+            "m_defined": false,
+            "m_value": 0.0
+          },
+          "baseAttackTime": {
+            "m_defined": false,
+            "m_value": 0.0
+          },
+          "respawnTime": {
+            "m_defined": false,
+            "m_value": 0
+          },
+          "hpRecoveryPerSec": {
+            "m_defined": false,
+            "m_value": 0.0
+          },
+          "spRecoveryPerSec": {
+            "m_defined": false,
+            "m_value": 0.0
+          },
+          "maxDeployCount": {
+            "m_defined": false,
+            "m_value": 0
+          },
+          "massLevel": {
+            "m_defined": false,
+            "m_value": 0
+          },
+          "baseForceLevel": {
+            "m_defined": false,
+            "m_value": 0
+          },
+          "tauntLevel": {
+            "m_defined": false,
+            "m_value": 0
+          },
+          "stunImmune": {
+            "m_defined": false,
+            "m_value": false
+          },
+          "silenceImmune": {
+            "m_defined": false,
+            "m_value": false
+          },
+          "sleepImmune": {
+            "m_defined": false,
+            "m_value": false
+          },
+          "frozenImmune": {
+            "m_defined": false,
+            "m_value": false
+          },
+          "levitateImmune": {
+            "m_defined": false,
+            "m_value": false
+          }
+        },
+        "lifePointReduce": {
+          "m_defined": false,
+          "m_value": 0
+        },
+        "levelType": {
+          "m_defined": false,
+          "m_value": 0
+        },
+        "rangeRadius": {
+          "m_defined": false,
+          "m_value": 0.0
+        },
+        "numOfExtraDrops": {
+          "m_defined": false,
+          "m_value": 0
+        },
+        "talentBlackboard": [
+          {
+            "key": "P1_Passive.def",
+            "value": 1000.0,
+            "valueStr": null
+          }
+        ],
+        "skills": null,
+        "spData": null
+      }
+    }
+  ]
+}

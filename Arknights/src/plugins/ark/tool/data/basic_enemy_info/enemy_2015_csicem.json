@@ -1,0 +1,148 @@
+{
+  "enemy_name": "enemy_2015_csicem",
+  "level": [
+    {
+      "level": 0,
+      "enemyData": {
+        "name": {
+          "m_defined": true,
+          "m_value": "“霜牡”"
+        },
+        "description": {
+          "m_defined": true,
+          "m_value": "攻击被<@eb.key>冻结</>的目标时攻击力大幅提升。“雪牝”死亡时，自身攻击速度、移动速度大幅提升并继承其能力。"
+        },
+        "prefabKey": {
+          "m_defined": true,
+          "m_value": "enemy_2015_csicem"
+        },
+        "attributes": {
+          "maxHp": {
+            "m_defined": true,
+            "m_value": 60000
+          },
+          "atk": {
+            "m_defined": true,
+            "m_value": 1200
+          },
+          "def": {
+            "m_defined": true,
+            "m_value": 300
+          },
+          "magicResistance": {
+            "m_defined": true,
+            "m_value": 30.0
+          },
+          "cost": {
+            "m_defined": false,
+            "m_value": 0
+          },
+          "blockCnt": {
+            "m_defined": false,
+            "m_value": 0
+          },
+          "moveSpeed": {
+            "m_defined": true,
+            "m_value": 0.6
+          },
+          "attackSpeed": {
+            "m_defined": false,
+            "m_value": 0.0
+          },
+          "baseAttackTime": {
+            "m_defined": true,
+            "m_value": 6.0
+          },
+          "respawnTime": {
+            "m_defined": false,
+            "m_value": 0
+          },
+          "hpRecoveryPerSec": {
+            "m_defined": false,
+            "m_value": 0.0
+          },
+          "spRecoveryPerSec": {
+            "m_defined": false,
+            "m_value": 0.0
+          },
+          "maxDeployCount": {
+            "m_defined": false,
+            "m_value": 0
+          },
+          "massLevel": {
+            "m_defined": true,
+            "m_value": 4
+          },
+          "baseForceLevel": {
+            "m_defined": false,
+            "m_value": 0
+          },
+          "tauntLevel": {
+            "m_defined": false,
+            "m_value": 0
+          },
+          "stunImmune": {
+            "m_defined": false,
+            "m_value": false
+          },
+          "silenceImmune": {
+            "m_defined": true,
+            "m_value": true
+          },
+          "sleepImmune": {
+            "m_defined": false,
+            "m_value": false
+          },
+          "frozenImmune": {
+            "m_defined": false,
+            "m_value": false
+          },
+          "levitateImmune": {
+            "m_defined": false,
+            "m_value": false
+          }
+        },
+        "lifePointReduce": {
+          "m_defined": true,
+          "m_value": 3
+        },
+        "levelType": {
+          "m_defined": true,
+          "m_value": 2
+        },
+        "rangeRadius": {
+          "m_defined": false,
+          "m_value": 0.0
+        },
+        "numOfExtraDrops": {
+          "m_defined": false,
+          "m_value": 0
+        },
+        "talentBlackboard": [
+          {
+            "key": "combat.attack@freeze",
+            "value": 5.0,
+            "valueStr": null
+          },
+          {
+            "key": "damagescaletofrozen.atk_scale",
+            "value": 2.5,
+            "valueStr": null
+          },
+          {
+            "key": "triggerrage.attack_speed",
+            "value": 100.0,
+            "valueStr": null
+          },
+          {
+            "key": "triggerrage.move_speed",
+            "value": 2.0,
+            "valueStr": null
+          }
+        ],
+        "skills": null,
+        "spData": null
+      }
+    }
+  ]
+}

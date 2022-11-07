@@ -1,0 +1,383 @@
+{
+  "enemy_name": "enemy_1528_manfri",
+  "level": [
+    {
+      "level": 0,
+      "enemyData": {
+        "name": {
+          "m_defined": true,
+          "m_value": "曼弗雷德"
+        },
+        "description": {
+          "m_defined": true,
+          "m_value": "卡兹戴尔军事委员会成员，年轻的萨卡兹将军。使用施术单元“提卡兹之根”与特雷西斯亲授的剑术作战。<@eb.key>攻击时为伦蒂尼姆城防副炮充能</>。"
+        },
+        "prefabKey": {
+          "m_defined": true,
+          "m_value": "enemy_1528_manfri"
+        },
+        "attributes": {
+          "maxHp": {
+            "m_defined": true,
+            "m_value": 40000
+          },
+          "atk": {
+            "m_defined": true,
+            "m_value": 1000
+          },
+          "def": {
+            "m_defined": true,
+            "m_value": 600
+          },
+          "magicResistance": {
+            "m_defined": true,
+            "m_value": 40.0
+          },
+          "cost": {
+            "m_defined": false,
+            "m_value": 0
+          },
+          "blockCnt": {
+            "m_defined": false,
+            "m_value": 0
+          },
+          "moveSpeed": {
+            "m_defined": true,
+            "m_value": 0.5
+          },
+          "attackSpeed": {
+            "m_defined": true,
+            "m_value": 100.0
+          },
+          "baseAttackTime": {
+            "m_defined": true,
+            "m_value": 5.0
+          },
+          "respawnTime": {
+            "m_defined": false,
+            "m_value": 0
+          },
+          "hpRecoveryPerSec": {
+            "m_defined": false,
+            "m_value": 0.0
+          },
+          "spRecoveryPerSec": {
+            "m_defined": false,
+            "m_value": 0.0
+          },
+          "maxDeployCount": {
+            "m_defined": false,
+            "m_value": 0
+          },
+          "massLevel": {
+            "m_defined": true,
+            "m_value": 8
+          },
+          "baseForceLevel": {
+            "m_defined": false,
+            "m_value": 0
+          },
+          "tauntLevel": {
+            "m_defined": false,
+            "m_value": 0
+          },
+          "stunImmune": {
+            "m_defined": false,
+            "m_value": false
+          },
+          "silenceImmune": {
+            "m_defined": true,
+            "m_value": true
+          },
+          "sleepImmune": {
+            "m_defined": true,
+            "m_value": true
+          },
+          "frozenImmune": {
+            "m_defined": false,
+            "m_value": false
+          },
+          "levitateImmune": {
+            "m_defined": false,
+            "m_value": false
+          }
+        },
+        "lifePointReduce": {
+          "m_defined": true,
+          "m_value": 2
+        },
+        "levelType": {
+          "m_defined": true,
+          "m_value": 2
+        },
+        "rangeRadius": {
+          "m_defined": true,
+          "m_value": 2.0
+        },
+        "numOfExtraDrops": {
+          "m_defined": false,
+          "m_value": 0
+        },
+        "talentBlackboard": [
+          {
+            "key": "Funnel_s1_charge.sp",
+            "value": 3.0,
+            "valueStr": null
+          },
+          {
+            "key": "Funnel_common.attack@attack_speed",
+            "value": 60.0,
+            "valueStr": null
+          },
+          {
+            "key": "Funnel_common.attack@max_stack_cnt",
+            "value": 5.0,
+            "valueStr": null
+          },
+          {
+            "key": "Funnel_common.attack@duration",
+            "value": 6.0,
+            "valueStr": null
+          },
+          {
+            "key": "Funnel_s1.attack@ep_damage_ratio",
+            "value": 0.0,
+            "valueStr": null
+          },
+          {
+            "key": "Funnel_s1.attack@atk_scale",
+            "value": 0.5,
+            "valueStr": null
+          },
+          {
+            "key": "Funnel_s2.times",
+            "value": 1.0,
+            "valueStr": null
+          },
+          {
+            "key": "Funnel_s2.atk_scale",
+            "value": 0.5,
+            "valueStr": null
+          },
+          {
+            "key": "Funnel_s2.ep_damage_ratio",
+            "value": 0.0,
+            "valueStr": null
+          },
+          {
+            "key": "Funnel_s2.attack@ep_damage_ratio",
+            "value": 0.0,
+            "valueStr": null
+          },
+          {
+            "key": "Shield.disable_duration",
+            "value": 30.0,
+            "valueStr": null
+          },
+          {
+            "key": "Shield.prob",
+            "value": 0.8,
+            "valueStr": null
+          },
+          {
+            "key": "aura.interval",
+            "value": 0.5,
+            "valueStr": null
+          },
+          {
+            "key": "aura.atk_scale",
+            "value": 0.05,
+            "valueStr": null
+          },
+          {
+            "key": "aura.range_radius",
+            "value": 1.1,
+            "valueStr": null
+          },
+          {
+            "key": "Funnel_rage_charge.sp",
+            "value": 6.0,
+            "valueStr": null
+          },
+          {
+            "key": "Reborn.duration",
+            "value": 20.0,
+            "valueStr": null
+          },
+          {
+            "key": "Reborn.invincible",
+            "value": 5.0,
+            "valueStr": null
+          },
+          {
+            "key": "Reborn.interval",
+            "value": 0.8,
+            "valueStr": null
+          },
+          {
+            "key": "Funnel_s2_charge.sp",
+            "value": 6.0,
+            "valueStr": null
+          },
+          {
+            "key": "Shield[disable].stun",
+            "value": 8.0,
+            "valueStr": null
+          },
+          {
+            "key": "aura.isenabled",
+            "value": 0.0,
+            "valueStr": "aura_off"
+          }
+        ],
+        "skills": [
+          {
+            "prefabKey": "Pose",
+            "priority": 0,
+            "cooldown": 9999.0,
+            "initCooldown": 0.0,
+            "spCost": 0,
+            "blackboard": null
+          },
+          {
+            "prefabKey": "Funnel_rage",
+            "priority": 0,
+            "cooldown": 9999.0,
+            "initCooldown": 9999.0,
+            "spCost": 0,
+            "blackboard": [
+              {
+                "key": "atk_scale",
+                "value": 0.3,
+                "valueStr": null
+              }
+            ]
+          }
+        ],
+        "spData": null
+      }
+    },
+    {
+      "level": 1,
+      "enemyData": {
+        "name": {
+          "m_defined": false,
+          "m_value": null
+        },
+        "description": {
+          "m_defined": false,
+          "m_value": null
+        },
+        "prefabKey": {
+          "m_defined": false,
+          "m_value": null
+        },
+        "attributes": {
+          "maxHp": {
+            "m_defined": true,
+            "m_value": 60000
+          },
+          "atk": {
+            "m_defined": true,
+            "m_value": 1200
+          },
+          "def": {
+            "m_defined": false,
+            "m_value": 0
+          },
+          "magicResistance": {
+            "m_defined": false,
+            "m_value": 0.0
+          },
+          "cost": {
+            "m_defined": false,
+            "m_value": 0
+          },
+          "blockCnt": {
+            "m_defined": false,
+            "m_value": 0
+          },
+          "moveSpeed": {
+            "m_defined": false,
+            "m_value": 0.0
+          },
+          "attackSpeed": {
+            "m_defined": false,
+            "m_value": 0.0
+          },
+          "baseAttackTime": {
+            "m_defined": false,
+            "m_value": 0.0
+          },
+          "respawnTime": {
+            "m_defined": false,
+            "m_value": 0
+          },
+          "hpRecoveryPerSec": {
+            "m_defined": false,
+            "m_value": 0.0
+          },
+          "spRecoveryPerSec": {
+            "m_defined": false,
+            "m_value": 0.0
+          },
+          "maxDeployCount": {
+            "m_defined": false,
+            "m_value": 0
+          },
+          "massLevel": {
+            "m_defined": false,
+            "m_value": 0
+          },
+          "baseForceLevel": {
+            "m_defined": false,
+            "m_value": 0
+          },
+          "tauntLevel": {
+            "m_defined": false,
+            "m_value": 0
+          },
+          "stunImmune": {
+            "m_defined": false,
+            "m_value": false
+          },
+          "silenceImmune": {
+            "m_defined": false,
+            "m_value": false
+          },
+          "sleepImmune": {
+            "m_defined": false,
+            "m_value": false
+          },
+          "frozenImmune": {
+            "m_defined": false,
+            "m_value": false
+          },
+          "levitateImmune": {
+            "m_defined": false,
+            "m_value": false
+          }
+        },
+        "lifePointReduce": {
+          "m_defined": false,
+          "m_value": 0
+        },
+        "levelType": {
+          "m_defined": false,
+          "m_value": 0
+        },
+        "rangeRadius": {
+          "m_defined": false,
+          "m_value": 0.0
+        },
+        "numOfExtraDrops": {
+          "m_defined": false,
+          "m_value": 0
+        },
+        "talentBlackboard": null,
+        "skills": null,
+        "spData": null
+      }
+    }
+  ]
+}

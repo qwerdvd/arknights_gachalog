@@ -1,0 +1,153 @@
+{
+  "enemy_name": "enemy_2030_symon2",
+  "level": [
+    {
+      "level": 0,
+      "enemyData": {
+        "name": {
+          "m_defined": true,
+          "m_value": "接潮斥亡体"
+        },
+        "description": {
+          "m_defined": true,
+          "m_value": "科技与进化本能共同造就了这种诡异的分裂个体。更弱小，更狂暴。"
+        },
+        "prefabKey": {
+          "m_defined": true,
+          "m_value": "enemy_2030_symon2"
+        },
+        "attributes": {
+          "maxHp": {
+            "m_defined": true,
+            "m_value": 5000
+          },
+          "atk": {
+            "m_defined": true,
+            "m_value": 550
+          },
+          "def": {
+            "m_defined": true,
+            "m_value": 800
+          },
+          "magicResistance": {
+            "m_defined": true,
+            "m_value": 0.0
+          },
+          "cost": {
+            "m_defined": false,
+            "m_value": 0
+          },
+          "blockCnt": {
+            "m_defined": false,
+            "m_value": 0
+          },
+          "moveSpeed": {
+            "m_defined": true,
+            "m_value": 0.9
+          },
+          "attackSpeed": {
+            "m_defined": true,
+            "m_value": 100.0
+          },
+          "baseAttackTime": {
+            "m_defined": true,
+            "m_value": 0.7
+          },
+          "respawnTime": {
+            "m_defined": false,
+            "m_value": 0
+          },
+          "hpRecoveryPerSec": {
+            "m_defined": false,
+            "m_value": 0.0
+          },
+          "spRecoveryPerSec": {
+            "m_defined": false,
+            "m_value": 0.0
+          },
+          "maxDeployCount": {
+            "m_defined": false,
+            "m_value": 0
+          },
+          "massLevel": {
+            "m_defined": true,
+            "m_value": 1
+          },
+          "baseForceLevel": {
+            "m_defined": false,
+            "m_value": 0
+          },
+          "tauntLevel": {
+            "m_defined": false,
+            "m_value": 0
+          },
+          "stunImmune": {
+            "m_defined": false,
+            "m_value": false
+          },
+          "silenceImmune": {
+            "m_defined": true,
+            "m_value": true
+          },
+          "sleepImmune": {
+            "m_defined": false,
+            "m_value": false
+          },
+          "frozenImmune": {
+            "m_defined": false,
+            "m_value": false
+          },
+          "levitateImmune": {
+            "m_defined": false,
+            "m_value": false
+          }
+        },
+        "lifePointReduce": {
+          "m_defined": true,
+          "m_value": 5
+        },
+        "levelType": {
+          "m_defined": true,
+          "m_value": 2
+        },
+        "rangeRadius": {
+          "m_defined": false,
+          "m_value": 0.0
+        },
+        "numOfExtraDrops": {
+          "m_defined": false,
+          "m_value": 0
+        },
+        "talentBlackboard": [
+          {
+            "key": "Reborn.duration",
+            "value": 0.1,
+            "valueStr": null
+          },
+          {
+            "key": "Reborn.hp_ratio",
+            "value": 0.02,
+            "valueStr": null
+          },
+          {
+            "key": "FakeDeath.hp_ratio",
+            "value": 0.1,
+            "valueStr": null
+          },
+          {
+            "key": "FakeDeath.target_hp_ratio",
+            "value": 1.0,
+            "valueStr": null
+          },
+          {
+            "key": "EpDamage.attack@ep_damage_ratio",
+            "value": 0.5,
+            "valueStr": null
+          }
+        ],
+        "skills": null,
+        "spData": null
+      }
+    }
+  ]
+}

@@ -1,0 +1,138 @@
+{
+  "enemy_name": "enemy_1096_ccwitch",
+  "level": [
+    {
+      "level": 0,
+      "enemyData": {
+        "name": {
+          "m_defined": true,
+          "m_value": "提亚卡乌巫术师"
+        },
+        "description": {
+          "m_defined": true,
+          "m_value": "阿卡胡拉中少见的源石技艺使用者，远程攻击造成<@eb.key>法术伤害</>，近战攻击造成<@eb.key>物理伤害</>"
+        },
+        "prefabKey": {
+          "m_defined": true,
+          "m_value": "enemy_1096_ccwitch"
+        },
+        "attributes": {
+          "maxHp": {
+            "m_defined": true,
+            "m_value": 6000
+          },
+          "atk": {
+            "m_defined": true,
+            "m_value": 250
+          },
+          "def": {
+            "m_defined": true,
+            "m_value": 200
+          },
+          "magicResistance": {
+            "m_defined": true,
+            "m_value": 70.0
+          },
+          "cost": {
+            "m_defined": false,
+            "m_value": 0
+          },
+          "blockCnt": {
+            "m_defined": false,
+            "m_value": 0
+          },
+          "moveSpeed": {
+            "m_defined": true,
+            "m_value": 0.8
+          },
+          "attackSpeed": {
+            "m_defined": true,
+            "m_value": 100.0
+          },
+          "baseAttackTime": {
+            "m_defined": true,
+            "m_value": 4.0
+          },
+          "respawnTime": {
+            "m_defined": false,
+            "m_value": 0
+          },
+          "hpRecoveryPerSec": {
+            "m_defined": false,
+            "m_value": 0.0
+          },
+          "spRecoveryPerSec": {
+            "m_defined": false,
+            "m_value": 0.0
+          },
+          "maxDeployCount": {
+            "m_defined": false,
+            "m_value": 0
+          },
+          "massLevel": {
+            "m_defined": true,
+            "m_value": 3
+          },
+          "baseForceLevel": {
+            "m_defined": false,
+            "m_value": 0
+          },
+          "tauntLevel": {
+            "m_defined": false,
+            "m_value": 0
+          },
+          "stunImmune": {
+            "m_defined": false,
+            "m_value": false
+          },
+          "silenceImmune": {
+            "m_defined": true,
+            "m_value": true
+          },
+          "sleepImmune": {
+            "m_defined": false,
+            "m_value": false
+          },
+          "frozenImmune": {
+            "m_defined": false,
+            "m_value": false
+          },
+          "levitateImmune": {
+            "m_defined": false,
+            "m_value": false
+          }
+        },
+        "lifePointReduce": {
+          "m_defined": true,
+          "m_value": 1
+        },
+        "levelType": {
+          "m_defined": false,
+          "m_value": 0
+        },
+        "rangeRadius": {
+          "m_defined": true,
+          "m_value": 2.5
+        },
+        "numOfExtraDrops": {
+          "m_defined": false,
+          "m_value": 0
+        },
+        "talentBlackboard": [
+          {
+            "key": "combat.attack@ccwitch_rage_attack.atk_scale",
+            "value": 4.0,
+            "valueStr": null
+          },
+          {
+            "key": "Def.def",
+            "value": 200.0,
+            "valueStr": null
+          }
+        ],
+        "skills": null,
+        "spData": null
+      }
+    }
+  ]
+}

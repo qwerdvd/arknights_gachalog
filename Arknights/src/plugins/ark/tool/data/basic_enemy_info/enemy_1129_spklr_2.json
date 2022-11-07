@@ -1,0 +1,148 @@
+{
+  "enemy_name": "enemy_1129_spklr_2",
+  "level": [
+    {
+      "level": 0,
+      "enemyData": {
+        "name": {
+          "m_defined": true,
+          "m_value": "无羁的“盛怒”"
+        },
+        "description": {
+          "m_defined": true,
+          "m_value": "强壮的墨魉。身材高大体格强壮，攻击与自身属性相反的敌人时更加强大。"
+        },
+        "prefabKey": {
+          "m_defined": true,
+          "m_value": "enemy_1129_spklr_2"
+        },
+        "attributes": {
+          "maxHp": {
+            "m_defined": true,
+            "m_value": 16000
+          },
+          "atk": {
+            "m_defined": true,
+            "m_value": 1500
+          },
+          "def": {
+            "m_defined": true,
+            "m_value": 900
+          },
+          "magicResistance": {
+            "m_defined": true,
+            "m_value": 30.0
+          },
+          "cost": {
+            "m_defined": false,
+            "m_value": 0
+          },
+          "blockCnt": {
+            "m_defined": false,
+            "m_value": 0
+          },
+          "moveSpeed": {
+            "m_defined": true,
+            "m_value": 0.7
+          },
+          "attackSpeed": {
+            "m_defined": true,
+            "m_value": 100.0
+          },
+          "baseAttackTime": {
+            "m_defined": true,
+            "m_value": 3.0
+          },
+          "respawnTime": {
+            "m_defined": false,
+            "m_value": 0
+          },
+          "hpRecoveryPerSec": {
+            "m_defined": true,
+            "m_value": 0.0
+          },
+          "spRecoveryPerSec": {
+            "m_defined": true,
+            "m_value": 0.0
+          },
+          "maxDeployCount": {
+            "m_defined": false,
+            "m_value": 0
+          },
+          "massLevel": {
+            "m_defined": true,
+            "m_value": 3
+          },
+          "baseForceLevel": {
+            "m_defined": false,
+            "m_value": 0
+          },
+          "tauntLevel": {
+            "m_defined": false,
+            "m_value": 0
+          },
+          "stunImmune": {
+            "m_defined": false,
+            "m_value": false
+          },
+          "silenceImmune": {
+            "m_defined": true,
+            "m_value": true
+          },
+          "sleepImmune": {
+            "m_defined": false,
+            "m_value": false
+          },
+          "frozenImmune": {
+            "m_defined": false,
+            "m_value": false
+          },
+          "levitateImmune": {
+            "m_defined": false,
+            "m_value": false
+          }
+        },
+        "lifePointReduce": {
+          "m_defined": true,
+          "m_value": 1
+        },
+        "levelType": {
+          "m_defined": true,
+          "m_value": 1
+        },
+        "rangeRadius": {
+          "m_defined": false,
+          "m_value": 1.9
+        },
+        "numOfExtraDrops": {
+          "m_defined": false,
+          "m_value": 0
+        },
+        "talentBlackboard": [
+          {
+            "key": "yinyang.dynamic",
+            "value": 1.0,
+            "valueStr": null
+          },
+          {
+            "key": "yinyang.buff_yinyang[same].atk_scale",
+            "value": 0.6,
+            "valueStr": null
+          },
+          {
+            "key": "yinyang.buff_yinyang[diff].atk_scale",
+            "value": 1.4,
+            "valueStr": null
+          },
+          {
+            "key": "atkup.atk_scale",
+            "value": 1.8,
+            "valueStr": null
+          }
+        ],
+        "skills": null,
+        "spData": null
+      }
+    }
+  ]
+}

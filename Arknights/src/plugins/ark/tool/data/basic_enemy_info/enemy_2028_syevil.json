@@ -1,0 +1,148 @@
+{
+  "enemy_name": "enemy_2028_syevil",
+  "level": [
+    {
+      "level": 0,
+      "enemyData": {
+        "name": {
+          "m_defined": true,
+          "m_value": "接潮主教"
+        },
+        "description": {
+          "m_defined": true,
+          "m_value": "生命值降为0时进入<@eb.key>假死</>：“另一部分”不处于<@eb.key>假死</>时持续回复生命，生命值回满时复活"
+        },
+        "prefabKey": {
+          "m_defined": true,
+          "m_value": "enemy_2028_syevil"
+        },
+        "attributes": {
+          "maxHp": {
+            "m_defined": true,
+            "m_value": 40000
+          },
+          "atk": {
+            "m_defined": true,
+            "m_value": 600
+          },
+          "def": {
+            "m_defined": true,
+            "m_value": 300
+          },
+          "magicResistance": {
+            "m_defined": true,
+            "m_value": 70.0
+          },
+          "cost": {
+            "m_defined": false,
+            "m_value": 0
+          },
+          "blockCnt": {
+            "m_defined": false,
+            "m_value": 0
+          },
+          "moveSpeed": {
+            "m_defined": true,
+            "m_value": 0.4
+          },
+          "attackSpeed": {
+            "m_defined": true,
+            "m_value": 100.0
+          },
+          "baseAttackTime": {
+            "m_defined": true,
+            "m_value": 4.5
+          },
+          "respawnTime": {
+            "m_defined": false,
+            "m_value": 0
+          },
+          "hpRecoveryPerSec": {
+            "m_defined": false,
+            "m_value": 0.0
+          },
+          "spRecoveryPerSec": {
+            "m_defined": false,
+            "m_value": 0.0
+          },
+          "maxDeployCount": {
+            "m_defined": false,
+            "m_value": 0
+          },
+          "massLevel": {
+            "m_defined": true,
+            "m_value": 3
+          },
+          "baseForceLevel": {
+            "m_defined": false,
+            "m_value": 0
+          },
+          "tauntLevel": {
+            "m_defined": false,
+            "m_value": 0
+          },
+          "stunImmune": {
+            "m_defined": false,
+            "m_value": false
+          },
+          "silenceImmune": {
+            "m_defined": true,
+            "m_value": true
+          },
+          "sleepImmune": {
+            "m_defined": false,
+            "m_value": false
+          },
+          "frozenImmune": {
+            "m_defined": false,
+            "m_value": false
+          },
+          "levitateImmune": {
+            "m_defined": false,
+            "m_value": false
+          }
+        },
+        "lifePointReduce": {
+          "m_defined": true,
+          "m_value": 5
+        },
+        "levelType": {
+          "m_defined": true,
+          "m_value": 2
+        },
+        "rangeRadius": {
+          "m_defined": true,
+          "m_value": 3.5
+        },
+        "numOfExtraDrops": {
+          "m_defined": false,
+          "m_value": 0
+        },
+        "talentBlackboard": [
+          {
+            "key": "Reborn.duration",
+            "value": 0.1,
+            "valueStr": null
+          },
+          {
+            "key": "Reborn.hp_ratio",
+            "value": 0.02,
+            "valueStr": null
+          },
+          {
+            "key": "FakeDeath.hp_ratio",
+            "value": 0.05,
+            "valueStr": null
+          },
+          {
+            "key": "FakeDeath.target_hp_ratio",
+            "value": 1.0,
+            "valueStr": null
+          }
+        ],
+        "skills": null,
+        "spData": null
+      }
+    }
+  ]
+}

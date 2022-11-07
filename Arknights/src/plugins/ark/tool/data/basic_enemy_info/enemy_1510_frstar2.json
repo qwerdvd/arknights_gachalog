@@ -1,0 +1,458 @@
+{
+  "enemy_name": "enemy_1510_frstar2",
+  "level": [
+    {
+      "level": 0,
+      "enemyData": {
+        "name": {
+          "m_defined": true,
+          "m_value": "霜星，“冬痕”"
+        },
+        "description": {
+          "m_defined": true,
+          "m_value": "雪怪小队领袖，为了最后的战斗解放了所剩无几的生命。"
+        },
+        "prefabKey": {
+          "m_defined": true,
+          "m_value": "enemy_1510_frstar2"
+        },
+        "attributes": {
+          "maxHp": {
+            "m_defined": true,
+            "m_value": 30000
+          },
+          "atk": {
+            "m_defined": true,
+            "m_value": 440
+          },
+          "def": {
+            "m_defined": true,
+            "m_value": 380
+          },
+          "magicResistance": {
+            "m_defined": true,
+            "m_value": 50.0
+          },
+          "cost": {
+            "m_defined": false,
+            "m_value": 0
+          },
+          "blockCnt": {
+            "m_defined": false,
+            "m_value": 0
+          },
+          "moveSpeed": {
+            "m_defined": true,
+            "m_value": 0.5
+          },
+          "attackSpeed": {
+            "m_defined": true,
+            "m_value": 100.0
+          },
+          "baseAttackTime": {
+            "m_defined": true,
+            "m_value": 3.7
+          },
+          "respawnTime": {
+            "m_defined": false,
+            "m_value": 0
+          },
+          "hpRecoveryPerSec": {
+            "m_defined": true,
+            "m_value": 0.0
+          },
+          "spRecoveryPerSec": {
+            "m_defined": true,
+            "m_value": 0.0
+          },
+          "maxDeployCount": {
+            "m_defined": false,
+            "m_value": 0
+          },
+          "massLevel": {
+            "m_defined": true,
+            "m_value": 6
+          },
+          "baseForceLevel": {
+            "m_defined": false,
+            "m_value": 0
+          },
+          "tauntLevel": {
+            "m_defined": false,
+            "m_value": 0
+          },
+          "stunImmune": {
+            "m_defined": true,
+            "m_value": true
+          },
+          "silenceImmune": {
+            "m_defined": true,
+            "m_value": true
+          },
+          "sleepImmune": {
+            "m_defined": false,
+            "m_value": false
+          },
+          "frozenImmune": {
+            "m_defined": true,
+            "m_value": true
+          },
+          "levitateImmune": {
+            "m_defined": true,
+            "m_value": true
+          }
+        },
+        "lifePointReduce": {
+          "m_defined": true,
+          "m_value": 2
+        },
+        "levelType": {
+          "m_defined": true,
+          "m_value": 2
+        },
+        "rangeRadius": {
+          "m_defined": true,
+          "m_value": 2.0
+        },
+        "numOfExtraDrops": {
+          "m_defined": false,
+          "m_value": 0
+        },
+        "talentBlackboard": [
+          {
+            "key": "reborn.duration",
+            "value": 10.0,
+            "valueStr": null
+          },
+          {
+            "key": "reborn.atk",
+            "value": 0.5,
+            "valueStr": null
+          },
+          {
+            "key": "reborn.reborn_invincible.duration",
+            "value": 20.0,
+            "valueStr": null
+          },
+          {
+            "key": "attackfreeze.freeze",
+            "value": 5.0,
+            "valueStr": null
+          }
+        ],
+        "skills": [
+          {
+            "prefabKey": "IceShield",
+            "priority": 2,
+            "cooldown": 35.0,
+            "initCooldown": 35.0,
+            "spCost": 0,
+            "blackboard": [
+              {
+                "key": "max_cnt",
+                "value": 2.0,
+                "valueStr": null
+              }
+            ]
+          },
+          {
+            "prefabKey": "IceShield[Reborn]",
+            "priority": 2,
+            "cooldown": 35.0,
+            "initCooldown": 35.0,
+            "spCost": 0,
+            "blackboard": [
+              {
+                "key": "max_cnt",
+                "value": 3.0,
+                "valueStr": null
+              }
+            ]
+          },
+          {
+            "prefabKey": "SummonFrosts",
+            "priority": 10,
+            "cooldown": 0.0,
+            "initCooldown": 0.0,
+            "spCost": 0,
+            "blackboard": [
+              {
+                "key": "branch_id",
+                "value": 0.0,
+                "valueStr": "frstar_frosts"
+              }
+            ]
+          },
+          {
+            "prefabKey": "IceBurst",
+            "priority": 1,
+            "cooldown": 10.5,
+            "initCooldown": 10.5,
+            "spCost": 0,
+            "blackboard": [
+              {
+                "key": "atk_scale",
+                "value": 1.0,
+                "valueStr": null
+              },
+              {
+                "key": "freeze",
+                "value": 10.0,
+                "valueStr": null
+              },
+              {
+                "key": "frstar2_s.atk_scale",
+                "value": 2.0,
+                "valueStr": null
+              }
+            ]
+          },
+          {
+            "prefabKey": "IceBurst[Reborn]",
+            "priority": 1,
+            "cooldown": 10.5,
+            "initCooldown": 10.5,
+            "spCost": 0,
+            "blackboard": [
+              {
+                "key": "atk_scale",
+                "value": 1.0,
+                "valueStr": null
+              },
+              {
+                "key": "freeze",
+                "value": 10.0,
+                "valueStr": null
+              },
+              {
+                "key": "frstar2_s.atk_scale",
+                "value": 2.0,
+                "valueStr": null
+              }
+            ]
+          }
+        ],
+        "spData": null
+      }
+    },
+    {
+      "level": 1,
+      "enemyData": {
+        "name": {
+          "m_defined": false,
+          "m_value": null
+        },
+        "description": {
+          "m_defined": false,
+          "m_value": null
+        },
+        "prefabKey": {
+          "m_defined": false,
+          "m_value": null
+        },
+        "attributes": {
+          "maxHp": {
+            "m_defined": true,
+            "m_value": 45000
+          },
+          "atk": {
+            "m_defined": true,
+            "m_value": 530
+          },
+          "def": {
+            "m_defined": true,
+            "m_value": 440
+          },
+          "magicResistance": {
+            "m_defined": false,
+            "m_value": 0.0
+          },
+          "cost": {
+            "m_defined": false,
+            "m_value": 0
+          },
+          "blockCnt": {
+            "m_defined": false,
+            "m_value": 0
+          },
+          "moveSpeed": {
+            "m_defined": false,
+            "m_value": 0.0
+          },
+          "attackSpeed": {
+            "m_defined": false,
+            "m_value": 0.0
+          },
+          "baseAttackTime": {
+            "m_defined": false,
+            "m_value": 0.0
+          },
+          "respawnTime": {
+            "m_defined": false,
+            "m_value": 0
+          },
+          "hpRecoveryPerSec": {
+            "m_defined": false,
+            "m_value": 0.0
+          },
+          "spRecoveryPerSec": {
+            "m_defined": false,
+            "m_value": 0.0
+          },
+          "maxDeployCount": {
+            "m_defined": false,
+            "m_value": 0
+          },
+          "massLevel": {
+            "m_defined": false,
+            "m_value": 0
+          },
+          "baseForceLevel": {
+            "m_defined": false,
+            "m_value": 0
+          },
+          "tauntLevel": {
+            "m_defined": false,
+            "m_value": 0
+          },
+          "stunImmune": {
+            "m_defined": false,
+            "m_value": false
+          },
+          "silenceImmune": {
+            "m_defined": false,
+            "m_value": false
+          },
+          "sleepImmune": {
+            "m_defined": false,
+            "m_value": false
+          },
+          "frozenImmune": {
+            "m_defined": false,
+            "m_value": false
+          },
+          "levitateImmune": {
+            "m_defined": false,
+            "m_value": false
+          }
+        },
+        "lifePointReduce": {
+          "m_defined": false,
+          "m_value": 0
+        },
+        "levelType": {
+          "m_defined": false,
+          "m_value": 0
+        },
+        "rangeRadius": {
+          "m_defined": false,
+          "m_value": 0.0
+        },
+        "numOfExtraDrops": {
+          "m_defined": false,
+          "m_value": 0
+        },
+        "talentBlackboard": [
+          {
+            "key": "reborn.reborn_invincible.duration",
+            "value": 25.0,
+            "valueStr": null
+          }
+        ],
+        "skills": [
+          {
+            "prefabKey": "IceShield",
+            "priority": 2,
+            "cooldown": 35.0,
+            "initCooldown": 35.0,
+            "spCost": 0,
+            "blackboard": [
+              {
+                "key": "max_cnt",
+                "value": 3.0,
+                "valueStr": null
+              }
+            ]
+          },
+          {
+            "prefabKey": "IceShield[Reborn]",
+            "priority": 2,
+            "cooldown": 35.0,
+            "initCooldown": 35.0,
+            "spCost": 0,
+            "blackboard": [
+              {
+                "key": "max_cnt",
+                "value": 4.0,
+                "valueStr": null
+              }
+            ]
+          },
+          {
+            "prefabKey": "SummonFrosts",
+            "priority": 10,
+            "cooldown": 0.0,
+            "initCooldown": 0.0,
+            "spCost": 0,
+            "blackboard": [
+              {
+                "key": "branch_id",
+                "value": 0.0,
+                "valueStr": "frstar_frosts"
+              }
+            ]
+          },
+          {
+            "prefabKey": "IceBurst",
+            "priority": 1,
+            "cooldown": 10.5,
+            "initCooldown": 10.5,
+            "spCost": 0,
+            "blackboard": [
+              {
+                "key": "atk_scale",
+                "value": 1.0,
+                "valueStr": null
+              },
+              {
+                "key": "frstar2_s.atk_scale",
+                "value": 2.0,
+                "valueStr": null
+              },
+              {
+                "key": "freeze",
+                "value": 10.0,
+                "valueStr": null
+              }
+            ]
+          },
+          {
+            "prefabKey": "IceBurst[Reborn]",
+            "priority": 1,
+            "cooldown": 10.5,
+            "initCooldown": 10.5,
+            "spCost": 0,
+            "blackboard": [
+              {
+                "key": "atk_scale",
+                "value": 1.0,
+                "valueStr": null
+              },
+              {
+                "key": "frstar2_s.atk_scale",
+                "value": 2.0,
+                "valueStr": null
+              },
+              {
+                "key": "freeze",
+                "value": 10.0,
+                "valueStr": null
+              }
+            ]
+          }
+        ],
+        "spData": null
+      }
+    }
+  ]
+}

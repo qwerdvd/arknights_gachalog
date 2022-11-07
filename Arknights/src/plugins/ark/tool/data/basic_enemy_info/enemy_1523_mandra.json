@@ -1,0 +1,483 @@
+{
+  "enemy_name": "enemy_1523_mandra",
+  "level": [
+    {
+      "level": 0,
+      "enemyData": {
+        "name": {
+          "m_defined": true,
+          "m_value": "蔓德拉"
+        },
+        "description": {
+          "m_defined": true,
+          "m_value": "操纵岩石的术师。她来自维多利亚的阴影深处，誓要将过去从贵族们手下受过的屈辱悉数奉还。"
+        },
+        "prefabKey": {
+          "m_defined": true,
+          "m_value": "enemy_1523_mandra"
+        },
+        "attributes": {
+          "maxHp": {
+            "m_defined": true,
+            "m_value": 50000
+          },
+          "atk": {
+            "m_defined": true,
+            "m_value": 640
+          },
+          "def": {
+            "m_defined": true,
+            "m_value": 520
+          },
+          "magicResistance": {
+            "m_defined": true,
+            "m_value": 35.0
+          },
+          "cost": {
+            "m_defined": false,
+            "m_value": 0
+          },
+          "blockCnt": {
+            "m_defined": false,
+            "m_value": 0
+          },
+          "moveSpeed": {
+            "m_defined": true,
+            "m_value": 0.4
+          },
+          "attackSpeed": {
+            "m_defined": true,
+            "m_value": 100.0
+          },
+          "baseAttackTime": {
+            "m_defined": true,
+            "m_value": 1.8
+          },
+          "respawnTime": {
+            "m_defined": false,
+            "m_value": 0
+          },
+          "hpRecoveryPerSec": {
+            "m_defined": true,
+            "m_value": 0.0
+          },
+          "spRecoveryPerSec": {
+            "m_defined": false,
+            "m_value": 0.0
+          },
+          "maxDeployCount": {
+            "m_defined": false,
+            "m_value": 0
+          },
+          "massLevel": {
+            "m_defined": true,
+            "m_value": 7
+          },
+          "baseForceLevel": {
+            "m_defined": false,
+            "m_value": 0
+          },
+          "tauntLevel": {
+            "m_defined": false,
+            "m_value": 0
+          },
+          "stunImmune": {
+            "m_defined": true,
+            "m_value": false
+          },
+          "silenceImmune": {
+            "m_defined": true,
+            "m_value": false
+          },
+          "sleepImmune": {
+            "m_defined": false,
+            "m_value": false
+          },
+          "frozenImmune": {
+            "m_defined": false,
+            "m_value": false
+          },
+          "levitateImmune": {
+            "m_defined": false,
+            "m_value": false
+          }
+        },
+        "lifePointReduce": {
+          "m_defined": true,
+          "m_value": 2
+        },
+        "levelType": {
+          "m_defined": true,
+          "m_value": 2
+        },
+        "rangeRadius": {
+          "m_defined": true,
+          "m_value": 1.5
+        },
+        "numOfExtraDrops": {
+          "m_defined": false,
+          "m_value": 0
+        },
+        "talentBlackboard": [
+          {
+            "key": "StoneSkin.damage_resistance",
+            "value": 0.6,
+            "valueStr": null
+          },
+          {
+            "key": "ReSummonStoneSkin.duration",
+            "value": 25.0,
+            "valueStr": null
+          },
+          {
+            "key": "ReSummonStoneSkin.hp_ratio_offset",
+            "value": -0.4,
+            "valueStr": null
+          },
+          {
+            "key": "StoneSkin_2.range_radius",
+            "value": 1.7,
+            "valueStr": null
+          },
+          {
+            "key": "StoneSkin_2.atk_scale",
+            "value": 0.3,
+            "valueStr": null
+          },
+          {
+            "key": "StoneSkin_2.interval",
+            "value": 1.0,
+            "valueStr": null
+          },
+          {
+            "key": "Reborn.duration",
+            "value": 5.0,
+            "valueStr": null
+          },
+          {
+            "key": "Reborn.mandra_p2_invinsible.duration",
+            "value": 3.0,
+            "valueStr": null
+          },
+          {
+            "key": "Reborn.mandra_ray_p2[cd]",
+            "value": 10.0,
+            "valueStr": null
+          },
+          {
+            "key": "Reborn.summon_dupilr_p2[cd]",
+            "value": 20.0,
+            "valueStr": null
+          },
+          {
+            "key": "Reborn.branch_id",
+            "value": 0.0,
+            "valueStr": "summon_dupilr"
+          }
+        ],
+        "skills": [
+          {
+            "prefabKey": "PetrifiedRay",
+            "priority": 0,
+            "cooldown": 0.0,
+            "initCooldown": 5.0,
+            "spCost": 0,
+            "blackboard": [
+              {
+                "key": "mandra_ray[cd].duration",
+                "value": 7.1,
+                "valueStr": null
+              },
+              {
+                "key": "mandra_ray[cd].cooldown",
+                "value": 15.0,
+                "valueStr": null
+              },
+              {
+                "key": "range_radius",
+                "value": 1.5,
+                "valueStr": null
+              },
+              {
+                "key": "atk_scale",
+                "value": 1.0,
+                "valueStr": null
+              },
+              {
+                "key": "hit_interval",
+                "value": 1.0,
+                "valueStr": null
+              },
+              {
+                "key": "attack_speed",
+                "value": -0.7,
+                "valueStr": null
+              },
+              {
+                "key": "mandra_ray[cd].interval",
+                "value": 6.0,
+                "valueStr": null
+              }
+            ]
+          },
+          {
+            "prefabKey": "Reborn",
+            "priority": 1,
+            "cooldown": 0.0,
+            "initCooldown": 0.0,
+            "spCost": 0,
+            "blackboard": [
+              {
+                "key": "mandra_p2_invinsible.duration",
+                "value": 5.0,
+                "valueStr": null
+              },
+              {
+                "key": "mandra_ray_p2[cd]",
+                "value": 10.0,
+                "valueStr": null
+              },
+              {
+                "key": "summon_dupilr_p2[cd]",
+                "value": 10.0,
+                "valueStr": null
+              },
+              {
+                "key": "branch_id",
+                "value": 0.0,
+                "valueStr": "reborn_summon_dupilr"
+              }
+            ]
+          },
+          {
+            "prefabKey": "SummonDupilr",
+            "priority": 2,
+            "cooldown": 15.0,
+            "initCooldown": 15.0,
+            "spCost": 0,
+            "blackboard": [
+              {
+                "key": "branch_id",
+                "value": 0.0,
+                "valueStr": "summon_dupilr"
+              },
+              {
+                "key": "dupilr_t[auto_collapse].interval",
+                "value": 5.0,
+                "valueStr": null
+              }
+            ]
+          },
+          {
+            "prefabKey": "SummonStoneSkin_2",
+            "priority": 4,
+            "cooldown": 0.0,
+            "initCooldown": 0.0,
+            "spCost": 0,
+            "blackboard": null
+          },
+          {
+            "prefabKey": "SummonStoneSkin",
+            "priority": 3,
+            "cooldown": 5.0,
+            "initCooldown": 5.0,
+            "spCost": 0,
+            "blackboard": null
+          },
+          {
+            "prefabKey": "SelfStun",
+            "priority": 5,
+            "cooldown": 0.0,
+            "initCooldown": 0.0,
+            "spCost": 0,
+            "blackboard": null
+          }
+        ],
+        "spData": {
+          "spType": 1,
+          "maxSp": 0,
+          "initSp": 0,
+          "increment": 1.0
+        }
+      }
+    },
+    {
+      "level": 1,
+      "enemyData": {
+        "name": {
+          "m_defined": false,
+          "m_value": null
+        },
+        "description": {
+          "m_defined": false,
+          "m_value": null
+        },
+        "prefabKey": {
+          "m_defined": false,
+          "m_value": null
+        },
+        "attributes": {
+          "maxHp": {
+            "m_defined": true,
+            "m_value": 65500
+          },
+          "atk": {
+            "m_defined": true,
+            "m_value": 740
+          },
+          "def": {
+            "m_defined": true,
+            "m_value": 650
+          },
+          "magicResistance": {
+            "m_defined": true,
+            "m_value": 40.0
+          },
+          "cost": {
+            "m_defined": false,
+            "m_value": 0
+          },
+          "blockCnt": {
+            "m_defined": false,
+            "m_value": 0
+          },
+          "moveSpeed": {
+            "m_defined": true,
+            "m_value": 0.45
+          },
+          "attackSpeed": {
+            "m_defined": false,
+            "m_value": 0.0
+          },
+          "baseAttackTime": {
+            "m_defined": false,
+            "m_value": 0.0
+          },
+          "respawnTime": {
+            "m_defined": false,
+            "m_value": 0
+          },
+          "hpRecoveryPerSec": {
+            "m_defined": false,
+            "m_value": 0.0
+          },
+          "spRecoveryPerSec": {
+            "m_defined": false,
+            "m_value": 0.0
+          },
+          "maxDeployCount": {
+            "m_defined": false,
+            "m_value": 0
+          },
+          "massLevel": {
+            "m_defined": false,
+            "m_value": 0
+          },
+          "baseForceLevel": {
+            "m_defined": false,
+            "m_value": 0
+          },
+          "tauntLevel": {
+            "m_defined": false,
+            "m_value": 0
+          },
+          "stunImmune": {
+            "m_defined": false,
+            "m_value": false
+          },
+          "silenceImmune": {
+            "m_defined": false,
+            "m_value": false
+          },
+          "sleepImmune": {
+            "m_defined": false,
+            "m_value": false
+          },
+          "frozenImmune": {
+            "m_defined": false,
+            "m_value": false
+          },
+          "levitateImmune": {
+            "m_defined": false,
+            "m_value": false
+          }
+        },
+        "lifePointReduce": {
+          "m_defined": false,
+          "m_value": 0
+        },
+        "levelType": {
+          "m_defined": false,
+          "m_value": 0
+        },
+        "rangeRadius": {
+          "m_defined": false,
+          "m_value": 0.0
+        },
+        "numOfExtraDrops": {
+          "m_defined": false,
+          "m_value": 0
+        },
+        "talentBlackboard": [
+          {
+            "key": "StoneSkin.damage_resistance",
+            "value": 0.65,
+            "valueStr": null
+          },
+          {
+            "key": "ReSummonStoneSkin.hp_ratio_offset",
+            "value": -0.35,
+            "valueStr": null
+          }
+        ],
+        "skills": [
+          {
+            "prefabKey": "PetrifiedRay",
+            "priority": 0,
+            "cooldown": 0.0,
+            "initCooldown": 5.0,
+            "spCost": 0,
+            "blackboard": [
+              {
+                "key": "atk_scale",
+                "value": 1.0,
+                "valueStr": null
+              },
+              {
+                "key": "mandra_ray[cd].duration",
+                "value": 7.1,
+                "valueStr": null
+              },
+              {
+                "key": "mandra_ray[cd].cooldown",
+                "value": 15.0,
+                "valueStr": null
+              },
+              {
+                "key": "range_radius",
+                "value": 1.6,
+                "valueStr": null
+              },
+              {
+                "key": "hit_interval",
+                "value": 1.0,
+                "valueStr": null
+              },
+              {
+                "key": "attack_speed",
+                "value": -0.7,
+                "valueStr": null
+              },
+              {
+                "key": "mandra_ray[cd].interval",
+                "value": 6.0,
+                "valueStr": null
+              }
+            ]
+          }
+        ],
+        "spData": null
+      }
+    }
+  ]
+}

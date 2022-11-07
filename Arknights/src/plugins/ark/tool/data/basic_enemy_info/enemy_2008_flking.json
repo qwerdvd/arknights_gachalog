@@ -1,0 +1,148 @@
+{
+  "enemy_name": "enemy_2008_flking",
+  "level": [
+    {
+      "level": 0,
+      "enemyData": {
+        "name": {
+          "m_defined": true,
+          "m_value": "“墓碑”"
+        },
+        "description": {
+          "m_defined": true,
+          "m_value": "大幅度削弱我方单位的作战能力，会周期性地为自己添加抵御伤害的<@eb.key>护盾</>"
+        },
+        "prefabKey": {
+          "m_defined": true,
+          "m_value": "enemy_2008_flking"
+        },
+        "attributes": {
+          "maxHp": {
+            "m_defined": true,
+            "m_value": 60000
+          },
+          "atk": {
+            "m_defined": true,
+            "m_value": 2000
+          },
+          "def": {
+            "m_defined": true,
+            "m_value": 330
+          },
+          "magicResistance": {
+            "m_defined": true,
+            "m_value": 55.0
+          },
+          "cost": {
+            "m_defined": false,
+            "m_value": 0
+          },
+          "blockCnt": {
+            "m_defined": false,
+            "m_value": 0
+          },
+          "moveSpeed": {
+            "m_defined": true,
+            "m_value": 0.5
+          },
+          "attackSpeed": {
+            "m_defined": true,
+            "m_value": 100.0
+          },
+          "baseAttackTime": {
+            "m_defined": true,
+            "m_value": 3.5
+          },
+          "respawnTime": {
+            "m_defined": false,
+            "m_value": 0
+          },
+          "hpRecoveryPerSec": {
+            "m_defined": true,
+            "m_value": 0.0
+          },
+          "spRecoveryPerSec": {
+            "m_defined": true,
+            "m_value": 0.0
+          },
+          "maxDeployCount": {
+            "m_defined": false,
+            "m_value": 0
+          },
+          "massLevel": {
+            "m_defined": true,
+            "m_value": 6
+          },
+          "baseForceLevel": {
+            "m_defined": false,
+            "m_value": 0
+          },
+          "tauntLevel": {
+            "m_defined": false,
+            "m_value": 0
+          },
+          "stunImmune": {
+            "m_defined": true,
+            "m_value": false
+          },
+          "silenceImmune": {
+            "m_defined": true,
+            "m_value": true
+          },
+          "sleepImmune": {
+            "m_defined": false,
+            "m_value": false
+          },
+          "frozenImmune": {
+            "m_defined": false,
+            "m_value": false
+          },
+          "levitateImmune": {
+            "m_defined": false,
+            "m_value": false
+          }
+        },
+        "lifePointReduce": {
+          "m_defined": true,
+          "m_value": 30
+        },
+        "levelType": {
+          "m_defined": true,
+          "m_value": 2
+        },
+        "rangeRadius": {
+          "m_defined": true,
+          "m_value": 2.2
+        },
+        "numOfExtraDrops": {
+          "m_defined": false,
+          "m_value": 0
+        },
+        "talentBlackboard": [
+          {
+            "key": "atkdown.atk_scale",
+            "value": 0.4,
+            "valueStr": null
+          }
+        ],
+        "skills": [
+          {
+            "prefabKey": "refreshshield",
+            "priority": 0,
+            "cooldown": 30.0,
+            "initCooldown": 10.0,
+            "spCost": 0,
+            "blackboard": [
+              {
+                "key": "hp_ratio",
+                "value": 0.1,
+                "valueStr": null
+              }
+            ]
+          }
+        ],
+        "spData": null
+      }
+    }
+  ]
+}

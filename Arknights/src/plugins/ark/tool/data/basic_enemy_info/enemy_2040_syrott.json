@@ -1,0 +1,148 @@
+{
+  "enemy_name": "enemy_2040_syrott",
+  "level": [
+    {
+      "level": 0,
+      "enemyData": {
+        "name": {
+          "m_defined": true,
+          "m_value": "伊莎玛拉之泪"
+        },
+        "description": {
+          "m_defined": true,
+          "m_value": "每隔一定时间对接触单位造成真实伤害,未造成伤害则为伊莎玛拉充能"
+        },
+        "prefabKey": {
+          "m_defined": true,
+          "m_value": "enemy_2040_syrott"
+        },
+        "attributes": {
+          "maxHp": {
+            "m_defined": true,
+            "m_value": 10000
+          },
+          "atk": {
+            "m_defined": true,
+            "m_value": 500
+          },
+          "def": {
+            "m_defined": true,
+            "m_value": 1200
+          },
+          "magicResistance": {
+            "m_defined": true,
+            "m_value": 60.0
+          },
+          "cost": {
+            "m_defined": false,
+            "m_value": 0
+          },
+          "blockCnt": {
+            "m_defined": false,
+            "m_value": 0
+          },
+          "moveSpeed": {
+            "m_defined": true,
+            "m_value": 0.0
+          },
+          "attackSpeed": {
+            "m_defined": true,
+            "m_value": 100.0
+          },
+          "baseAttackTime": {
+            "m_defined": true,
+            "m_value": 5.0
+          },
+          "respawnTime": {
+            "m_defined": false,
+            "m_value": 0
+          },
+          "hpRecoveryPerSec": {
+            "m_defined": false,
+            "m_value": 0.0
+          },
+          "spRecoveryPerSec": {
+            "m_defined": false,
+            "m_value": 0.0
+          },
+          "maxDeployCount": {
+            "m_defined": false,
+            "m_value": 0
+          },
+          "massLevel": {
+            "m_defined": true,
+            "m_value": 6
+          },
+          "baseForceLevel": {
+            "m_defined": false,
+            "m_value": 0
+          },
+          "tauntLevel": {
+            "m_defined": false,
+            "m_value": 0
+          },
+          "stunImmune": {
+            "m_defined": true,
+            "m_value": true
+          },
+          "silenceImmune": {
+            "m_defined": true,
+            "m_value": true
+          },
+          "sleepImmune": {
+            "m_defined": true,
+            "m_value": true
+          },
+          "frozenImmune": {
+            "m_defined": true,
+            "m_value": true
+          },
+          "levitateImmune": {
+            "m_defined": true,
+            "m_value": true
+          }
+        },
+        "lifePointReduce": {
+          "m_defined": true,
+          "m_value": 0
+        },
+        "levelType": {
+          "m_defined": true,
+          "m_value": 0
+        },
+        "rangeRadius": {
+          "m_defined": true,
+          "m_value": 0.0
+        },
+        "numOfExtraDrops": {
+          "m_defined": false,
+          "m_value": 0
+        },
+        "talentBlackboard": [
+          {
+            "key": "Damage.interval",
+            "value": 3.0,
+            "valueStr": null
+          },
+          {
+            "key": "Damage.atk_scale",
+            "value": 1.0,
+            "valueStr": null
+          },
+          {
+            "key": "RecoverSp.interval",
+            "value": 3.0,
+            "valueStr": null
+          },
+          {
+            "key": "RecoverSp.sp",
+            "value": 25.0,
+            "valueStr": null
+          }
+        ],
+        "skills": null,
+        "spData": null
+      }
+    }
+  ]
+}

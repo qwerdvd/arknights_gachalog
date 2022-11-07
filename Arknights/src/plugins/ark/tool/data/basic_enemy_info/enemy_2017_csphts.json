@@ -1,0 +1,163 @@
+{
+  "enemy_name": "enemy_2017_csphts",
+  "level": [
+    {
+      "level": 0,
+      "enemyData": {
+        "name": {
+          "m_defined": true,
+          "m_value": "不祥幻影"
+        },
+        "description": {
+          "m_defined": true,
+          "m_value": "一片影子。从不曾离开，从不曾真实存在。"
+        },
+        "prefabKey": {
+          "m_defined": true,
+          "m_value": "enemy_2017_csphts"
+        },
+        "attributes": {
+          "maxHp": {
+            "m_defined": true,
+            "m_value": 10000
+          },
+          "atk": {
+            "m_defined": true,
+            "m_value": 750
+          },
+          "def": {
+            "m_defined": true,
+            "m_value": 400
+          },
+          "magicResistance": {
+            "m_defined": true,
+            "m_value": 20.0
+          },
+          "cost": {
+            "m_defined": false,
+            "m_value": 0
+          },
+          "blockCnt": {
+            "m_defined": false,
+            "m_value": 0
+          },
+          "moveSpeed": {
+            "m_defined": true,
+            "m_value": 0.6
+          },
+          "attackSpeed": {
+            "m_defined": false,
+            "m_value": 0.0
+          },
+          "baseAttackTime": {
+            "m_defined": true,
+            "m_value": 3.0
+          },
+          "respawnTime": {
+            "m_defined": false,
+            "m_value": 0
+          },
+          "hpRecoveryPerSec": {
+            "m_defined": false,
+            "m_value": 0.0
+          },
+          "spRecoveryPerSec": {
+            "m_defined": false,
+            "m_value": 0.0
+          },
+          "maxDeployCount": {
+            "m_defined": false,
+            "m_value": 0
+          },
+          "massLevel": {
+            "m_defined": true,
+            "m_value": 2
+          },
+          "baseForceLevel": {
+            "m_defined": false,
+            "m_value": 0
+          },
+          "tauntLevel": {
+            "m_defined": false,
+            "m_value": 0
+          },
+          "stunImmune": {
+            "m_defined": false,
+            "m_value": false
+          },
+          "silenceImmune": {
+            "m_defined": false,
+            "m_value": false
+          },
+          "sleepImmune": {
+            "m_defined": false,
+            "m_value": false
+          },
+          "frozenImmune": {
+            "m_defined": false,
+            "m_value": false
+          },
+          "levitateImmune": {
+            "m_defined": false,
+            "m_value": false
+          }
+        },
+        "lifePointReduce": {
+          "m_defined": true,
+          "m_value": 1
+        },
+        "levelType": {
+          "m_defined": true,
+          "m_value": 1
+        },
+        "rangeRadius": {
+          "m_defined": false,
+          "m_value": 0.0
+        },
+        "numOfExtraDrops": {
+          "m_defined": false,
+          "m_value": 0
+        },
+        "talentBlackboard": [
+          {
+            "key": "penetrate.def_penetrate",
+            "value": 0.4,
+            "valueStr": null
+          },
+          {
+            "key": "evade.prob",
+            "value": 0.4,
+            "valueStr": null
+          },
+          {
+            "key": "combat.attack@ep_damage_ratio",
+            "value": 0.2,
+            "valueStr": null
+          }
+        ],
+        "skills": [
+          {
+            "prefabKey": "aoe",
+            "priority": 0,
+            "cooldown": 10.0,
+            "initCooldown": 5.0,
+            "spCost": 0,
+            "blackboard": [
+              {
+                "key": "ep_damage_ratio",
+                "value": 0.2,
+                "valueStr": null
+              },
+              {
+                "key": "atk_scale",
+                "value": 0.8,
+                "valueStr": null
+              }
+            ]
+          }
+        ],
+        "spData": null
+      }
+    }
+  ]
+}

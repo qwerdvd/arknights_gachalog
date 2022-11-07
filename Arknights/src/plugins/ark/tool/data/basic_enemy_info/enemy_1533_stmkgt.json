@@ -1,0 +1,473 @@
+{
+  "enemy_name": "enemy_1533_stmkgt",
+  "level": [
+    {
+      "level": 0,
+      "enemyData": {
+        "name": {
+          "m_defined": true,
+          "m_value": "“最后的蒸汽骑士”"
+        },
+        "description": {
+          "m_defined": true,
+          "m_value": "最后一位蒸汽骑士于尘封的废墟中站起，为守护他心中的维多利亚而发起冲锋。"
+        },
+        "prefabKey": {
+          "m_defined": true,
+          "m_value": "enemy_1533_stmkgt"
+        },
+        "attributes": {
+          "maxHp": {
+            "m_defined": true,
+            "m_value": 65000
+          },
+          "atk": {
+            "m_defined": true,
+            "m_value": 1600
+          },
+          "def": {
+            "m_defined": true,
+            "m_value": 2000
+          },
+          "magicResistance": {
+            "m_defined": true,
+            "m_value": 40.0
+          },
+          "cost": {
+            "m_defined": false,
+            "m_value": 0
+          },
+          "blockCnt": {
+            "m_defined": false,
+            "m_value": 0
+          },
+          "moveSpeed": {
+            "m_defined": true,
+            "m_value": 0.5
+          },
+          "attackSpeed": {
+            "m_defined": false,
+            "m_value": 0.0
+          },
+          "baseAttackTime": {
+            "m_defined": true,
+            "m_value": 5.0
+          },
+          "respawnTime": {
+            "m_defined": false,
+            "m_value": 0
+          },
+          "hpRecoveryPerSec": {
+            "m_defined": false,
+            "m_value": 0.0
+          },
+          "spRecoveryPerSec": {
+            "m_defined": false,
+            "m_value": 0.0
+          },
+          "maxDeployCount": {
+            "m_defined": false,
+            "m_value": 0
+          },
+          "massLevel": {
+            "m_defined": true,
+            "m_value": 10
+          },
+          "baseForceLevel": {
+            "m_defined": false,
+            "m_value": 0
+          },
+          "tauntLevel": {
+            "m_defined": false,
+            "m_value": 0
+          },
+          "stunImmune": {
+            "m_defined": false,
+            "m_value": false
+          },
+          "silenceImmune": {
+            "m_defined": true,
+            "m_value": true
+          },
+          "sleepImmune": {
+            "m_defined": true,
+            "m_value": true
+          },
+          "frozenImmune": {
+            "m_defined": false,
+            "m_value": false
+          },
+          "levitateImmune": {
+            "m_defined": true,
+            "m_value": true
+          }
+        },
+        "lifePointReduce": {
+          "m_defined": true,
+          "m_value": 2
+        },
+        "levelType": {
+          "m_defined": true,
+          "m_value": 2
+        },
+        "rangeRadius": {
+          "m_defined": false,
+          "m_value": 0.0
+        },
+        "numOfExtraDrops": {
+          "m_defined": false,
+          "m_value": 0
+        },
+        "talentBlackboard": [
+          {
+            "key": "BornWeak.attack_speed",
+            "value": -50.0,
+            "valueStr": null
+          },
+          {
+            "key": "BornWeak.move_speed",
+            "value": -0.5,
+            "valueStr": null
+          },
+          {
+            "key": "reborn.stmkgt_t_state_2[reborn_invincible].duration",
+            "value": 15.0,
+            "valueStr": null
+          },
+          {
+            "key": "TriggerHeroBomb.hp_ratio",
+            "value": 0.5,
+            "valueStr": null
+          },
+          {
+            "key": "TriggerHeroBomb_2.hp_ratio",
+            "value": 0.3,
+            "valueStr": null
+          },
+          {
+            "key": "reborn.duration",
+            "value": 8.0,
+            "valueStr": null
+          },
+          {
+            "key": "reborn.move_speed",
+            "value": 0.3,
+            "valueStr": null
+          },
+          {
+            "key": "reborn.attack_speed",
+            "value": 100.0,
+            "valueStr": null
+          },
+          {
+            "key": "reborn.damage_resistance",
+            "value": 0.3,
+            "valueStr": null
+          },
+          {
+            "key": "reborn.def",
+            "value": -1500.0,
+            "valueStr": null
+          },
+          {
+            "key": "reborn.magic_resistance",
+            "value": -40.0,
+            "valueStr": null
+          },
+          {
+            "key": "reborn.is_hard_level",
+            "value": 0.0,
+            "valueStr": "true"
+          }
+        ],
+        "skills": [
+          {
+            "prefabKey": "Boost",
+            "priority": 1,
+            "cooldown": 45.0,
+            "initCooldown": 25.0,
+            "spCost": 0,
+            "blackboard": [
+              {
+                "key": "move_speed",
+                "value": 0.3,
+                "valueStr": null
+              },
+              {
+                "key": "attack_speed",
+                "value": 100.0,
+                "valueStr": null
+              },
+              {
+                "key": "boost_duration",
+                "value": 15.0,
+                "valueStr": null
+              },
+              {
+                "key": "stun",
+                "value": 5.0,
+                "valueStr": null
+              },
+              {
+                "key": "damage_resistance",
+                "value": 0.3,
+                "valueStr": null
+              },
+              {
+                "key": "is_hard_level",
+                "value": 0.0,
+                "valueStr": "false"
+              }
+            ]
+          },
+          {
+            "prefabKey": "Zantetsuken",
+            "priority": 2,
+            "cooldown": 0.0,
+            "initCooldown": 0.0,
+            "spCost": 4,
+            "blackboard": [
+              {
+                "key": "times",
+                "value": 3.0,
+                "valueStr": null
+              },
+              {
+                "key": "duration",
+                "value": 7.0,
+                "valueStr": null
+              },
+              {
+                "key": "atk_scale",
+                "value": 1.25,
+                "valueStr": null
+              }
+            ]
+          },
+          {
+            "prefabKey": "HeroBomb[first_state]",
+            "priority": 0,
+            "cooldown": 99999.0,
+            "initCooldown": 0.0,
+            "spCost": 0,
+            "blackboard": [
+              {
+                "key": "mark_duration",
+                "value": 8.0,
+                "valueStr": null
+              },
+              {
+                "key": "atk_scale",
+                "value": 0.5,
+                "valueStr": null
+              },
+              {
+                "key": "is_hard_level",
+                "value": 0.0,
+                "valueStr": "true"
+              }
+            ]
+          },
+          {
+            "prefabKey": "HeroBomb[second_state]",
+            "priority": 0,
+            "cooldown": 99999.0,
+            "initCooldown": 99999.0,
+            "spCost": 0,
+            "blackboard": [
+              {
+                "key": "mark_duration",
+                "value": 8.0,
+                "valueStr": null
+              },
+              {
+                "key": "atk_scale",
+                "value": 0.4,
+                "valueStr": null
+              },
+              {
+                "key": "is_hard_level",
+                "value": 0.0,
+                "valueStr": "true"
+              }
+            ]
+          }
+        ],
+        "spData": {
+          "spType": 2,
+          "maxSp": 4,
+          "initSp": 0,
+          "increment": 1.0
+        }
+      }
+    },
+    {
+      "level": 1,
+      "enemyData": {
+        "name": {
+          "m_defined": false,
+          "m_value": null
+        },
+        "description": {
+          "m_defined": false,
+          "m_value": null
+        },
+        "prefabKey": {
+          "m_defined": false,
+          "m_value": null
+        },
+        "attributes": {
+          "maxHp": {
+            "m_defined": true,
+            "m_value": 80000
+          },
+          "atk": {
+            "m_defined": true,
+            "m_value": 1800
+          },
+          "def": {
+            "m_defined": true,
+            "m_value": 2400
+          },
+          "magicResistance": {
+            "m_defined": false,
+            "m_value": 0.0
+          },
+          "cost": {
+            "m_defined": false,
+            "m_value": 0
+          },
+          "blockCnt": {
+            "m_defined": false,
+            "m_value": 0
+          },
+          "moveSpeed": {
+            "m_defined": false,
+            "m_value": 0.0
+          },
+          "attackSpeed": {
+            "m_defined": false,
+            "m_value": 0.0
+          },
+          "baseAttackTime": {
+            "m_defined": false,
+            "m_value": 0.0
+          },
+          "respawnTime": {
+            "m_defined": false,
+            "m_value": 0
+          },
+          "hpRecoveryPerSec": {
+            "m_defined": false,
+            "m_value": 0.0
+          },
+          "spRecoveryPerSec": {
+            "m_defined": false,
+            "m_value": 0.0
+          },
+          "maxDeployCount": {
+            "m_defined": false,
+            "m_value": 0
+          },
+          "massLevel": {
+            "m_defined": false,
+            "m_value": 0
+          },
+          "baseForceLevel": {
+            "m_defined": false,
+            "m_value": 0
+          },
+          "tauntLevel": {
+            "m_defined": false,
+            "m_value": 0
+          },
+          "stunImmune": {
+            "m_defined": false,
+            "m_value": false
+          },
+          "silenceImmune": {
+            "m_defined": false,
+            "m_value": false
+          },
+          "sleepImmune": {
+            "m_defined": false,
+            "m_value": false
+          },
+          "frozenImmune": {
+            "m_defined": false,
+            "m_value": false
+          },
+          "levitateImmune": {
+            "m_defined": false,
+            "m_value": false
+          }
+        },
+        "lifePointReduce": {
+          "m_defined": false,
+          "m_value": 0
+        },
+        "levelType": {
+          "m_defined": false,
+          "m_value": 0
+        },
+        "rangeRadius": {
+          "m_defined": false,
+          "m_value": 0.0
+        },
+        "numOfExtraDrops": {
+          "m_defined": false,
+          "m_value": 0
+        },
+        "talentBlackboard": [
+          {
+            "key": "reborn.def",
+            "value": -2000.0,
+            "valueStr": null
+          }
+        ],
+        "skills": [
+          {
+            "prefabKey": "Boost",
+            "priority": 1,
+            "cooldown": 40.0,
+            "initCooldown": 40.0,
+            "spCost": 0,
+            "blackboard": [
+              {
+                "key": "move_speed",
+                "value": 0.3,
+                "valueStr": null
+              },
+              {
+                "key": "attack_speed",
+                "value": 100.0,
+                "valueStr": null
+              },
+              {
+                "key": "boost_duration",
+                "value": 15.0,
+                "valueStr": null
+              },
+              {
+                "key": "stun",
+                "value": 5.0,
+                "valueStr": null
+              },
+              {
+                "key": "damage_resistance",
+                "value": 0.3,
+                "valueStr": null
+              },
+              {
+                "key": "is_hard_level",
+                "value": 0.0,
+                "valueStr": "true"
+              }
+            ]
+          }
+        ],
+        "spData": null
+      }
+    }
+  ]
+}

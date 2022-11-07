@@ -1,0 +1,143 @@
+{
+  "enemy_name": "enemy_1145_atkspd",
+  "level": [
+    {
+      "level": 0,
+      "enemyData": {
+        "name": {
+          "m_defined": true,
+          "m_value": "破片"
+        },
+        "description": {
+          "m_defined": true,
+          "m_value": "<@eb.key>【飞行单位】</>攻击造成范围性物理伤害并<@eb.key>削弱目标防御力</>，不易被攻击，一段时间后自动撤退。"
+        },
+        "prefabKey": {
+          "m_defined": true,
+          "m_value": "enemy_1145_atkspd"
+        },
+        "attributes": {
+          "maxHp": {
+            "m_defined": true,
+            "m_value": 5000
+          },
+          "atk": {
+            "m_defined": true,
+            "m_value": 250
+          },
+          "def": {
+            "m_defined": true,
+            "m_value": 80
+          },
+          "magicResistance": {
+            "m_defined": true,
+            "m_value": 50.0
+          },
+          "cost": {
+            "m_defined": false,
+            "m_value": 0
+          },
+          "blockCnt": {
+            "m_defined": false,
+            "m_value": 0
+          },
+          "moveSpeed": {
+            "m_defined": true,
+            "m_value": 1.0
+          },
+          "attackSpeed": {
+            "m_defined": true,
+            "m_value": 100.0
+          },
+          "baseAttackTime": {
+            "m_defined": true,
+            "m_value": 3.8
+          },
+          "respawnTime": {
+            "m_defined": false,
+            "m_value": 0
+          },
+          "hpRecoveryPerSec": {
+            "m_defined": false,
+            "m_value": 0.0
+          },
+          "spRecoveryPerSec": {
+            "m_defined": false,
+            "m_value": 0.0
+          },
+          "maxDeployCount": {
+            "m_defined": false,
+            "m_value": 0
+          },
+          "massLevel": {
+            "m_defined": true,
+            "m_value": 0
+          },
+          "baseForceLevel": {
+            "m_defined": false,
+            "m_value": 0
+          },
+          "tauntLevel": {
+            "m_defined": true,
+            "m_value": -1
+          },
+          "stunImmune": {
+            "m_defined": false,
+            "m_value": false
+          },
+          "silenceImmune": {
+            "m_defined": false,
+            "m_value": false
+          },
+          "sleepImmune": {
+            "m_defined": false,
+            "m_value": false
+          },
+          "frozenImmune": {
+            "m_defined": false,
+            "m_value": false
+          },
+          "levitateImmune": {
+            "m_defined": false,
+            "m_value": false
+          }
+        },
+        "lifePointReduce": {
+          "m_defined": true,
+          "m_value": 1
+        },
+        "levelType": {
+          "m_defined": false,
+          "m_value": 0
+        },
+        "rangeRadius": {
+          "m_defined": true,
+          "m_value": 1.4
+        },
+        "numOfExtraDrops": {
+          "m_defined": false,
+          "m_value": 0
+        },
+        "talentBlackboard": [
+          {
+            "key": "DefDown.duration",
+            "value": 5.0,
+            "valueStr": null
+          },
+          {
+            "key": "DefDown.def",
+            "value": 0.5,
+            "valueStr": null
+          },
+          {
+            "key": "SelfDestruction.duration",
+            "value": 30.0,
+            "valueStr": null
+          }
+        ],
+        "skills": null,
+        "spData": null
+      }
+    }
+  ]
+}

@@ -1,0 +1,157 @@
+{
+  "enemy_name": "enemy_1255_lybgpa",
+  "level": [
+    {
+      "level": 0,
+      "enemyData": {
+        "name": {
+          "m_defined": true,
+          "m_value": "R-31重型动力装甲"
+        },
+        "description": {
+          "m_defined": true,
+          "m_value": "对目标使用【超负载】，大幅提升攻击速度，每次攻击造成物理伤害，并使目标短暂<@eb.key>晕眩</>"
+        },
+        "prefabKey": {
+          "m_defined": true,
+          "m_value": "enemy_1255_lybgpa"
+        },
+        "attributes": {
+          "maxHp": {
+            "m_defined": true,
+            "m_value": 25000
+          },
+          "atk": {
+            "m_defined": true,
+            "m_value": 1600
+          },
+          "def": {
+            "m_defined": true,
+            "m_value": 1200
+          },
+          "magicResistance": {
+            "m_defined": true,
+            "m_value": 20.0
+          },
+          "cost": {
+            "m_defined": false,
+            "m_value": 0
+          },
+          "blockCnt": {
+            "m_defined": false,
+            "m_value": 0
+          },
+          "moveSpeed": {
+            "m_defined": true,
+            "m_value": 0.3
+          },
+          "attackSpeed": {
+            "m_defined": false,
+            "m_value": 100.0
+          },
+          "baseAttackTime": {
+            "m_defined": true,
+            "m_value": 4.0
+          },
+          "respawnTime": {
+            "m_defined": false,
+            "m_value": 0
+          },
+          "hpRecoveryPerSec": {
+            "m_defined": false,
+            "m_value": 0.0
+          },
+          "spRecoveryPerSec": {
+            "m_defined": false,
+            "m_value": 0.0
+          },
+          "maxDeployCount": {
+            "m_defined": false,
+            "m_value": 0
+          },
+          "massLevel": {
+            "m_defined": true,
+            "m_value": 5
+          },
+          "baseForceLevel": {
+            "m_defined": false,
+            "m_value": 0
+          },
+          "tauntLevel": {
+            "m_defined": false,
+            "m_value": 0
+          },
+          "stunImmune": {
+            "m_defined": true,
+            "m_value": true
+          },
+          "silenceImmune": {
+            "m_defined": false,
+            "m_value": false
+          },
+          "sleepImmune": {
+            "m_defined": true,
+            "m_value": true
+          },
+          "frozenImmune": {
+            "m_defined": false,
+            "m_value": false
+          },
+          "levitateImmune": {
+            "m_defined": true,
+            "m_value": true
+          }
+        },
+        "lifePointReduce": {
+          "m_defined": true,
+          "m_value": 1
+        },
+        "levelType": {
+          "m_defined": true,
+          "m_value": 1
+        },
+        "rangeRadius": {
+          "m_defined": false,
+          "m_value": 0.0
+        },
+        "numOfExtraDrops": {
+          "m_defined": false,
+          "m_value": 0
+        },
+        "talentBlackboard": null,
+        "skills": [
+          {
+            "prefabKey": "Punch",
+            "priority": 0,
+            "cooldown": 20.0,
+            "initCooldown": 0.0,
+            "spCost": 0,
+            "blackboard": [
+              {
+                "key": "stun",
+                "value": 2.0,
+                "valueStr": null
+              },
+              {
+                "key": "atk_scale",
+                "value": 0.75,
+                "valueStr": null
+              },
+              {
+                "key": "duration",
+                "value": 10.0,
+                "valueStr": null
+              },
+              {
+                "key": "unmovable_duration",
+                "value": 1.0,
+                "valueStr": null
+              }
+            ]
+          }
+        ],
+        "spData": null
+      }
+    }
+  ]
+}

@@ -1,0 +1,153 @@
+{
+  "enemy_name": "enemy_1191_krgrg",
+  "level": [
+    {
+      "level": 0,
+      "enemyData": {
+        "name": {
+          "m_defined": true,
+          "m_value": "冰原卫法者"
+        },
+        "description": {
+          "m_defined": true,
+          "m_value": "攻击造成<@eb.key>法术伤害</>，被击倒时对周围所有单位造成<@eb.key>法术伤害</>且施加<@eb.key>寒冷</>。失衡移动时正比于距离损失生命。"
+        },
+        "prefabKey": {
+          "m_defined": true,
+          "m_value": "enemy_1191_krgrg"
+        },
+        "attributes": {
+          "maxHp": {
+            "m_defined": true,
+            "m_value": 5000
+          },
+          "atk": {
+            "m_defined": true,
+            "m_value": 600
+          },
+          "def": {
+            "m_defined": true,
+            "m_value": 250
+          },
+          "magicResistance": {
+            "m_defined": true,
+            "m_value": 50.0
+          },
+          "cost": {
+            "m_defined": false,
+            "m_value": 0
+          },
+          "blockCnt": {
+            "m_defined": false,
+            "m_value": 0
+          },
+          "moveSpeed": {
+            "m_defined": true,
+            "m_value": 0.7
+          },
+          "attackSpeed": {
+            "m_defined": true,
+            "m_value": 100.0
+          },
+          "baseAttackTime": {
+            "m_defined": true,
+            "m_value": 2.5
+          },
+          "respawnTime": {
+            "m_defined": false,
+            "m_value": 0
+          },
+          "hpRecoveryPerSec": {
+            "m_defined": false,
+            "m_value": 0.0
+          },
+          "spRecoveryPerSec": {
+            "m_defined": false,
+            "m_value": 0.0
+          },
+          "maxDeployCount": {
+            "m_defined": false,
+            "m_value": 0
+          },
+          "massLevel": {
+            "m_defined": true,
+            "m_value": 1
+          },
+          "baseForceLevel": {
+            "m_defined": false,
+            "m_value": 0
+          },
+          "tauntLevel": {
+            "m_defined": false,
+            "m_value": 0
+          },
+          "stunImmune": {
+            "m_defined": false,
+            "m_value": false
+          },
+          "silenceImmune": {
+            "m_defined": false,
+            "m_value": false
+          },
+          "sleepImmune": {
+            "m_defined": false,
+            "m_value": false
+          },
+          "frozenImmune": {
+            "m_defined": false,
+            "m_value": false
+          },
+          "levitateImmune": {
+            "m_defined": false,
+            "m_value": false
+          }
+        },
+        "lifePointReduce": {
+          "m_defined": true,
+          "m_value": 1
+        },
+        "levelType": {
+          "m_defined": true,
+          "m_value": 1
+        },
+        "rangeRadius": {
+          "m_defined": false,
+          "m_value": 0.0
+        },
+        "numOfExtraDrops": {
+          "m_defined": false,
+          "m_value": 0
+        },
+        "talentBlackboard": [
+          {
+            "key": "boom.atk_scale",
+            "value": 1.3,
+            "valueStr": null
+          },
+          {
+            "key": "boom.freeze",
+            "value": 5.0,
+            "valueStr": null
+          },
+          {
+            "key": "unbalanced_bleed.damage",
+            "value": 80.0,
+            "valueStr": null
+          },
+          {
+            "key": "unbalanced_bleed.interval",
+            "value": 0.066,
+            "valueStr": null
+          },
+          {
+            "key": "boom.cold",
+            "value": 5.0,
+            "valueStr": null
+          }
+        ],
+        "skills": null,
+        "spData": null
+      }
+    }
+  ]
+}

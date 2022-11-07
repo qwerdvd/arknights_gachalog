@@ -1,0 +1,168 @@
+{
+  "enemy_name": "enemy_6002_trswlf",
+  "level": [
+    {
+      "level": 0,
+      "enemyData": {
+        "name": {
+          "m_defined": true,
+          "m_value": "流眼泪侦探"
+        },
+        "description": {
+          "m_defined": true,
+          "m_value": "受到伤害时获得一层持续数秒的<@eb.key>防护</>（受到的物理与法术伤害降低)，最多叠加<@eb.key>3</>层，被击倒时可额外获得<@eb.key>奖励</>。"
+        },
+        "prefabKey": {
+          "m_defined": true,
+          "m_value": "enemy_6002_trswlf"
+        },
+        "attributes": {
+          "maxHp": {
+            "m_defined": true,
+            "m_value": 19000
+          },
+          "atk": {
+            "m_defined": true,
+            "m_value": 400
+          },
+          "def": {
+            "m_defined": true,
+            "m_value": 400
+          },
+          "magicResistance": {
+            "m_defined": true,
+            "m_value": 20.0
+          },
+          "cost": {
+            "m_defined": false,
+            "m_value": 0
+          },
+          "blockCnt": {
+            "m_defined": false,
+            "m_value": 0
+          },
+          "moveSpeed": {
+            "m_defined": true,
+            "m_value": 0.9
+          },
+          "attackSpeed": {
+            "m_defined": true,
+            "m_value": 100.0
+          },
+          "baseAttackTime": {
+            "m_defined": true,
+            "m_value": 3.0
+          },
+          "respawnTime": {
+            "m_defined": false,
+            "m_value": 0
+          },
+          "hpRecoveryPerSec": {
+            "m_defined": false,
+            "m_value": 0.0
+          },
+          "spRecoveryPerSec": {
+            "m_defined": false,
+            "m_value": 0.0
+          },
+          "maxDeployCount": {
+            "m_defined": false,
+            "m_value": 0
+          },
+          "massLevel": {
+            "m_defined": true,
+            "m_value": 1
+          },
+          "baseForceLevel": {
+            "m_defined": false,
+            "m_value": 0
+          },
+          "tauntLevel": {
+            "m_defined": false,
+            "m_value": 0
+          },
+          "stunImmune": {
+            "m_defined": false,
+            "m_value": false
+          },
+          "silenceImmune": {
+            "m_defined": false,
+            "m_value": false
+          },
+          "sleepImmune": {
+            "m_defined": false,
+            "m_value": false
+          },
+          "frozenImmune": {
+            "m_defined": false,
+            "m_value": false
+          },
+          "levitateImmune": {
+            "m_defined": false,
+            "m_value": false
+          }
+        },
+        "lifePointReduce": {
+          "m_defined": true,
+          "m_value": 0
+        },
+        "levelType": {
+          "m_defined": true,
+          "m_value": 1
+        },
+        "rangeRadius": {
+          "m_defined": false,
+          "m_value": 0.0
+        },
+        "numOfExtraDrops": {
+          "m_defined": false,
+          "m_value": 0
+        },
+        "talentBlackboard": [
+          {
+            "key": "Passive.resist_duration",
+            "value": 4.0,
+            "valueStr": null
+          },
+          {
+            "key": "Passive.damage_resistance",
+            "value": 0.3,
+            "valueStr": null
+          },
+          {
+            "key": "Passive.passive_stack_cnt",
+            "value": 3.0,
+            "valueStr": null
+          },
+          {
+            "key": "Passive.range_num",
+            "value": 3.0,
+            "valueStr": null
+          },
+          {
+            "key": "Passive.can_select_num",
+            "value": 1.0,
+            "valueStr": null
+          }
+        ],
+        "skills": [
+          {
+            "prefabKey": "Blink",
+            "priority": 0,
+            "cooldown": 40.0,
+            "initCooldown": 40.0,
+            "spCost": 0,
+            "blackboard": [
+              {
+                "key": "dist",
+                "value": 1.5,
+                "valueStr": null
+              }
+            ]
+          }
+        ],
+        "spData": null
+      }
+    }
+  ]
+}

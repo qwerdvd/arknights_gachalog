@@ -1,0 +1,178 @@
+{
+  "enemy_name": "enemy_2031_syboy",
+  "level": [
+    {
+      "level": 0,
+      "enemyData": {
+        "name": {
+          "m_defined": true,
+          "m_value": "塑路者"
+        },
+        "description": {
+          "m_defined": true,
+          "m_value": "为大群探索生路的海嗣，攻击和被攻击数次后召唤<@eb.key>塑路者分形</>；"
+        },
+        "prefabKey": {
+          "m_defined": true,
+          "m_value": "enemy_2031_syboy"
+        },
+        "attributes": {
+          "maxHp": {
+            "m_defined": true,
+            "m_value": 35000
+          },
+          "atk": {
+            "m_defined": true,
+            "m_value": 800
+          },
+          "def": {
+            "m_defined": true,
+            "m_value": 800
+          },
+          "magicResistance": {
+            "m_defined": true,
+            "m_value": 50.0
+          },
+          "cost": {
+            "m_defined": false,
+            "m_value": 0
+          },
+          "blockCnt": {
+            "m_defined": false,
+            "m_value": 0
+          },
+          "moveSpeed": {
+            "m_defined": true,
+            "m_value": 0.5
+          },
+          "attackSpeed": {
+            "m_defined": true,
+            "m_value": 100.0
+          },
+          "baseAttackTime": {
+            "m_defined": true,
+            "m_value": 2.8
+          },
+          "respawnTime": {
+            "m_defined": false,
+            "m_value": 0
+          },
+          "hpRecoveryPerSec": {
+            "m_defined": false,
+            "m_value": 0.0
+          },
+          "spRecoveryPerSec": {
+            "m_defined": false,
+            "m_value": 0.0
+          },
+          "maxDeployCount": {
+            "m_defined": false,
+            "m_value": 0
+          },
+          "massLevel": {
+            "m_defined": true,
+            "m_value": 4
+          },
+          "baseForceLevel": {
+            "m_defined": false,
+            "m_value": 0
+          },
+          "tauntLevel": {
+            "m_defined": false,
+            "m_value": 0
+          },
+          "stunImmune": {
+            "m_defined": false,
+            "m_value": false
+          },
+          "silenceImmune": {
+            "m_defined": true,
+            "m_value": true
+          },
+          "sleepImmune": {
+            "m_defined": false,
+            "m_value": false
+          },
+          "frozenImmune": {
+            "m_defined": false,
+            "m_value": false
+          },
+          "levitateImmune": {
+            "m_defined": false,
+            "m_value": false
+          }
+        },
+        "lifePointReduce": {
+          "m_defined": true,
+          "m_value": 5
+        },
+        "levelType": {
+          "m_defined": true,
+          "m_value": 2
+        },
+        "rangeRadius": {
+          "m_defined": false,
+          "m_value": 0.0
+        },
+        "numOfExtraDrops": {
+          "m_defined": false,
+          "m_value": 0
+        },
+        "talentBlackboard": [
+          {
+            "key": "SummonMark.enemy_key",
+            "value": 0.0,
+            "valueStr": "enemy_2033_syboys"
+          },
+          {
+            "key": "SummonMark.cnt",
+            "value": 1.0,
+            "valueStr": null
+          },
+          {
+            "key": "SummonMark.damage_counter",
+            "value": 10.0,
+            "valueStr": null
+          },
+          {
+            "key": "SummonMark.limit_amount",
+            "value": 8.0,
+            "valueStr": null
+          }
+        ],
+        "skills": [
+          {
+            "prefabKey": "Summon",
+            "priority": 0,
+            "cooldown": 0.0,
+            "initCooldown": 0.0,
+            "spCost": 2,
+            "blackboard": [
+              {
+                "key": "enemy_key",
+                "value": 0.0,
+                "valueStr": "enemy_2033_syboys"
+              },
+              {
+                "key": "cnt",
+                "value": 1.0,
+                "valueStr": null
+              },
+              {
+                "key": "limit_amount",
+                "value": 8.0,
+                "valueStr": null
+              }
+            ]
+          }
+        ],
+        "spData": {
+          "spType": 2,
+          "maxSp": 2,
+          "initSp": 0,
+          "increment": 1.0
+        }
+      }
+    }
+  ]
+}

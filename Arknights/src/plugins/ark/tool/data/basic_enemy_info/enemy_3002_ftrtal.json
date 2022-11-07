@@ -1,0 +1,240 @@
+{
+  "enemy_name": "enemy_3002_ftrtal",
+  "level": [
+    {
+      "level": 0,
+      "enemyData": {
+        "name": {
+          "m_defined": true,
+          "m_value": "斗士塔露拉"
+        },
+        "description": {
+          "m_defined": true,
+          "m_value": "<@eb.key>友好单位</>进入侵入点时不扣除关卡生命值，死亡时扣除关卡生命值;不计入歼灭数"
+        },
+        "prefabKey": {
+          "m_defined": true,
+          "m_value": "enemy_3002_ftrtal"
+        },
+        "attributes": {
+          "maxHp": {
+            "m_defined": true,
+            "m_value": 15000
+          },
+          "atk": {
+            "m_defined": true,
+            "m_value": 600
+          },
+          "def": {
+            "m_defined": true,
+            "m_value": 350
+          },
+          "magicResistance": {
+            "m_defined": true,
+            "m_value": 50.0
+          },
+          "cost": {
+            "m_defined": false,
+            "m_value": 0
+          },
+          "blockCnt": {
+            "m_defined": false,
+            "m_value": 0
+          },
+          "moveSpeed": {
+            "m_defined": true,
+            "m_value": 0.45
+          },
+          "attackSpeed": {
+            "m_defined": true,
+            "m_value": 100.0
+          },
+          "baseAttackTime": {
+            "m_defined": true,
+            "m_value": 5.0
+          },
+          "respawnTime": {
+            "m_defined": false,
+            "m_value": 0
+          },
+          "hpRecoveryPerSec": {
+            "m_defined": false,
+            "m_value": 0.0
+          },
+          "spRecoveryPerSec": {
+            "m_defined": false,
+            "m_value": 0.0
+          },
+          "maxDeployCount": {
+            "m_defined": false,
+            "m_value": 0
+          },
+          "massLevel": {
+            "m_defined": true,
+            "m_value": 6
+          },
+          "baseForceLevel": {
+            "m_defined": false,
+            "m_value": 0
+          },
+          "tauntLevel": {
+            "m_defined": false,
+            "m_value": 0
+          },
+          "stunImmune": {
+            "m_defined": false,
+            "m_value": false
+          },
+          "silenceImmune": {
+            "m_defined": false,
+            "m_value": false
+          },
+          "sleepImmune": {
+            "m_defined": false,
+            "m_value": false
+          },
+          "frozenImmune": {
+            "m_defined": false,
+            "m_value": false
+          },
+          "levitateImmune": {
+            "m_defined": false,
+            "m_value": false
+          }
+        },
+        "lifePointReduce": {
+          "m_defined": true,
+          "m_value": 0
+        },
+        "levelType": {
+          "m_defined": true,
+          "m_value": 2
+        },
+        "rangeRadius": {
+          "m_defined": true,
+          "m_value": 1.5
+        },
+        "numOfExtraDrops": {
+          "m_defined": false,
+          "m_value": 0
+        },
+        "talentBlackboard": [
+          {
+            "key": "dead.value",
+            "value": -2.0,
+            "valueStr": null
+          },
+          {
+            "key": "halfhp.def",
+            "value": 0.5,
+            "valueStr": null
+          },
+          {
+            "key": "halfhp.magic_resistance",
+            "value": 0.5,
+            "valueStr": null
+          }
+        ],
+        "skills": [
+          {
+            "prefabKey": "DragonFire",
+            "priority": 0,
+            "cooldown": 20.0,
+            "initCooldown": 20.0,
+            "spCost": 0,
+            "blackboard": [
+              {
+                "key": "dragon_fire.duration",
+                "value": 30.5,
+                "valueStr": null
+              },
+              {
+                "key": "dragon_fire.baseDamage",
+                "value": 200.0,
+                "valueStr": null
+              },
+              {
+                "key": "dragon_fire.addOnDamage",
+                "value": 200.0,
+                "valueStr": null
+              },
+              {
+                "key": "dragon_fire.addOnDuration",
+                "value": 20.0,
+                "valueStr": null
+              }
+            ]
+          },
+          {
+            "prefabKey": "DanceFire",
+            "priority": 0,
+            "cooldown": 10000.0,
+            "initCooldown": 10000.0,
+            "spCost": 0,
+            "blackboard": [
+              {
+                "key": "atk_scale",
+                "value": 2.0,
+                "valueStr": null
+              },
+              {
+                "key": "range_radius",
+                "value": 2.5,
+                "valueStr": null
+              }
+            ]
+          },
+          {
+            "prefabKey": "DragonFire[Half]",
+            "priority": 0,
+            "cooldown": 10.0,
+            "initCooldown": 10.0,
+            "spCost": 0,
+            "blackboard": [
+              {
+                "key": "dragon_fire.duration",
+                "value": 30.5,
+                "valueStr": null
+              },
+              {
+                "key": "dragon_fire.baseDamage",
+                "value": 200.0,
+                "valueStr": null
+              },
+              {
+                "key": "dragon_fire.addOnDamage",
+                "value": 200.0,
+                "valueStr": null
+              },
+              {
+                "key": "dragon_fire.addOnDuration",
+                "value": 20.0,
+                "valueStr": null
+              }
+            ]
+          },
+          {
+            "prefabKey": "DanceFire[Half]",
+            "priority": 0,
+            "cooldown": 10000.0,
+            "initCooldown": 10000.0,
+            "spCost": 0,
+            "blackboard": [
+              {
+                "key": "atk_scale",
+                "value": 2.0,
+                "valueStr": null
+              },
+              {
+                "key": "range_radius",
+                "value": 2.5,
+                "valueStr": null
+              }
+            ]
+          }
+        ],
+        "spData": null
+      }
+    }
+  ]
+}

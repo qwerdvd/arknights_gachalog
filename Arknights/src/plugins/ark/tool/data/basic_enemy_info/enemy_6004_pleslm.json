@@ -1,0 +1,182 @@
+{
+  "enemy_name": "enemy_6004_pleslm",
+  "level": [
+    {
+      "level": 0,
+      "enemyData": {
+        "name": {
+          "m_defined": true,
+          "m_value": "“米兰”"
+        },
+        "description": {
+          "m_defined": true,
+          "m_value": "逃入荒野的家养源石虫。体型巨大，背部结晶厚实，攻击性不强且极为擅长与人类“互动”。"
+        },
+        "prefabKey": {
+          "m_defined": true,
+          "m_value": "enemy_6004_pleslm"
+        },
+        "attributes": {
+          "maxHp": {
+            "m_defined": true,
+            "m_value": 60000
+          },
+          "atk": {
+            "m_defined": true,
+            "m_value": 1000
+          },
+          "def": {
+            "m_defined": true,
+            "m_value": 800
+          },
+          "magicResistance": {
+            "m_defined": true,
+            "m_value": 50.0
+          },
+          "cost": {
+            "m_defined": false,
+            "m_value": 0
+          },
+          "blockCnt": {
+            "m_defined": false,
+            "m_value": 0
+          },
+          "moveSpeed": {
+            "m_defined": true,
+            "m_value": 0.5
+          },
+          "attackSpeed": {
+            "m_defined": true,
+            "m_value": 100.0
+          },
+          "baseAttackTime": {
+            "m_defined": true,
+            "m_value": 5.0
+          },
+          "respawnTime": {
+            "m_defined": false,
+            "m_value": 0
+          },
+          "hpRecoveryPerSec": {
+            "m_defined": false,
+            "m_value": 0.0
+          },
+          "spRecoveryPerSec": {
+            "m_defined": false,
+            "m_value": 0.0
+          },
+          "maxDeployCount": {
+            "m_defined": false,
+            "m_value": 0
+          },
+          "massLevel": {
+            "m_defined": true,
+            "m_value": 6
+          },
+          "baseForceLevel": {
+            "m_defined": false,
+            "m_value": 0
+          },
+          "tauntLevel": {
+            "m_defined": false,
+            "m_value": 0
+          },
+          "stunImmune": {
+            "m_defined": false,
+            "m_value": false
+          },
+          "silenceImmune": {
+            "m_defined": true,
+            "m_value": true
+          },
+          "sleepImmune": {
+            "m_defined": true,
+            "m_value": true
+          },
+          "frozenImmune": {
+            "m_defined": false,
+            "m_value": false
+          },
+          "levitateImmune": {
+            "m_defined": false,
+            "m_value": false
+          }
+        },
+        "lifePointReduce": {
+          "m_defined": true,
+          "m_value": 3
+        },
+        "levelType": {
+          "m_defined": true,
+          "m_value": 2
+        },
+        "rangeRadius": {
+          "m_defined": false,
+          "m_value": 0.0
+        },
+        "numOfExtraDrops": {
+          "m_defined": false,
+          "m_value": 0
+        },
+        "talentBlackboard": [
+          {
+            "key": "selfbuff.atk",
+            "value": 1.8,
+            "valueStr": null
+          },
+          {
+            "key": "selfbuff.hp_ratio",
+            "value": 0.5,
+            "valueStr": null
+          },
+          {
+            "key": "selfbuff.damage_resistance",
+            "value": 0.25,
+            "valueStr": null
+          }
+        ],
+        "skills": [
+          {
+            "prefabKey": "TauntCard",
+            "priority": 0,
+            "cooldown": 60.0,
+            "initCooldown": 60.0,
+            "spCost": 0,
+            "blackboard": [
+              {
+                "key": "token_key",
+                "value": 0.0,
+                "valueStr": "trap_073_btauntcard"
+              },
+              {
+                "key": "cnt",
+                "value": 1.0,
+                "valueStr": null
+              }
+            ]
+          },
+          {
+            "prefabKey": "BombCard",
+            "priority": 0,
+            "cooldown": 80.0,
+            "initCooldown": 40.0,
+            "spCost": 0,
+            "blackboard": [
+              {
+                "key": "token_key",
+                "value": 0.0,
+                "valueStr": "trap_074_bbombcard"
+              },
+              {
+                "key": "cnt",
+                "value": 1.0,
+                "valueStr": null
+              }
+            ]
+          }
+        ],
+        "spData": null
+      }
+    }
+  ]
+}

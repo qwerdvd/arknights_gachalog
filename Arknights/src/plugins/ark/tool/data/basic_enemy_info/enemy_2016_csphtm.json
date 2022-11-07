@@ -1,0 +1,177 @@
+{
+  "enemy_name": "enemy_2016_csphtm",
+  "level": [
+    {
+      "level": 0,
+      "enemyData": {
+        "name": {
+          "m_defined": true,
+          "m_value": "卢西恩，“猩红血钻”"
+        },
+        "description": {
+          "m_defined": true,
+          "m_value": "剧团之灾卢西恩，代号傀影。会<@eb.key>穿过阻挡其的单位</>并留下<@eb.key>不祥幻影</>，攻击和技能额外造成<@eb.key>神经损伤</>。"
+        },
+        "prefabKey": {
+          "m_defined": true,
+          "m_value": "enemy_2016_csphtm"
+        },
+        "attributes": {
+          "maxHp": {
+            "m_defined": true,
+            "m_value": 80000
+          },
+          "atk": {
+            "m_defined": true,
+            "m_value": 1500
+          },
+          "def": {
+            "m_defined": true,
+            "m_value": 600
+          },
+          "magicResistance": {
+            "m_defined": true,
+            "m_value": 40.0
+          },
+          "cost": {
+            "m_defined": false,
+            "m_value": 0
+          },
+          "blockCnt": {
+            "m_defined": false,
+            "m_value": 0
+          },
+          "moveSpeed": {
+            "m_defined": true,
+            "m_value": 0.6
+          },
+          "attackSpeed": {
+            "m_defined": false,
+            "m_value": 0.0
+          },
+          "baseAttackTime": {
+            "m_defined": true,
+            "m_value": 3.0
+          },
+          "respawnTime": {
+            "m_defined": false,
+            "m_value": 0
+          },
+          "hpRecoveryPerSec": {
+            "m_defined": false,
+            "m_value": 0.0
+          },
+          "spRecoveryPerSec": {
+            "m_defined": false,
+            "m_value": 0.0
+          },
+          "maxDeployCount": {
+            "m_defined": false,
+            "m_value": 0
+          },
+          "massLevel": {
+            "m_defined": true,
+            "m_value": 6
+          },
+          "baseForceLevel": {
+            "m_defined": false,
+            "m_value": 0
+          },
+          "tauntLevel": {
+            "m_defined": false,
+            "m_value": 0
+          },
+          "stunImmune": {
+            "m_defined": true,
+            "m_value": true
+          },
+          "silenceImmune": {
+            "m_defined": true,
+            "m_value": true
+          },
+          "sleepImmune": {
+            "m_defined": true,
+            "m_value": true
+          },
+          "frozenImmune": {
+            "m_defined": true,
+            "m_value": true
+          },
+          "levitateImmune": {
+            "m_defined": false,
+            "m_value": false
+          }
+        },
+        "lifePointReduce": {
+          "m_defined": true,
+          "m_value": 30
+        },
+        "levelType": {
+          "m_defined": true,
+          "m_value": 2
+        },
+        "rangeRadius": {
+          "m_defined": false,
+          "m_value": 0.0
+        },
+        "numOfExtraDrops": {
+          "m_defined": false,
+          "m_value": 0
+        },
+        "talentBlackboard": [
+          {
+            "key": "penetrate.def_penetrate",
+            "value": 0.4,
+            "valueStr": null
+          },
+          {
+            "key": "evade.prob",
+            "value": 0.4,
+            "valueStr": null
+          },
+          {
+            "key": "combat.attack@ep_damage_ratio",
+            "value": 0.2,
+            "valueStr": null
+          }
+        ],
+        "skills": [
+          {
+            "prefabKey": "blink",
+            "priority": 1,
+            "cooldown": 15.0,
+            "initCooldown": 10.0,
+            "spCost": 0,
+            "blackboard": [
+              {
+                "key": "dist",
+                "value": 1.5,
+                "valueStr": null
+              }
+            ]
+          },
+          {
+            "prefabKey": "aoe",
+            "priority": 0,
+            "cooldown": 10.0,
+            "initCooldown": 5.0,
+            "spCost": 0,
+            "blackboard": [
+              {
+                "key": "ep_damage_ratio",
+                "value": 0.2,
+                "valueStr": null
+              },
+              {
+                "key": "atk_scale",
+                "value": 0.8,
+                "valueStr": null
+              }
+            ]
+          }
+        ],
+        "spData": null
+      }
+    }
+  ]
+}

@@ -1,0 +1,147 @@
+{
+  "enemy_name": "enemy_1271_nhkodo",
+  "level": [
+    {
+      "level": 0,
+      "enemyData": {
+        "name": {
+          "m_defined": true,
+          "m_value": "萨卡兹枯朽吞噬者"
+        },
+        "description": {
+          "m_defined": true,
+          "m_value": "首次被阻挡时吞噬阻挡者，<@eb.key>防御力</>大幅提升但<@eb.key>移动速度</>下降，被击倒时干员返回"
+        },
+        "prefabKey": {
+          "m_defined": true,
+          "m_value": "enemy_1271_nhkodo"
+        },
+        "attributes": {
+          "maxHp": {
+            "m_defined": true,
+            "m_value": 30000
+          },
+          "atk": {
+            "m_defined": true,
+            "m_value": 1050
+          },
+          "def": {
+            "m_defined": true,
+            "m_value": 0
+          },
+          "magicResistance": {
+            "m_defined": true,
+            "m_value": 20.0
+          },
+          "cost": {
+            "m_defined": false,
+            "m_value": 0
+          },
+          "blockCnt": {
+            "m_defined": false,
+            "m_value": 0
+          },
+          "moveSpeed": {
+            "m_defined": true,
+            "m_value": 0.6
+          },
+          "attackSpeed": {
+            "m_defined": false,
+            "m_value": 0.0
+          },
+          "baseAttackTime": {
+            "m_defined": true,
+            "m_value": 3.5
+          },
+          "respawnTime": {
+            "m_defined": false,
+            "m_value": 0
+          },
+          "hpRecoveryPerSec": {
+            "m_defined": false,
+            "m_value": 0.0
+          },
+          "spRecoveryPerSec": {
+            "m_defined": false,
+            "m_value": 0.0
+          },
+          "maxDeployCount": {
+            "m_defined": false,
+            "m_value": 0
+          },
+          "massLevel": {
+            "m_defined": true,
+            "m_value": 4
+          },
+          "baseForceLevel": {
+            "m_defined": false,
+            "m_value": 0
+          },
+          "tauntLevel": {
+            "m_defined": false,
+            "m_value": 0
+          },
+          "stunImmune": {
+            "m_defined": false,
+            "m_value": false
+          },
+          "silenceImmune": {
+            "m_defined": true,
+            "m_value": true
+          },
+          "sleepImmune": {
+            "m_defined": false,
+            "m_value": false
+          },
+          "frozenImmune": {
+            "m_defined": false,
+            "m_value": false
+          },
+          "levitateImmune": {
+            "m_defined": false,
+            "m_value": false
+          }
+        },
+        "lifePointReduce": {
+          "m_defined": true,
+          "m_value": 1
+        },
+        "levelType": {
+          "m_defined": true,
+          "m_value": 1
+        },
+        "rangeRadius": {
+          "m_defined": false,
+          "m_value": 0.0
+        },
+        "numOfExtraDrops": {
+          "m_defined": false,
+          "m_value": 0
+        },
+        "talentBlackboard": [
+          {
+            "key": "Stronger.def",
+            "value": 700.0,
+            "valueStr": null
+          },
+          {
+            "key": "Stronger.move_speed",
+            "value": -0.3,
+            "valueStr": null
+          }
+        ],
+        "skills": [
+          {
+            "prefabKey": "Devour",
+            "priority": 0,
+            "cooldown": -1.0,
+            "initCooldown": 0.0,
+            "spCost": 0,
+            "blackboard": null
+          }
+        ],
+        "spData": null
+      }
+    }
+  ]
+}

@@ -1,0 +1,362 @@
+{
+  "enemy_name": "enemy_1503_talula",
+  "level": [
+    {
+      "level": 0,
+      "enemyData": {
+        "name": {
+          "m_defined": true,
+          "m_value": "塔露拉"
+        },
+        "description": {
+          "m_defined": true,
+          "m_value": "令人捉摸不透的整合运动领袖。"
+        },
+        "prefabKey": {
+          "m_defined": true,
+          "m_value": "enemy_1503_talula"
+        },
+        "attributes": {
+          "maxHp": {
+            "m_defined": true,
+            "m_value": 50000
+          },
+          "atk": {
+            "m_defined": true,
+            "m_value": 1500
+          },
+          "def": {
+            "m_defined": true,
+            "m_value": 700
+          },
+          "magicResistance": {
+            "m_defined": true,
+            "m_value": 50.0
+          },
+          "cost": {
+            "m_defined": false,
+            "m_value": 0
+          },
+          "blockCnt": {
+            "m_defined": false,
+            "m_value": 0
+          },
+          "moveSpeed": {
+            "m_defined": true,
+            "m_value": 0.5
+          },
+          "attackSpeed": {
+            "m_defined": true,
+            "m_value": 100.0
+          },
+          "baseAttackTime": {
+            "m_defined": true,
+            "m_value": 4.5
+          },
+          "respawnTime": {
+            "m_defined": false,
+            "m_value": 0
+          },
+          "hpRecoveryPerSec": {
+            "m_defined": false,
+            "m_value": 0.0
+          },
+          "spRecoveryPerSec": {
+            "m_defined": false,
+            "m_value": 0.0
+          },
+          "maxDeployCount": {
+            "m_defined": false,
+            "m_value": 0
+          },
+          "massLevel": {
+            "m_defined": true,
+            "m_value": 6
+          },
+          "baseForceLevel": {
+            "m_defined": false,
+            "m_value": 0
+          },
+          "tauntLevel": {
+            "m_defined": false,
+            "m_value": 0
+          },
+          "stunImmune": {
+            "m_defined": true,
+            "m_value": true
+          },
+          "silenceImmune": {
+            "m_defined": true,
+            "m_value": true
+          },
+          "sleepImmune": {
+            "m_defined": true,
+            "m_value": true
+          },
+          "frozenImmune": {
+            "m_defined": true,
+            "m_value": true
+          },
+          "levitateImmune": {
+            "m_defined": true,
+            "m_value": true
+          }
+        },
+        "lifePointReduce": {
+          "m_defined": true,
+          "m_value": 2
+        },
+        "levelType": {
+          "m_defined": true,
+          "m_value": 2
+        },
+        "rangeRadius": {
+          "m_defined": true,
+          "m_value": 2.5
+        },
+        "numOfExtraDrops": {
+          "m_defined": false,
+          "m_value": 0
+        },
+        "talentBlackboard": [
+          {
+            "key": "halfhp.def",
+            "value": 1.0,
+            "valueStr": null
+          },
+          {
+            "key": "halfhp.magic_resistance",
+            "value": 0.8,
+            "valueStr": null
+          },
+          {
+            "key": "halfhp.hp_ratio",
+            "value": 0.5,
+            "valueStr": null
+          }
+        ],
+        "skills": [
+          {
+            "prefabKey": "DragonFire",
+            "priority": 0,
+            "cooldown": 19.0,
+            "initCooldown": 19.0,
+            "spCost": 0,
+            "blackboard": [
+              {
+                "key": "dragon_fire.duration",
+                "value": 30.5,
+                "valueStr": null
+              },
+              {
+                "key": "dragon_fire.baseDamage",
+                "value": 50.0,
+                "valueStr": null
+              },
+              {
+                "key": "dragon_fire.addOnDamage",
+                "value": 180.0,
+                "valueStr": null
+              },
+              {
+                "key": "dragon_fire.addOnDuration",
+                "value": 30.0,
+                "valueStr": null
+              }
+            ]
+          },
+          {
+            "prefabKey": "DanceFire",
+            "priority": 1,
+            "cooldown": 40.0,
+            "initCooldown": 40.0,
+            "spCost": 0,
+            "blackboard": [
+              {
+                "key": "atk_scale",
+                "value": 1.0,
+                "valueStr": null
+              },
+              {
+                "key": "range_radius",
+                "value": 2.5,
+                "valueStr": null
+              }
+            ]
+          },
+          {
+            "prefabKey": "DragonFire[Half]",
+            "priority": 0,
+            "cooldown": 7.0,
+            "initCooldown": 7.0,
+            "spCost": 0,
+            "blackboard": [
+              {
+                "key": "dragon_fire.duration",
+                "value": 30.5,
+                "valueStr": null
+              },
+              {
+                "key": "dragon_fire.baseDamage",
+                "value": 50.0,
+                "valueStr": null
+              },
+              {
+                "key": "dragon_fire.addOnDamage",
+                "value": 180.0,
+                "valueStr": null
+              },
+              {
+                "key": "dragon_fire.addOnDuration",
+                "value": 30.0,
+                "valueStr": null
+              }
+            ]
+          },
+          {
+            "prefabKey": "DanceFire[Half]",
+            "priority": 1,
+            "cooldown": 15.0,
+            "initCooldown": 15.0,
+            "spCost": 0,
+            "blackboard": [
+              {
+                "key": "atk_scale",
+                "value": 1.0,
+                "valueStr": null
+              },
+              {
+                "key": "range_radius",
+                "value": 2.5,
+                "valueStr": null
+              }
+            ]
+          }
+        ],
+        "spData": null
+      }
+    },
+    {
+      "level": 1,
+      "enemyData": {
+        "name": {
+          "m_defined": false,
+          "m_value": null
+        },
+        "description": {
+          "m_defined": false,
+          "m_value": null
+        },
+        "prefabKey": {
+          "m_defined": false,
+          "m_value": null
+        },
+        "attributes": {
+          "maxHp": {
+            "m_defined": true,
+            "m_value": 60000
+          },
+          "atk": {
+            "m_defined": true,
+            "m_value": 1800
+          },
+          "def": {
+            "m_defined": false,
+            "m_value": 0
+          },
+          "magicResistance": {
+            "m_defined": false,
+            "m_value": 0.0
+          },
+          "cost": {
+            "m_defined": false,
+            "m_value": 0
+          },
+          "blockCnt": {
+            "m_defined": false,
+            "m_value": 0
+          },
+          "moveSpeed": {
+            "m_defined": false,
+            "m_value": 0.0
+          },
+          "attackSpeed": {
+            "m_defined": false,
+            "m_value": 0.0
+          },
+          "baseAttackTime": {
+            "m_defined": false,
+            "m_value": 0.0
+          },
+          "respawnTime": {
+            "m_defined": false,
+            "m_value": 0
+          },
+          "hpRecoveryPerSec": {
+            "m_defined": false,
+            "m_value": 0.0
+          },
+          "spRecoveryPerSec": {
+            "m_defined": false,
+            "m_value": 0.0
+          },
+          "maxDeployCount": {
+            "m_defined": false,
+            "m_value": 0
+          },
+          "massLevel": {
+            "m_defined": false,
+            "m_value": 0
+          },
+          "baseForceLevel": {
+            "m_defined": false,
+            "m_value": 0
+          },
+          "tauntLevel": {
+            "m_defined": false,
+            "m_value": 0
+          },
+          "stunImmune": {
+            "m_defined": false,
+            "m_value": false
+          },
+          "silenceImmune": {
+            "m_defined": false,
+            "m_value": false
+          },
+          "sleepImmune": {
+            "m_defined": false,
+            "m_value": false
+          },
+          "frozenImmune": {
+            "m_defined": false,
+            "m_value": false
+          },
+          "levitateImmune": {
+            "m_defined": false,
+            "m_value": false
+          }
+        },
+        "lifePointReduce": {
+          "m_defined": false,
+          "m_value": 0
+        },
+        "levelType": {
+          "m_defined": false,
+          "m_value": 0
+        },
+        "rangeRadius": {
+          "m_defined": false,
+          "m_value": 0.0
+        },
+        "numOfExtraDrops": {
+          "m_defined": false,
+          "m_value": 0
+        },
+        "talentBlackboard": null,
+        "skills": null,
+        "spData": null
+      }
+    }
+  ]
+}

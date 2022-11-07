@@ -1,0 +1,173 @@
+{
+  "enemy_name": "enemy_1223_dmech_2",
+  "level": [
+    {
+      "level": 0,
+      "enemyData": {
+        "name": {
+          "m_defined": true,
+          "m_value": "萨卡兹子裔工匠组长"
+        },
+        "description": {
+          "m_defined": true,
+          "m_value": "为<@eb.key>伦蒂尼姆城防副炮</>持续充能，被打断时城防炮<@eb.key>损失部分充能</>；首次倒下后重生为<@eb.key><仁慈之触></>。"
+        },
+        "prefabKey": {
+          "m_defined": true,
+          "m_value": "enemy_1223_dmech_2"
+        },
+        "attributes": {
+          "maxHp": {
+            "m_defined": true,
+            "m_value": 8000
+          },
+          "atk": {
+            "m_defined": true,
+            "m_value": 380
+          },
+          "def": {
+            "m_defined": true,
+            "m_value": 350
+          },
+          "magicResistance": {
+            "m_defined": true,
+            "m_value": 20.0
+          },
+          "cost": {
+            "m_defined": false,
+            "m_value": 0
+          },
+          "blockCnt": {
+            "m_defined": false,
+            "m_value": 0
+          },
+          "moveSpeed": {
+            "m_defined": true,
+            "m_value": 1.0
+          },
+          "attackSpeed": {
+            "m_defined": true,
+            "m_value": 100.0
+          },
+          "baseAttackTime": {
+            "m_defined": true,
+            "m_value": 2.0
+          },
+          "respawnTime": {
+            "m_defined": false,
+            "m_value": 0
+          },
+          "hpRecoveryPerSec": {
+            "m_defined": false,
+            "m_value": 0.0
+          },
+          "spRecoveryPerSec": {
+            "m_defined": false,
+            "m_value": 0.0
+          },
+          "maxDeployCount": {
+            "m_defined": false,
+            "m_value": 0
+          },
+          "massLevel": {
+            "m_defined": true,
+            "m_value": 1
+          },
+          "baseForceLevel": {
+            "m_defined": false,
+            "m_value": 0
+          },
+          "tauntLevel": {
+            "m_defined": false,
+            "m_value": 0
+          },
+          "stunImmune": {
+            "m_defined": false,
+            "m_value": false
+          },
+          "silenceImmune": {
+            "m_defined": false,
+            "m_value": false
+          },
+          "sleepImmune": {
+            "m_defined": false,
+            "m_value": false
+          },
+          "frozenImmune": {
+            "m_defined": false,
+            "m_value": false
+          },
+          "levitateImmune": {
+            "m_defined": false,
+            "m_value": false
+          }
+        },
+        "lifePointReduce": {
+          "m_defined": false,
+          "m_value": 0
+        },
+        "levelType": {
+          "m_defined": false,
+          "m_value": 0
+        },
+        "rangeRadius": {
+          "m_defined": false,
+          "m_value": -1.0
+        },
+        "numOfExtraDrops": {
+          "m_defined": false,
+          "m_value": 0
+        },
+        "talentBlackboard": [
+          {
+            "key": "deathrattle.enemy_key",
+            "value": 0.0,
+            "valueStr": "enemy_1220_dzoms_2"
+          },
+          {
+            "key": "deathrattle.delay",
+            "value": 1.0,
+            "valueStr": null
+          }
+        ],
+        "skills": [
+          {
+            "prefabKey": "charge_gunctrl",
+            "priority": 0,
+            "cooldown": 5.0,
+            "initCooldown": 0.0,
+            "spCost": 5,
+            "blackboard": [
+              {
+                "key": "interval",
+                "value": 1.0,
+                "valueStr": null
+              },
+              {
+                "key": "hit_duration",
+                "value": 20.0,
+                "valueStr": null
+              },
+              {
+                "key": "sp",
+                "value": 1.0,
+                "valueStr": null
+              },
+              {
+                "key": "enemy_dmech_charge[sp_reduce].sp",
+                "value": -15.0,
+                "valueStr": null
+              }
+            ]
+          }
+        ],
+        "spData": {
+          "spType": 1,
+          "maxSp": 5,
+          "initSp": 0,
+          "increment": 1.0
+        }
+      }
+    }
+  ]
+}

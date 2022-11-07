@@ -1,0 +1,223 @@
+{
+  "enemy_name": "enemy_2039_syskad",
+  "level": [
+    {
+      "level": 0,
+      "enemyData": {
+        "name": {
+          "m_defined": true,
+          "m_value": "伊莎玛拉，腐化之心"
+        },
+        "description": {
+          "m_defined": true,
+          "m_value": "她不再歌唱，它为大群发声。在我方角色附近留下<@eb.key>伊莎玛拉之泪</>为变身充能，在<@eb.key>伊莎玛拉之泪</>部署角色可阻止充能"
+        },
+        "prefabKey": {
+          "m_defined": true,
+          "m_value": "enemy_2039_syskad"
+        },
+        "attributes": {
+          "maxHp": {
+            "m_defined": true,
+            "m_value": 90000
+          },
+          "atk": {
+            "m_defined": true,
+            "m_value": 1600
+          },
+          "def": {
+            "m_defined": true,
+            "m_value": 1200
+          },
+          "magicResistance": {
+            "m_defined": true,
+            "m_value": 70.0
+          },
+          "cost": {
+            "m_defined": false,
+            "m_value": 0
+          },
+          "blockCnt": {
+            "m_defined": false,
+            "m_value": 0
+          },
+          "moveSpeed": {
+            "m_defined": true,
+            "m_value": 0.6
+          },
+          "attackSpeed": {
+            "m_defined": true,
+            "m_value": 100.0
+          },
+          "baseAttackTime": {
+            "m_defined": true,
+            "m_value": 6.0
+          },
+          "respawnTime": {
+            "m_defined": false,
+            "m_value": 0
+          },
+          "hpRecoveryPerSec": {
+            "m_defined": false,
+            "m_value": 0.0
+          },
+          "spRecoveryPerSec": {
+            "m_defined": false,
+            "m_value": 0.0
+          },
+          "maxDeployCount": {
+            "m_defined": false,
+            "m_value": 0
+          },
+          "massLevel": {
+            "m_defined": true,
+            "m_value": 6
+          },
+          "baseForceLevel": {
+            "m_defined": false,
+            "m_value": 0
+          },
+          "tauntLevel": {
+            "m_defined": false,
+            "m_value": 0
+          },
+          "stunImmune": {
+            "m_defined": true,
+            "m_value": true
+          },
+          "silenceImmune": {
+            "m_defined": true,
+            "m_value": true
+          },
+          "sleepImmune": {
+            "m_defined": true,
+            "m_value": true
+          },
+          "frozenImmune": {
+            "m_defined": true,
+            "m_value": true
+          },
+          "levitateImmune": {
+            "m_defined": true,
+            "m_value": true
+          }
+        },
+        "lifePointReduce": {
+          "m_defined": true,
+          "m_value": 30
+        },
+        "levelType": {
+          "m_defined": true,
+          "m_value": 2
+        },
+        "rangeRadius": {
+          "m_defined": false,
+          "m_value": 0.0
+        },
+        "numOfExtraDrops": {
+          "m_defined": false,
+          "m_value": 0
+        },
+        "talentBlackboard": [
+          {
+            "key": "Reborn.duration",
+            "value": 5.0,
+            "valueStr": null
+          },
+          {
+            "key": "Reborn.hp_ratio",
+            "value": 0.02,
+            "valueStr": null
+          },
+          {
+            "key": "HpSave.dynamic",
+            "value": -1.0,
+            "valueStr": null
+          },
+          {
+            "key": "FetchAttributes.syskad_t[fetch].hp_ratio",
+            "value": 1.0,
+            "valueStr": null
+          },
+          {
+            "key": "FetchAttributes.syskad_t[monster].max_hp",
+            "value": 0.5,
+            "valueStr": null
+          },
+          {
+            "key": "FetchAttributes.syskad_t[monster].atk",
+            "value": 0.625,
+            "valueStr": null
+          },
+          {
+            "key": "FetchAttributes.syskad_t[monster].def",
+            "value": 0.3,
+            "valueStr": null
+          },
+          {
+            "key": "FetchAttributes.syskad_t[monster].magic_resistance",
+            "value": 0.5,
+            "valueStr": null
+          },
+          {
+            "key": "FetchAttributes.syskad_t[monster].move_speed",
+            "value": -0.2,
+            "valueStr": null
+          },
+          {
+            "key": "FetchAttributes.syskad_t[monster].base_attack_time",
+            "value": 0.5,
+            "valueStr": null
+          },
+          {
+            "key": "FetchAttributes.syskad_t[monster].hp_ratio",
+            "value": 1.0,
+            "valueStr": null
+          },
+          {
+            "key": "Berserk.hp_ratio",
+            "value": 0.5,
+            "valueStr": null
+          },
+          {
+            "key": "Berserk.atk",
+            "value": 0.5,
+            "valueStr": null
+          }
+        ],
+        "skills": [
+          {
+            "prefabKey": "change",
+            "priority": 0,
+            "cooldown": 0.0,
+            "initCooldown": 0.0,
+            "spCost": 120,
+            "blackboard": null
+          },
+          {
+            "prefabKey": "BerserkCorrupt",
+            "priority": 1,
+            "cooldown": 0.0,
+            "initCooldown": 0.0,
+            "spCost": 0,
+            "blackboard": null
+          },
+          {
+            "prefabKey": "Corrupt",
+            "priority": 0,
+            "cooldown": 30.0,
+            "initCooldown": 8.0,
+            "spCost": 0,
+            "blackboard": null
+          }
+        ],
+        "spData": {
+          "spType": 1,
+          "maxSp": 120,
+          "initSp": 0,
+          "increment": 1.0
+        }
+      }
+    }
+  ]
+}

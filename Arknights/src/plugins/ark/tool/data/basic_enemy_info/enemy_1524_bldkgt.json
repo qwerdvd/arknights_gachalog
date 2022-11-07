@@ -1,0 +1,388 @@
+{
+  "enemy_name": "enemy_1524_bldkgt",
+  "level": [
+    {
+      "level": 0,
+      "enemyData": {
+        "name": {
+          "m_defined": true,
+          "m_value": "血骑士狄开俄波利斯"
+        },
+        "description": {
+          "m_defined": true,
+          "m_value": "卡西米尔感染者骑士参赛制度的提议人，大骑士领感染者的英雄，无数孩子与感染者心中的偶像。"
+        },
+        "prefabKey": {
+          "m_defined": true,
+          "m_value": "enemy_1524_bldkgt"
+        },
+        "attributes": {
+          "maxHp": {
+            "m_defined": true,
+            "m_value": 30000
+          },
+          "atk": {
+            "m_defined": true,
+            "m_value": 1750
+          },
+          "def": {
+            "m_defined": true,
+            "m_value": 1000
+          },
+          "magicResistance": {
+            "m_defined": true,
+            "m_value": 40.0
+          },
+          "cost": {
+            "m_defined": false,
+            "m_value": 0
+          },
+          "blockCnt": {
+            "m_defined": false,
+            "m_value": 0
+          },
+          "moveSpeed": {
+            "m_defined": true,
+            "m_value": 0.6
+          },
+          "attackSpeed": {
+            "m_defined": false,
+            "m_value": 0.0
+          },
+          "baseAttackTime": {
+            "m_defined": true,
+            "m_value": 6.0
+          },
+          "respawnTime": {
+            "m_defined": false,
+            "m_value": 0
+          },
+          "hpRecoveryPerSec": {
+            "m_defined": false,
+            "m_value": 0.0
+          },
+          "spRecoveryPerSec": {
+            "m_defined": false,
+            "m_value": 0.0
+          },
+          "maxDeployCount": {
+            "m_defined": false,
+            "m_value": 0
+          },
+          "massLevel": {
+            "m_defined": true,
+            "m_value": 7
+          },
+          "baseForceLevel": {
+            "m_defined": false,
+            "m_value": 0
+          },
+          "tauntLevel": {
+            "m_defined": false,
+            "m_value": 0
+          },
+          "stunImmune": {
+            "m_defined": true,
+            "m_value": true
+          },
+          "silenceImmune": {
+            "m_defined": true,
+            "m_value": true
+          },
+          "sleepImmune": {
+            "m_defined": true,
+            "m_value": true
+          },
+          "frozenImmune": {
+            "m_defined": true,
+            "m_value": true
+          },
+          "levitateImmune": {
+            "m_defined": false,
+            "m_value": false
+          }
+        },
+        "lifePointReduce": {
+          "m_defined": true,
+          "m_value": 2
+        },
+        "levelType": {
+          "m_defined": true,
+          "m_value": 2
+        },
+        "rangeRadius": {
+          "m_defined": false,
+          "m_value": 0.0
+        },
+        "numOfExtraDrops": {
+          "m_defined": false,
+          "m_value": 0
+        },
+        "talentBlackboard": [
+          {
+            "key": "Passive.damage_scale",
+            "value": 0.75,
+            "valueStr": null
+          },
+          {
+            "key": "Passive2.damage_scale",
+            "value": 0.5,
+            "valueStr": null
+          },
+          {
+            "key": "Reborn.hp_ratio",
+            "value": 0.5,
+            "valueStr": null
+          },
+          {
+            "key": "Reborn.duration",
+            "value": 0.5,
+            "valueStr": null
+          },
+          {
+            "key": "CheckTrigger.recovery_time",
+            "value": 60.0,
+            "valueStr": null
+          },
+          {
+            "key": "CheckTrigger.hp_ratio",
+            "value": 1.0,
+            "valueStr": null
+          },
+          {
+            "key": "Passive2.atk",
+            "value": 0.5,
+            "valueStr": null
+          },
+          {
+            "key": "Passive2.invincible_time",
+            "value": 6.0,
+            "valueStr": null
+          },
+          {
+            "key": "Devour.hp_ratio",
+            "value": 0.1,
+            "valueStr": null
+          }
+        ],
+        "skills": [
+          {
+            "prefabKey": "BloodPool",
+            "priority": 0,
+            "cooldown": 15.0,
+            "initCooldown": 10.0,
+            "spCost": 0,
+            "blackboard": [
+              {
+                "key": "stun",
+                "value": 10.0,
+                "valueStr": null
+              },
+              {
+                "key": "interval",
+                "value": 1.0,
+                "valueStr": null
+              },
+              {
+                "key": "damage",
+                "value": 200.0,
+                "valueStr": null
+              }
+            ]
+          },
+          {
+            "prefabKey": "SummonBldbld",
+            "priority": 0,
+            "cooldown": 10.0,
+            "initCooldown": 2.0,
+            "spCost": 0,
+            "blackboard": [
+              {
+                "key": "branch_id",
+                "value": 0.0,
+                "valueStr": "bldkgt_bldbld"
+              }
+            ]
+          },
+          {
+            "prefabKey": "SummonBldbld2",
+            "priority": 0,
+            "cooldown": 12.0,
+            "initCooldown": 5.0,
+            "spCost": 0,
+            "blackboard": [
+              {
+                "key": "branch_id",
+                "value": 0.0,
+                "valueStr": "bldkgt_bldbld2"
+              }
+            ]
+          },
+          {
+            "prefabKey": "BloodPool2",
+            "priority": 0,
+            "cooldown": 15.0,
+            "initCooldown": 10.0,
+            "spCost": 0,
+            "blackboard": [
+              {
+                "key": "stun",
+                "value": 10.0,
+                "valueStr": null
+              },
+              {
+                "key": "interval",
+                "value": 1.0,
+                "valueStr": null
+              },
+              {
+                "key": "damage",
+                "value": 200.0,
+                "valueStr": null
+              }
+            ]
+          },
+          {
+            "prefabKey": "RebornToPrev",
+            "priority": 0,
+            "cooldown": 0.0,
+            "initCooldown": 0.0,
+            "spCost": 0,
+            "blackboard": null
+          },
+          {
+            "prefabKey": "RebornToNext",
+            "priority": 0,
+            "cooldown": 0.0,
+            "initCooldown": 0.0,
+            "spCost": 0,
+            "blackboard": null
+          }
+        ],
+        "spData": null
+      }
+    },
+    {
+      "level": 1,
+      "enemyData": {
+        "name": {
+          "m_defined": false,
+          "m_value": null
+        },
+        "description": {
+          "m_defined": false,
+          "m_value": null
+        },
+        "prefabKey": {
+          "m_defined": false,
+          "m_value": null
+        },
+        "attributes": {
+          "maxHp": {
+            "m_defined": true,
+            "m_value": 50000
+          },
+          "atk": {
+            "m_defined": true,
+            "m_value": 2200
+          },
+          "def": {
+            "m_defined": true,
+            "m_value": 1200
+          },
+          "magicResistance": {
+            "m_defined": false,
+            "m_value": 0.0
+          },
+          "cost": {
+            "m_defined": false,
+            "m_value": 0
+          },
+          "blockCnt": {
+            "m_defined": false,
+            "m_value": 0
+          },
+          "moveSpeed": {
+            "m_defined": false,
+            "m_value": 0.0
+          },
+          "attackSpeed": {
+            "m_defined": false,
+            "m_value": 0.0
+          },
+          "baseAttackTime": {
+            "m_defined": false,
+            "m_value": 0.0
+          },
+          "respawnTime": {
+            "m_defined": false,
+            "m_value": 0
+          },
+          "hpRecoveryPerSec": {
+            "m_defined": false,
+            "m_value": 0.0
+          },
+          "spRecoveryPerSec": {
+            "m_defined": false,
+            "m_value": 0.0
+          },
+          "maxDeployCount": {
+            "m_defined": false,
+            "m_value": 0
+          },
+          "massLevel": {
+            "m_defined": false,
+            "m_value": 0
+          },
+          "baseForceLevel": {
+            "m_defined": false,
+            "m_value": 0
+          },
+          "tauntLevel": {
+            "m_defined": false,
+            "m_value": 0
+          },
+          "stunImmune": {
+            "m_defined": false,
+            "m_value": false
+          },
+          "silenceImmune": {
+            "m_defined": false,
+            "m_value": false
+          },
+          "sleepImmune": {
+            "m_defined": false,
+            "m_value": false
+          },
+          "frozenImmune": {
+            "m_defined": false,
+            "m_value": false
+          },
+          "levitateImmune": {
+            "m_defined": false,
+            "m_value": false
+          }
+        },
+        "lifePointReduce": {
+          "m_defined": false,
+          "m_value": 0
+        },
+        "levelType": {
+          "m_defined": false,
+          "m_value": 0
+        },
+        "rangeRadius": {
+          "m_defined": false,
+          "m_value": 0.0
+        },
+        "numOfExtraDrops": {
+          "m_defined": false,
+          "m_value": 0
+        },
+        "talentBlackboard": null,
+        "skills": null,
+        "spData": null
+      }
+    }
+  ]
+}

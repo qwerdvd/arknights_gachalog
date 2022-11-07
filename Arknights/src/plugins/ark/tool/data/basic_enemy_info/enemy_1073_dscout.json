@@ -1,0 +1,153 @@
+{
+  "enemy_name": "enemy_1073_dscout",
+  "level": [
+    {
+      "level": 0,
+      "enemyData": {
+        "name": {
+          "m_defined": true,
+          "m_value": "萨卡兹哨兵"
+        },
+        "description": {
+          "m_defined": true,
+          "m_value": "受伤后发出警报，提升全体敌方的攻击和防御，并使<@eb.key>待命</>单位敌人立即进入<@eb.key>临战</>状态。"
+        },
+        "prefabKey": {
+          "m_defined": true,
+          "m_value": "enemy_1073_dscout"
+        },
+        "attributes": {
+          "maxHp": {
+            "m_defined": true,
+            "m_value": 4000
+          },
+          "atk": {
+            "m_defined": true,
+            "m_value": 0
+          },
+          "def": {
+            "m_defined": true,
+            "m_value": 100
+          },
+          "magicResistance": {
+            "m_defined": true,
+            "m_value": 30.0
+          },
+          "cost": {
+            "m_defined": false,
+            "m_value": 0
+          },
+          "blockCnt": {
+            "m_defined": false,
+            "m_value": 0
+          },
+          "moveSpeed": {
+            "m_defined": true,
+            "m_value": 0.5
+          },
+          "attackSpeed": {
+            "m_defined": true,
+            "m_value": 100.0
+          },
+          "baseAttackTime": {
+            "m_defined": true,
+            "m_value": 1.0
+          },
+          "respawnTime": {
+            "m_defined": false,
+            "m_value": 0
+          },
+          "hpRecoveryPerSec": {
+            "m_defined": true,
+            "m_value": 0.0
+          },
+          "spRecoveryPerSec": {
+            "m_defined": true,
+            "m_value": 0.0
+          },
+          "maxDeployCount": {
+            "m_defined": false,
+            "m_value": 0
+          },
+          "massLevel": {
+            "m_defined": true,
+            "m_value": 1
+          },
+          "baseForceLevel": {
+            "m_defined": false,
+            "m_value": 0
+          },
+          "tauntLevel": {
+            "m_defined": false,
+            "m_value": 0
+          },
+          "stunImmune": {
+            "m_defined": true,
+            "m_value": true
+          },
+          "silenceImmune": {
+            "m_defined": true,
+            "m_value": true
+          },
+          "sleepImmune": {
+            "m_defined": true,
+            "m_value": true
+          },
+          "frozenImmune": {
+            "m_defined": true,
+            "m_value": true
+          },
+          "levitateImmune": {
+            "m_defined": false,
+            "m_value": false
+          }
+        },
+        "lifePointReduce": {
+          "m_defined": true,
+          "m_value": 1
+        },
+        "levelType": {
+          "m_defined": false,
+          "m_value": 0
+        },
+        "rangeRadius": {
+          "m_defined": false,
+          "m_value": 0.0
+        },
+        "numOfExtraDrops": {
+          "m_defined": false,
+          "m_value": 0
+        },
+        "talentBlackboard": [
+          {
+            "key": "warn.hp_ratio",
+            "value": 0.999,
+            "valueStr": null
+          }
+        ],
+        "skills": [
+          {
+            "prefabKey": "Awake",
+            "priority": 0,
+            "cooldown": 0.0,
+            "initCooldown": 0.1,
+            "spCost": 0,
+            "blackboard": [
+              {
+                "key": "atk",
+                "value": 0.3,
+                "valueStr": null
+              },
+              {
+                "key": "def",
+                "value": 0.3,
+                "valueStr": null
+              }
+            ]
+          }
+        ],
+        "spData": null
+      }
+    }
+  ]
+}

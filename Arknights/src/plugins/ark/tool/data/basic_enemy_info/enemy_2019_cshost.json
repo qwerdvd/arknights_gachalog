@@ -1,0 +1,173 @@
+{
+  "enemy_name": "enemy_2019_cshost",
+  "level": [
+    {
+      "level": 0,
+      "enemyData": {
+        "name": {
+          "m_defined": true,
+          "m_value": "“剧团喉舌”"
+        },
+        "description": {
+          "m_defined": true,
+          "m_value": "盛大戏剧的报幕人，<@eb.key>永久无敌</>，会操纵<@eb.key>“报幕助手”</>协助战斗，击杀<@eb.key>“报幕助手”</>会使其流失生命。"
+        },
+        "prefabKey": {
+          "m_defined": true,
+          "m_value": "enemy_2019_cshost"
+        },
+        "attributes": {
+          "maxHp": {
+            "m_defined": true,
+            "m_value": 100000
+          },
+          "atk": {
+            "m_defined": true,
+            "m_value": 1000
+          },
+          "def": {
+            "m_defined": true,
+            "m_value": 0
+          },
+          "magicResistance": {
+            "m_defined": true,
+            "m_value": 0.0
+          },
+          "cost": {
+            "m_defined": false,
+            "m_value": 0
+          },
+          "blockCnt": {
+            "m_defined": false,
+            "m_value": 0
+          },
+          "moveSpeed": {
+            "m_defined": true,
+            "m_value": 0.5
+          },
+          "attackSpeed": {
+            "m_defined": false,
+            "m_value": 0.0
+          },
+          "baseAttackTime": {
+            "m_defined": true,
+            "m_value": 4.0
+          },
+          "respawnTime": {
+            "m_defined": false,
+            "m_value": 0
+          },
+          "hpRecoveryPerSec": {
+            "m_defined": false,
+            "m_value": 0.0
+          },
+          "spRecoveryPerSec": {
+            "m_defined": false,
+            "m_value": 0.0
+          },
+          "maxDeployCount": {
+            "m_defined": false,
+            "m_value": 0
+          },
+          "massLevel": {
+            "m_defined": true,
+            "m_value": 7
+          },
+          "baseForceLevel": {
+            "m_defined": false,
+            "m_value": 0
+          },
+          "tauntLevel": {
+            "m_defined": false,
+            "m_value": 0
+          },
+          "stunImmune": {
+            "m_defined": true,
+            "m_value": true
+          },
+          "silenceImmune": {
+            "m_defined": true,
+            "m_value": true
+          },
+          "sleepImmune": {
+            "m_defined": true,
+            "m_value": true
+          },
+          "frozenImmune": {
+            "m_defined": true,
+            "m_value": true
+          },
+          "levitateImmune": {
+            "m_defined": true,
+            "m_value": true
+          }
+        },
+        "lifePointReduce": {
+          "m_defined": true,
+          "m_value": 30
+        },
+        "levelType": {
+          "m_defined": true,
+          "m_value": 2
+        },
+        "rangeRadius": {
+          "m_defined": true,
+          "m_value": 2.0
+        },
+        "numOfExtraDrops": {
+          "m_defined": false,
+          "m_value": 0
+        },
+        "talentBlackboard": [
+          {
+            "key": "combat.attack@max_target",
+            "value": 2.0,
+            "valueStr": null
+          },
+          {
+            "key": "combat.attack@ep_damage_ratio",
+            "value": 0.2,
+            "valueStr": null
+          },
+          {
+            "key": "reborn.branch_id",
+            "value": 0.0,
+            "valueStr": "cshost_reborn"
+          },
+          {
+            "key": "reborn.duration",
+            "value": 10.0,
+            "valueStr": null
+          },
+          {
+            "key": "TokenInvincible.duration",
+            "value": 10.0,
+            "valueStr": null
+          },
+          {
+            "key": "token.hp_ratio",
+            "value": 0.1,
+            "valueStr": null
+          }
+        ],
+        "skills": [
+          {
+            "prefabKey": "summon",
+            "priority": 1,
+            "cooldown": 45.0,
+            "initCooldown": 10.0,
+            "spCost": 0,
+            "blackboard": [
+              {
+                "key": "branch_id",
+                "value": 0.0,
+                "valueStr": "cshost_summon"
+              }
+            ]
+          }
+        ],
+        "spData": null
+      }
+    }
+  ]
+}

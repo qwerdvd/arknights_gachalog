@@ -1,0 +1,335 @@
+{
+  "enemy_name": "enemy_1516_jakill",
+  "level": [
+    {
+      "level": 0,
+      "enemyData": {
+        "name": {
+          "m_defined": true,
+          "m_value": "杰斯顿·威廉姆斯"
+        },
+        "description": {
+          "m_defined": true,
+          "m_value": "狱警形态<@eb.key>法术抗性提升</>，攻击造成<@eb.key>法术伤害</>，不攻击禁锢装置；杀手形态<@eb.key>防御提升</>，攻击造成<@eb.key>物理伤害</>；进入杀手形态时<@eb.key>解放全场敌人</>"
+        },
+        "prefabKey": {
+          "m_defined": true,
+          "m_value": "enemy_1516_jakill"
+        },
+        "attributes": {
+          "maxHp": {
+            "m_defined": true,
+            "m_value": 25000
+          },
+          "atk": {
+            "m_defined": true,
+            "m_value": 700
+          },
+          "def": {
+            "m_defined": true,
+            "m_value": 400
+          },
+          "magicResistance": {
+            "m_defined": true,
+            "m_value": 20.0
+          },
+          "cost": {
+            "m_defined": false,
+            "m_value": 0
+          },
+          "blockCnt": {
+            "m_defined": false,
+            "m_value": 0
+          },
+          "moveSpeed": {
+            "m_defined": true,
+            "m_value": 0.6
+          },
+          "attackSpeed": {
+            "m_defined": true,
+            "m_value": 100.0
+          },
+          "baseAttackTime": {
+            "m_defined": true,
+            "m_value": 4.0
+          },
+          "respawnTime": {
+            "m_defined": false,
+            "m_value": 0
+          },
+          "hpRecoveryPerSec": {
+            "m_defined": false,
+            "m_value": 0.0
+          },
+          "spRecoveryPerSec": {
+            "m_defined": false,
+            "m_value": 0.0
+          },
+          "maxDeployCount": {
+            "m_defined": false,
+            "m_value": 0
+          },
+          "massLevel": {
+            "m_defined": true,
+            "m_value": 6
+          },
+          "baseForceLevel": {
+            "m_defined": false,
+            "m_value": 0
+          },
+          "tauntLevel": {
+            "m_defined": false,
+            "m_value": 0
+          },
+          "stunImmune": {
+            "m_defined": false,
+            "m_value": false
+          },
+          "silenceImmune": {
+            "m_defined": true,
+            "m_value": true
+          },
+          "sleepImmune": {
+            "m_defined": true,
+            "m_value": true
+          },
+          "frozenImmune": {
+            "m_defined": false,
+            "m_value": false
+          },
+          "levitateImmune": {
+            "m_defined": false,
+            "m_value": false
+          }
+        },
+        "lifePointReduce": {
+          "m_defined": true,
+          "m_value": 2
+        },
+        "levelType": {
+          "m_defined": true,
+          "m_value": 2
+        },
+        "rangeRadius": {
+          "m_defined": true,
+          "m_value": 2.0
+        },
+        "numOfExtraDrops": {
+          "m_defined": false,
+          "m_value": 0
+        },
+        "talentBlackboard": [
+          {
+            "key": "reborn.sp",
+            "value": -1.0,
+            "valueStr": null
+          },
+          {
+            "key": "reborn.duration",
+            "value": 4.0,
+            "valueStr": null
+          },
+          {
+            "key": "enhance.magic_resistance",
+            "value": 50.0,
+            "valueStr": null
+          },
+          {
+            "key": "enhance.atk",
+            "value": 700.0,
+            "valueStr": null
+          },
+          {
+            "key": "enhance.def",
+            "value": 1000.0,
+            "valueStr": null
+          },
+          {
+            "key": "enhance.base_attack_time",
+            "value": -1.5,
+            "valueStr": null
+          },
+          {
+            "key": "enhance.move_speed",
+            "value": 0.3,
+            "valueStr": null
+          }
+        ],
+        "skills": [
+          {
+            "prefabKey": "ironsandstorm",
+            "priority": 0,
+            "cooldown": 0.0,
+            "initCooldown": 0.0,
+            "spCost": 3,
+            "blackboard": [
+              {
+                "key": "stun",
+                "value": 3.0,
+                "valueStr": null
+              },
+              {
+                "key": "max_target",
+                "value": 2.0,
+                "valueStr": null
+              }
+            ]
+          },
+          {
+            "prefabKey": "armorpiercing",
+            "priority": 0,
+            "cooldown": 0.0,
+            "initCooldown": 0.0,
+            "spCost": 3,
+            "blackboard": [
+              {
+                "key": "times",
+                "value": 2.0,
+                "valueStr": null
+              },
+              {
+                "key": "def_penetrate",
+                "value": 0.6,
+                "valueStr": null
+              }
+            ]
+          }
+        ],
+        "spData": {
+          "spType": 2,
+          "maxSp": 3,
+          "initSp": 0,
+          "increment": 1.0
+        }
+      }
+    },
+    {
+      "level": 1,
+      "enemyData": {
+        "name": {
+          "m_defined": false,
+          "m_value": null
+        },
+        "description": {
+          "m_defined": false,
+          "m_value": null
+        },
+        "prefabKey": {
+          "m_defined": false,
+          "m_value": null
+        },
+        "attributes": {
+          "maxHp": {
+            "m_defined": true,
+            "m_value": 40000
+          },
+          "atk": {
+            "m_defined": true,
+            "m_value": 800
+          },
+          "def": {
+            "m_defined": false,
+            "m_value": 500
+          },
+          "magicResistance": {
+            "m_defined": false,
+            "m_value": 25.0
+          },
+          "cost": {
+            "m_defined": false,
+            "m_value": 0
+          },
+          "blockCnt": {
+            "m_defined": false,
+            "m_value": 0
+          },
+          "moveSpeed": {
+            "m_defined": false,
+            "m_value": 0.0
+          },
+          "attackSpeed": {
+            "m_defined": false,
+            "m_value": 0.0
+          },
+          "baseAttackTime": {
+            "m_defined": false,
+            "m_value": 0.0
+          },
+          "respawnTime": {
+            "m_defined": false,
+            "m_value": 0
+          },
+          "hpRecoveryPerSec": {
+            "m_defined": false,
+            "m_value": 0.0
+          },
+          "spRecoveryPerSec": {
+            "m_defined": false,
+            "m_value": 0.0
+          },
+          "maxDeployCount": {
+            "m_defined": false,
+            "m_value": 0
+          },
+          "massLevel": {
+            "m_defined": false,
+            "m_value": 0
+          },
+          "baseForceLevel": {
+            "m_defined": false,
+            "m_value": 0
+          },
+          "tauntLevel": {
+            "m_defined": false,
+            "m_value": 0
+          },
+          "stunImmune": {
+            "m_defined": false,
+            "m_value": false
+          },
+          "silenceImmune": {
+            "m_defined": false,
+            "m_value": false
+          },
+          "sleepImmune": {
+            "m_defined": false,
+            "m_value": false
+          },
+          "frozenImmune": {
+            "m_defined": false,
+            "m_value": false
+          },
+          "levitateImmune": {
+            "m_defined": false,
+            "m_value": false
+          }
+        },
+        "lifePointReduce": {
+          "m_defined": false,
+          "m_value": 0
+        },
+        "levelType": {
+          "m_defined": false,
+          "m_value": 0
+        },
+        "rangeRadius": {
+          "m_defined": false,
+          "m_value": 0.0
+        },
+        "numOfExtraDrops": {
+          "m_defined": false,
+          "m_value": 0
+        },
+        "talentBlackboard": [
+          {
+            "key": "enhance.atk",
+            "value": 800.0,
+            "valueStr": null
+          }
+        ],
+        "skills": null,
+        "spData": null
+      }
+    }
+  ]
+}

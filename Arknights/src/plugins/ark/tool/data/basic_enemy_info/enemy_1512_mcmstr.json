@@ -1,0 +1,379 @@
+{
+  "enemy_name": "enemy_1512_mcmstr",
+  "level": [
+    {
+      "level": 0,
+      "enemyData": {
+        "name": {
+          "m_defined": true,
+          "m_value": "“巨大的丑东西”"
+        },
+        "description": {
+          "m_defined": true,
+          "m_value": "庞大的机械怪兽，由大祭司驾驶。能够破坏木桩，损毁时会弹射驾驶员并自爆。"
+        },
+        "prefabKey": {
+          "m_defined": true,
+          "m_value": "enemy_1512_mcmstr"
+        },
+        "attributes": {
+          "maxHp": {
+            "m_defined": true,
+            "m_value": 40000
+          },
+          "atk": {
+            "m_defined": true,
+            "m_value": 500
+          },
+          "def": {
+            "m_defined": true,
+            "m_value": 1000
+          },
+          "magicResistance": {
+            "m_defined": true,
+            "m_value": 20.0
+          },
+          "cost": {
+            "m_defined": false,
+            "m_value": 0
+          },
+          "blockCnt": {
+            "m_defined": false,
+            "m_value": 0
+          },
+          "moveSpeed": {
+            "m_defined": true,
+            "m_value": 0.6
+          },
+          "attackSpeed": {
+            "m_defined": true,
+            "m_value": 100.0
+          },
+          "baseAttackTime": {
+            "m_defined": true,
+            "m_value": 4.0
+          },
+          "respawnTime": {
+            "m_defined": false,
+            "m_value": 0
+          },
+          "hpRecoveryPerSec": {
+            "m_defined": false,
+            "m_value": 0.0
+          },
+          "spRecoveryPerSec": {
+            "m_defined": false,
+            "m_value": 0.0
+          },
+          "maxDeployCount": {
+            "m_defined": false,
+            "m_value": 0
+          },
+          "massLevel": {
+            "m_defined": true,
+            "m_value": 6
+          },
+          "baseForceLevel": {
+            "m_defined": false,
+            "m_value": 0
+          },
+          "tauntLevel": {
+            "m_defined": false,
+            "m_value": 0
+          },
+          "stunImmune": {
+            "m_defined": true,
+            "m_value": false
+          },
+          "silenceImmune": {
+            "m_defined": true,
+            "m_value": true
+          },
+          "sleepImmune": {
+            "m_defined": false,
+            "m_value": false
+          },
+          "frozenImmune": {
+            "m_defined": false,
+            "m_value": false
+          },
+          "levitateImmune": {
+            "m_defined": false,
+            "m_value": false
+          }
+        },
+        "lifePointReduce": {
+          "m_defined": true,
+          "m_value": 2
+        },
+        "levelType": {
+          "m_defined": true,
+          "m_value": 2
+        },
+        "rangeRadius": {
+          "m_defined": false,
+          "m_value": 0.0
+        },
+        "numOfExtraDrops": {
+          "m_defined": false,
+          "m_value": 0
+        },
+        "talentBlackboard": [
+          {
+            "key": "combat.attack@mcmstr_rage_attack.atk_scale",
+            "value": 3.0,
+            "valueStr": null
+          },
+          {
+            "key": "reborn.duration",
+            "value": 10.0,
+            "valueStr": null
+          },
+          {
+            "key": "bird_run.move_speed",
+            "value": 0.7,
+            "valueStr": null
+          },
+          {
+            "key": "bird_run.magic_resistance",
+            "value": 30.0,
+            "valueStr": null
+          },
+          {
+            "key": "bird_run.def",
+            "value": 200.0,
+            "valueStr": null
+          },
+          {
+            "key": "bird_run.damage",
+            "value": 1300.0,
+            "valueStr": null
+          }
+        ],
+        "skills": [
+          {
+            "prefabKey": "cuttree",
+            "priority": 0,
+            "cooldown": 30.0,
+            "initCooldown": 30.0,
+            "spCost": 0,
+            "blackboard": [
+              {
+                "key": "max_cnt",
+                "value": 1.0,
+                "valueStr": null
+              }
+            ]
+          },
+          {
+            "prefabKey": "bomb[reborning]",
+            "priority": 0,
+            "cooldown": 9999.0,
+            "initCooldown": 9999.0,
+            "spCost": 0,
+            "blackboard": [
+              {
+                "key": "stun",
+                "value": 16.0,
+                "valueStr": null
+              },
+              {
+                "key": "atk_scale",
+                "value": 1.5,
+                "valueStr": null
+              }
+            ]
+          }
+        ],
+        "spData": null
+      }
+    },
+    {
+      "level": 1,
+      "enemyData": {
+        "name": {
+          "m_defined": false,
+          "m_value": null
+        },
+        "description": {
+          "m_defined": false,
+          "m_value": null
+        },
+        "prefabKey": {
+          "m_defined": false,
+          "m_value": null
+        },
+        "attributes": {
+          "maxHp": {
+            "m_defined": true,
+            "m_value": 60000
+          },
+          "atk": {
+            "m_defined": true,
+            "m_value": 700
+          },
+          "def": {
+            "m_defined": true,
+            "m_value": 1200
+          },
+          "magicResistance": {
+            "m_defined": false,
+            "m_value": 0.0
+          },
+          "cost": {
+            "m_defined": false,
+            "m_value": 0
+          },
+          "blockCnt": {
+            "m_defined": false,
+            "m_value": 0
+          },
+          "moveSpeed": {
+            "m_defined": false,
+            "m_value": 0.0
+          },
+          "attackSpeed": {
+            "m_defined": false,
+            "m_value": 0.0
+          },
+          "baseAttackTime": {
+            "m_defined": false,
+            "m_value": 0.0
+          },
+          "respawnTime": {
+            "m_defined": false,
+            "m_value": 0
+          },
+          "hpRecoveryPerSec": {
+            "m_defined": false,
+            "m_value": 0.0
+          },
+          "spRecoveryPerSec": {
+            "m_defined": false,
+            "m_value": 0.0
+          },
+          "maxDeployCount": {
+            "m_defined": false,
+            "m_value": 0
+          },
+          "massLevel": {
+            "m_defined": false,
+            "m_value": 0
+          },
+          "baseForceLevel": {
+            "m_defined": false,
+            "m_value": 0
+          },
+          "tauntLevel": {
+            "m_defined": false,
+            "m_value": 0
+          },
+          "stunImmune": {
+            "m_defined": true,
+            "m_value": false
+          },
+          "silenceImmune": {
+            "m_defined": true,
+            "m_value": true
+          },
+          "sleepImmune": {
+            "m_defined": false,
+            "m_value": false
+          },
+          "frozenImmune": {
+            "m_defined": false,
+            "m_value": false
+          },
+          "levitateImmune": {
+            "m_defined": false,
+            "m_value": false
+          }
+        },
+        "lifePointReduce": {
+          "m_defined": false,
+          "m_value": 0
+        },
+        "levelType": {
+          "m_defined": false,
+          "m_value": 0
+        },
+        "rangeRadius": {
+          "m_defined": false,
+          "m_value": 0.0
+        },
+        "numOfExtraDrops": {
+          "m_defined": false,
+          "m_value": 0
+        },
+        "talentBlackboard": [
+          {
+            "key": "combat.attack@mcmstr_rage_attack.atk_scale",
+            "value": 3.5,
+            "valueStr": null
+          },
+          {
+            "key": "reborn.duration",
+            "value": 10.0,
+            "valueStr": null
+          },
+          {
+            "key": "bird_run.move_speed",
+            "value": 0.7,
+            "valueStr": null
+          },
+          {
+            "key": "bird_run.magic_resistance",
+            "value": 40.0,
+            "valueStr": null
+          },
+          {
+            "key": "bird_run.def",
+            "value": 500.0,
+            "valueStr": null
+          },
+          {
+            "key": "bird_run.damage",
+            "value": 1300.0,
+            "valueStr": null
+          }
+        ],
+        "skills": [
+          {
+            "prefabKey": "cut_tree",
+            "priority": 0,
+            "cooldown": 30.0,
+            "initCooldown": 30.0,
+            "spCost": 0,
+            "blackboard": [
+              {
+                "key": "max_cut",
+                "value": 1.0,
+                "valueStr": null
+              }
+            ]
+          },
+          {
+            "prefabKey": "bomb[reborning]",
+            "priority": 0,
+            "cooldown": 9999.0,
+            "initCooldown": 9999.0,
+            "spCost": 0,
+            "blackboard": [
+              {
+                "key": "stun",
+                "value": 25.0,
+                "valueStr": null
+              },
+              {
+                "key": "atk_scale",
+                "value": 1.5,
+                "valueStr": null
+              }
+            ]
+          }
+        ],
+        "spData": null
+      }
+    }
+  ]
+}

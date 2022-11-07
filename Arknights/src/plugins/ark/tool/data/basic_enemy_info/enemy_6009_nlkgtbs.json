@@ -1,0 +1,173 @@
+{
+  "enemy_name": "enemy_6009_nlkgtbs",
+  "level": [
+    {
+      "level": 0,
+      "enemyData": {
+        "name": {
+          "m_defined": true,
+          "m_value": "“暴食之果”"
+        },
+        "description": {
+          "m_defined": true,
+          "m_value": "变异出触须状口器的巨型钳兽，其坚韧的“触须”歪打正着地提高了摄食效率。"
+        },
+        "prefabKey": {
+          "m_defined": true,
+          "m_value": "enemy_6009_nlkgtbs"
+        },
+        "attributes": {
+          "maxHp": {
+            "m_defined": true,
+            "m_value": 55000
+          },
+          "atk": {
+            "m_defined": true,
+            "m_value": 1050
+          },
+          "def": {
+            "m_defined": true,
+            "m_value": 1050
+          },
+          "magicResistance": {
+            "m_defined": true,
+            "m_value": 60.0
+          },
+          "cost": {
+            "m_defined": false,
+            "m_value": 0
+          },
+          "blockCnt": {
+            "m_defined": false,
+            "m_value": 0
+          },
+          "moveSpeed": {
+            "m_defined": true,
+            "m_value": 0.5
+          },
+          "attackSpeed": {
+            "m_defined": false,
+            "m_value": 0.0
+          },
+          "baseAttackTime": {
+            "m_defined": true,
+            "m_value": 3.7
+          },
+          "respawnTime": {
+            "m_defined": false,
+            "m_value": 0
+          },
+          "hpRecoveryPerSec": {
+            "m_defined": false,
+            "m_value": 0.0
+          },
+          "spRecoveryPerSec": {
+            "m_defined": false,
+            "m_value": 0.0
+          },
+          "maxDeployCount": {
+            "m_defined": false,
+            "m_value": 0
+          },
+          "massLevel": {
+            "m_defined": true,
+            "m_value": 8
+          },
+          "baseForceLevel": {
+            "m_defined": false,
+            "m_value": 0
+          },
+          "tauntLevel": {
+            "m_defined": false,
+            "m_value": 0
+          },
+          "stunImmune": {
+            "m_defined": true,
+            "m_value": true
+          },
+          "silenceImmune": {
+            "m_defined": true,
+            "m_value": true
+          },
+          "sleepImmune": {
+            "m_defined": true,
+            "m_value": true
+          },
+          "frozenImmune": {
+            "m_defined": true,
+            "m_value": true
+          },
+          "levitateImmune": {
+            "m_defined": true,
+            "m_value": true
+          }
+        },
+        "lifePointReduce": {
+          "m_defined": true,
+          "m_value": 3
+        },
+        "levelType": {
+          "m_defined": true,
+          "m_value": 2
+        },
+        "rangeRadius": {
+          "m_defined": false,
+          "m_value": 0.0
+        },
+        "numOfExtraDrops": {
+          "m_defined": false,
+          "m_value": 0
+        },
+        "talentBlackboard": [
+          {
+            "key": "Passive.damage_resistance",
+            "value": 0.35,
+            "valueStr": null
+          },
+          {
+            "key": "Shield.hp_ratio",
+            "value": 0.25,
+            "valueStr": null
+          },
+          {
+            "key": "Shield.hp_shield_scale",
+            "value": 0.5,
+            "valueStr": null
+          },
+          {
+            "key": "Passive.damage",
+            "value": 15.0,
+            "valueStr": null
+          }
+        ],
+        "skills": [
+          {
+            "prefabKey": "EvolutionCard",
+            "priority": 0,
+            "cooldown": 0.0,
+            "initCooldown": 0.0,
+            "spCost": 0,
+            "blackboard": [
+              {
+                "key": "duration_s",
+                "value": 8.0,
+                "valueStr": null
+              },
+              {
+                "key": "range_num",
+                "value": 3.0,
+                "valueStr": null
+              },
+              {
+                "key": "can_select_num",
+                "value": 1.0,
+                "valueStr": null
+              }
+            ]
+          }
+        ],
+        "spData": null
+      }
+    }
+  ]
+}

@@ -1,0 +1,173 @@
+{
+  "enemy_name": "enemy_1126_spslme",
+  "level": [
+    {
+      "level": 0,
+      "enemyData": {
+        "name": {
+          "m_defined": true,
+          "m_value": "“得意”"
+        },
+        "description": {
+          "m_defined": true,
+          "m_value": "<@eb.key>只被同属性单位阻挡</>。死亡后<@eb.danger>爆炸</>，碰触到相反属性的同胞则会引发<@eb.danger>更剧烈的爆炸</>。"
+        },
+        "prefabKey": {
+          "m_defined": true,
+          "m_value": "enemy_1126_spslme"
+        },
+        "attributes": {
+          "maxHp": {
+            "m_defined": true,
+            "m_value": 2460
+          },
+          "atk": {
+            "m_defined": true,
+            "m_value": 120
+          },
+          "def": {
+            "m_defined": true,
+            "m_value": 0
+          },
+          "magicResistance": {
+            "m_defined": true,
+            "m_value": 0.0
+          },
+          "cost": {
+            "m_defined": false,
+            "m_value": 0
+          },
+          "blockCnt": {
+            "m_defined": false,
+            "m_value": 0
+          },
+          "moveSpeed": {
+            "m_defined": true,
+            "m_value": 1.2
+          },
+          "attackSpeed": {
+            "m_defined": true,
+            "m_value": 100.0
+          },
+          "baseAttackTime": {
+            "m_defined": true,
+            "m_value": 2.0
+          },
+          "respawnTime": {
+            "m_defined": false,
+            "m_value": 0
+          },
+          "hpRecoveryPerSec": {
+            "m_defined": true,
+            "m_value": 0.0
+          },
+          "spRecoveryPerSec": {
+            "m_defined": true,
+            "m_value": 0.0
+          },
+          "maxDeployCount": {
+            "m_defined": false,
+            "m_value": 0
+          },
+          "massLevel": {
+            "m_defined": true,
+            "m_value": 0
+          },
+          "baseForceLevel": {
+            "m_defined": false,
+            "m_value": 0
+          },
+          "tauntLevel": {
+            "m_defined": false,
+            "m_value": 0
+          },
+          "stunImmune": {
+            "m_defined": true,
+            "m_value": false
+          },
+          "silenceImmune": {
+            "m_defined": true,
+            "m_value": true
+          },
+          "sleepImmune": {
+            "m_defined": false,
+            "m_value": false
+          },
+          "frozenImmune": {
+            "m_defined": false,
+            "m_value": false
+          },
+          "levitateImmune": {
+            "m_defined": false,
+            "m_value": false
+          }
+        },
+        "lifePointReduce": {
+          "m_defined": true,
+          "m_value": 1
+        },
+        "levelType": {
+          "m_defined": false,
+          "m_value": 0
+        },
+        "rangeRadius": {
+          "m_defined": false,
+          "m_value": 0.0
+        },
+        "numOfExtraDrops": {
+          "m_defined": false,
+          "m_value": 0
+        },
+        "talentBlackboard": [
+          {
+            "key": "yinyang.dynamic",
+            "value": 1.0,
+            "valueStr": null
+          },
+          {
+            "key": "yinyang.buff_yinyang[same].atk_scale",
+            "value": 0.6,
+            "valueStr": null
+          },
+          {
+            "key": "yinyang.buff_yinyang[diff].atk_scale",
+            "value": 1.4,
+            "valueStr": null
+          },
+          {
+            "key": "boom.atk_scale",
+            "value": 4.0,
+            "valueStr": null
+          },
+          {
+            "key": "boom.atk_scale_2",
+            "value": 15.0,
+            "valueStr": null
+          },
+          {
+            "key": "boomtosame.atk_scale",
+            "value": 3.6,
+            "valueStr": null
+          },
+          {
+            "key": "boomtodiff.atk_scale",
+            "value": 4.4,
+            "valueStr": null
+          },
+          {
+            "key": "boomtosame.atk_scale_2",
+            "value": 13.5,
+            "valueStr": null
+          },
+          {
+            "key": "boomtodiff.atk_scale_2",
+            "value": 16.5,
+            "valueStr": null
+          }
+        ],
+        "skills": null,
+        "spData": null
+      }
+    }
+  ]
+}

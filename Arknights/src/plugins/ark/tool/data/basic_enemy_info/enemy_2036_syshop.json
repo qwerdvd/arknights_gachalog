@@ -1,0 +1,167 @@
+{
+  "enemy_name": "enemy_2036_syshop",
+  "level": [
+    {
+      "level": 0,
+      "enemyData": {
+        "name": {
+          "m_defined": true,
+          "m_value": "坎诺特"
+        },
+        "description": {
+          "m_defined": true,
+          "m_value": "行走于荒野的神秘商人，只要文明里存在的，他就贩卖。无法阻挡，不可被攻击。"
+        },
+        "prefabKey": {
+          "m_defined": true,
+          "m_value": "enemy_2036_syshop"
+        },
+        "attributes": {
+          "maxHp": {
+            "m_defined": true,
+            "m_value": 100000
+          },
+          "atk": {
+            "m_defined": true,
+            "m_value": 0
+          },
+          "def": {
+            "m_defined": true,
+            "m_value": 4000
+          },
+          "magicResistance": {
+            "m_defined": true,
+            "m_value": 80.0
+          },
+          "cost": {
+            "m_defined": false,
+            "m_value": 0
+          },
+          "blockCnt": {
+            "m_defined": false,
+            "m_value": 0
+          },
+          "moveSpeed": {
+            "m_defined": true,
+            "m_value": 0.4
+          },
+          "attackSpeed": {
+            "m_defined": true,
+            "m_value": 100.0
+          },
+          "baseAttackTime": {
+            "m_defined": true,
+            "m_value": 1.0
+          },
+          "respawnTime": {
+            "m_defined": false,
+            "m_value": 0
+          },
+          "hpRecoveryPerSec": {
+            "m_defined": false,
+            "m_value": 0.0
+          },
+          "spRecoveryPerSec": {
+            "m_defined": false,
+            "m_value": 0.0
+          },
+          "maxDeployCount": {
+            "m_defined": false,
+            "m_value": 0
+          },
+          "massLevel": {
+            "m_defined": true,
+            "m_value": 5
+          },
+          "baseForceLevel": {
+            "m_defined": false,
+            "m_value": 0
+          },
+          "tauntLevel": {
+            "m_defined": false,
+            "m_value": 0
+          },
+          "stunImmune": {
+            "m_defined": true,
+            "m_value": true
+          },
+          "silenceImmune": {
+            "m_defined": true,
+            "m_value": true
+          },
+          "sleepImmune": {
+            "m_defined": true,
+            "m_value": true
+          },
+          "frozenImmune": {
+            "m_defined": true,
+            "m_value": true
+          },
+          "levitateImmune": {
+            "m_defined": true,
+            "m_value": true
+          }
+        },
+        "lifePointReduce": {
+          "m_defined": true,
+          "m_value": 0
+        },
+        "levelType": {
+          "m_defined": true,
+          "m_value": 2
+        },
+        "rangeRadius": {
+          "m_defined": false,
+          "m_value": 0.0
+        },
+        "numOfExtraDrops": {
+          "m_defined": false,
+          "m_value": 0
+        },
+        "talentBlackboard": null,
+        "skills": [
+          {
+            "prefabKey": "Spray",
+            "priority": 0,
+            "cooldown": 0.0,
+            "initCooldown": 10.0,
+            "spCost": 23,
+            "blackboard": [
+              {
+                "key": "syshop_s[atk].duration",
+                "value": 12.0,
+                "valueStr": null
+              },
+              {
+                "key": "syshop_s[atk].attack_speed",
+                "value": 100.0,
+                "valueStr": null
+              },
+              {
+                "key": "syshop_s[atk].atk",
+                "value": 1.0,
+                "valueStr": null
+              },
+              {
+                "key": "syshop_s[sleep].duration",
+                "value": 10.0,
+                "valueStr": null
+              },
+              {
+                "key": "syshop_s[sleep].hp_ratio",
+                "value": 0.04,
+                "valueStr": null
+              }
+            ]
+          }
+        ],
+        "spData": {
+          "spType": 1,
+          "maxSp": 25,
+          "initSp": 0,
+          "increment": 1.0
+        }
+      }
+    }
+  ]
+}

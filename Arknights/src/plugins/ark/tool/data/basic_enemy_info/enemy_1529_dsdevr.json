@@ -1,0 +1,659 @@
+{
+  "enemy_name": "enemy_1529_dsdevr",
+  "level": [
+    {
+      "level": 0,
+      "enemyData": {
+        "name": {
+          "m_defined": true,
+          "m_value": "屠谕者，大群意志"
+        },
+        "description": {
+          "m_defined": true,
+          "m_value": "出没于大船斯图提斐拉号的小型海嗣，其亲代的血曾染满这片海洋。神谕传达不到子嗣的耳中，族群的命运依旧能悄然流转。"
+        },
+        "prefabKey": {
+          "m_defined": true,
+          "m_value": "enemy_1529_dsdevr"
+        },
+        "attributes": {
+          "maxHp": {
+            "m_defined": true,
+            "m_value": 10000
+          },
+          "atk": {
+            "m_defined": true,
+            "m_value": 800
+          },
+          "def": {
+            "m_defined": true,
+            "m_value": 700
+          },
+          "magicResistance": {
+            "m_defined": true,
+            "m_value": 0.0
+          },
+          "cost": {
+            "m_defined": false,
+            "m_value": 0
+          },
+          "blockCnt": {
+            "m_defined": false,
+            "m_value": 0
+          },
+          "moveSpeed": {
+            "m_defined": true,
+            "m_value": 0.8
+          },
+          "attackSpeed": {
+            "m_defined": true,
+            "m_value": 100.0
+          },
+          "baseAttackTime": {
+            "m_defined": true,
+            "m_value": 2.0
+          },
+          "respawnTime": {
+            "m_defined": false,
+            "m_value": 0
+          },
+          "hpRecoveryPerSec": {
+            "m_defined": false,
+            "m_value": 0.0
+          },
+          "spRecoveryPerSec": {
+            "m_defined": false,
+            "m_value": 0.0
+          },
+          "maxDeployCount": {
+            "m_defined": false,
+            "m_value": 0
+          },
+          "massLevel": {
+            "m_defined": true,
+            "m_value": 5
+          },
+          "baseForceLevel": {
+            "m_defined": false,
+            "m_value": 0
+          },
+          "tauntLevel": {
+            "m_defined": false,
+            "m_value": 0
+          },
+          "stunImmune": {
+            "m_defined": false,
+            "m_value": false
+          },
+          "silenceImmune": {
+            "m_defined": true,
+            "m_value": true
+          },
+          "sleepImmune": {
+            "m_defined": false,
+            "m_value": false
+          },
+          "frozenImmune": {
+            "m_defined": false,
+            "m_value": false
+          },
+          "levitateImmune": {
+            "m_defined": false,
+            "m_value": false
+          }
+        },
+        "lifePointReduce": {
+          "m_defined": true,
+          "m_value": 3
+        },
+        "levelType": {
+          "m_defined": true,
+          "m_value": 2
+        },
+        "rangeRadius": {
+          "m_defined": true,
+          "m_value": 1.8
+        },
+        "numOfExtraDrops": {
+          "m_defined": false,
+          "m_value": 0
+        },
+        "talentBlackboard": [
+          {
+            "key": "buffp1.max_hp",
+            "value": -0.6,
+            "valueStr": null
+          },
+          {
+            "key": "buffp1.atk",
+            "value": -1.0,
+            "valueStr": null
+          },
+          {
+            "key": "buffp1.def",
+            "value": -1.0,
+            "valueStr": null
+          },
+          {
+            "key": "buffp1.magic_resistance",
+            "value": 0.0,
+            "valueStr": null
+          },
+          {
+            "key": "buffp1.move_speed",
+            "value": 0.2,
+            "valueStr": null
+          },
+          {
+            "key": "buffp1.base_attack_time",
+            "value": 0.0,
+            "valueStr": null
+          },
+          {
+            "key": "buffp2.max_hp",
+            "value": 2.0,
+            "valueStr": null
+          },
+          {
+            "key": "buffp2.atk",
+            "value": -0.15,
+            "valueStr": null
+          },
+          {
+            "key": "buffp2.def",
+            "value": 0.0,
+            "valueStr": null
+          },
+          {
+            "key": "buffp2.magic_resistance",
+            "value": 30.0,
+            "valueStr": null
+          },
+          {
+            "key": "buffp2.move_speed",
+            "value": 0.0,
+            "valueStr": null
+          },
+          {
+            "key": "buffp2.base_attack_time",
+            "value": 0.0,
+            "valueStr": null
+          },
+          {
+            "key": "buffp2.block_volume",
+            "value": 2.0,
+            "valueStr": null
+          },
+          {
+            "key": "buffp3.max_hp",
+            "value": 1.5,
+            "valueStr": null
+          },
+          {
+            "key": "buffp3.atk",
+            "value": 0.0,
+            "valueStr": null
+          },
+          {
+            "key": "buffp3.def",
+            "value": 0.0,
+            "valueStr": null
+          },
+          {
+            "key": "buffp3.magic_resistance",
+            "value": 30.0,
+            "valueStr": null
+          },
+          {
+            "key": "buffp3.move_speed",
+            "value": 0.5,
+            "valueStr": null
+          },
+          {
+            "key": "buffp3.base_attack_time",
+            "value": 0.0,
+            "valueStr": null
+          },
+          {
+            "key": "buffp3.block_volume",
+            "value": 2.0,
+            "valueStr": null
+          },
+          {
+            "key": "buffp4.max_hp",
+            "value": 3.0,
+            "valueStr": null
+          },
+          {
+            "key": "buffp4.atk",
+            "value": 0.15,
+            "valueStr": null
+          },
+          {
+            "key": "buffp4.def",
+            "value": 0.0,
+            "valueStr": null
+          },
+          {
+            "key": "buffp4.magic_resistance",
+            "value": 30.0,
+            "valueStr": null
+          },
+          {
+            "key": "buffp4.move_speed",
+            "value": 0.5,
+            "valueStr": null
+          },
+          {
+            "key": "buffp4.base_attack_time",
+            "value": 0.0,
+            "valueStr": null
+          },
+          {
+            "key": "buffp4.block_volume",
+            "value": 2.0,
+            "valueStr": null
+          },
+          {
+            "key": "epdamagep2.attack@ep_damage_ratio",
+            "value": 0.6,
+            "valueStr": null
+          },
+          {
+            "key": "lifesteal.heal_scale",
+            "value": 1.4,
+            "valueStr": null
+          },
+          {
+            "key": "reborn.max_respawn_cnt",
+            "value": 1.0,
+            "valueStr": null
+          },
+          {
+            "key": "reborn.markp2.max_target",
+            "value": 1.0,
+            "valueStr": null
+          },
+          {
+            "key": "reborn.markp3.max_target",
+            "value": 1.0,
+            "valueStr": null
+          },
+          {
+            "key": "reborn.markp4.max_target",
+            "value": 1.0,
+            "valueStr": null
+          },
+          {
+            "key": "SwallowCounterP2.times",
+            "value": 1.0,
+            "valueStr": null
+          },
+          {
+            "key": "SwallowCounterP3.times",
+            "value": 1.0,
+            "valueStr": null
+          },
+          {
+            "key": "SwallowCounterP4.times",
+            "value": 1.0,
+            "valueStr": null
+          },
+          {
+            "key": "DsbudrTalent.magic_resistance",
+            "value": 60.0,
+            "valueStr": null
+          },
+          {
+            "key": "DsrunrTalent.prob",
+            "value": 0.5,
+            "valueStr": null
+          },
+          {
+            "key": "DssalrTalent.hp_ratio",
+            "value": 0.4,
+            "valueStr": null
+          },
+          {
+            "key": "DssalrTalent.def",
+            "value": 4.0,
+            "valueStr": null
+          },
+          {
+            "key": "DssalrTalent.block_volume",
+            "value": 1.0,
+            "valueStr": null
+          },
+          {
+            "key": "DsshtrTalent.max_target",
+            "value": 3.0,
+            "valueStr": null
+          },
+          {
+            "key": "DsubrlTalent.one_minus_status_resistance",
+            "value": -0.5,
+            "valueStr": null
+          },
+          {
+            "key": "DsbskrTalent.atk",
+            "value": 0.08,
+            "valueStr": null
+          },
+          {
+            "key": "DsbskrTalent.max_stack_cnt",
+            "value": 20.0,
+            "valueStr": null
+          },
+          {
+            "key": "DsbskrTalent.interval",
+            "value": 1.0,
+            "valueStr": null
+          }
+        ],
+        "skills": [
+          {
+            "prefabKey": "Swallow",
+            "priority": 0,
+            "cooldown": 3.0,
+            "initCooldown": 3.0,
+            "spCost": 0,
+            "blackboard": [
+              {
+                "key": "hp_ratio",
+                "value": 1.0,
+                "valueStr": null
+              }
+            ]
+          }
+        ],
+        "spData": null
+      }
+    },
+    {
+      "level": 1,
+      "enemyData": {
+        "name": {
+          "m_defined": false,
+          "m_value": null
+        },
+        "description": {
+          "m_defined": false,
+          "m_value": null
+        },
+        "prefabKey": {
+          "m_defined": false,
+          "m_value": null
+        },
+        "attributes": {
+          "maxHp": {
+            "m_defined": false,
+            "m_value": 0
+          },
+          "atk": {
+            "m_defined": false,
+            "m_value": 0
+          },
+          "def": {
+            "m_defined": false,
+            "m_value": 0
+          },
+          "magicResistance": {
+            "m_defined": false,
+            "m_value": 0.0
+          },
+          "cost": {
+            "m_defined": false,
+            "m_value": 0
+          },
+          "blockCnt": {
+            "m_defined": false,
+            "m_value": 0
+          },
+          "moveSpeed": {
+            "m_defined": false,
+            "m_value": 0.0
+          },
+          "attackSpeed": {
+            "m_defined": false,
+            "m_value": 0.0
+          },
+          "baseAttackTime": {
+            "m_defined": false,
+            "m_value": 0.0
+          },
+          "respawnTime": {
+            "m_defined": false,
+            "m_value": 0
+          },
+          "hpRecoveryPerSec": {
+            "m_defined": false,
+            "m_value": 0.0
+          },
+          "spRecoveryPerSec": {
+            "m_defined": false,
+            "m_value": 0.0
+          },
+          "maxDeployCount": {
+            "m_defined": false,
+            "m_value": 0
+          },
+          "massLevel": {
+            "m_defined": false,
+            "m_value": 0
+          },
+          "baseForceLevel": {
+            "m_defined": false,
+            "m_value": 0
+          },
+          "tauntLevel": {
+            "m_defined": false,
+            "m_value": 0
+          },
+          "stunImmune": {
+            "m_defined": false,
+            "m_value": false
+          },
+          "silenceImmune": {
+            "m_defined": false,
+            "m_value": false
+          },
+          "sleepImmune": {
+            "m_defined": false,
+            "m_value": false
+          },
+          "frozenImmune": {
+            "m_defined": false,
+            "m_value": false
+          },
+          "levitateImmune": {
+            "m_defined": false,
+            "m_value": false
+          }
+        },
+        "lifePointReduce": {
+          "m_defined": false,
+          "m_value": 0
+        },
+        "levelType": {
+          "m_defined": false,
+          "m_value": 0
+        },
+        "rangeRadius": {
+          "m_defined": false,
+          "m_value": 0.0
+        },
+        "numOfExtraDrops": {
+          "m_defined": false,
+          "m_value": 0
+        },
+        "talentBlackboard": [
+          {
+            "key": "reborn.max_respawn_cnt",
+            "value": 3.0,
+            "valueStr": null
+          }
+        ],
+        "skills": null,
+        "spData": null
+      }
+    },
+    {
+      "level": 2,
+      "enemyData": {
+        "name": {
+          "m_defined": false,
+          "m_value": null
+        },
+        "description": {
+          "m_defined": false,
+          "m_value": null
+        },
+        "prefabKey": {
+          "m_defined": false,
+          "m_value": null
+        },
+        "attributes": {
+          "maxHp": {
+            "m_defined": true,
+            "m_value": 14000
+          },
+          "atk": {
+            "m_defined": true,
+            "m_value": 900
+          },
+          "def": {
+            "m_defined": false,
+            "m_value": 0
+          },
+          "magicResistance": {
+            "m_defined": false,
+            "m_value": 0.0
+          },
+          "cost": {
+            "m_defined": false,
+            "m_value": 0
+          },
+          "blockCnt": {
+            "m_defined": false,
+            "m_value": 0
+          },
+          "moveSpeed": {
+            "m_defined": false,
+            "m_value": 0.0
+          },
+          "attackSpeed": {
+            "m_defined": false,
+            "m_value": 0.0
+          },
+          "baseAttackTime": {
+            "m_defined": false,
+            "m_value": 0.0
+          },
+          "respawnTime": {
+            "m_defined": false,
+            "m_value": 0
+          },
+          "hpRecoveryPerSec": {
+            "m_defined": false,
+            "m_value": 0.0
+          },
+          "spRecoveryPerSec": {
+            "m_defined": false,
+            "m_value": 0.0
+          },
+          "maxDeployCount": {
+            "m_defined": false,
+            "m_value": 0
+          },
+          "massLevel": {
+            "m_defined": false,
+            "m_value": 0
+          },
+          "baseForceLevel": {
+            "m_defined": false,
+            "m_value": 0
+          },
+          "tauntLevel": {
+            "m_defined": false,
+            "m_value": 0
+          },
+          "stunImmune": {
+            "m_defined": false,
+            "m_value": false
+          },
+          "silenceImmune": {
+            "m_defined": false,
+            "m_value": false
+          },
+          "sleepImmune": {
+            "m_defined": false,
+            "m_value": false
+          },
+          "frozenImmune": {
+            "m_defined": false,
+            "m_value": false
+          },
+          "levitateImmune": {
+            "m_defined": false,
+            "m_value": false
+          }
+        },
+        "lifePointReduce": {
+          "m_defined": false,
+          "m_value": 0
+        },
+        "levelType": {
+          "m_defined": false,
+          "m_value": 0
+        },
+        "rangeRadius": {
+          "m_defined": false,
+          "m_value": 0.0
+        },
+        "numOfExtraDrops": {
+          "m_defined": false,
+          "m_value": 0
+        },
+        "talentBlackboard": [
+          {
+            "key": "reborn.max_respawn_cnt",
+            "value": 3.0,
+            "valueStr": null
+          },
+          {
+            "key": "reborn.markp2.max_target",
+            "value": 2.0,
+            "valueStr": null
+          },
+          {
+            "key": "SwallowCounterP2.times",
+            "value": 2.0,
+            "valueStr": null
+          },
+          {
+            "key": "SwallowCounterP3.times",
+            "value": 2.0,
+            "valueStr": null
+          },
+          {
+            "key": "SwallowCounterP4.times",
+            "value": 2.0,
+            "valueStr": null
+          },
+          {
+            "key": "reborn.markp3.max_target",
+            "value": 2.0,
+            "valueStr": null
+          },
+          {
+            "key": "reborn.markp4.max_target",
+            "value": 2.0,
+            "valueStr": null
+          }
+        ],
+        "skills": null,
+        "spData": null
+      }
+    }
+  ]
+}

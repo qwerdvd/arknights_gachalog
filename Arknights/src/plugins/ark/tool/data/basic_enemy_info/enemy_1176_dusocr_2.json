@@ -1,0 +1,166 @@
+{
+  "enemy_name": "enemy_1176_dusocr_2",
+  "level": [
+    {
+      "level": 0,
+      "enemyData": {
+        "name": {
+          "m_defined": true,
+          "m_value": "深池塑能术师队长"
+        },
+        "description": {
+          "m_defined": true,
+          "m_value": "操纵沿地面移动的<@eb.key>净浊之焰</>。<@eb.key>净浊之焰</>遇到我方近战单位后爆炸造成法术伤害和<@eb.key>灼燃损伤</>，其伤害随移动距离减小"
+        },
+        "prefabKey": {
+          "m_defined": true,
+          "m_value": "enemy_1176_dusocr_2"
+        },
+        "attributes": {
+          "maxHp": {
+            "m_defined": true,
+            "m_value": 20000
+          },
+          "atk": {
+            "m_defined": true,
+            "m_value": 0
+          },
+          "def": {
+            "m_defined": true,
+            "m_value": 550
+          },
+          "magicResistance": {
+            "m_defined": true,
+            "m_value": 50.0
+          },
+          "cost": {
+            "m_defined": false,
+            "m_value": 0
+          },
+          "blockCnt": {
+            "m_defined": false,
+            "m_value": 0
+          },
+          "moveSpeed": {
+            "m_defined": true,
+            "m_value": 0.3
+          },
+          "attackSpeed": {
+            "m_defined": true,
+            "m_value": 100.0
+          },
+          "baseAttackTime": {
+            "m_defined": true,
+            "m_value": 5.0
+          },
+          "respawnTime": {
+            "m_defined": false,
+            "m_value": 0
+          },
+          "hpRecoveryPerSec": {
+            "m_defined": true,
+            "m_value": 0.0
+          },
+          "spRecoveryPerSec": {
+            "m_defined": false,
+            "m_value": 0.0
+          },
+          "maxDeployCount": {
+            "m_defined": false,
+            "m_value": 0
+          },
+          "massLevel": {
+            "m_defined": true,
+            "m_value": 3
+          },
+          "baseForceLevel": {
+            "m_defined": false,
+            "m_value": 0
+          },
+          "tauntLevel": {
+            "m_defined": false,
+            "m_value": 0
+          },
+          "stunImmune": {
+            "m_defined": true,
+            "m_value": false
+          },
+          "silenceImmune": {
+            "m_defined": true,
+            "m_value": false
+          },
+          "sleepImmune": {
+            "m_defined": false,
+            "m_value": false
+          },
+          "frozenImmune": {
+            "m_defined": false,
+            "m_value": false
+          },
+          "levitateImmune": {
+            "m_defined": false,
+            "m_value": false
+          }
+        },
+        "lifePointReduce": {
+          "m_defined": true,
+          "m_value": 1
+        },
+        "levelType": {
+          "m_defined": true,
+          "m_value": 1
+        },
+        "rangeRadius": {
+          "m_defined": true,
+          "m_value": -1.0
+        },
+        "numOfExtraDrops": {
+          "m_defined": false,
+          "m_value": 0
+        },
+        "talentBlackboard": null,
+        "skills": [
+          {
+            "prefabKey": "SummonFireBall",
+            "priority": 0,
+            "cooldown": 6.0,
+            "initCooldown": 3.0,
+            "spCost": 0,
+            "blackboard": [
+              {
+                "key": "enemy_key",
+                "value": 0.0,
+                "valueStr": "enemy_1177_dufrbl_2"
+              },
+              {
+                "key": "cnt",
+                "value": 1.0,
+                "valueStr": null
+              }
+            ]
+          },
+          {
+            "prefabKey": "SummonFireBall2",
+            "priority": 1,
+            "cooldown": 5.0,
+            "initCooldown": 5.0,
+            "spCost": 0,
+            "blackboard": [
+              {
+                "key": "enemy_key",
+                "value": 0.0,
+                "valueStr": "enemy_1177_dufrbl_2"
+              },
+              {
+                "key": "cnt",
+                "value": 1.0,
+                "valueStr": null
+              }
+            ]
+          }
+        ],
+        "spData": null
+      }
+    }
+  ]
+}

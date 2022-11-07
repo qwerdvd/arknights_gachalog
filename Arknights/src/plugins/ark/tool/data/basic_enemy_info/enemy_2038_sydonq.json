@@ -1,0 +1,173 @@
+{
+  "enemy_name": "enemy_2038_sydonq",
+  "level": [
+    {
+      "level": 0,
+      "enemyData": {
+        "name": {
+          "m_defined": true,
+          "m_value": "最后的骑士"
+        },
+        "description": {
+          "m_defined": true,
+          "m_value": "卡西米尔家喻户晓的童话原型。受到伤害时，使伤害来源<@eb.key>寒冷</>，生命低于一半时，<@eb.key>寒冷</>持续时间延长。攻击<@eb.key>冻结</>目标时攻击力提升"
+        },
+        "prefabKey": {
+          "m_defined": true,
+          "m_value": "enemy_2038_sydonq"
+        },
+        "attributes": {
+          "maxHp": {
+            "m_defined": true,
+            "m_value": 100000
+          },
+          "atk": {
+            "m_defined": true,
+            "m_value": 2000
+          },
+          "def": {
+            "m_defined": true,
+            "m_value": 4000
+          },
+          "magicResistance": {
+            "m_defined": true,
+            "m_value": 70.0
+          },
+          "cost": {
+            "m_defined": false,
+            "m_value": 0
+          },
+          "blockCnt": {
+            "m_defined": false,
+            "m_value": 0
+          },
+          "moveSpeed": {
+            "m_defined": true,
+            "m_value": 0.6
+          },
+          "attackSpeed": {
+            "m_defined": true,
+            "m_value": 100.0
+          },
+          "baseAttackTime": {
+            "m_defined": true,
+            "m_value": 3.5
+          },
+          "respawnTime": {
+            "m_defined": false,
+            "m_value": 0
+          },
+          "hpRecoveryPerSec": {
+            "m_defined": false,
+            "m_value": 0.0
+          },
+          "spRecoveryPerSec": {
+            "m_defined": false,
+            "m_value": 0.0
+          },
+          "maxDeployCount": {
+            "m_defined": false,
+            "m_value": 0
+          },
+          "massLevel": {
+            "m_defined": true,
+            "m_value": 5
+          },
+          "baseForceLevel": {
+            "m_defined": false,
+            "m_value": 0
+          },
+          "tauntLevel": {
+            "m_defined": false,
+            "m_value": 0
+          },
+          "stunImmune": {
+            "m_defined": false,
+            "m_value": false
+          },
+          "silenceImmune": {
+            "m_defined": true,
+            "m_value": true
+          },
+          "sleepImmune": {
+            "m_defined": false,
+            "m_value": false
+          },
+          "frozenImmune": {
+            "m_defined": false,
+            "m_value": false
+          },
+          "levitateImmune": {
+            "m_defined": false,
+            "m_value": false
+          }
+        },
+        "lifePointReduce": {
+          "m_defined": true,
+          "m_value": 30
+        },
+        "levelType": {
+          "m_defined": true,
+          "m_value": 2
+        },
+        "rangeRadius": {
+          "m_defined": true,
+          "m_value": 0.0
+        },
+        "numOfExtraDrops": {
+          "m_defined": false,
+          "m_value": 0
+        },
+        "talentBlackboard": [
+          {
+            "key": "Reborn.duration",
+            "value": 30.0,
+            "valueStr": null
+          },
+          {
+            "key": "Reborn.hp_ratio",
+            "value": 0.25,
+            "valueStr": null
+          },
+          {
+            "key": "InverseDamage.sydonq_t[freeze1].freeze",
+            "value": 2.0,
+            "valueStr": null
+          },
+          {
+            "key": "InverseDamage.sydonq_t[freeze2].freeze",
+            "value": 4.0,
+            "valueStr": null
+          },
+          {
+            "key": "DamageScaleToFrozen.atk_scale",
+            "value": 1.75,
+            "valueStr": null
+          },
+          {
+            "key": "Slow.move_speed",
+            "value": -0.5,
+            "valueStr": null
+          }
+        ],
+        "skills": [
+          {
+            "prefabKey": "Reborning",
+            "priority": 0,
+            "cooldown": 0.0,
+            "initCooldown": 0.0,
+            "spCost": 0,
+            "blackboard": [
+              {
+                "key": "duration",
+                "value": 30.0,
+                "valueStr": null
+              }
+            ]
+          }
+        ],
+        "spData": null
+      }
+    }
+  ]
+}

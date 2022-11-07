@@ -1,0 +1,155 @@
+{
+  "enemy_name": "enemy_6005_llstone",
+  "level": [
+    {
+      "level": 0,
+      "enemyData": {
+        "name": {
+          "m_defined": true,
+          "m_value": "圆岩巨像"
+        },
+        "description": {
+          "m_defined": true,
+          "m_value": "以矿场废料构建的源石技艺造物。它已袭击了许多矿场，人们畏惧地称呼它为“矿场杀手矿”。"
+        },
+        "prefabKey": {
+          "m_defined": true,
+          "m_value": "enemy_6005_llstone"
+        },
+        "attributes": {
+          "maxHp": {
+            "m_defined": true,
+            "m_value": 58000
+          },
+          "atk": {
+            "m_defined": true,
+            "m_value": 1800
+          },
+          "def": {
+            "m_defined": true,
+            "m_value": 1200
+          },
+          "magicResistance": {
+            "m_defined": true,
+            "m_value": 50.0
+          },
+          "cost": {
+            "m_defined": false,
+            "m_value": 0
+          },
+          "blockCnt": {
+            "m_defined": false,
+            "m_value": 0
+          },
+          "moveSpeed": {
+            "m_defined": true,
+            "m_value": 0.4
+          },
+          "attackSpeed": {
+            "m_defined": true,
+            "m_value": 100.0
+          },
+          "baseAttackTime": {
+            "m_defined": true,
+            "m_value": 7.0
+          },
+          "respawnTime": {
+            "m_defined": false,
+            "m_value": 0
+          },
+          "hpRecoveryPerSec": {
+            "m_defined": false,
+            "m_value": 0.0
+          },
+          "spRecoveryPerSec": {
+            "m_defined": false,
+            "m_value": 0.0
+          },
+          "maxDeployCount": {
+            "m_defined": false,
+            "m_value": 0
+          },
+          "massLevel": {
+            "m_defined": true,
+            "m_value": 6
+          },
+          "baseForceLevel": {
+            "m_defined": false,
+            "m_value": 0
+          },
+          "tauntLevel": {
+            "m_defined": false,
+            "m_value": 0
+          },
+          "stunImmune": {
+            "m_defined": true,
+            "m_value": true
+          },
+          "silenceImmune": {
+            "m_defined": true,
+            "m_value": true
+          },
+          "sleepImmune": {
+            "m_defined": false,
+            "m_value": false
+          },
+          "frozenImmune": {
+            "m_defined": true,
+            "m_value": true
+          },
+          "levitateImmune": {
+            "m_defined": false,
+            "m_value": false
+          }
+        },
+        "lifePointReduce": {
+          "m_defined": true,
+          "m_value": 3
+        },
+        "levelType": {
+          "m_defined": true,
+          "m_value": 2
+        },
+        "rangeRadius": {
+          "m_defined": false,
+          "m_value": 0.0
+        },
+        "numOfExtraDrops": {
+          "m_defined": false,
+          "m_value": 0
+        },
+        "talentBlackboard": [
+          {
+            "key": "Immolation.atk_scale",
+            "value": 0.01,
+            "valueStr": null
+          },
+          {
+            "key": "Immolation.interval",
+            "value": 1.0,
+            "valueStr": null
+          }
+        ],
+        "skills": [
+          {
+            "prefabKey": "CardDurance",
+            "priority": 0,
+            "cooldown": 80.0,
+            "initCooldown": 80.0,
+            "spCost": 0,
+            "blackboard": null
+          },
+          {
+            "prefabKey": "Durance",
+            "priority": 0,
+            "cooldown": 52.0,
+            "initCooldown": 52.0,
+            "spCost": 0,
+            "blackboard": null
+          }
+        ],
+        "spData": null
+      }
+    }
+  ]
+}

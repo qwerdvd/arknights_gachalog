@@ -1,0 +1,385 @@
+{
+  "enemy_name": "enemy_1509_mousek",
+  "level": [
+    {
+      "level": 0,
+      "enemyData": {
+        "name": {
+          "m_defined": true,
+          "m_value": "鼠王"
+        },
+        "description": {
+          "m_defined": true,
+          "m_value": "对<@eb.key>生命上限最高</>单位造成大量物理伤害。对<@eb.key>生命上限最低</>单位大幅降低攻击力并造成法术伤害"
+        },
+        "prefabKey": {
+          "m_defined": true,
+          "m_value": "enemy_1509_mousek"
+        },
+        "attributes": {
+          "maxHp": {
+            "m_defined": true,
+            "m_value": 22000
+          },
+          "atk": {
+            "m_defined": true,
+            "m_value": 470
+          },
+          "def": {
+            "m_defined": true,
+            "m_value": 350
+          },
+          "magicResistance": {
+            "m_defined": true,
+            "m_value": 30.0
+          },
+          "cost": {
+            "m_defined": false,
+            "m_value": 0
+          },
+          "blockCnt": {
+            "m_defined": false,
+            "m_value": 0
+          },
+          "moveSpeed": {
+            "m_defined": true,
+            "m_value": 0.6
+          },
+          "attackSpeed": {
+            "m_defined": true,
+            "m_value": 100.0
+          },
+          "baseAttackTime": {
+            "m_defined": true,
+            "m_value": 3.4
+          },
+          "respawnTime": {
+            "m_defined": false,
+            "m_value": 0
+          },
+          "hpRecoveryPerSec": {
+            "m_defined": false,
+            "m_value": 0.0
+          },
+          "spRecoveryPerSec": {
+            "m_defined": false,
+            "m_value": 0.0
+          },
+          "maxDeployCount": {
+            "m_defined": false,
+            "m_value": 0
+          },
+          "massLevel": {
+            "m_defined": true,
+            "m_value": 5
+          },
+          "baseForceLevel": {
+            "m_defined": false,
+            "m_value": 0
+          },
+          "tauntLevel": {
+            "m_defined": false,
+            "m_value": 0
+          },
+          "stunImmune": {
+            "m_defined": true,
+            "m_value": true
+          },
+          "silenceImmune": {
+            "m_defined": true,
+            "m_value": true
+          },
+          "sleepImmune": {
+            "m_defined": false,
+            "m_value": false
+          },
+          "frozenImmune": {
+            "m_defined": true,
+            "m_value": true
+          },
+          "levitateImmune": {
+            "m_defined": false,
+            "m_value": false
+          }
+        },
+        "lifePointReduce": {
+          "m_defined": true,
+          "m_value": 1
+        },
+        "levelType": {
+          "m_defined": true,
+          "m_value": 2
+        },
+        "rangeRadius": {
+          "m_defined": true,
+          "m_value": 2.5
+        },
+        "numOfExtraDrops": {
+          "m_defined": false,
+          "m_value": 0
+        },
+        "talentBlackboard": [
+          {
+            "key": "shield.dynamic",
+            "value": 4667.0,
+            "valueStr": null
+          },
+          {
+            "key": "defup.def",
+            "value": 3000.0,
+            "valueStr": null
+          },
+          {
+            "key": "enrage.hp_ratio",
+            "value": 0.5,
+            "valueStr": null
+          },
+          {
+            "key": "enrage.damage_scale",
+            "value": 1.5,
+            "valueStr": null
+          }
+        ],
+        "skills": [
+          {
+            "prefabKey": "DriftSand",
+            "priority": 0,
+            "cooldown": 15.0,
+            "initCooldown": 20.0,
+            "spCost": 0,
+            "blackboard": [
+              {
+                "key": "damage",
+                "value": 800.0,
+                "valueStr": null
+              }
+            ]
+          },
+          {
+            "prefabKey": "SandStorm",
+            "priority": 0,
+            "cooldown": 25.0,
+            "initCooldown": 60.0,
+            "spCost": 0,
+            "blackboard": [
+              {
+                "key": "damage",
+                "value": 70.0,
+                "valueStr": null
+              },
+              {
+                "key": "atk",
+                "value": -0.7,
+                "valueStr": null
+              },
+              {
+                "key": "duration",
+                "value": 15.0,
+                "valueStr": null
+              }
+            ]
+          },
+          {
+            "prefabKey": "Mark",
+            "priority": 1,
+            "cooldown": 9999.0,
+            "initCooldown": 1.0,
+            "spCost": 0,
+            "blackboard": null
+          }
+        ],
+        "spData": null
+      }
+    },
+    {
+      "level": 1,
+      "enemyData": {
+        "name": {
+          "m_defined": false,
+          "m_value": null
+        },
+        "description": {
+          "m_defined": false,
+          "m_value": "鼠王BOSS，使用流沙的法师"
+        },
+        "prefabKey": {
+          "m_defined": false,
+          "m_value": null
+        },
+        "attributes": {
+          "maxHp": {
+            "m_defined": true,
+            "m_value": 36000
+          },
+          "atk": {
+            "m_defined": true,
+            "m_value": 590
+          },
+          "def": {
+            "m_defined": false,
+            "m_value": 0
+          },
+          "magicResistance": {
+            "m_defined": false,
+            "m_value": 0.0
+          },
+          "cost": {
+            "m_defined": false,
+            "m_value": 0
+          },
+          "blockCnt": {
+            "m_defined": false,
+            "m_value": 0
+          },
+          "moveSpeed": {
+            "m_defined": false,
+            "m_value": 0.0
+          },
+          "attackSpeed": {
+            "m_defined": false,
+            "m_value": 0.0
+          },
+          "baseAttackTime": {
+            "m_defined": false,
+            "m_value": 0.0
+          },
+          "respawnTime": {
+            "m_defined": false,
+            "m_value": 0
+          },
+          "hpRecoveryPerSec": {
+            "m_defined": false,
+            "m_value": 0.0
+          },
+          "spRecoveryPerSec": {
+            "m_defined": false,
+            "m_value": 0.0
+          },
+          "maxDeployCount": {
+            "m_defined": false,
+            "m_value": 0
+          },
+          "massLevel": {
+            "m_defined": false,
+            "m_value": 0
+          },
+          "baseForceLevel": {
+            "m_defined": false,
+            "m_value": 0
+          },
+          "tauntLevel": {
+            "m_defined": false,
+            "m_value": 0
+          },
+          "stunImmune": {
+            "m_defined": true,
+            "m_value": true
+          },
+          "silenceImmune": {
+            "m_defined": true,
+            "m_value": true
+          },
+          "sleepImmune": {
+            "m_defined": false,
+            "m_value": false
+          },
+          "frozenImmune": {
+            "m_defined": false,
+            "m_value": false
+          },
+          "levitateImmune": {
+            "m_defined": false,
+            "m_value": false
+          }
+        },
+        "lifePointReduce": {
+          "m_defined": false,
+          "m_value": 0
+        },
+        "levelType": {
+          "m_defined": false,
+          "m_value": 0
+        },
+        "rangeRadius": {
+          "m_defined": false,
+          "m_value": 0.0
+        },
+        "numOfExtraDrops": {
+          "m_defined": false,
+          "m_value": 0
+        },
+        "talentBlackboard": [
+          {
+            "key": "shield.dynamic",
+            "value": 7334.0,
+            "valueStr": null
+          },
+          {
+            "key": "defup.def",
+            "value": 3000.0,
+            "valueStr": null
+          },
+          {
+            "key": "enrage.hp_ratio",
+            "value": 0.5,
+            "valueStr": null
+          },
+          {
+            "key": "enrage.damage_scale",
+            "value": 1.7,
+            "valueStr": null
+          }
+        ],
+        "skills": [
+          {
+            "prefabKey": "DriftSand",
+            "priority": 0,
+            "cooldown": 15.0,
+            "initCooldown": 10.0,
+            "spCost": 0,
+            "blackboard": [
+              {
+                "key": "damage",
+                "value": 1500.0,
+                "valueStr": null
+              }
+            ]
+          },
+          {
+            "prefabKey": "SandStorm",
+            "priority": 1,
+            "cooldown": 20.0,
+            "initCooldown": 15.0,
+            "spCost": 0,
+            "blackboard": [
+              {
+                "key": "damage",
+                "value": 100.0,
+                "valueStr": null
+              },
+              {
+                "key": "duration",
+                "value": 15.0,
+                "valueStr": null
+              },
+              {
+                "key": "atk",
+                "value": -0.7,
+                "valueStr": null
+              }
+            ]
+          },
+          {
+            "prefabKey": "Mark",
+            "priority": 1,
+            "cooldown": 9999.0,
+            "initCooldown": 1.0,
+            "spCost": 0,
+            "blackboard": null
+          }
+        ],
+        "spData": null
+      }
+    }
+  ]
+}

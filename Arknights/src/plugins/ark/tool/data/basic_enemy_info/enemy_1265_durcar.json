@@ -1,0 +1,268 @@
+{
+  "enemy_name": "enemy_1265_durcar",
+  "level": [
+    {
+      "level": 0,
+      "enemyData": {
+        "name": {
+          "m_defined": true,
+          "m_value": "自走车"
+        },
+        "description": {
+          "m_defined": true,
+          "m_value": "风靡际崖城的模块化自走车，碰到敌人时对其造成<@eb.key>无视闪避</>的物理伤害与短暂晕眩，可以装配装备以获得额外性能"
+        },
+        "prefabKey": {
+          "m_defined": true,
+          "m_value": "enemy_1265_durcar"
+        },
+        "attributes": {
+          "maxHp": {
+            "m_defined": true,
+            "m_value": 100
+          },
+          "atk": {
+            "m_defined": true,
+            "m_value": 500
+          },
+          "def": {
+            "m_defined": true,
+            "m_value": 0
+          },
+          "magicResistance": {
+            "m_defined": true,
+            "m_value": 0.0
+          },
+          "cost": {
+            "m_defined": false,
+            "m_value": 0
+          },
+          "blockCnt": {
+            "m_defined": false,
+            "m_value": 0
+          },
+          "moveSpeed": {
+            "m_defined": true,
+            "m_value": 2.0
+          },
+          "attackSpeed": {
+            "m_defined": true,
+            "m_value": 100.0
+          },
+          "baseAttackTime": {
+            "m_defined": true,
+            "m_value": 1.0
+          },
+          "respawnTime": {
+            "m_defined": false,
+            "m_value": 0
+          },
+          "hpRecoveryPerSec": {
+            "m_defined": false,
+            "m_value": 0.0
+          },
+          "spRecoveryPerSec": {
+            "m_defined": false,
+            "m_value": 0.0
+          },
+          "maxDeployCount": {
+            "m_defined": false,
+            "m_value": 0
+          },
+          "massLevel": {
+            "m_defined": true,
+            "m_value": 1
+          },
+          "baseForceLevel": {
+            "m_defined": false,
+            "m_value": 0
+          },
+          "tauntLevel": {
+            "m_defined": false,
+            "m_value": 0
+          },
+          "stunImmune": {
+            "m_defined": false,
+            "m_value": false
+          },
+          "silenceImmune": {
+            "m_defined": false,
+            "m_value": false
+          },
+          "sleepImmune": {
+            "m_defined": false,
+            "m_value": false
+          },
+          "frozenImmune": {
+            "m_defined": false,
+            "m_value": false
+          },
+          "levitateImmune": {
+            "m_defined": false,
+            "m_value": false
+          }
+        },
+        "lifePointReduce": {
+          "m_defined": false,
+          "m_value": 0
+        },
+        "levelType": {
+          "m_defined": false,
+          "m_value": 0
+        },
+        "rangeRadius": {
+          "m_defined": false,
+          "m_value": 0.0
+        },
+        "numOfExtraDrops": {
+          "m_defined": false,
+          "m_value": 0
+        },
+        "talentBlackboard": [
+          {
+            "key": "Suicide.duration",
+            "value": 60.0,
+            "valueStr": null
+          },
+          {
+            "key": "HitEnemy.stun",
+            "value": 1.0,
+            "valueStr": null
+          },
+          {
+            "key": "HitEnemy.atk_scale",
+            "value": 1.0,
+            "valueStr": null
+          },
+          {
+            "key": "HitEnemy.enemy_durcar_knockback.enable",
+            "value": 0.0,
+            "valueStr": null
+          },
+          {
+            "key": "HitEnemy.enemy_durcar_knockback.force",
+            "value": 0.0,
+            "valueStr": null
+          },
+          {
+            "key": "HitEnemy.enemy_durcar_def_down.enable",
+            "value": 0.0,
+            "valueStr": null
+          },
+          {
+            "key": "HitEnemy.enemy_durcar_def_down.def",
+            "value": 0.0,
+            "valueStr": null
+          },
+          {
+            "key": "HitEnemy.enemy_durcar_def_down.duration",
+            "value": 0.0,
+            "valueStr": null
+          },
+          {
+            "key": "HitEnemy.enemy_durcar_mag_resist_down.enable",
+            "value": 0.0,
+            "valueStr": null
+          },
+          {
+            "key": "HitEnemy.enemy_durcar_mag_resist_down.magic_resistance",
+            "value": 0.0,
+            "valueStr": null
+          },
+          {
+            "key": "HitEnemy.enemy_durcar_mag_resist_down.duration",
+            "value": 0.0,
+            "valueStr": null
+          },
+          {
+            "key": "HitEnemy.enemy_durcar_cold.enable",
+            "value": 0.0,
+            "valueStr": null
+          },
+          {
+            "key": "HitEnemy.enemy_durcar_cold.cold",
+            "value": 0.0,
+            "valueStr": null
+          },
+          {
+            "key": "HitAlly.enemy_durcar_atk_speed_up.enable",
+            "value": 0.0,
+            "valueStr": null
+          },
+          {
+            "key": "HitAlly.enemy_durcar_atk_speed_up.attack_speed",
+            "value": 0.0,
+            "valueStr": null
+          },
+          {
+            "key": "HitAlly.enemy_durcar_atk_speed_up.duration",
+            "value": 0.0,
+            "valueStr": null
+          },
+          {
+            "key": "HitAlly.enemy_durcar_heal.enable",
+            "value": 0.0,
+            "valueStr": null
+          },
+          {
+            "key": "HitAlly.enemy_durcar_heal.heal_scale",
+            "value": 0.0,
+            "valueStr": null
+          },
+          {
+            "key": "HitAlly.enemy_durcar_heal.duration",
+            "value": 0.0,
+            "valueStr": null
+          },
+          {
+            "key": "HitAlly.enemy_durcar_gain_sp.enable",
+            "value": 0.0,
+            "valueStr": null
+          },
+          {
+            "key": "HitAlly.enemy_durcar_gain_sp.sp",
+            "value": 0.0,
+            "valueStr": null
+          },
+          {
+            "key": "Boom.enable",
+            "value": 0.0,
+            "valueStr": null
+          },
+          {
+            "key": "Boom.enable_damage",
+            "value": 0.0,
+            "valueStr": null
+          },
+          {
+            "key": "Boom.atk_scale",
+            "value": 0.0,
+            "valueStr": null
+          },
+          {
+            "key": "Boom.enable_silence",
+            "value": 0.0,
+            "valueStr": null
+          },
+          {
+            "key": "Boom.silence",
+            "value": 0.0,
+            "valueStr": null
+          },
+          {
+            "key": "HitTurngear.move_speed",
+            "value": 0.5,
+            "valueStr": null
+          },
+          {
+            "key": "HitTurngear.duration",
+            "value": 0.5,
+            "valueStr": null
+          }
+        ],
+        "skills": null,
+        "spData": null
+      }
+    }
+  ]
+}

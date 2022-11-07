@@ -1,0 +1,143 @@
+{
+  "enemy_name": "enemy_1214_mtrmgc_2",
+  "level": [
+    {
+      "level": 0,
+      "enemyData": {
+        "name": {
+          "m_defined": true,
+          "m_value": "寻路者精锐术师"
+        },
+        "description": {
+          "m_defined": true,
+          "m_value": "携带弹药时攻击造成<$ba.dt.burning>灼燃损伤</>，弹药上限：<@eb.key>1</>"
+        },
+        "prefabKey": {
+          "m_defined": true,
+          "m_value": "enemy_1214_mtrmgc_2"
+        },
+        "attributes": {
+          "maxHp": {
+            "m_defined": true,
+            "m_value": 7500
+          },
+          "atk": {
+            "m_defined": true,
+            "m_value": 385
+          },
+          "def": {
+            "m_defined": true,
+            "m_value": 250
+          },
+          "magicResistance": {
+            "m_defined": true,
+            "m_value": 50.0
+          },
+          "cost": {
+            "m_defined": false,
+            "m_value": 0
+          },
+          "blockCnt": {
+            "m_defined": false,
+            "m_value": 0
+          },
+          "moveSpeed": {
+            "m_defined": true,
+            "m_value": 0.8
+          },
+          "attackSpeed": {
+            "m_defined": true,
+            "m_value": 100.0
+          },
+          "baseAttackTime": {
+            "m_defined": true,
+            "m_value": 2.6
+          },
+          "respawnTime": {
+            "m_defined": false,
+            "m_value": 0
+          },
+          "hpRecoveryPerSec": {
+            "m_defined": false,
+            "m_value": 0.0
+          },
+          "spRecoveryPerSec": {
+            "m_defined": false,
+            "m_value": 0.0
+          },
+          "maxDeployCount": {
+            "m_defined": false,
+            "m_value": 0
+          },
+          "massLevel": {
+            "m_defined": true,
+            "m_value": 2
+          },
+          "baseForceLevel": {
+            "m_defined": false,
+            "m_value": 0
+          },
+          "tauntLevel": {
+            "m_defined": false,
+            "m_value": 0
+          },
+          "stunImmune": {
+            "m_defined": false,
+            "m_value": false
+          },
+          "silenceImmune": {
+            "m_defined": false,
+            "m_value": false
+          },
+          "sleepImmune": {
+            "m_defined": false,
+            "m_value": false
+          },
+          "frozenImmune": {
+            "m_defined": false,
+            "m_value": false
+          },
+          "levitateImmune": {
+            "m_defined": false,
+            "m_value": false
+          }
+        },
+        "lifePointReduce": {
+          "m_defined": true,
+          "m_value": 1
+        },
+        "levelType": {
+          "m_defined": false,
+          "m_value": 0
+        },
+        "rangeRadius": {
+          "m_defined": true,
+          "m_value": 1.8
+        },
+        "numOfExtraDrops": {
+          "m_defined": false,
+          "m_value": 0
+        },
+        "talentBlackboard": [
+          {
+            "key": "shotbuff.attack@headshot_ep_damage_ratio",
+            "value": 1.5,
+            "valueStr": null
+          },
+          {
+            "key": "shotbuff.attack@headshot_sp",
+            "value": -1.0,
+            "valueStr": null
+          }
+        ],
+        "skills": null,
+        "spData": {
+          "spType": 1,
+          "maxSp": 1,
+          "initSp": 1,
+          "increment": 0.0
+        }
+      }
+    }
+  ]
+}

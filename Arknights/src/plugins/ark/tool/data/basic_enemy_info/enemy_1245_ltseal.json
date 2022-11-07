@@ -1,0 +1,158 @@
+{
+  "enemy_name": "enemy_1245_ltseal",
+  "level": [
+    {
+      "level": 0,
+      "enemyData": {
+        "name": {
+          "m_defined": true,
+          "m_value": "血红阵地"
+        },
+        "description": {
+          "m_defined": true,
+          "m_value": "使被禁锢的目标晕眩并受到持续法术伤害，同时使周围四格的重整束流失效；受到数次伤害即被破坏"
+        },
+        "prefabKey": {
+          "m_defined": true,
+          "m_value": "enemy_1245_ltseal"
+        },
+        "attributes": {
+          "maxHp": {
+            "m_defined": true,
+            "m_value": 5
+          },
+          "atk": {
+            "m_defined": true,
+            "m_value": 150
+          },
+          "def": {
+            "m_defined": true,
+            "m_value": 0
+          },
+          "magicResistance": {
+            "m_defined": true,
+            "m_value": 0.0
+          },
+          "cost": {
+            "m_defined": false,
+            "m_value": 0
+          },
+          "blockCnt": {
+            "m_defined": false,
+            "m_value": 0
+          },
+          "moveSpeed": {
+            "m_defined": true,
+            "m_value": 1.0
+          },
+          "attackSpeed": {
+            "m_defined": true,
+            "m_value": 100.0
+          },
+          "baseAttackTime": {
+            "m_defined": true,
+            "m_value": 0.0
+          },
+          "respawnTime": {
+            "m_defined": false,
+            "m_value": 0
+          },
+          "hpRecoveryPerSec": {
+            "m_defined": false,
+            "m_value": 0.0
+          },
+          "spRecoveryPerSec": {
+            "m_defined": false,
+            "m_value": 0.0
+          },
+          "maxDeployCount": {
+            "m_defined": false,
+            "m_value": 0
+          },
+          "massLevel": {
+            "m_defined": true,
+            "m_value": 1
+          },
+          "baseForceLevel": {
+            "m_defined": false,
+            "m_value": 0
+          },
+          "tauntLevel": {
+            "m_defined": false,
+            "m_value": 0
+          },
+          "stunImmune": {
+            "m_defined": false,
+            "m_value": false
+          },
+          "silenceImmune": {
+            "m_defined": false,
+            "m_value": false
+          },
+          "sleepImmune": {
+            "m_defined": false,
+            "m_value": false
+          },
+          "frozenImmune": {
+            "m_defined": false,
+            "m_value": false
+          },
+          "levitateImmune": {
+            "m_defined": false,
+            "m_value": false
+          }
+        },
+        "lifePointReduce": {
+          "m_defined": true,
+          "m_value": 0
+        },
+        "levelType": {
+          "m_defined": false,
+          "m_value": 0
+        },
+        "rangeRadius": {
+          "m_defined": false,
+          "m_value": 0.0
+        },
+        "numOfExtraDrops": {
+          "m_defined": false,
+          "m_value": 0
+        },
+        "talentBlackboard": [
+          {
+            "key": "Life.duration",
+            "value": 10.0,
+            "valueStr": null
+          },
+          {
+            "key": "Life.range_id",
+            "value": 0.0,
+            "valueStr": "x-5"
+          },
+          {
+            "key": "Attack.range_id",
+            "value": 0.0,
+            "valueStr": "0-1"
+          },
+          {
+            "key": "Life.hp_ratio",
+            "value": 0.5,
+            "valueStr": null
+          },
+          {
+            "key": "Attack.hp_ratio",
+            "value": 0.5,
+            "valueStr": null
+          },
+          {
+            "key": "Attack.duration",
+            "value": 10.0,
+            "valueStr": null
+          }
+        ],
+        "skills": null,
+        "spData": null
+      }
+    }
+  ]
+}

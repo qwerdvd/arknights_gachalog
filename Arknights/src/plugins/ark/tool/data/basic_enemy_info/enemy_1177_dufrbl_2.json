@@ -1,0 +1,148 @@
+{
+  "enemy_name": "enemy_1177_dufrbl_2",
+  "level": [
+    {
+      "level": 0,
+      "enemyData": {
+        "name": {
+          "m_defined": true,
+          "m_value": "净浊之焰"
+        },
+        "description": {
+          "m_defined": true,
+          "m_value": ""
+        },
+        "prefabKey": {
+          "m_defined": true,
+          "m_value": "enemy_1177_dufrbl"
+        },
+        "attributes": {
+          "maxHp": {
+            "m_defined": true,
+            "m_value": 100
+          },
+          "atk": {
+            "m_defined": true,
+            "m_value": 600
+          },
+          "def": {
+            "m_defined": true,
+            "m_value": 0
+          },
+          "magicResistance": {
+            "m_defined": true,
+            "m_value": 0.0
+          },
+          "cost": {
+            "m_defined": false,
+            "m_value": 0
+          },
+          "blockCnt": {
+            "m_defined": false,
+            "m_value": 0
+          },
+          "moveSpeed": {
+            "m_defined": true,
+            "m_value": 2.5
+          },
+          "attackSpeed": {
+            "m_defined": true,
+            "m_value": 100.0
+          },
+          "baseAttackTime": {
+            "m_defined": true,
+            "m_value": 2.0
+          },
+          "respawnTime": {
+            "m_defined": false,
+            "m_value": 0
+          },
+          "hpRecoveryPerSec": {
+            "m_defined": true,
+            "m_value": 0.0
+          },
+          "spRecoveryPerSec": {
+            "m_defined": false,
+            "m_value": 0.0
+          },
+          "maxDeployCount": {
+            "m_defined": false,
+            "m_value": 0
+          },
+          "massLevel": {
+            "m_defined": true,
+            "m_value": 0
+          },
+          "baseForceLevel": {
+            "m_defined": false,
+            "m_value": 0
+          },
+          "tauntLevel": {
+            "m_defined": false,
+            "m_value": 0
+          },
+          "stunImmune": {
+            "m_defined": true,
+            "m_value": false
+          },
+          "silenceImmune": {
+            "m_defined": true,
+            "m_value": false
+          },
+          "sleepImmune": {
+            "m_defined": false,
+            "m_value": false
+          },
+          "frozenImmune": {
+            "m_defined": false,
+            "m_value": false
+          },
+          "levitateImmune": {
+            "m_defined": false,
+            "m_value": false
+          }
+        },
+        "lifePointReduce": {
+          "m_defined": true,
+          "m_value": 0
+        },
+        "levelType": {
+          "m_defined": false,
+          "m_value": 0
+        },
+        "rangeRadius": {
+          "m_defined": true,
+          "m_value": 1.8
+        },
+        "numOfExtraDrops": {
+          "m_defined": false,
+          "m_value": 0
+        },
+        "talentBlackboard": [
+          {
+            "key": "epdamage.attack@ep_damage_ratio",
+            "value": 1.0,
+            "valueStr": null
+          },
+          {
+            "key": "Weaken.duration",
+            "value": 10.0,
+            "valueStr": null
+          },
+          {
+            "key": "Weaken.atk",
+            "value": -0.7,
+            "valueStr": null
+          }
+        ],
+        "skills": null,
+        "spData": {
+          "spType": 1,
+          "maxSp": 0,
+          "initSp": 0,
+          "increment": 1.0
+        }
+      }
+    }
+  ]
+}

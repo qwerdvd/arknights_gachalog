@@ -9,6 +9,8 @@ mata_path = 'C:\\Users\\qwerdvd\\PycharmProjects\\pythonProject\\Arknights\\data
 char_path = mata_path + '\\excel\\character_table.json'
 data_version_path = mata_path + '\\excel\\data_version.txt'
 skill_path = mata_path + '\\excel\\skill_table.json'
+enemy_handbook_path = mata_path + '\\excel\\enemy_handbook_table.json'
+enemy_database_path = mata_path + '\\levels\\enemydata\\enemy_database.json'
 
 # 读取角色信息文件
 with open(char_path, 'r', encoding='utf-8') as f:
@@ -22,12 +24,22 @@ with open(data_version_path, 'r', encoding='utf-8') as f:
 with open(skill_path, 'r', encoding='utf-8') as f:
     raw_skill_data = json.load(f)
 
+# 读取敌人基本信息文件
+with open(enemy_handbook_path, 'r', encoding='utf-8') as f:
+    enemy_handbook_data = json.load(f)
+
+# 读取敌人详细信息文件
+with open(enemy_database_path, 'r', encoding='utf-8') as f:
+    raw_enemy_data = json.load(f)
+
 
 # 从数据版本文件中提取版本号
 data_version = raw_data_version[2].split(':')[1]
 
 CharacterId_to_chName_mapping = {}
 chName_to_enName_mapping = {}
+enemyId_to_chName_mapping = {}
+enemyId_chName_to_enName_mapping = {}
 
 
 # 角色 id 英文名到中文名的映射
@@ -41,6 +53,17 @@ async def get_CharacterId_to_chName_mapping():
         json.dump(CharacterId_to_chName_mapping, f2, ensure_ascii=False, indent=2)
 
 
+# 敌人 id 英文名到中文名的映射
+# "enemy_1007_slime": "源石虫"
+async def get_enemyId_to_chName_mapping():
+    for enemy in enemy_handbook_data.items():
+        enemyId_to_chName_mapping[enemy[0]] = enemy[1]['name']
+    # 保存敌人 id 英文名到中文名的映射
+    with open(f'C:\\Users\\qwerdvd\\PycharmProjects\\pythonProject\\Arknights\\src\\plugins\\ark\\tool\\data\\map'
+              f'\\enemyId_to_chName_mapping_{data_version}.json', 'w', encoding='utf8') as f2:
+        json.dump(enemyId_to_chName_mapping, f2, ensure_ascii=False, indent=2)
+
+
 # 角色 id 中文名到英文名的映射
 # "阿米娅": "amiya"
 async def get_chName_to_enName_mapping():
@@ -50,6 +73,20 @@ async def get_chName_to_enName_mapping():
     with open(f'C:\\Users\\qwerdvd\\PycharmProjects\\pythonProject\\Arknights\\src\\plugins\\ark\\tool\\data\\map'
               f'\\chName_to_enName_mapping_{data_version}.json', 'w', encoding='utf8') as f2:
         json.dump(chName_to_enName_mapping, f2, ensure_ascii=False, indent=2)
+
+
+# 敌人 id 中文名到英文名的映射
+# "源石虫": "slime"
+async def get_enemyId_chName_to_enName_mapping():
+    for enemy in enemy_handbook_data.items():
+        if len(enemy[0].split('_')) == 3:
+            enemyId_chName_to_enName_mapping[enemy[1]['name']] = enemy[0].split('_')[2]
+        else:
+            enemyId_chName_to_enName_mapping[enemy[1]['name']] = enemy[0].split('_')[2] + '_' + enemy[0].split('_')[3]
+    # 保存敌人 id 英文名到中文名的映射
+    with open(f'C:\\Users\\qwerdvd\\PycharmProjects\\pythonProject\\Arknights\\src\\plugins\\ark\\tool\\data\\map'
+              f'\\enemyId_chName_to_enName_mapping_{data_version}.json', 'w', encoding='utf8') as f2:
+        json.dump(enemyId_chName_to_enName_mapping, f2, ensure_ascii=False, indent=2)
 
 
 # 储存满级干员数据
@@ -91,6 +128,19 @@ async def get_char_data():
             json.dump(max_level_character_info, f2, ensure_ascii=False, indent=2)
 
 
+# 储存敌人数据
+async def get_enemy_data():
+    for enemy in raw_enemy_data['enemies']:
+        enemy_info = {}
+        enemy_name = enemy['Key']
+        raw_enemy_level_data = enemy['Value']
+        enemy_info['enemy_name'] = enemy_name
+        enemy_info['level'] = raw_enemy_level_data
+        with open(f'C:\\Users\\qwerdvd\\PycharmProjects\\pythonProject\\Arknights\\src\\plugins\\ark\\tool\\data'
+                  f'\\basic_enemy_info\\{enemy_name}.json', 'w', encoding='utf8') as f2:
+            json.dump(enemy_info, f2, ensure_ascii=False, indent=2)
+
+
 # 储存干员潜能数据
 async def get_char_potential_data():
     for char in char_path.items():
@@ -118,6 +168,7 @@ async def get_char_talents_data():
                 json.dump(talents, f2, ensure_ascii=False, indent=2)
 
 
+# 储存干员技能数据
 async def ger_char_skill_data():
     for char in char_path.items():
         skill_info = {}
@@ -140,7 +191,10 @@ async def main():
     # await get_char_data()  # 满级干员基础数据
     # await get_char_potential_data()  # 干员潜能数据
     # await get_char_talents_data()  # 干员天赋数据
-    await ger_char_skill_data()  # 干员技能数据
+    # await ger_char_skill_data()  # 干员技能数据
+    # await get_enemyId_to_chName_mapping()  # 敌人 id 英文名到中文名的映射
+    # await get_enemyId_chName_to_enName_mapping()  # 敌人 id 中文名到英文名的映射
+    await get_enemy_data()  # 敌人数据
 
 
 if __name__ == "__main__":

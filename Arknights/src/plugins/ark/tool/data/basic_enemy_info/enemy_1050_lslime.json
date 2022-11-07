@@ -1,0 +1,326 @@
+{
+  "enemy_name": "enemy_1050_lslime",
+  "level": [
+    {
+      "level": 0,
+      "enemyData": {
+        "name": {
+          "m_defined": true,
+          "m_value": "\"庞贝\""
+        },
+        "description": {
+          "m_defined": true,
+          "m_value": "被它攻击的单位会受到灼烧伤害。被阻挡时引爆体内岩浆对周围造成<@eb.danger>高额伤害</>。"
+        },
+        "prefabKey": {
+          "m_defined": true,
+          "m_value": "enemy_1050_lslime"
+        },
+        "attributes": {
+          "maxHp": {
+            "m_defined": true,
+            "m_value": 40000
+          },
+          "atk": {
+            "m_defined": true,
+            "m_value": 230
+          },
+          "def": {
+            "m_defined": true,
+            "m_value": 220
+          },
+          "magicResistance": {
+            "m_defined": true,
+            "m_value": 70.0
+          },
+          "cost": {
+            "m_defined": false,
+            "m_value": 0
+          },
+          "blockCnt": {
+            "m_defined": false,
+            "m_value": 0
+          },
+          "moveSpeed": {
+            "m_defined": true,
+            "m_value": 0.65
+          },
+          "attackSpeed": {
+            "m_defined": true,
+            "m_value": 100.0
+          },
+          "baseAttackTime": {
+            "m_defined": true,
+            "m_value": 3.5
+          },
+          "respawnTime": {
+            "m_defined": false,
+            "m_value": 0
+          },
+          "hpRecoveryPerSec": {
+            "m_defined": false,
+            "m_value": 0.0
+          },
+          "spRecoveryPerSec": {
+            "m_defined": false,
+            "m_value": 0.0
+          },
+          "maxDeployCount": {
+            "m_defined": false,
+            "m_value": 0
+          },
+          "massLevel": {
+            "m_defined": true,
+            "m_value": 4
+          },
+          "baseForceLevel": {
+            "m_defined": false,
+            "m_value": 0
+          },
+          "tauntLevel": {
+            "m_defined": false,
+            "m_value": 0
+          },
+          "stunImmune": {
+            "m_defined": true,
+            "m_value": false
+          },
+          "silenceImmune": {
+            "m_defined": true,
+            "m_value": true
+          },
+          "sleepImmune": {
+            "m_defined": false,
+            "m_value": false
+          },
+          "frozenImmune": {
+            "m_defined": false,
+            "m_value": false
+          },
+          "levitateImmune": {
+            "m_defined": false,
+            "m_value": false
+          }
+        },
+        "lifePointReduce": {
+          "m_defined": true,
+          "m_value": 1
+        },
+        "levelType": {
+          "m_defined": true,
+          "m_value": 2
+        },
+        "rangeRadius": {
+          "m_defined": true,
+          "m_value": 3.5
+        },
+        "numOfExtraDrops": {
+          "m_defined": false,
+          "m_value": 0
+        },
+        "talentBlackboard": [
+          {
+            "key": "selfbuff.attack_speed",
+            "value": 40.0,
+            "valueStr": null
+          },
+          {
+            "key": "selfbuff.hp_ratio",
+            "value": 0.5,
+            "valueStr": null
+          },
+          {
+            "key": "dot.duration",
+            "value": 10.0,
+            "valueStr": null
+          },
+          {
+            "key": "dot.damage",
+            "value": 20.0,
+            "valueStr": null
+          },
+          {
+            "key": "dot.interval",
+            "value": 0.33,
+            "valueStr": null
+          },
+          {
+            "key": "rangedamage.interval",
+            "value": 10.0,
+            "valueStr": null
+          },
+          {
+            "key": "rangedamage.attack@damage",
+            "value": 1000.0,
+            "valueStr": null
+          }
+        ],
+        "skills": null,
+        "spData": null
+      }
+    },
+    {
+      "level": 1,
+      "enemyData": {
+        "name": {
+          "m_defined": false,
+          "m_value": ""
+        },
+        "description": {
+          "m_defined": false,
+          "m_value": "被它攻击的单位会受到灼烧伤害。被阻挡时引爆体内岩浆对周围造成<@eb.danger>高额伤害</>。请务必小心应对。"
+        },
+        "prefabKey": {
+          "m_defined": true,
+          "m_value": "enemy_1050_lslime"
+        },
+        "attributes": {
+          "maxHp": {
+            "m_defined": true,
+            "m_value": 50000
+          },
+          "atk": {
+            "m_defined": true,
+            "m_value": 350
+          },
+          "def": {
+            "m_defined": true,
+            "m_value": 270
+          },
+          "magicResistance": {
+            "m_defined": true,
+            "m_value": 70.0
+          },
+          "cost": {
+            "m_defined": false,
+            "m_value": 0
+          },
+          "blockCnt": {
+            "m_defined": false,
+            "m_value": 0
+          },
+          "moveSpeed": {
+            "m_defined": false,
+            "m_value": 0.0
+          },
+          "attackSpeed": {
+            "m_defined": false,
+            "m_value": 0.0
+          },
+          "baseAttackTime": {
+            "m_defined": false,
+            "m_value": 0.0
+          },
+          "respawnTime": {
+            "m_defined": false,
+            "m_value": 0
+          },
+          "hpRecoveryPerSec": {
+            "m_defined": false,
+            "m_value": 0.0
+          },
+          "spRecoveryPerSec": {
+            "m_defined": false,
+            "m_value": 0.0
+          },
+          "maxDeployCount": {
+            "m_defined": false,
+            "m_value": 0
+          },
+          "massLevel": {
+            "m_defined": false,
+            "m_value": 0
+          },
+          "baseForceLevel": {
+            "m_defined": false,
+            "m_value": 0
+          },
+          "tauntLevel": {
+            "m_defined": false,
+            "m_value": 0
+          },
+          "stunImmune": {
+            "m_defined": true,
+            "m_value": false
+          },
+          "silenceImmune": {
+            "m_defined": true,
+            "m_value": true
+          },
+          "sleepImmune": {
+            "m_defined": false,
+            "m_value": false
+          },
+          "frozenImmune": {
+            "m_defined": false,
+            "m_value": false
+          },
+          "levitateImmune": {
+            "m_defined": false,
+            "m_value": false
+          }
+        },
+        "lifePointReduce": {
+          "m_defined": false,
+          "m_value": 0
+        },
+        "levelType": {
+          "m_defined": false,
+          "m_value": 0
+        },
+        "rangeRadius": {
+          "m_defined": false,
+          "m_value": 0.0
+        },
+        "numOfExtraDrops": {
+          "m_defined": false,
+          "m_value": 0
+        },
+        "talentBlackboard": [
+          {
+            "key": "selfbuff.atk",
+            "value": 0.2,
+            "valueStr": null
+          },
+          {
+            "key": "selfbuff.attack_speed",
+            "value": 50.0,
+            "valueStr": null
+          },
+          {
+            "key": "selfbuff.hp_ratio",
+            "value": 0.5,
+            "valueStr": null
+          },
+          {
+            "key": "dot.duration",
+            "value": 10.0,
+            "valueStr": null
+          },
+          {
+            "key": "dot.damage",
+            "value": 25.0,
+            "valueStr": null
+          },
+          {
+            "key": "dot.interval",
+            "value": 0.33,
+            "valueStr": null
+          },
+          {
+            "key": "rangedamage.interval",
+            "value": 10.0,
+            "valueStr": null
+          },
+          {
+            "key": "rangedamage.attack@damage",
+            "value": 1800.0,
+            "valueStr": null
+          }
+        ],
+        "skills": null,
+        "spData": null
+      }
+    }
+  ]
+}

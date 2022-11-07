@@ -1,0 +1,198 @@
+{
+  "enemy_name": "enemy_5005_yokafd",
+  "level": [
+    {
+      "level": 0,
+      "enemyData": {
+        "name": {
+          "m_defined": true,
+          "m_value": "无人机龙哥（暂命名）"
+        },
+        "description": {
+          "m_defined": true,
+          "m_value": "这里应该出现一个疯狂往四周射子弹的魔改无人机大王。（把这一条润色一下塞简介里，不要复制黏贴）"
+        },
+        "prefabKey": {
+          "m_defined": true,
+          "m_value": "enemy_5005_yokafd"
+        },
+        "attributes": {
+          "maxHp": {
+            "m_defined": true,
+            "m_value": 50000
+          },
+          "atk": {
+            "m_defined": true,
+            "m_value": 400
+          },
+          "def": {
+            "m_defined": true,
+            "m_value": 350
+          },
+          "magicResistance": {
+            "m_defined": true,
+            "m_value": 30.0
+          },
+          "cost": {
+            "m_defined": false,
+            "m_value": 0
+          },
+          "blockCnt": {
+            "m_defined": false,
+            "m_value": 0
+          },
+          "moveSpeed": {
+            "m_defined": true,
+            "m_value": 1.0
+          },
+          "attackSpeed": {
+            "m_defined": true,
+            "m_value": 100.0
+          },
+          "baseAttackTime": {
+            "m_defined": true,
+            "m_value": 3.0
+          },
+          "respawnTime": {
+            "m_defined": false,
+            "m_value": 0
+          },
+          "hpRecoveryPerSec": {
+            "m_defined": false,
+            "m_value": 0.0
+          },
+          "spRecoveryPerSec": {
+            "m_defined": false,
+            "m_value": 0.0
+          },
+          "maxDeployCount": {
+            "m_defined": false,
+            "m_value": 0
+          },
+          "massLevel": {
+            "m_defined": false,
+            "m_value": 0
+          },
+          "baseForceLevel": {
+            "m_defined": false,
+            "m_value": 0
+          },
+          "tauntLevel": {
+            "m_defined": false,
+            "m_value": 0
+          },
+          "stunImmune": {
+            "m_defined": false,
+            "m_value": false
+          },
+          "silenceImmune": {
+            "m_defined": false,
+            "m_value": false
+          },
+          "sleepImmune": {
+            "m_defined": false,
+            "m_value": false
+          },
+          "frozenImmune": {
+            "m_defined": false,
+            "m_value": false
+          },
+          "levitateImmune": {
+            "m_defined": false,
+            "m_value": false
+          }
+        },
+        "lifePointReduce": {
+          "m_defined": false,
+          "m_value": 0
+        },
+        "levelType": {
+          "m_defined": false,
+          "m_value": 0
+        },
+        "rangeRadius": {
+          "m_defined": false,
+          "m_value": 0.0
+        },
+        "numOfExtraDrops": {
+          "m_defined": false,
+          "m_value": 0
+        },
+        "talentBlackboard": [
+          {
+            "key": "attack.attack@times",
+            "value": 1.0,
+            "valueStr": null
+          },
+          {
+            "key": "attack.attack@startAngle",
+            "value": 180.0,
+            "valueStr": null
+          },
+          {
+            "key": "attack.attack@endAngle",
+            "value": -156.0,
+            "valueStr": null
+          },
+          {
+            "key": "attack.attack@projectileNum",
+            "value": 15.0,
+            "valueStr": null
+          },
+          {
+            "key": "crash_bleed.value",
+            "value": 300.0,
+            "valueStr": null
+          },
+          {
+            "key": "crash_bleed.interval",
+            "value": 0.5,
+            "valueStr": null
+          }
+        ],
+        "skills": [
+          {
+            "prefabKey": "HittableProjectile",
+            "priority": 0,
+            "cooldown": 10.0,
+            "initCooldown": 10.0,
+            "spCost": 0,
+            "blackboard": [
+              {
+                "key": "enemy_key",
+                "value": 0.0,
+                "valueStr": "enemy_5010_catrdg"
+              },
+              {
+                "key": "cnt",
+                "value": 15.0,
+                "valueStr": null
+              },
+              {
+                "key": "delay",
+                "value": 0.5,
+                "valueStr": null
+              },
+              {
+                "key": "times",
+                "value": 5.0,
+                "valueStr": null
+              },
+              {
+                "key": "start_angle",
+                "value": -180.0,
+                "valueStr": null
+              },
+              {
+                "key": "end_angle",
+                "value": 156.0,
+                "valueStr": null
+              }
+            ]
+          }
+        ],
+        "spData": null
+      }
+    }
+  ]
+}

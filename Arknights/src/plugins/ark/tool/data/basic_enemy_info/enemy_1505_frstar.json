@@ -1,0 +1,359 @@
+{
+  "enemy_name": "enemy_1505_frstar",
+  "level": [
+    {
+      "level": 0,
+      "enemyData": {
+        "name": {
+          "m_defined": true,
+          "m_value": "霜星"
+        },
+        "description": {
+          "m_defined": true,
+          "m_value": "整合运动法术部队干部，<@eb.danger>威胁极大</>，能使用冰属性法术<@eb.danger>造成极为恶劣的作战环境</>。"
+        },
+        "prefabKey": {
+          "m_defined": true,
+          "m_value": "enemy_1505_frstar"
+        },
+        "attributes": {
+          "maxHp": {
+            "m_defined": true,
+            "m_value": 25000
+          },
+          "atk": {
+            "m_defined": true,
+            "m_value": 420
+          },
+          "def": {
+            "m_defined": true,
+            "m_value": 250
+          },
+          "magicResistance": {
+            "m_defined": true,
+            "m_value": 50.0
+          },
+          "cost": {
+            "m_defined": false,
+            "m_value": 0
+          },
+          "blockCnt": {
+            "m_defined": false,
+            "m_value": 0
+          },
+          "moveSpeed": {
+            "m_defined": true,
+            "m_value": 0.5
+          },
+          "attackSpeed": {
+            "m_defined": true,
+            "m_value": 100.0
+          },
+          "baseAttackTime": {
+            "m_defined": true,
+            "m_value": 3.7
+          },
+          "respawnTime": {
+            "m_defined": false,
+            "m_value": 0
+          },
+          "hpRecoveryPerSec": {
+            "m_defined": true,
+            "m_value": 0.0
+          },
+          "spRecoveryPerSec": {
+            "m_defined": true,
+            "m_value": 0.0
+          },
+          "maxDeployCount": {
+            "m_defined": false,
+            "m_value": 0
+          },
+          "massLevel": {
+            "m_defined": true,
+            "m_value": 5
+          },
+          "baseForceLevel": {
+            "m_defined": false,
+            "m_value": 0
+          },
+          "tauntLevel": {
+            "m_defined": false,
+            "m_value": 0
+          },
+          "stunImmune": {
+            "m_defined": true,
+            "m_value": true
+          },
+          "silenceImmune": {
+            "m_defined": true,
+            "m_value": true
+          },
+          "sleepImmune": {
+            "m_defined": false,
+            "m_value": false
+          },
+          "frozenImmune": {
+            "m_defined": true,
+            "m_value": true
+          },
+          "levitateImmune": {
+            "m_defined": true,
+            "m_value": true
+          }
+        },
+        "lifePointReduce": {
+          "m_defined": true,
+          "m_value": 2
+        },
+        "levelType": {
+          "m_defined": true,
+          "m_value": 2
+        },
+        "rangeRadius": {
+          "m_defined": true,
+          "m_value": 2.0
+        },
+        "numOfExtraDrops": {
+          "m_defined": false,
+          "m_value": 0
+        },
+        "talentBlackboard": [
+          {
+            "key": "reborn.duration",
+            "value": 5.0,
+            "valueStr": null
+          },
+          {
+            "key": "reborn.atk",
+            "value": 0.5,
+            "valueStr": null
+          }
+        ],
+        "skills": [
+          {
+            "prefabKey": "ArcticBlast",
+            "priority": 1,
+            "cooldown": 8.5,
+            "initCooldown": 8.5,
+            "spCost": 0,
+            "blackboard": [
+              {
+                "key": "duration",
+                "value": 8.0,
+                "valueStr": null
+              },
+              {
+                "key": "attack_speed",
+                "value": -50.0,
+                "valueStr": null
+              },
+              {
+                "key": "atk_scale",
+                "value": 1.5,
+                "valueStr": null
+              },
+              {
+                "key": "range_radius",
+                "value": 2.5,
+                "valueStr": null
+              }
+            ]
+          },
+          {
+            "prefabKey": "IceShield",
+            "priority": 2,
+            "cooldown": 30.0,
+            "initCooldown": 30.0,
+            "spCost": 0,
+            "blackboard": [
+              {
+                "key": "max_cnt",
+                "value": 2.0,
+                "valueStr": null
+              }
+            ]
+          }
+        ],
+        "spData": null
+      }
+    },
+    {
+      "level": 1,
+      "enemyData": {
+        "name": {
+          "m_defined": false,
+          "m_value": null
+        },
+        "description": {
+          "m_defined": false,
+          "m_value": null
+        },
+        "prefabKey": {
+          "m_defined": false,
+          "m_value": null
+        },
+        "attributes": {
+          "maxHp": {
+            "m_defined": true,
+            "m_value": 35000
+          },
+          "atk": {
+            "m_defined": true,
+            "m_value": 620
+          },
+          "def": {
+            "m_defined": true,
+            "m_value": 350
+          },
+          "magicResistance": {
+            "m_defined": false,
+            "m_value": 0.0
+          },
+          "cost": {
+            "m_defined": false,
+            "m_value": 0
+          },
+          "blockCnt": {
+            "m_defined": false,
+            "m_value": 0
+          },
+          "moveSpeed": {
+            "m_defined": false,
+            "m_value": 0.0
+          },
+          "attackSpeed": {
+            "m_defined": false,
+            "m_value": 0.0
+          },
+          "baseAttackTime": {
+            "m_defined": false,
+            "m_value": 0.0
+          },
+          "respawnTime": {
+            "m_defined": false,
+            "m_value": 0
+          },
+          "hpRecoveryPerSec": {
+            "m_defined": false,
+            "m_value": 0.0
+          },
+          "spRecoveryPerSec": {
+            "m_defined": false,
+            "m_value": 0.0
+          },
+          "maxDeployCount": {
+            "m_defined": false,
+            "m_value": 0
+          },
+          "massLevel": {
+            "m_defined": false,
+            "m_value": 0
+          },
+          "baseForceLevel": {
+            "m_defined": false,
+            "m_value": 0
+          },
+          "tauntLevel": {
+            "m_defined": false,
+            "m_value": 0
+          },
+          "stunImmune": {
+            "m_defined": false,
+            "m_value": false
+          },
+          "silenceImmune": {
+            "m_defined": false,
+            "m_value": false
+          },
+          "sleepImmune": {
+            "m_defined": false,
+            "m_value": false
+          },
+          "frozenImmune": {
+            "m_defined": false,
+            "m_value": false
+          },
+          "levitateImmune": {
+            "m_defined": false,
+            "m_value": false
+          }
+        },
+        "lifePointReduce": {
+          "m_defined": false,
+          "m_value": 0
+        },
+        "levelType": {
+          "m_defined": false,
+          "m_value": 0
+        },
+        "rangeRadius": {
+          "m_defined": false,
+          "m_value": 0.0
+        },
+        "numOfExtraDrops": {
+          "m_defined": false,
+          "m_value": 0
+        },
+        "talentBlackboard": [
+          {
+            "key": "reborn.duration",
+            "value": 5.0,
+            "valueStr": null
+          },
+          {
+            "key": "reborn.atk",
+            "value": 0.5,
+            "valueStr": null
+          }
+        ],
+        "skills": [
+          {
+            "prefabKey": "ArcticBlast",
+            "priority": 1,
+            "cooldown": 7.0,
+            "initCooldown": 7.0,
+            "spCost": 0,
+            "blackboard": [
+              {
+                "key": "duration",
+                "value": 8.0,
+                "valueStr": null
+              },
+              {
+                "key": "attack_speed",
+                "value": -50.0,
+                "valueStr": null
+              },
+              {
+                "key": "atk_scale",
+                "value": 1.5,
+                "valueStr": null
+              },
+              {
+                "key": "range_radius",
+                "value": 2.5,
+                "valueStr": null
+              }
+            ]
+          },
+          {
+            "prefabKey": "IceShield",
+            "priority": 2,
+            "cooldown": 21.0,
+            "initCooldown": 21.0,
+            "spCost": 0,
+            "blackboard": [
+              {
+                "key": "max_cnt",
+                "value": 3.0,
+                "valueStr": null
+              }
+            ]
+          }
+        ],
+        "spData": null
+      }
+    }
+  ]
+}

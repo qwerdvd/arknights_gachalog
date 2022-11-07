@@ -1,0 +1,178 @@
+{
+  "enemy_name": "enemy_1272_nhtank_2",
+  "level": [
+    {
+      "level": 0,
+      "enemyData": {
+        "name": {
+          "m_defined": true,
+          "m_value": "尖端萨卡兹枯朽战车"
+        },
+        "description": {
+          "m_defined": true,
+          "m_value": "<@eb.key>只攻击地面单位</>，数次攻击后，下次攻击释放<@eb.key>污染秽蚀</>，近战攻击造成<@eb.key>更高伤害</>"
+        },
+        "prefabKey": {
+          "m_defined": true,
+          "m_value": "enemy_1272_nhtank_2"
+        },
+        "attributes": {
+          "maxHp": {
+            "m_defined": true,
+            "m_value": 15000
+          },
+          "atk": {
+            "m_defined": true,
+            "m_value": 850
+          },
+          "def": {
+            "m_defined": true,
+            "m_value": 750
+          },
+          "magicResistance": {
+            "m_defined": true,
+            "m_value": 10.0
+          },
+          "cost": {
+            "m_defined": false,
+            "m_value": 0
+          },
+          "blockCnt": {
+            "m_defined": false,
+            "m_value": 0
+          },
+          "moveSpeed": {
+            "m_defined": true,
+            "m_value": 0.7
+          },
+          "attackSpeed": {
+            "m_defined": false,
+            "m_value": 0.0
+          },
+          "baseAttackTime": {
+            "m_defined": true,
+            "m_value": 4.5
+          },
+          "respawnTime": {
+            "m_defined": false,
+            "m_value": 0
+          },
+          "hpRecoveryPerSec": {
+            "m_defined": false,
+            "m_value": 0.0
+          },
+          "spRecoveryPerSec": {
+            "m_defined": false,
+            "m_value": 0.0
+          },
+          "maxDeployCount": {
+            "m_defined": false,
+            "m_value": 0
+          },
+          "massLevel": {
+            "m_defined": true,
+            "m_value": 4
+          },
+          "baseForceLevel": {
+            "m_defined": false,
+            "m_value": 0
+          },
+          "tauntLevel": {
+            "m_defined": false,
+            "m_value": 0
+          },
+          "stunImmune": {
+            "m_defined": false,
+            "m_value": false
+          },
+          "silenceImmune": {
+            "m_defined": true,
+            "m_value": true
+          },
+          "sleepImmune": {
+            "m_defined": false,
+            "m_value": false
+          },
+          "frozenImmune": {
+            "m_defined": false,
+            "m_value": false
+          },
+          "levitateImmune": {
+            "m_defined": false,
+            "m_value": false
+          }
+        },
+        "lifePointReduce": {
+          "m_defined": true,
+          "m_value": 1
+        },
+        "levelType": {
+          "m_defined": true,
+          "m_value": 1
+        },
+        "rangeRadius": {
+          "m_defined": true,
+          "m_value": 2.2
+        },
+        "numOfExtraDrops": {
+          "m_defined": false,
+          "m_value": 0
+        },
+        "talentBlackboard": [
+          {
+            "key": "Empty.attack@chuang_atk_scale",
+            "value": 2.0,
+            "valueStr": null
+          },
+          {
+            "key": "Empty.sp",
+            "value": 2.0,
+            "valueStr": null
+          }
+        ],
+        "skills": [
+          {
+            "prefabKey": "PollutedRangedAtk",
+            "priority": 0,
+            "cooldown": -1.0,
+            "initCooldown": -1.0,
+            "spCost": 2,
+            "blackboard": [
+              {
+                "key": "polluted_damage_low",
+                "value": 50.0,
+                "valueStr": null
+              },
+              {
+                "key": "polluted_damage_high",
+                "value": 25.0,
+                "valueStr": null
+              },
+              {
+                "key": "projectile_life_time",
+                "value": 10.0,
+                "valueStr": null
+              },
+              {
+                "key": "range_radius",
+                "value": 2.2,
+                "valueStr": null
+              },
+              {
+                "key": "projectile_delay_time",
+                "value": 10.0,
+                "valueStr": null
+              }
+            ]
+          }
+        ],
+        "spData": {
+          "spType": 2,
+          "maxSp": 2,
+          "initSp": 2,
+          "increment": 1.0
+        }
+      }
+    }
+  ]
+}

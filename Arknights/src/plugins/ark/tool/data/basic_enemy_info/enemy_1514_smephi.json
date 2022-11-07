@@ -1,0 +1,546 @@
+{
+  "enemy_name": "enemy_1514_smephi",
+  "level": [
+    {
+      "level": 0,
+      "enemyData": {
+        "name": {
+          "m_defined": true,
+          "m_value": "梅菲斯特，\"歌者\""
+        },
+        "description": {
+          "m_defined": true,
+          "m_value": "被痛苦包围的异样生物。<@eb.key>无法被阻挡</>且每损失一定生命会释放毒性粉尘"
+        },
+        "prefabKey": {
+          "m_defined": true,
+          "m_value": "enemy_1514_smephi"
+        },
+        "attributes": {
+          "maxHp": {
+            "m_defined": true,
+            "m_value": 60000
+          },
+          "atk": {
+            "m_defined": true,
+            "m_value": 450
+          },
+          "def": {
+            "m_defined": true,
+            "m_value": 450
+          },
+          "magicResistance": {
+            "m_defined": true,
+            "m_value": 30.0
+          },
+          "cost": {
+            "m_defined": false,
+            "m_value": 0
+          },
+          "blockCnt": {
+            "m_defined": false,
+            "m_value": 0
+          },
+          "moveSpeed": {
+            "m_defined": true,
+            "m_value": 1.0
+          },
+          "attackSpeed": {
+            "m_defined": true,
+            "m_value": 100.0
+          },
+          "baseAttackTime": {
+            "m_defined": true,
+            "m_value": 4.0
+          },
+          "respawnTime": {
+            "m_defined": false,
+            "m_value": 0
+          },
+          "hpRecoveryPerSec": {
+            "m_defined": false,
+            "m_value": 0.0
+          },
+          "spRecoveryPerSec": {
+            "m_defined": false,
+            "m_value": 0.0
+          },
+          "maxDeployCount": {
+            "m_defined": false,
+            "m_value": 0
+          },
+          "massLevel": {
+            "m_defined": true,
+            "m_value": 6
+          },
+          "baseForceLevel": {
+            "m_defined": false,
+            "m_value": 0
+          },
+          "tauntLevel": {
+            "m_defined": false,
+            "m_value": 0
+          },
+          "stunImmune": {
+            "m_defined": true,
+            "m_value": true
+          },
+          "silenceImmune": {
+            "m_defined": true,
+            "m_value": true
+          },
+          "sleepImmune": {
+            "m_defined": true,
+            "m_value": true
+          },
+          "frozenImmune": {
+            "m_defined": true,
+            "m_value": true
+          },
+          "levitateImmune": {
+            "m_defined": true,
+            "m_value": true
+          }
+        },
+        "lifePointReduce": {
+          "m_defined": true,
+          "m_value": 2
+        },
+        "levelType": {
+          "m_defined": true,
+          "m_value": 2
+        },
+        "rangeRadius": {
+          "m_defined": true,
+          "m_value": 3.0
+        },
+        "numOfExtraDrops": {
+          "m_defined": false,
+          "m_value": 0
+        },
+        "talentBlackboard": [
+          {
+            "key": "rage_aura.damage",
+            "value": 0.0,
+            "valueStr": null
+          },
+          {
+            "key": "rage_aura.atk",
+            "value": 0.1,
+            "valueStr": null
+          },
+          {
+            "key": "rage_aura.attack_speed",
+            "value": 10.0,
+            "valueStr": null
+          },
+          {
+            "key": "rage_aura_state_3.damage",
+            "value": 0.0,
+            "valueStr": null
+          },
+          {
+            "key": "rage_aura_state_3.atk",
+            "value": 0.2,
+            "valueStr": null
+          },
+          {
+            "key": "rage_aura_state_3.attack_speed",
+            "value": 20.0,
+            "valueStr": null
+          },
+          {
+            "key": "poison_trigger_giver.hp_ratio",
+            "value": 0.2,
+            "valueStr": null
+          },
+          {
+            "key": "poison_trigger_giver.smephi_poison_trigger.duration",
+            "value": 30.0,
+            "valueStr": null
+          },
+          {
+            "key": "poison_trigger_giver.smephi_poison_trigger.interval",
+            "value": 1.0,
+            "valueStr": null
+          },
+          {
+            "key": "reborn.smephi_t_state_2[reborn_invincible].duration",
+            "value": 2.0,
+            "valueStr": null
+          },
+          {
+            "key": "shield.def",
+            "value": 2200.0,
+            "valueStr": null
+          },
+          {
+            "key": "shield.magic_resistance",
+            "value": 50.0,
+            "valueStr": null
+          },
+          {
+            "key": "healaura.hp_recovery_per_sec",
+            "value": 0.0,
+            "valueStr": null
+          },
+          {
+            "key": "reborn.smephi_suicide_after_buff.duration",
+            "value": 100.0,
+            "valueStr": null
+          },
+          {
+            "key": "reborn.min_hp_ratio",
+            "value": 0.5,
+            "valueStr": null
+          },
+          {
+            "key": "reborn.smephi_t_state_3[reborn].atk",
+            "value": 0.2,
+            "valueStr": null
+          },
+          {
+            "key": "reborn.smephi_t[poison].hp_ratio",
+            "value": 0.15,
+            "valueStr": null
+          },
+          {
+            "key": "reborn.duration",
+            "value": 2.6,
+            "valueStr": null
+          },
+          {
+            "key": "reborn.smephi_t[poison].smephi_poison_trigger.duration",
+            "value": 30.0,
+            "valueStr": null
+          },
+          {
+            "key": "reborn.smephi_t[poison].smephi_poison_trigger.interval",
+            "value": 1.0,
+            "valueStr": null
+          },
+          {
+            "key": "rage_aura.bgm",
+            "value": 0.0,
+            "valueStr": "lullaby"
+          },
+          {
+            "key": "reborn.smephi_heal[sheild].value",
+            "value": 200.0,
+            "valueStr": null
+          }
+        ],
+        "skills": [
+          {
+            "prefabKey": "Heal",
+            "priority": 0,
+            "cooldown": 10.0,
+            "initCooldown": 0.0,
+            "spCost": 0,
+            "blackboard": [
+              {
+                "key": "atk_scale",
+                "value": 1.0,
+                "valueStr": null
+              }
+            ]
+          },
+          {
+            "prefabKey": "Poison",
+            "priority": 0,
+            "cooldown": 9999.0,
+            "initCooldown": 9999.0,
+            "spCost": 0,
+            "blackboard": [
+              {
+                "key": "damage",
+                "value": 50.0,
+                "valueStr": null
+              },
+              {
+                "key": "max_stack_cnt",
+                "value": 5.0,
+                "valueStr": null
+              }
+            ]
+          },
+          {
+            "prefabKey": "smephi_state_2[recover]",
+            "priority": 0,
+            "cooldown": 9999.0,
+            "initCooldown": 9999.0,
+            "spCost": 0,
+            "blackboard": [
+              {
+                "key": "duration",
+                "value": 2.6,
+                "valueStr": null
+              }
+            ]
+          },
+          {
+            "prefabKey": "smephi_state_3[recover]",
+            "priority": 0,
+            "cooldown": 9999.0,
+            "initCooldown": 9999.0,
+            "spCost": 0,
+            "blackboard": [
+              {
+                "key": "duration",
+                "value": 2.6,
+                "valueStr": null
+              }
+            ]
+          },
+          {
+            "prefabKey": "blink",
+            "priority": 1,
+            "cooldown": 15.0,
+            "initCooldown": 30.0,
+            "spCost": 0,
+            "blackboard": [
+              {
+                "key": "delay",
+                "value": 1.25,
+                "valueStr": null
+              },
+              {
+                "key": "cooldown_0",
+                "value": 75.0,
+                "valueStr": null
+              },
+              {
+                "key": "cooldown_1",
+                "value": 65.0,
+                "valueStr": null
+              },
+              {
+                "key": "cooldown_2",
+                "value": 60.0,
+                "valueStr": null
+              },
+              {
+                "key": "cooldown_3",
+                "value": 45.0,
+                "valueStr": null
+              },
+              {
+                "key": "cooldown_4",
+                "value": 30.0,
+                "valueStr": null
+              },
+              {
+                "key": "cooldown_5",
+                "value": 30.0,
+                "valueStr": null
+              }
+            ]
+          },
+          {
+            "prefabKey": "PoisonRelease",
+            "priority": 0,
+            "cooldown": 9999.0,
+            "initCooldown": 9999.0,
+            "spCost": 0,
+            "blackboard": null
+          },
+          {
+            "prefabKey": "PoisonRelease_Rage",
+            "priority": 0,
+            "cooldown": 9999.0,
+            "initCooldown": 9999.0,
+            "spCost": 0,
+            "blackboard": null
+          }
+        ],
+        "spData": null
+      }
+    },
+    {
+      "level": 1,
+      "enemyData": {
+        "name": {
+          "m_defined": false,
+          "m_value": null
+        },
+        "description": {
+          "m_defined": false,
+          "m_value": null
+        },
+        "prefabKey": {
+          "m_defined": false,
+          "m_value": null
+        },
+        "attributes": {
+          "maxHp": {
+            "m_defined": true,
+            "m_value": 70000
+          },
+          "atk": {
+            "m_defined": true,
+            "m_value": 550
+          },
+          "def": {
+            "m_defined": true,
+            "m_value": 550
+          },
+          "magicResistance": {
+            "m_defined": true,
+            "m_value": 40.0
+          },
+          "cost": {
+            "m_defined": false,
+            "m_value": 0
+          },
+          "blockCnt": {
+            "m_defined": false,
+            "m_value": 0
+          },
+          "moveSpeed": {
+            "m_defined": false,
+            "m_value": 0.0
+          },
+          "attackSpeed": {
+            "m_defined": false,
+            "m_value": 0.0
+          },
+          "baseAttackTime": {
+            "m_defined": false,
+            "m_value": 0.0
+          },
+          "respawnTime": {
+            "m_defined": false,
+            "m_value": 0
+          },
+          "hpRecoveryPerSec": {
+            "m_defined": false,
+            "m_value": 0.0
+          },
+          "spRecoveryPerSec": {
+            "m_defined": false,
+            "m_value": 0.0
+          },
+          "maxDeployCount": {
+            "m_defined": false,
+            "m_value": 0
+          },
+          "massLevel": {
+            "m_defined": false,
+            "m_value": 0
+          },
+          "baseForceLevel": {
+            "m_defined": false,
+            "m_value": 0
+          },
+          "tauntLevel": {
+            "m_defined": false,
+            "m_value": 0
+          },
+          "stunImmune": {
+            "m_defined": false,
+            "m_value": false
+          },
+          "silenceImmune": {
+            "m_defined": false,
+            "m_value": false
+          },
+          "sleepImmune": {
+            "m_defined": false,
+            "m_value": false
+          },
+          "frozenImmune": {
+            "m_defined": false,
+            "m_value": false
+          },
+          "levitateImmune": {
+            "m_defined": false,
+            "m_value": false
+          }
+        },
+        "lifePointReduce": {
+          "m_defined": false,
+          "m_value": 0
+        },
+        "levelType": {
+          "m_defined": false,
+          "m_value": 0
+        },
+        "rangeRadius": {
+          "m_defined": false,
+          "m_value": 0.0
+        },
+        "numOfExtraDrops": {
+          "m_defined": false,
+          "m_value": 0
+        },
+        "talentBlackboard": null,
+        "skills": [
+          {
+            "prefabKey": "Poison",
+            "priority": 0,
+            "cooldown": 9999.0,
+            "initCooldown": 9999.0,
+            "spCost": 0,
+            "blackboard": [
+              {
+                "key": "damage",
+                "value": 80.0,
+                "valueStr": null
+              },
+              {
+                "key": "max_stack_cnt",
+                "value": 5.0,
+                "valueStr": null
+              }
+            ]
+          },
+          {
+            "prefabKey": "blink",
+            "priority": 1,
+            "cooldown": 60.0,
+            "initCooldown": 90.0,
+            "spCost": 0,
+            "blackboard": [
+              {
+                "key": "delay",
+                "value": 0.25,
+                "valueStr": null
+              },
+              {
+                "key": "cooldown_0",
+                "value": 105.0,
+                "valueStr": null
+              },
+              {
+                "key": "cooldown_1",
+                "value": 180.0,
+                "valueStr": null
+              },
+              {
+                "key": "cooldown_2",
+                "value": 120.0,
+                "valueStr": null
+              },
+              {
+                "key": "cooldown_3",
+                "value": 120.0,
+                "valueStr": null
+              },
+              {
+                "key": "cooldown_4",
+                "value": 120.0,
+                "valueStr": null
+              },
+              {
+                "key": "cooldown_5",
+                "value": 120.0,
+                "valueStr": null
+              }
+            ]
+          }
+        ],
+        "spData": null
+      }
+    }
+  ]
+}

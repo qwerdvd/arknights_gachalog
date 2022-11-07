@@ -1,0 +1,202 @@
+{
+  "enemy_name": "enemy_2007_flwitch",
+  "level": [
+    {
+      "level": 0,
+      "enemyData": {
+        "name": {
+          "m_defined": true,
+          "m_value": "“寒灾”"
+        },
+        "description": {
+          "m_defined": true,
+          "m_value": "普通攻击和冰环能够施加寒冷，并且使被冻结状态下离场的我方单位<@eb.key>再部署时间加倍</>"
+        },
+        "prefabKey": {
+          "m_defined": true,
+          "m_value": "enemy_2007_flwitch"
+        },
+        "attributes": {
+          "maxHp": {
+            "m_defined": true,
+            "m_value": 27000
+          },
+          "atk": {
+            "m_defined": true,
+            "m_value": 350
+          },
+          "def": {
+            "m_defined": true,
+            "m_value": 1500
+          },
+          "magicResistance": {
+            "m_defined": true,
+            "m_value": 80.0
+          },
+          "cost": {
+            "m_defined": false,
+            "m_value": 0
+          },
+          "blockCnt": {
+            "m_defined": false,
+            "m_value": 0
+          },
+          "moveSpeed": {
+            "m_defined": true,
+            "m_value": 0.5
+          },
+          "attackSpeed": {
+            "m_defined": true,
+            "m_value": 100.0
+          },
+          "baseAttackTime": {
+            "m_defined": true,
+            "m_value": 4.0
+          },
+          "respawnTime": {
+            "m_defined": false,
+            "m_value": 0
+          },
+          "hpRecoveryPerSec": {
+            "m_defined": true,
+            "m_value": 0.0
+          },
+          "spRecoveryPerSec": {
+            "m_defined": true,
+            "m_value": 0.0
+          },
+          "maxDeployCount": {
+            "m_defined": false,
+            "m_value": 0
+          },
+          "massLevel": {
+            "m_defined": true,
+            "m_value": 5
+          },
+          "baseForceLevel": {
+            "m_defined": false,
+            "m_value": 0
+          },
+          "tauntLevel": {
+            "m_defined": false,
+            "m_value": 0
+          },
+          "stunImmune": {
+            "m_defined": true,
+            "m_value": true
+          },
+          "silenceImmune": {
+            "m_defined": true,
+            "m_value": true
+          },
+          "sleepImmune": {
+            "m_defined": false,
+            "m_value": false
+          },
+          "frozenImmune": {
+            "m_defined": true,
+            "m_value": true
+          },
+          "levitateImmune": {
+            "m_defined": true,
+            "m_value": true
+          }
+        },
+        "lifePointReduce": {
+          "m_defined": true,
+          "m_value": 30
+        },
+        "levelType": {
+          "m_defined": true,
+          "m_value": 2
+        },
+        "rangeRadius": {
+          "m_defined": true,
+          "m_value": 2.4
+        },
+        "numOfExtraDrops": {
+          "m_defined": false,
+          "m_value": 0
+        },
+        "talentBlackboard": [
+          {
+            "key": "reborn.duration",
+            "value": 6.6,
+            "valueStr": null
+          },
+          {
+            "key": "reborn.atk",
+            "value": 0.9,
+            "valueStr": null
+          },
+          {
+            "key": "reborn.reborn_invincible.duration",
+            "value": 30.0,
+            "valueStr": null
+          },
+          {
+            "key": "attackfreeze.freeze",
+            "value": 5.0,
+            "valueStr": null
+          },
+          {
+            "key": "respawntimemul.respawn_time",
+            "value": 2.0,
+            "valueStr": null
+          },
+          {
+            "key": "invincible.duration",
+            "value": 80.0,
+            "valueStr": null
+          },
+          {
+            "key": "reborn.max_hp",
+            "value": 0.5,
+            "valueStr": null
+          }
+        ],
+        "skills": [
+          {
+            "prefabKey": "IceBurst",
+            "priority": 0,
+            "cooldown": 12.0,
+            "initCooldown": 12.0,
+            "spCost": 0,
+            "blackboard": [
+              {
+                "key": "atk_scale",
+                "value": 1.3,
+                "valueStr": null
+              },
+              {
+                "key": "freeze",
+                "value": 10.0,
+                "valueStr": null
+              },
+              {
+                "key": "flwitch_s_atkscale.atk_scale",
+                "value": 2.0,
+                "valueStr": null
+              }
+            ]
+          },
+          {
+            "prefabKey": "SummonFrosts",
+            "priority": 1,
+            "cooldown": 75.0,
+            "initCooldown": 75.0,
+            "spCost": 0,
+            "blackboard": [
+              {
+                "key": "branch_id",
+                "value": 0.0,
+                "valueStr": "frosts"
+              }
+            ]
+          }
+        ],
+        "spData": null
+      }
+    }
+  ]
+}

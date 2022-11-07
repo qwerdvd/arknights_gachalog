@@ -1,0 +1,173 @@
+{
+  "enemy_name": "enemy_1205_sfpin",
+  "level": [
+    {
+      "level": 0,
+      "enemyData": {
+        "name": {
+          "m_defined": true,
+          "m_value": "青花"
+        },
+        "description": {
+          "m_defined": true,
+          "m_value": "数次攻击后使目标受持续递增的法术伤害（可被抵抗），被击倒后生成<@eb.key>1</>个【青瓷花瓶】"
+        },
+        "prefabKey": {
+          "m_defined": true,
+          "m_value": "enemy_1205_sfpin"
+        },
+        "attributes": {
+          "maxHp": {
+            "m_defined": true,
+            "m_value": 7000
+          },
+          "atk": {
+            "m_defined": true,
+            "m_value": 400
+          },
+          "def": {
+            "m_defined": true,
+            "m_value": 350
+          },
+          "magicResistance": {
+            "m_defined": true,
+            "m_value": 50.0
+          },
+          "cost": {
+            "m_defined": false,
+            "m_value": 0
+          },
+          "blockCnt": {
+            "m_defined": false,
+            "m_value": 0
+          },
+          "moveSpeed": {
+            "m_defined": true,
+            "m_value": 0.9
+          },
+          "attackSpeed": {
+            "m_defined": true,
+            "m_value": 100.0
+          },
+          "baseAttackTime": {
+            "m_defined": true,
+            "m_value": 3.0
+          },
+          "respawnTime": {
+            "m_defined": false,
+            "m_value": 0
+          },
+          "hpRecoveryPerSec": {
+            "m_defined": false,
+            "m_value": 0.0
+          },
+          "spRecoveryPerSec": {
+            "m_defined": true,
+            "m_value": 1.0
+          },
+          "maxDeployCount": {
+            "m_defined": false,
+            "m_value": 0
+          },
+          "massLevel": {
+            "m_defined": true,
+            "m_value": 1
+          },
+          "baseForceLevel": {
+            "m_defined": false,
+            "m_value": 0
+          },
+          "tauntLevel": {
+            "m_defined": false,
+            "m_value": 0
+          },
+          "stunImmune": {
+            "m_defined": false,
+            "m_value": false
+          },
+          "silenceImmune": {
+            "m_defined": false,
+            "m_value": false
+          },
+          "sleepImmune": {
+            "m_defined": false,
+            "m_value": false
+          },
+          "frozenImmune": {
+            "m_defined": false,
+            "m_value": false
+          },
+          "levitateImmune": {
+            "m_defined": false,
+            "m_value": false
+          }
+        },
+        "lifePointReduce": {
+          "m_defined": true,
+          "m_value": 1
+        },
+        "levelType": {
+          "m_defined": true,
+          "m_value": 1
+        },
+        "rangeRadius": {
+          "m_defined": true,
+          "m_value": 2.0
+        },
+        "numOfExtraDrops": {
+          "m_defined": false,
+          "m_value": 0
+        },
+        "talentBlackboard": [
+          {
+            "key": "DeadSpawn.enemy_key",
+            "value": 0.0,
+            "valueStr": "enemy_1206_msfpin"
+          },
+          {
+            "key": "DeadSpawn.cnt",
+            "value": 1.0,
+            "valueStr": null
+          }
+        ],
+        "skills": [
+          {
+            "prefabKey": "PowerAttack",
+            "priority": 0,
+            "cooldown": 5.0,
+            "initCooldown": 0.0,
+            "spCost": 5,
+            "blackboard": [
+              {
+                "key": "atk_scale_init",
+                "value": 0.3,
+                "valueStr": null
+              },
+              {
+                "key": "atk_scale_add",
+                "value": 0.3,
+                "valueStr": null
+              },
+              {
+                "key": "times",
+                "value": 4.0,
+                "valueStr": null
+              },
+              {
+                "key": "duration",
+                "value": 20.0,
+                "valueStr": null
+              }
+            ]
+          }
+        ],
+        "spData": {
+          "spType": 2,
+          "maxSp": 5,
+          "initSp": 3,
+          "increment": 1.0
+        }
+      }
+    }
+  ]
+}

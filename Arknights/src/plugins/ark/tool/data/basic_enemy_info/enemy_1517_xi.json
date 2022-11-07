@@ -1,0 +1,428 @@
+{
+  "enemy_name": "enemy_1517_xi",
+  "level": [
+    {
+      "level": 0,
+      "enemyData": {
+        "name": {
+          "m_defined": true,
+          "m_value": "“自在”"
+        },
+        "description": {
+          "m_defined": true,
+          "m_value": "夕绘出的怪物。【纬地经天】：<@eb.key>使我方晦明变化</>。【破桎而出】：护盾<@eb.key>未被击破</>则造成<@eb.danger>巨额范围伤害</>。"
+        },
+        "prefabKey": {
+          "m_defined": true,
+          "m_value": "enemy_1517_xi"
+        },
+        "attributes": {
+          "maxHp": {
+            "m_defined": true,
+            "m_value": 30000
+          },
+          "atk": {
+            "m_defined": true,
+            "m_value": 500
+          },
+          "def": {
+            "m_defined": true,
+            "m_value": 750
+          },
+          "magicResistance": {
+            "m_defined": true,
+            "m_value": 50.0
+          },
+          "cost": {
+            "m_defined": false,
+            "m_value": 0
+          },
+          "blockCnt": {
+            "m_defined": false,
+            "m_value": 0
+          },
+          "moveSpeed": {
+            "m_defined": true,
+            "m_value": 0.5
+          },
+          "attackSpeed": {
+            "m_defined": true,
+            "m_value": 100.0
+          },
+          "baseAttackTime": {
+            "m_defined": true,
+            "m_value": 4.0
+          },
+          "respawnTime": {
+            "m_defined": false,
+            "m_value": 0
+          },
+          "hpRecoveryPerSec": {
+            "m_defined": false,
+            "m_value": 0.0
+          },
+          "spRecoveryPerSec": {
+            "m_defined": false,
+            "m_value": 0.0
+          },
+          "maxDeployCount": {
+            "m_defined": false,
+            "m_value": 0
+          },
+          "massLevel": {
+            "m_defined": true,
+            "m_value": 10
+          },
+          "baseForceLevel": {
+            "m_defined": false,
+            "m_value": 0
+          },
+          "tauntLevel": {
+            "m_defined": false,
+            "m_value": 0
+          },
+          "stunImmune": {
+            "m_defined": true,
+            "m_value": true
+          },
+          "silenceImmune": {
+            "m_defined": true,
+            "m_value": true
+          },
+          "sleepImmune": {
+            "m_defined": true,
+            "m_value": true
+          },
+          "frozenImmune": {
+            "m_defined": true,
+            "m_value": true
+          },
+          "levitateImmune": {
+            "m_defined": true,
+            "m_value": true
+          }
+        },
+        "lifePointReduce": {
+          "m_defined": true,
+          "m_value": 2
+        },
+        "levelType": {
+          "m_defined": true,
+          "m_value": 2
+        },
+        "rangeRadius": {
+          "m_defined": true,
+          "m_value": 2.5
+        },
+        "numOfExtraDrops": {
+          "m_defined": false,
+          "m_value": 0
+        },
+        "talentBlackboard": [
+          {
+            "key": "yinyang.dynamic",
+            "value": 1.0,
+            "valueStr": null
+          },
+          {
+            "key": "yinyang.buff_yinyang[same].atk_scale",
+            "value": 0.6,
+            "valueStr": null
+          },
+          {
+            "key": "yinyang.buff_yinyang[diff].atk_scale",
+            "value": 1.4,
+            "valueStr": null
+          },
+          {
+            "key": "reborn.invincible",
+            "value": 10.0,
+            "valueStr": null
+          },
+          {
+            "key": "reborn.atk",
+            "value": 0.05,
+            "valueStr": null
+          },
+          {
+            "key": "reborn.duration",
+            "value": 5.0,
+            "valueStr": null
+          }
+        ],
+        "skills": [
+          {
+            "prefabKey": "CrossAttack",
+            "priority": 0,
+            "cooldown": 30.0,
+            "initCooldown": 15.0,
+            "spCost": 0,
+            "blackboard": [
+              {
+                "key": "atk_scale",
+                "value": 1.0,
+                "valueStr": null
+              }
+            ]
+          },
+          {
+            "prefabKey": "ShieldBurst",
+            "priority": 0,
+            "cooldown": 70.0,
+            "initCooldown": 30.0,
+            "spCost": 0,
+            "blackboard": [
+              {
+                "key": "duration",
+                "value": 15.0,
+                "valueStr": null
+              },
+              {
+                "key": "dynamic",
+                "value": 2500.0,
+                "valueStr": null
+              },
+              {
+                "key": "atk_scale",
+                "value": 6.0,
+                "valueStr": null
+              },
+              {
+                "key": "range_radius",
+                "value": 3.0,
+                "valueStr": null
+              }
+            ]
+          },
+          {
+            "prefabKey": "ShieldBurstReborn",
+            "priority": 0,
+            "cooldown": 70.0,
+            "initCooldown": 40.0,
+            "spCost": 0,
+            "blackboard": [
+              {
+                "key": "duration",
+                "value": 15.0,
+                "valueStr": null
+              },
+              {
+                "key": "dynamic",
+                "value": 3000.0,
+                "valueStr": null
+              },
+              {
+                "key": "atk_scale",
+                "value": 8.0,
+                "valueStr": null
+              },
+              {
+                "key": "range_radius",
+                "value": 3.0,
+                "valueStr": null
+              }
+            ]
+          },
+          {
+            "prefabKey": "CrossAttackMark",
+            "priority": 1,
+            "cooldown": 9999.0,
+            "initCooldown": 0.0,
+            "spCost": 0,
+            "blackboard": null
+          },
+          {
+            "prefabKey": "CrossAttackMarkReborn",
+            "priority": 1,
+            "cooldown": 9999.0,
+            "initCooldown": 0.0,
+            "spCost": 0,
+            "blackboard": null
+          }
+        ],
+        "spData": null
+      }
+    },
+    {
+      "level": 1,
+      "enemyData": {
+        "name": {
+          "m_defined": false,
+          "m_value": null
+        },
+        "description": {
+          "m_defined": false,
+          "m_value": null
+        },
+        "prefabKey": {
+          "m_defined": false,
+          "m_value": null
+        },
+        "attributes": {
+          "maxHp": {
+            "m_defined": true,
+            "m_value": 40000
+          },
+          "atk": {
+            "m_defined": true,
+            "m_value": 600
+          },
+          "def": {
+            "m_defined": true,
+            "m_value": 800
+          },
+          "magicResistance": {
+            "m_defined": true,
+            "m_value": 55.0
+          },
+          "cost": {
+            "m_defined": false,
+            "m_value": 0
+          },
+          "blockCnt": {
+            "m_defined": false,
+            "m_value": 0
+          },
+          "moveSpeed": {
+            "m_defined": false,
+            "m_value": 0.0
+          },
+          "attackSpeed": {
+            "m_defined": false,
+            "m_value": 0.0
+          },
+          "baseAttackTime": {
+            "m_defined": false,
+            "m_value": 0.0
+          },
+          "respawnTime": {
+            "m_defined": false,
+            "m_value": 0
+          },
+          "hpRecoveryPerSec": {
+            "m_defined": false,
+            "m_value": 0.0
+          },
+          "spRecoveryPerSec": {
+            "m_defined": false,
+            "m_value": 0.0
+          },
+          "maxDeployCount": {
+            "m_defined": false,
+            "m_value": 0
+          },
+          "massLevel": {
+            "m_defined": false,
+            "m_value": 0
+          },
+          "baseForceLevel": {
+            "m_defined": false,
+            "m_value": 0
+          },
+          "tauntLevel": {
+            "m_defined": false,
+            "m_value": 0
+          },
+          "stunImmune": {
+            "m_defined": false,
+            "m_value": false
+          },
+          "silenceImmune": {
+            "m_defined": false,
+            "m_value": false
+          },
+          "sleepImmune": {
+            "m_defined": false,
+            "m_value": false
+          },
+          "frozenImmune": {
+            "m_defined": false,
+            "m_value": false
+          },
+          "levitateImmune": {
+            "m_defined": false,
+            "m_value": false
+          }
+        },
+        "lifePointReduce": {
+          "m_defined": false,
+          "m_value": 0
+        },
+        "levelType": {
+          "m_defined": false,
+          "m_value": 0
+        },
+        "rangeRadius": {
+          "m_defined": false,
+          "m_value": 0.0
+        },
+        "numOfExtraDrops": {
+          "m_defined": false,
+          "m_value": 0
+        },
+        "talentBlackboard": null,
+        "skills": [
+          {
+            "prefabKey": "ShieldBurst",
+            "priority": 0,
+            "cooldown": 70.0,
+            "initCooldown": 50.0,
+            "spCost": 0,
+            "blackboard": [
+              {
+                "key": "dynamic",
+                "value": 3500.0,
+                "valueStr": null
+              },
+              {
+                "key": "duration",
+                "value": 10.0,
+                "valueStr": null
+              },
+              {
+                "key": "range_radius",
+                "value": 3.0,
+                "valueStr": null
+              },
+              {
+                "key": "atk_scale",
+                "value": 6.0,
+                "valueStr": null
+              }
+            ]
+          },
+          {
+            "prefabKey": "ShieldBurstReborn",
+            "priority": 0,
+            "cooldown": 70.0,
+            "initCooldown": 60.0,
+            "spCost": 0,
+            "blackboard": [
+              {
+                "key": "duration",
+                "value": 10.0,
+                "valueStr": null
+              },
+              {
+                "key": "dynamic",
+                "value": 4000.0,
+                "valueStr": null
+              },
+              {
+                "key": "atk_scale",
+                "value": 8.0,
+                "valueStr": null
+              },
+              {
+                "key": "range_radius",
+                "value": 3.0,
+                "valueStr": null
+              }
+            ]
+          }
+        ],
+        "spData": null
+      }
+    }
+  ]
+}

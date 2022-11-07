@@ -1,0 +1,627 @@
+{
+  "enemy_name": "enemy_1521_dslily",
+  "level": [
+    {
+      "level": 0,
+      "enemyData": {
+        "name": {
+          "m_defined": true,
+          "m_value": "盐风主教昆图斯"
+        },
+        "description": {
+          "m_defined": true,
+          "m_value": "混入灾后伊比利亚的深海教会成员之一，真诚地用自己的理念篡改了律法，追求着个体的完美姿态，却根本无法参透海洋的意愿。话说回来，谁又能呢？"
+        },
+        "prefabKey": {
+          "m_defined": true,
+          "m_value": "enemy_1521_dslily"
+        },
+        "attributes": {
+          "maxHp": {
+            "m_defined": true,
+            "m_value": 100000
+          },
+          "atk": {
+            "m_defined": true,
+            "m_value": 380
+          },
+          "def": {
+            "m_defined": true,
+            "m_value": 500
+          },
+          "magicResistance": {
+            "m_defined": true,
+            "m_value": 50.0
+          },
+          "cost": {
+            "m_defined": false,
+            "m_value": 0
+          },
+          "blockCnt": {
+            "m_defined": false,
+            "m_value": 0
+          },
+          "moveSpeed": {
+            "m_defined": true,
+            "m_value": 1.0
+          },
+          "attackSpeed": {
+            "m_defined": true,
+            "m_value": 100.0
+          },
+          "baseAttackTime": {
+            "m_defined": true,
+            "m_value": 3.5
+          },
+          "respawnTime": {
+            "m_defined": false,
+            "m_value": 0
+          },
+          "hpRecoveryPerSec": {
+            "m_defined": false,
+            "m_value": 0.0
+          },
+          "spRecoveryPerSec": {
+            "m_defined": false,
+            "m_value": 0.0
+          },
+          "maxDeployCount": {
+            "m_defined": false,
+            "m_value": 0
+          },
+          "massLevel": {
+            "m_defined": true,
+            "m_value": 99
+          },
+          "baseForceLevel": {
+            "m_defined": false,
+            "m_value": 0
+          },
+          "tauntLevel": {
+            "m_defined": false,
+            "m_value": 0
+          },
+          "stunImmune": {
+            "m_defined": true,
+            "m_value": true
+          },
+          "silenceImmune": {
+            "m_defined": true,
+            "m_value": true
+          },
+          "sleepImmune": {
+            "m_defined": true,
+            "m_value": true
+          },
+          "frozenImmune": {
+            "m_defined": true,
+            "m_value": true
+          },
+          "levitateImmune": {
+            "m_defined": true,
+            "m_value": true
+          }
+        },
+        "lifePointReduce": {
+          "m_defined": true,
+          "m_value": 0
+        },
+        "levelType": {
+          "m_defined": true,
+          "m_value": 2
+        },
+        "rangeRadius": {
+          "m_defined": true,
+          "m_value": 99.0
+        },
+        "numOfExtraDrops": {
+          "m_defined": false,
+          "m_value": 0
+        },
+        "talentBlackboard": [
+          {
+            "key": "atkup1.atk",
+            "value": 0.4,
+            "valueStr": null
+          },
+          {
+            "key": "atkup2.atk",
+            "value": 0.7,
+            "valueStr": null
+          },
+          {
+            "key": "epdamage.attack@ep_damage_ratio",
+            "value": 0.2,
+            "valueStr": null
+          },
+          {
+            "key": "growup1.interval",
+            "value": 75.0,
+            "valueStr": null
+          },
+          {
+            "key": "growup1.hp_ratio",
+            "value": 0.33,
+            "valueStr": null
+          },
+          {
+            "key": "growup2.interval",
+            "value": 200.0,
+            "valueStr": null
+          },
+          {
+            "key": "growup2.hp_ratio",
+            "value": 0.33,
+            "valueStr": null
+          }
+        ],
+        "skills": [
+          {
+            "prefabKey": "Tidewater",
+            "priority": 0,
+            "cooldown": 40.0,
+            "initCooldown": 45.0,
+            "spCost": 0,
+            "blackboard": [
+              {
+                "key": "ep_damage_ratio",
+                "value": 0.5,
+                "valueStr": null
+              },
+              {
+                "key": "atk_scale",
+                "value": 0.5,
+                "valueStr": null
+              }
+            ]
+          },
+          {
+            "prefabKey": "Rockfall",
+            "priority": 0,
+            "cooldown": 40.0,
+            "initCooldown": 37.0,
+            "spCost": 0,
+            "blackboard": [
+              {
+                "key": "ep_damage_ratio",
+                "value": 0.0,
+                "valueStr": null
+              },
+              {
+                "key": "atk_scale",
+                "value": 1.4,
+                "valueStr": null
+              }
+            ]
+          },
+          {
+            "prefabKey": "SummonTentac",
+            "priority": 0,
+            "cooldown": 40.0,
+            "initCooldown": 50.0,
+            "spCost": 0,
+            "blackboard": [
+              {
+                "key": "branch_id",
+                "value": 0.0,
+                "valueStr": "dslily_dstnta"
+              }
+            ]
+          },
+          {
+            "prefabKey": "TidewaterG1",
+            "priority": 0,
+            "cooldown": 35.0,
+            "initCooldown": 15.0,
+            "spCost": 0,
+            "blackboard": [
+              {
+                "key": "ep_damage_ratio",
+                "value": 0.667,
+                "valueStr": null
+              },
+              {
+                "key": "atk_scale",
+                "value": 0.5,
+                "valueStr": null
+              }
+            ]
+          },
+          {
+            "prefabKey": "RockfallG1",
+            "priority": 0,
+            "cooldown": 40.0,
+            "initCooldown": 4.0,
+            "spCost": 0,
+            "blackboard": [
+              {
+                "key": "ep_damage_ratio",
+                "value": 0.0,
+                "valueStr": null
+              },
+              {
+                "key": "atk_scale",
+                "value": 1.4,
+                "valueStr": null
+              }
+            ]
+          },
+          {
+            "prefabKey": "SummonTentacG1",
+            "priority": 0,
+            "cooldown": 35.0,
+            "initCooldown": 10.0,
+            "spCost": 0,
+            "blackboard": [
+              {
+                "key": "branch_id",
+                "value": 0.0,
+                "valueStr": "dslily_dstnta"
+              }
+            ]
+          },
+          {
+            "prefabKey": "TidewaterG2",
+            "priority": 0,
+            "cooldown": 3.5,
+            "initCooldown": 1.0,
+            "spCost": 0,
+            "blackboard": [
+              {
+                "key": "ep_damage_ratio",
+                "value": 0.2,
+                "valueStr": null
+              },
+              {
+                "key": "atk_scale",
+                "value": 0.2,
+                "valueStr": null
+              }
+            ]
+          },
+          {
+            "prefabKey": "RockfallG2",
+            "priority": 0,
+            "cooldown": 40.0,
+            "initCooldown": 13.0,
+            "spCost": 0,
+            "blackboard": [
+              {
+                "key": "ep_damage_ratio",
+                "value": 0.0,
+                "valueStr": null
+              },
+              {
+                "key": "atk_scale",
+                "value": 1.4,
+                "valueStr": null
+              }
+            ]
+          },
+          {
+            "prefabKey": "SummonTentacG2",
+            "priority": 0,
+            "cooldown": 18.0,
+            "initCooldown": 15.0,
+            "spCost": 0,
+            "blackboard": [
+              {
+                "key": "branch_id",
+                "value": 0.0,
+                "valueStr": "dslily_dstnta"
+              }
+            ]
+          },
+          {
+            "prefabKey": "Doom",
+            "priority": 0,
+            "cooldown": 100.0,
+            "initCooldown": 200.0,
+            "spCost": 0,
+            "blackboard": [
+              {
+                "key": "value",
+                "value": -100.0,
+                "valueStr": null
+              }
+            ]
+          }
+        ],
+        "spData": null
+      }
+    },
+    {
+      "level": 1,
+      "enemyData": {
+        "name": {
+          "m_defined": false,
+          "m_value": null
+        },
+        "description": {
+          "m_defined": false,
+          "m_value": null
+        },
+        "prefabKey": {
+          "m_defined": false,
+          "m_value": null
+        },
+        "attributes": {
+          "maxHp": {
+            "m_defined": true,
+            "m_value": 140000
+          },
+          "atk": {
+            "m_defined": true,
+            "m_value": 450
+          },
+          "def": {
+            "m_defined": true,
+            "m_value": 600
+          },
+          "magicResistance": {
+            "m_defined": true,
+            "m_value": 60.0
+          },
+          "cost": {
+            "m_defined": false,
+            "m_value": 0
+          },
+          "blockCnt": {
+            "m_defined": false,
+            "m_value": 0
+          },
+          "moveSpeed": {
+            "m_defined": false,
+            "m_value": 0.0
+          },
+          "attackSpeed": {
+            "m_defined": false,
+            "m_value": 0.0
+          },
+          "baseAttackTime": {
+            "m_defined": false,
+            "m_value": 3.0
+          },
+          "respawnTime": {
+            "m_defined": false,
+            "m_value": 0
+          },
+          "hpRecoveryPerSec": {
+            "m_defined": false,
+            "m_value": 0.0
+          },
+          "spRecoveryPerSec": {
+            "m_defined": false,
+            "m_value": 0.0
+          },
+          "maxDeployCount": {
+            "m_defined": false,
+            "m_value": 0
+          },
+          "massLevel": {
+            "m_defined": false,
+            "m_value": 0
+          },
+          "baseForceLevel": {
+            "m_defined": false,
+            "m_value": 0
+          },
+          "tauntLevel": {
+            "m_defined": false,
+            "m_value": 0
+          },
+          "stunImmune": {
+            "m_defined": false,
+            "m_value": false
+          },
+          "silenceImmune": {
+            "m_defined": false,
+            "m_value": false
+          },
+          "sleepImmune": {
+            "m_defined": false,
+            "m_value": false
+          },
+          "frozenImmune": {
+            "m_defined": false,
+            "m_value": false
+          },
+          "levitateImmune": {
+            "m_defined": false,
+            "m_value": false
+          }
+        },
+        "lifePointReduce": {
+          "m_defined": false,
+          "m_value": 0
+        },
+        "levelType": {
+          "m_defined": false,
+          "m_value": 0
+        },
+        "rangeRadius": {
+          "m_defined": false,
+          "m_value": 0.0
+        },
+        "numOfExtraDrops": {
+          "m_defined": false,
+          "m_value": 0
+        },
+        "talentBlackboard": null,
+        "skills": [
+          {
+            "prefabKey": "Tidewater",
+            "priority": 0,
+            "cooldown": 40.0,
+            "initCooldown": 45.0,
+            "spCost": 0,
+            "blackboard": [
+              {
+                "key": "ep_damage_ratio",
+                "value": 0.5,
+                "valueStr": null
+              },
+              {
+                "key": "atk_scale",
+                "value": 0.5,
+                "valueStr": null
+              }
+            ]
+          },
+          {
+            "prefabKey": "Rockfall",
+            "priority": 0,
+            "cooldown": 40.0,
+            "initCooldown": 37.0,
+            "spCost": 0,
+            "blackboard": [
+              {
+                "key": "ep_damage_ratio",
+                "value": 0.0,
+                "valueStr": null
+              },
+              {
+                "key": "atk_scale",
+                "value": 1.4,
+                "valueStr": null
+              }
+            ]
+          },
+          {
+            "prefabKey": "SummonTentac",
+            "priority": 0,
+            "cooldown": 40.0,
+            "initCooldown": 50.0,
+            "spCost": 0,
+            "blackboard": [
+              {
+                "key": "branch_id",
+                "value": 0.0,
+                "valueStr": "dslily_dstnta"
+              }
+            ]
+          },
+          {
+            "prefabKey": "TidewaterG1",
+            "priority": 0,
+            "cooldown": 35.0,
+            "initCooldown": 15.0,
+            "spCost": 0,
+            "blackboard": [
+              {
+                "key": "ep_damage_ratio",
+                "value": 0.667,
+                "valueStr": null
+              },
+              {
+                "key": "atk_scale",
+                "value": 0.5,
+                "valueStr": null
+              }
+            ]
+          },
+          {
+            "prefabKey": "RockfallG1",
+            "priority": 0,
+            "cooldown": 40.0,
+            "initCooldown": 4.0,
+            "spCost": 0,
+            "blackboard": [
+              {
+                "key": "ep_damage_ratio",
+                "value": 0.0,
+                "valueStr": null
+              },
+              {
+                "key": "atk_scale",
+                "value": 1.4,
+                "valueStr": null
+              }
+            ]
+          },
+          {
+            "prefabKey": "SummonTentacG1",
+            "priority": 0,
+            "cooldown": 35.0,
+            "initCooldown": 10.0,
+            "spCost": 0,
+            "blackboard": [
+              {
+                "key": "branch_id",
+                "value": 0.0,
+                "valueStr": "dslily_dstnta"
+              }
+            ]
+          },
+          {
+            "prefabKey": "TidewaterG2",
+            "priority": 0,
+            "cooldown": 3.5,
+            "initCooldown": 1.0,
+            "spCost": 0,
+            "blackboard": [
+              {
+                "key": "ep_damage_ratio",
+                "value": 0.3,
+                "valueStr": null
+              },
+              {
+                "key": "atk_scale",
+                "value": 0.3,
+                "valueStr": null
+              }
+            ]
+          },
+          {
+            "prefabKey": "RockfallG2",
+            "priority": 0,
+            "cooldown": 40.0,
+            "initCooldown": 13.0,
+            "spCost": 0,
+            "blackboard": [
+              {
+                "key": "ep_damage_ratio",
+                "value": 0.0,
+                "valueStr": null
+              },
+              {
+                "key": "atk_scale",
+                "value": 1.4,
+                "valueStr": null
+              }
+            ]
+          },
+          {
+            "prefabKey": "SummonTentacG2",
+            "priority": 0,
+            "cooldown": 30.0,
+            "initCooldown": 25.0,
+            "spCost": 0,
+            "blackboard": [
+              {
+                "key": "branch_id",
+                "value": 0.0,
+                "valueStr": "dslily_dstnta"
+              }
+            ]
+          },
+          {
+            "prefabKey": "Doom",
+            "priority": 0,
+            "cooldown": 100.0,
+            "initCooldown": 250.0,
+            "spCost": 0,
+            "blackboard": [
+              {
+                "key": "value",
+                "value": -100.0,
+                "valueStr": null
+              }
+            ]
+          }
+        ],
+        "spData": null
+      }
+    }
+  ]
+}
