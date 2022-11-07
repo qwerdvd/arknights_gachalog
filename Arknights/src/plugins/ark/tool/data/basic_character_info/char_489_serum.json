@@ -3,6 +3,18 @@
   "profession": "CASTER",
   "subProfessionId": "blastcaster",
   "star": 5,
+  "skills": [
+    {
+      "overridePrefabKey": null,
+      "overrideTokenKey": null,
+      "skillId": "skchr_serum_1"
+    },
+    {
+      "overridePrefabKey": null,
+      "overrideTokenKey": null,
+      "skillId": "skchr_serum_2"
+    }
+  ],
   "elite": 2,
   "max_level": 80,
   "data": {

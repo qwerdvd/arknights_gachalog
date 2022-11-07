@@ -3,6 +3,18 @@
   "profession": "SPECIAL",
   "subProfessionId": "stalker",
   "star": 5,
+  "skills": [
+    {
+      "overridePrefabKey": null,
+      "overrideTokenKey": null,
+      "skillId": "skchr_kirara_1"
+    },
+    {
+      "overridePrefabKey": null,
+      "overrideTokenKey": null,
+      "skillId": "skchr_kirara_2"
+    }
+  ],
   "elite": 2,
   "max_level": 80,
   "data": {

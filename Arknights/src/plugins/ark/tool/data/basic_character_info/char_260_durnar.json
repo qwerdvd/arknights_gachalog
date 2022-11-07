@@ -3,6 +3,18 @@
   "profession": "TANK",
   "subProfessionId": "artsprotector",
   "star": 4,
+  "skills": [
+    {
+      "overridePrefabKey": "skchr_durnar_1",
+      "overrideTokenKey": null,
+      "skillId": "skcom_atk_up[2]"
+    },
+    {
+      "overridePrefabKey": null,
+      "overrideTokenKey": null,
+      "skillId": "skchr_durnar_2"
+    }
+  ],
   "elite": 2,
   "max_level": 70,
   "data": {

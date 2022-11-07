@@ -3,6 +3,7 @@
   "profession": "CASTER",
   "subProfessionId": "corecaster",
   "star": 3,
+  "skills": [],
   "elite": 1,
   "max_level": 55,
   "data": {

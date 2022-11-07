@@ -3,6 +3,23 @@
   "profession": "PIONEER",
   "subProfessionId": "charger",
   "star": 6,
+  "skills": [
+    {
+      "overridePrefabKey": null,
+      "overrideTokenKey": null,
+      "skillId": "skcom_quickattack[3]"
+    },
+    {
+      "overridePrefabKey": null,
+      "overrideTokenKey": null,
+      "skillId": "skchr_bpipe_2"
+    },
+    {
+      "overridePrefabKey": null,
+      "overrideTokenKey": null,
+      "skillId": "skchr_bpipe_3"
+    }
+  ],
   "elite": 2,
   "max_level": 90,
   "data": {

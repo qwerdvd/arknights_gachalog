@@ -3,6 +3,18 @@
   "profession": "PIONEER",
   "subProfessionId": "charger",
   "star": 4,
+  "skills": [
+    {
+      "overridePrefabKey": null,
+      "overrideTokenKey": null,
+      "skillId": "skchr_vigna_1"
+    },
+    {
+      "overridePrefabKey": null,
+      "overrideTokenKey": null,
+      "skillId": "skchr_vigna_2"
+    }
+  ],
   "elite": 2,
   "max_level": 70,
   "data": {

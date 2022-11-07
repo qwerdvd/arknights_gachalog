@@ -3,6 +3,23 @@
   "profession": "TOKEN",
   "subProfessionId": "executor",
   "star": 6,
+  "skills": [
+    {
+      "overridePrefabKey": null,
+      "overrideTokenKey": null,
+      "skillId": "sktok_phatom_1"
+    },
+    {
+      "overridePrefabKey": null,
+      "overrideTokenKey": null,
+      "skillId": "sktok_phatom_2"
+    },
+    {
+      "overridePrefabKey": null,
+      "overrideTokenKey": null,
+      "skillId": "sktok_phatom_3"
+    }
+  ],
   "elite": 2,
   "max_level": 90,
   "data": {

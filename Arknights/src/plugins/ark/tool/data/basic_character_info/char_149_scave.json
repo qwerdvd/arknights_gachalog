@@ -3,6 +3,18 @@
   "profession": "PIONEER",
   "subProfessionId": "pioneer",
   "star": 4,
+  "skills": [
+    {
+      "overridePrefabKey": null,
+      "overrideTokenKey": null,
+      "skillId": "skcom_charge_cost[2]"
+    },
+    {
+      "overridePrefabKey": null,
+      "overrideTokenKey": null,
+      "skillId": "skchr_scave_2"
+    }
+  ],
   "elite": 2,
   "max_level": 70,
   "data": {

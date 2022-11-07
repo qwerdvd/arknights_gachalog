@@ -3,6 +3,18 @@
   "profession": "CASTER",
   "subProfessionId": "mystic",
   "star": 4,
+  "skills": [
+    {
+      "overridePrefabKey": null,
+      "overrideTokenKey": null,
+      "skillId": "skchr_indigo_1"
+    },
+    {
+      "overridePrefabKey": null,
+      "overrideTokenKey": null,
+      "skillId": "skchr_indigo_2"
+    }
+  ],
   "elite": 2,
   "max_level": 70,
   "data": {

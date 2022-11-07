@@ -3,6 +3,13 @@
   "profession": "MEDIC",
   "subProfessionId": "physician",
   "star": 3,
+  "skills": [
+    {
+      "overridePrefabKey": null,
+      "overrideTokenKey": null,
+      "skillId": "skcom_range_extend"
+    }
+  ],
   "elite": 1,
   "max_level": 55,
   "data": {

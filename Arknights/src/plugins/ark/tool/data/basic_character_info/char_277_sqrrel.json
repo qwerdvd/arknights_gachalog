@@ -3,6 +3,18 @@
   "profession": "SPECIAL",
   "subProfessionId": "pusher",
   "star": 4,
+  "skills": [
+    {
+      "overridePrefabKey": null,
+      "overrideTokenKey": null,
+      "skillId": "skchr_sqrrel_1"
+    },
+    {
+      "overridePrefabKey": null,
+      "overrideTokenKey": null,
+      "skillId": "skchr_sqrrel_2"
+    }
+  ],
   "elite": 2,
   "max_level": 70,
   "data": {

@@ -3,6 +3,13 @@
   "profession": "SNIPER",
   "subProfessionId": "fastshot",
   "star": 5,
+  "skills": [
+    {
+      "overridePrefabKey": null,
+      "overrideTokenKey": null,
+      "skillId": "skchr_asnipe_1"
+    }
+  ],
   "elite": 2,
   "max_level": 80,
   "data": {

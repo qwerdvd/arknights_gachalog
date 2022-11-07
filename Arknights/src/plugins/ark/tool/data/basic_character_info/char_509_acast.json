@@ -3,6 +3,13 @@
   "profession": "CASTER",
   "subProfessionId": "splashcaster",
   "star": 5,
+  "skills": [
+    {
+      "overridePrefabKey": null,
+      "overrideTokenKey": null,
+      "skillId": "skchr_acast_1"
+    }
+  ],
   "elite": 2,
   "max_level": 80,
   "data": {

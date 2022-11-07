@@ -3,6 +3,18 @@
   "profession": "SUPPORT",
   "subProfessionId": "slower",
   "star": 4,
+  "skills": [
+    {
+      "overridePrefabKey": null,
+      "overrideTokenKey": null,
+      "skillId": "skchr_podego_1"
+    },
+    {
+      "overridePrefabKey": null,
+      "overrideTokenKey": null,
+      "skillId": "skchr_podego_2"
+    }
+  ],
   "elite": 2,
   "max_level": 70,
   "data": {

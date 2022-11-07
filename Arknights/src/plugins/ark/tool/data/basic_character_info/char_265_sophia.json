@@ -3,6 +3,18 @@
   "profession": "WARRIOR",
   "subProfessionId": "instructor",
   "star": 5,
+  "skills": [
+    {
+      "overridePrefabKey": null,
+      "overrideTokenKey": null,
+      "skillId": "skchr_sophia_1"
+    },
+    {
+      "overridePrefabKey": null,
+      "overrideTokenKey": null,
+      "skillId": "skchr_sophia_2"
+    }
+  ],
   "elite": 2,
   "max_level": 80,
   "data": {

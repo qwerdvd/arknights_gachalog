@@ -3,6 +3,23 @@
   "profession": "TOKEN",
   "subProfessionId": "notchar1",
   "star": 6,
+  "skills": [
+    {
+      "overridePrefabKey": null,
+      "overrideTokenKey": null,
+      "skillId": "sktok_mgllan_drone2"
+    },
+    {
+      "overridePrefabKey": null,
+      "overrideTokenKey": null,
+      "skillId": "sktok_mgllan_drone2"
+    },
+    {
+      "overridePrefabKey": null,
+      "overrideTokenKey": null,
+      "skillId": "sktok_mgllan_drone2"
+    }
+  ],
   "elite": 2,
   "max_level": 90,
   "data": {

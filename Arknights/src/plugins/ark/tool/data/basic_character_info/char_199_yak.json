@@ -3,6 +3,18 @@
   "profession": "TANK",
   "subProfessionId": "protector",
   "star": 4,
+  "skills": [
+    {
+      "overridePrefabKey": null,
+      "overrideTokenKey": null,
+      "skillId": "skchr_yak_1"
+    },
+    {
+      "overridePrefabKey": null,
+      "overrideTokenKey": null,
+      "skillId": "skchr_yak_2"
+    }
+  ],
   "elite": 2,
   "max_level": 70,
   "data": {

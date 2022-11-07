@@ -3,6 +3,18 @@
   "profession": "PIONEER",
   "subProfessionId": "tactician",
   "star": 4,
+  "skills": [
+    {
+      "overridePrefabKey": null,
+      "overrideTokenKey": null,
+      "skillId": "skchr_bstalk_1"
+    },
+    {
+      "overridePrefabKey": null,
+      "overrideTokenKey": null,
+      "skillId": "skchr_bstalk_2"
+    }
+  ],
   "elite": 2,
   "max_level": 70,
   "data": {

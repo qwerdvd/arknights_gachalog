@@ -3,6 +3,18 @@
   "profession": "SPECIAL",
   "subProfessionId": "hookmaster",
   "star": 4,
+  "skills": [
+    {
+      "overridePrefabKey": null,
+      "overrideTokenKey": null,
+      "skillId": "skchr_rope_1"
+    },
+    {
+      "overridePrefabKey": null,
+      "overrideTokenKey": null,
+      "skillId": "skchr_rope_2"
+    }
+  ],
   "elite": 2,
   "max_level": 70,
   "data": {

@@ -3,6 +3,23 @@
   "profession": "SNIPER",
   "subProfessionId": "reaperrange",
   "star": 6,
+  "skills": [
+    {
+      "overridePrefabKey": null,
+      "overrideTokenKey": null,
+      "skillId": "skchr_chen2_1"
+    },
+    {
+      "overridePrefabKey": null,
+      "overrideTokenKey": null,
+      "skillId": "skchr_chen2_2"
+    },
+    {
+      "overridePrefabKey": null,
+      "overrideTokenKey": null,
+      "skillId": "skchr_chen2_3"
+    }
+  ],
   "elite": 2,
   "max_level": 90,
   "data": {

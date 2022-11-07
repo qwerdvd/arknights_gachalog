@@ -3,6 +3,18 @@
   "profession": "MEDIC",
   "subProfessionId": "ringhealer",
   "star": 4,
+  "skills": [
+    {
+      "overridePrefabKey": null,
+      "overrideTokenKey": null,
+      "skillId": "skcom_heal_up[2]"
+    },
+    {
+      "overridePrefabKey": null,
+      "overrideTokenKey": null,
+      "skillId": "skchr_flower_2"
+    }
+  ],
   "elite": 2,
   "max_level": 70,
   "data": {

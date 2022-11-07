@@ -3,6 +3,18 @@
   "profession": "SUPPORT",
   "subProfessionId": "blessing",
   "star": 5,
+  "skills": [
+    {
+      "overridePrefabKey": null,
+      "overrideTokenKey": null,
+      "skillId": "skchr_ncdeer_1"
+    },
+    {
+      "overridePrefabKey": null,
+      "overrideTokenKey": null,
+      "skillId": "skchr_ncdeer_2"
+    }
+  ],
   "elite": 2,
   "max_level": 80,
   "data": {

@@ -3,6 +3,18 @@
   "profession": "SPECIAL",
   "subProfessionId": "stalker",
   "star": 4,
+  "skills": [
+    {
+      "overridePrefabKey": null,
+      "overrideTokenKey": null,
+      "skillId": "skchr_ethan_1"
+    },
+    {
+      "overridePrefabKey": null,
+      "overrideTokenKey": null,
+      "skillId": "skchr_ethan_2"
+    }
+  ],
   "elite": 2,
   "max_level": 70,
   "data": {

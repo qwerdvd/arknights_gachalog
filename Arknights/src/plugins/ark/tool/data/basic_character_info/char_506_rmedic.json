@@ -3,6 +3,7 @@
   "profession": "MEDIC",
   "subProfessionId": "physician",
   "star": 3,
+  "skills": [],
   "elite": 1,
   "max_level": 55,
   "data": {

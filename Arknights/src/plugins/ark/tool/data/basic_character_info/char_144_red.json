@@ -3,6 +3,18 @@
   "profession": "SPECIAL",
   "subProfessionId": "executor",
   "star": 5,
+  "skills": [
+    {
+      "overridePrefabKey": null,
+      "overrideTokenKey": null,
+      "skillId": "skchr_red_1"
+    },
+    {
+      "overridePrefabKey": null,
+      "overrideTokenKey": null,
+      "skillId": "skchr_red_2"
+    }
+  ],
   "elite": 2,
   "max_level": 80,
   "data": {

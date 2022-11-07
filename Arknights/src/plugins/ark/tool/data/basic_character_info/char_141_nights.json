@@ -3,6 +3,18 @@
   "profession": "CASTER",
   "subProfessionId": "corecaster",
   "star": 4,
+  "skills": [
+    {
+      "overridePrefabKey": null,
+      "overrideTokenKey": null,
+      "skillId": "skcom_atk_up[2]"
+    },
+    {
+      "overridePrefabKey": null,
+      "overrideTokenKey": null,
+      "skillId": "skchr_nights_2"
+    }
+  ],
   "elite": 2,
   "max_level": 70,
   "data": {

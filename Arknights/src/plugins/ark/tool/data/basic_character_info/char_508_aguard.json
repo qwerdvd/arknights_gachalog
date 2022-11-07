@@ -3,6 +3,13 @@
   "profession": "WARRIOR",
   "subProfessionId": "fearless",
   "star": 5,
+  "skills": [
+    {
+      "overridePrefabKey": null,
+      "overrideTokenKey": null,
+      "skillId": "skchr_aguard_1"
+    }
+  ],
   "elite": 2,
   "max_level": 80,
   "data": {

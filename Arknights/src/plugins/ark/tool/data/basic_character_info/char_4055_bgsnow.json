@@ -3,6 +3,23 @@
   "profession": "SNIPER",
   "subProfessionId": "closerange",
   "star": 6,
+  "skills": [
+    {
+      "overridePrefabKey": null,
+      "overrideTokenKey": null,
+      "skillId": "skchr_bgsnow_1"
+    },
+    {
+      "overridePrefabKey": null,
+      "overrideTokenKey": null,
+      "skillId": "skchr_bgsnow_2"
+    },
+    {
+      "overridePrefabKey": null,
+      "overrideTokenKey": null,
+      "skillId": "skchr_bgsnow_3"
+    }
+  ],
   "elite": 2,
   "max_level": 90,
   "data": {

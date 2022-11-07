@@ -3,6 +3,18 @@
   "profession": "MEDIC",
   "subProfessionId": "wandermedic",
   "star": 4,
+  "skills": [
+    {
+      "overridePrefabKey": null,
+      "overrideTokenKey": null,
+      "skillId": "skchr_chnut_1"
+    },
+    {
+      "overridePrefabKey": null,
+      "overrideTokenKey": null,
+      "skillId": "skchr_chnut_2"
+    }
+  ],
   "elite": 2,
   "max_level": 70,
   "data": {

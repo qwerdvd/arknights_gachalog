@@ -3,6 +3,18 @@
   "profession": "SUPPORT",
   "subProfessionId": "bard",
   "star": 5,
+  "skills": [
+    {
+      "overridePrefabKey": null,
+      "overrideTokenKey": null,
+      "skillId": "skchr_sora_1"
+    },
+    {
+      "overridePrefabKey": null,
+      "overrideTokenKey": null,
+      "skillId": "skchr_sora_2"
+    }
+  ],
   "elite": 2,
   "max_level": 80,
   "data": {

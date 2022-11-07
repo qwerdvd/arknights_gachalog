@@ -3,6 +3,18 @@
   "profession": "TOKEN",
   "subProfessionId": "notchar1",
   "star": 5,
+  "skills": [
+    {
+      "overridePrefabKey": null,
+      "overrideTokenKey": null,
+      "skillId": "sktok_rfrost_1"
+    },
+    {
+      "overridePrefabKey": null,
+      "overrideTokenKey": null,
+      "skillId": "sktok_rfrost_2"
+    }
+  ],
   "elite": 2,
   "max_level": 80,
   "data": {

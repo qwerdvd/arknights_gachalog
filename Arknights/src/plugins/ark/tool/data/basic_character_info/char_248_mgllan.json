@@ -3,6 +3,23 @@
   "profession": "SUPPORT",
   "subProfessionId": "summoner",
   "star": 6,
+  "skills": [
+    {
+      "overridePrefabKey": null,
+      "overrideTokenKey": null,
+      "skillId": "skchr_mgllan_1"
+    },
+    {
+      "overridePrefabKey": null,
+      "overrideTokenKey": "token_10005_mgllan_drone2",
+      "skillId": "skchr_mgllan_2"
+    },
+    {
+      "overridePrefabKey": null,
+      "overrideTokenKey": "token_10005_mgllan_drone3",
+      "skillId": "skchr_mgllan_3"
+    }
+  ],
   "elite": 2,
   "max_level": 90,
   "data": {

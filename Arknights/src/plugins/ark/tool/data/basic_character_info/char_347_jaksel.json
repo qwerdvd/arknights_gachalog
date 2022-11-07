@@ -3,6 +3,18 @@
   "profession": "WARRIOR",
   "subProfessionId": "fighter",
   "star": 4,
+  "skills": [
+    {
+      "overridePrefabKey": null,
+      "overrideTokenKey": null,
+      "skillId": "skchr_jaksel_1"
+    },
+    {
+      "overridePrefabKey": null,
+      "overrideTokenKey": null,
+      "skillId": "skchr_jaksel_2"
+    }
+  ],
   "elite": 2,
   "max_level": 70,
   "data": {

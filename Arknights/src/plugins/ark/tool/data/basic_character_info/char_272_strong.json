@@ -3,6 +3,18 @@
   "profession": "SPECIAL",
   "subProfessionId": "merchant",
   "star": 4,
+  "skills": [
+    {
+      "overridePrefabKey": null,
+      "overrideTokenKey": null,
+      "skillId": "skchr_strong_1"
+    },
+    {
+      "overridePrefabKey": null,
+      "overrideTokenKey": null,
+      "skillId": "skchr_strong_2"
+    }
+  ],
   "elite": 2,
   "max_level": 70,
   "data": {

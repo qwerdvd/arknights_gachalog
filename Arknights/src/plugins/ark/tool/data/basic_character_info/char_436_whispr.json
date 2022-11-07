@@ -3,6 +3,18 @@
   "profession": "MEDIC",
   "subProfessionId": "healer",
   "star": 5,
+  "skills": [
+    {
+      "overridePrefabKey": null,
+      "overrideTokenKey": null,
+      "skillId": "skchr_whispr_1"
+    },
+    {
+      "overridePrefabKey": null,
+      "overrideTokenKey": null,
+      "skillId": "skchr_whispr_2"
+    }
+  ],
   "elite": 2,
   "max_level": 80,
   "data": {

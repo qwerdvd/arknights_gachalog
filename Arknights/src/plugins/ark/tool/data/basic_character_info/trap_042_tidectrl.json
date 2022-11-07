@@ -3,6 +3,23 @@
   "profession": "TRAP",
   "subProfessionId": "notchar2",
   "star": 1,
+  "skills": [
+    {
+      "overridePrefabKey": null,
+      "overrideTokenKey": null,
+      "skillId": "sktok_tidectrl_1"
+    },
+    {
+      "overridePrefabKey": null,
+      "overrideTokenKey": null,
+      "skillId": "sktok_tidectrl_2"
+    },
+    {
+      "overridePrefabKey": null,
+      "overrideTokenKey": null,
+      "skillId": "sktok_tidectrl_3"
+    }
+  ],
   "elite": 0,
   "max_level": 30,
   "data": {

@@ -3,6 +3,18 @@
   "profession": "MEDIC",
   "subProfessionId": "ringhealer",
   "star": 5,
+  "skills": [
+    {
+      "overridePrefabKey": null,
+      "overrideTokenKey": null,
+      "skillId": "skchr_breeze_1"
+    },
+    {
+      "overridePrefabKey": null,
+      "overrideTokenKey": null,
+      "skillId": "skchr_breeze_2"
+    }
+  ],
   "elite": 2,
   "max_level": 80,
   "data": {

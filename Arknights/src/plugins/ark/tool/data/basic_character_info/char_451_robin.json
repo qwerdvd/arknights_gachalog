@@ -3,6 +3,18 @@
   "profession": "SPECIAL",
   "subProfessionId": "traper",
   "star": 5,
+  "skills": [
+    {
+      "overridePrefabKey": null,
+      "overrideTokenKey": null,
+      "skillId": "skchr_robin_1"
+    },
+    {
+      "overridePrefabKey": null,
+      "overrideTokenKey": null,
+      "skillId": "skchr_robin_2"
+    }
+  ],
   "elite": 2,
   "max_level": 80,
   "data": {

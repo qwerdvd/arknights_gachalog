@@ -3,6 +3,18 @@
   "profession": "WARRIOR",
   "subProfessionId": "librator",
   "star": 5,
+  "skills": [
+    {
+      "overridePrefabKey": null,
+      "overrideTokenKey": null,
+      "skillId": "skchr_takila_1"
+    },
+    {
+      "overridePrefabKey": null,
+      "overrideTokenKey": null,
+      "skillId": "skchr_takila_2"
+    }
+  ],
   "elite": 2,
   "max_level": 80,
   "data": {

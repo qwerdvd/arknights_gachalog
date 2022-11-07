@@ -3,6 +3,13 @@
   "profession": "CASTER",
   "subProfessionId": "splashcaster",
   "star": 3,
+  "skills": [
+    {
+      "overridePrefabKey": null,
+      "overrideTokenKey": null,
+      "skillId": "skcom_magic_rage[1]"
+    }
+  ],
   "elite": 1,
   "max_level": 55,
   "data": {

@@ -3,6 +3,23 @@
   "profession": "PIONEER",
   "subProfessionId": "bearer",
   "star": 6,
+  "skills": [
+    {
+      "overridePrefabKey": "skchr_sleach_1",
+      "overrideTokenKey": null,
+      "skillId": "skcom_assist_cost[3]"
+    },
+    {
+      "overridePrefabKey": null,
+      "overrideTokenKey": null,
+      "skillId": "skchr_sleach_2"
+    },
+    {
+      "overridePrefabKey": null,
+      "overrideTokenKey": null,
+      "skillId": "skchr_sleach_3"
+    }
+  ],
   "elite": 2,
   "max_level": 90,
   "data": {

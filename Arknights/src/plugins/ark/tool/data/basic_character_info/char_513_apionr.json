@@ -3,6 +3,13 @@
   "profession": "PIONEER",
   "subProfessionId": "pioneer",
   "star": 5,
+  "skills": [
+    {
+      "overridePrefabKey": null,
+      "overrideTokenKey": null,
+      "skillId": "skchr_apionr_1"
+    }
+  ],
   "elite": 2,
   "max_level": 80,
   "data": {

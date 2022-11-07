@@ -3,6 +3,18 @@
   "profession": "TRAP",
   "subProfessionId": "notchar2",
   "star": 1,
+  "skills": [
+    {
+      "overridePrefabKey": null,
+      "overrideTokenKey": null,
+      "skillId": "sktok_garage_1"
+    },
+    {
+      "overridePrefabKey": null,
+      "overrideTokenKey": null,
+      "skillId": "sktok_garage_2"
+    }
+  ],
   "elite": 0,
   "max_level": 30,
   "data": {

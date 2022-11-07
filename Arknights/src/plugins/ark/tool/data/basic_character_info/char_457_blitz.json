@@ -3,6 +3,18 @@
   "profession": "TANK",
   "subProfessionId": "shotprotector",
   "star": 5,
+  "skills": [
+    {
+      "overridePrefabKey": null,
+      "overrideTokenKey": null,
+      "skillId": "skchr_blitz_1"
+    },
+    {
+      "overridePrefabKey": null,
+      "overrideTokenKey": null,
+      "skillId": "skchr_blitz_2"
+    }
+  ],
   "elite": 2,
   "max_level": 80,
   "data": {

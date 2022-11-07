@@ -3,6 +3,18 @@
   "profession": "CASTER",
   "subProfessionId": "funnel",
   "star": 4,
+  "skills": [
+    {
+      "overridePrefabKey": null,
+      "overrideTokenKey": null,
+      "skillId": "skcom_atk_up[2]"
+    },
+    {
+      "overridePrefabKey": null,
+      "overrideTokenKey": null,
+      "skillId": "skchr_cammou_2"
+    }
+  ],
   "elite": 2,
   "max_level": 70,
   "data": {

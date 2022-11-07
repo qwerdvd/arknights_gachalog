@@ -3,6 +3,13 @@
   "profession": "WARRIOR",
   "subProfessionId": "lord",
   "star": 3,
+  "skills": [
+    {
+      "overridePrefabKey": null,
+      "overrideTokenKey": null,
+      "skillId": "skchr_midn_1"
+    }
+  ],
   "elite": 1,
   "max_level": 55,
   "data": {

@@ -3,6 +3,18 @@
   "profession": "TOKEN",
   "subProfessionId": "notchar1",
   "star": 5,
+  "skills": [
+    {
+      "overridePrefabKey": null,
+      "overrideTokenKey": null,
+      "skillId": "skcom_withdraw"
+    },
+    {
+      "overridePrefabKey": null,
+      "overrideTokenKey": null,
+      "skillId": "skcom_withdraw"
+    }
+  ],
   "elite": 2,
   "max_level": 80,
   "data": {

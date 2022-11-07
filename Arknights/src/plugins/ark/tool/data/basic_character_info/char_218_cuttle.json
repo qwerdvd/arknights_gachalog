@@ -3,6 +3,18 @@
   "profession": "SNIPER",
   "subProfessionId": "longrange",
   "star": 5,
+  "skills": [
+    {
+      "overridePrefabKey": null,
+      "overrideTokenKey": null,
+      "skillId": "skcom_atk_up[3]"
+    },
+    {
+      "overridePrefabKey": null,
+      "overrideTokenKey": null,
+      "skillId": "skchr_cuttle_2"
+    }
+  ],
   "elite": 2,
   "max_level": 80,
   "data": {

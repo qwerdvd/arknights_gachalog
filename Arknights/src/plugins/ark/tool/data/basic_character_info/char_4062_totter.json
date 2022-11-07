@@ -3,6 +3,18 @@
   "profession": "SNIPER",
   "subProfessionId": "siegesniper",
   "star": 4,
+  "skills": [
+    {
+      "overridePrefabKey": null,
+      "overrideTokenKey": null,
+      "skillId": "skchr_totter_1"
+    },
+    {
+      "overridePrefabKey": null,
+      "overrideTokenKey": null,
+      "skillId": "skchr_totter_2"
+    }
+  ],
   "elite": 2,
   "max_level": 70,
   "data": {

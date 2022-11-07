@@ -3,6 +3,18 @@
   "profession": "CASTER",
   "subProfessionId": "chain",
   "star": 4,
+  "skills": [
+    {
+      "overridePrefabKey": null,
+      "overrideTokenKey": null,
+      "skillId": "skcom_magic_rage[2]"
+    },
+    {
+      "overridePrefabKey": null,
+      "overrideTokenKey": null,
+      "skillId": "skchr_pudd_2"
+    }
+  ],
   "elite": 2,
   "max_level": 70,
   "data": {
