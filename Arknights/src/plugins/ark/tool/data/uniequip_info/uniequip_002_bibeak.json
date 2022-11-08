@@ -1,0 +1,169 @@
+{
+  "equipLevel": 3,
+  "parts": [
+    {
+      "resKey": "bibeak_equip_1_3_p1",
+      "target": "TRAIT",
+      "isToken": false,
+      "addOrOverrideTalentDataBundle": {
+        "candidates": null
+      },
+      "overrideTraitDataBundle": {
+        "candidates": [
+          {
+            "additionalDescription": "技能造成的伤害提升<@ba.vup>{value:0%}</>",
+            "unlockCondition": {
+              "phase": 2,
+              "level": 50
+            },
+            "requiredPotentialRank": 0,
+            "blackboard": [
+              {
+                "key": "damage_scale",
+                "value": 1.1
+              },
+              {
+                "key": "value",
+                "value": 0.1
+              }
+            ],
+            "overrideDescripton": null,
+            "prefabKey": null,
+            "rangeId": null
+          }
+        ]
+      }
+    },
+    {
+      "resKey": null,
+      "target": "TALENT_DATA_ONLY",
+      "isToken": false,
+      "addOrOverrideTalentDataBundle": {
+        "candidates": [
+          {
+            "displayRangeId": false,
+            "upgradeDescription": "每击杀一名敌人后获得+6攻击速度且攻击力+2%（最多叠加6次）",
+            "talentIndex": 0,
+            "unlockCondition": {
+              "phase": 2,
+              "level": 50
+            },
+            "requiredPotentialRank": 0,
+            "prefabKey": "1",
+            "name": "摄魂",
+            "description": null,
+            "rangeId": null,
+            "blackboard": [
+              {
+                "key": "attack_speed",
+                "value": 6.0
+              },
+              {
+                "key": "max_stack_cnt",
+                "value": 6.0
+              }
+            ]
+          },
+          {
+            "displayRangeId": false,
+            "upgradeDescription": "每击杀一名敌人后获得+6攻击速度且攻击力+2%（最多叠加7次<@ba.talpu>（+1）</>）",
+            "talentIndex": 0,
+            "unlockCondition": {
+              "phase": 2,
+              "level": 50
+            },
+            "requiredPotentialRank": 4,
+            "prefabKey": "1",
+            "name": "摄魂",
+            "description": null,
+            "rangeId": null,
+            "blackboard": [
+              {
+                "key": "attack_speed",
+                "value": 6.0
+              },
+              {
+                "key": "max_stack_cnt",
+                "value": 7.0
+              }
+            ]
+          }
+        ]
+      },
+      "overrideTraitDataBundle": {
+        "candidates": null
+      }
+    },
+    {
+      "resKey": "bibeak_equip_1_3_p2",
+      "target": "TALENT",
+      "isToken": false,
+      "addOrOverrideTalentDataBundle": {
+        "candidates": [
+          {
+            "displayRangeId": false,
+            "upgradeDescription": "",
+            "talentIndex": 0,
+            "unlockCondition": {
+              "phase": 2,
+              "level": 50
+            },
+            "requiredPotentialRank": 0,
+            "prefabKey": "10",
+            "name": null,
+            "description": null,
+            "rangeId": null,
+            "blackboard": [
+              {
+                "key": "atk",
+                "value": 0.02
+              },
+              {
+                "key": "max_stack_cnt",
+                "value": 6.0
+              }
+            ]
+          },
+          {
+            "displayRangeId": false,
+            "upgradeDescription": "",
+            "talentIndex": 0,
+            "unlockCondition": {
+              "phase": 2,
+              "level": 50
+            },
+            "requiredPotentialRank": 4,
+            "prefabKey": "10",
+            "name": null,
+            "description": null,
+            "rangeId": null,
+            "blackboard": [
+              {
+                "key": "atk",
+                "value": 0.02
+              },
+              {
+                "key": "max_stack_cnt",
+                "value": 7.0
+              }
+            ]
+          }
+        ]
+      },
+      "overrideTraitDataBundle": {
+        "candidates": null
+      }
+    }
+  ],
+  "attributeBlackboard": [
+    {
+      "key": "atk",
+      "value": 65.0
+    },
+    {
+      "key": "attack_speed",
+      "value": 5.0
+    }
+  ],
+  "tokenAttributeBlackboard": {}
+}

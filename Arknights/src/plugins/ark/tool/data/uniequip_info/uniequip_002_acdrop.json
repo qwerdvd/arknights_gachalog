@@ -1,0 +1,80 @@
+{
+  "equipLevel": 3,
+  "parts": [
+    {
+      "resKey": null,
+      "target": "DISPLAY",
+      "isToken": false,
+      "addOrOverrideTalentDataBundle": {
+        "candidates": null
+      },
+      "overrideTraitDataBundle": {
+        "candidates": [
+          {
+            "additionalDescription": "再部署时间<@ba.kw>减少</>",
+            "unlockCondition": {
+              "phase": 2,
+              "level": 40
+            },
+            "requiredPotentialRank": 0,
+            "blackboard": [],
+            "overrideDescripton": null,
+            "prefabKey": null,
+            "rangeId": null
+          }
+        ]
+      }
+    },
+    {
+      "resKey": null,
+      "target": "TALENT_DATA_ONLY",
+      "isToken": false,
+      "addOrOverrideTalentDataBundle": {
+        "candidates": [
+          {
+            "displayRangeId": false,
+            "upgradeDescription": "每次攻击至少造成35%攻击力的伤害（当敌人在正前方两格时提升至50%）",
+            "talentIndex": 0,
+            "unlockCondition": {
+              "phase": 2,
+              "level": 40
+            },
+            "requiredPotentialRank": 0,
+            "prefabKey": "1",
+            "name": "滑射技巧",
+            "description": null,
+            "rangeId": null,
+            "blackboard": [
+              {
+                "key": "atk_scale",
+                "value": 0.35
+              },
+              {
+                "key": "atk_scale_2",
+                "value": 0.5
+              }
+            ]
+          }
+        ]
+      },
+      "overrideTraitDataBundle": {
+        "candidates": null
+      }
+    }
+  ],
+  "attributeBlackboard": [
+    {
+      "key": "def",
+      "value": 50.0
+    },
+    {
+      "key": "attack_speed",
+      "value": 5.0
+    },
+    {
+      "key": "respawn_time",
+      "value": -25.0
+    }
+  ],
+  "tokenAttributeBlackboard": {}
+}

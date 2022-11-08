@@ -1,0 +1,105 @@
+{
+  "equipLevel": 3,
+  "parts": [
+    {
+      "resKey": "irene_equip_1_3_p1",
+      "target": "TRAIT",
+      "isToken": false,
+      "addOrOverrideTalentDataBundle": {
+        "candidates": null
+      },
+      "overrideTraitDataBundle": {
+        "candidates": [
+          {
+            "additionalDescription": "攻击时无视敌人<@ba.vup>{def_penetrate_fixed}</>点的防御力",
+            "unlockCondition": {
+              "phase": 2,
+              "level": 60
+            },
+            "requiredPotentialRank": 0,
+            "blackboard": [
+              {
+                "key": "def_penetrate_fixed",
+                "value": 70.0
+              }
+            ],
+            "overrideDescripton": null,
+            "prefabKey": null,
+            "rangeId": null
+          }
+        ]
+      }
+    },
+    {
+      "resKey": null,
+      "target": "TALENT_DATA_ONLY",
+      "isToken": false,
+      "addOrOverrideTalentDataBundle": {
+        "candidates": [
+          {
+            "displayRangeId": false,
+            "upgradeDescription": "攻击速度+18，攻击力+5%，场上有【海怪】敌人时效果翻倍",
+            "talentIndex": 1,
+            "unlockCondition": {
+              "phase": 2,
+              "level": 60
+            },
+            "requiredPotentialRank": 0,
+            "prefabKey": "2",
+            "name": "净化之剑",
+            "description": null,
+            "rangeId": null,
+            "blackboard": [
+              {
+                "key": "attack_speed",
+                "value": 18.0
+              },
+              {
+                "key": "atk",
+                "value": 0.05
+              }
+            ]
+          },
+          {
+            "displayRangeId": false,
+            "upgradeDescription": "攻击速度+21<@ba.talpu>（+3）</>，攻击力+5%，场上有【海怪】敌人时效果翻倍",
+            "talentIndex": 1,
+            "unlockCondition": {
+              "phase": 2,
+              "level": 60
+            },
+            "requiredPotentialRank": 4,
+            "prefabKey": "2",
+            "name": "净化之剑",
+            "description": null,
+            "rangeId": null,
+            "blackboard": [
+              {
+                "key": "attack_speed",
+                "value": 21.0
+              },
+              {
+                "key": "atk",
+                "value": 0.05
+              }
+            ]
+          }
+        ]
+      },
+      "overrideTraitDataBundle": {
+        "candidates": null
+      }
+    }
+  ],
+  "attributeBlackboard": [
+    {
+      "key": "atk",
+      "value": 65.0
+    },
+    {
+      "key": "def",
+      "value": 50.0
+    }
+  ],
+  "tokenAttributeBlackboard": {}
+}

@@ -1,0 +1,81 @@
+{
+  "equipLevel": 3,
+  "parts": [
+    {
+      "resKey": null,
+      "target": "TRAIT_DATA_ONLY",
+      "isToken": false,
+      "addOrOverrideTalentDataBundle": {
+        "candidates": null
+      },
+      "overrideTraitDataBundle": {
+        "candidates": [
+          {
+            "additionalDescription": null,
+            "unlockCondition": {
+              "phase": 2,
+              "level": 60
+            },
+            "requiredPotentialRank": 0,
+            "blackboard": [
+              {
+                "key": "times",
+                "value": 4.0
+              }
+            ],
+            "overrideDescripton": "攻击造成<@ba.kw>法术伤害</>，在找不到攻击目标时可以将攻击能量<@ba.kw>储存</>起来之后一齐发射（最多4个）",
+            "prefabKey": null,
+            "rangeId": null
+          }
+        ]
+      }
+    },
+    {
+      "resKey": null,
+      "target": "TALENT_DATA_ONLY",
+      "isToken": false,
+      "addOrOverrideTalentDataBundle": {
+        "candidates": [
+          {
+            "displayRangeId": false,
+            "upgradeDescription": "储存的攻击能量造成的伤害提升至143%，可额外储存1份只用于攻击精英或领袖敌人的攻击能量",
+            "talentIndex": 0,
+            "unlockCondition": {
+              "phase": 2,
+              "level": 60
+            },
+            "requiredPotentialRank": 0,
+            "prefabKey": "1",
+            "name": "强弱法",
+            "description": null,
+            "rangeId": null,
+            "blackboard": [
+              {
+                "key": "atk_scale",
+                "value": 1.43
+              },
+              {
+                "key": "times_2",
+                "value": 1.0
+              }
+            ]
+          }
+        ]
+      },
+      "overrideTraitDataBundle": {
+        "candidates": null
+      }
+    }
+  ],
+  "attributeBlackboard": [
+    {
+      "key": "atk",
+      "value": 90.0
+    },
+    {
+      "key": "attack_speed",
+      "value": 5.0
+    }
+  ],
+  "tokenAttributeBlackboard": {}
+}

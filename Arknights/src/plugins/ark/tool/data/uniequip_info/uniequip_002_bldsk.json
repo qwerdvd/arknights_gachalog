@@ -1,0 +1,93 @@
+{
+  "equipLevel": 3,
+  "parts": [
+    {
+      "resKey": "bldsk_equip_1_3_p1",
+      "target": "TRAIT",
+      "isToken": false,
+      "addOrOverrideTalentDataBundle": {
+        "candidates": null
+      },
+      "overrideTraitDataBundle": {
+        "candidates": [
+          {
+            "additionalDescription": "治疗生命值低于50%的友方单位时治疗量提升<@ba.kw>15%</>",
+            "unlockCondition": {
+              "phase": 2,
+              "level": 50
+            },
+            "requiredPotentialRank": 0,
+            "blackboard": [
+              {
+                "key": "heal_scale",
+                "value": 1.15
+              },
+              {
+                "key": "hp_ratio",
+                "value": 0.5
+              }
+            ],
+            "overrideDescripton": null,
+            "prefabKey": null,
+            "rangeId": null
+          }
+        ]
+      }
+    },
+    {
+      "resKey": null,
+      "target": "TALENT_DATA_ONLY",
+      "isToken": false,
+      "addOrOverrideTalentDataBundle": {
+        "candidates": [
+          {
+            "displayRangeId": false,
+            "upgradeDescription": "攻击范围内有敌人倒下时，为自身和范围内随机一名友方单位回复2点技力，敌人为精英或领袖时技力额外回复2点",
+            "talentIndex": 0,
+            "unlockCondition": {
+              "phase": 2,
+              "level": 50
+            },
+            "requiredPotentialRank": 0,
+            "prefabKey": "1",
+            "name": "血液样本回收",
+            "description": null,
+            "rangeId": null,
+            "blackboard": [
+              {
+                "key": "bldsk_t_1[self][no].sp",
+                "value": 2.0
+              },
+              {
+                "key": "bldsk_t_1[rand][no].sp",
+                "value": 2.0
+              },
+              {
+                "key": "bldsk_t_1[self][ex].sp",
+                "value": 4.0
+              },
+              {
+                "key": "bldsk_t_1[rand][ex].sp",
+                "value": 4.0
+              }
+            ]
+          }
+        ]
+      },
+      "overrideTraitDataBundle": {
+        "candidates": null
+      }
+    }
+  ],
+  "attributeBlackboard": [
+    {
+      "key": "max_hp",
+      "value": 80.0
+    },
+    {
+      "key": "atk",
+      "value": 47.0
+    }
+  ],
+  "tokenAttributeBlackboard": {}
+}

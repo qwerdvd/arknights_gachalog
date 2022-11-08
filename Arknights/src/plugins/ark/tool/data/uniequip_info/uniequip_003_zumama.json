@@ -1,0 +1,121 @@
+{
+  "equipLevel": 3,
+  "parts": [
+    {
+      "resKey": "zumama_equip_2_3_p1",
+      "target": "TRAIT",
+      "isToken": false,
+      "addOrOverrideTalentDataBundle": {
+        "candidates": null
+      },
+      "overrideTraitDataBundle": {
+        "candidates": [
+          {
+            "additionalDescription": null,
+            "unlockCondition": {
+              "phase": 2,
+              "level": 60
+            },
+            "requiredPotentialRank": 0,
+            "blackboard": [
+              {
+                "key": "sp_recover_ratio",
+                "value": -0.999
+              },
+              {
+                "key": "atk",
+                "value": 0.15
+              },
+              {
+                "key": "def",
+                "value": 0.15
+              }
+            ],
+            "overrideDescripton": "不阻挡敌人时无法自我回复技力，阻挡敌人时恢复技力回复速度且攻击力+15%，防御力+15%",
+            "prefabKey": null,
+            "rangeId": null
+          }
+        ]
+      }
+    },
+    {
+      "resKey": null,
+      "target": "TALENT_DATA_ONLY",
+      "isToken": false,
+      "addOrOverrideTalentDataBundle": {
+        "candidates": [
+          {
+            "displayRangeId": false,
+            "upgradeDescription": "生命值高于一半时，攻击造成123%伤害；生命值不高于一半时，获得28%的<$ba.protect>庇护</>",
+            "talentIndex": 0,
+            "unlockCondition": {
+              "phase": 2,
+              "level": 60
+            },
+            "requiredPotentialRank": 0,
+            "prefabKey": "1",
+            "name": "勇冠三军",
+            "description": null,
+            "rangeId": null,
+            "blackboard": [
+              {
+                "key": "hp_ratio",
+                "value": 0.5
+              },
+              {
+                "key": "damage_resistance",
+                "value": 0.28
+              },
+              {
+                "key": "atk_scale",
+                "value": 1.23
+              }
+            ]
+          },
+          {
+            "displayRangeId": false,
+            "upgradeDescription": "生命值高于一半时，攻击造成125%<@ba.talpu>（+2%）</>伤害；生命值不高于一半时，获得30%<@ba.talpu>（+2%）</>的<$ba.protect>庇护</>",
+            "talentIndex": 0,
+            "unlockCondition": {
+              "phase": 2,
+              "level": 60
+            },
+            "requiredPotentialRank": 4,
+            "prefabKey": "1",
+            "name": "勇冠三军",
+            "description": null,
+            "rangeId": null,
+            "blackboard": [
+              {
+                "key": "hp_ratio",
+                "value": 0.5
+              },
+              {
+                "key": "damage_resistance",
+                "value": 0.3
+              },
+              {
+                "key": "atk_scale",
+                "value": 1.25
+              }
+            ]
+          }
+        ]
+      },
+      "overrideTraitDataBundle": {
+        "candidates": null
+      }
+    }
+  ],
+  "attributeBlackboard": [
+    {
+      "key": "atk",
+      "value": 85.0
+    },
+    {
+      "key": "def",
+      "value": 110.0
+    }
+  ],
+  "tokenAttributeBlackboard": {}
+}

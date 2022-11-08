@@ -1,0 +1,81 @@
+{
+  "equipLevel": 3,
+  "parts": [
+    {
+      "resKey": "meteo_equip_1_3_p1",
+      "target": "TRAIT",
+      "isToken": false,
+      "addOrOverrideTalentDataBundle": {
+        "candidates": null
+      },
+      "overrideTraitDataBundle": {
+        "candidates": [
+          {
+            "additionalDescription": "攻击时无视敌人<@ba.vup>{def_penetrate_fixed}</>点的防御力",
+            "unlockCondition": {
+              "phase": 2,
+              "level": 50
+            },
+            "requiredPotentialRank": 0,
+            "blackboard": [
+              {
+                "key": "def_penetrate_fixed",
+                "value": 100.0
+              }
+            ],
+            "overrideDescripton": "攻击造成<@ba.kw>群体物理伤害</>",
+            "prefabKey": null,
+            "rangeId": null
+          }
+        ]
+      }
+    },
+    {
+      "resKey": null,
+      "target": "TALENT_DATA_ONLY",
+      "isToken": false,
+      "addOrOverrideTalentDataBundle": {
+        "candidates": [
+          {
+            "displayRangeId": false,
+            "upgradeDescription": "普通攻击和技能释放时，50%几率当次攻击的攻击力+60%",
+            "talentIndex": 0,
+            "unlockCondition": {
+              "phase": 2,
+              "level": 50
+            },
+            "requiredPotentialRank": 0,
+            "prefabKey": "1",
+            "name": "爆破附着改装",
+            "description": null,
+            "rangeId": null,
+            "blackboard": [
+              {
+                "key": "atk",
+                "value": 0.6
+              },
+              {
+                "key": "prob",
+                "value": 0.5
+              }
+            ]
+          }
+        ]
+      },
+      "overrideTraitDataBundle": {
+        "candidates": null
+      }
+    }
+  ],
+  "attributeBlackboard": [
+    {
+      "key": "max_hp",
+      "value": 180.0
+    },
+    {
+      "key": "atk",
+      "value": 65.0
+    }
+  ],
+  "tokenAttributeBlackboard": {}
+}

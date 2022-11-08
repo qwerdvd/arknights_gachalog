@@ -1,0 +1,77 @@
+{
+  "equipLevel": 3,
+  "parts": [
+    {
+      "resKey": "waaifu_equip_1_3_p1",
+      "target": "TRAIT",
+      "isToken": false,
+      "addOrOverrideTalentDataBundle": {
+        "candidates": null
+      },
+      "overrideTraitDataBundle": {
+        "candidates": [
+          {
+            "additionalDescription": "撤退时返还<@ba.kw>大量</>该次部署费用",
+            "unlockCondition": {
+              "phase": 2,
+              "level": 50
+            },
+            "requiredPotentialRank": 0,
+            "blackboard": [
+              {
+                "key": "withdraw_cost_recover_ratio",
+                "value": 0.8
+              }
+            ],
+            "overrideDescripton": null,
+            "prefabKey": null,
+            "rangeId": null
+          }
+        ]
+      }
+    },
+    {
+      "resKey": "waaifu_equip_1_3_p2",
+      "target": "TALENT",
+      "isToken": false,
+      "addOrOverrideTalentDataBundle": {
+        "candidates": [
+          {
+            "displayRangeId": false,
+            "upgradeDescription": "对【感染生物】造成的物理伤害提升14%",
+            "talentIndex": -1,
+            "unlockCondition": {
+              "phase": 2,
+              "level": 50
+            },
+            "requiredPotentialRank": 0,
+            "prefabKey": "10",
+            "name": "除害杂役",
+            "description": null,
+            "rangeId": null,
+            "blackboard": [
+              {
+                "key": "atk_scale",
+                "value": 1.14
+              }
+            ]
+          }
+        ]
+      },
+      "overrideTraitDataBundle": {
+        "candidates": null
+      }
+    }
+  ],
+  "attributeBlackboard": [
+    {
+      "key": "max_hp",
+      "value": 95.0
+    },
+    {
+      "key": "atk",
+      "value": 65.0
+    }
+  ],
+  "tokenAttributeBlackboard": {}
+}

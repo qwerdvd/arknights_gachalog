@@ -1,0 +1,85 @@
+{
+  "equipLevel": 3,
+  "parts": [
+    {
+      "resKey": "blemsh_equip_1_3_p1",
+      "target": "TRAIT",
+      "isToken": false,
+      "addOrOverrideTalentDataBundle": {
+        "candidates": null
+      },
+      "overrideTraitDataBundle": {
+        "candidates": [
+          {
+            "additionalDescription": "受到的伤害减少<@ba.kw>15%</>",
+            "unlockCondition": {
+              "phase": 2,
+              "level": 60
+            },
+            "requiredPotentialRank": 0,
+            "blackboard": [
+              {
+                "key": "damage_resistance",
+                "value": 0.15
+              }
+            ],
+            "overrideDescripton": null,
+            "prefabKey": null,
+            "rangeId": null
+          }
+        ]
+      }
+    },
+    {
+      "resKey": "blemsh_equip_1_3_p2",
+      "target": "TALENT",
+      "isToken": false,
+      "addOrOverrideTalentDataBundle": {
+        "candidates": [
+          {
+            "displayRangeId": false,
+            "upgradeDescription": "在场时所有受击回复的技能在干员攻击时也回复1点技力，其他卡西米尔干员部署时自身获得3点技力",
+            "talentIndex": 0,
+            "unlockCondition": {
+              "phase": 2,
+              "level": 60
+            },
+            "requiredPotentialRank": 0,
+            "prefabKey": "1",
+            "name": "剑盾骑士",
+            "description": null,
+            "rangeId": null,
+            "blackboard": [
+              {
+                "key": "sp",
+                "value": 1.0
+              },
+              {
+                "key": "blemsh_e_sp.sp",
+                "value": 3.0
+              }
+            ]
+          }
+        ]
+      },
+      "overrideTraitDataBundle": {
+        "candidates": null
+      }
+    }
+  ],
+  "attributeBlackboard": [
+    {
+      "key": "max_hp",
+      "value": 270.0
+    },
+    {
+      "key": "atk",
+      "value": 50.0
+    },
+    {
+      "key": "def",
+      "value": 50.0
+    }
+  ],
+  "tokenAttributeBlackboard": {}
+}

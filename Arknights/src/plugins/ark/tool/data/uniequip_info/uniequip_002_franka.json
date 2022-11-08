@@ -1,0 +1,77 @@
+{
+  "equipLevel": 3,
+  "parts": [
+    {
+      "resKey": "franka_equip_1_3_p1",
+      "target": "TRAIT",
+      "isToken": false,
+      "addOrOverrideTalentDataBundle": {
+        "candidates": null
+      },
+      "overrideTraitDataBundle": {
+        "candidates": [
+          {
+            "additionalDescription": "攻击被阻挡的敌人时攻击力提升至<@ba.vup>{atk_scale:0%}</>",
+            "unlockCondition": {
+              "phase": 2,
+              "level": 50
+            },
+            "requiredPotentialRank": 0,
+            "blackboard": [
+              {
+                "key": "atk_scale",
+                "value": 1.15
+              }
+            ],
+            "overrideDescripton": null,
+            "prefabKey": null,
+            "rangeId": null
+          }
+        ]
+      }
+    },
+    {
+      "resKey": null,
+      "target": "TALENT_DATA_ONLY",
+      "isToken": false,
+      "addOrOverrideTalentDataBundle": {
+        "candidates": [
+          {
+            "displayRangeId": false,
+            "upgradeDescription": "攻击时有28%的几率无视目标的防御",
+            "talentIndex": 0,
+            "unlockCondition": {
+              "phase": 2,
+              "level": 50
+            },
+            "requiredPotentialRank": 0,
+            "prefabKey": "1",
+            "name": "铝热剑",
+            "description": null,
+            "rangeId": null,
+            "blackboard": [
+              {
+                "key": "prob",
+                "value": 0.28
+              }
+            ]
+          }
+        ]
+      },
+      "overrideTraitDataBundle": {
+        "candidates": null
+      }
+    }
+  ],
+  "attributeBlackboard": [
+    {
+      "key": "max_hp",
+      "value": 220.0
+    },
+    {
+      "key": "atk",
+      "value": 95.0
+    }
+  ],
+  "tokenAttributeBlackboard": {}
+}

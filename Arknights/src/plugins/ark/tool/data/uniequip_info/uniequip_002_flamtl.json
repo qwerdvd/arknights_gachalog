@@ -1,0 +1,104 @@
+{
+  "equipLevel": 3,
+  "parts": [
+    {
+      "resKey": null,
+      "target": "DISPLAY",
+      "isToken": false,
+      "addOrOverrideTalentDataBundle": {
+        "candidates": null
+      },
+      "overrideTraitDataBundle": {
+        "candidates": [
+          {
+            "additionalDescription": "首次部署时部署费用-4",
+            "unlockCondition": {
+              "phase": 2,
+              "level": 60
+            },
+            "requiredPotentialRank": 0,
+            "blackboard": [],
+            "overrideDescripton": null,
+            "prefabKey": null,
+            "rangeId": null
+          }
+        ]
+      }
+    },
+    {
+      "resKey": "flamtl_equip_1_3_p1",
+      "target": "TALENT",
+      "isToken": false,
+      "addOrOverrideTalentDataBundle": {
+        "candidates": [
+          {
+            "displayRangeId": false,
+            "upgradeDescription": "",
+            "talentIndex": -1,
+            "unlockCondition": {
+              "phase": 2,
+              "level": 60
+            },
+            "requiredPotentialRank": 0,
+            "prefabKey": "20_root",
+            "name": null,
+            "description": null,
+            "rangeId": null,
+            "blackboard": [
+              {
+                "key": "runtime_cost",
+                "value": -4.0
+              }
+            ]
+          }
+        ]
+      },
+      "overrideTraitDataBundle": {
+        "candidates": null
+      }
+    },
+    {
+      "resKey": null,
+      "target": "TALENT_DATA_ONLY",
+      "isToken": false,
+      "addOrOverrideTalentDataBundle": {
+        "candidates": [
+          {
+            "displayRangeId": false,
+            "upgradeDescription": "触发闪避时，下次攻击攻击力提升至120％并变为二连击，且攻击所有阻挡的敌人",
+            "talentIndex": 0,
+            "unlockCondition": {
+              "phase": 2,
+              "level": 60
+            },
+            "requiredPotentialRank": 0,
+            "prefabKey": "1+",
+            "name": "前锋剑术",
+            "description": null,
+            "rangeId": null,
+            "blackboard": [
+              {
+                "key": "attack@atkscale_t1+.atk_scale",
+                "value": 1.2
+              }
+            ]
+          }
+        ]
+      },
+      "overrideTraitDataBundle": {
+        "candidates": null
+      }
+    }
+  ],
+  "attributeBlackboard": [
+    {
+      "key": "max_hp",
+      "value": 300.0
+    },
+    {
+      "key": "atk",
+      "value": 45.0
+    }
+  ],
+  "tokenAttributeBlackboard": {}
+}

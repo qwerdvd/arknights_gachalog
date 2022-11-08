@@ -1,0 +1,121 @@
+{
+  "equipLevel": 3,
+  "parts": [
+    {
+      "resKey": "chen_equip_1_3_p1",
+      "target": "TRAIT",
+      "isToken": false,
+      "addOrOverrideTalentDataBundle": {
+        "candidates": null
+      },
+      "overrideTraitDataBundle": {
+        "candidates": [
+          {
+            "additionalDescription": "技能造成的伤害提升<@ba.vup>{value:0%}</>",
+            "unlockCondition": {
+              "phase": 2,
+              "level": 60
+            },
+            "requiredPotentialRank": 0,
+            "blackboard": [
+              {
+                "key": "damage_scale",
+                "value": 1.1
+              },
+              {
+                "key": "value",
+                "value": 0.1
+              }
+            ],
+            "overrideDescripton": null,
+            "prefabKey": null,
+            "rangeId": null
+          }
+        ]
+      }
+    },
+    {
+      "resKey": null,
+      "target": "TALENT_DATA_ONLY",
+      "isToken": false,
+      "addOrOverrideTalentDataBundle": {
+        "candidates": [
+          {
+            "displayRangeId": false,
+            "upgradeDescription": "在场时每3秒回复全场友方角色1点攻击/受击技力，自身额外回复1点技力",
+            "talentIndex": 0,
+            "unlockCondition": {
+              "phase": 2,
+              "level": 60
+            },
+            "requiredPotentialRank": 0,
+            "prefabKey": "1",
+            "name": "呵斥",
+            "description": null,
+            "rangeId": null,
+            "blackboard": [
+              {
+                "key": "interval",
+                "value": 3.0
+              },
+              {
+                "key": "sp",
+                "value": 1.0
+              }
+            ]
+          }
+        ]
+      },
+      "overrideTraitDataBundle": {
+        "candidates": null
+      }
+    },
+    {
+      "resKey": "chen_equip_1_3_p2",
+      "target": "TALENT",
+      "isToken": false,
+      "addOrOverrideTalentDataBundle": {
+        "candidates": [
+          {
+            "displayRangeId": false,
+            "upgradeDescription": "",
+            "talentIndex": 0,
+            "unlockCondition": {
+              "phase": 2,
+              "level": 60
+            },
+            "requiredPotentialRank": 0,
+            "prefabKey": "10",
+            "name": null,
+            "description": null,
+            "rangeId": null,
+            "blackboard": [
+              {
+                "key": "interval",
+                "value": 3.0
+              },
+              {
+                "key": "sp",
+                "value": 1.0
+              }
+            ]
+          }
+        ]
+      },
+      "overrideTraitDataBundle": {
+        "candidates": null
+      }
+    }
+  ],
+  "attributeBlackboard": [
+    {
+      "key": "atk",
+      "value": 80.0
+    },
+    {
+      "key": "attack_speed",
+      "value": 7.0
+    }
+  ],
+  "tokenAttributeBlackboard": {}
+}

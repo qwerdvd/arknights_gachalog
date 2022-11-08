@@ -1,9 +1,19 @@
 import json
 from typing import Optional
+from ..utils.alias.characterId_to_uniequipId import characterId_to_uniequipId
+
+
+async def get_data_version() -> str:
+    mata_path = 'C:\\Users\\qwerdvd\\PycharmProjects\\pythonProject\\Arknights\\data\\gamedata'
+    data_version_path = mata_path + '\\excel\\data_version.txt'
+    with open(data_version_path, 'r', encoding='utf-8') as f:
+        raw_data_version = f.read().splitlines()
+    data_version = raw_data_version[2].split(':')[1]
+    return data_version
 
 
 # Calculate the data of fully trained operators
-async def calculate_fully_trained_character_data(characterId: str):
+async def calculate_fully_trained_character_data(characterId: str, is_equip: bool, uniequip_id: str):
     with open(f'src/plugins/ark/tool/data/basic_character_info/{characterId}.json', encoding='UTF-8') as f:
         basic_character_info = json.load(f)
 
@@ -24,14 +34,22 @@ async def calculate_fully_trained_character_data(characterId: str):
     # 获取干员满信赖加成数据
     favor_data = await get_favor_data(characterId)
 
+    # 获取干员模组加成数据
+    if is_equip:
+        if uniequip_id == '一模':
+            uniequip_id = 1
+        elif uniequip_id == '二模':
+            uniequip_id = 2
+    uniequip_attribute_data = await get_equip_attribute_data(characterId, uniequip_id)
+
     # 计算干员基础数据
-    add_hp = potential_data['potential_hp'] + favor_data['favor_hp']
-    add_atk = potential_data['potential_atk'] + favor_data['favor_atk']
-    add_def = potential_data['potential_def'] + favor_data['favor_def']
-    add_magic_resistance = potential_data['potential_magic_resistance']
-    add_cost = potential_data['potential_cost']
-    add_attack_speed = potential_data['potential_attack_speed']
-    add_respawn_time = potential_data['potential_respawn_time']
+    add_hp = potential_data['potential_hp'] + favor_data['favor_hp'] + uniequip_attribute_data['uniequip_hp']
+    add_atk = potential_data['potential_atk'] + favor_data['favor_atk'] + uniequip_attribute_data['uniequip_atk']
+    add_def = potential_data['potential_def'] + favor_data['favor_def'] + uniequip_attribute_data['uniequip_def']
+    add_magic_resistance = potential_data['potential_magic_resistance'] + uniequip_attribute_data['uniequip_magic_resistance']
+    add_cost = potential_data['potential_cost'] + uniequip_attribute_data['uniequip_cost']
+    add_attack_speed = potential_data['potential_attack_speed'] + uniequip_attribute_data['uniequip_attack_speed']
+    add_respawn_time = potential_data['potential_respawn_time'] + uniequip_attribute_data['uniequip_respawn_time']
 
     # 计算干员满练数据
     character_info['basic_hp'] = character_info['basic_hp'] + add_hp
@@ -95,3 +113,38 @@ async def get_favor_data(characterId: str) -> Optional[dict]:
     favor_data['favor_atk'] = favor_atk
     favor_data['favor_def'] = favor_def
     return favor_data
+
+
+# 获取干员模组数据
+async def get_equip_attribute_data(characterId: str, uniequip_id: int) -> Optional[dict]:
+    equip_id = await characterId_to_uniequipId(characterId, uniequip_id)
+    with open(f'src/plugins/ark/tool/data/uniequip_info/{equip_id}.json', encoding='UTF-8') as f:
+        character_uniequip_info = json.load(f)
+    uniequip_attribute_data = {}
+    uniequip_base_attribute = character_uniequip_info['attributeBlackboard']
+    uniequip_hp, uniequip_atk, uniequip_def, uniequip_magic_resistance = 0, 0, 0, 0
+    uniequip_cost, uniequip_attack_speed, uniequip_respawn_time = 0, 0, 0
+    for i in range(len(uniequip_base_attribute)):
+        if uniequip_base_attribute[i]['key'] == 'atk':
+            uniequip_atk = uniequip_base_attribute[i]['value']
+        elif uniequip_base_attribute[i]['key'] == 'def':
+            uniequip_def = uniequip_base_attribute[i]['value']
+        elif uniequip_base_attribute[i]['key'] == 'magicResistance':
+            uniequip_magic_resistance = uniequip_base_attribute[i]['value']
+        elif uniequip_base_attribute[i]['key'] == 'max_hp':
+            uniequip_hp = uniequip_base_attribute[i]['value']
+        elif uniequip_base_attribute[i]['key'] == 'cost':
+            uniequip_cost = uniequip_base_attribute[i]['value']
+        elif uniequip_base_attribute[i]['key'] == 'attack_speed':
+            uniequip_attack_speed = uniequip_base_attribute[i]['value']
+        elif uniequip_base_attribute[i]['key'] == 'respawn_time':
+            uniequip_respawn_time = uniequip_base_attribute[i]['value']
+    uniequip_attribute_data['uniequip_hp'] = uniequip_hp
+    uniequip_attribute_data['uniequip_atk'] = uniequip_atk
+    uniequip_attribute_data['uniequip_def'] = uniequip_def
+    uniequip_attribute_data['uniequip_magic_resistance'] = uniequip_magic_resistance
+    uniequip_attribute_data['uniequip_cost'] = uniequip_cost
+    uniequip_attribute_data['uniequip_attack_speed'] = uniequip_attack_speed
+    uniequip_attribute_data['uniequip_respawn_time'] = uniequip_respawn_time
+
+    return uniequip_attribute_data

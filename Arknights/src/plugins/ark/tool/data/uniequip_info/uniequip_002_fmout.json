@@ -1,0 +1,135 @@
+{
+  "equipLevel": 3,
+  "parts": [
+    {
+      "resKey": null,
+      "target": "DISPLAY",
+      "isToken": false,
+      "addOrOverrideTalentDataBundle": {
+        "candidates": null
+      },
+      "overrideTraitDataBundle": {
+        "candidates": [
+          {
+            "additionalDescription": "攻击范围<@ba.kw>扩大</>",
+            "unlockCondition": {
+              "phase": 2,
+              "level": 40
+            },
+            "requiredPotentialRank": 0,
+            "blackboard": [],
+            "overrideDescripton": "攻击造成<@ba.kw>群体法术伤害</>",
+            "prefabKey": null,
+            "rangeId": null
+          }
+        ]
+      }
+    },
+    {
+      "resKey": "fmout_equip_1_3_p1",
+      "target": "TALENT",
+      "isToken": false,
+      "addOrOverrideTalentDataBundle": {
+        "candidates": [
+          {
+            "displayRangeId": true,
+            "upgradeDescription": "",
+            "talentIndex": -1,
+            "unlockCondition": {
+              "phase": 2,
+              "level": 40
+            },
+            "requiredPotentialRank": 0,
+            "prefabKey": "10",
+            "name": null,
+            "description": null,
+            "rangeId": "3-1",
+            "blackboard": []
+          }
+        ]
+      },
+      "overrideTraitDataBundle": {
+        "candidates": null
+      }
+    },
+    {
+      "resKey": null,
+      "target": "TALENT_DATA_ONLY",
+      "isToken": false,
+      "addOrOverrideTalentDataBundle": {
+        "candidates": [
+          {
+            "displayRangeId": false,
+            "upgradeDescription": "部署后随机永久获得下列一项增益：攻击力+18%；攻击速度+18；生命上限提升28%",
+            "talentIndex": 0,
+            "unlockCondition": {
+              "phase": 2,
+              "level": 40
+            },
+            "requiredPotentialRank": 0,
+            "prefabKey": "1",
+            "name": "占卜",
+            "description": null,
+            "rangeId": null,
+            "blackboard": [
+              {
+                "key": "atk",
+                "value": 0.18
+              },
+              {
+                "key": "attack_speed",
+                "value": 18.0
+              },
+              {
+                "key": "max_hp",
+                "value": 0.28
+              }
+            ]
+          },
+          {
+            "displayRangeId": false,
+            "upgradeDescription": "部署后随机永久获得下列一项增益：攻击力+20%<@ba.talpu>（+2%）</>；攻击速度+20<@ba.talpu>（+2）</>；生命上限+30%<@ba.talpu>（+2%）</>",
+            "talentIndex": 0,
+            "unlockCondition": {
+              "phase": 2,
+              "level": 40
+            },
+            "requiredPotentialRank": 4,
+            "prefabKey": "1",
+            "name": "占卜",
+            "description": null,
+            "rangeId": null,
+            "blackboard": [
+              {
+                "key": "atk",
+                "value": 0.2
+              },
+              {
+                "key": "attack_speed",
+                "value": 20.0
+              },
+              {
+                "key": "max_hp",
+                "value": 0.3
+              }
+            ]
+          }
+        ]
+      },
+      "overrideTraitDataBundle": {
+        "candidates": null
+      }
+    }
+  ],
+  "attributeBlackboard": [
+    {
+      "key": "max_hp",
+      "value": 150.0
+    },
+    {
+      "key": "atk",
+      "value": 57.0
+    }
+  ],
+  "tokenAttributeBlackboard": {}
+}

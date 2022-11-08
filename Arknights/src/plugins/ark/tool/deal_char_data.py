@@ -11,6 +11,8 @@ data_version_path = mata_path + '\\excel\\data_version.txt'
 skill_path = mata_path + '\\excel\\skill_table.json'
 enemy_handbook_path = mata_path + '\\excel\\enemy_handbook_table.json'
 enemy_database_path = mata_path + '\\levels\\enemydata\\enemy_database.json'
+uniequip_table_path = mata_path + '\\excel\\uniequip_table.json'
+battle_equip_table_path = mata_path + '\\excel\\battle_equip_table.json'
 
 # 读取角色信息文件
 with open(char_path, 'r', encoding='utf-8') as f:
@@ -32,11 +34,19 @@ with open(enemy_handbook_path, 'r', encoding='utf-8') as f:
 with open(enemy_database_path, 'r', encoding='utf-8') as f:
     raw_enemy_data = json.load(f)
 
+# 读取模组数据
+with open(uniequip_table_path, 'r', encoding='utf-8') as f:
+    raw_uniequip_data = json.load(f)
+
+# 读取模组具体数值
+with open(battle_equip_table_path, 'r', encoding='utf-8') as f:
+    raw_battle_equip_data = json.load(f)
 
 # 从数据版本文件中提取版本号
 data_version = raw_data_version[2].split(':')[1]
 
 CharacterId_to_chName_mapping = {}
+CharacterId_to_uniequipId_mapping = {}
 chName_to_enName_mapping = {}
 enemyId_to_chName_mapping = {}
 enemyId_chName_to_enName_mapping = {}
@@ -51,6 +61,18 @@ async def get_CharacterId_to_chName_mapping():
     with open(f'C:\\Users\\qwerdvd\\PycharmProjects\\pythonProject\\Arknights\\src\\plugins\\ark\\tool\\data\\map'
               f'\\CharacterId_to_chName_mapping_{data_version}.json', 'w', encoding='utf8') as f2:
         json.dump(CharacterId_to_chName_mapping, f2, ensure_ascii=False, indent=2)
+
+
+# 角色 id 英文名到模组 id 的映射
+# "char_248_mgllan": ["uniequip_001_mgllan", "uniequip_002_mgllan", "uniequip_003_mgllan"]
+async def get_CharacterId_to_uniequipId_mapping():
+    charEquip = raw_uniequip_data['charEquip']
+    for char in charEquip.items():
+        CharacterId_to_uniequipId_mapping[char[0]] = char[1]
+    # 保存角色 id 英文名到模组 id 的映射
+    with open(f'C:\\Users\\qwerdvd\\PycharmProjects\\pythonProject\\Arknights\\src\\plugins\\ark\\tool\\data\\map'
+              f'\\CharacterId_to_uniequipId_mapping_{data_version}.json', 'w', encoding='utf8') as f2:
+        json.dump(CharacterId_to_uniequipId_mapping, f2, ensure_ascii=False, indent=2)
 
 
 # 敌人 id 英文名到中文名的映射
@@ -198,6 +220,25 @@ async def ger_char_skill_data():
             json.dump(skill_info, f2, ensure_ascii=False, indent=2)
 
 
+# 储存模组数据
+async def get_uniequip_data():
+    with open(f'C:\\Users\\qwerdvd\\PycharmProjects\\pythonProject\\Arknights\\src\\plugins\\ark\\tool\\data'
+              f'\\map\\CharacterId_to_uniequipId_mapping_{data_version}.json', 'r', encoding='utf8') as f2:
+        CharacterId_to_uniequipId = json.load(f2)
+    for CharacterId in CharacterId_to_uniequipId:
+        raw_uniequip_Id = CharacterId_to_uniequipId[CharacterId]
+        for i in range(len(raw_uniequip_Id)):
+            mata_uniequip_id = raw_uniequip_Id[i]
+            for uniequip in raw_battle_equip_data.items():
+                if uniequip[0] == mata_uniequip_id:
+                    uniequip_info = uniequip[1]['phases'][-1]
+                    print(uniequip_info)
+                    with open(f'C:\\Users\\qwerdvd\\PycharmProjects\\pythonProject\\Arknights\\src\\plugins\\ark'
+                              f'\\tool\\data'
+                              f'\\uniequip_info\\{mata_uniequip_id}.json', 'w', encoding='utf8') as f2:
+                        json.dump(uniequip_info, f2, ensure_ascii=False, indent=2)
+
+
 async def main():
     # await get_CharacterId_to_chName_mapping()  # 角色 id 英文名到中文名的映射
     # await get_chName_to_enName_mapping()  # 角色 id 中文名到英文名的映射
@@ -208,7 +249,9 @@ async def main():
     # await get_enemyId_to_chName_mapping()  # 敌人 id 英文名到中文名的映射
     # await get_enemyId_chName_to_enName_mapping()  # 敌人 id 中文名到英文名的映射
     # await get_enemy_data()  # 敌人数据
-    await get_char_favor_data()  # 干员信赖加成数据
+    # await get_char_favor_data()  # 干员信赖加成数据
+    # await get_CharacterId_to_uniequipId_mapping()  # 角色 id 到模组 id 的映射
+    await get_uniequip_data()  # 模组数据
 
 
 if __name__ == "__main__":

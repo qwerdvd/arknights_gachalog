@@ -1,0 +1,128 @@
+{
+  "equipLevel": 3,
+  "parts": [
+    {
+      "resKey": null,
+      "target": "DISPLAY",
+      "isToken": false,
+      "addOrOverrideTalentDataBundle": {
+        "candidates": null
+      },
+      "overrideTraitDataBundle": {
+        "candidates": [
+          {
+            "additionalDescription": "攻击范围内存在敌人时技力自然恢复速度+0.2/s",
+            "unlockCondition": {
+              "phase": 2,
+              "level": 60
+            },
+            "requiredPotentialRank": 0,
+            "blackboard": [],
+            "overrideDescripton": null,
+            "prefabKey": null,
+            "rangeId": null
+          }
+        ]
+      }
+    },
+    {
+      "resKey": "aglina_equip_2_3_p1",
+      "target": "TALENT",
+      "isToken": false,
+      "addOrOverrideTalentDataBundle": {
+        "candidates": [
+          {
+            "displayRangeId": false,
+            "upgradeDescription": "",
+            "talentIndex": -1,
+            "unlockCondition": {
+              "phase": 2,
+              "level": 60
+            },
+            "requiredPotentialRank": 0,
+            "prefabKey": "10",
+            "name": null,
+            "description": null,
+            "rangeId": null,
+            "blackboard": [
+              {
+                "key": "sp_recovery_per_sec",
+                "value": 0.2
+              }
+            ]
+          }
+        ]
+      },
+      "overrideTraitDataBundle": {
+        "candidates": null
+      }
+    },
+    {
+      "resKey": "aglina_equip_2_3_p2",
+      "target": "TALENT",
+      "isToken": false,
+      "addOrOverrideTalentDataBundle": {
+        "candidates": [
+          {
+            "displayRangeId": false,
+            "upgradeDescription": "全场友方单位攻速+7，自身攻击范围内的友方单位攻速额外+5",
+            "talentIndex": 0,
+            "unlockCondition": {
+              "phase": 2,
+              "level": 60
+            },
+            "requiredPotentialRank": 0,
+            "prefabKey": "11",
+            "name": "加速力场",
+            "description": null,
+            "rangeId": null,
+            "blackboard": [
+              {
+                "key": "attack_speed",
+                "value": 5.0
+              }
+            ]
+          },
+          {
+            "displayRangeId": false,
+            "upgradeDescription": "全场友方单位攻速+8<@ba.talpu>（+1）</>，自身攻击范围内的友方单位攻速额外+5",
+            "talentIndex": 0,
+            "unlockCondition": {
+              "phase": 2,
+              "level": 60
+            },
+            "requiredPotentialRank": 5,
+            "prefabKey": "11",
+            "name": "加速力场",
+            "description": null,
+            "rangeId": null,
+            "blackboard": [
+              {
+                "key": "attack_speed",
+                "value": 5.0
+              }
+            ]
+          }
+        ]
+      },
+      "overrideTraitDataBundle": {
+        "candidates": null
+      }
+    }
+  ],
+  "attributeBlackboard": [
+    {
+      "key": "max_hp",
+      "value": 100.0
+    },
+    {
+      "key": "atk",
+      "value": 20.0
+    },
+    {
+      "key": "attack_speed",
+      "value": 6.0
+    }
+  ],
+  "tokenAttributeBlackboard": {}
+}

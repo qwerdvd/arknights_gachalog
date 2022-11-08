@@ -1,0 +1,81 @@
+{
+  "equipLevel": 3,
+  "parts": [
+    {
+      "resKey": "texas2_equip_1_3_p1",
+      "target": "TRAIT",
+      "isToken": false,
+      "addOrOverrideTalentDataBundle": {
+        "candidates": null
+      },
+      "overrideTraitDataBundle": {
+        "candidates": [
+          {
+            "additionalDescription": "周围四格没有友方干员时攻击力<@ba.kw>+{atk:0%}</>",
+            "unlockCondition": {
+              "phase": 2,
+              "level": 60
+            },
+            "requiredPotentialRank": 0,
+            "blackboard": [
+              {
+                "key": "atk",
+                "value": 0.1
+              }
+            ],
+            "overrideDescripton": null,
+            "prefabKey": null,
+            "rangeId": null
+          }
+        ]
+      }
+    },
+    {
+      "resKey": null,
+      "target": "TALENT_DATA_ONLY",
+      "isToken": false,
+      "addOrOverrideTalentDataBundle": {
+        "candidates": [
+          {
+            "displayRangeId": false,
+            "upgradeDescription": "被动技能持续时间内攻击力+28%，首次击倒敌人时回复所有生命并重新释放被动技能",
+            "talentIndex": 0,
+            "unlockCondition": {
+              "phase": 2,
+              "level": 60
+            },
+            "requiredPotentialRank": 0,
+            "prefabKey": "1",
+            "name": "德克萨斯传统",
+            "description": null,
+            "rangeId": null,
+            "blackboard": [
+              {
+                "key": "atk",
+                "value": 0.28
+              },
+              {
+                "key": "hp_ratio",
+                "value": 1.0
+              }
+            ]
+          }
+        ]
+      },
+      "overrideTraitDataBundle": {
+        "candidates": null
+      }
+    }
+  ],
+  "attributeBlackboard": [
+    {
+      "key": "max_hp",
+      "value": 180.0
+    },
+    {
+      "key": "atk",
+      "value": 65.0
+    }
+  ],
+  "tokenAttributeBlackboard": {}
+}

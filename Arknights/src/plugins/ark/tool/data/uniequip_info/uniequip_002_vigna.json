@@ -1,0 +1,153 @@
+{
+  "equipLevel": 3,
+  "parts": [
+    {
+      "resKey": null,
+      "target": "DISPLAY",
+      "isToken": false,
+      "addOrOverrideTalentDataBundle": {
+        "candidates": null
+      },
+      "overrideTraitDataBundle": {
+        "candidates": [
+          {
+            "additionalDescription": "攻击生命值低于<@ba.vup>{hp_ratio:0%}</>的敌人时攻击力提升至<@ba.vup>{atk_scale:0%}</>",
+            "unlockCondition": {
+              "phase": 2,
+              "level": 40
+            },
+            "requiredPotentialRank": 0,
+            "blackboard": [
+              {
+                "key": "hp_ratio",
+                "value": 0.4
+              },
+              {
+                "key": "atk_scale",
+                "value": 1.15
+              }
+            ],
+            "overrideDescripton": null,
+            "prefabKey": null,
+            "rangeId": null
+          }
+        ]
+      }
+    },
+    {
+      "resKey": "vigna_equip_1_3_p1",
+      "target": "TALENT",
+      "isToken": false,
+      "addOrOverrideTalentDataBundle": {
+        "candidates": [
+          {
+            "displayRangeId": false,
+            "upgradeDescription": "",
+            "talentIndex": -1,
+            "unlockCondition": {
+              "phase": 2,
+              "level": 40
+            },
+            "requiredPotentialRank": 0,
+            "prefabKey": "10",
+            "name": null,
+            "description": null,
+            "rangeId": null,
+            "blackboard": [
+              {
+                "key": "hp_ratio",
+                "value": 0.4
+              },
+              {
+                "key": "atk_scale",
+                "value": 1.15
+              }
+            ]
+          }
+        ]
+      },
+      "overrideTraitDataBundle": {
+        "candidates": null
+      }
+    },
+    {
+      "resKey": null,
+      "target": "TALENT_DATA_ONLY",
+      "isToken": false,
+      "addOrOverrideTalentDataBundle": {
+        "candidates": [
+          {
+            "displayRangeId": false,
+            "upgradeDescription": "攻击时，20%几率当次攻击的攻击力+100%。技能中这个几率提高到40%",
+            "talentIndex": 0,
+            "unlockCondition": {
+              "phase": 2,
+              "level": 40
+            },
+            "requiredPotentialRank": 0,
+            "prefabKey": "1",
+            "name": "蛮力穿刺",
+            "description": null,
+            "rangeId": null,
+            "blackboard": [
+              {
+                "key": "atk",
+                "value": 1.0
+              },
+              {
+                "key": "prob1",
+                "value": 0.2
+              },
+              {
+                "key": "prob2",
+                "value": 0.4
+              }
+            ]
+          },
+          {
+            "displayRangeId": false,
+            "upgradeDescription": "攻击时，20%几率当次攻击的攻击力+110%<@ba.talpu>（+10%）</>。技能中这个几率提高到40%",
+            "talentIndex": 0,
+            "unlockCondition": {
+              "phase": 2,
+              "level": 40
+            },
+            "requiredPotentialRank": 4,
+            "prefabKey": "1",
+            "name": "蛮力穿刺",
+            "description": null,
+            "rangeId": null,
+            "blackboard": [
+              {
+                "key": "atk",
+                "value": 1.1
+              },
+              {
+                "key": "prob1",
+                "value": 0.2
+              },
+              {
+                "key": "prob2",
+                "value": 0.4
+              }
+            ]
+          }
+        ]
+      },
+      "overrideTraitDataBundle": {
+        "candidates": null
+      }
+    }
+  ],
+  "attributeBlackboard": [
+    {
+      "key": "max_hp",
+      "value": 110.0
+    },
+    {
+      "key": "atk",
+      "value": 65.0
+    }
+  ],
+  "tokenAttributeBlackboard": {}
+}

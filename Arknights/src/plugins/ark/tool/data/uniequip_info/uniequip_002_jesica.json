@@ -1,0 +1,108 @@
+{
+  "equipLevel": 3,
+  "parts": [
+    {
+      "resKey": null,
+      "target": "DISPLAY",
+      "isToken": false,
+      "addOrOverrideTalentDataBundle": {
+        "candidates": null
+      },
+      "overrideTraitDataBundle": {
+        "candidates": [
+          {
+            "additionalDescription": "范围内存在地面敌人时攻击速度<@ba.kw>+8</>",
+            "unlockCondition": {
+              "phase": 2,
+              "level": 40
+            },
+            "requiredPotentialRank": 0,
+            "blackboard": [],
+            "overrideDescripton": null,
+            "prefabKey": null,
+            "rangeId": null
+          }
+        ]
+      }
+    },
+    {
+      "resKey": "jesica_equip_1_3_p1",
+      "target": "TALENT",
+      "isToken": false,
+      "addOrOverrideTalentDataBundle": {
+        "candidates": [
+          {
+            "displayRangeId": false,
+            "upgradeDescription": "",
+            "talentIndex": -1,
+            "unlockCondition": {
+              "phase": 2,
+              "level": 40
+            },
+            "requiredPotentialRank": 0,
+            "prefabKey": "10",
+            "name": null,
+            "description": null,
+            "rangeId": null,
+            "blackboard": [
+              {
+                "key": "attack_speed",
+                "value": 8.0
+              }
+            ]
+          }
+        ]
+      },
+      "overrideTraitDataBundle": {
+        "candidates": null
+      }
+    },
+    {
+      "resKey": "jesica_equip_1_3_p2",
+      "target": "TALENT",
+      "isToken": false,
+      "addOrOverrideTalentDataBundle": {
+        "candidates": [
+          {
+            "displayRangeId": false,
+            "upgradeDescription": "攻击速度+16，攻击力+6%",
+            "talentIndex": 0,
+            "unlockCondition": {
+              "phase": 2,
+              "level": 40
+            },
+            "requiredPotentialRank": 0,
+            "prefabKey": "1",
+            "name": "快速弹匣",
+            "description": null,
+            "rangeId": null,
+            "blackboard": [
+              {
+                "key": "attack_speed",
+                "value": 16.0
+              },
+              {
+                "key": "atk",
+                "value": 0.06
+              }
+            ]
+          }
+        ]
+      },
+      "overrideTraitDataBundle": {
+        "candidates": null
+      }
+    }
+  ],
+  "attributeBlackboard": [
+    {
+      "key": "atk",
+      "value": 30.0
+    },
+    {
+      "key": "def",
+      "value": 30.0
+    }
+  ],
+  "tokenAttributeBlackboard": {}
+}

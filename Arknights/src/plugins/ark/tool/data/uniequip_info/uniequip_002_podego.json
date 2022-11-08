@@ -1,0 +1,132 @@
+{
+  "equipLevel": 3,
+  "parts": [
+    {
+      "resKey": null,
+      "target": "DISPLAY",
+      "isToken": false,
+      "addOrOverrideTalentDataBundle": {
+        "candidates": null
+      },
+      "overrideTraitDataBundle": {
+        "candidates": [
+          {
+            "additionalDescription": "攻击范围内存在敌人时技力自然恢复速度+0.2/s",
+            "unlockCondition": {
+              "phase": 2,
+              "level": 40
+            },
+            "requiredPotentialRank": 0,
+            "blackboard": [],
+            "overrideDescripton": null,
+            "prefabKey": null,
+            "rangeId": null
+          }
+        ]
+      }
+    },
+    {
+      "resKey": "podego_equip_1_3_p1",
+      "target": "TALENT",
+      "isToken": false,
+      "addOrOverrideTalentDataBundle": {
+        "candidates": [
+          {
+            "displayRangeId": false,
+            "upgradeDescription": "",
+            "talentIndex": -1,
+            "unlockCondition": {
+              "phase": 2,
+              "level": 40
+            },
+            "requiredPotentialRank": 0,
+            "prefabKey": "10",
+            "name": null,
+            "description": null,
+            "rangeId": null,
+            "blackboard": [
+              {
+                "key": "sp_recovery_per_sec",
+                "value": 0.2
+              }
+            ]
+          }
+        ]
+      },
+      "overrideTraitDataBundle": {
+        "candidates": null
+      }
+    },
+    {
+      "resKey": "podego_equip_1_3_p2",
+      "target": "TALENT",
+      "isToken": false,
+      "addOrOverrideTalentDataBundle": {
+        "candidates": [
+          {
+            "displayRangeId": false,
+            "upgradeDescription": "在场时，所有【辅助】干员攻击力+9%，攻击速度+5",
+            "talentIndex": 0,
+            "unlockCondition": {
+              "phase": 2,
+              "level": 40
+            },
+            "requiredPotentialRank": 0,
+            "prefabKey": "1",
+            "name": "园丁",
+            "description": null,
+            "rangeId": null,
+            "blackboard": [
+              {
+                "key": "atk",
+                "value": 0.09
+              },
+              {
+                "key": "attack_speed",
+                "value": 5.0
+              }
+            ]
+          },
+          {
+            "displayRangeId": false,
+            "upgradeDescription": "在场时，所有【辅助】干员攻击力+11%<@ba.talpu>（+2%）</>，攻击速度+5",
+            "talentIndex": 0,
+            "unlockCondition": {
+              "phase": 2,
+              "level": 40
+            },
+            "requiredPotentialRank": 4,
+            "prefabKey": "1",
+            "name": "园丁",
+            "description": null,
+            "rangeId": null,
+            "blackboard": [
+              {
+                "key": "atk",
+                "value": 0.11
+              },
+              {
+                "key": "attack_speed",
+                "value": 5.0
+              }
+            ]
+          }
+        ]
+      },
+      "overrideTraitDataBundle": {
+        "candidates": null
+      }
+    }
+  ],
+  "attributeBlackboard": [
+    {
+      "key": "max_hp",
+      "value": 110.0
+    },
+    {
+      "key": "atk",
+      "value": 40.0
+    }
+  ],
+  "tokenAttributeBlackboard": {}
+}

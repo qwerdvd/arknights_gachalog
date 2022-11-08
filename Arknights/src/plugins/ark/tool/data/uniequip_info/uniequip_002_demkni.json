@@ -1,0 +1,85 @@
+{
+  "equipLevel": 3,
+  "parts": [
+    {
+      "resKey": "demkni_equip_1_3_p1",
+      "target": "TRAIT",
+      "isToken": false,
+      "addOrOverrideTalentDataBundle": {
+        "candidates": null
+      },
+      "overrideTraitDataBundle": {
+        "candidates": [
+          {
+            "additionalDescription": "治疗生命值低于50%的友方单位时治疗量提升<@ba.kw>15%</>",
+            "unlockCondition": {
+              "phase": 2,
+              "level": 60
+            },
+            "requiredPotentialRank": 0,
+            "blackboard": [
+              {
+                "key": "heal_scale",
+                "value": 1.15
+              },
+              {
+                "key": "hp_ratio",
+                "value": 0.5
+              }
+            ],
+            "overrideDescripton": null,
+            "prefabKey": null,
+            "rangeId": null
+          }
+        ]
+      }
+    },
+    {
+      "resKey": "demkni_equip_1_3_p2",
+      "target": "TALENT",
+      "isToken": false,
+      "addOrOverrideTalentDataBundle": {
+        "candidates": [
+          {
+            "displayRangeId": false,
+            "upgradeDescription": "每次回复友方单位生命值时额外回复该单位2点技力，【莱茵生命】干员单位回复3点技力",
+            "talentIndex": 1,
+            "unlockCondition": {
+              "phase": 2,
+              "level": 60
+            },
+            "requiredPotentialRank": 0,
+            "prefabKey": "2",
+            "name": "精神回复",
+            "description": null,
+            "rangeId": null,
+            "blackboard": [
+              {
+                "key": "demkni_e_sp.sp",
+                "value": 2.0
+              },
+              {
+                "key": "demkni_e_sp[rhine].sp",
+                "value": 3.0
+              }
+            ]
+          }
+        ]
+      },
+      "overrideTraitDataBundle": {
+        "candidates": null
+      }
+    }
+  ],
+  "attributeBlackboard": [
+    {
+      "key": "max_hp",
+      "value": 350.0
+    },
+    {
+      "key": "atk",
+      "value": 70.0
+    }
+  ],
+  "tokenAttributeBlackboard": {}
+}

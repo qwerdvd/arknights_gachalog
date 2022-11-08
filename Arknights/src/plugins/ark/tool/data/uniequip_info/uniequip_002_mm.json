@@ -1,0 +1,105 @@
+{
+  "equipLevel": 3,
+  "parts": [
+    {
+      "resKey": "mm_equip_1_3_p1",
+      "target": "TRAIT",
+      "isToken": false,
+      "addOrOverrideTalentDataBundle": {
+        "candidates": null
+      },
+      "overrideTraitDataBundle": {
+        "candidates": [
+          {
+            "additionalDescription": "攻击空中单位时攻击力提升至<@ba.kw>{atk_scale:0%}</>",
+            "unlockCondition": {
+              "phase": 2,
+              "level": 40
+            },
+            "requiredPotentialRank": 0,
+            "blackboard": [
+              {
+                "key": "atk_scale",
+                "value": 1.1
+              }
+            ],
+            "overrideDescripton": null,
+            "prefabKey": null,
+            "rangeId": null
+          }
+        ]
+      }
+    },
+    {
+      "resKey": null,
+      "target": "TALENT_DATA_ONLY",
+      "isToken": false,
+      "addOrOverrideTalentDataBundle": {
+        "candidates": [
+          {
+            "displayRangeId": false,
+            "upgradeDescription": "攻击力+12%，攻击速度+7",
+            "talentIndex": 0,
+            "unlockCondition": {
+              "phase": 2,
+              "level": 40
+            },
+            "requiredPotentialRank": 0,
+            "prefabKey": "1",
+            "name": "维多利亚探员",
+            "description": null,
+            "rangeId": null,
+            "blackboard": [
+              {
+                "key": "atk",
+                "value": 0.12
+              },
+              {
+                "key": "attack_speed",
+                "value": 7.0
+              }
+            ]
+          },
+          {
+            "displayRangeId": false,
+            "upgradeDescription": "攻击力+13%<@ba.talpu>（+1%）</>，攻击速度+8<@ba.talpu>（+1）</>",
+            "talentIndex": 0,
+            "unlockCondition": {
+              "phase": 2,
+              "level": 40
+            },
+            "requiredPotentialRank": 4,
+            "prefabKey": "1",
+            "name": "维多利亚探员",
+            "description": null,
+            "rangeId": null,
+            "blackboard": [
+              {
+                "key": "atk",
+                "value": 0.13
+              },
+              {
+                "key": "attack_speed",
+                "value": 8.0
+              }
+            ]
+          }
+        ]
+      },
+      "overrideTraitDataBundle": {
+        "candidates": null
+      }
+    }
+  ],
+  "attributeBlackboard": [
+    {
+      "key": "atk",
+      "value": 27.0
+    },
+    {
+      "key": "attack_speed",
+      "value": 3.0
+    }
+  ],
+  "tokenAttributeBlackboard": {}
+}

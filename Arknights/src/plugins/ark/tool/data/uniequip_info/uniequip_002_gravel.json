@@ -1,0 +1,77 @@
+{
+  "equipLevel": 3,
+  "parts": [
+    {
+      "resKey": "gravel_equip_1_3_p1",
+      "target": "TRAIT",
+      "isToken": false,
+      "addOrOverrideTalentDataBundle": {
+        "candidates": null
+      },
+      "overrideTraitDataBundle": {
+        "candidates": [
+          {
+            "additionalDescription": "撤退时返还<@ba.kw>大量</>该次部署费用",
+            "unlockCondition": {
+              "phase": 2,
+              "level": 40
+            },
+            "requiredPotentialRank": 0,
+            "blackboard": [
+              {
+                "key": "withdraw_cost_recover_ratio",
+                "value": 0.8
+              }
+            ],
+            "overrideDescripton": null,
+            "prefabKey": null,
+            "rangeId": null
+          }
+        ]
+      }
+    },
+    {
+      "resKey": "gravel_equip_1_3_p2",
+      "target": "TALENT",
+      "isToken": false,
+      "addOrOverrideTalentDataBundle": {
+        "candidates": [
+          {
+            "displayRangeId": false,
+            "upgradeDescription": "部署时，使正在再部署的【卡西米尔】阵营干员缩短5秒",
+            "talentIndex": -1,
+            "unlockCondition": {
+              "phase": 2,
+              "level": 40
+            },
+            "requiredPotentialRank": 0,
+            "prefabKey": "10",
+            "name": "战场附庸",
+            "description": null,
+            "rangeId": null,
+            "blackboard": [
+              {
+                "key": "remaining_respawn_time",
+                "value": 5.0
+              }
+            ]
+          }
+        ]
+      },
+      "overrideTraitDataBundle": {
+        "candidates": null
+      }
+    }
+  ],
+  "attributeBlackboard": [
+    {
+      "key": "max_hp",
+      "value": 135.0
+    },
+    {
+      "key": "def",
+      "value": 60.0
+    }
+  ],
+  "tokenAttributeBlackboard": {}
+}

@@ -1,0 +1,148 @@
+{
+  "equipLevel": 3,
+  "parts": [
+    {
+      "resKey": null,
+      "target": "DISPLAY",
+      "isToken": false,
+      "addOrOverrideTalentDataBundle": {
+        "candidates": null
+      },
+      "overrideTraitDataBundle": {
+        "candidates": [
+          {
+            "additionalDescription": "拥有已储存的攻击能量时，攻击速度+30",
+            "unlockCondition": {
+              "phase": 2,
+              "level": 60
+            },
+            "requiredPotentialRank": 0,
+            "blackboard": [],
+            "overrideDescripton": null,
+            "prefabKey": null,
+            "rangeId": null
+          }
+        ]
+      }
+    },
+    {
+      "resKey": "ebnhlz_equip_2_3_p1",
+      "target": "TALENT",
+      "isToken": false,
+      "addOrOverrideTalentDataBundle": {
+        "candidates": [
+          {
+            "displayRangeId": false,
+            "upgradeDescription": "",
+            "talentIndex": -1,
+            "unlockCondition": {
+              "phase": 2,
+              "level": 60
+            },
+            "requiredPotentialRank": 0,
+            "prefabKey": "10",
+            "name": null,
+            "description": null,
+            "rangeId": null,
+            "blackboard": [
+              {
+                "key": "attack_speed",
+                "value": 30.0
+              }
+            ]
+          }
+        ]
+      },
+      "overrideTraitDataBundle": {
+        "candidates": null
+      }
+    },
+    {
+      "resKey": "ebnhlz_equip_2_3_p2",
+      "target": "TALENT",
+      "isToken": false,
+      "addOrOverrideTalentDataBundle": {
+        "candidates": [
+          {
+            "displayRangeId": false,
+            "upgradeDescription": "若攻击目标周围没有其他敌人，攻击对其额外造成相当于攻击力20%的法术伤害，反之则对其周围造成相当于攻击力36%的法术伤害",
+            "talentIndex": 1,
+            "unlockCondition": {
+              "phase": 2,
+              "level": 60
+            },
+            "requiredPotentialRank": 0,
+            "prefabKey": "2",
+            "name": "倚音",
+            "description": null,
+            "rangeId": null,
+            "blackboard": [
+              {
+                "key": "atk_scale",
+                "value": 0.2
+              },
+              {
+                "key": "cnt",
+                "value": 0.0
+              },
+              {
+                "key": "range_radius",
+                "value": 1.1
+              },
+              {
+                "key": "atk_scale_2",
+                "value": 0.36
+              }
+            ]
+          },
+          {
+            "displayRangeId": false,
+            "upgradeDescription": "若攻击目标周围没有其他敌人，攻击对其额外造成相当于攻击力22%<@ba.talpu>（+2%）</>的法术伤害，反之则对其周围造成相当于攻击力36%的法术伤害",
+            "talentIndex": 1,
+            "unlockCondition": {
+              "phase": 2,
+              "level": 60
+            },
+            "requiredPotentialRank": 4,
+            "prefabKey": "2",
+            "name": "倚音",
+            "description": null,
+            "rangeId": null,
+            "blackboard": [
+              {
+                "key": "atk_scale",
+                "value": 0.22
+              },
+              {
+                "key": "cnt",
+                "value": 0.0
+              },
+              {
+                "key": "range_radius",
+                "value": 1.1
+              },
+              {
+                "key": "atk_scale_2",
+                "value": 0.36
+              }
+            ]
+          }
+        ]
+      },
+      "overrideTraitDataBundle": {
+        "candidates": null
+      }
+    }
+  ],
+  "attributeBlackboard": [
+    {
+      "key": "max_hp",
+      "value": 175.0
+    },
+    {
+      "key": "atk",
+      "value": 135.0
+    }
+  ],
+  "tokenAttributeBlackboard": {}
+}

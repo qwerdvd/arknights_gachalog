@@ -1,0 +1,132 @@
+{
+  "equipLevel": 3,
+  "parts": [
+    {
+      "resKey": null,
+      "target": "DISPLAY",
+      "isToken": false,
+      "addOrOverrideTalentDataBundle": {
+        "candidates": null
+      },
+      "overrideTraitDataBundle": {
+        "candidates": [
+          {
+            "additionalDescription": "攻击范围内所有敌人移动速度<@ba.kw>-20%</>",
+            "unlockCondition": {
+              "phase": 2,
+              "level": 50
+            },
+            "requiredPotentialRank": 0,
+            "blackboard": [],
+            "overrideDescripton": null,
+            "prefabKey": null,
+            "rangeId": null
+          }
+        ]
+      }
+    },
+    {
+      "resKey": null,
+      "target": "TALENT_DATA_ONLY",
+      "isToken": false,
+      "addOrOverrideTalentDataBundle": {
+        "candidates": [
+          {
+            "displayRangeId": false,
+            "upgradeDescription": "每秒回复2.5%生命值，周围8格没有友方干员时，改为每秒回复4%生命值",
+            "talentIndex": 0,
+            "unlockCondition": {
+              "phase": 2,
+              "level": 50
+            },
+            "requiredPotentialRank": 0,
+            "prefabKey": "1",
+            "name": "离群独守",
+            "description": null,
+            "rangeId": null,
+            "blackboard": [
+              {
+                "key": "hp_recovery_per_sec_by_max_hp_ratio",
+                "value": 0.025
+              },
+              {
+                "key": "kirara_t_2.hp_recovery_per_sec_by_max_hp_ratio",
+                "value": 0.04
+              }
+            ]
+          },
+          {
+            "displayRangeId": false,
+            "upgradeDescription": "每秒回复2.5%生命值，周围8格没有友方干员时，改为每秒回复4.5%<@ba.talpu>（+0.5%）</>生命值",
+            "talentIndex": 0,
+            "unlockCondition": {
+              "phase": 2,
+              "level": 50
+            },
+            "requiredPotentialRank": 4,
+            "prefabKey": "1",
+            "name": "离群独守",
+            "description": null,
+            "rangeId": null,
+            "blackboard": [
+              {
+                "key": "hp_recovery_per_sec_by_max_hp_ratio",
+                "value": 0.025
+              },
+              {
+                "key": "kirara_t_2.hp_recovery_per_sec_by_max_hp_ratio",
+                "value": 0.045
+              }
+            ]
+          }
+        ]
+      },
+      "overrideTraitDataBundle": {
+        "candidates": null
+      }
+    },
+    {
+      "resKey": "kirara_equip_1_3_p1",
+      "target": "TALENT",
+      "isToken": false,
+      "addOrOverrideTalentDataBundle": {
+        "candidates": [
+          {
+            "displayRangeId": false,
+            "upgradeDescription": "",
+            "talentIndex": -1,
+            "unlockCondition": {
+              "phase": 2,
+              "level": 50
+            },
+            "requiredPotentialRank": 0,
+            "prefabKey": "10",
+            "name": null,
+            "description": null,
+            "rangeId": null,
+            "blackboard": [
+              {
+                "key": "move_speed",
+                "value": -0.2
+              }
+            ]
+          }
+        ]
+      },
+      "overrideTraitDataBundle": {
+        "candidates": null
+      }
+    }
+  ],
+  "attributeBlackboard": [
+    {
+      "key": "max_hp",
+      "value": 330.0
+    },
+    {
+      "key": "def",
+      "value": 60.0
+    }
+  ],
+  "tokenAttributeBlackboard": {}
+}

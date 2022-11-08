@@ -1,0 +1,117 @@
+{
+  "equipLevel": 3,
+  "parts": [
+    {
+      "resKey": "folivo_equip_1_3_p1",
+      "target": "TRAIT",
+      "isToken": false,
+      "addOrOverrideTalentDataBundle": {
+        "candidates": null
+      },
+      "overrideTraitDataBundle": {
+        "candidates": [
+          {
+            "additionalDescription": "首个召唤物部署时<@ba.kw>不消耗</>部署位（场上最后一个召唤物撤退或被击倒时不返还部署位）",
+            "unlockCondition": {
+              "phase": 2,
+              "level": 50
+            },
+            "requiredPotentialRank": 0,
+            "blackboard": [
+              {
+                "key": "cnt",
+                "value": 1.0
+              }
+            ],
+            "overrideDescripton": null,
+            "prefabKey": null,
+            "rangeId": null
+          }
+        ]
+      }
+    },
+    {
+      "resKey": null,
+      "target": "TALENT_DATA_ONLY",
+      "isToken": false,
+      "addOrOverrideTalentDataBundle": {
+        "candidates": [
+          {
+            "displayRangeId": false,
+            "upgradeDescription": "可以使用5个移动摄影车。摄影车周围8格内敌人的<$ba.invisible>隐匿</>效果失效且移动速度-8%",
+            "talentIndex": 0,
+            "unlockCondition": {
+              "phase": 2,
+              "level": 50
+            },
+            "requiredPotentialRank": 0,
+            "prefabKey": "1",
+            "name": "摄影小队",
+            "description": null,
+            "rangeId": null,
+            "blackboard": [
+              {
+                "key": "cnt",
+                "value": 5.0
+              }
+            ]
+          }
+        ]
+      },
+      "overrideTraitDataBundle": {
+        "candidates": null
+      }
+    },
+    {
+      "resKey": null,
+      "target": "TALENT_DATA_ONLY",
+      "isToken": true,
+      "addOrOverrideTalentDataBundle": {
+        "candidates": [
+          {
+            "displayRangeId": false,
+            "upgradeDescription": "",
+            "talentIndex": 0,
+            "unlockCondition": {
+              "phase": 2,
+              "level": 50
+            },
+            "requiredPotentialRank": 0,
+            "prefabKey": "1",
+            "name": null,
+            "description": null,
+            "rangeId": "x-4",
+            "blackboard": [
+              {
+                "key": "max_deploy_count",
+                "value": 4.0
+              },
+              {
+                "key": "max_deck_stack_cnt",
+                "value": 5.0
+              },
+              {
+                "key": "move_speed",
+                "value": -0.08
+              }
+            ]
+          }
+        ]
+      },
+      "overrideTraitDataBundle": {
+        "candidates": null
+      }
+    }
+  ],
+  "attributeBlackboard": [
+    {
+      "key": "atk",
+      "value": 36.0
+    },
+    {
+      "key": "def",
+      "value": 30.0
+    }
+  ],
+  "tokenAttributeBlackboard": {}
+}

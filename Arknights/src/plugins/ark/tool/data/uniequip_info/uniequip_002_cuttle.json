@@ -1,0 +1,105 @@
+{
+  "equipLevel": 3,
+  "parts": [
+    {
+      "resKey": "cuttle_equip_1_3_p1",
+      "target": "TRAIT",
+      "isToken": false,
+      "addOrOverrideTalentDataBundle": {
+        "candidates": null
+      },
+      "overrideTraitDataBundle": {
+        "candidates": [
+          {
+            "additionalDescription": "攻击越远的敌人造成的伤害越高（最高提升<@ba.kw>{damage_scale:0%}</>）",
+            "unlockCondition": {
+              "phase": 2,
+              "level": 50
+            },
+            "requiredPotentialRank": 0,
+            "blackboard": [
+              {
+                "key": "max_dist",
+                "value": 4.5
+              },
+              {
+                "key": "min_dist",
+                "value": 1.0
+              },
+              {
+                "key": "damage_scale",
+                "value": 0.15
+              }
+            ],
+            "overrideDescripton": null,
+            "prefabKey": null,
+            "rangeId": null
+          }
+        ]
+      }
+    },
+    {
+      "resKey": null,
+      "target": "TALENT_DATA_ONLY",
+      "isToken": false,
+      "addOrOverrideTalentDataBundle": {
+        "candidates": [
+          {
+            "displayRangeId": false,
+            "upgradeDescription": "编入队伍时，所有【深海猎人】干员攻击速度+20",
+            "talentIndex": 0,
+            "unlockCondition": {
+              "phase": 2,
+              "level": 50
+            },
+            "requiredPotentialRank": 0,
+            "prefabKey": "1",
+            "name": "深海直觉",
+            "description": null,
+            "rangeId": null,
+            "blackboard": [
+              {
+                "key": "attack_speed",
+                "value": 20.0
+              }
+            ]
+          },
+          {
+            "displayRangeId": false,
+            "upgradeDescription": "编入队伍时，所有【深海猎人】干员攻击速度+22<@ba.talpu>（+2）</>",
+            "talentIndex": 0,
+            "unlockCondition": {
+              "phase": 2,
+              "level": 50
+            },
+            "requiredPotentialRank": 4,
+            "prefabKey": "1",
+            "name": "深海直觉",
+            "description": null,
+            "rangeId": null,
+            "blackboard": [
+              {
+                "key": "attack_speed",
+                "value": 22.0
+              }
+            ]
+          }
+        ]
+      },
+      "overrideTraitDataBundle": {
+        "candidates": null
+      }
+    }
+  ],
+  "attributeBlackboard": [
+    {
+      "key": "max_hp",
+      "value": 121.0
+    },
+    {
+      "key": "atk",
+      "value": 91.0
+    }
+  ],
+  "tokenAttributeBlackboard": {}
+}

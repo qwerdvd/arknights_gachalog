@@ -1,0 +1,85 @@
+{
+  "equipLevel": 3,
+  "parts": [
+    {
+      "resKey": "yuki_equip_1_3_p1",
+      "target": "TRAIT",
+      "isToken": false,
+      "addOrOverrideTalentDataBundle": {
+        "candidates": null
+      },
+      "overrideTraitDataBundle": {
+        "candidates": [
+          {
+            "additionalDescription": "攻击时无视敌人<@ba.vup>{def_penetrate_fixed}</>点的防御力",
+            "unlockCondition": {
+              "phase": 2,
+              "level": 40
+            },
+            "requiredPotentialRank": 0,
+            "blackboard": [
+              {
+                "key": "def_penetrate_fixed",
+                "value": 100.0
+              }
+            ],
+            "overrideDescripton": "攻击造成<@ba.kw>群体物理伤害</>",
+            "prefabKey": null,
+            "rangeId": null
+          }
+        ]
+      }
+    },
+    {
+      "resKey": "yuki_equip_1_3_p2",
+      "target": "TALENT",
+      "isToken": false,
+      "addOrOverrideTalentDataBundle": {
+        "candidates": [
+          {
+            "displayRangeId": false,
+            "upgradeDescription": "击倒敌人后10秒内技力回复速度+0.3/s",
+            "talentIndex": -1,
+            "unlockCondition": {
+              "phase": 2,
+              "level": 40
+            },
+            "requiredPotentialRank": 0,
+            "prefabKey": "10",
+            "name": "风旭",
+            "description": null,
+            "rangeId": null,
+            "blackboard": [
+              {
+                "key": "sp_recovery_per_sec",
+                "value": 0.3
+              },
+              {
+                "key": "duration",
+                "value": 10.0
+              }
+            ]
+          }
+        ]
+      },
+      "overrideTraitDataBundle": {
+        "candidates": null
+      }
+    }
+  ],
+  "attributeBlackboard": [
+    {
+      "key": "max_hp",
+      "value": 160.0
+    },
+    {
+      "key": "atk",
+      "value": 30.0
+    },
+    {
+      "key": "attack_speed",
+      "value": 5.0
+    }
+  ],
+  "tokenAttributeBlackboard": {}
+}

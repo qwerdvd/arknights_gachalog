@@ -1,0 +1,84 @@
+{
+  "equipLevel": 3,
+  "parts": [
+    {
+      "resKey": "bgsnow_equip_1_3_p1",
+      "target": "TRAIT",
+      "isToken": false,
+      "addOrOverrideTalentDataBundle": {
+        "candidates": null
+      },
+      "overrideTraitDataBundle": {
+        "candidates": [
+          {
+            "additionalDescription": "攻击正前方的敌人时攻击力提升至<@ba.kw>105%</>且无视其物理闪避",
+            "unlockCondition": {
+              "phase": 2,
+              "level": 60
+            },
+            "requiredPotentialRank": 0,
+            "blackboard": [
+              {
+                "key": "atk_scale",
+                "value": 1.05
+              }
+            ],
+            "overrideDescripton": null,
+            "prefabKey": null,
+            "rangeId": null
+          }
+        ]
+      }
+    },
+    {
+      "resKey": null,
+      "target": "TALENT_DATA_ONLY",
+      "isToken": false,
+      "addOrOverrideTalentDataBundle": {
+        "candidates": [
+          {
+            "displayRangeId": false,
+            "upgradeDescription": "可使用一个持续25秒属性更强的“打字机”，“打字机”拥有和自己一样的技能，拥有独立的再部署时间",
+            "talentIndex": 0,
+            "unlockCondition": {
+              "phase": 2,
+              "level": 60
+            },
+            "requiredPotentialRank": 0,
+            "prefabKey": "2",
+            "name": "自动打字机",
+            "description": null,
+            "rangeId": null,
+            "blackboard": [
+              {
+                "key": "duration",
+                "value": 25.0
+              }
+            ]
+          }
+        ]
+      },
+      "overrideTraitDataBundle": {
+        "candidates": null
+      }
+    }
+  ],
+  "attributeBlackboard": [
+    {
+      "key": "max_hp",
+      "value": 170.0
+    },
+    {
+      "key": "atk",
+      "value": 75.0
+    }
+  ],
+  "tokenAttributeBlackboard": {
+    "token_10026_bgsnow_subbow": [
+      {
+        "key": "atk",
+        "value": 70.0
+      }
+    ]
+  }
+}

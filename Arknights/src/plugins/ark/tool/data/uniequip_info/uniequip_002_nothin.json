@@ -1,0 +1,117 @@
+{
+  "equipLevel": 3,
+  "parts": [
+    {
+      "resKey": null,
+      "target": "TRAIT_DATA_ONLY",
+      "isToken": false,
+      "addOrOverrideTalentDataBundle": {
+        "candidates": null
+      },
+      "overrideTraitDataBundle": {
+        "candidates": [
+          {
+            "additionalDescription": null,
+            "unlockCondition": {
+              "phase": 2,
+              "level": 50
+            },
+            "requiredPotentialRank": 0,
+            "blackboard": [
+              {
+                "key": "interval",
+                "value": 3.0
+              },
+              {
+                "key": "cost",
+                "value": -2.0
+              }
+            ],
+            "overrideDescripton": "再部署时间<@ba.kw>减少</>，撤退时不返还<@ba.kw>部署费用</>，在场时每3秒消耗<@ba.kw>2</>点部署费用（不足时自动撤退）",
+            "prefabKey": null,
+            "rangeId": null
+          }
+        ]
+      }
+    },
+    {
+      "resKey": null,
+      "target": "TALENT_DATA_ONLY",
+      "isToken": false,
+      "addOrOverrideTalentDataBundle": {
+        "candidates": [
+          {
+            "displayRangeId": false,
+            "upgradeDescription": "如果3秒内没有主动攻击过，下一次攻击的攻击力提升至175%并<$ba.stun>晕眩</>目标5秒",
+            "talentIndex": 0,
+            "unlockCondition": {
+              "phase": 2,
+              "level": 50
+            },
+            "requiredPotentialRank": 0,
+            "prefabKey": "1",
+            "name": "出其不意",
+            "description": null,
+            "rangeId": null,
+            "blackboard": [
+              {
+                "key": "delay",
+                "value": 3.0
+              },
+              {
+                "key": "atk_scale",
+                "value": 1.75
+              },
+              {
+                "key": "stun",
+                "value": 5.0
+              }
+            ]
+          },
+          {
+            "displayRangeId": false,
+            "upgradeDescription": "如果3秒内没有主动攻击过，下一次攻击的攻击力提升至180%<@ba.talpu>（+5%）</>并<$ba.stun>晕眩</>目标5秒",
+            "talentIndex": 0,
+            "unlockCondition": {
+              "phase": 2,
+              "level": 50
+            },
+            "requiredPotentialRank": 4,
+            "prefabKey": "1",
+            "name": "出其不意",
+            "description": null,
+            "rangeId": null,
+            "blackboard": [
+              {
+                "key": "delay",
+                "value": 3.0
+              },
+              {
+                "key": "atk_scale",
+                "value": 1.8
+              },
+              {
+                "key": "stun",
+                "value": 5.0
+              }
+            ]
+          }
+        ]
+      },
+      "overrideTraitDataBundle": {
+        "candidates": null
+      }
+    }
+  ],
+  "attributeBlackboard": [
+    {
+      "key": "max_hp",
+      "value": 240.0
+    },
+    {
+      "key": "atk",
+      "value": 65.0
+    }
+  ],
+  "tokenAttributeBlackboard": {}
+}

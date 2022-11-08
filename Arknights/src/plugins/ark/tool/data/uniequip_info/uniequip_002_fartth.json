@@ -1,0 +1,113 @@
+{
+  "equipLevel": 3,
+  "parts": [
+    {
+      "resKey": "fartth_equip_1_3_p1",
+      "target": "TRAIT",
+      "isToken": false,
+      "addOrOverrideTalentDataBundle": {
+        "candidates": null
+      },
+      "overrideTraitDataBundle": {
+        "candidates": [
+          {
+            "additionalDescription": "攻击越远的敌人造成的伤害越高（最高提升<@ba.kw>{damage_scale:0%}</>）",
+            "unlockCondition": {
+              "phase": 2,
+              "level": 60
+            },
+            "requiredPotentialRank": 0,
+            "blackboard": [
+              {
+                "key": "max_dist",
+                "value": 4.5
+              },
+              {
+                "key": "min_dist",
+                "value": 1.0
+              },
+              {
+                "key": "damage_scale",
+                "value": 0.15
+              }
+            ],
+            "overrideDescripton": null,
+            "prefabKey": null,
+            "rangeId": null
+          }
+        ]
+      }
+    },
+    {
+      "resKey": null,
+      "target": "TALENT_DATA_ONLY",
+      "isToken": false,
+      "addOrOverrideTalentDataBundle": {
+        "candidates": [
+          {
+            "displayRangeId": false,
+            "upgradeDescription": "最近6秒内未受伤害时，攻击力+22%",
+            "talentIndex": 0,
+            "unlockCondition": {
+              "phase": 2,
+              "level": 60
+            },
+            "requiredPotentialRank": 0,
+            "prefabKey": "1",
+            "name": "凝神",
+            "description": null,
+            "rangeId": null,
+            "blackboard": [
+              {
+                "key": "atk",
+                "value": 0.22
+              },
+              {
+                "key": "delay",
+                "value": 6.0
+              }
+            ]
+          },
+          {
+            "displayRangeId": false,
+            "upgradeDescription": "最近6秒内未受伤害时，攻击力+25%<@ba.talpu>（+3%）</>",
+            "talentIndex": 0,
+            "unlockCondition": {
+              "phase": 2,
+              "level": 60
+            },
+            "requiredPotentialRank": 4,
+            "prefabKey": "1",
+            "name": "凝神",
+            "description": null,
+            "rangeId": null,
+            "blackboard": [
+              {
+                "key": "atk",
+                "value": 0.25
+              },
+              {
+                "key": "delay",
+                "value": 6.0
+              }
+            ]
+          }
+        ]
+      },
+      "overrideTraitDataBundle": {
+        "candidates": null
+      }
+    }
+  ],
+  "attributeBlackboard": [
+    {
+      "key": "atk",
+      "value": 100.0
+    },
+    {
+      "key": "attack_speed",
+      "value": 7.0
+    }
+  ],
+  "tokenAttributeBlackboard": {}
+}

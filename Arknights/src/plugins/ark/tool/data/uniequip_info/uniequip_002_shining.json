@@ -1,0 +1,105 @@
+{
+  "equipLevel": 3,
+  "parts": [
+    {
+      "resKey": "shining_equip_1_3_p1",
+      "target": "TRAIT",
+      "isToken": false,
+      "addOrOverrideTalentDataBundle": {
+        "candidates": null
+      },
+      "overrideTraitDataBundle": {
+        "candidates": [
+          {
+            "additionalDescription": "治疗地面单位时治疗量提升<@ba.kw>15%</>",
+            "unlockCondition": {
+              "phase": 2,
+              "level": 60
+            },
+            "requiredPotentialRank": 0,
+            "blackboard": [
+              {
+                "key": "heal_scale",
+                "value": 1.15
+              }
+            ],
+            "overrideDescripton": null,
+            "prefabKey": null,
+            "rangeId": null
+          }
+        ]
+      }
+    },
+    {
+      "resKey": "shining_equip_1_3_p2",
+      "target": "TALENT",
+      "isToken": false,
+      "addOrOverrideTalentDataBundle": {
+        "candidates": [
+          {
+            "displayRangeId": false,
+            "upgradeDescription": "攻击范围内的友方单位防御力+100，地面单位防御力额外+40",
+            "talentIndex": 0,
+            "unlockCondition": {
+              "phase": 2,
+              "level": 60
+            },
+            "requiredPotentialRank": 0,
+            "prefabKey": "1",
+            "name": "黑恶魔的庇护",
+            "description": null,
+            "rangeId": null,
+            "blackboard": [
+              {
+                "key": "def",
+                "value": 100.0
+              },
+              {
+                "key": "def_lowland",
+                "value": 40.0
+              }
+            ]
+          },
+          {
+            "displayRangeId": false,
+            "upgradeDescription": "攻击范围内的友方单位防御力+105<@ba.talpu>（+5）</>，地面单位防御力额外+40",
+            "talentIndex": 0,
+            "unlockCondition": {
+              "phase": 2,
+              "level": 60
+            },
+            "requiredPotentialRank": 5,
+            "prefabKey": "1",
+            "name": "黑恶魔的庇护",
+            "description": null,
+            "rangeId": null,
+            "blackboard": [
+              {
+                "key": "def",
+                "value": 105.0
+              },
+              {
+                "key": "def_lowland",
+                "value": 40.0
+              }
+            ]
+          }
+        ]
+      },
+      "overrideTraitDataBundle": {
+        "candidates": null
+      }
+    }
+  ],
+  "attributeBlackboard": [
+    {
+      "key": "atk",
+      "value": 60.0
+    },
+    {
+      "key": "attack_speed",
+      "value": 7.0
+    }
+  ],
+  "tokenAttributeBlackboard": {}
+}

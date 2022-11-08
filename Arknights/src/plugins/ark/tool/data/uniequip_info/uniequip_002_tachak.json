@@ -1,0 +1,117 @@
+{
+  "equipLevel": 3,
+  "parts": [
+    {
+      "resKey": "tachak_equip_1_3_p1",
+      "target": "TRAIT",
+      "isToken": false,
+      "addOrOverrideTalentDataBundle": {
+        "candidates": null
+      },
+      "overrideTraitDataBundle": {
+        "candidates": [
+          {
+            "additionalDescription": "技能造成的伤害提升<@ba.vup>{value:0%}</>",
+            "unlockCondition": {
+              "phase": 2,
+              "level": 50
+            },
+            "requiredPotentialRank": 0,
+            "blackboard": [
+              {
+                "key": "damage_scale",
+                "value": 1.1
+              },
+              {
+                "key": "value",
+                "value": 0.1
+              }
+            ],
+            "overrideDescripton": null,
+            "prefabKey": null,
+            "rangeId": null
+          }
+        ]
+      }
+    },
+    {
+      "resKey": null,
+      "target": "TALENT_DATA_ONLY",
+      "isToken": false,
+      "addOrOverrideTalentDataBundle": {
+        "candidates": [
+          {
+            "displayRangeId": false,
+            "upgradeDescription": "攻击距离+2，防御力+23%，再部署时间+20秒",
+            "talentIndex": 0,
+            "unlockCondition": {
+              "phase": 2,
+              "level": 50
+            },
+            "requiredPotentialRank": 0,
+            "prefabKey": "1",
+            "name": "重火力",
+            "description": null,
+            "rangeId": null,
+            "blackboard": [
+              {
+                "key": "def",
+                "value": 0.23
+              },
+              {
+                "key": "respawn_time",
+                "value": 20.0
+              },
+              {
+                "key": "ability_range_forward_extend",
+                "value": 2.0
+              }
+            ]
+          },
+          {
+            "displayRangeId": false,
+            "upgradeDescription": "攻击距离+2，防御力+28%<@ba.talpu>（+5%）</>，再部署时间+20秒",
+            "talentIndex": 0,
+            "unlockCondition": {
+              "phase": 2,
+              "level": 50
+            },
+            "requiredPotentialRank": 4,
+            "prefabKey": "1",
+            "name": "重火力",
+            "description": null,
+            "rangeId": null,
+            "blackboard": [
+              {
+                "key": "def",
+                "value": 0.28
+              },
+              {
+                "key": "respawn_time",
+                "value": 20.0
+              },
+              {
+                "key": "ability_range_forward_extend",
+                "value": 2.0
+              }
+            ]
+          }
+        ]
+      },
+      "overrideTraitDataBundle": {
+        "candidates": null
+      }
+    }
+  ],
+  "attributeBlackboard": [
+    {
+      "key": "atk",
+      "value": 55.0
+    },
+    {
+      "key": "def",
+      "value": 55.0
+    }
+  ],
+  "tokenAttributeBlackboard": {}
+}

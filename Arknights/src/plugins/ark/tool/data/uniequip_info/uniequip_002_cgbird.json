@@ -1,0 +1,127 @@
+{
+  "equipLevel": 3,
+  "parts": [
+    {
+      "resKey": null,
+      "target": "DISPLAY",
+      "isToken": false,
+      "addOrOverrideTalentDataBundle": {
+        "candidates": null
+      },
+      "overrideTraitDataBundle": {
+        "candidates": [
+          {
+            "additionalDescription": "攻击范围<@ba.kw>扩大</>",
+            "unlockCondition": {
+              "phase": 2,
+              "level": 60
+            },
+            "requiredPotentialRank": 0,
+            "blackboard": [],
+            "overrideDescripton": null,
+            "prefabKey": null,
+            "rangeId": null
+          }
+        ]
+      }
+    },
+    {
+      "resKey": "cgbird_equip_1_3_p1",
+      "target": "TALENT",
+      "isToken": false,
+      "addOrOverrideTalentDataBundle": {
+        "candidates": [
+          {
+            "displayRangeId": true,
+            "upgradeDescription": "",
+            "talentIndex": -1,
+            "unlockCondition": {
+              "phase": 2,
+              "level": 60
+            },
+            "requiredPotentialRank": 0,
+            "prefabKey": "10",
+            "name": null,
+            "description": null,
+            "rangeId": "y-3",
+            "blackboard": []
+          }
+        ]
+      },
+      "overrideTraitDataBundle": {
+        "candidates": null
+      }
+    },
+    {
+      "resKey": "cgbird_equip_1_3_p2",
+      "target": "TALENT",
+      "isToken": false,
+      "addOrOverrideTalentDataBundle": {
+        "candidates": [
+          {
+            "displayRangeId": false,
+            "upgradeDescription": "攻击范围内的友方单位法术抗性+15且受到的治疗效果提升5%",
+            "talentIndex": 0,
+            "unlockCondition": {
+              "phase": 2,
+              "level": 60
+            },
+            "requiredPotentialRank": 0,
+            "prefabKey": "1",
+            "name": "白恶魔的庇护",
+            "description": null,
+            "rangeId": null,
+            "blackboard": [
+              {
+                "key": "magic_resistance",
+                "value": 15.0
+              },
+              {
+                "key": "heal_scale",
+                "value": 1.05
+              }
+            ]
+          },
+          {
+            "displayRangeId": false,
+            "upgradeDescription": "攻击范围内的友方单位法术抗性+17<@ba.talpu>（+2）</>且受到的治疗效果提升5%",
+            "talentIndex": 0,
+            "unlockCondition": {
+              "phase": 2,
+              "level": 60
+            },
+            "requiredPotentialRank": 4,
+            "prefabKey": "1",
+            "name": "白恶魔的庇护",
+            "description": null,
+            "rangeId": null,
+            "blackboard": [
+              {
+                "key": "magic_resistance",
+                "value": 17.0
+              },
+              {
+                "key": "heal_scale",
+                "value": 1.05
+              }
+            ]
+          }
+        ]
+      },
+      "overrideTraitDataBundle": {
+        "candidates": null
+      }
+    }
+  ],
+  "attributeBlackboard": [
+    {
+      "key": "atk",
+      "value": 65.0
+    },
+    {
+      "key": "magic_resistance",
+      "value": 5.0
+    }
+  ],
+  "tokenAttributeBlackboard": {}
+}

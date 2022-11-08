@@ -1,0 +1,113 @@
+{
+  "equipLevel": 3,
+  "parts": [
+    {
+      "resKey": "folnic_equip_1_3_p1",
+      "target": "TRAIT",
+      "isToken": false,
+      "addOrOverrideTalentDataBundle": {
+        "candidates": null
+      },
+      "overrideTraitDataBundle": {
+        "candidates": [
+          {
+            "additionalDescription": "治疗地面单位时治疗量提升<@ba.kw>15%</>",
+            "unlockCondition": {
+              "phase": 2,
+              "level": 50
+            },
+            "requiredPotentialRank": 0,
+            "blackboard": [
+              {
+                "key": "heal_scale",
+                "value": 1.15
+              }
+            ],
+            "overrideDescripton": null,
+            "prefabKey": null,
+            "rangeId": null
+          }
+        ]
+      }
+    },
+    {
+      "resKey": "folnic_equip_1_3_p2",
+      "target": "TALENT",
+      "isToken": false,
+      "addOrOverrideTalentDataBundle": {
+        "candidates": [
+          {
+            "displayRangeId": false,
+            "upgradeDescription": "拥有<$ba.buffres>抵抗</>且受到来自自然环境的伤害-40%，攻击范围内的其他友方角色受到来自自然环境的伤害-25%",
+            "talentIndex": 0,
+            "unlockCondition": {
+              "phase": 2,
+              "level": 50
+            },
+            "requiredPotentialRank": 0,
+            "prefabKey": "1",
+            "name": "药物阻断技巧",
+            "description": null,
+            "rangeId": null,
+            "blackboard": [
+              {
+                "key": "one_minus_status_resistance",
+                "value": -0.5
+              },
+              {
+                "key": "damage_scale",
+                "value": 0.6
+              },
+              {
+                "key": "damage_scale_aura",
+                "value": 0.75
+              }
+            ]
+          },
+          {
+            "displayRangeId": false,
+            "upgradeDescription": "拥有<$ba.buffres>抵抗</>且受到来自自然环境的伤害-50%<@ba.talpu>（+10%）</>，攻击范围内的其他友方角色受到来自自然环境的伤害-25%",
+            "talentIndex": 0,
+            "unlockCondition": {
+              "phase": 2,
+              "level": 50
+            },
+            "requiredPotentialRank": 4,
+            "prefabKey": "1",
+            "name": "药物阻断技巧",
+            "description": null,
+            "rangeId": null,
+            "blackboard": [
+              {
+                "key": "one_minus_status_resistance",
+                "value": -0.5
+              },
+              {
+                "key": "damage_scale",
+                "value": 0.5
+              },
+              {
+                "key": "damage_scale_aura",
+                "value": 0.75
+              }
+            ]
+          }
+        ]
+      },
+      "overrideTraitDataBundle": {
+        "candidates": null
+      }
+    }
+  ],
+  "attributeBlackboard": [
+    {
+      "key": "max_hp",
+      "value": 120.0
+    },
+    {
+      "key": "attack_speed",
+      "value": 6.0
+    }
+  ],
+  "tokenAttributeBlackboard": {}
+}

@@ -1,0 +1,105 @@
+{
+  "equipLevel": 3,
+  "parts": [
+    {
+      "resKey": "rope_equip_1_3_p1",
+      "target": "TRAIT",
+      "isToken": false,
+      "addOrOverrideTalentDataBundle": {
+        "candidates": null
+      },
+      "overrideTraitDataBundle": {
+        "candidates": [
+          {
+            "additionalDescription": "拖拽期间敌人受到正比于距离的法术伤害",
+            "unlockCondition": {
+              "phase": 2,
+              "level": 40
+            },
+            "requiredPotentialRank": 0,
+            "blackboard": [
+              {
+                "key": "dist",
+                "value": 1.0
+              },
+              {
+                "key": "value",
+                "value": 800.0
+              },
+              {
+                "key": "interval",
+                "value": 0.066
+              }
+            ],
+            "overrideDescripton": null,
+            "prefabKey": null,
+            "rangeId": null
+          }
+        ]
+      }
+    },
+    {
+      "resKey": null,
+      "target": "TALENT_DATA_ONLY",
+      "isToken": false,
+      "addOrOverrideTalentDataBundle": {
+        "candidates": [
+          {
+            "displayRangeId": false,
+            "upgradeDescription": "获得40%的物理闪避",
+            "talentIndex": 0,
+            "unlockCondition": {
+              "phase": 2,
+              "level": 40
+            },
+            "requiredPotentialRank": 0,
+            "prefabKey": "1",
+            "name": "听觉训练",
+            "description": null,
+            "rangeId": null,
+            "blackboard": [
+              {
+                "key": "prob",
+                "value": 0.4
+              }
+            ]
+          },
+          {
+            "displayRangeId": false,
+            "upgradeDescription": "获得44%<@ba.talpu>（+4%）</>的物理闪避",
+            "talentIndex": 0,
+            "unlockCondition": {
+              "phase": 2,
+              "level": 40
+            },
+            "requiredPotentialRank": 4,
+            "prefabKey": "1",
+            "name": "听觉训练",
+            "description": null,
+            "rangeId": null,
+            "blackboard": [
+              {
+                "key": "prob",
+                "value": 0.44
+              }
+            ]
+          }
+        ]
+      },
+      "overrideTraitDataBundle": {
+        "candidates": null
+      }
+    }
+  ],
+  "attributeBlackboard": [
+    {
+      "key": "max_hp",
+      "value": 200.0
+    },
+    {
+      "key": "atk",
+      "value": 31.0
+    }
+  ],
+  "tokenAttributeBlackboard": {}
+}

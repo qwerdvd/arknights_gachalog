@@ -1,0 +1,132 @@
+{
+  "equipLevel": 3,
+  "parts": [
+    {
+      "resKey": null,
+      "target": "DISPLAY",
+      "isToken": false,
+      "addOrOverrideTalentDataBundle": {
+        "candidates": null
+      },
+      "overrideTraitDataBundle": {
+        "candidates": [
+          {
+            "additionalDescription": "可以额外部署在远程位",
+            "unlockCondition": {
+              "phase": 2,
+              "level": 60
+            },
+            "requiredPotentialRank": 0,
+            "blackboard": [],
+            "overrideDescripton": null,
+            "prefabKey": null,
+            "rangeId": null
+          }
+        ]
+      }
+    },
+    {
+      "resKey": "pallas_equip_2_3_p1",
+      "target": "TALENT",
+      "isToken": false,
+      "addOrOverrideTalentDataBundle": {
+        "candidates": [
+          {
+            "displayRangeId": false,
+            "upgradeDescription": "",
+            "talentIndex": -1,
+            "unlockCondition": {
+              "phase": 2,
+              "level": 60
+            },
+            "requiredPotentialRank": 0,
+            "prefabKey": "10",
+            "name": null,
+            "description": null,
+            "rangeId": null,
+            "blackboard": [
+              {
+                "key": "buildable_type",
+                "value": 2.0
+              }
+            ]
+          }
+        ]
+      },
+      "overrideTraitDataBundle": {
+        "candidates": null
+      }
+    },
+    {
+      "resKey": "pallas_equip_2_3_p2",
+      "target": "TALENT",
+      "isToken": false,
+      "addOrOverrideTalentDataBundle": {
+        "candidates": [
+          {
+            "displayRangeId": false,
+            "upgradeDescription": "每攻击一名敌人时为自身与身前一格的我方干员恢复60点生命值并使所有【米诺斯】干员额外恢复40点生命值",
+            "talentIndex": 1,
+            "unlockCondition": {
+              "phase": 2,
+              "level": 60
+            },
+            "requiredPotentialRank": 0,
+            "prefabKey": "2",
+            "name": "女神的振奋",
+            "description": null,
+            "rangeId": null,
+            "blackboard": [
+              {
+                "key": "value",
+                "value": 60.0
+              },
+              {
+                "key": "pallas_e_t_2.value",
+                "value": 40.0
+              }
+            ]
+          },
+          {
+            "displayRangeId": false,
+            "upgradeDescription": "每攻击一名敌人时为自身与身前一格的我方干员恢复65<@ba.talpu>（+5）</>点生命值并使所有【米诺斯】干员额外恢复40点生命值",
+            "talentIndex": 1,
+            "unlockCondition": {
+              "phase": 2,
+              "level": 60
+            },
+            "requiredPotentialRank": 4,
+            "prefabKey": "2",
+            "name": "女神的振奋",
+            "description": null,
+            "rangeId": null,
+            "blackboard": [
+              {
+                "key": "value",
+                "value": 65.0
+              },
+              {
+                "key": "pallas_e_t_2.value",
+                "value": 40.0
+              }
+            ]
+          }
+        ]
+      },
+      "overrideTraitDataBundle": {
+        "candidates": null
+      }
+    }
+  ],
+  "attributeBlackboard": [
+    {
+      "key": "atk",
+      "value": 60.0
+    },
+    {
+      "key": "attack_speed",
+      "value": 5.0
+    }
+  ],
+  "tokenAttributeBlackboard": {}
+}

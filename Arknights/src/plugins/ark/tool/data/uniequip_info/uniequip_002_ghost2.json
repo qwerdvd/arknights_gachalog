@@ -1,0 +1,129 @@
+{
+  "equipLevel": 3,
+  "parts": [
+    {
+      "resKey": null,
+      "target": "TRAIT_DATA_ONLY",
+      "isToken": false,
+      "addOrOverrideTalentDataBundle": {
+        "candidates": null
+      },
+      "overrideTraitDataBundle": {
+        "candidates": [
+          {
+            "additionalDescription": null,
+            "unlockCondition": {
+              "phase": 2,
+              "level": 60
+            },
+            "requiredPotentialRank": 0,
+            "blackboard": [
+              {
+                "key": "duration",
+                "value": 20.0
+              },
+              {
+                "key": "atk",
+                "value": 0.15
+              },
+              {
+                "key": "max_hp",
+                "value": 0.0
+              }
+            ],
+            "overrideDescripton": "受到致命伤时不撤退，切换成<替身>作战（替身阻挡数为0但攻击力<@ba.kw>提升</>），持续20秒后自身再次替换<替身>",
+            "prefabKey": "-1",
+            "rangeId": null
+          }
+        ]
+      }
+    },
+    {
+      "resKey": null,
+      "target": "TALENT_DATA_ONLY",
+      "isToken": false,
+      "addOrOverrideTalentDataBundle": {
+        "candidates": [
+          {
+            "displayRangeId": false,
+            "upgradeDescription": "<替身>使周围敌人移动速度-60%且每秒造成相当于80%攻击力的法术伤害，替换时自身额外获得15点技力",
+            "talentIndex": 0,
+            "unlockCondition": {
+              "phase": 2,
+              "level": 60
+            },
+            "requiredPotentialRank": 0,
+            "prefabKey": "1",
+            "name": "拥抱自我",
+            "description": null,
+            "rangeId": "x-4",
+            "blackboard": [
+              {
+                "key": "move_speed",
+                "value": -0.6
+              },
+              {
+                "key": "atk_scale",
+                "value": 0.8
+              },
+              {
+                "key": "talent_override_rangeid_flag",
+                "value": 1.0
+              }
+            ]
+          }
+        ]
+      },
+      "overrideTraitDataBundle": {
+        "candidates": null
+      }
+    },
+    {
+      "resKey": "ghost2_equip_1_3_p1",
+      "target": "TALENT",
+      "isToken": false,
+      "addOrOverrideTalentDataBundle": {
+        "candidates": [
+          {
+            "displayRangeId": false,
+            "upgradeDescription": "<替身>使周围敌人移动速度-60%且每秒造成相当于80%攻击力的法术伤害，替换时自身额外获得15点技力",
+            "talentIndex": 0,
+            "unlockCondition": {
+              "phase": 2,
+              "level": 60
+            },
+            "requiredPotentialRank": 0,
+            "prefabKey": "10",
+            "name": "拥抱自我",
+            "description": null,
+            "rangeId": null,
+            "blackboard": [
+              {
+                "key": "sp",
+                "value": 15.0
+              }
+            ]
+          }
+        ]
+      },
+      "overrideTraitDataBundle": {
+        "candidates": null
+      }
+    }
+  ],
+  "attributeBlackboard": [
+    {
+      "key": "max_hp",
+      "value": 250.0
+    },
+    {
+      "key": "atk",
+      "value": 83.0
+    },
+    {
+      "key": "def",
+      "value": 30.0
+    }
+  ],
+  "tokenAttributeBlackboard": {}
+}

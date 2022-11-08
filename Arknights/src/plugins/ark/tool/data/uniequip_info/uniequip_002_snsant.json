@@ -1,0 +1,113 @@
+{
+  "equipLevel": 3,
+  "parts": [
+    {
+      "resKey": "snsant_equip_1_3_p1",
+      "target": "TRAIT",
+      "isToken": false,
+      "addOrOverrideTalentDataBundle": {
+        "candidates": null
+      },
+      "overrideTraitDataBundle": {
+        "candidates": [
+          {
+            "additionalDescription": "拖拽期间敌人受到正比于距离的法术伤害",
+            "unlockCondition": {
+              "phase": 2,
+              "level": 50
+            },
+            "requiredPotentialRank": 0,
+            "blackboard": [
+              {
+                "key": "dist",
+                "value": 1.0
+              },
+              {
+                "key": "value",
+                "value": 800.0
+              },
+              {
+                "key": "interval",
+                "value": 0.066
+              }
+            ],
+            "overrideDescripton": null,
+            "prefabKey": null,
+            "rangeId": null
+          }
+        ]
+      }
+    },
+    {
+      "resKey": null,
+      "target": "TALENT_DATA_ONLY",
+      "isToken": false,
+      "addOrOverrideTalentDataBundle": {
+        "candidates": [
+          {
+            "displayRangeId": false,
+            "upgradeDescription": "在拖拽【感染生物】时，力度提升一个等级并额外使其失去特殊能力8秒",
+            "talentIndex": 0,
+            "unlockCondition": {
+              "phase": 2,
+              "level": 50
+            },
+            "requiredPotentialRank": 0,
+            "prefabKey": "1",
+            "name": "捕虫专家",
+            "description": null,
+            "rangeId": null,
+            "blackboard": [
+              {
+                "key": "skill@delta_force",
+                "value": 1.0
+              },
+              {
+                "key": "skill@silence",
+                "value": 8.0
+              }
+            ]
+          },
+          {
+            "displayRangeId": false,
+            "upgradeDescription": "在拖拽【感染生物】时，力度提升一个等级并额外使其失去特殊能力12<@ba.talpu>（+4）</>秒",
+            "talentIndex": 0,
+            "unlockCondition": {
+              "phase": 2,
+              "level": 50
+            },
+            "requiredPotentialRank": 4,
+            "prefabKey": "1",
+            "name": "捕虫专家",
+            "description": null,
+            "rangeId": null,
+            "blackboard": [
+              {
+                "key": "skill@delta_force",
+                "value": 1.0
+              },
+              {
+                "key": "skill@silence",
+                "value": 12.0
+              }
+            ]
+          }
+        ]
+      },
+      "overrideTraitDataBundle": {
+        "candidates": null
+      }
+    }
+  ],
+  "attributeBlackboard": [
+    {
+      "key": "max_hp",
+      "value": 210.0
+    },
+    {
+      "key": "def",
+      "value": 31.0
+    }
+  ],
+  "tokenAttributeBlackboard": {}
+}

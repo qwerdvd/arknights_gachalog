@@ -1,0 +1,96 @@
+{
+  "equipLevel": 3,
+  "parts": [
+    {
+      "resKey": null,
+      "target": "DISPLAY",
+      "isToken": false,
+      "addOrOverrideTalentDataBundle": {
+        "candidates": null
+      },
+      "overrideTraitDataBundle": {
+        "candidates": [
+          {
+            "additionalDescription": "部署费用<@ba.kw>减少</>",
+            "unlockCondition": {
+              "phase": 2,
+              "level": 50
+            },
+            "requiredPotentialRank": 0,
+            "blackboard": [],
+            "overrideDescripton": "攻击造成<@ba.kw>群体法术伤害</>",
+            "prefabKey": null,
+            "rangeId": null
+          }
+        ]
+      }
+    },
+    {
+      "resKey": null,
+      "target": "TALENT_DATA_ONLY",
+      "isToken": false,
+      "addOrOverrideTalentDataBundle": {
+        "candidates": [
+          {
+            "displayRangeId": false,
+            "upgradeDescription": "在场时，所有被阻挡的敌人受到法术伤害时伤害提升23%",
+            "talentIndex": 0,
+            "unlockCondition": {
+              "phase": 2,
+              "level": 50
+            },
+            "requiredPotentialRank": 0,
+            "prefabKey": "1",
+            "name": "法术狙击",
+            "description": null,
+            "rangeId": null,
+            "blackboard": [
+              {
+                "key": "damage_scale",
+                "value": 1.23
+              }
+            ]
+          },
+          {
+            "displayRangeId": false,
+            "upgradeDescription": "在场时，所有被阻挡的敌人受到法术伤害时伤害提升26%<@ba.talpu>（+3%）</>",
+            "talentIndex": 0,
+            "unlockCondition": {
+              "phase": 2,
+              "level": 50
+            },
+            "requiredPotentialRank": 4,
+            "prefabKey": "1",
+            "name": "法术狙击",
+            "description": null,
+            "rangeId": null,
+            "blackboard": [
+              {
+                "key": "damage_scale",
+                "value": 1.26
+              }
+            ]
+          }
+        ]
+      },
+      "overrideTraitDataBundle": {
+        "candidates": null
+      }
+    }
+  ],
+  "attributeBlackboard": [
+    {
+      "key": "cost",
+      "value": -8.0
+    },
+    {
+      "key": "atk",
+      "value": 70.0
+    },
+    {
+      "key": "attack_speed",
+      "value": 5.0
+    }
+  ],
+  "tokenAttributeBlackboard": {}
+}

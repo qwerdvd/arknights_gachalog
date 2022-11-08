@@ -1,0 +1,101 @@
+{
+  "equipLevel": 3,
+  "parts": [
+    {
+      "resKey": "lumen_equip_1_3_p1",
+      "target": "TRAIT",
+      "isToken": false,
+      "addOrOverrideTalentDataBundle": {
+        "candidates": null
+      },
+      "overrideTraitDataBundle": {
+        "candidates": [
+          {
+            "additionalDescription": "自身获得<$ba.buffres>抵抗</>且更不容易受到敌人的攻击",
+            "unlockCondition": {
+              "phase": 2,
+              "level": 60
+            },
+            "requiredPotentialRank": 0,
+            "blackboard": [
+              {
+                "key": "heal_scale",
+                "value": 0.8
+              },
+              {
+                "key": "taunt_level",
+                "value": -1.0
+              },
+              {
+                "key": "one_minus_status_resistance",
+                "value": -0.5
+              }
+            ],
+            "overrideDescripton": null,
+            "prefabKey": null,
+            "rangeId": null
+          }
+        ]
+      }
+    },
+    {
+      "resKey": null,
+      "target": "TALENT_DATA_ONLY",
+      "isToken": false,
+      "addOrOverrideTalentDataBundle": {
+        "candidates": [
+          {
+            "displayRangeId": false,
+            "upgradeDescription": "治疗的目标获得5秒<$ba.buffres>抵抗</>，若目标生命值高于75%则改为8秒<$ba.buffres>抵抗</>",
+            "talentIndex": 0,
+            "unlockCondition": {
+              "phase": 2,
+              "level": 60
+            },
+            "requiredPotentialRank": 0,
+            "prefabKey": "1",
+            "name": "凡人之愿",
+            "description": null,
+            "rangeId": null,
+            "blackboard": [
+              {
+                "key": "status_resistance[limit]",
+                "value": 5.0
+              },
+              {
+                "key": "lumen_t_1[special].status_resistance[limit]",
+                "value": 8.0
+              },
+              {
+                "key": "one_minus_status_resistance",
+                "value": -0.5
+              },
+              {
+                "key": "lumen_t_1[special].one_minus_status_resistance",
+                "value": -0.5
+              },
+              {
+                "key": "hp_ratio",
+                "value": 0.75
+              }
+            ]
+          }
+        ]
+      },
+      "overrideTraitDataBundle": {
+        "candidates": null
+      }
+    }
+  ],
+  "attributeBlackboard": [
+    {
+      "key": "max_hp",
+      "value": 160.0
+    },
+    {
+      "key": "atk",
+      "value": 45.0
+    }
+  ],
+  "tokenAttributeBlackboard": {}
+}

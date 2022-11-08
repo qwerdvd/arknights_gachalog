@@ -1,0 +1,96 @@
+{
+  "equipLevel": 3,
+  "parts": [
+    {
+      "resKey": null,
+      "target": "DISPLAY",
+      "isToken": false,
+      "addOrOverrideTalentDataBundle": {
+        "candidates": null
+      },
+      "overrideTraitDataBundle": {
+        "candidates": [
+          {
+            "additionalDescription": "再部署时间<@ba.kw>减少</>",
+            "unlockCondition": {
+              "phase": 2,
+              "level": 60
+            },
+            "requiredPotentialRank": 0,
+            "blackboard": [],
+            "overrideDescripton": null,
+            "prefabKey": null,
+            "rangeId": null
+          }
+        ]
+      }
+    },
+    {
+      "resKey": "shwaz_equip_1_2_p1",
+      "target": "TALENT",
+      "isToken": false,
+      "addOrOverrideTalentDataBundle": {
+        "candidates": [
+          {
+            "displayRangeId": false,
+            "upgradeDescription": "携带黑和另外至少一名【狙击】干员时，所有【狙击】干员的攻击力+13%",
+            "talentIndex": 1,
+            "unlockCondition": {
+              "phase": 2,
+              "level": 60
+            },
+            "requiredPotentialRank": 0,
+            "prefabKey": "2",
+            "name": "交叉火力",
+            "description": null,
+            "rangeId": null,
+            "blackboard": [
+              {
+                "key": "atk",
+                "value": 0.13
+              }
+            ]
+          },
+          {
+            "displayRangeId": false,
+            "upgradeDescription": "携带黑和另外至少一名【狙击】干员时，所有【狙击】干员的攻击力+15%<@ba.talpu>（+2%）</>",
+            "talentIndex": 1,
+            "unlockCondition": {
+              "phase": 2,
+              "level": 60
+            },
+            "requiredPotentialRank": 5,
+            "prefabKey": "2",
+            "name": "交叉火力",
+            "description": null,
+            "rangeId": null,
+            "blackboard": [
+              {
+                "key": "atk",
+                "value": 0.15
+              }
+            ]
+          }
+        ]
+      },
+      "overrideTraitDataBundle": {
+        "candidates": null
+      }
+    }
+  ],
+  "attributeBlackboard": [
+    {
+      "key": "max_hp",
+      "value": 170.0
+    },
+    {
+      "key": "atk",
+      "value": 75.0
+    },
+    {
+      "key": "respawn_time",
+      "value": -25.0
+    }
+  ],
+  "tokenAttributeBlackboard": {}
+}

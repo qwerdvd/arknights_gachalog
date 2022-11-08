@@ -1,0 +1,152 @@
+{
+  "equipLevel": 3,
+  "parts": [
+    {
+      "resKey": null,
+      "target": "DISPLAY",
+      "isToken": false,
+      "addOrOverrideTalentDataBundle": {
+        "candidates": null
+      },
+      "overrideTraitDataBundle": {
+        "candidates": [
+          {
+            "additionalDescription": "首次部署时部署费用-4",
+            "unlockCondition": {
+              "phase": 2,
+              "level": 60
+            },
+            "requiredPotentialRank": 0,
+            "blackboard": [],
+            "overrideDescripton": null,
+            "prefabKey": null,
+            "rangeId": null
+          }
+        ]
+      }
+    },
+    {
+      "resKey": "saga_equip_1_3_p1",
+      "target": "TALENT",
+      "isToken": false,
+      "addOrOverrideTalentDataBundle": {
+        "candidates": [
+          {
+            "displayRangeId": false,
+            "upgradeDescription": "",
+            "talentIndex": -1,
+            "unlockCondition": {
+              "phase": 2,
+              "level": 60
+            },
+            "requiredPotentialRank": 0,
+            "prefabKey": "10_root",
+            "name": null,
+            "description": null,
+            "rangeId": null,
+            "blackboard": [
+              {
+                "key": "runtime_cost",
+                "value": -4.0
+              }
+            ]
+          }
+        ]
+      },
+      "overrideTraitDataBundle": {
+        "candidates": null
+      }
+    },
+    {
+      "resKey": null,
+      "target": "TALENT_DATA_ONLY",
+      "isToken": false,
+      "addOrOverrideTalentDataBundle": {
+        "candidates": [
+          {
+            "displayRangeId": false,
+            "upgradeDescription": "生命值低于40%时，仅一次获得70%物理闪避和每秒回复6%的最大生命，持续18秒",
+            "talentIndex": 1,
+            "unlockCondition": {
+              "phase": 2,
+              "level": 60
+            },
+            "requiredPotentialRank": 0,
+            "prefabKey": "2",
+            "name": "清明",
+            "description": null,
+            "rangeId": null,
+            "blackboard": [
+              {
+                "key": "hp_ratio",
+                "value": 0.4
+              },
+              {
+                "key": "hp_recovery_per_sec_by_max_hp_ratio",
+                "value": 0.065
+              },
+              {
+                "key": "prob",
+                "value": 0.7
+              },
+              {
+                "key": "duration",
+                "value": 18.0
+              }
+            ]
+          },
+          {
+            "displayRangeId": false,
+            "upgradeDescription": "生命值低于40%时，仅一次获得70%物理闪避和每秒回复7%<@ba.talpu>（+1%）</>的最大生命，持续20<@ba.talpu>（+2）</>秒",
+            "talentIndex": 1,
+            "unlockCondition": {
+              "phase": 2,
+              "level": 60
+            },
+            "requiredPotentialRank": 4,
+            "prefabKey": "2",
+            "name": "清明",
+            "description": null,
+            "rangeId": null,
+            "blackboard": [
+              {
+                "key": "hp_ratio",
+                "value": 0.4
+              },
+              {
+                "key": "hp_recovery_per_sec_by_max_hp_ratio",
+                "value": 0.07
+              },
+              {
+                "key": "prob",
+                "value": 0.7
+              },
+              {
+                "key": "duration",
+                "value": 20.0
+              }
+            ]
+          }
+        ]
+      },
+      "overrideTraitDataBundle": {
+        "candidates": null
+      }
+    }
+  ],
+  "attributeBlackboard": [
+    {
+      "key": "max_hp",
+      "value": 125.0
+    },
+    {
+      "key": "atk",
+      "value": 55.0
+    },
+    {
+      "key": "def",
+      "value": 20.0
+    }
+  ],
+  "tokenAttributeBlackboard": {}
+}

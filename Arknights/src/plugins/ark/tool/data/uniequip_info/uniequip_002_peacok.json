@@ -1,0 +1,85 @@
+{
+  "equipLevel": 3,
+  "parts": [
+    {
+      "resKey": "peacok_equip_1_3_p1",
+      "target": "TRAIT",
+      "isToken": false,
+      "addOrOverrideTalentDataBundle": {
+        "candidates": null
+      },
+      "overrideTraitDataBundle": {
+        "candidates": [
+          {
+            "additionalDescription": "攻击被阻挡的敌人时攻击力提升至<@ba.vup>{atk_scale:0%}</>",
+            "unlockCondition": {
+              "phase": 2,
+              "level": 40
+            },
+            "requiredPotentialRank": 0,
+            "blackboard": [
+              {
+                "key": "atk_scale",
+                "value": 1.15
+              }
+            ],
+            "overrideDescripton": null,
+            "prefabKey": null,
+            "rangeId": null
+          }
+        ]
+      }
+    },
+    {
+      "resKey": null,
+      "target": "TALENT_DATA_ONLY",
+      "isToken": false,
+      "addOrOverrideTalentDataBundle": {
+        "candidates": [
+          {
+            "displayRangeId": false,
+            "upgradeDescription": "部署费用-8，再部署时间-30秒，但部署后<$ba.stun>晕眩</>10秒",
+            "talentIndex": 0,
+            "unlockCondition": {
+              "phase": 2,
+              "level": 40
+            },
+            "requiredPotentialRank": 0,
+            "prefabKey": "1",
+            "name": "稳妥降落",
+            "description": null,
+            "rangeId": null,
+            "blackboard": [
+              {
+                "key": "cost",
+                "value": -8.0
+              },
+              {
+                "key": "respawn_time",
+                "value": -30.0
+              },
+              {
+                "key": "stun",
+                "value": 10.0
+              }
+            ]
+          }
+        ]
+      },
+      "overrideTraitDataBundle": {
+        "candidates": null
+      }
+    }
+  ],
+  "attributeBlackboard": [
+    {
+      "key": "atk",
+      "value": 80.0
+    },
+    {
+      "key": "attack_speed",
+      "value": 4.0
+    }
+  ],
+  "tokenAttributeBlackboard": {}
+}

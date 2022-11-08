@@ -1,0 +1,113 @@
+{
+  "equipLevel": 3,
+  "parts": [
+    {
+      "resKey": "kroos2_equip_1_3_p1",
+      "target": "TRAIT",
+      "isToken": false,
+      "addOrOverrideTalentDataBundle": {
+        "candidates": null
+      },
+      "overrideTraitDataBundle": {
+        "candidates": [
+          {
+            "additionalDescription": "攻击空中单位时攻击力提升至<@ba.kw>{atk_scale:0%}</>",
+            "unlockCondition": {
+              "phase": 2,
+              "level": 50
+            },
+            "requiredPotentialRank": 0,
+            "blackboard": [
+              {
+                "key": "atk_scale",
+                "value": 1.1
+              }
+            ],
+            "overrideDescripton": null,
+            "prefabKey": null,
+            "rangeId": null
+          }
+        ]
+      }
+    },
+    {
+      "resKey": null,
+      "target": "TALENT_DATA_ONLY",
+      "isToken": false,
+      "addOrOverrideTalentDataBundle": {
+        "candidates": [
+          {
+            "displayRangeId": false,
+            "upgradeDescription": "攻击时，20%几率当次攻击的攻击力提升至165%，并使敌人<$ba.stun>晕眩</>0.2秒",
+            "talentIndex": 0,
+            "unlockCondition": {
+              "phase": 2,
+              "level": 50
+            },
+            "requiredPotentialRank": 0,
+            "prefabKey": "1",
+            "name": "中的",
+            "description": null,
+            "rangeId": null,
+            "blackboard": [
+              {
+                "key": "prob",
+                "value": 0.2
+              },
+              {
+                "key": "atk_scale",
+                "value": 1.65
+              },
+              {
+                "key": "stun",
+                "value": 0.2
+              }
+            ]
+          },
+          {
+            "displayRangeId": false,
+            "upgradeDescription": "攻击时，20%几率当次攻击的攻击力提升至175%<@ba.talpu>（+10%）</>，并使敌人<$ba.stun>晕眩</>0.2秒",
+            "talentIndex": 0,
+            "unlockCondition": {
+              "phase": 2,
+              "level": 50
+            },
+            "requiredPotentialRank": 4,
+            "prefabKey": "1",
+            "name": "中的",
+            "description": null,
+            "rangeId": null,
+            "blackboard": [
+              {
+                "key": "prob",
+                "value": 0.2
+              },
+              {
+                "key": "atk_scale",
+                "value": 1.75
+              },
+              {
+                "key": "stun",
+                "value": 0.2
+              }
+            ]
+          }
+        ]
+      },
+      "overrideTraitDataBundle": {
+        "candidates": null
+      }
+    }
+  ],
+  "attributeBlackboard": [
+    {
+      "key": "max_hp",
+      "value": 190.0
+    },
+    {
+      "key": "atk",
+      "value": 31.0
+    }
+  ],
+  "tokenAttributeBlackboard": {}
+}

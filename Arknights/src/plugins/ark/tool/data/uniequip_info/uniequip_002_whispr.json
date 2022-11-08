@@ -1,0 +1,105 @@
+{
+  "equipLevel": 3,
+  "parts": [
+    {
+      "resKey": "whispr_equip_1_3_p1",
+      "target": "TRAIT",
+      "isToken": false,
+      "addOrOverrideTalentDataBundle": {
+        "candidates": null
+      },
+      "overrideTraitDataBundle": {
+        "candidates": [
+          {
+            "additionalDescription": "自身获得<$ba.buffres>抵抗</>且更不容易受到敌人的攻击",
+            "unlockCondition": {
+              "phase": 2,
+              "level": 50
+            },
+            "requiredPotentialRank": 0,
+            "blackboard": [
+              {
+                "key": "heal_scale",
+                "value": 0.8
+              },
+              {
+                "key": "taunt_level",
+                "value": -1.0
+              },
+              {
+                "key": "one_minus_status_resistance",
+                "value": -0.5
+              }
+            ],
+            "overrideDescripton": null,
+            "prefabKey": null,
+            "rangeId": null
+          }
+        ]
+      }
+    },
+    {
+      "resKey": null,
+      "target": "TALENT_DATA_ONLY",
+      "isToken": false,
+      "addOrOverrideTalentDataBundle": {
+        "candidates": [
+          {
+            "displayRangeId": false,
+            "upgradeDescription": "攻击范围内拥有<$ba.buffres>抵抗</>的友方单位每秒恢复相当于絮雨攻击力9%的生命（不受特性影响）",
+            "talentIndex": 0,
+            "unlockCondition": {
+              "phase": 2,
+              "level": 50
+            },
+            "requiredPotentialRank": 0,
+            "prefabKey": "1",
+            "name": "生命塔台",
+            "description": null,
+            "rangeId": null,
+            "blackboard": [
+              {
+                "key": "atk_to_hp_recovery_ratio",
+                "value": 0.09
+              }
+            ]
+          },
+          {
+            "displayRangeId": false,
+            "upgradeDescription": "攻击范围内拥有<$ba.buffres>抵抗</>的友方单位每秒恢复相当于絮雨攻击力10%<@ba.talpu>（+1%）</>的生命（不受特性影响）",
+            "talentIndex": 0,
+            "unlockCondition": {
+              "phase": 2,
+              "level": 50
+            },
+            "requiredPotentialRank": 4,
+            "prefabKey": "1",
+            "name": "生命塔台",
+            "description": null,
+            "rangeId": null,
+            "blackboard": [
+              {
+                "key": "atk_to_hp_recovery_ratio",
+                "value": 0.1
+              }
+            ]
+          }
+        ]
+      },
+      "overrideTraitDataBundle": {
+        "candidates": null
+      }
+    }
+  ],
+  "attributeBlackboard": [
+    {
+      "key": "max_hp",
+      "value": 140.0
+    },
+    {
+      "key": "atk",
+      "value": 40.0
+    }
+  ],
+  "tokenAttributeBlackboard": {}
+}

@@ -1,0 +1,104 @@
+{
+  "equipLevel": 3,
+  "parts": [
+    {
+      "resKey": null,
+      "target": "DISPLAY",
+      "isToken": false,
+      "addOrOverrideTalentDataBundle": {
+        "candidates": null
+      },
+      "overrideTraitDataBundle": {
+        "candidates": [
+          {
+            "additionalDescription": null,
+            "unlockCondition": {
+              "phase": 2,
+              "level": 50
+            },
+            "requiredPotentialRank": 0,
+            "blackboard": [],
+            "overrideDescripton": "能够阻挡四个敌人",
+            "prefabKey": null,
+            "rangeId": null
+          }
+        ]
+      }
+    },
+    {
+      "resKey": null,
+      "target": "TALENT_DATA_ONLY",
+      "isToken": false,
+      "addOrOverrideTalentDataBundle": {
+        "candidates": [
+          {
+            "displayRangeId": false,
+            "upgradeDescription": "有27%的几率抵挡物理和法术伤害。周围四格内的友方单位获得一半该效果",
+            "talentIndex": 0,
+            "unlockCondition": {
+              "phase": 2,
+              "level": 50
+            },
+            "requiredPotentialRank": 0,
+            "prefabKey": "1",
+            "name": "奇迹力场",
+            "description": null,
+            "rangeId": null,
+            "blackboard": [
+              {
+                "key": "moeshd_t_1[self].prob",
+                "value": 0.27
+              },
+              {
+                "key": "moeshd_t_1[aura].prob",
+                "value": 0.135
+              }
+            ]
+          },
+          {
+            "displayRangeId": false,
+            "upgradeDescription": "有30%<@ba.talpu>（+3%）</>的几率抵挡物理和法术伤害。周围四格内的友方单位获得一半该效果",
+            "talentIndex": 0,
+            "unlockCondition": {
+              "phase": 2,
+              "level": 50
+            },
+            "requiredPotentialRank": 4,
+            "prefabKey": "1",
+            "name": "奇迹力场",
+            "description": null,
+            "rangeId": null,
+            "blackboard": [
+              {
+                "key": "moeshd_t_1[self].prob",
+                "value": 0.3
+              },
+              {
+                "key": "moeshd_t_1[aura].prob",
+                "value": 0.15
+              }
+            ]
+          }
+        ]
+      },
+      "overrideTraitDataBundle": {
+        "candidates": null
+      }
+    }
+  ],
+  "attributeBlackboard": [
+    {
+      "key": "max_hp",
+      "value": 350.0
+    },
+    {
+      "key": "def",
+      "value": 68.0
+    },
+    {
+      "key": "block_cnt",
+      "value": 1.0
+    }
+  ],
+  "tokenAttributeBlackboard": {}
+}

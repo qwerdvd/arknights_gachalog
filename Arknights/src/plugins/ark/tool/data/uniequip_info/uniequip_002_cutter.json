@@ -1,0 +1,105 @@
+{
+  "equipLevel": 3,
+  "parts": [
+    {
+      "resKey": "cutter_equip_1_3_p1",
+      "target": "TRAIT",
+      "isToken": false,
+      "addOrOverrideTalentDataBundle": {
+        "candidates": null
+      },
+      "overrideTraitDataBundle": {
+        "candidates": [
+          {
+            "additionalDescription": "攻击时无视敌人<@ba.vup>{def_penetrate_fixed}</>点的防御力",
+            "unlockCondition": {
+              "phase": 2,
+              "level": 40
+            },
+            "requiredPotentialRank": 0,
+            "blackboard": [
+              {
+                "key": "def_penetrate_fixed",
+                "value": 70.0
+              }
+            ],
+            "overrideDescripton": null,
+            "prefabKey": null,
+            "rangeId": null
+          }
+        ]
+      }
+    },
+    {
+      "resKey": null,
+      "target": "TALENT_DATA_ONLY",
+      "isToken": false,
+      "addOrOverrideTalentDataBundle": {
+        "candidates": [
+          {
+            "displayRangeId": false,
+            "upgradeDescription": "造成伤害时有33%的几率额外回复1点技力",
+            "talentIndex": 0,
+            "unlockCondition": {
+              "phase": 2,
+              "level": 40
+            },
+            "requiredPotentialRank": 0,
+            "prefabKey": "1",
+            "name": "光蚀刻痕",
+            "description": null,
+            "rangeId": null,
+            "blackboard": [
+              {
+                "key": "sp",
+                "value": 1.0
+              },
+              {
+                "key": "prob",
+                "value": 0.33
+              }
+            ]
+          },
+          {
+            "displayRangeId": false,
+            "upgradeDescription": "造成伤害时有36%<@ba.talpu>（+3%）</>的几率额外回复1点技力",
+            "talentIndex": 0,
+            "unlockCondition": {
+              "phase": 2,
+              "level": 40
+            },
+            "requiredPotentialRank": 4,
+            "prefabKey": "1",
+            "name": "光蚀刻痕",
+            "description": null,
+            "rangeId": null,
+            "blackboard": [
+              {
+                "key": "sp",
+                "value": 1.0
+              },
+              {
+                "key": "prob",
+                "value": 0.36
+              }
+            ]
+          }
+        ]
+      },
+      "overrideTraitDataBundle": {
+        "candidates": null
+      }
+    }
+  ],
+  "attributeBlackboard": [
+    {
+      "key": "max_hp",
+      "value": 150.0
+    },
+    {
+      "key": "atk",
+      "value": 65.0
+    }
+  ],
+  "tokenAttributeBlackboard": {}
+}

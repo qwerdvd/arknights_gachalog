@@ -1,0 +1,219 @@
+{
+  "equipLevel": 3,
+  "parts": [
+    {
+      "resKey": "kalts_equip_1_3_p1",
+      "target": "TRAIT",
+      "isToken": false,
+      "addOrOverrideTalentDataBundle": {
+        "candidates": null
+      },
+      "overrideTraitDataBundle": {
+        "candidates": [
+          {
+            "additionalDescription": "治疗生命值低于50%的友方单位时治疗量提升<@ba.kw>15%</>",
+            "unlockCondition": {
+              "phase": 2,
+              "level": 60
+            },
+            "requiredPotentialRank": 0,
+            "blackboard": [
+              {
+                "key": "heal_scale",
+                "value": 1.15
+              },
+              {
+                "key": "hp_ratio",
+                "value": 0.5
+              }
+            ],
+            "overrideDescripton": null,
+            "prefabKey": null,
+            "rangeId": null
+          }
+        ]
+      }
+    },
+    {
+      "resKey": null,
+      "target": "TALENT_DATA_ONLY",
+      "isToken": false,
+      "addOrOverrideTalentDataBundle": {
+        "candidates": [
+          {
+            "displayRangeId": false,
+            "upgradeDescription": "Mon3tr在生命值首次低于50%和被击倒后（不包括撤退）使周围8格内所有敌人<$ba.stun>晕眩</>3.5秒并对其造成1500点真实伤害",
+            "talentIndex": 1,
+            "unlockCondition": {
+              "phase": 2,
+              "level": 60
+            },
+            "requiredPotentialRank": 0,
+            "prefabKey": "2",
+            "name": "不毁重构",
+            "description": null,
+            "rangeId": null,
+            "blackboard": []
+          },
+          {
+            "displayRangeId": false,
+            "upgradeDescription": "Mon3tr在生命值首次低于50%和被击倒后（不包括撤退）使周围8格内所有敌人<$ba.stun>晕眩</>4<@ba.talpu>（+0.5）</>秒并对其造成1700<@ba.talpu>（+200）</>点真实伤害",
+            "talentIndex": 1,
+            "unlockCondition": {
+              "phase": 2,
+              "level": 60
+            },
+            "requiredPotentialRank": 4,
+            "prefabKey": "2",
+            "name": "不毁重构",
+            "description": null,
+            "rangeId": null,
+            "blackboard": []
+          }
+        ]
+      },
+      "overrideTraitDataBundle": {
+        "candidates": null
+      }
+    },
+    {
+      "resKey": null,
+      "target": "TALENT_DATA_ONLY",
+      "isToken": true,
+      "addOrOverrideTalentDataBundle": {
+        "candidates": [
+          {
+            "displayRangeId": false,
+            "upgradeDescription": "",
+            "talentIndex": 1,
+            "unlockCondition": {
+              "phase": 2,
+              "level": 60
+            },
+            "requiredPotentialRank": 0,
+            "prefabKey": "2",
+            "name": null,
+            "description": null,
+            "rangeId": "x-4",
+            "blackboard": [
+              {
+                "key": "stun",
+                "value": 3.5
+              },
+              {
+                "key": "value",
+                "value": 1500.0
+              }
+            ]
+          },
+          {
+            "displayRangeId": false,
+            "upgradeDescription": "",
+            "talentIndex": 1,
+            "unlockCondition": {
+              "phase": 2,
+              "level": 60
+            },
+            "requiredPotentialRank": 4,
+            "prefabKey": "2",
+            "name": null,
+            "description": null,
+            "rangeId": "x-4",
+            "blackboard": [
+              {
+                "key": "stun",
+                "value": 4.0
+              },
+              {
+                "key": "value",
+                "value": 1700.0
+              }
+            ]
+          }
+        ]
+      },
+      "overrideTraitDataBundle": {
+        "candidates": null
+      }
+    },
+    {
+      "resKey": "kalts_equip_1_3_p2",
+      "target": "TALENT",
+      "isToken": true,
+      "addOrOverrideTalentDataBundle": {
+        "candidates": [
+          {
+            "displayRangeId": false,
+            "upgradeDescription": "",
+            "talentIndex": 1,
+            "unlockCondition": {
+              "phase": 2,
+              "level": 60
+            },
+            "requiredPotentialRank": 0,
+            "prefabKey": "11",
+            "name": null,
+            "description": null,
+            "rangeId": "x-4",
+            "blackboard": [
+              {
+                "key": "stun",
+                "value": 3.5
+              },
+              {
+                "key": "value",
+                "value": 1500.0
+              },
+              {
+                "key": "hp_ratio",
+                "value": 0.5
+              }
+            ]
+          },
+          {
+            "displayRangeId": false,
+            "upgradeDescription": "",
+            "talentIndex": 1,
+            "unlockCondition": {
+              "phase": 2,
+              "level": 60
+            },
+            "requiredPotentialRank": 4,
+            "prefabKey": "11",
+            "name": null,
+            "description": null,
+            "rangeId": "x-4",
+            "blackboard": [
+              {
+                "key": "stun",
+                "value": 4.0
+              },
+              {
+                "key": "value",
+                "value": 1700.0
+              },
+              {
+                "key": "hp_ratio",
+                "value": 0.5
+              }
+            ]
+          }
+        ]
+      },
+      "overrideTraitDataBundle": {
+        "candidates": null
+      }
+    }
+  ],
+  "attributeBlackboard": [
+    {
+      "key": "atk",
+      "value": 60.0
+    },
+    {
+      "key": "def",
+      "value": 25.0
+    }
+  ],
+  "tokenAttributeBlackboard": {}
+}

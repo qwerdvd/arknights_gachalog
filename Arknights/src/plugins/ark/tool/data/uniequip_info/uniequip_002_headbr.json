@@ -1,0 +1,81 @@
+{
+  "equipLevel": 3,
+  "parts": [
+    {
+      "resKey": "headbr_equip_1_3_p1",
+      "target": "TRAIT",
+      "isToken": false,
+      "addOrOverrideTalentDataBundle": {
+        "candidates": null
+      },
+      "overrideTraitDataBundle": {
+        "candidates": [
+          {
+            "additionalDescription": null,
+            "unlockCondition": {
+              "phase": 2,
+              "level": 50
+            },
+            "requiredPotentialRank": 0,
+            "blackboard": [
+              {
+                "key": "atk",
+                "value": 0.08
+              },
+              {
+                "key": "def",
+                "value": 0.08
+              }
+            ],
+            "overrideDescripton": "能够阻挡两个敌人，阻挡敌人时攻击力和防御力各+8％",
+            "prefabKey": null,
+            "rangeId": null
+          }
+        ]
+      }
+    },
+    {
+      "resKey": "headbr_equip_1_3_p2",
+      "target": "TALENT",
+      "isToken": false,
+      "addOrOverrideTalentDataBundle": {
+        "candidates": [
+          {
+            "displayRangeId": false,
+            "upgradeDescription": "编入队伍时所有【先锋】职业干员的部署费用-1，【尖兵】分支职业干员部署费用额外-1",
+            "talentIndex": 0,
+            "unlockCondition": {
+              "phase": 2,
+              "level": 50
+            },
+            "requiredPotentialRank": 0,
+            "prefabKey": "10_root",
+            "name": "冲锋领袖",
+            "description": null,
+            "rangeId": null,
+            "blackboard": [
+              {
+                "key": "cost",
+                "value": -1.0
+              }
+            ]
+          }
+        ]
+      },
+      "overrideTraitDataBundle": {
+        "candidates": null
+      }
+    }
+  ],
+  "attributeBlackboard": [
+    {
+      "key": "max_hp",
+      "value": 260.0
+    },
+    {
+      "key": "def",
+      "value": 37.0
+    }
+  ],
+  "tokenAttributeBlackboard": {}
+}

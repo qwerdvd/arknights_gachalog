@@ -1,0 +1,121 @@
+{
+  "equipLevel": 3,
+  "parts": [
+    {
+      "resKey": "platnm_equip_1_3_p1",
+      "target": "TRAIT",
+      "isToken": false,
+      "addOrOverrideTalentDataBundle": {
+        "candidates": null
+      },
+      "overrideTraitDataBundle": {
+        "candidates": [
+          {
+            "additionalDescription": "攻击空中单位时攻击力提升至<@ba.kw>{atk_scale:0%}</>",
+            "unlockCondition": {
+              "phase": 2,
+              "level": 50
+            },
+            "requiredPotentialRank": 0,
+            "blackboard": [
+              {
+                "key": "atk_scale",
+                "value": 1.1
+              }
+            ],
+            "overrideDescripton": null,
+            "prefabKey": null,
+            "rangeId": null
+          }
+        ]
+      }
+    },
+    {
+      "resKey": null,
+      "target": "TALENT_DATA_ONLY",
+      "isToken": false,
+      "addOrOverrideTalentDataBundle": {
+        "candidates": [
+          {
+            "displayRangeId": false,
+            "upgradeDescription": "距离上次攻击的间隔越长，下次攻击的攻击力就越高（最长2.5秒，攻击力200%）",
+            "talentIndex": 0,
+            "unlockCondition": {
+              "phase": 2,
+              "level": 50
+            },
+            "requiredPotentialRank": 0,
+            "prefabKey": "1",
+            "name": "蓄力攻击",
+            "description": null,
+            "rangeId": null,
+            "blackboard": [
+              {
+                "key": "attack@min_delta",
+                "value": 1.0
+              },
+              {
+                "key": "attack@max_delta",
+                "value": 2.5
+              },
+              {
+                "key": "attack@min_atk_scale",
+                "value": 1.0
+              },
+              {
+                "key": "attack@max_atk_scale",
+                "value": 2.0
+              }
+            ]
+          },
+          {
+            "displayRangeId": false,
+            "upgradeDescription": "距离上次攻击的间隔越长，下次攻击的攻击力就越高（最长2.5秒，攻击力210%<@ba.talpu>（+10%）</>）",
+            "talentIndex": 0,
+            "unlockCondition": {
+              "phase": 2,
+              "level": 50
+            },
+            "requiredPotentialRank": 4,
+            "prefabKey": "1",
+            "name": "蓄力攻击",
+            "description": null,
+            "rangeId": null,
+            "blackboard": [
+              {
+                "key": "attack@min_delta",
+                "value": 1.0
+              },
+              {
+                "key": "attack@max_delta",
+                "value": 2.5
+              },
+              {
+                "key": "attack@min_atk_scale",
+                "value": 1.0
+              },
+              {
+                "key": "attack@max_atk_scale",
+                "value": 2.1
+              }
+            ]
+          }
+        ]
+      },
+      "overrideTraitDataBundle": {
+        "candidates": null
+      }
+    }
+  ],
+  "attributeBlackboard": [
+    {
+      "key": "max_hp",
+      "value": 170.0
+    },
+    {
+      "key": "atk",
+      "value": 40.0
+    }
+  ],
+  "tokenAttributeBlackboard": {}
+}

@@ -1,0 +1,149 @@
+{
+  "equipLevel": 3,
+  "parts": [
+    {
+      "resKey": "hsguma_equip_2_3_p1",
+      "target": "TRAIT",
+      "isToken": false,
+      "addOrOverrideTalentDataBundle": {
+        "candidates": null
+      },
+      "overrideTraitDataBundle": {
+        "candidates": [
+          {
+            "additionalDescription": "阻挡敌人时防御力<@ba.kw>+20%</>",
+            "unlockCondition": {
+              "phase": 2,
+              "level": 60
+            },
+            "requiredPotentialRank": 0,
+            "blackboard": [
+              {
+                "key": "def",
+                "value": 0.2
+              }
+            ],
+            "overrideDescripton": null,
+            "prefabKey": null,
+            "rangeId": null
+          }
+        ]
+      }
+    },
+    {
+      "resKey": "hsguma_equip_2_3_p2",
+      "target": "TALENT",
+      "isToken": false,
+      "addOrOverrideTalentDataBundle": {
+        "candidates": [
+          {
+            "displayRangeId": false,
+            "upgradeDescription": "在场时所有友方【重装】职业干员的防御力提升11%，自身防御力额外提升6%",
+            "talentIndex": 1,
+            "unlockCondition": {
+              "phase": 2,
+              "level": 60
+            },
+            "requiredPotentialRank": 0,
+            "prefabKey": "10",
+            "name": "特种作战策略",
+            "description": null,
+            "rangeId": null,
+            "blackboard": [
+              {
+                "key": "def",
+                "value": 0.06
+              }
+            ]
+          },
+          {
+            "displayRangeId": false,
+            "upgradeDescription": "在场时所有友方【重装】职业干员的防御力提升13%<@ba.talpu>（+2%）</>，自身防御力额外提升6%",
+            "talentIndex": 1,
+            "unlockCondition": {
+              "phase": 2,
+              "level": 60
+            },
+            "requiredPotentialRank": 5,
+            "prefabKey": "10",
+            "name": "特种作战策略",
+            "description": null,
+            "rangeId": null,
+            "blackboard": [
+              {
+                "key": "def",
+                "value": 0.06
+              }
+            ]
+          }
+        ]
+      },
+      "overrideTraitDataBundle": {
+        "candidates": null
+      }
+    },
+    {
+      "resKey": null,
+      "target": "TALENT_DATA_ONLY",
+      "isToken": false,
+      "addOrOverrideTalentDataBundle": {
+        "candidates": [
+          {
+            "displayRangeId": false,
+            "upgradeDescription": "",
+            "talentIndex": 1,
+            "unlockCondition": {
+              "phase": 2,
+              "level": 60
+            },
+            "requiredPotentialRank": 0,
+            "prefabKey": "2",
+            "name": null,
+            "description": null,
+            "rangeId": null,
+            "blackboard": [
+              {
+                "key": "def",
+                "value": 0.11
+              }
+            ]
+          },
+          {
+            "displayRangeId": false,
+            "upgradeDescription": "",
+            "talentIndex": 1,
+            "unlockCondition": {
+              "phase": 2,
+              "level": 60
+            },
+            "requiredPotentialRank": 5,
+            "prefabKey": "2",
+            "name": null,
+            "description": null,
+            "rangeId": null,
+            "blackboard": [
+              {
+                "key": "def",
+                "value": 0.13
+              }
+            ]
+          }
+        ]
+      },
+      "overrideTraitDataBundle": {
+        "candidates": null
+      }
+    }
+  ],
+  "attributeBlackboard": [
+    {
+      "key": "max_hp",
+      "value": 200.0
+    },
+    {
+      "key": "def",
+      "value": 140.0
+    }
+  ],
+  "tokenAttributeBlackboard": {}
+}

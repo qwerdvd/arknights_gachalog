@@ -1,0 +1,104 @@
+{
+  "equipLevel": 3,
+  "parts": [
+    {
+      "resKey": null,
+      "target": "DISPLAY",
+      "isToken": false,
+      "addOrOverrideTalentDataBundle": {
+        "candidates": null
+      },
+      "overrideTraitDataBundle": {
+        "candidates": [
+          {
+            "additionalDescription": "部署费用<@ba.kw>减少</>",
+            "unlockCondition": {
+              "phase": 2,
+              "level": 60
+            },
+            "requiredPotentialRank": 0,
+            "blackboard": [],
+            "overrideDescripton": "攻击造成<@ba.kw>群体法术伤害</>",
+            "prefabKey": null,
+            "rangeId": null
+          }
+        ]
+      }
+    },
+    {
+      "resKey": "mostma_equip_1_3_p1",
+      "target": "TALENT",
+      "isToken": false,
+      "addOrOverrideTalentDataBundle": {
+        "candidates": [
+          {
+            "displayRangeId": false,
+            "upgradeDescription": "攻击范围内的敌人移动速度-30%，攻击范围外的敌人移动速度-18%（不受技能影响）",
+            "talentIndex": 1,
+            "unlockCondition": {
+              "phase": 2,
+              "level": 60
+            },
+            "requiredPotentialRank": 0,
+            "prefabKey": "2",
+            "name": "主观缓时",
+            "description": null,
+            "rangeId": null,
+            "blackboard": [
+              {
+                "key": "move_speed",
+                "value": -0.3
+              },
+              {
+                "key": "mostma_e_t_2[global].move_speed",
+                "value": -0.18
+              }
+            ]
+          },
+          {
+            "displayRangeId": false,
+            "upgradeDescription": "攻击范围内的敌人移动速度-33%<@ba.talpu>（+3%）</>，攻击范围外的敌人移动速度-18%（不受技能影响）",
+            "talentIndex": 1,
+            "unlockCondition": {
+              "phase": 2,
+              "level": 60
+            },
+            "requiredPotentialRank": 4,
+            "prefabKey": "2",
+            "name": "主观缓时",
+            "description": null,
+            "rangeId": null,
+            "blackboard": [
+              {
+                "key": "move_speed",
+                "value": -0.33
+              },
+              {
+                "key": "mostma_e_t_2[global].move_speed",
+                "value": -0.18
+              }
+            ]
+          }
+        ]
+      },
+      "overrideTraitDataBundle": {
+        "candidates": null
+      }
+    }
+  ],
+  "attributeBlackboard": [
+    {
+      "key": "cost",
+      "value": -8.0
+    },
+    {
+      "key": "atk",
+      "value": 82.0
+    },
+    {
+      "key": "attack_speed",
+      "value": 7.0
+    }
+  ],
+  "tokenAttributeBlackboard": {}
+}

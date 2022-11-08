@@ -1,0 +1,112 @@
+{
+  "equipLevel": 3,
+  "parts": [
+    {
+      "resKey": null,
+      "target": "DISPLAY",
+      "isToken": false,
+      "addOrOverrideTalentDataBundle": {
+        "candidates": null
+      },
+      "overrideTraitDataBundle": {
+        "candidates": [
+          {
+            "additionalDescription": "再部署时间<@ba.kw>减少</>",
+            "unlockCondition": {
+              "phase": 2,
+              "level": 50
+            },
+            "requiredPotentialRank": 0,
+            "blackboard": [],
+            "overrideDescripton": null,
+            "prefabKey": null,
+            "rangeId": null
+          }
+        ]
+      }
+    },
+    {
+      "resKey": "prove_equip_1_3_p1",
+      "target": "TALENT",
+      "isToken": false,
+      "addOrOverrideTalentDataBundle": {
+        "candidates": [
+          {
+            "displayRangeId": false,
+            "upgradeDescription": "攻击时，20%几率当次攻击的攻击力提升至190%。当敌人在正前方两格时，该几率提升到60%",
+            "talentIndex": 0,
+            "unlockCondition": {
+              "phase": 2,
+              "level": 50
+            },
+            "requiredPotentialRank": 0,
+            "prefabKey": "1",
+            "name": "狩猎箭头",
+            "description": null,
+            "rangeId": null,
+            "blackboard": [
+              {
+                "key": "prob",
+                "value": 0.2
+              },
+              {
+                "key": "prob2",
+                "value": 0.6
+              },
+              {
+                "key": "atk_scale",
+                "value": 1.9
+              }
+            ]
+          },
+          {
+            "displayRangeId": false,
+            "upgradeDescription": "攻击时，20%几率当次攻击的攻击力提升至200%<@ba.talpu>（+10%）</>。当敌人在正前方两格时，该几率提升到60%",
+            "talentIndex": 0,
+            "unlockCondition": {
+              "phase": 2,
+              "level": 50
+            },
+            "requiredPotentialRank": 4,
+            "prefabKey": "1",
+            "name": "狩猎箭头",
+            "description": null,
+            "rangeId": null,
+            "blackboard": [
+              {
+                "key": "prob",
+                "value": 0.2
+              },
+              {
+                "key": "prob2",
+                "value": 0.6
+              },
+              {
+                "key": "atk_scale",
+                "value": 2.0
+              }
+            ]
+          }
+        ]
+      },
+      "overrideTraitDataBundle": {
+        "candidates": null
+      }
+    }
+  ],
+  "attributeBlackboard": [
+    {
+      "key": "atk",
+      "value": 55.0
+    },
+    {
+      "key": "def",
+      "value": 45.0
+    },
+    {
+      "key": "respawn_time",
+      "value": -25.0
+    }
+  ],
+  "tokenAttributeBlackboard": {}
+}

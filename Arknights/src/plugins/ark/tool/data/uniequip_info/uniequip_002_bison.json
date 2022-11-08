@@ -1,0 +1,97 @@
+{
+  "equipLevel": 3,
+  "parts": [
+    {
+      "resKey": "bison_equip_1_3_p1",
+      "target": "TRAIT",
+      "isToken": false,
+      "addOrOverrideTalentDataBundle": {
+        "candidates": null
+      },
+      "overrideTraitDataBundle": {
+        "candidates": [
+          {
+            "additionalDescription": "阻挡敌人时防御力<@ba.kw>+20%</>",
+            "unlockCondition": {
+              "phase": 2,
+              "level": 50
+            },
+            "requiredPotentialRank": 0,
+            "blackboard": [
+              {
+                "key": "def",
+                "value": 0.2
+              }
+            ],
+            "overrideDescripton": null,
+            "prefabKey": null,
+            "rangeId": null
+          }
+        ]
+      }
+    },
+    {
+      "resKey": "bison_equip_1_3_p2",
+      "target": "TALENT",
+      "isToken": false,
+      "addOrOverrideTalentDataBundle": {
+        "candidates": [
+          {
+            "displayRangeId": false,
+            "upgradeDescription": "在场时自身防御力+80，自己身后的干员也能享受到相同效果",
+            "talentIndex": 0,
+            "unlockCondition": {
+              "phase": 2,
+              "level": 50
+            },
+            "requiredPotentialRank": 0,
+            "prefabKey": "1",
+            "name": "交叉掩护",
+            "description": null,
+            "rangeId": "b-1",
+            "blackboard": [
+              {
+                "key": "def",
+                "value": 80.0
+              }
+            ]
+          },
+          {
+            "displayRangeId": false,
+            "upgradeDescription": "在场时自身防御力+100<@ba.talpu>（+20）</>，自己身后的干员也能享受到相同效果",
+            "talentIndex": 0,
+            "unlockCondition": {
+              "phase": 2,
+              "level": 50
+            },
+            "requiredPotentialRank": 4,
+            "prefabKey": "1",
+            "name": "交叉掩护",
+            "description": null,
+            "rangeId": "b-1",
+            "blackboard": [
+              {
+                "key": "def",
+                "value": 100.0
+              }
+            ]
+          }
+        ]
+      },
+      "overrideTraitDataBundle": {
+        "candidates": null
+      }
+    }
+  ],
+  "attributeBlackboard": [
+    {
+      "key": "max_hp",
+      "value": 250.0
+    },
+    {
+      "key": "def",
+      "value": 85.0
+    }
+  ],
+  "tokenAttributeBlackboard": {}
+}

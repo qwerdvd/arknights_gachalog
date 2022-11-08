@@ -1,0 +1,105 @@
+{
+  "equipLevel": 3,
+  "parts": [
+    {
+      "resKey": "hmau_equip_1_3_p1",
+      "target": "TRAIT",
+      "isToken": false,
+      "addOrOverrideTalentDataBundle": {
+        "candidates": null
+      },
+      "overrideTraitDataBundle": {
+        "candidates": [
+          {
+            "additionalDescription": "受到的伤害减少<@ba.kw>15%</>",
+            "unlockCondition": {
+              "phase": 2,
+              "level": 50
+            },
+            "requiredPotentialRank": 0,
+            "blackboard": [
+              {
+                "key": "damage_resistance",
+                "value": 0.15
+              }
+            ],
+            "overrideDescripton": null,
+            "prefabKey": null,
+            "rangeId": null
+          }
+        ]
+      }
+    },
+    {
+      "resKey": null,
+      "target": "TALENT_DATA_ONLY",
+      "isToken": false,
+      "addOrOverrideTalentDataBundle": {
+        "candidates": [
+          {
+            "displayRangeId": false,
+            "upgradeDescription": "防御力+13%，自身身后一格内如果是高台单位，自己对其的治疗效果提高75%",
+            "talentIndex": 0,
+            "unlockCondition": {
+              "phase": 2,
+              "level": 50
+            },
+            "requiredPotentialRank": 0,
+            "prefabKey": "1",
+            "name": "门神",
+            "description": null,
+            "rangeId": null,
+            "blackboard": [
+              {
+                "key": "heal_scale",
+                "value": 1.75
+              },
+              {
+                "key": "def",
+                "value": 0.13
+              }
+            ]
+          },
+          {
+            "displayRangeId": false,
+            "upgradeDescription": "防御力+15%<@ba.talpu>（+2%）</>，自身身后一格内如果是高台单位，自己对其的治疗效果提高85%<@ba.talpu>（+10%）</>",
+            "talentIndex": 0,
+            "unlockCondition": {
+              "phase": 2,
+              "level": 50
+            },
+            "requiredPotentialRank": 4,
+            "prefabKey": "1",
+            "name": "门神",
+            "description": null,
+            "rangeId": null,
+            "blackboard": [
+              {
+                "key": "heal_scale",
+                "value": 1.85
+              },
+              {
+                "key": "def",
+                "value": 0.15
+              }
+            ]
+          }
+        ]
+      },
+      "overrideTraitDataBundle": {
+        "candidates": null
+      }
+    }
+  ],
+  "attributeBlackboard": [
+    {
+      "key": "max_hp",
+      "value": 330.0
+    },
+    {
+      "key": "def",
+      "value": 45.0
+    }
+  ],
+  "tokenAttributeBlackboard": {}
+}

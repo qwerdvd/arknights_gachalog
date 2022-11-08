@@ -1,0 +1,97 @@
+{
+  "equipLevel": 3,
+  "parts": [
+    {
+      "resKey": "nian_equip_1_3_p1",
+      "target": "TRAIT",
+      "isToken": false,
+      "addOrOverrideTalentDataBundle": {
+        "candidates": null
+      },
+      "overrideTraitDataBundle": {
+        "candidates": [
+          {
+            "additionalDescription": "阻挡敌人时防御力<@ba.kw>+20%</>",
+            "unlockCondition": {
+              "phase": 2,
+              "level": 60
+            },
+            "requiredPotentialRank": 0,
+            "blackboard": [
+              {
+                "key": "def",
+                "value": 0.2
+              }
+            ],
+            "overrideDescripton": null,
+            "prefabKey": null,
+            "rangeId": null
+          }
+        ]
+      }
+    },
+    {
+      "resKey": "nian_equip_1_3_p2",
+      "target": "TALENT",
+      "isToken": false,
+      "addOrOverrideTalentDataBundle": {
+        "candidates": [
+          {
+            "displayRangeId": false,
+            "upgradeDescription": "部署后立即获得3层<$ba.shield>护盾</>，每层护盾破裂时，攻击力+7%，防御力+7%且获得3点技力",
+            "talentIndex": 1,
+            "unlockCondition": {
+              "phase": 2,
+              "level": 60
+            },
+            "requiredPotentialRank": 0,
+            "prefabKey": "2",
+            "name": "干明可鉴",
+            "description": null,
+            "rangeId": null,
+            "blackboard": [
+              {
+                "key": "times",
+                "value": 3.0
+              },
+              {
+                "key": "atk",
+                "value": 0.07
+              },
+              {
+                "key": "def",
+                "value": 0.07
+              },
+              {
+                "key": "sp",
+                "value": 3.0
+              },
+              {
+                "key": "max_stack_cnt",
+                "value": 3.0
+              }
+            ]
+          }
+        ]
+      },
+      "overrideTraitDataBundle": {
+        "candidates": null
+      }
+    }
+  ],
+  "attributeBlackboard": [
+    {
+      "key": "max_hp",
+      "value": 375.0
+    },
+    {
+      "key": "atk",
+      "value": 50.0
+    },
+    {
+      "key": "def",
+      "value": 80.0
+    }
+  ],
+  "tokenAttributeBlackboard": {}
+}

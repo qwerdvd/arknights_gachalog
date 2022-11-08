@@ -1,0 +1,542 @@
+{
+  "char_248_mgllan": [
+    "uniequip_001_mgllan",
+    "uniequip_002_mgllan",
+    "uniequip_003_mgllan"
+  ],
+  "char_336_folivo": [
+    "uniequip_001_folivo",
+    "uniequip_002_folivo"
+  ],
+  "char_242_otter": [
+    "uniequip_001_otter",
+    "uniequip_002_otter"
+  ],
+  "char_110_deepcl": [
+    "uniequip_001_deepcl",
+    "uniequip_002_deepcl"
+  ],
+  "char_485_pallas": [
+    "uniequip_001_pallas",
+    "uniequip_002_pallas",
+    "uniequip_003_pallas"
+  ],
+  "char_265_sophia": [
+    "uniequip_001_sophia",
+    "uniequip_002_sophia"
+  ],
+  "char_308_swire": [
+    "uniequip_001_swire",
+    "uniequip_002_swire"
+  ],
+  "char_130_doberm": [
+    "uniequip_001_doberm",
+    "uniequip_002_doberm"
+  ],
+  "char_430_fartth": [
+    "uniequip_001_fartth",
+    "uniequip_002_fartth",
+    "uniequip_003_fartth"
+  ],
+  "char_158_milu": [
+    "uniequip_001_milu",
+    "uniequip_002_milu"
+  ],
+  "char_218_cuttle": [
+    "uniequip_001_cuttle",
+    "uniequip_002_cuttle"
+  ],
+  "char_302_glaze": [
+    "uniequip_001_glaze",
+    "uniequip_002_glaze"
+  ],
+  "char_179_cgbird": [
+    "uniequip_001_cgbird",
+    "uniequip_002_cgbird"
+  ],
+  "char_128_plosis": [
+    "uniequip_001_plosis",
+    "uniequip_002_plosis"
+  ],
+  "char_275_breeze": [
+    "uniequip_001_breeze",
+    "uniequip_002_breeze"
+  ],
+  "char_181_flower": [
+    "uniequip_001_flower",
+    "uniequip_002_flower"
+  ],
+  "char_250_phatom": [
+    "uniequip_001_phatom",
+    "uniequip_002_phatom"
+  ],
+  "char_214_kafka": [
+    "uniequip_001_kafka",
+    "uniequip_002_kafka"
+  ],
+  "char_144_red": [
+    "uniequip_001_red",
+    "uniequip_002_red"
+  ],
+  "char_243_waaifu": [
+    "uniequip_001_waaifu",
+    "uniequip_002_waaifu"
+  ],
+  "char_237_gravel": [
+    "uniequip_001_gravel",
+    "uniequip_002_gravel"
+  ],
+  "char_472_pasngr": [
+    "uniequip_001_pasngr",
+    "uniequip_002_pasngr",
+    "uniequip_003_pasngr"
+  ],
+  "char_306_leizi": [
+    "uniequip_001_leizi",
+    "uniequip_002_leizi"
+  ],
+  "char_4004_pudd": [
+    "uniequip_001_pudd",
+    "uniequip_002_pudd"
+  ],
+  "char_010_chen": [
+    "uniequip_001_chen",
+    "uniequip_002_chen"
+  ],
+  "char_459_tachak": [
+    "uniequip_001_tachak",
+    "uniequip_002_tachak"
+  ],
+  "char_252_bibeak": [
+    "uniequip_001_bibeak",
+    "uniequip_002_bibeak"
+  ],
+  "char_301_cutter": [
+    "uniequip_001_cutter",
+    "uniequip_002_cutter"
+  ],
+  "char_222_bpipe": [
+    "uniequip_001_bpipe",
+    "uniequip_002_bpipe"
+  ],
+  "char_220_grani": [
+    "uniequip_001_grani",
+    "uniequip_002_grani"
+  ],
+  "char_496_wildmn": [
+    "uniequip_001_wildmn",
+    "uniequip_002_wildmn"
+  ],
+  "char_261_sddrag": [
+    "uniequip_001_sddrag",
+    "uniequip_002_sddrag"
+  ],
+  "char_290_vigna": [
+    "uniequip_001_vigna",
+    "uniequip_002_vigna"
+  ],
+  "char_1014_nearl2": [
+    "uniequip_001_nearl2",
+    "uniequip_002_nearl2"
+  ],
+  "char_263_skadi": [
+    "uniequip_001_skadi",
+    "uniequip_002_skadi",
+    "uniequip_003_skadi"
+  ],
+  "char_131_flameb": [
+    "uniequip_001_flameb",
+    "uniequip_002_flameb"
+  ],
+  "char_106_franka": [
+    "uniequip_001_franka",
+    "uniequip_002_franka"
+  ],
+  "char_159_peacok": [
+    "uniequip_001_peacok",
+    "uniequip_002_peacok"
+  ],
+  "char_289_gyuki": [
+    "uniequip_001_gyuki",
+    "uniequip_002_gyuki"
+  ],
+  "char_455_nothin": [
+    "uniequip_001_nothin",
+    "uniequip_002_nothin"
+  ],
+  "char_272_strong": [
+    "uniequip_001_strong",
+    "uniequip_002_strong"
+  ],
+  "char_322_lmlee": [
+    "uniequip_001_lmlee",
+    "uniequip_002_lmlee"
+  ],
+  "char_2023_ling": [
+    "uniequip_001_ling",
+    "uniequip_002_ling"
+  ],
+  "char_113_cqbw": [
+    "uniequip_001_cqbw",
+    "uniequip_002_cqbw"
+  ],
+  "char_300_phenxi": [
+    "uniequip_001_phenxi",
+    "uniequip_002_phenxi"
+  ],
+  "char_219_meteo": [
+    "uniequip_001_meteo",
+    "uniequip_002_meteo"
+  ],
+  "char_379_sesa": [
+    "uniequip_001_sesa",
+    "uniequip_002_sesa"
+  ],
+  "char_118_yuki": [
+    "uniequip_001_yuki",
+    "uniequip_002_yuki"
+  ],
+  "char_2015_dusk": [
+    "uniequip_001_dusk",
+    "uniequip_002_dusk",
+    "uniequip_003_dusk"
+  ],
+  "char_213_mostma": [
+    "uniequip_001_mostma",
+    "uniequip_002_mostma"
+  ],
+  "char_1011_lava2": [
+    "uniequip_001_lava2",
+    "uniequip_002_lava2"
+  ],
+  "char_166_skfire": [
+    "uniequip_001_skfire",
+    "uniequip_002_skfire"
+  ],
+  "char_373_lionhd": [
+    "uniequip_001_lionhd",
+    "uniequip_002_lionhd"
+  ],
+  "char_109_fmout": [
+    "uniequip_001_fmout",
+    "uniequip_002_fmout"
+  ],
+  "char_253_greyy": [
+    "uniequip_001_greyy",
+    "uniequip_002_greyy"
+  ],
+  "char_340_shwaz": [
+    "uniequip_001_shwaz",
+    "uniequip_002_shwaz",
+    "uniequip_003_shwaz"
+  ],
+  "char_145_prove": [
+    "uniequip_001_prove",
+    "uniequip_002_prove"
+  ],
+  "char_366_acdrop": [
+    "uniequip_001_acdrop",
+    "uniequip_002_acdrop"
+  ],
+  "char_358_lisa": [
+    "uniequip_001_lisa",
+    "uniequip_002_lisa"
+  ],
+  "char_291_aglina": [
+    "uniequip_001_aglina",
+    "uniequip_002_aglina",
+    "uniequip_003_aglina"
+  ],
+  "char_326_glacus": [
+    "uniequip_001_glacus",
+    "uniequip_002_glacus"
+  ],
+  "char_195_glassb": [
+    "uniequip_001_glassb",
+    "uniequip_002_glassb"
+  ],
+  "char_258_podego": [
+    "uniequip_001_podego",
+    "uniequip_002_podego"
+  ],
+  "char_183_skgoat": [
+    "uniequip_001_skgoat",
+    "uniequip_002_skgoat"
+  ],
+  "char_1023_ghost2": [
+    "uniequip_001_ghost2",
+    "uniequip_002_ghost2",
+    "uniequip_003_ghost2"
+  ],
+  "char_369_bena": [
+    "uniequip_001_bena",
+    "uniequip_002_bena"
+  ],
+  "char_4016_kazema": [
+    "uniequip_001_kazema",
+    "uniequip_002_kazema"
+  ],
+  "char_4042_lumen": [
+    "uniequip_001_lumen",
+    "uniequip_002_lumen"
+  ],
+  "char_348_ceylon": [
+    "uniequip_001_ceylon",
+    "uniequip_002_ceylon"
+  ],
+  "char_436_whispr": [
+    "uniequip_001_whispr",
+    "uniequip_002_whispr"
+  ],
+  "char_385_finlpp": [
+    "uniequip_001_finlpp",
+    "uniequip_002_finlpp"
+  ],
+  "char_416_zumama": [
+    "uniequip_001_zumama",
+    "uniequip_002_zumama",
+    "uniequip_003_zumama"
+  ],
+  "char_422_aurora": [
+    "uniequip_001_aurora",
+    "uniequip_002_aurora"
+  ],
+  "char_4009_irene": [
+    "uniequip_001_irene",
+    "uniequip_002_irene"
+  ],
+  "char_4046_ebnhlz": [
+    "uniequip_001_ebnhlz",
+    "uniequip_002_ebnhlz",
+    "uniequip_003_ebnhlz"
+  ],
+  "char_338_iris": [
+    "uniequip_001_iris",
+    "uniequip_002_iris"
+  ],
+  "char_469_indigo": [
+    "uniequip_001_indigo",
+    "uniequip_002_indigo"
+  ],
+  "char_202_demkni": [
+    "uniequip_001_demkni",
+    "uniequip_002_demkni"
+  ],
+  "char_423_blemsh": [
+    "uniequip_001_blemsh",
+    "uniequip_002_blemsh"
+  ],
+  "char_148_nearl": [
+    "uniequip_001_nearl",
+    "uniequip_002_nearl"
+  ],
+  "char_226_hmau": [
+    "uniequip_001_hmau",
+    "uniequip_002_hmau"
+  ],
+  "char_196_sunbr": [
+    "uniequip_001_sunbr",
+    "uniequip_002_sunbr"
+  ],
+  "char_235_jesica": [
+    "uniequip_001_jesica",
+    "uniequip_002_jesica"
+  ],
+  "char_126_shotst": [
+    "uniequip_001_shotst",
+    "uniequip_002_shotst"
+  ],
+  "char_190_clour": [
+    "uniequip_001_clour",
+    "uniequip_002_clour"
+  ],
+  "char_133_mm": [
+    "uniequip_001_mm",
+    "uniequip_002_mm"
+  ],
+  "char_129_bluep": [
+    "uniequip_001_bluep",
+    "uniequip_002_bluep"
+  ],
+  "char_204_platnm": [
+    "uniequip_001_platnm",
+    "uniequip_002_platnm"
+  ],
+  "char_367_swllow": [
+    "uniequip_001_swllow",
+    "uniequip_002_swllow"
+  ],
+  "char_365_aprl": [
+    "uniequip_001_aprl",
+    "uniequip_002_aprl"
+  ],
+  "char_1021_kroos2": [
+    "uniequip_001_kroos2",
+    "uniequip_002_kroos2"
+  ],
+  "char_103_angel": [
+    "uniequip_001_angel",
+    "uniequip_002_angel"
+  ],
+  "char_332_archet": [
+    "uniequip_001_archet",
+    "uniequip_002_archet"
+  ],
+  "char_456_ash": [
+    "uniequip_001_ash",
+    "uniequip_002_ash"
+  ],
+  "char_135_halo": [
+    "uniequip_001_halo",
+    "uniequip_002_halo"
+  ],
+  "char_474_glady": [
+    "uniequip_001_glady",
+    "uniequip_002_glady"
+  ],
+  "char_383_snsant": [
+    "uniequip_001_snsant",
+    "uniequip_002_snsant"
+  ],
+  "char_173_slchan": [
+    "uniequip_001_slchan",
+    "uniequip_002_slchan"
+  ],
+  "char_236_rope": [
+    "uniequip_001_rope",
+    "uniequip_002_rope"
+  ],
+  "char_4055_bgsnow": [
+    "uniequip_001_bgsnow",
+    "uniequip_002_bgsnow"
+  ],
+  "char_437_mizuki": [
+    "uniequip_001_mizuki",
+    "uniequip_002_mizuki"
+  ],
+  "char_215_mantic": [
+    "uniequip_001_mantic",
+    "uniequip_002_mantic"
+  ],
+  "char_478_kirara": [
+    "uniequip_001_kirara",
+    "uniequip_002_kirara"
+  ],
+  "char_355_ethan": [
+    "uniequip_001_ethan",
+    "uniequip_002_ethan"
+  ],
+  "char_4032_provs": [
+    "uniequip_001_provs",
+    "uniequip_002_provs"
+  ],
+  "char_199_yak": [
+    "uniequip_001_yak",
+    "uniequip_002_yak"
+  ],
+  "char_150_snakek": [
+    "uniequip_001_snakek",
+    "uniequip_002_snakek"
+  ],
+  "char_381_bubble": [
+    "uniequip_001_bubble",
+    "uniequip_002_bubble"
+  ],
+  "char_201_moeshd": [
+    "uniequip_001_moeshd",
+    "uniequip_002_moeshd"
+  ],
+  "char_325_bison": [
+    "uniequip_001_bison",
+    "uniequip_002_bison"
+  ],
+  "char_304_zebra": [
+    "uniequip_001_zebra",
+    "uniequip_002_zebra"
+  ],
+  "char_136_hsguma": [
+    "uniequip_001_hsguma",
+    "uniequip_002_hsguma",
+    "uniequip_003_hsguma"
+  ],
+  "char_2014_nian": [
+    "uniequip_001_nian",
+    "uniequip_002_nian"
+  ],
+  "char_003_kalts": [
+    "uniequip_001_kalts",
+    "uniequip_002_kalts"
+  ],
+  "char_147_shining": [
+    "uniequip_001_shining",
+    "uniequip_002_shining"
+  ],
+  "char_402_tuye": [
+    "uniequip_001_tuye",
+    "uniequip_002_tuye"
+  ],
+  "char_345_folnic": [
+    "uniequip_001_folnic",
+    "uniequip_002_folnic"
+  ],
+  "char_171_bldsk": [
+    "uniequip_001_bldsk",
+    "uniequip_002_bldsk"
+  ],
+  "char_108_silent": [
+    "uniequip_001_silent",
+    "uniequip_002_silent"
+  ],
+  "char_298_susuro": [
+    "uniequip_001_susuro",
+    "uniequip_002_susuro"
+  ],
+  "char_187_ccheal": [
+    "uniequip_001_ccheal",
+    "uniequip_002_ccheal"
+  ],
+  "char_117_myrrh": [
+    "uniequip_001_myrrh",
+    "uniequip_002_myrrh"
+  ],
+  "char_112_siege": [
+    "uniequip_001_siege",
+    "uniequip_002_siege"
+  ],
+  "char_362_saga": [
+    "uniequip_001_saga",
+    "uniequip_002_saga"
+  ],
+  "char_420_flamtl": [
+    "uniequip_001_flamtl",
+    "uniequip_002_flamtl"
+  ],
+  "char_102_texas": [
+    "uniequip_001_texas",
+    "uniequip_002_texas"
+  ],
+  "char_349_chiave": [
+    "uniequip_001_chiave",
+    "uniequip_002_chiave"
+  ],
+  "char_198_blackd": [
+    "uniequip_001_blackd",
+    "uniequip_002_blackd"
+  ],
+  "char_149_scave": [
+    "uniequip_001_scave",
+    "uniequip_002_scave"
+  ],
+  "char_115_headbr": [
+    "uniequip_001_headbr",
+    "uniequip_002_headbr"
+  ],
+  "char_1028_texas2": [
+    "uniequip_001_texas2",
+    "uniequip_002_texas2"
+  ],
+  "char_4014_lunacu": [
+    "uniequip_001_lunacu",
+    "uniequip_002_lunacu"
+  ]
+}

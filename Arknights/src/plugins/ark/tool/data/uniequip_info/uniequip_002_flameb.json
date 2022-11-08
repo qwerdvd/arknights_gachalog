@@ -1,0 +1,117 @@
+{
+  "equipLevel": 3,
+  "parts": [
+    {
+      "resKey": "flameb_equip_1_3_p1",
+      "target": "TRAIT",
+      "isToken": false,
+      "addOrOverrideTalentDataBundle": {
+        "candidates": null
+      },
+      "overrideTraitDataBundle": {
+        "candidates": [
+          {
+            "additionalDescription": "被击倒时不撤退且回复所有生命但生命上限<@ba.vdown>-{value:0%}</>，攻击速度<@ba.vup>+{attack_speed}</>（单次部署只触发1次）",
+            "unlockCondition": {
+              "phase": 2,
+              "level": 50
+            },
+            "requiredPotentialRank": 0,
+            "blackboard": [
+              {
+                "key": "attack_speed",
+                "value": 30.0
+              },
+              {
+                "key": "max_hp",
+                "value": 0.4
+              },
+              {
+                "key": "hp_ratio",
+                "value": 1.0
+              },
+              {
+                "key": "value",
+                "value": 0.6
+              }
+            ],
+            "overrideDescripton": null,
+            "prefabKey": null,
+            "rangeId": null
+          }
+        ]
+      }
+    },
+    {
+      "resKey": "flameb_equip_1_3_p2",
+      "target": "TALENT",
+      "isToken": false,
+      "addOrOverrideTalentDataBundle": {
+        "candidates": [
+          {
+            "displayRangeId": false,
+            "upgradeDescription": "周围四格每有一名敌人被击倒时自身的生命上限提高70，最多叠加30次",
+            "talentIndex": 0,
+            "unlockCondition": {
+              "phase": 2,
+              "level": 50
+            },
+            "requiredPotentialRank": 0,
+            "prefabKey": "1",
+            "name": "血戮",
+            "description": null,
+            "rangeId": "x-5",
+            "blackboard": [
+              {
+                "key": "max_hp",
+                "value": 70.0
+              },
+              {
+                "key": "max_stack_cnt",
+                "value": 30.0
+              }
+            ]
+          },
+          {
+            "displayRangeId": false,
+            "upgradeDescription": "周围四格每有一名敌人被击倒时自身的生命上限提高80<@ba.talpu>（+10）</>，最多可以叠加30次",
+            "talentIndex": 0,
+            "unlockCondition": {
+              "phase": 2,
+              "level": 50
+            },
+            "requiredPotentialRank": 4,
+            "prefabKey": "1",
+            "name": "血戮",
+            "description": null,
+            "rangeId": "x-5",
+            "blackboard": [
+              {
+                "key": "max_hp",
+                "value": 80.0
+              },
+              {
+                "key": "max_stack_cnt",
+                "value": 30.0
+              }
+            ]
+          }
+        ]
+      },
+      "overrideTraitDataBundle": {
+        "candidates": null
+      }
+    }
+  ],
+  "attributeBlackboard": [
+    {
+      "key": "max_hp",
+      "value": 430.0
+    },
+    {
+      "key": "attack_speed",
+      "value": 5.0
+    }
+  ],
+  "tokenAttributeBlackboard": {}
+}

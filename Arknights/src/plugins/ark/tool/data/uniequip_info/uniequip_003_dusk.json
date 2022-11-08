@@ -1,0 +1,127 @@
+{
+  "equipLevel": 3,
+  "parts": [
+    {
+      "resKey": null,
+      "target": "DISPLAY",
+      "isToken": false,
+      "addOrOverrideTalentDataBundle": {
+        "candidates": null
+      },
+      "overrideTraitDataBundle": {
+        "candidates": [
+          {
+            "additionalDescription": "部署费用<@ba.kw>减少</>",
+            "unlockCondition": {
+              "phase": 2,
+              "level": 60
+            },
+            "requiredPotentialRank": 0,
+            "blackboard": [],
+            "overrideDescripton": "攻击造成<@ba.kw>群体法术伤害</>",
+            "prefabKey": null,
+            "rangeId": null
+          }
+        ]
+      }
+    },
+    {
+      "resKey": "dusk_equip_2_3_p2",
+      "target": "TALENT",
+      "isToken": false,
+      "addOrOverrideTalentDataBundle": {
+        "candidates": [
+          {
+            "displayRangeId": false,
+            "upgradeDescription": "部署后首次攻击敌人时，在目标位置和周围4格（可部署地面）召唤2个“小自在”（持续25秒）；所有小自在属性更强且每1.5秒为夕回复1点技力",
+            "talentIndex": 1,
+            "unlockCondition": {
+              "phase": 2,
+              "level": 60
+            },
+            "requiredPotentialRank": 0,
+            "prefabKey": "2",
+            "name": "点睛",
+            "description": null,
+            "rangeId": null,
+            "blackboard": [
+              {
+                "key": "attack@tokenduration",
+                "value": 25.0
+              }
+            ]
+          }
+        ]
+      },
+      "overrideTraitDataBundle": {
+        "candidates": null
+      }
+    },
+    {
+      "resKey": "dusk_equip_2_3_p1",
+      "target": "TALENT",
+      "isToken": true,
+      "addOrOverrideTalentDataBundle": {
+        "candidates": [
+          {
+            "displayRangeId": false,
+            "upgradeDescription": "",
+            "talentIndex": -1,
+            "unlockCondition": {
+              "phase": 2,
+              "level": 60
+            },
+            "requiredPotentialRank": 0,
+            "prefabKey": "10",
+            "name": null,
+            "description": null,
+            "rangeId": null,
+            "blackboard": [
+              {
+                "key": "interval",
+                "value": 1.5
+              },
+              {
+                "key": "sp",
+                "value": 1.0
+              }
+            ]
+          }
+        ]
+      },
+      "overrideTraitDataBundle": {
+        "candidates": null
+      }
+    }
+  ],
+  "attributeBlackboard": [
+    {
+      "key": "cost",
+      "value": -8.0
+    },
+    {
+      "key": "atk",
+      "value": 82.0
+    },
+    {
+      "key": "attack_speed",
+      "value": 7.0
+    }
+  ],
+  "tokenAttributeBlackboard": {
+    "token_10015_dusk_drgn": [
+      {
+        "key": "max_hp",
+        "value": 400.0
+      },
+      {
+        "key": "atk",
+        "value": 25.0
+      },
+      {
+        "key": "def",
+        "value": 25.0
+      }
+    ]
+  }
+}

@@ -1,0 +1,101 @@
+{
+  "equipLevel": 3,
+  "parts": [
+    {
+      "resKey": "nearl_equip_1_3_p1",
+      "target": "TRAIT",
+      "isToken": false,
+      "addOrOverrideTalentDataBundle": {
+        "candidates": null
+      },
+      "overrideTraitDataBundle": {
+        "candidates": [
+          {
+            "additionalDescription": "治疗生命值低于50%的友方单位时治疗量提升<@ba.kw>15%</>",
+            "unlockCondition": {
+              "phase": 2,
+              "level": 50
+            },
+            "requiredPotentialRank": 0,
+            "blackboard": [
+              {
+                "key": "heal_scale",
+                "value": 1.15
+              },
+              {
+                "key": "hp_ratio",
+                "value": 0.5
+              }
+            ],
+            "overrideDescripton": null,
+            "prefabKey": null,
+            "rangeId": null
+          }
+        ]
+      }
+    },
+    {
+      "resKey": null,
+      "target": "TALENT_DATA_ONLY",
+      "isToken": false,
+      "addOrOverrideTalentDataBundle": {
+        "candidates": [
+          {
+            "displayRangeId": false,
+            "upgradeDescription": "在场时，全地图的友方单位医疗效果提高15%",
+            "talentIndex": 0,
+            "unlockCondition": {
+              "phase": 2,
+              "level": 50
+            },
+            "requiredPotentialRank": 0,
+            "prefabKey": "1+",
+            "name": "天马光环",
+            "description": null,
+            "rangeId": null,
+            "blackboard": [
+              {
+                "key": "heal_scale",
+                "value": 1.15
+              }
+            ]
+          },
+          {
+            "displayRangeId": false,
+            "upgradeDescription": "在场时，全地图的友方单位医疗效果提高17%<@ba.talpu>（+2%）</>",
+            "talentIndex": 0,
+            "unlockCondition": {
+              "phase": 2,
+              "level": 50
+            },
+            "requiredPotentialRank": 4,
+            "prefabKey": "1+",
+            "name": "天马光环",
+            "description": null,
+            "rangeId": null,
+            "blackboard": [
+              {
+                "key": "heal_scale",
+                "value": 1.17
+              }
+            ]
+          }
+        ]
+      },
+      "overrideTraitDataBundle": {
+        "candidates": null
+      }
+    }
+  ],
+  "attributeBlackboard": [
+    {
+      "key": "max_hp",
+      "value": 300.0
+    },
+    {
+      "key": "atk",
+      "value": 60.0
+    }
+  ],
+  "tokenAttributeBlackboard": {}
+}

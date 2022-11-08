@@ -1,0 +1,113 @@
+{
+  "equipLevel": 3,
+  "parts": [
+    {
+      "resKey": "glaze_equip_1_3_p1",
+      "target": "TRAIT",
+      "isToken": false,
+      "addOrOverrideTalentDataBundle": {
+        "candidates": null
+      },
+      "overrideTraitDataBundle": {
+        "candidates": [
+          {
+            "additionalDescription": "攻击越远的敌人造成的伤害越高（最高提升<@ba.kw>{damage_scale:0%}</>）",
+            "unlockCondition": {
+              "phase": 2,
+              "level": 40
+            },
+            "requiredPotentialRank": 0,
+            "blackboard": [
+              {
+                "key": "max_dist",
+                "value": 4.5
+              },
+              {
+                "key": "min_dist",
+                "value": 1.0
+              },
+              {
+                "key": "damage_scale",
+                "value": 0.15
+              }
+            ],
+            "overrideDescripton": null,
+            "prefabKey": null,
+            "rangeId": null
+          }
+        ]
+      }
+    },
+    {
+      "resKey": null,
+      "target": "TALENT_DATA_ONLY",
+      "isToken": false,
+      "addOrOverrideTalentDataBundle": {
+        "candidates": [
+          {
+            "displayRangeId": false,
+            "upgradeDescription": "攻击原本攻击范围以外的目标时，有33%的几率使其晕眩3秒",
+            "talentIndex": 0,
+            "unlockCondition": {
+              "phase": 2,
+              "level": 40
+            },
+            "requiredPotentialRank": 0,
+            "prefabKey": "1",
+            "name": "精确打击",
+            "description": null,
+            "rangeId": null,
+            "blackboard": [
+              {
+                "key": "buff_prob",
+                "value": 0.33
+              },
+              {
+                "key": "stun",
+                "value": 3.0
+              }
+            ]
+          },
+          {
+            "displayRangeId": false,
+            "upgradeDescription": "攻击原本攻击范围以外的目标时，有36%<@ba.talpu>（+3%）</>的几率使其晕眩3秒",
+            "talentIndex": 0,
+            "unlockCondition": {
+              "phase": 2,
+              "level": 40
+            },
+            "requiredPotentialRank": 4,
+            "prefabKey": "1",
+            "name": "精确打击",
+            "description": null,
+            "rangeId": null,
+            "blackboard": [
+              {
+                "key": "buff_prob",
+                "value": 0.36
+              },
+              {
+                "key": "stun",
+                "value": 3.0
+              }
+            ]
+          }
+        ]
+      },
+      "overrideTraitDataBundle": {
+        "candidates": null
+      }
+    }
+  ],
+  "attributeBlackboard": [
+    {
+      "key": "max_hp",
+      "value": 95.0
+    },
+    {
+      "key": "atk",
+      "value": 81.0
+    }
+  ],
+  "tokenAttributeBlackboard": {}
+}

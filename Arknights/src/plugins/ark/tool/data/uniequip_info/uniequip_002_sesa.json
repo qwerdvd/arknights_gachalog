@@ -1,0 +1,97 @@
+{
+  "equipLevel": 3,
+  "parts": [
+    {
+      "resKey": "sesa_equip_1_3_p1",
+      "target": "TRAIT",
+      "isToken": false,
+      "addOrOverrideTalentDataBundle": {
+        "candidates": null
+      },
+      "overrideTraitDataBundle": {
+        "candidates": [
+          {
+            "additionalDescription": "攻击被阻挡的敌人时攻击力提升至<@ba.kw>{atk_scale:0%}</>",
+            "unlockCondition": {
+              "phase": 2,
+              "level": 50
+            },
+            "requiredPotentialRank": 0,
+            "blackboard": [
+              {
+                "key": "atk_scale",
+                "value": 1.1
+              }
+            ],
+            "overrideDescripton": "攻击造成<@ba.kw>群体物理伤害</>",
+            "prefabKey": null,
+            "rangeId": null
+          }
+        ]
+      }
+    },
+    {
+      "resKey": null,
+      "target": "TALENT_DATA_ONLY",
+      "isToken": false,
+      "addOrOverrideTalentDataBundle": {
+        "candidates": [
+          {
+            "displayRangeId": false,
+            "upgradeDescription": "在场时所有被阻挡的敌方单位受到的物理伤害提高22%",
+            "talentIndex": 0,
+            "unlockCondition": {
+              "phase": 2,
+              "level": 50
+            },
+            "requiredPotentialRank": 0,
+            "prefabKey": "1",
+            "name": "弱点拆解",
+            "description": null,
+            "rangeId": null,
+            "blackboard": [
+              {
+                "key": "damage_scale",
+                "value": 1.22
+              }
+            ]
+          },
+          {
+            "displayRangeId": false,
+            "upgradeDescription": "在场时所有被阻挡的敌方单位受到的物理伤害提高24%<@ba.talpu>（+2%）</>",
+            "talentIndex": 0,
+            "unlockCondition": {
+              "phase": 2,
+              "level": 50
+            },
+            "requiredPotentialRank": 4,
+            "prefabKey": "1",
+            "name": "弱点拆解",
+            "description": null,
+            "rangeId": null,
+            "blackboard": [
+              {
+                "key": "damage_scale",
+                "value": 1.24
+              }
+            ]
+          }
+        ]
+      },
+      "overrideTraitDataBundle": {
+        "candidates": null
+      }
+    }
+  ],
+  "attributeBlackboard": [
+    {
+      "key": "atk",
+      "value": 60.0
+    },
+    {
+      "key": "def",
+      "value": 43.0
+    }
+  ],
+  "tokenAttributeBlackboard": {}
+}

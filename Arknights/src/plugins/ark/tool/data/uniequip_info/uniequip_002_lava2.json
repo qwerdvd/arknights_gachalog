@@ -1,0 +1,127 @@
+{
+  "equipLevel": 3,
+  "parts": [
+    {
+      "resKey": null,
+      "target": "DISPLAY",
+      "isToken": false,
+      "addOrOverrideTalentDataBundle": {
+        "candidates": null
+      },
+      "overrideTraitDataBundle": {
+        "candidates": [
+          {
+            "additionalDescription": "攻击范围<@ba.kw>扩大</>",
+            "unlockCondition": {
+              "phase": 2,
+              "level": 50
+            },
+            "requiredPotentialRank": 0,
+            "blackboard": [],
+            "overrideDescripton": "攻击造成<@ba.kw>群体法术伤害</>",
+            "prefabKey": null,
+            "rangeId": null
+          }
+        ]
+      }
+    },
+    {
+      "resKey": "lava2_equip_1_3_p1",
+      "target": "TALENT",
+      "isToken": false,
+      "addOrOverrideTalentDataBundle": {
+        "candidates": [
+          {
+            "displayRangeId": true,
+            "upgradeDescription": "",
+            "talentIndex": -1,
+            "unlockCondition": {
+              "phase": 2,
+              "level": 50
+            },
+            "requiredPotentialRank": 0,
+            "prefabKey": "10",
+            "name": null,
+            "description": null,
+            "rangeId": "3-1",
+            "blackboard": []
+          }
+        ]
+      },
+      "overrideTraitDataBundle": {
+        "candidates": null
+      }
+    },
+    {
+      "resKey": null,
+      "target": "TALENT_DATA_ONLY",
+      "isToken": false,
+      "addOrOverrideTalentDataBundle": {
+        "candidates": [
+          {
+            "displayRangeId": false,
+            "upgradeDescription": "首次部署后立即获得35点技力，每次部署时使在场术师干员技力+4，在场时其余友方术师干员初始技力+4",
+            "talentIndex": 0,
+            "unlockCondition": {
+              "phase": 2,
+              "level": 50
+            },
+            "requiredPotentialRank": 0,
+            "prefabKey": "1",
+            "name": "咒术阵线",
+            "description": null,
+            "rangeId": null,
+            "blackboard": [
+              {
+                "key": "lava2_t_1[ally].sp",
+                "value": 4.0
+              },
+              {
+                "key": "lava2_t_1[self].sp",
+                "value": 35.0
+              }
+            ]
+          },
+          {
+            "displayRangeId": false,
+            "upgradeDescription": "首次部署后立即获得40<@ba.talpu>（+5）</>点技力，每次部署时使在场术师干员技力+5<@ba.talpu>（+1）</>，在场时其余友方术师干员初始技力+5<@ba.talpu>（+1）</>",
+            "talentIndex": 0,
+            "unlockCondition": {
+              "phase": 2,
+              "level": 50
+            },
+            "requiredPotentialRank": 4,
+            "prefabKey": "1",
+            "name": "咒术阵线",
+            "description": null,
+            "rangeId": null,
+            "blackboard": [
+              {
+                "key": "lava2_t_1[ally].sp",
+                "value": 5.0
+              },
+              {
+                "key": "lava2_t_1[self].sp",
+                "value": 40.0
+              }
+            ]
+          }
+        ]
+      },
+      "overrideTraitDataBundle": {
+        "candidates": null
+      }
+    }
+  ],
+  "attributeBlackboard": [
+    {
+      "key": "max_hp",
+      "value": 165.0
+    },
+    {
+      "key": "atk",
+      "value": 62.0
+    }
+  ],
+  "tokenAttributeBlackboard": {}
+}

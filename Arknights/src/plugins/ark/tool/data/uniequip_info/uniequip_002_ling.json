@@ -1,0 +1,168 @@
+{
+  "equipLevel": 3,
+  "parts": [
+    {
+      "resKey": "ling_equip_1_3_p1",
+      "target": "TRAIT",
+      "isToken": false,
+      "addOrOverrideTalentDataBundle": {
+        "candidates": null
+      },
+      "overrideTraitDataBundle": {
+        "candidates": [
+          {
+            "additionalDescription": "召唤物持有上限<@ba.kw>+{cnt}</>，召唤物部署费用<@ba.kw>减少</>",
+            "unlockCondition": {
+              "phase": 2,
+              "level": 60
+            },
+            "requiredPotentialRank": 0,
+            "blackboard": [
+              {
+                "key": "cnt",
+                "value": 3.0
+              }
+            ],
+            "overrideDescripton": null,
+            "prefabKey": null,
+            "rangeId": null
+          }
+        ]
+      }
+    },
+    {
+      "resKey": null,
+      "target": "TALENT_DATA_ONLY",
+      "isToken": false,
+      "addOrOverrideTalentDataBundle": {
+        "candidates": [
+          {
+            "displayRangeId": false,
+            "upgradeDescription": "可以使用5个属性更强的召唤物（最多同时部署4个），功能随技能选择而改变",
+            "talentIndex": 0,
+            "unlockCondition": {
+              "phase": 2,
+              "level": 60
+            },
+            "requiredPotentialRank": 0,
+            "prefabKey": "1",
+            "name": "挑灯问梦",
+            "description": null,
+            "rangeId": null,
+            "blackboard": [
+              {
+                "key": "cnt",
+                "value": 5.0
+              }
+            ]
+          }
+        ]
+      },
+      "overrideTraitDataBundle": {
+        "candidates": null
+      }
+    },
+    {
+      "resKey": null,
+      "target": "TALENT_DATA_ONLY",
+      "isToken": true,
+      "addOrOverrideTalentDataBundle": {
+        "candidates": [
+          {
+            "displayRangeId": false,
+            "upgradeDescription": "",
+            "talentIndex": 0,
+            "unlockCondition": {
+              "phase": 2,
+              "level": 60
+            },
+            "requiredPotentialRank": 0,
+            "prefabKey": "1",
+            "name": null,
+            "description": null,
+            "rangeId": null,
+            "blackboard": [
+              {
+                "key": "max_deck_stack_cnt",
+                "value": 5.0
+              },
+              {
+                "key": "max_deploy_count",
+                "value": 3.0
+              }
+            ]
+          }
+        ]
+      },
+      "overrideTraitDataBundle": {
+        "candidates": null
+      }
+    }
+  ],
+  "attributeBlackboard": [
+    {
+      "key": "max_hp",
+      "value": 150.0
+    },
+    {
+      "key": "atk",
+      "value": 50.0
+    }
+  ],
+  "tokenAttributeBlackboard": {
+    "token_10020_ling_soul1": [
+      {
+        "key": "cost",
+        "value": -3.0
+      },
+      {
+        "key": "max_hp",
+        "value": 150.0
+      },
+      {
+        "key": "atk",
+        "value": 45.0
+      },
+      {
+        "key": "max_deck_stack_cnt",
+        "value": 3.0
+      }
+    ],
+    "token_10020_ling_soul2": [
+      {
+        "key": "cost",
+        "value": -3.0
+      },
+      {
+        "key": "max_hp",
+        "value": 100.0
+      },
+      {
+        "key": "atk",
+        "value": 35.0
+      },
+      {
+        "key": "max_deck_stack_cnt",
+        "value": 3.0
+      }
+    ],
+    "token_10020_ling_soul3": [
+      {
+        "key": "cost",
+        "value": -5.0
+      },
+      {
+        "key": "max_hp",
+        "value": 250.0
+      },
+      {
+        "key": "atk",
+        "value": 60.0
+      },
+      {
+        "key": "max_deck_stack_cnt",
+        "value": 3.0
+      }
+    ]
+  }
+}

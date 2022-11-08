@@ -1,0 +1,117 @@
+{
+  "equipLevel": 3,
+  "parts": [
+    {
+      "resKey": "sunbr_equip_1_3_p1",
+      "target": "TRAIT",
+      "isToken": false,
+      "addOrOverrideTalentDataBundle": {
+        "candidates": null
+      },
+      "overrideTraitDataBundle": {
+        "candidates": [
+          {
+            "additionalDescription": "治疗生命值低于50%的友方单位时治疗量提升<@ba.kw>15%</>",
+            "unlockCondition": {
+              "phase": 2,
+              "level": 40
+            },
+            "requiredPotentialRank": 0,
+            "blackboard": [
+              {
+                "key": "heal_scale",
+                "value": 1.15
+              },
+              {
+                "key": "hp_ratio",
+                "value": 0.5
+              }
+            ],
+            "overrideDescripton": null,
+            "prefabKey": null,
+            "rangeId": null
+          }
+        ]
+      }
+    },
+    {
+      "resKey": null,
+      "target": "TALENT_DATA_ONLY",
+      "isToken": false,
+      "addOrOverrideTalentDataBundle": {
+        "candidates": [
+          {
+            "displayRangeId": false,
+            "upgradeDescription": "攻击时，23%几率当次攻击的攻击力提升至200%，并<$ba.stun>晕眩</>敌人1.5秒",
+            "talentIndex": 0,
+            "unlockCondition": {
+              "phase": 2,
+              "level": 40
+            },
+            "requiredPotentialRank": 0,
+            "prefabKey": "1",
+            "name": "平底锅专精",
+            "description": null,
+            "rangeId": null,
+            "blackboard": [
+              {
+                "key": "prob",
+                "value": 0.23
+              },
+              {
+                "key": "atk_scale",
+                "value": 2.0
+              },
+              {
+                "key": "stun",
+                "value": 1.5
+              }
+            ]
+          },
+          {
+            "displayRangeId": false,
+            "upgradeDescription": "攻击时，26%<@ba.talpu>（+3%）</>几率当次攻击的攻击力提升至200%，并<$ba.stun>晕眩</>敌人1.5秒",
+            "talentIndex": 0,
+            "unlockCondition": {
+              "phase": 2,
+              "level": 40
+            },
+            "requiredPotentialRank": 4,
+            "prefabKey": "1",
+            "name": "平底锅专精",
+            "description": null,
+            "rangeId": null,
+            "blackboard": [
+              {
+                "key": "prob",
+                "value": 0.26
+              },
+              {
+                "key": "atk_scale",
+                "value": 2.0
+              },
+              {
+                "key": "stun",
+                "value": 1.5
+              }
+            ]
+          }
+        ]
+      },
+      "overrideTraitDataBundle": {
+        "candidates": null
+      }
+    }
+  ],
+  "attributeBlackboard": [
+    {
+      "key": "max_hp",
+      "value": 250.0
+    },
+    {
+      "key": "atk",
+      "value": 55.0
+    }
+  ],
+  "tokenAttributeBlackboard": {}
+}

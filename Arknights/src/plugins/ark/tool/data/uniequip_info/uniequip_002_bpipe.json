@@ -1,0 +1,137 @@
+{
+  "equipLevel": 3,
+  "parts": [
+    {
+      "resKey": null,
+      "target": "TRAIT_DATA_ONLY",
+      "isToken": false,
+      "addOrOverrideTalentDataBundle": {
+        "candidates": null
+      },
+      "overrideTraitDataBundle": {
+        "candidates": [
+          {
+            "additionalDescription": null,
+            "unlockCondition": {
+              "phase": 2,
+              "level": 60
+            },
+            "requiredPotentialRank": 0,
+            "blackboard": [
+              {
+                "key": "cost",
+                "value": 2.0
+              }
+            ],
+            "overrideDescripton": "击杀敌人后获得<@ba.vup>{cost:0}</>点部署费用，撤退时返还<@ba.kw>该次</>部署费用",
+            "prefabKey": null,
+            "rangeId": null
+          }
+        ]
+      }
+    },
+    {
+      "resKey": "bpipe_equip_1_3_p1",
+      "target": "TALENT",
+      "isToken": false,
+      "addOrOverrideTalentDataBundle": {
+        "candidates": [
+          {
+            "displayRangeId": false,
+            "upgradeDescription": "",
+            "talentIndex": -1,
+            "unlockCondition": {
+              "phase": 2,
+              "level": 60
+            },
+            "requiredPotentialRank": 0,
+            "prefabKey": "10",
+            "name": null,
+            "description": null,
+            "rangeId": null,
+            "blackboard": [
+              {
+                "key": "withdraw_cost_recover_ratio",
+                "value": 1.0
+              }
+            ]
+          }
+        ]
+      },
+      "overrideTraitDataBundle": {
+        "candidates": null
+      }
+    },
+    {
+      "resKey": "bpipe_equip_1_3_p2",
+      "target": "TALENT",
+      "isToken": false,
+      "addOrOverrideTalentDataBundle": {
+        "candidates": [
+          {
+            "displayRangeId": false,
+            "upgradeDescription": "编入队伍时所有【先锋】干员的初始技力+6，自身部署时额外获得4点技力",
+            "talentIndex": 1,
+            "unlockCondition": {
+              "phase": 2,
+              "level": 60
+            },
+            "requiredPotentialRank": 0,
+            "prefabKey": "2",
+            "name": "军事传统",
+            "description": null,
+            "rangeId": null,
+            "blackboard": [
+              {
+                "key": "sp",
+                "value": 6.0
+              },
+              {
+                "key": "bpipe_e_2[locate].sp",
+                "value": 4.0
+              }
+            ]
+          },
+          {
+            "displayRangeId": false,
+            "upgradeDescription": "编入队伍时所有【先锋】干员的初始技力+8<@ba.talpu>（+2）</>，自身部署时额外获得4点技力",
+            "talentIndex": 1,
+            "unlockCondition": {
+              "phase": 2,
+              "level": 60
+            },
+            "requiredPotentialRank": 4,
+            "prefabKey": "2",
+            "name": "军事传统",
+            "description": null,
+            "rangeId": null,
+            "blackboard": [
+              {
+                "key": "sp",
+                "value": 8.0
+              },
+              {
+                "key": "bpipe_e_2[locate].sp",
+                "value": 4.0
+              }
+            ]
+          }
+        ]
+      },
+      "overrideTraitDataBundle": {
+        "candidates": null
+      }
+    }
+  ],
+  "attributeBlackboard": [
+    {
+      "key": "max_hp",
+      "value": 180.0
+    },
+    {
+      "key": "atk",
+      "value": 73.0
+    }
+  ],
+  "tokenAttributeBlackboard": {}
+}

@@ -1,0 +1,89 @@
+{
+  "equipLevel": 3,
+  "parts": [
+    {
+      "resKey": "glady_equip_1_3_p1",
+      "target": "TRAIT",
+      "isToken": false,
+      "addOrOverrideTalentDataBundle": {
+        "candidates": null
+      },
+      "overrideTraitDataBundle": {
+        "candidates": [
+          {
+            "additionalDescription": "拖拽期间敌人受到正比于距离的法术伤害",
+            "unlockCondition": {
+              "phase": 2,
+              "level": 60
+            },
+            "requiredPotentialRank": 0,
+            "blackboard": [
+              {
+                "key": "dist",
+                "value": 1.0
+              },
+              {
+                "key": "value",
+                "value": 800.0
+              },
+              {
+                "key": "interval",
+                "value": 0.066
+              }
+            ],
+            "overrideDescripton": null,
+            "prefabKey": null,
+            "rangeId": null
+          }
+        ]
+      }
+    },
+    {
+      "resKey": "glady_equip_1_3_p2",
+      "target": "TALENT",
+      "isToken": false,
+      "addOrOverrideTalentDataBundle": {
+        "candidates": [
+          {
+            "displayRangeId": false,
+            "upgradeDescription": "在场时，所有【深海猎人】干员每秒回复3.5%最大生命值且受到敌人的物理与法术伤害降低30%",
+            "talentIndex": 0,
+            "unlockCondition": {
+              "phase": 2,
+              "level": 60
+            },
+            "requiredPotentialRank": 0,
+            "prefabKey": "1",
+            "name": "阿戈尔的波涛",
+            "description": null,
+            "rangeId": null,
+            "blackboard": [
+              {
+                "key": "hp_recovery_per_sec_by_max_hp_ratio",
+                "value": 0.035
+              },
+              {
+                "key": "damage_resistance",
+                "value": 0.3
+              }
+            ]
+          }
+        ]
+      },
+      "overrideTraitDataBundle": {
+        "candidates": null
+      }
+    }
+  ],
+  "attributeBlackboard": [
+    {
+      "key": "max_hp",
+      "value": 210.0
+    },
+    {
+      "key": "atk",
+      "value": 70.0
+    }
+  ],
+  "tokenAttributeBlackboard": {}
+}

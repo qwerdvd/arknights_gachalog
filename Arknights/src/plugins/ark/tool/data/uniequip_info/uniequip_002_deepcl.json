@@ -1,0 +1,120 @@
+{
+  "equipLevel": 3,
+  "parts": [
+    {
+      "resKey": "deepcl_equip_1_3_p1",
+      "target": "TRAIT",
+      "isToken": false,
+      "addOrOverrideTalentDataBundle": {
+        "candidates": null
+      },
+      "overrideTraitDataBundle": {
+        "candidates": [
+          {
+            "additionalDescription": "召唤物持有上限<@ba.kw>+{cnt}</>，召唤物部署费用<@ba.kw>减少</>",
+            "unlockCondition": {
+              "phase": 2,
+              "level": 40
+            },
+            "requiredPotentialRank": 0,
+            "blackboard": [
+              {
+                "key": "cnt",
+                "value": 3.0
+              }
+            ],
+            "overrideDescripton": null,
+            "prefabKey": null,
+            "rangeId": null
+          }
+        ]
+      }
+    },
+    {
+      "resKey": null,
+      "target": "TALENT_DATA_ONLY",
+      "isToken": false,
+      "addOrOverrideTalentDataBundle": {
+        "candidates": [
+          {
+            "displayRangeId": false,
+            "upgradeDescription": "可以使用四个触手召唤物来协助作战。触手生命上限+15%",
+            "talentIndex": 0,
+            "unlockCondition": {
+              "phase": 2,
+              "level": 40
+            },
+            "requiredPotentialRank": 0,
+            "prefabKey": "1",
+            "name": "召唤触手",
+            "description": null,
+            "rangeId": null,
+            "blackboard": [
+              {
+                "key": "cnt",
+                "value": 4.0
+              }
+            ]
+          }
+        ]
+      },
+      "overrideTraitDataBundle": {
+        "candidates": null
+      }
+    },
+    {
+      "resKey": "deepcl_equip_1_3_p2",
+      "target": "TALENT",
+      "isToken": true,
+      "addOrOverrideTalentDataBundle": {
+        "candidates": [
+          {
+            "displayRangeId": false,
+            "upgradeDescription": "",
+            "talentIndex": 0,
+            "unlockCondition": {
+              "phase": 2,
+              "level": 40
+            },
+            "requiredPotentialRank": 0,
+            "prefabKey": "10",
+            "name": null,
+            "description": null,
+            "rangeId": null,
+            "blackboard": [
+              {
+                "key": "max_hp",
+                "value": 0.15
+              }
+            ]
+          }
+        ]
+      },
+      "overrideTraitDataBundle": {
+        "candidates": null
+      }
+    }
+  ],
+  "attributeBlackboard": [
+    {
+      "key": "max_hp",
+      "value": 115.0
+    },
+    {
+      "key": "atk",
+      "value": 35.0
+    }
+  ],
+  "tokenAttributeBlackboard": {
+    "token_10001_deepcl_tentac": [
+      {
+        "key": "cost",
+        "value": -2.0
+      },
+      {
+        "key": "max_deploy_count",
+        "value": 3.0
+      }
+    ]
+  }
+}
