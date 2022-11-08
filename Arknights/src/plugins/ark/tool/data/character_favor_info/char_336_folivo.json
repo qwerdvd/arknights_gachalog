@@ -1,0 +1,27 @@
+{
+  "data": {
+    "atk": 0,
+    "attackSpeed": 0,
+    "baseAttackTime": 0,
+    "baseForceLevel": 0,
+    "blockCnt": 0,
+    "cost": 0,
+    "def": 35,
+    "frozenImmune": false,
+    "hpRecoveryPerSec": 0,
+    "levitateImmune": false,
+    "magicResistance": 0,
+    "massLevel": 0,
+    "maxDeckStackCnt": 0,
+    "maxDeployCount": 0,
+    "maxHp": 200,
+    "moveSpeed": 0,
+    "respawnTime": 0,
+    "silenceImmune": false,
+    "sleepImmune": false,
+    "spRecoveryPerSec": 0,
+    "stunImmune": false,
+    "tauntLevel": 0
+  },
+  "level": 50
+}

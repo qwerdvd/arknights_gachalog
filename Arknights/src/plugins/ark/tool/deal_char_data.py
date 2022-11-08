@@ -168,6 +168,19 @@ async def get_char_talents_data():
                 json.dump(talents, f2, ensure_ascii=False, indent=2)
 
 
+# 储存干员信赖加成数据
+async def get_char_favor_data():
+    for char in char_path.items():
+        character_name = char[0]
+        raw_favor = char[1]['favorKeyFrames']
+        favor = {}
+        if raw_favor is not None:
+            favor = raw_favor[-1]  # 满信赖数据
+            with open(f'C:\\Users\\qwerdvd\\PycharmProjects\\pythonProject\\Arknights\\src\\plugins\\ark\\tool\\data'
+                      f'\\character_favor_info\\{character_name}.json', 'w', encoding='utf8') as f2:
+                json.dump(favor, f2, ensure_ascii=False, indent=2)
+
+
 # 储存干员技能数据
 async def ger_char_skill_data():
     for char in char_path.items():
@@ -194,7 +207,8 @@ async def main():
     # await ger_char_skill_data()  # 干员技能数据
     # await get_enemyId_to_chName_mapping()  # 敌人 id 英文名到中文名的映射
     # await get_enemyId_chName_to_enName_mapping()  # 敌人 id 中文名到英文名的映射
-    await get_enemy_data()  # 敌人数据
+    # await get_enemy_data()  # 敌人数据
+    await get_char_favor_data()  # 干员信赖加成数据
 
 
 if __name__ == "__main__":
