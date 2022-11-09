@@ -28,25 +28,32 @@ async def calculate_fully_trained_character_data(characterId: str, is_equip: boo
         'basic_attack_time': basic_character_info['data']['baseAttackTime']
     }
 
-    # 获取干员潜能信息数据
-    potential_data = await get_potential_data(characterId)
-
-    # 获取干员满信赖加成数据
-    favor_data = await get_favor_data(characterId)
-
     # 获取干员模组加成数据
     if is_equip:
         if uniequip_id == '一模':
             uniequip_id = 1
         elif uniequip_id == '二模':
             uniequip_id = 2
-    uniequip_attribute_data = await get_equip_attribute_data(characterId, uniequip_id)
+        # 模组属性加成数据
+        uniequip_attribute_data = await get_equip_attribute_data(characterId, uniequip_id)
+        # 天赋覆写数据
+        uniequip_talent_override = await get_equip_talent_adjustment(characterId, uniequip_id, target="TALENT")
+        # 特性覆写数据
+        uniequip_trait_override = await get_equip_trait_adjustment(characterId, uniequip_id, target="TRAIT")
+
+    # TODO: 模组加成优先于潜能加成
+    # 获取干员潜能信息数据
+    potential_data = await get_potential_data(characterId)
+
+    # 获取干员满信赖加成数据
+    favor_data = await get_favor_data(characterId)
 
     # 计算干员基础数据
     add_hp = potential_data['potential_hp'] + favor_data['favor_hp'] + uniequip_attribute_data['uniequip_hp']
     add_atk = potential_data['potential_atk'] + favor_data['favor_atk'] + uniequip_attribute_data['uniequip_atk']
     add_def = potential_data['potential_def'] + favor_data['favor_def'] + uniequip_attribute_data['uniequip_def']
-    add_magic_resistance = potential_data['potential_magic_resistance'] + uniequip_attribute_data['uniequip_magic_resistance']
+    add_magic_resistance = potential_data['potential_magic_resistance'] + uniequip_attribute_data[
+        'uniequip_magic_resistance']
     add_cost = potential_data['potential_cost'] + uniequip_attribute_data['uniequip_cost']
     add_attack_speed = potential_data['potential_attack_speed'] + uniequip_attribute_data['uniequip_attack_speed']
     add_respawn_time = potential_data['potential_respawn_time'] + uniequip_attribute_data['uniequip_respawn_time']
@@ -115,7 +122,7 @@ async def get_favor_data(characterId: str) -> Optional[dict]:
     return favor_data
 
 
-# 获取干员模组数据
+# 获取干员模组基础属性数据
 async def get_equip_attribute_data(characterId: str, uniequip_id: int) -> Optional[dict]:
     equip_id = await characterId_to_uniequipId(characterId, uniequip_id)
     with open(f'src/plugins/ark/tool/data/uniequip_info/{equip_id}.json', encoding='UTF-8') as f:
@@ -148,3 +155,35 @@ async def get_equip_attribute_data(characterId: str, uniequip_id: int) -> Option
     uniequip_attribute_data['uniequip_respawn_time'] = uniequip_respawn_time
 
     return uniequip_attribute_data
+
+
+# 获取干员模组特性调整数据
+async def get_equip_trait_adjustment(characterId: str, uniequip_id: int, target: str) -> Optional[dict]:
+    equip_id = await characterId_to_uniequipId(characterId, uniequip_id)
+    override_trait_data = {}
+    with open(f'src/plugins/ark/tool/data/uniequip_info/{equip_id}.json', encoding='UTF-8') as f:
+        character_uniequip_info = json.load(f)
+    uniequip_parts_info = character_uniequip_info['parts']
+    for i in range(len(uniequip_parts_info)):
+        if uniequip_parts_info[i]["target"] == target:
+            raw_override_trait_data = uniequip_parts_info[i]['overrideTraitDataBundle']['candidates'][-1]
+            override_trait_data = raw_override_trait_data['blackboard']
+
+    return override_trait_data
+
+
+# 获取干员模组天赋调整数据
+async def get_equip_talent_adjustment(characterId: str, uniequip_id: int, target: str) -> Optional[dict]:
+    equip_id = await characterId_to_uniequipId(characterId, uniequip_id)
+    override_talent_data = {}
+    with open(f'src/plugins/ark/tool/data/uniequip_info/{equip_id}.json', encoding='UTF-8') as f:
+        character_uniequip_info = json.load(f)
+    uniequip_parts_info = character_uniequip_info['parts']
+    for i in range(len(uniequip_parts_info)):
+        print(uniequip_parts_info[i])
+        if uniequip_parts_info[i]["target"] == target:
+            raw_override_talent_data = uniequip_parts_info[i]['addOrOverrideTalentDataBundle']['candidates'][-1]
+            override_talent_data['talent_index'] = raw_override_talent_data['talentIndex']
+            override_talent_data['blackboard'] = raw_override_talent_data['blackboard']
+
+    return override_talent_data

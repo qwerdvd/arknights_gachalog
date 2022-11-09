@@ -14,6 +14,7 @@ from nonebot.params import CommandArg
 
 from ..config import priority
 from .cal_full_trained_character_info import calculate_fully_trained_character_data
+from .calculate_character_talent_buff import calculate_talent_buff
 from .cal_damage import calculate_physical_character_damage, calculate_magical_character_damage
 from ..utils.alias.chName_to_CharacterId_list import chName_to_CharacterId
 
@@ -22,6 +23,7 @@ dmg_cal = on_command('伤害计算', priority=priority, block=True)
 
 # 伤害计算
 # "伤害计算 能天使 三技能 一模"
+# 默认满技能满潜模组满级
 @dmg_cal.handle()
 async def send_dmg_cal_msg(
         event: MessageEvent, matcher: Matcher, args: Message = CommandArg()
@@ -47,6 +49,7 @@ async def send_dmg_cal_msg(
         damage_type = 'physical'
         print(damage_type)
         character_info = await calculate_fully_trained_character_data(characterId, is_uniequip, uniequip_id)
+        talent_buff = await calculate_talent_buff(characterId, is_uniequip, uniequip_id)
         damage = await calculate_physical_character_damage(character_info)
     elif profession in ['SUPPORTER', 'MEDIC', 'SPECIALIST']:
         damage_type = 'magical'
