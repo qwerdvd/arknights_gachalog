@@ -58,7 +58,7 @@ async def send_dmg_cal_msg(
     character_info = await calculate_fully_trained_character_data(characterId, is_uniequip, uniequip_id)
     talent_buff = await calculate_talent_buff(characterId, is_uniequip, uniequip_id)
     buff_list = await get_buff_list(characterId, is_uniequip, uniequip_id, skill_id)
-    im = await calculate_character_damage(characterId, character_info, buff_list, skill_id, profession)
+    im = await calculate_character_damage(characterId, character_info, buff_list, skill_id, profession, is_uniequip, uniequip_id)
     await matcher.finish(im)
     # if profession in ['VANGUARD', 'SNIPER', 'DEFENDER', 'CASTER', 'GUARD']:
     #     damage_type = 'physical'

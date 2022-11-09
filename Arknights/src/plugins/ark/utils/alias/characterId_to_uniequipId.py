@@ -19,7 +19,6 @@ async def characterId_to_uniequipId(characterId: str, uniequip_id: int) -> str:
     :返回:
       * name (str): 角色对应模组名称。
     """
-    # print(uniequip_id)
     raw_uniequipId = characterId_to_uniequipId_data[characterId]
     uniequip_id = raw_uniequipId[uniequip_id]
     return uniequip_id

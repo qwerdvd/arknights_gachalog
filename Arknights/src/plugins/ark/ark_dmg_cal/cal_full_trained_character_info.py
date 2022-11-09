@@ -177,11 +177,17 @@ async def get_uniequip_trait_adjustment(characterId: str, uniequip_id: int, targ
 async def get_uniequip_talent_adjustment(characterId: str, uniequip_id: int, target: str) -> Optional[dict]:
     equip_id = await characterId_to_uniequipId(characterId, uniequip_id)
     override_talent_data = {}
+    print(f"equip_id = {equip_id}")
     with open(f'src/plugins/ark/tool/data/uniequip_info/{equip_id}.json', encoding='UTF-8') as f:
         character_uniequip_info = json.load(f)
     uniequip_parts_info = character_uniequip_info['parts']
+    print(len(uniequip_parts_info))
     for i in range(len(uniequip_parts_info)):
-        if uniequip_parts_info[i]["target"] == target:
+        if uniequip_parts_info[i]["target"] == target and uniequip_parts_info[i]["addOrOverrideTalentDataBundle"]["candidates"][-1]["prefabKey"] != "10":
+            raw_override_talent_data = uniequip_parts_info[i]['addOrOverrideTalentDataBundle']['candidates'][-1]
+            override_talent_data['talent_index'] = raw_override_talent_data['talentIndex']
+            override_talent_data['blackboard'] = raw_override_talent_data['blackboard']
+        elif uniequip_parts_info[i]["target"] == "TALENT_DATA_ONLY":
             raw_override_talent_data = uniequip_parts_info[i]['addOrOverrideTalentDataBundle']['candidates'][-1]
             override_talent_data['talent_index'] = raw_override_talent_data['talentIndex']
             override_talent_data['blackboard'] = raw_override_talent_data['blackboard']
