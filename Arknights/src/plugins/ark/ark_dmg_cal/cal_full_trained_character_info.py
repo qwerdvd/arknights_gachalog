@@ -18,16 +18,17 @@ async def calculate_fully_trained_character_data(characterId: str, is_equip: boo
         basic_character_info = json.load(f)
 
     character_info = {
-        'basic_hp': basic_character_info['data']['maxHp'],
-        'basic_atk': basic_character_info['data']['atk'],
-        'basic_def': basic_character_info['data']['def'],
-        'basic_magic_resistance': basic_character_info['data']['magicResistance'],
-        'basic_cost': basic_character_info['data']['cost'],
-        'basic_respawn_time': basic_character_info['data']['respawnTime'],
-        'basic_attack_speed': basic_character_info['data']['attackSpeed'],
-        'basic_attack_time': basic_character_info['data']['baseAttackTime']
+        'base_hp': basic_character_info['data']['maxHp'],
+        'base_atk': basic_character_info['data']['atk'],
+        'base_def': basic_character_info['data']['def'],
+        'base_magic_resistance': basic_character_info['data']['magicResistance'],
+        'base_cost': basic_character_info['data']['cost'],
+        'base_respawn_time': basic_character_info['data']['respawnTime'],
+        'base_attack_speed': basic_character_info['data']['attackSpeed'],
+        'base_attack_time': basic_character_info['data']['baseAttackTime']
     }
 
+    uniequip_attribute_data = {}
     # 获取干员模组加成数据
     if is_equip:
         if uniequip_id == '一模':
@@ -35,13 +36,12 @@ async def calculate_fully_trained_character_data(characterId: str, is_equip: boo
         elif uniequip_id == '二模':
             uniequip_id = 2
         # 模组属性加成数据
-        uniequip_attribute_data = await get_equip_attribute_data(characterId, uniequip_id)
+        uniequip_attribute_data = await get_uniequip_attribute_data(characterId, uniequip_id)
         # 天赋覆写数据
-        uniequip_talent_override = await get_equip_talent_adjustment(characterId, uniequip_id, target="TALENT")
+        uniequip_talent_override = await get_uniequip_talent_adjustment(characterId, uniequip_id, target="TALENT")
         # 特性覆写数据
-        uniequip_trait_override = await get_equip_trait_adjustment(characterId, uniequip_id, target="TRAIT")
+        uniequip_trait_override = await get_uniequip_trait_adjustment(characterId, uniequip_id, target="TRAIT")
 
-    # TODO: 模组加成优先于潜能加成
     # 获取干员潜能信息数据
     potential_data = await get_potential_data(characterId)
 
@@ -59,13 +59,14 @@ async def calculate_fully_trained_character_data(characterId: str, is_equip: boo
     add_respawn_time = potential_data['potential_respawn_time'] + uniequip_attribute_data['uniequip_respawn_time']
 
     # 计算干员满练数据
-    character_info['basic_hp'] = character_info['basic_hp'] + add_hp
-    character_info['basic_atk'] = character_info['basic_atk'] + add_atk
-    character_info['basic_def'] = character_info['basic_def'] + add_def
-    character_info['basic_magic_resistance'] = character_info['basic_magic_resistance'] + add_magic_resistance
-    character_info['basic_cost'] = character_info['basic_cost'] + add_cost
-    character_info['basic_attack_speed'] = character_info['basic_attack_speed'] + add_attack_speed
-    character_info['basic_respawn_time'] = character_info['basic_respawn_time'] + add_respawn_time
+    character_info['base_hp'] = character_info['base_hp'] + add_hp
+    character_info['base_atk'] = character_info['base_atk'] + add_atk
+    character_info['base_def'] = character_info['base_def'] + add_def
+    character_info['base_magic_resistance'] = character_info['base_magic_resistance'] + add_magic_resistance
+    character_info['base_cost'] = character_info['base_cost'] + add_cost
+    character_info['base_attack_speed'] = character_info['base_attack_speed'] + add_attack_speed
+    character_info['base_attack_time'] = character_info['base_attack_time']
+    character_info['base_respawn_time'] = character_info['base_respawn_time'] + add_respawn_time
 
     return character_info
 
@@ -123,7 +124,7 @@ async def get_favor_data(characterId: str) -> Optional[dict]:
 
 
 # 获取干员模组基础属性数据
-async def get_equip_attribute_data(characterId: str, uniequip_id: int) -> Optional[dict]:
+async def get_uniequip_attribute_data(characterId: str, uniequip_id: int) -> Optional[dict]:
     equip_id = await characterId_to_uniequipId(characterId, uniequip_id)
     with open(f'src/plugins/ark/tool/data/uniequip_info/{equip_id}.json', encoding='UTF-8') as f:
         character_uniequip_info = json.load(f)
@@ -158,7 +159,7 @@ async def get_equip_attribute_data(characterId: str, uniequip_id: int) -> Option
 
 
 # 获取干员模组特性调整数据
-async def get_equip_trait_adjustment(characterId: str, uniequip_id: int, target: str) -> Optional[dict]:
+async def get_uniequip_trait_adjustment(characterId: str, uniequip_id: int, target: str) -> Optional[dict]:
     equip_id = await characterId_to_uniequipId(characterId, uniequip_id)
     override_trait_data = {}
     with open(f'src/plugins/ark/tool/data/uniequip_info/{equip_id}.json', encoding='UTF-8') as f:
@@ -173,14 +174,13 @@ async def get_equip_trait_adjustment(characterId: str, uniequip_id: int, target:
 
 
 # 获取干员模组天赋调整数据
-async def get_equip_talent_adjustment(characterId: str, uniequip_id: int, target: str) -> Optional[dict]:
+async def get_uniequip_talent_adjustment(characterId: str, uniequip_id: int, target: str) -> Optional[dict]:
     equip_id = await characterId_to_uniequipId(characterId, uniequip_id)
     override_talent_data = {}
     with open(f'src/plugins/ark/tool/data/uniequip_info/{equip_id}.json', encoding='UTF-8') as f:
         character_uniequip_info = json.load(f)
     uniequip_parts_info = character_uniequip_info['parts']
     for i in range(len(uniequip_parts_info)):
-        print(uniequip_parts_info[i])
         if uniequip_parts_info[i]["target"] == target:
             raw_override_talent_data = uniequip_parts_info[i]['addOrOverrideTalentDataBundle']['candidates'][-1]
             override_talent_data['talent_index'] = raw_override_talent_data['talentIndex']

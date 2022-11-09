@@ -75,6 +75,24 @@ async def get_CharacterId_to_uniequipId_mapping():
         json.dump(CharacterId_to_uniequipId_mapping, f2, ensure_ascii=False, indent=2)
 
 
+# 干员的几技能到技能名的映射
+async def get_skill_number_to_skill_id():
+    for char in char_path.items():
+        character_name = char[0]
+        with open(f'C:\\Users\\qwerdvd\\PycharmProjects\\pythonProject\\Arknights\\src\\plugins\\ark\\tool\\data'
+                  f'\\character_skill_info\\{character_name}.json', 'r', encoding='utf8') as f2:
+            skill_info = json.load(f2)
+        skill_number_to_skill_id = {}
+        i = 1
+        for skill in skill_info.items():
+            print(skill)
+            skill_number_to_skill_id[i] = skill[0]
+            i += 1
+        with open(f'C:\\Users\\qwerdvd\\PycharmProjects\\pythonProject\\Arknights\\src\\plugins\\ark\\tool\\data'
+                  f'\\skill_number_to_skill_id\\{character_name}.json', 'w', encoding='utf8') as f2:
+            json.dump(skill_number_to_skill_id, f2, ensure_ascii=False, indent=2)
+
+
 # 敌人 id 英文名到中文名的映射
 # "enemy_1007_slime": "源石虫"
 async def get_enemyId_to_chName_mapping():
@@ -251,7 +269,8 @@ async def main():
     # await get_enemy_data()  # 敌人数据
     # await get_char_favor_data()  # 干员信赖加成数据
     # await get_CharacterId_to_uniequipId_mapping()  # 角色 id 到模组 id 的映射
-    await get_uniequip_data()  # 模组数据
+    # await get_uniequip_data()  # 模组数据
+    await get_skill_number_to_skill_id()
 
 
 if __name__ == "__main__":
