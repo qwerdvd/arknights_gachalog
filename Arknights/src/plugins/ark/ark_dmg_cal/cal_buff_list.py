@@ -5,8 +5,8 @@ from .cal_full_trained_character_info import get_uniequip_trait_adjustment
 from .calculate_character_talent_buff import calculate_talent_buff
 
 
-async def get_buff_list(characterId: str, is_uniequip: bool, uniequip_id: str, skill_id: str) -> Optional[list]:
-    buff_list = []
+async def get_buff_list(characterId: str, is_uniequip: bool, uniequip_id: str, skill_id: str) -> Optional[dict]:
+    buff_list = {}
 
     # 模组 buff
     # 暂时为特性追加部分
@@ -19,7 +19,8 @@ async def get_buff_list(characterId: str, is_uniequip: bool, uniequip_id: str, s
         raw_uniequip_trait_data = await get_uniequip_trait_adjustment(characterId, uniequip_id, "TRAIT")
         for trait in raw_uniequip_trait_data:
             uniequip_buff_list.append(trait)
-        print(uniequip_buff_list)
+        # print(uniequip_buff_list)
+    buff_list["uniequip_buff_list"] = uniequip_buff_list
 
     # 天赋 buff
     talent_buff_list = []
@@ -33,7 +34,8 @@ async def get_buff_list(characterId: str, is_uniequip: bool, uniequip_id: str, s
             talent = raw_talent_buff[f"{i + 1}"]["candidates"][-1]
             for buff in talent["blackboard"]:
                 talent_buff_list.append(buff)
-        print(talent_buff_list)
+        # print(talent_buff_list)
+    buff_list["talent_buff_list"] = talent_buff_list
 
     # 技能 buff
     skill_buff_list = []
@@ -43,16 +45,17 @@ async def get_buff_list(characterId: str, is_uniequip: bool, uniequip_id: str, s
     character_skill = character_skill_info[character_skill_id]
     for buff in character_skill["blackboard"]:
         skill_buff_list.append(buff)
-    print(skill_buff_list)
+    # print(skill_buff_list)
+    buff_list["skill_buff_list"] = skill_buff_list
 
     # 合并 buff
-    buff_list = uniequip_buff_list + talent_buff_list + skill_buff_list
-    print(buff_list)
+    # buff_list = uniequip_buff_list + talent_buff_list + skill_buff_list
+    # print(buff_list)
 
     return buff_list
 
 
-async def get_character_skill_id(characterId: str, skill_id: str):
+async def get_character_skill_id(characterId: str, skill_id: int):
     with open(f'src/plugins/ark/tool/data/skill_number_to_skill_id/{characterId}.json', encoding='UTF-8') as f:
         character_skill_info = json.load(f)
     character_skill_id = character_skill_info[skill_id]
