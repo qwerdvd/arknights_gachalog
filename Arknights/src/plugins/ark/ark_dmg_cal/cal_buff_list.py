@@ -32,15 +32,17 @@ async def get_buff_list(characterId: str, is_uniequip: bool, uniequip_id: str, s
             uniequip_id = 1
         elif uniequip_id == '二模':
             uniequip_id = 2
-        raw_talent_buff = await calculate_talent_buff(characterId, is_uniequip, uniequip_id)
-        print(f"raw_talent_buff {raw_talent_buff}")
-        for i in range(len(raw_talent_buff)):
-            talent = raw_talent_buff[f"{i + 1}"]["candidates"][-1]
-            single_talent_buff = talent["blackboard"]
-            talent_buff_list.append(single_talent_buff)
-            # for buff in talent["blackboard"]:
-            #     talent_buff_list[i].append(buff)
-        print(talent_buff_list)
+    else:
+        uniequip_id = None
+    raw_talent_buff = await calculate_talent_buff(characterId, is_uniequip, uniequip_id)
+    print(f"raw_talent_buff {raw_talent_buff}")
+    for i in range(len(raw_talent_buff)):
+        talent = raw_talent_buff[f"{i + 1}"]["candidates"][-1]
+        single_talent_buff = talent["blackboard"]
+        talent_buff_list.append(single_talent_buff)
+        # for buff in talent["blackboard"]:
+        #     talent_buff_list[i].append(buff)
+    print(talent_buff_list)
     buff_list["talent_buff_list"] = talent_buff_list
 
     # 技能 buff

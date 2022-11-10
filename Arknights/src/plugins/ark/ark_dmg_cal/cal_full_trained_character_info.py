@@ -28,7 +28,9 @@ async def calculate_fully_trained_character_data(characterId: str, is_equip: boo
         'base_attack_time': basic_character_info['data']['baseAttackTime']
     }
 
-    uniequip_attribute_data = {}
+    uniequip_attribute_data = {'uniequip_hp': 0, 'uniequip_atk': 0, 'uniequip_def': 0, 'uniequip_magic_resistance': 0,
+                               'uniequip_cost': 0, 'uniequip_attack_speed': 0, 'uniequip_respawn_time': 0}
+
     # 获取干员模组加成数据
     if is_equip:
         if uniequip_id == '一模':
@@ -165,10 +167,33 @@ async def get_uniequip_trait_adjustment(characterId: str, uniequip_id: int, targ
     with open(f'src/plugins/ark/tool/data/uniequip_info/{equip_id}.json', encoding='UTF-8') as f:
         character_uniequip_info = json.load(f)
     uniequip_parts_info = character_uniequip_info['parts']
+    have_trait_addition = False
+    added_trait_have_property = False
     for i in range(len(uniequip_parts_info)):
-        if uniequip_parts_info[i]["target"] == target:
+        if target == "TRAIT" and uniequip_parts_info[i]["target"] == target:
             raw_override_trait_data = uniequip_parts_info[i]['overrideTraitDataBundle']['candidates'][-1]
             override_trait_data = raw_override_trait_data['blackboard']
+        elif uniequip_parts_info[i]["target"] == target \
+                and uniequip_parts_info[i]['overrideTraitDataBundle']['candidates'][0]['prefabKey'] is not None:
+            # 假如 target 为 DISPLAY, 若 prefabKey 为 null, 则此时为模组触发有条件的特性
+            raw_override_trait_data = uniequip_parts_info[i]['overrideTraitDataBundle']['candidates'][-1]
+            override_trait_data = raw_override_trait_data['blackboard']
+        elif uniequip_parts_info[i]["target"] == target \
+                and uniequip_parts_info[i]['overrideTraitDataBundle']['candidates'][0]['prefabKey'] is None:
+            have_trait_addition = True
+            if uniequip_parts_info[i]["resKey"] is None:
+                added_trait_have_property = True
+    if have_trait_addition:
+        print("此模组有特性追加")
+        target = "TALENT"
+        for i in range(len(uniequip_parts_info)):
+            if uniequip_parts_info[0]["resKey"] is not None:
+                print("此模组有特性追加且有特性追加资源")
+            if uniequip_parts_info[i]["target"] == target \
+                    and uniequip_parts_info[i]['addOrOverrideTalentDataBundle']['candidates'][0][
+                            'talentIndex'] == -1:
+                raw_override_trait_data = uniequip_parts_info[i]['addOrOverrideTalentDataBundle']['candidates'][-1]
+                override_trait_data = raw_override_trait_data['blackboard']
 
     return override_trait_data
 
@@ -183,7 +208,8 @@ async def get_uniequip_talent_adjustment(characterId: str, uniequip_id: int, tar
     uniequip_parts_info = character_uniequip_info['parts']
     print(len(uniequip_parts_info))
     for i in range(len(uniequip_parts_info)):
-        if uniequip_parts_info[i]["target"] == target and uniequip_parts_info[i]["addOrOverrideTalentDataBundle"]["candidates"][-1]["prefabKey"] != "10":
+        if uniequip_parts_info[i]['target'] == target and \
+                uniequip_parts_info[i]['addOrOverrideTalentDataBundle']['candidates'][-1]['prefabKey'] != "10":
             raw_override_talent_data = uniequip_parts_info[i]['addOrOverrideTalentDataBundle']['candidates'][-1]
             override_talent_data['talent_index'] = raw_override_talent_data['talentIndex']
             override_talent_data['blackboard'] = raw_override_talent_data['blackboard']
