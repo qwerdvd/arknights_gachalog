@@ -7,8 +7,6 @@ from .cal_buff_list import get_character_skill_id
 from ..utils.alias.characterId_to_uniequipId import characterId_to_uniequipId
 
 
-# TODO: 干员离弦伤害 (黑)
-
 async def calculate_character_damage(
         characterId: str, character_info: dict, buff_list: dict, skill_id: int, profession: str, is_uniequip: bool,
         uniequip_id: str,
@@ -43,6 +41,7 @@ async def calculate_character_damage(
 
     atk_scale = 1
     skill_attack_atk_scale = 1
+    sub_profession_talent_atk_scale = 1
     uniequip_atk_scale = 1
     talent_atk_scale = 1
     skill_atk_scale = 1
@@ -87,9 +86,15 @@ async def calculate_character_damage(
             elif buff["key"] == "surtr_t_2[withdraw].interval":  # 史尔特尔 2 天赋,锁血
                 surtr_t_2_interval = buff["value"]
 
+    # 再计算子职业特性 buff 加成
+    sub_profession_trait_buff_list = buff_list["sub_profession_trait_buff_list"]
+    for buff in sub_profession_trait_buff_list:
+        if buff["key"] == "atk_scale":
+            sub_profession_talent_atk_scale = atk_scale * buff["value"]
+
     # 计算普攻伤害
     basic_attack_damage = (character_attribute_info["atk"] + add_atk) * atk_scale \
-                          * talent_atk_scale * uniequip_atk_scale * damage_scale
+                          * talent_atk_scale * uniequip_atk_scale * damage_scale * sub_profession_talent_atk_scale
 
     # 计算离弦伤害
     if characterId == "char_340_shwaz" and skill_id == "skchr_shwaz_3":  # 黑 3 技能离弦 1 枪
@@ -124,6 +129,8 @@ async def calculate_character_damage(
             character_attribute_info["max_hp"] = character_attribute_info["max_hp"] + buff["value"]
         elif buff["key"] == "attack@surtr_s_2[critical].atk_scale":
             atk_scale = atk_scale * buff["value"]
+        elif buff["key"] == "attack_speed":
+            character_attribute_info["attack_speed"] = character_attribute_info["attack_speed"] + buff["value"]
 
     # 剔除暴击 buff 下的伤害倍率加成
     for buff in skill_buff_list:
@@ -146,6 +153,17 @@ async def calculate_character_damage(
         elif buff["key"] == "hit_interval":
             character_attribute_info["attack_time"] = buff["value"]
 
+    # 特殊处理弹药技能
+    if characterId in ["char_1013_chen2"]:
+        talent_buff_list = buff_list["talent_buff_list"]
+        for talent in talent_buff_list:
+            for buff in talent:
+                if buff["key"] == "spareshot_chen.prob":
+                    spareshot_chen_prob = buff["value"]
+                elif buff["key"] == "chen2_t_2[common].attack_speed":
+                    character_attribute_info["attack_speed"] = character_attribute_info["attack_speed"] \
+                                                               + buff["value"]
+
     # 特殊处理
     if characterId == "char_4055_bgsnow" and skill_id == "skchr_bgsnow_2":  # 鸿雪 2 技能造成 3 连击
         combo_attack_times += 3
@@ -153,7 +171,8 @@ async def calculate_character_damage(
     print(atk_scale)
     character_attribute_info["atk"] = add_atk + base_atk
     print(character_attribute_info)
-    final_atk_scale_without_crit = uniequip_atk_scale * talent_atk_scale * skill_atk_scale * skill_attack_atk_scale
+    final_atk_scale_without_crit = uniequip_atk_scale * talent_atk_scale * skill_atk_scale \
+                                   * skill_attack_atk_scale * sub_profession_talent_atk_scale
     if is_crit:
         final_atk_scale_with_crit = final_atk_scale_without_crit * atk_scale
     else:
@@ -214,6 +233,26 @@ async def calculate_character_damage(
         str_time_line = await get_time_line(default_simulation_time, frame_alignment_attack_interval, sp_cost,
                                             sp_increment, sp_type, frame_rate)
 
+        # 特殊处理弹药类技能伤害
+        if characterId in ["char_1013_chen2"]:
+            im.append("弹药类技能特殊处理\n")
+            str_time_line = ""
+            skill_buff_list = buff_list["skill_buff_list"]
+            attack_trigger_time = 0
+            prob_add_attack_trigger_time = 0
+            for buff in skill_buff_list:
+                if buff["key"] == "attack@trigger_time":  # 弹药总量
+                    attack_trigger_time = buff["value"]
+            if characterId == "char_1013_chen2":  # 天赋多计入 4 发弹药
+                prob_add_attack_trigger_time = 4
+                im.append("水陈天赋多计入 4 发弹药\n")
+            attack_time = attack_trigger_time / 2 + prob_add_attack_trigger_time  # 一次消耗 2 发弹药
+            attack_interval = int(frame_alignment_attack_interval)  # 帧对齐后的攻击间隔(帧)
+            hand_up_time = 12  # 抬手 12 帧
+            total_skill_duration = (attack_time * attack_interval + hand_up_time) / frame_rate  # 技能持续时间(秒)
+            im.append(f"技能持续时间为 {total_skill_duration} 秒\n")
+            damage = final_atk * (attack_time * 2) * damage_scale
+
         # 特殊处理史尔特尔的技能
         if characterId == "char_350_surtr" and skill_id == "skchr_surtr_3":
             max_hp = character_attribute_info["max_hp"]
@@ -254,6 +293,66 @@ async def calculate_character_damage(
         im.append(f"damage_scale为 {damage_scale}\n")
     im.append(f"总伤害为 {damage}")
     print(f"总伤害为 {damage}")
+
+    # 特殊处理黑键伤害计算
+    if characterId == "char_4046_ebnhlz":
+        character_attribute_info["atk"] = add_atk + base_atk
+        final_atk = character_attribute_info["atk"] * 1  # 黑键攻击力倍率为 1
+        if equip_id == "uniequip_002_ebnhlz":
+            default_combo_attack_times = 5  # 一模黑键连击次数为 4 + 1
+        else:
+            default_combo_attack_times = 4
+
+        # 获取黑键 1 天赋伤害倍率
+        talent_1_buff_list = buff_list["talent_buff_list"][0]
+        talent_1_atk_scale = 1
+        for buff in talent_1_buff_list:
+            if buff["key"] == "atk_scale":
+                talent_1_atk_scale = buff["value"]
+
+        # 获取黑键 2 天赋伤害倍率
+        talent_2_buff_list = buff_list["talent_buff_list"][1]
+        talent_2_atk_scale = 1
+        for buff in talent_2_buff_list:
+            if buff["key"] == "atk_scale":
+                talent_2_atk_scale = buff["value"]
+
+        talent_2_append_damage = final_atk * talent_2_atk_scale * total_attack_times
+
+        talent_scale_multiplier = 1
+        if skill_id == "skchr_ebnhlz_3":  # 黑键 3 技能对天赋 1 的攻击力倍率影响为 直接乘算
+            skill_buff_list = buff_list["skill_buff_list"]
+            for buff in skill_buff_list:
+                if buff["key"] == "talent_scale_multiplier":
+                    talent_scale_multiplier = buff["value"]
+        talent_1_scale_multiplied = talent_1_atk_scale * talent_scale_multiplier
+
+        # 假如攒满 3 个球再攻击
+        # 则此次伤害为 3 个球的伤害加上刚转好的 1 个球的伤害
+        # 再加上天赋 2 的伤害
+        mata_full_damage = final_atk * talent_1_scale_multiplied * default_combo_attack_times + talent_2_append_damage
+
+        # 假设攻击模式为 攒满球 + 1 次普攻 循环
+        single_attack_damage = mata_full_damage + final_atk * talent_2_atk_scale * 1
+        default_simulation_time = total_duration_frame
+
+        str_time_line = await get_ebnhlz_third_skill_time_line(
+            default_simulation_time, frame_alignment_attack_interval,
+            uniequip_id)
+
+        _attack_time = str.count(str_time_line, "+-")
+
+        damage = single_attack_damage * _attack_time
+
+        im = f"计算{characterId}的{skill_id}技能带{equip_id}模组的伤害\n" \
+             f"最终攻击力 (攻击力 * 倍率) 为 ({base_atk} + {add_atk}) * 1 = {final_atk}\n" \
+             f"最终攻击间隔: {final_attack_time_in_frame} 帧, {final_attack_time} 秒" \
+             f"帧对齐后的攻击间隔: {frame_alignment_attack_interval} 帧, {frame_alignment_attack_time} 秒\n" \
+             f"攻击模式为攒满球再加一次普攻\n" \
+             f"时间轴为 {str_time_line}\n" \
+             f"满蓄力+普攻伤害 {single_attack_damage}\n" \
+             f"攻击次数为 {_attack_time} 次\n" \
+             f"总伤害为 {damage}"
 
     return im
 
@@ -384,3 +483,64 @@ async def deal_with_surtr_third_skill(
         loss_time = loss_time + interval
 
     return loss_time, blood_lock_time, attack_interval
+
+
+async def get_ebnhlz_third_skill_time_line(
+        default_simulation_time: int, frame_alignment_attack_interval: Decimal, uniequip_id: str
+) -> str:
+    time_line = []
+
+    # 总帧数
+    total_duration_frame = default_simulation_time
+    # 攻击间隔 (帧)
+    attack_interval = frame_alignment_attack_interval
+    print("attack_interval", attack_interval)
+    # 技能前摇
+    skill_forward_frame = 10
+    frame = 1
+    timer = 0  # 初始化计时器
+    # 攒球计数器
+    ball_save_number = 0
+    if uniequip_id == "uniequip_002_ebnhlz":
+        max_ball_save_number = 4
+    else:
+        max_ball_save_number = 3
+    while frame <= total_duration_frame:
+        # 默认第一帧开技能
+        is_first_skill_spine = True if frame == 1 else False
+        if is_first_skill_spine:
+            frame = frame + skill_forward_frame
+            time_line.append("+")  # "+"表示技能
+            frame = frame + attack_interval
+            time_line.append("-")  # "-"表示普攻
+        while 1:
+            if frame <= total_duration_frame:
+                basic_attack_number = 1  # 初始化普攻计数器
+                skill_attack_number = 1  # 初始化技能计数器
+                # 进行一次攒球
+                timer += attack_interval
+                frame += attack_interval
+                # 攒球计数器 +1
+                ball_save_number += 1
+                time_line.append("0")  # "0"表示攒球
+                # 判断是否达到技能所需 sp
+                if ball_save_number >= max_ball_save_number:
+                    # 进行一次技能攻击
+                    frame += attack_interval
+                    # 技能计数器 +1
+                    skill_attack_number += 1
+                    time_line.append("+")  # "+"表示技能
+                    # 进行一次普攻
+                    frame += attack_interval
+                    # 普攻计数器 +1
+                    basic_attack_number += 1
+                    time_line.append("-")  # "-"表示普攻
+                    # 计时器清零
+                    ball_save_number = 0
+            else:
+                break
+
+    str_time_line = "".join(time_line)
+    im = str_time_line
+
+    return im

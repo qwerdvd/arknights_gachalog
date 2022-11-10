@@ -56,9 +56,16 @@ async def get_buff_list(characterId: str, is_uniequip: bool, uniequip_id: str, s
     # print(skill_buff_list)
     buff_list["skill_buff_list"] = skill_buff_list
 
-    # 合并 buff
-    # buff_list = uniequip_buff_list + talent_buff_list + skill_buff_list
-    # print(buff_list)
+    # 子职业特性 buff
+    sub_profession_trait_buff_list = []
+    with open(f'src/plugins/ark/tool/data/basic_character_info/{characterId}.json', encoding='UTF-8') as f:
+        character_info = json.load(f)
+    sub_profession_id = character_info["subProfessionId"]
+    if character_info["trait"] is not None:
+        for i in range(len(character_info["trait"]["candidates"][0]["blackboard"])):
+            sub_profession_trait = character_info["trait"]["candidates"][0]["blackboard"][i]
+            sub_profession_trait_buff_list.append(sub_profession_trait)
+    buff_list["sub_profession_trait_buff_list"] = sub_profession_trait_buff_list
 
     return buff_list
 
