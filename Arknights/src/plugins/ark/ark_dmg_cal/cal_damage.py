@@ -116,6 +116,8 @@ async def calculate_character_damage(
             damage_scale = damage_scale * buff["value"]
         elif buff["key"] == "max_hp":
             character_attribute_info["max_hp"] = character_attribute_info["max_hp"] + buff["value"]
+        elif buff["key"] == "attack@surtr_s_2[critical].atk_scale":
+            atk_scale = atk_scale * buff["value"]
 
     # 剔除暴击 buff 下的伤害倍率加成
     for buff in skill_buff_list:
@@ -130,7 +132,6 @@ async def calculate_character_damage(
             is_crit = True
         elif buff["key"] == "atk_scale":
             atk_scale = buff["value"]
-
 
     # 计算覆写的天赋
     for buff in skill_buff_list:
@@ -147,7 +148,10 @@ async def calculate_character_damage(
     character_attribute_info["atk"] = add_atk + base_atk
     print(character_attribute_info)
     final_atk_scale_without_crit = uniequip_atk_scale * talent_atk_scale * skill_atk_scale * skill_attack_atk_scale
-    final_atk_scale_with_crit = final_atk_scale_without_crit * atk_scale
+    if is_crit:
+        final_atk_scale_with_crit = final_atk_scale_without_crit * atk_scale
+    else:
+        final_atk_scale_with_crit = final_atk_scale_without_crit
     final_atk = character_attribute_info["atk"] * final_atk_scale_with_crit
     print(f"最终攻击力 (攻击力 * 倍率) 为 ({base_atk} + {add_atk}) * {final_atk_scale_with_crit} = {final_atk}")
     raw_attack_time = character_attribute_info["attack_time"]
@@ -183,7 +187,7 @@ async def calculate_character_damage(
     time_line = []
     if combo_attack_times == 0:
         combo_attack_times = 1
-    if skill_duration != -1:
+    if skill_duration > 0:
         total_duration_frame = skill_duration * frame_rate
         print(f"技能总持续帧数为 {total_duration_frame} 帧")
         attack_times = (total_duration_frame - default_skill_forward) / int(frame_alignment_attack_interval)
@@ -192,7 +196,7 @@ async def calculate_character_damage(
             Decimal(attack_times).quantize(Decimal("0"), rounding=decimal.ROUND_CEILING)) * combo_attack_times
         print(f"总攻击次数为 {total_attack_times} 次")
         damage = final_atk * total_attack_times * damage_scale + off_string_damage
-    elif skill_duration == -1:  # -1 表示为永续技能或者是瞬发次数技能
+    elif skill_duration == -1:  # -1 表示为永续技能或者是次数技能
         # 取 120s 为模拟时间
         default_simulation_time = 120
         # 总帧数
@@ -306,6 +310,8 @@ async def calculate_character_damage(
         basic_attack_number = str_time_line.count("-")
         skill_attack_number = str_time_line.count("+")
         # attack_times = time_line.count("+") + time_line.count("-")
+    elif skill_duration == 0:  # 表示瞬发技能
+        damage = final_atk
 
     # damage = final_atk * total_attack_times * damage_scale + off_string_damage
     print(f"总伤害为 {damage}")
