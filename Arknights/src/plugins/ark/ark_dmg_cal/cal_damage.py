@@ -61,6 +61,7 @@ async def calculate_character_damage(
 
     off_string_damage = 0
     damage = 0
+    surtr_t_2_interval = 0
     # 先计算模组 buff 加成
     uniequip_buff_list = buff_list["uniequip_buff_list"]
     for buff in uniequip_buff_list:
@@ -205,94 +206,20 @@ async def calculate_character_damage(
         print(f"总攻击次数为 {total_attack_times} 次")
         damage = final_atk * total_attack_times * damage_scale + off_string_damage
     elif skill_duration == -1:  # -1 表示为永续技能或者是次数技能
-        # 取 120s 为模拟时间
         default_simulation_time = 120
         im.append(f"技能持续时间为永久, 模拟时间为 {default_simulation_time} 秒\n")
-        # 总帧数
         total_duration_frame = default_simulation_time * frame_rate
-        # im.append(f"在模拟的情况下技能总持续帧数为 {total_duration_frame} 帧\n")
-        print(f"技能总持续帧数为 {total_duration_frame} 帧")
-        # 默认取技能动画为 48 帧
-        default_spine_duration_frame = 48
-        # 默认取攻击动画为 4 帧
-        default_attack_frame = 4
-        # 攻击间隔 (帧)
-        attack_interval = frame_alignment_attack_interval
-        # 达到技能所需 sp 的帧数
-        reach_sp_frame = sp_cost / sp_increment * frame_rate
-        frame = 1
-        timer = 0  # 初始化计时器
-        while frame <= total_duration_frame:
-            # 默认第一帧开技能
-            is_first_skill_spine = True if frame == 1 else False
-            if is_first_skill_spine:
-                frame = frame + default_spine_duration_frame
-                time_line.append("+")  # "+"表示技能
-            while 1:
-                if frame <= total_duration_frame:
-                    basic_attack_number = 0  # 初始化普攻计数器
-                    skill_attack_number = 1  # 初始化技能计数器
-                    # 进行一次普攻
-                    # timer += attack_interval + default_attack_frame
-                    # frame += attack_interval + default_attack_frame
-                    timer += attack_interval
-                    frame += attack_interval
-                    # 普攻计数器 +1
-                    basic_attack_number += 1
-                    time_line.append("-")  # "-"表示普攻
-                    # 对 spType 进行判断
-                    if sp_type == 1:  # 1 表示为自动回复技能
-                        # 判断是否达到技能所需 sp
-                        if timer >= reach_sp_frame:
-                            # 进行一次技能攻击
-                            frame += attack_interval
-                            # 技能计数器 +1
-                            skill_attack_number += 1
-                            time_line.append("+")  # "+"表示技能
-                            # 计时器清零
-                            timer = 0
-                    elif sp_type == 2:  # 2 表示为攻击回复技能
-                        # 如果普攻计数器达到 3 次
-                        if basic_attack_number == 3:
-                            # 进行一次技能攻击
-                            timer += attack_interval
-                            # 技能计数器 +1
-                            skill_attack_number += 1
-                            time_line.append("+")  # "+"表示技能
-                            # 普攻计数器清零
-                            basic_attack_number = 0
-                else:
-                    break
+        im.append(f"在模拟的情况下技能总持续帧数为 {total_duration_frame} 帧\n")
+        str_time_line = ""
+        str_time_line = await get_time_line(default_simulation_time, frame_alignment_attack_interval, sp_cost,
+                                            sp_increment, sp_type, frame_rate)
 
-        # 特殊判断
+        # 特殊处理史尔特尔的技能
         if characterId == "char_350_surtr" and skill_id == "skchr_surtr_3":
-            time_line = []
-            # 史尔特尔的 3 技能需要判断生命流失
             max_hp = character_attribute_info["max_hp"]
-            # 锁血时间
-            blood_lock_time = surtr_t_2_interval * frame_rate
-            for buff in skill_buff_list:
-                if buff["key"] == "interval":  # 生命流失结算间隔
-                    interval = buff["value"] * frame_rate
-                elif buff["key"] == "hp_ratio":  # 生命流失最大比例
-                    hp_ratio = buff["value"]
-                elif buff["key"] == "duration":  # 生命流失达到最大比例时间
-                    duration = buff["value"] * frame_rate
-            # 计算生命流失过程
-            current_hp = max_hp
-            loss_time = 0
-            init_loss_hp = 0
-            timer = 0
-            while current_hp > 0:
-                timer += 1
-                # 计算每 0.2 * 30 = 6 帧的生命流失
-                hp_loss = ((max_hp * hp_ratio) / (duration * frame_rate)) * interval \
-                          * timer * interval * timer / 2 - init_loss_hp
-                # 计算剩余血量
-                current_hp = current_hp - hp_loss
-                init_loss_hp = init_loss_hp + hp_loss
-                # 计算生命值 > 0 的情况下的时间
-                loss_time = loss_time + interval
+            loss_time, blood_lock_time, attack_interval = \
+                await deal_with_surtr_third_skill(max_hp, surtr_t_2_interval, frame_rate,
+                                                  frame_alignment_attack_interval, skill_buff_list)
             im.append(f"损失100%血量共耗时 {loss_time} 帧 {loss_time / frame_rate} 秒\n")
             # 计算总共输出时间
             total_output_time = loss_time + blood_lock_time
@@ -302,18 +229,24 @@ async def calculate_character_damage(
                 Decimal(total_output_time / float(attack_interval)).quantize(Decimal("0"),
                                                                              rounding=decimal.ROUND_CEILING))
             im.append(f"总输出次数为 {total_output_times} 次\n")
+            str_time_line = ""
             damage = final_atk * total_output_times * damage_scale
 
-        if time_line:
-            str_time_line = "".join(time_line)
-            im.append(f"技能时间线为 {str_time_line}\n")
-            print(time_line)
+        if str_time_line != "":
+            print(str_time_line)
+            im.append(f"时间轴为 {str_time_line}\n")
             basic_attack_number = str_time_line.count("-")
             skill_attack_number = str_time_line.count("+")
             if basic_attack_number != 0:
                 im.append(f"普攻次数为 {basic_attack_number} 次\n")
             if skill_attack_number != 0:
-                im.append(f"技能次数为{combo_attack_times}连击 * {skill_attack_number} = {skill_attack_number * combo_attack_times} 次\n")
+                im.append(
+                    f"技能次数为 {combo_attack_times}连击 * {skill_attack_number} = {skill_attack_number * combo_attack_times} 次\n")
+            basic_attack_number = basic_attack_damage * basic_attack_number
+            skill_attack_number = final_atk * total_attack_times * skill_attack_number * combo_attack_times
+            damage = basic_attack_number + skill_attack_number
+            im.append(f"普攻伤害为 {basic_attack_number}\n")
+            im.append(f"技能伤害为 {skill_attack_number}\n")
     elif skill_duration == 0:  # 表示瞬发技能
         damage = final_atk
 
@@ -347,3 +280,107 @@ async def get_skill_basic_info(
     else:
         info = 0
     return info
+
+
+async def get_time_line(
+        default_simulation_time: int, frame_alignment_attack_interval: Decimal, sp_cost: int, sp_increment: int,
+        sp_type: int, frame_rate: int
+) -> str:
+    time_line = []
+
+    # 总帧数
+    total_duration_frame = default_simulation_time * frame_rate
+    # 默认取技能动画为 48 帧
+    default_spine_duration_frame = 48
+    # 默认取攻击动画为 4 帧
+    default_attack_frame = 4
+    # 攻击间隔 (帧)
+    attack_interval = frame_alignment_attack_interval
+    # 达到技能所需 sp 的帧数
+    reach_sp_frame = sp_cost / sp_increment * frame_rate
+    frame = 1
+    timer = 0  # 初始化计时器
+    while frame <= total_duration_frame:
+        # 默认第一帧开技能
+        is_first_skill_spine = True if frame == 1 else False
+        if is_first_skill_spine:
+            frame = frame + default_spine_duration_frame
+            time_line.append("+")  # "+"表示技能
+        while 1:
+            if frame <= total_duration_frame:
+                basic_attack_number = 0  # 初始化普攻计数器
+                skill_attack_number = 1  # 初始化技能计数器
+                # 进行一次普攻
+                # timer += attack_interval + default_attack_frame
+                # frame += attack_interval + default_attack_frame
+                timer += attack_interval
+                frame += attack_interval
+                # 普攻计数器 +1
+                basic_attack_number += 1
+                time_line.append("-")  # "-"表示普攻
+                # 对 spType 进行判断
+                if sp_type == 1:  # 1 表示为自动回复技能
+                    # 判断是否达到技能所需 sp
+                    if timer >= reach_sp_frame:
+                        # 进行一次技能攻击
+                        frame += attack_interval
+                        # 技能计数器 +1
+                        skill_attack_number += 1
+                        time_line.append("+")  # "+"表示技能
+                        # 计时器清零
+                        timer = 0
+                elif sp_type == 2:  # 2 表示为攻击回复技能
+                    # 如果普攻计数器达到 3 次
+                    if basic_attack_number == 3:
+                        # 进行一次技能攻击
+                        timer += attack_interval
+                        # 技能计数器 +1
+                        skill_attack_number += 1
+                        time_line.append("+")  # "+"表示技能
+                        # 普攻计数器清零
+                        basic_attack_number = 0
+            else:
+                break
+    str_time_line = "".join(time_line)
+    im = str_time_line
+
+    return im
+
+
+async def deal_with_surtr_third_skill(
+        max_hp: int, surtr_t_2_interval: int, frame_rate: int, frame_alignment_attack_interval: Decimal,
+        skill_buff_list: list
+):
+    hp_ratio = 0
+    duration = 0
+    interval = 0
+
+    blood_lock_time = surtr_t_2_interval * frame_rate
+    attack_interval = frame_alignment_attack_interval
+
+    for buff in skill_buff_list:
+        if buff["key"] == "interval":  # 生命流失结算间隔
+            interval = buff["value"] * frame_rate
+        elif buff["key"] == "hp_ratio":  # 生命流失最大比例
+            hp_ratio = buff["value"]
+        elif buff["key"] == "duration":  # 生命流失达到最大比例时间
+            duration = buff["value"] * frame_rate
+
+    # 计算生命流失过程
+    current_hp = max_hp
+    loss_time = 0
+    init_loss_hp = 0
+    timer = 0
+
+    while current_hp > 0:
+        timer += 1
+        # 计算每 0.2 * 30 = 6 帧的生命流失
+        hp_loss = ((max_hp * hp_ratio) / (duration * frame_rate)) * interval \
+                  * timer * interval * timer / 2 - init_loss_hp
+        # 计算剩余血量
+        current_hp = current_hp - hp_loss
+        init_loss_hp = init_loss_hp + hp_loss
+        # 计算生命值 > 0 的情况下的时间
+        loss_time = loss_time + interval
+
+    return loss_time, blood_lock_time, attack_interval
