@@ -22,11 +22,11 @@ async def calculate_character_damage(
             uniequip_id = 1
         elif uniequip_id == '二模':
             uniequip_id = 2
-        equip_id = await characterId_to_uniequipId(characterId, uniequip_id)
+        uniequip_id = await characterId_to_uniequipId(characterId, uniequip_id)
     else:
-        equip_id = None
+        uniequip_id = None
 
-    im.append(f"计算{characterId}的{skill_id}技能带{equip_id}模组的伤害\n")
+    im.append(f"计算{characterId}的{skill_id}技能带{uniequip_id}模组的伤害\n")
 
     character_attribute_info = {
         'max_hp': character_info['base_hp'],
@@ -296,44 +296,9 @@ async def calculate_character_damage(
 
     # 特殊处理黑键伤害计算
     if characterId == "char_4046_ebnhlz":
-        character_attribute_info["atk"] = add_atk + base_atk
-        final_atk = character_attribute_info["atk"] * 1  # 黑键攻击力倍率为 1
-        if equip_id == "uniequip_002_ebnhlz":
-            default_combo_attack_times = 5  # 一模黑键连击次数为 4 + 1
-        else:
-            default_combo_attack_times = 4
+        single_attack_damage, mata_full_damage = await deal_with_ebnhlz_skill_damage(
+            character_attribute_info, add_atk, base_atk, uniequip_id, buff_list, total_attack_times, skill_id)
 
-        # 获取黑键 1 天赋伤害倍率
-        talent_1_buff_list = buff_list["talent_buff_list"][0]
-        talent_1_atk_scale = 1
-        for buff in talent_1_buff_list:
-            if buff["key"] == "atk_scale":
-                talent_1_atk_scale = buff["value"]
-
-        # 获取黑键 2 天赋伤害倍率
-        talent_2_buff_list = buff_list["talent_buff_list"][1]
-        talent_2_atk_scale = 1
-        for buff in talent_2_buff_list:
-            if buff["key"] == "atk_scale":
-                talent_2_atk_scale = buff["value"]
-
-        talent_2_append_damage = final_atk * talent_2_atk_scale * total_attack_times
-
-        talent_scale_multiplier = 1
-        if skill_id == "skchr_ebnhlz_3":  # 黑键 3 技能对天赋 1 的攻击力倍率影响为 直接乘算
-            skill_buff_list = buff_list["skill_buff_list"]
-            for buff in skill_buff_list:
-                if buff["key"] == "talent_scale_multiplier":
-                    talent_scale_multiplier = buff["value"]
-        talent_1_scale_multiplied = talent_1_atk_scale * talent_scale_multiplier
-
-        # 假如攒满 3 个球再攻击
-        # 则此次伤害为 3 个球的伤害加上刚转好的 1 个球的伤害
-        # 再加上天赋 2 的伤害
-        mata_full_damage = final_atk * talent_1_scale_multiplied * default_combo_attack_times + talent_2_append_damage
-
-        # 假设攻击模式为 攒满球 + 1 次普攻 循环
-        single_attack_damage = mata_full_damage + final_atk * talent_2_atk_scale * 1
         default_simulation_time = total_duration_frame
 
         str_time_line = await get_ebnhlz_third_skill_time_line(
@@ -344,11 +309,12 @@ async def calculate_character_damage(
 
         damage = single_attack_damage * _attack_time
 
-        im = f"计算{characterId}的{skill_id}技能带{equip_id}模组的伤害\n" \
+        im = f"计算{characterId}的{skill_id}技能带{uniequip_id}模组的伤害\n" \
              f"最终攻击力 (攻击力 * 倍率) 为 ({base_atk} + {add_atk}) * 1 = {final_atk}\n" \
              f"最终攻击间隔: {final_attack_time_in_frame} 帧, {final_attack_time} 秒" \
              f"帧对齐后的攻击间隔: {frame_alignment_attack_interval} 帧, {frame_alignment_attack_time} 秒\n" \
              f"攻击模式为攒满球再加一次普攻\n" \
+             f"攒满球的伤害为: {mata_full_damage}\n" \
              f"时间轴为 {str_time_line}\n" \
              f"满蓄力+普攻伤害 {single_attack_damage}\n" \
              f"攻击次数为 {_attack_time} 次\n" \
@@ -544,3 +510,49 @@ async def get_ebnhlz_third_skill_time_line(
     im = str_time_line
 
     return im
+
+
+async def deal_with_ebnhlz_skill_damage(
+        character_attribute_info: dict, add_atk: int, base_atk: int, uniequip_id: str,
+        buff_list: dict, total_attack_times: int, skill_id: str
+):
+    character_attribute_info["atk"] = add_atk + base_atk
+    final_atk = character_attribute_info["atk"] * 1  # 黑键攻击力倍率为 1
+    if uniequip_id == "uniequip_002_ebnhlz":
+        default_combo_attack_times = 5  # 一模黑键连击次数为 4 + 1
+    else:
+        default_combo_attack_times = 4
+
+    # 获取黑键 1 天赋伤害倍率
+    talent_1_buff_list = buff_list["talent_buff_list"][0]
+    talent_1_atk_scale = 1
+    for buff in talent_1_buff_list:
+        if buff["key"] == "atk_scale":
+            talent_1_atk_scale = buff["value"]
+
+    # 获取黑键 2 天赋伤害倍率
+    talent_2_buff_list = buff_list["talent_buff_list"][1]
+    talent_2_atk_scale = 1
+    for buff in talent_2_buff_list:
+        if buff["key"] == "atk_scale":
+            talent_2_atk_scale = buff["value"]
+
+    talent_2_append_damage = final_atk * talent_2_atk_scale * total_attack_times
+
+    talent_scale_multiplier = 1
+    if skill_id == "skchr_ebnhlz_3":  # 黑键 3 技能对天赋 1 的攻击力倍率影响为 直接乘算
+        skill_buff_list = buff_list["skill_buff_list"]
+        for buff in skill_buff_list:
+            if buff["key"] == "talent_scale_multiplier":
+                talent_scale_multiplier = buff["value"]
+    talent_1_scale_multiplied = talent_1_atk_scale * talent_scale_multiplier
+
+    # 假如攒满 3 个球再攻击
+    # 则此次伤害为 3 个球的伤害加上刚转好的 1 个球的伤害
+    # 再加上天赋 2 的伤害
+    mata_full_damage = final_atk * talent_1_scale_multiplied * default_combo_attack_times + talent_2_append_damage
+
+    # 假设攻击模式为 攒满球 + 1 次普攻 循环
+    single_attack_damage = mata_full_damage + final_atk * talent_2_atk_scale * 1
+
+    return single_attack_damage, mata_full_damage
