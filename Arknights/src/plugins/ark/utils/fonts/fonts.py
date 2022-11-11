@@ -2,8 +2,8 @@ from pathlib import Path
 
 from PIL import ImageFont
 
-FONT_ORIGIN_PATH = Path(__file__).parent / 'origin.ttf'
-YS_FONT_ORIGIN_PATH = Path(__file__).parent / 'yuanshen_origin.ttf'
+FONT_ORIGIN_PATH = Path(__file__).parent / "origin.ttf"
+YS_FONT_ORIGIN_PATH = Path(__file__).parent / "yuanshen_origin.ttf"
 
 
 def font_origin(size: int) -> ImageFont.FreeTypeFont:

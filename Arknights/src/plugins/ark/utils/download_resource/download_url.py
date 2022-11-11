@@ -33,7 +33,7 @@ PATH_MAP = {
 
 
 async def download_file(
-        sess: ClientSession, url: str, path: int, name: str
+    sess: ClientSession, url: str, path: int, name: str
 ) -> Optional[Tuple[str, int, str]]:
     """
     :说明:

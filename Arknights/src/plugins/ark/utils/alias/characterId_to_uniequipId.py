@@ -3,10 +3,12 @@ from pathlib import Path
 
 from ...version import Arknights_version
 
-mata_path = f'C:\\Users\\qwerdvd\\PycharmProjects\\pythonProject\\Arknights\\src\\plugins\\ark\\tool\\data\\map' \
-            f'\\characterId_to_uniequipId_mapping_{Arknights_version}.json '
+mata_path = (
+    f"C:\\Users\\qwerdvd\\PycharmProjects\\pythonProject\\Arknights\\src\\plugins\\ark\\tool\\data\\map"
+    f"\\characterId_to_uniequipId_mapping_{Arknights_version}.json "
+)
 
-with open(mata_path, encoding='utf8') as fp:
+with open(mata_path, encoding="utf8") as fp:
     characterId_to_uniequipId_data = json.load(fp)
 
 

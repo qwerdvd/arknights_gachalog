@@ -16,7 +16,7 @@ class CookiesDAL:
     async def get_user_data(self, uid: str) -> Optional[NewCookiesTable]:
         try:
             await self.db_session.execute(
-                ('ALTER TABLE NewCookiesTable ' 'ADD COLUMN token TEXT')  # type: ignore
+                ("ALTER TABLE NewCookiesTable " "ADD COLUMN token TEXT")  # type: ignore
             )
         except Exception:
             pass
@@ -48,7 +48,7 @@ class CookiesDAL:
         if data:
             return data.Cookies
         else:
-            return '该用户没有绑定过Cookies噢~'
+            return "该用户没有绑定过Cookies噢~"
 
     async def get_user_ck_valid(self, uid: str) -> bool:
         data = await self.get_user_data(uid)
@@ -73,7 +73,7 @@ class CookiesDAL:
             # 有可能返回None
             return data.token
         else:
-            return '该用户没有绑定过token噢~'
+            return "该用户没有绑定过token噢~"
 
     async def get_user_channelMasterId(self, uid: str) -> Optional[str]:
         """
@@ -88,11 +88,11 @@ class CookiesDAL:
         logger.info(data)
         if data:
             # 有可能返回None
-            logger.info(f'获取到的channelMasterId为{data.ChannelMasterId}')
+            logger.info(f"获取到的channelMasterId为{data.ChannelMasterId}")
             data_raw = str(data.ChannelMasterId)
             return data_raw
         else:
-            return '该用户没有绑定过channelMasterId噢~'
+            return "该用户没有绑定过channelMasterId噢~"
 
     async def user_exists(self, uid: str) -> bool:
         data = await self.get_user_data(uid)
@@ -147,9 +147,9 @@ class CookiesDAL:
                 .values(token=token)
             )
             await self.db_session.execute(sql)
-            msg = f'UID{uid}账户的token绑定成功!'
+            msg = f"UID{uid}账户的token绑定成功!"
         else:
-            msg = f'UID{uid}的token绑定失败\n请先绑定Cookies~'
+            msg = f"UID{uid}的token绑定失败\n请先绑定Cookies~"
         await self.db_session.flush()
         return msg
 
@@ -170,9 +170,9 @@ class CookiesDAL:
                 .values(ChannelMasterId=channelMasterId)
             )
             await self.db_session.execute(sql)
-            msg = f'UID{uid}账户的channelMasterId绑定成功!'
+            msg = f"UID{uid}账户的channelMasterId绑定成功!"
         else:
-            msg = f'UID{uid}的channelMasterId绑定失败\n请先绑定Cookies~'
+            msg = f"UID{uid}的channelMasterId绑定失败\n请先绑定Cookies~"
         await self.db_session.flush()
         return msg
 
@@ -186,9 +186,7 @@ class CookiesDAL:
           * msg (str): 更新文字信息。
         """
         if await self.user_exists(uid):
-            sql = delete(NewCookiesTable).where(
-                NewCookiesTable.UID == int(uid)
-            )
+            sql = delete(NewCookiesTable).where(NewCookiesTable.UID == int(uid))
             await self.db_session.execute(sql)
             return True
         else:
@@ -197,7 +195,7 @@ class CookiesDAL:
     async def delete_cache(self):
         sql = (
             update(NewCookiesTable)
-            .where(NewCookiesTable.Extra == 'limit30')
+            .where(NewCookiesTable.Extra == "limit30")
             .values(Extra=None)
         )
         empty_sql = delete(CookiesCache)

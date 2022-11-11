@@ -15,12 +15,12 @@ from httpx import get
 # WEAPON_AFFIX_PATH = TEXT2D_PATH / 'weapon_affix'
 # LEVEL_PATH = TEXT2D_PATH / 'level'
 
-BG_PATH = Path(__file__).parent / 'bg'
-TEXT_PATH = Path(__file__).parent / 'texture2d'
-ring_pic = Image.open(TEXT_PATH / 'ring.png')
-mask_pic = Image.open(TEXT_PATH / 'mask.png')
-NM_BG_PATH = BG_PATH / 'nm_bg'
-SP_BG_PATH = BG_PATH / 'sp_bg'
+BG_PATH = Path(__file__).parent / "bg"
+TEXT_PATH = Path(__file__).parent / "texture2d"
+ring_pic = Image.open(TEXT_PATH / "ring.png")
+mask_pic = Image.open(TEXT_PATH / "mask.png")
+NM_BG_PATH = BG_PATH / "nm_bg"
+SP_BG_PATH = BG_PATH / "sp_bg"
 
 
 # async def get_weapon_affix_pic(affix: int) -> Image.Image:
@@ -44,27 +44,27 @@ SP_BG_PATH = BG_PATH / 'sp_bg'
 
 
 async def get_qq_avatar(
-        qid: Optional[Union[int, str]] = None, avatar_url: Optional[str] = None
+    qid: Optional[Union[int, str]] = None, avatar_url: Optional[str] = None
 ) -> Image.Image:
     if qid:
-        avatar_url = f'http://q1.qlogo.cn/g?b=qq&nk={qid}&s=640'
+        avatar_url = f"http://q1.qlogo.cn/g?b=qq&nk={qid}&s=640"
     elif avatar_url is None:
-        avatar_url = 'https://q1.qlogo.cn/g?b=qq&nk=3399214199&s=640'
-    char_pic = Image.open(BytesIO(get(avatar_url).content)).convert('RGBA')
+        avatar_url = "https://q1.qlogo.cn/g?b=qq&nk=3399214199&s=640"
+    char_pic = Image.open(BytesIO(get(avatar_url).content)).convert("RGBA")
     return char_pic
 
 
 async def draw_pic_with_ring(
-        pic: Image.Image,
-        size: int,
-        bg_color: Optional[Tuple[int, int, int]] = None,
+    pic: Image.Image,
+    size: int,
+    bg_color: Optional[Tuple[int, int, int]] = None,
 ):
-    img = Image.new('RGBA', (size, size))
+    img = Image.new("RGBA", (size, size))
     mask = mask_pic.resize((size, size))
     ring = ring_pic.resize((size, size))
     resize_pic = crop_center_img(pic, size, size)
     if bg_color:
-        img_color = Image.new('RGBA', (size, size), bg_color)
+        img_color = Image.new("RGBA", (size, size), bg_color)
         img_color.paste(resize_pic, (0, 0), resize_pic)
         img.paste(img_color, (0, 0), mask)
     else:
@@ -73,13 +73,11 @@ async def draw_pic_with_ring(
     return img
 
 
-def crop_center_img(
-        img: Image.Image, based_w: int, based_h: int
-) -> Image.Image:
+def crop_center_img(img: Image.Image, based_w: int, based_h: int) -> Image.Image:
     # 确定图片的长宽
-    based_scale = '%.3f' % (based_w / based_h)
+    based_scale = "%.3f" % (based_w / based_h)
     w, h = img.size
-    scale_f = '%.3f' % (w / h)
+    scale_f = "%.3f" % (w / h)
     new_w = math.ceil(based_h * float(scale_f))
     new_h = math.ceil(based_w / float(scale_f))
     if scale_f > based_scale:
@@ -99,33 +97,33 @@ def crop_center_img(
 
 
 async def get_color_bg(
-        based_w: int, based_h: int, bg: Optional[str] = None
+    based_w: int, based_h: int, bg: Optional[str] = None
 ) -> Image.Image:
-    image = ''
+    image = ""
     if bg:
-        path = SP_BG_PATH / f'{bg}.jpg'
+        path = SP_BG_PATH / f"{bg}.jpg"
         if path.exists():
             image = Image.open(path)
     CI_img = CustomizeImage(image, based_w, based_h)
     img = CI_img.bg_img
     color = CI_img.bg_color
-    color_mask = Image.new('RGBA', (based_w, based_h), color)
+    color_mask = Image.new("RGBA", (based_w, based_h), color)
     # enka_mask = Image.open(TEXT2D_PATH / 'mask.png').resize((based_w, based_h))
     # img.paste(color_mask, (0, 0), enka_mask)
     return img
 
 
 async def get_simple_bg(
-        based_w: int, based_h: int, image: Union[str, None, Image.Image] = None
+    based_w: int, based_h: int, image: Union[str, None, Image.Image] = None
 ) -> Image.Image:
     if image:
         if isinstance(image, str):
-            edit_bg = Image.open(BytesIO(get(image).content)).convert('RGBA')
+            edit_bg = Image.open(BytesIO(get(image).content)).convert("RGBA")
         elif isinstance(image, Image.Image):
-            edit_bg = image.convert('RGBA')
+            edit_bg = image.convert("RGBA")
     else:
         bg_path = random.choice(list(NM_BG_PATH.iterdir()))
-        edit_bg = Image.open(bg_path).convert('RGBA')
+        edit_bg = Image.open(bg_path).convert("RGBA")
 
     # 确定图片的长宽
     bg_img = crop_center_img(edit_bg, based_w, based_h)
@@ -134,7 +132,7 @@ async def get_simple_bg(
 
 class CustomizeImage:
     def __init__(
-            self, image: Union[str, Image.Image], based_w: int, based_h: int
+        self, image: Union[str, Image.Image], based_w: int, based_h: int
     ) -> None:
 
         self.bg_img = self.get_image(image, based_w, based_h)
@@ -147,16 +145,16 @@ class CustomizeImage:
 
     @staticmethod
     def get_image(
-            image: Union[str, Image.Image], based_w: int, based_h: int
+        image: Union[str, Image.Image], based_w: int, based_h: int
     ) -> Image.Image:
         # 获取背景图片
         if isinstance(image, Image.Image):
             edit_bg = image
         elif image:
-            edit_bg = Image.open(BytesIO(get(image).content)).convert('RGBA')
+            edit_bg = Image.open(BytesIO(get(image).content)).convert("RGBA")
         else:
             bg_path = random.choice(list(NM_BG_PATH.iterdir()))
-            edit_bg = Image.open(bg_path).convert('RGBA')
+            edit_bg = Image.open(bg_path).convert("RGBA")
 
         # 确定图片的长宽
         bg_img = crop_center_img(edit_bg, based_w, based_h)
@@ -172,7 +170,7 @@ class CustomizeImage:
 
     @staticmethod
     def get_bg_color(
-            edit_bg: Image.Image, is_light: Optional[bool] = False
+        edit_bg: Image.Image, is_light: Optional[bool] = False
     ) -> Tuple[int, int, int]:
         # 获取背景主色
         color = 8
@@ -184,7 +182,7 @@ class CustomizeImage:
             based_light = 120
         temp = 9999
         for i in range(0, color):
-            bg = tuple(q.getpalette()[i * 3: (i * 3) + 3])  # type: ignore
+            bg = tuple(q.getpalette()[i * 3 : (i * 3) + 3])  # type: ignore
             light_value = bg[0] * 0.3 + bg[1] * 0.6 + bg[2] * 0.1
             if abs(light_value - based_light) < temp:
                 bg_color = bg
@@ -217,9 +215,7 @@ class CustomizeImage:
         return char_color
 
     @staticmethod
-    def get_char_high_color(
-            bg_color: Tuple[int, int, int]
-    ) -> Tuple[int, int, int]:
+    def get_char_high_color(bg_color: Tuple[int, int, int]) -> Tuple[int, int, int]:
         r = 140
         d = 20
         if max(*bg_color) > 255 - r:
@@ -232,9 +228,7 @@ class CustomizeImage:
         return char_color
 
     @staticmethod
-    def get_bg_detail_color(
-            bg_color: Tuple[int, int, int]
-    ) -> Tuple[int, int, int]:
+    def get_bg_detail_color(bg_color: Tuple[int, int, int]) -> Tuple[int, int, int]:
         r = 140
         if max(*bg_color) > 255 - r:
             r *= -1
@@ -246,31 +240,29 @@ class CustomizeImage:
         return bg_detail_color
 
     @staticmethod
-    def get_highlight_color(
-            color: Tuple[int, int, int]
-    ) -> Tuple[int, int, int]:
+    def get_highlight_color(color: Tuple[int, int, int]) -> Tuple[int, int, int]:
         red_color = color[0]
         green_color = color[1]
         blue_color = color[2]
 
         highlight_color = {
-            'red': red_color - 127 if red_color > 127 else 127,
-            'green': green_color - 127 if green_color > 127 else 127,
-            'blue': blue_color - 127 if blue_color > 127 else 127,
+            "red": red_color - 127 if red_color > 127 else 127,
+            "green": green_color - 127 if green_color > 127 else 127,
+            "blue": blue_color - 127 if blue_color > 127 else 127,
         }
 
         max_color = max(highlight_color.values())
 
-        name = ''
+        name = ""
         for _highlight_color in highlight_color:
             if highlight_color[_highlight_color] == max_color:
                 name = str(_highlight_color)
 
-        if name == 'red':
-            return red_color, highlight_color['green'], highlight_color['blue']
-        elif name == 'green':
-            return highlight_color['red'], green_color, highlight_color['blue']
-        elif name == 'blue':
-            return highlight_color['red'], highlight_color['green'], blue_color
+        if name == "red":
+            return red_color, highlight_color["green"], highlight_color["blue"]
+        elif name == "green":
+            return highlight_color["red"], green_color, highlight_color["blue"]
+        elif name == "blue":
+            return highlight_color["red"], highlight_color["green"], blue_color
         else:
             return 0, 0, 0  # Error

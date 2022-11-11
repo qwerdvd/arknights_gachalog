@@ -17,18 +17,18 @@ from .arknights_api import (
 )
 
 _HEADER = {
-    'User-Agent': (
-        'Mozilla/5.0 (iPhone; CPU iPhone OS 13_2_3 like Mac OS X) '
-        'Mozilla/5.0 (Windows NT 10.0; Win64; x64)'
-        'AppleWebKit/537.36 (KHTML, like Gecko)'
-        'Chrome/106.0.0.0'
-        'Safari/537.36'
+    "User-Agent": (
+        "Mozilla/5.0 (iPhone; CPU iPhone OS 13_2_3 like Mac OS X) "
+        "Mozilla/5.0 (Windows NT 10.0; Win64; x64)"
+        "AppleWebKit/537.36 (KHTML, like Gecko)"
+        "Chrome/106.0.0.0"
+        "Safari/537.36"
     ),
-    'Referer': 'https://ak.hypergryph.com/user/inquiryGacha',
-    'Origin': 'https://ak.hypergryph.com',
+    "Referer": "https://ak.hypergryph.com/user/inquiryGacha",
+    "Origin": "https://ak.hypergryph.com",
 }
 
-gacha_type_meta_data = {'单up池': [], '专属推荐干员寻访': [], '联合寻访': [], '常驻标准寻访': []}
+gacha_type_meta_data = {"单up池": [], "专属推荐干员寻访": [], "联合寻访": [], "常驻标准寻访": []}
 
 
 async def usr_ark_basic_info(token: str) -> dict:
@@ -42,15 +42,9 @@ async def usr_ark_basic_info(token: str) -> dict:
       {'status': 0, 'msg': 'OK', 'data': {'uid': '', 'guest': 0, 'channelMasterId': 1, 'nickName': ''}}
     """
     HEADER = copy.deepcopy(_HEADER)
-    payload = {
-        "appId": 1,
-        "channelMasterId": 1,
-        "channelToken": {
-            "token": f"{token}"
-        }
-    }
-    HEADER['Referer'] = 'https://ak.hypergryph.com'
-    HEADER['Origin'] = 'https://ak.hypergryph.com'
+    payload = {"appId": 1, "channelMasterId": 1, "channelToken": {"token": f"{token}"}}
+    HEADER["Referer"] = "https://ak.hypergryph.com"
+    HEADER["Origin"] = "https://ak.hypergryph.com"
     async with aiohttp.ClientSession() as session:
         async with session.post(GET_UID_URL, headers=HEADER, json=payload) as response:
             usr_basic_info = await response.json()
@@ -58,47 +52,49 @@ async def usr_ark_basic_info(token: str) -> dict:
 
 
 async def get_token_by_cookie(COOKIE: str, qid: int) -> dict:
-    url = ''
+    url = ""
     cookie = COOKIE
     HEADER = copy.deepcopy(_HEADER)
     uid = await select_db(qid)
     channelMasterId = await get_channelMasterId(uid)
     if channelMasterId == 1:
         url = GET_AUTHKEY_URL
-        COOKIE = f'ACCOUNT={cookie}'
+        COOKIE = f"ACCOUNT={cookie}"
     elif channelMasterId == 2:
         url = GET_AUTHKEY_URL_Bilibili
-        COOKIE = f'ACCOUNT_AK_B={cookie}'
-    if cookie == '该用户没有绑定过Cookie噢~' or cookie == '':
+        COOKIE = f"ACCOUNT_AK_B={cookie}"
+    if cookie == "该用户没有绑定过Cookie噢~" or cookie == "":
         return {}
-    HEADER['Cookie'] = COOKIE
-    HEADER['User-Agent'] = 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) ' \
-                           'Chrome/106.0.0.0 Safari/537.36 '
-    HEADER['sec-fetch-dest'] = 'document'
-    HEADER['sec-fetch-mode'] = 'navigate'
+    HEADER["Cookie"] = COOKIE
+    HEADER["User-Agent"] = (
+        "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) "
+        "Chrome/106.0.0.0 Safari/537.36 "
+    )
+    HEADER["sec-fetch-dest"] = "document"
+    HEADER["sec-fetch-mode"] = "navigate"
     authkey = await _ark_request(
         url=url,
-        method='GET',
+        method="GET",
         header=HEADER,
     )
-    logger.info(f'authkey: {authkey}')
-    if authkey['msg'] == '登录失效':
+    logger.info(f"authkey: {authkey}")
+    if authkey["msg"] == "登录失效":
         authkey = await _ark_request(
             url=GET_AUTHKEY_URL_Bilibili,
-            method='GET',
+            method="GET",
             header=HEADER,
         )
-    token = authkey['data']['content']
+    token = authkey["data"]["content"]
     return token
 
 
 async def _ark_request(
-        url: str,
-        method: Literal['GET', 'POST'] = 'GET',
-        header: Dict[str, Any] = _HEADER,
-        params: Optional[Dict[str, Any]] = None,
-        data: Optional[Dict[str, Any]] = None,
-        sess: Optional[ClientSession] = None,
+    url: str,
+    method: Literal["GET", "POST"] = "GET",
+    header: Dict[str, Any] = _HEADER,
+    params: Optional[Dict[str, Any]] = None,
+    data: Optional[Dict[str, Any]] = None,
+    sess: Optional[ClientSession] = None,
 ) -> dict:
     """
     :说明:
@@ -118,17 +114,15 @@ async def _ark_request(
         sess = ClientSession()
         is_temp_sess = True
     try:
-        req = await sess.request(
-            method, url=url, headers=header, params=params
-        )
+        req = await sess.request(method, url=url, headers=header, params=params)
         text_data = await req.text()
         # print(text_data)
-        if text_data.startswith('('):
+        if text_data.startswith("("):
             text_data = json.loads(text_data.replace("(", "").replace(")", ""))
             return text_data
         return await req.json()
     except Exception as err:
-        print('An exception happened: ' + str(err))
+        print("An exception happened: " + str(err))
         return {}
     finally:
         if is_temp_sess:
@@ -136,57 +130,57 @@ async def _ark_request(
 
 
 async def get_gacha_log_by_token(
-        uid: str, old_data: Optional[dict] = None
+    uid: str, old_data: Optional[dict] = None
 ) -> Optional[dict]:
     token = await get_token(uid)
     HEADER = copy.deepcopy(_HEADER)
     channelMasterId = await get_channelMasterId(uid)
-    full_data = old_data or {'单up池': [], '专属推荐干员寻访': [], '联合寻访': [], '常驻标准寻访': []}
+    full_data = old_data or {"单up池": [], "专属推荐干员寻访": [], "联合寻访": [], "常驻标准寻访": []}
     temp = []
     if channelMasterId == 2:
-        HEADER['Referer'] = 'https://ak.hypergryph.com/user/bilibili/gacha'
+        HEADER["Referer"] = "https://ak.hypergryph.com/user/bilibili/gacha"
     end_id = 0
     for page in range(1, 999):
         raw_data = await _ark_request(
             url=GET_GACHA_LOG_URL,
-            method='GET',
+            method="GET",
             header=HEADER,
             params={
-                'channelId': channelMasterId,
-                'token': token,
-                'page': page,
-                'end_id': end_id,
+                "channelId": channelMasterId,
+                "token": token,
+                "page": page,
+                "end_id": end_id,
             },
         )
         await asyncio.sleep(0.9)
-        if 'data' in raw_data and 'list' in raw_data['data']:
-            data = raw_data['data']['list']
+        if "data" in raw_data and "list" in raw_data["data"]:
+            data = raw_data["data"]["list"]
         else:
             return {}
         if not data:
             break
-        end_id = data[-1]['ts']
+        end_id = data[-1]["ts"]
         for i in range(len(data)):
-            if data[-i]['pool'] == '专属推荐干员寻访':
-                gacha_type = '专属推荐干员寻访'
+            if data[-i]["pool"] == "专属推荐干员寻访":
+                gacha_type = "专属推荐干员寻访"
                 if data[-i] not in full_data[gacha_type]:
                     temp.append(data[-i])
                 full_data[gacha_type][0:0] = temp
                 temp = []
-            elif data[-i]['pool'] == '联合寻访':
-                gacha_type = '联合寻访'
+            elif data[-i]["pool"] == "联合寻访":
+                gacha_type = "联合寻访"
                 if data[-i] not in full_data[gacha_type]:
                     temp.append(data[-i])
                 full_data[gacha_type][0:0] = temp
                 temp = []
-            elif data[-i]['pool'] == '常驻标准寻访':
-                gacha_type = '常驻标准寻访'
+            elif data[-i]["pool"] == "常驻标准寻访":
+                gacha_type = "常驻标准寻访"
                 if data[-i] not in full_data[gacha_type]:
                     temp.append(data[-i])
                 full_data[gacha_type][0:0] = temp
                 temp = []
             else:
-                gacha_type = '单up池'
+                gacha_type = "单up池"
                 if data[-i] not in full_data[gacha_type]:
                     temp.append(data[-i])
                 full_data[gacha_type][0:0] = temp
@@ -197,7 +191,7 @@ async def get_gacha_log_by_token(
 
 
 async def get_recharge_record_by_token(
-        uid: str, old_data: Optional[dict] = None
+    uid: str, old_data: Optional[dict] = None
 ) -> Optional[dict]:
     """
     :说明:
@@ -218,24 +212,24 @@ async def get_recharge_record_by_token(
     payload = {
         "appId": 1,
         "channelMasterId": channelMasterId,
-        "channelToken": {
-            "token": f"{token}"
-        }
+        "channelToken": {"token": f"{token}"},
     }
-    HEADER['Referer'] = 'https://ak.hypergryph.com'
-    HEADER['Origin'] = 'https://ak.hypergryph.com'
+    HEADER["Referer"] = "https://ak.hypergryph.com"
+    HEADER["Origin"] = "https://ak.hypergryph.com"
     full_data = old_data or []
     temp = []
     end_id = 0
     async with aiohttp.ClientSession() as session:
-        async with session.post(GET_RECHARGE_RECORD_URL, headers=HEADER, json=payload) as response:
+        async with session.post(
+            GET_RECHARGE_RECORD_URL, headers=HEADER, json=payload
+        ) as response:
             raw_data = await response.json()
     await asyncio.sleep(0.9)
-    if 'data' in raw_data and raw_data['data']:
-        data = raw_data['data']
+    if "data" in raw_data and raw_data["data"]:
+        data = raw_data["data"]
     else:
         return {}
-    end_id = data[-1]['orderId']
+    end_id = data[-1]["orderId"]
     for i in range(len(data)):
         if data[-i] not in full_data:
             temp.append(data[-i])

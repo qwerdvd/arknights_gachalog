@@ -7,11 +7,11 @@ from .database.db_config import async_session
 
 
 async def bind_db(userid, uid=None):
-    logger.info(f'绑定数据库{userid} {uid}')
+    logger.info(f"绑定数据库{userid} {uid}")
     async with async_session() as session:
         async with session.begin():
             UidData = UidDataDAL(session)
-            im = await UidData.bind_db(userid, {'UID': uid})
+            im = await UidData.bind_db(userid, {"UID": uid})
             logger.info(im)
             return im
 
@@ -24,9 +24,7 @@ async def get_all_uid() -> List:
             return lst
 
 
-async def select_db(
-        userid: int, mode: str = 'auto'
-) -> Union[List[str], str, None]:
+async def select_db(userid: int, mode: str = "auto") -> Union[List[str], str, None]:
     """
     :说明:
       选择绑定uid库
@@ -45,11 +43,11 @@ async def select_db(
     async with async_session() as session:
         async with session.begin():
             UidData = UidDataDAL(session)
-            if mode == 'auto':
+            if mode == "auto":
                 im = await UidData.get_anyid(userid)
-            elif mode == 'uid':
+            elif mode == "uid":
                 im = await UidData.get_uid(userid)
-            elif mode == 'list':
+            elif mode == "list":
                 im = await UidData.get_uid_list(userid)
             else:
                 return None
@@ -112,9 +110,9 @@ async def delete_cookies(uid: str) -> str:
             Cookies = CookiesDAL(session)
             result = await Cookies.delete_user(uid)
             if result:
-                return '删除CK完成!'
+                return "删除CK完成!"
             else:
-                return '删除CK失败!'
+                return "删除CK失败!"
 
 
 async def get_token(uid: str) -> str:
@@ -129,7 +127,7 @@ async def get_channelMasterId(uid: str) -> int:
     async with async_session() as session:
         async with session.begin():
             Cookies = CookiesDAL(session)
-            logger.info(f'查询channelMasterId{uid}')
+            logger.info(f"查询channelMasterId{uid}")
             channelMasterId = await Cookies.get_user_channelMasterId(uid)
             return int(channelMasterId)
 

@@ -50,7 +50,7 @@ class UidDataDAL:
         :返回:
           * uid_list (List[str]): 绑定的UID列表。
         """
-        sql = select(UidData).where(UidData.UID != '')
+        sql = select(UidData).where(UidData.UID != "")
         result = await self.db_session.execute(sql)  # type: ignore
         data = result.scalars().all()
         uid_list = []
@@ -87,7 +87,7 @@ class UidDataDAL:
         if uid_list:
             return uid_list[0]
         else:
-            return '未找到绑定的UID~'
+            return "未找到绑定的UID~"
 
     async def get_anyid(self, userid: int) -> str:
         """
@@ -102,7 +102,7 @@ class UidDataDAL:
         if uid:
             return uid
         else:
-            return '未找到绑定的ID信息~'
+            return "未找到绑定的ID信息~"
 
     async def bind_db(self, userid: int, data: dict) -> str:
         """
@@ -115,24 +115,22 @@ class UidDataDAL:
         :返回:
           * msg (str): 绑定文字信息。
         """
-        _bind = ''
+        _bind = ""
         if await self.user_exists(userid):
             uid_list = await self.get_uid_list(userid)
-            if 'UID' in data:
-                if data['UID'] is not None:
-                    new_uid = data['UID']
-                    if data['UID'] in uid_list:
+            if "UID" in data:
+                if data["UID"] is not None:
+                    new_uid = data["UID"]
+                    if data["UID"] in uid_list:
                         return f'该UID{data["UID"]}已经绑定过了噢~'
-                    uid_list.append(data['UID'])
-                    data['UID'] = '_'.join(uid_list)
-                    _bind += (
-                        f'绑定UID{new_uid}成功~\n当前绑定UID列表为{",".join(uid_list)}'
-                    )
+                    uid_list.append(data["UID"])
+                    data["UID"] = "_".join(uid_list)
+                    _bind += f'绑定UID{new_uid}成功~\n当前绑定UID列表为{",".join(uid_list)}'
             await self.db_session.flush()  # type: ignore
         else:
             new_data = UidData(USERID=userid, **data)
             self.db_session.add(new_data)
-            if 'UID' in data:
+            if "UID" in data:
                 _bind += f'绑定UID{data["UID"]}成功~'
         await self.db_session.flush()  # type: ignore
         return _bind
@@ -150,33 +148,31 @@ class UidDataDAL:
         """
         if await self.user_exists(userid):
             uid_list = await self.get_uid_list(userid)
-            _delete = ''
+            _delete = ""
             if data:
-                if 'UID' in data:
-                    if data['UID'] is not None:
-                        if data['UID'] in uid_list:
-                            delete_uid = data['UID']
-                            uid_list.remove(data['UID'])
-                            data['UID'] = '_'.join(uid_list)
+                if "UID" in data:
+                    if data["UID"] is not None:
+                        if data["UID"] in uid_list:
+                            delete_uid = data["UID"]
+                            uid_list.remove(data["UID"])
+                            data["UID"] = "_".join(uid_list)
                         else:
                             return f'该UID{data["UID"]}没有绑定过噢~'
                     else:
                         delete_uid = uid_list[0]
                         uid_list.pop(0)
-                        data['UID'] = '_'.join(uid_list)
-                    _delete += (
-                        f'删除UID{delete_uid}成功~\n当前绑定UID列表为{",".join(uid_list)}'
-                    )
+                        data["UID"] = "_".join(uid_list)
+                    _delete += f'删除UID{delete_uid}成功~\n当前绑定UID列表为{",".join(uid_list)}'
             await self.update_db(userid, data)
         else:
-            return '你还没有绑定过UID噢~'
+            return "你还没有绑定过UID噢~"
         await self.db_session.flush()  # type: ignore
         return _delete
 
     async def update_db(
-            self,
-            userid: int,
-            data: Optional[dict],
+        self,
+        userid: int,
+        data: Optional[dict],
     ):
         """
         :说明:
