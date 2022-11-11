@@ -1,19 +1,19 @@
+import asyncio
 import copy
 import json
-import asyncio
 from typing import Any, Dict, Literal, Optional
 
-from nonebot.log import logger
 import aiohttp
 from aiohttp import ClientSession
+from nonebot.log import logger
 
-from ..db_operation.db_operation import get_token, select_db, get_channelMasterId
+from ..db_operation.db_operation import get_channelMasterId, get_token, select_db
 from .arknights_api import (
-    GET_GACHA_LOG_URL,
     GET_AUTHKEY_URL,
-    GET_AUTHKEY_URL_Bilibili,
-    GET_UID_URL,
+    GET_GACHA_LOG_URL,
     GET_RECHARGE_RECORD_URL,
+    GET_UID_URL,
+    GET_AUTHKEY_URL_Bilibili,
 )
 
 _HEADER = {
@@ -129,9 +129,7 @@ async def _ark_request(
             await sess.close()
 
 
-async def get_gacha_log_by_token(
-    uid: str, old_data: Optional[dict] = None
-) -> Optional[dict]:
+async def get_gacha_log_by_token(uid: str, old_data: Optional[dict] = None) -> Optional[dict]:
     token = await get_token(uid)
     HEADER = copy.deepcopy(_HEADER)
     channelMasterId = await get_channelMasterId(uid)
@@ -190,9 +188,7 @@ async def get_gacha_log_by_token(
     return full_data
 
 
-async def get_recharge_record_by_token(
-    uid: str, old_data: Optional[dict] = None
-) -> Optional[dict]:
+async def get_recharge_record_by_token(uid: str, old_data: Optional[dict] = None) -> Optional[dict]:
     """
     :说明:
         获取充值记录。
@@ -220,9 +216,7 @@ async def get_recharge_record_by_token(
     temp = []
     end_id = 0
     async with aiohttp.ClientSession() as session:
-        async with session.post(
-            GET_RECHARGE_RECORD_URL, headers=HEADER, json=payload
-        ) as response:
+        async with session.post(GET_RECHARGE_RECORD_URL, headers=HEADER, json=payload) as response:
             raw_data = await response.json()
     await asyncio.sleep(0.9)
     if "data" in raw_data and raw_data["data"]:

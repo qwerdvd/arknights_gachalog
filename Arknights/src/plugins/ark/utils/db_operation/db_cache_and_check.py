@@ -1,16 +1,16 @@
-import os
-import re
-import random
-import string
 import datetime
+import os
+import random
+import re
+import string
 from shutil import copyfile
 
 from httpx import AsyncClient
 from nonebot.log import logger
 
 from ...utils.ark_api.arknights_api import GET_AUTHKEY_URL
-from .ark_db_pool import ark_pool
 from ...utils.ark_api.get_ark_data import get_token_by_cookie
+from .ark_db_pool import ark_pool
 
 
 async def check_db():
@@ -146,7 +146,7 @@ async def delete_cache():
         c.execute(
             """CREATE TABLE IF NOT EXISTS CookiesCache
         (UID TEXT PRIMARY KEY,
-        TEXT,          Cookies       
+        TEXT,          Cookies
         TEXT);"""
         )
         conn.commit()

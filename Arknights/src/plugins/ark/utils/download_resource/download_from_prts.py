@@ -1,11 +1,11 @@
-import os
 import asyncio
+import os
 from pathlib import Path
 from typing import List, Tuple
 
+from aiohttp.client import ClientSession
 from bs4 import BeautifulSoup
 from nonebot.log import logger
-from aiohttp.client import ClientSession
 
 from .download_url import PATH_MAP, download_file
 
@@ -49,9 +49,7 @@ async def _get_url(url: str, sess: ClientSession):
 
 async def download_all_file_from_prts():
     async def _download(tasks: List[asyncio.Task]):
-        failed_list.extend(
-            list(filter(lambda x: x is not None, await asyncio.gather(*tasks)))
-        )
+        failed_list.extend(list(filter(lambda x: x is not None, await asyncio.gather(*tasks))))
         tasks.clear()
         logger.info("[minigg.icu]下载完成!")
 

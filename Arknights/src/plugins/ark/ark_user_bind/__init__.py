@@ -1,30 +1,29 @@
-from typing import Any, Tuple, List
+from typing import Any, List, Tuple
 
-from nonebot.log import logger
-from nonebot.matcher import Matcher
-from nonebot import on_regex, on_command
-from nonebot.params import CommandArg, RegexGroup
+from nonebot import on_command, on_regex
 from nonebot.adapters.onebot.v11 import (
     PRIVATE_FRIEND,
     Message,
     MessageEvent,
     MessageSegment,
 )
-
-from .add_ck import deal_ck
+from nonebot.log import logger
+from nonebot.matcher import Matcher
+from nonebot.params import CommandArg, RegexGroup
 
 # from .draw_user_card import get_user_card
 from ..config import priority
-
-# from .draw_user_card import get_user_card
-from ..utils.nonebot2.rule import FullCommand
-from ..utils.exception.handle_exception import handle_exception
 from ..utils.db_operation.db_operation import (
     bind_db,
     delete_db,
     get_user_bind_data,
     select_db,
 )
+from ..utils.exception.handle_exception import handle_exception
+
+# from .draw_user_card import get_user_card
+from ..utils.nonebot2.rule import FullCommand
+from .add_ck import deal_ck
 
 add_cookie = on_command("添加", permission=PRIVATE_FRIEND)
 # bind_info = on_command(
@@ -50,9 +49,7 @@ bind = on_regex(r"^(绑定|切换|解绑|删除)(uid|UID)([0-9]+)?$", priority=p
 
 @add_cookie.handle()
 @handle_exception("Cookie", "校验失败！请输入正确的Cookies！")
-async def send_add_ck_msg(
-    event: MessageEvent, matcher: Matcher, args: Message = CommandArg()
-):
+async def send_add_ck_msg(event: MessageEvent, matcher: Matcher, args: Message = CommandArg()):
     logger.info("开始执行[添加Cookie]")
     mes = args.extract_plain_text().strip().replace(" ", "")
     qid = event.user_id
@@ -65,9 +62,7 @@ async def send_add_ck_msg(
 # 群聊内 绑定uid的命令，会绑定至当前qq号上
 @bind.handle()
 @handle_exception("绑定ID", "绑定ID异常")
-async def send_link_uid_msg(
-    event: MessageEvent, matcher: Matcher, args: Tuple[Any, ...] = RegexGroup()
-):
+async def send_link_uid_msg(event: MessageEvent, matcher: Matcher, args: Tuple[Any, ...] = RegexGroup()):
     im = []
     logger.info("开始执行[绑定/解绑用户信息]")
     logger.info("[绑定/解绑]参数: {}".format(args))

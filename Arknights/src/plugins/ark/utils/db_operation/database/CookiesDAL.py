@@ -1,10 +1,10 @@
 from typing import List, Optional
-from nonebot.log import logger
 
-from sqlalchemy.future import select
+from nonebot.log import logger
 from sqlalchemy import delete, update
-from sqlalchemy.sql.expression import func
 from sqlalchemy.ext.asyncio import AsyncSession
+from sqlalchemy.future import select
+from sqlalchemy.sql.expression import func
 
 from ..database.models import CookiesCache, NewCookiesTable
 
@@ -15,9 +15,7 @@ class CookiesDAL:
 
     async def get_user_data(self, uid: str) -> Optional[NewCookiesTable]:
         try:
-            await self.db_session.execute(
-                ("ALTER TABLE NewCookiesTable " "ADD COLUMN token TEXT")  # type: ignore
-            )
+            await self.db_session.execute(("ALTER TABLE NewCookiesTable " "ADD COLUMN token TEXT"))  # type: ignore
         except Exception:
             pass
         sql = select(NewCookiesTable).where(NewCookiesTable.UID == uid)
@@ -113,11 +111,7 @@ class CookiesDAL:
           * msg (str): 绑定文字信息。
         """
         if await self.user_exists(uid):
-            sql = (
-                update(NewCookiesTable)
-                .where(NewCookiesTable.UID == uid)
-                .values(Cookies=cookies, Extra=None)
-            )
+            sql = update(NewCookiesTable).where(NewCookiesTable.UID == uid).values(Cookies=cookies, Extra=None)
             await self.db_session.execute(sql)
         else:
             new_data = NewCookiesTable(
@@ -141,11 +135,7 @@ class CookiesDAL:
           * msg (str): 绑定文字信息。
         """
         if await self.user_exists(uid):
-            sql = (
-                update(NewCookiesTable)
-                .where(NewCookiesTable.UID == uid)
-                .values(token=token)
-            )
+            sql = update(NewCookiesTable).where(NewCookiesTable.UID == uid).values(token=token)
             await self.db_session.execute(sql)
             msg = f"UID{uid}账户的token绑定成功!"
         else:
@@ -164,11 +154,7 @@ class CookiesDAL:
           * msg (str): 绑定文字信息。
         """
         if await self.user_exists(uid):
-            sql = (
-                update(NewCookiesTable)
-                .where(NewCookiesTable.UID == uid)
-                .values(ChannelMasterId=channelMasterId)
-            )
+            sql = update(NewCookiesTable).where(NewCookiesTable.UID == uid).values(ChannelMasterId=channelMasterId)
             await self.db_session.execute(sql)
             msg = f"UID{uid}账户的channelMasterId绑定成功!"
         else:
@@ -193,11 +179,7 @@ class CookiesDAL:
             return False
 
     async def delete_cache(self):
-        sql = (
-            update(NewCookiesTable)
-            .where(NewCookiesTable.Extra == "limit30")
-            .values(Extra=None)
-        )
+        sql = update(NewCookiesTable).where(NewCookiesTable.Extra == "limit30").values(Extra=None)
         empty_sql = delete(CookiesCache)
         await self.db_session.execute(sql)
         await self.db_session.execute(empty_sql)
@@ -213,11 +195,7 @@ class CookiesDAL:
         :返回:
           * msg (str): 绑定文字信息。
         """
-        sql = (
-            update(NewCookiesTable)
-            .where(NewCookiesTable.Cookies == cookies)
-            .values(Extra=err)
-        )
+        sql = update(NewCookiesTable).where(NewCookiesTable.Cookies == cookies).values(Extra=err)
         await self.db_session.execute(sql)
         await self.db_session.flush()
         return True

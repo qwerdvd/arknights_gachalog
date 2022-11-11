@@ -1,16 +1,17 @@
-from pathlib import Path
 from http.cookies import SimpleCookie
+from pathlib import Path
+
 from nonebot.log import logger
 
+from ..utils.ark_api.get_ark_data import get_token_by_cookie, usr_ark_basic_info
 from ..utils.db_operation.db_cache_and_check import refresh_ck
 from ..utils.db_operation.db_operation import (
-    select_db,
-    token_db,
+    channelMasterId_db,
     cookies_db,
     get_channelMasterId,
-    channelMasterId_db,
+    select_db,
+    token_db,
 )
-from ..utils.ark_api.get_ark_data import get_token_by_cookie, usr_ark_basic_info
 
 
 async def deal_ck(mes, qid):
@@ -44,8 +45,6 @@ async def _deal_ck(mes, qid) -> str:
     is_add_token = True
     if is_add_token:
         await token_db(token, uid)
-    im_list.append(
-        f"添加Cookies成功，uid={uid}, channelMasterId={channelMasterId},ACCOUNT_COOKIE={cookie},token={token}"
-    )
+    im_list.append(f"添加Cookies成功，uid={uid}, channelMasterId={channelMasterId},ACCOUNT_COOKIE={cookie},token={token}")
     im = "\n".join(im_list)
     return im

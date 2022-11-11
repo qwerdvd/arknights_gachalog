@@ -1,23 +1,23 @@
 import json
 
-from nonebot.log import logger
-from nonebot.matcher import Matcher
-from nonebot import on_regex, on_command
+from nonebot import on_command, on_regex
 from nonebot.adapters.onebot.v11 import (
-    NoticeEvent,
-    MessageSegment,
     GroupMessageEvent,
     Message,
     MessageEvent,
+    MessageSegment,
+    NoticeEvent,
 )
+from nonebot.log import logger
+from nonebot.matcher import Matcher
 from nonebot.params import CommandArg
 
 from ..config import priority
-from .cal_full_trained_character_info import calculate_fully_trained_character_data
-from .calculate_character_talent_buff import calculate_talent_buff
+from ..utils.alias.chName_to_CharacterId_list import chName_to_CharacterId
 from .cal_buff_list import get_buff_list
 from .cal_damage import calculate_character_damage
-from ..utils.alias.chName_to_CharacterId_list import chName_to_CharacterId
+from .cal_full_trained_character_info import calculate_fully_trained_character_data
+from .calculate_character_talent_buff import calculate_talent_buff
 
 dmg_cal = on_command("伤害计算", priority=priority, block=True)
 
@@ -26,9 +26,7 @@ dmg_cal = on_command("伤害计算", priority=priority, block=True)
 # "伤害计算 能天使 三技能 一模"
 # 默认满技能满潜模组满级
 @dmg_cal.handle()
-async def send_dmg_cal_msg(
-    event: MessageEvent, matcher: Matcher, args: Message = CommandArg()
-):
+async def send_dmg_cal_msg(event: MessageEvent, matcher: Matcher, args: Message = CommandArg()):
     logger.info("开始执行[干员伤害计算]")
     mes = args.extract_plain_text().split()
     is_uniequip = False
@@ -58,9 +56,7 @@ async def send_dmg_cal_msg(
     ) as f:
         basic_character_info = json.load(f)
     profession = basic_character_info["profession"]
-    character_info = await calculate_fully_trained_character_data(
-        characterId, is_uniequip, uniequip_id
-    )
+    character_info = await calculate_fully_trained_character_data(characterId, is_uniequip, uniequip_id)
     talent_buff = await calculate_talent_buff(characterId, is_uniequip, uniequip_id)
     buff_list = await get_buff_list(characterId, is_uniequip, uniequip_id, skill_id)
     im = await calculate_character_damage(

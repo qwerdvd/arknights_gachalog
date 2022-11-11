@@ -1,30 +1,30 @@
-import json
 import asyncio
+import json
 import time
 from io import BytesIO
 from pathlib import Path
 from typing import Tuple, Union
 
 import matplotlib
+import numpy
+from matplotlib import cm, font_manager
+from matplotlib import pyplot as plt
 from nonebot.log import logger
 from PIL import Image, ImageDraw
-import numpy
-from matplotlib import pyplot as plt, font_manager, cm
 
-from ..utils.draw_image_tools.send_image_tool import convert_img
-from ..utils.draw_image_tools.draw_image_tool import get_simple_bg
-from ..utils.fonts.fonts import font_origin, ys_font_origin
 from ..utils.alias.avatarId_and_name_covert import name_to_avatar_id
 from ..utils.alias.chName_to_enName import chName_to_enName
 
 # from ..utils.download_resource.RESOURCE_PATH import (
 #     CHAR_STAND_PATH as STAND_PATH,
 # )
-from ..utils.download_resource.RESOURCE_PATH import (
+from ..utils.download_resource.RESOURCE_PATH import (  # WEAPON_PATH,
     AVATAR_PATH,
     PLAYER_PATH,
-    #     WEAPON_PATH,
 )
+from ..utils.draw_image_tools.draw_image_tool import get_simple_bg
+from ..utils.draw_image_tools.send_image_tool import convert_img
+from ..utils.fonts.fonts import font_origin, ys_font_origin
 
 TEXT_PATH = Path(__file__).parent / "texture2d"
 
@@ -89,11 +89,7 @@ async def _draw_card(
     # )
     _id = await name_to_avatar_id(name)
     _name = await chName_to_enName(name)
-    item_pic = (
-        Image.open(AVATAR_PATH / f"char_{_id}_{_name}.png")
-        .convert("RGBA")
-        .resize((300, 312))
-    )
+    item_pic = Image.open(AVATAR_PATH / f"char_{_id}_{_name}.png").convert("RGBA").resize((300, 312))
     card_img.paste(item_pic, point, item_pic)
     # card_img.paste(item_pic, point, item_pic)
     if gacha_num >= 55:
@@ -244,11 +240,7 @@ async def draw_gachalogs_img(uid: str) -> Union[bytes, str]:
     for index, i in enumerate(type_list):
         if index != 0:
             title = Image.open(TEXT_PATH / f"pool_title_{index}.png")
-        y_extend += (
-            (1 + ((total_data[type_list[index - 1]]["total"] - 1) // 6)) * 419
-            if index != 0
-            else 0
-        )
+        y_extend += (1 + ((total_data[type_list[index - 1]]["total"] - 1) // 6)) * 419 if index != 0 else 0
         y_1 = y_extend + 10
         y = index * title_y + y_extend + 2000
         # bg_img.paste(title, (0, y), title)

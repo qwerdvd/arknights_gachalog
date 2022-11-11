@@ -1,13 +1,11 @@
-import json
 import asyncio
+import json
 from pathlib import Path
 
 print(Path.cwd())
 
 # 角色信息文件地址
-mata_path = (
-    "C:\\Users\\qwerdvd\\PycharmProjects\\pythonProject\\Arknights\\data\\gamedata"
-)
+mata_path = "C:\\Users\\qwerdvd\\PycharmProjects\\pythonProject\\Arknights\\data\\gamedata"
 char_path = mata_path + "\\excel\\character_table.json"
 data_version_path = mata_path + "\\excel\\data_version.txt"
 skill_path = mata_path + "\\excel\\skill_table.json"
@@ -148,9 +146,7 @@ async def get_enemyId_chName_to_enName_mapping():
         if len(enemy[0].split("_")) == 3:
             enemyId_chName_to_enName_mapping[enemy[1]["name"]] = enemy[0].split("_")[2]
         else:
-            enemyId_chName_to_enName_mapping[enemy[1]["name"]] = (
-                enemy[0].split("_")[2] + "_" + enemy[0].split("_")[3]
-            )
+            enemyId_chName_to_enName_mapping[enemy[1]["name"]] = enemy[0].split("_")[2] + "_" + enemy[0].split("_")[3]
     # 保存敌人 id 英文名到中文名的映射
     with open(
         f"C:\\Users\\qwerdvd\\PycharmProjects\\pythonProject\\Arknights\\src\\plugins\\ark\\tool\\data\\map"

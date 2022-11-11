@@ -1,6 +1,7 @@
 import json
 from datetime import datetime
 from typing import Optional
+
 from nonebot.log import logger
 
 from ..utils.ark_api.get_ark_data import get_recharge_record_by_token
@@ -28,9 +29,7 @@ async def save_recharge_record(uid: str, raw_data: Optional[dict] = None):
         with open(recharge_record_path, "r", encoding="UTF-8") as f:
             recharge_record_history = json.load(f)
         old_total_recharge_record = recharge_record_history["total_recharge_record"]
-        old_number_of_recharge_records = recharge_record_history[
-            "number_of_recharge_records"
-        ]
+        old_number_of_recharge_records = recharge_record_history["number_of_recharge_records"]
         recharge_record_history = recharge_record_history["data"]
 
     # 获取新抽卡记录
@@ -65,9 +64,7 @@ async def save_recharge_record(uid: str, raw_data: Optional[dict] = None):
 
     # 计算数据
     all_add = result["number_of_recharge_records"] - old_number_of_recharge_records
-    total_recharge_record_add = (
-        result["total_recharge_record"] - old_total_recharge_record
-    )
+    total_recharge_record_add = result["total_recharge_record"] - old_total_recharge_record
 
     # 保存文件
     with open(recharge_record_path, "w", encoding="UTF-8") as file:
@@ -78,9 +75,6 @@ async def save_recharge_record(uid: str, raw_data: Optional[dict] = None):
         im = f"UID{uid}没有新增充值数据!"
         print(im)
     else:
-        im = (
-            f"UID{uid}数据更新成功！"
-            f"本次更新{all_add}个充值记录!\n本次更新，你充值了{total_recharge_record_add}\n总额为{total_recharge_record}"
-        )
+        im = f"UID{uid}数据更新成功！" f"本次更新{all_add}个充值记录!\n本次更新，你充值了{total_recharge_record_add}\n总额为{total_recharge_record}"
         print(im)
     return im

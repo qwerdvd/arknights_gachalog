@@ -3,8 +3,8 @@ from datetime import datetime
 
 from httpx import get
 
-from .get_gachalogs import save_gachalogs
 from ..utils.download_resource.RESOURCE_PATH import PLAYER_PATH
+from .get_gachalogs import save_gachalogs
 
 INT_TO_TYPE = {
     "100": "新手祈愿",

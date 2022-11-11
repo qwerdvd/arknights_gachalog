@@ -1,8 +1,8 @@
 from typing import List, Optional
 
 from sqlalchemy import update
-from sqlalchemy.orm import Session
 from sqlalchemy.future import select
+from sqlalchemy.orm import Session
 
 from .models import UidData
 

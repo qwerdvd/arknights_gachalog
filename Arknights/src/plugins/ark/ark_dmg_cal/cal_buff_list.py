@@ -5,9 +5,7 @@ from .cal_full_trained_character_info import get_uniequip_trait_adjustment
 from .calculate_character_talent_buff import calculate_talent_buff
 
 
-async def get_buff_list(
-    characterId: str, is_uniequip: bool, uniequip_id: str, skill_id: str
-) -> Optional[dict]:
+async def get_buff_list(characterId: str, is_uniequip: bool, uniequip_id: str, skill_id: str) -> Optional[dict]:
     buff_list = {}
 
     # 模组 buff
@@ -18,12 +16,8 @@ async def get_buff_list(
             uniequip_id = 1
         elif uniequip_id == "二模":
             uniequip_id = 2
-        raw_uniequip_trait_data = await get_uniequip_trait_adjustment(
-            characterId, uniequip_id, "TRAIT"
-        )
-        raw_uniequip_display_data = await get_uniequip_trait_adjustment(
-            characterId, uniequip_id, "DISPLAY"
-        )
+        raw_uniequip_trait_data = await get_uniequip_trait_adjustment(characterId, uniequip_id, "TRAIT")
+        raw_uniequip_display_data = await get_uniequip_trait_adjustment(characterId, uniequip_id, "DISPLAY")
         for trait in raw_uniequip_trait_data:
             uniequip_buff_list.append(trait)
         for display in raw_uniequip_display_data:
@@ -75,9 +69,7 @@ async def get_buff_list(
     sub_profession_id = character_info["subProfessionId"]
     if character_info["trait"] is not None:
         for i in range(len(character_info["trait"]["candidates"][0]["blackboard"])):
-            sub_profession_trait = character_info["trait"]["candidates"][0][
-                "blackboard"
-            ][i]
+            sub_profession_trait = character_info["trait"]["candidates"][0]["blackboard"][i]
             sub_profession_trait_buff_list.append(sub_profession_trait)
     buff_list["sub_profession_trait_buff_list"] = sub_profession_trait_buff_list
 

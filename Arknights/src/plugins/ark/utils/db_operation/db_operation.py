@@ -1,9 +1,10 @@
 from typing import List, Union
+
 from nonebot.log import logger
 
 from .database.CookiesDAL import CookiesDAL
-from .database.UidDataDAL import UidDataDAL
 from .database.db_config import async_session
+from .database.UidDataDAL import UidDataDAL
 
 
 async def bind_db(userid, uid=None):

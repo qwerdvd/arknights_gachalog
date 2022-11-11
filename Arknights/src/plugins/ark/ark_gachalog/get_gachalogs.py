@@ -1,6 +1,7 @@
 import json
 from datetime import datetime
 from typing import Optional
+
 from nonebot.log import logger
 
 from ..utils.ark_api.get_ark_data import get_gacha_log_by_token
@@ -87,9 +88,7 @@ async def save_gachalogs(uid: str, raw_data: Optional[dict] = None):
     # 抽卡记录中的 star 为实际 star - 1
     for i in range(2, 6):
         all_gacha_num += await calculate_gacha_num(i, raw_data)
-        result[f"{char_eng_lists[i]}_star_gacha_num"] = await calculate_gacha_num(
-            i, raw_data
-        )
+        result[f"{char_eng_lists[i]}_star_gacha_num"] = await calculate_gacha_num(i, raw_data)
     result["all_gacha_num"] = all_gacha_num
     for i in ["单up池", "专属推荐干员寻访", "联合寻访", "常驻标准寻访"]:
         if len(raw_data[i]) > 1:

@@ -1,11 +1,11 @@
-import json
 import decimal
-
+import json
 from decimal import Decimal
+
+from ..utils.alias.characterId_to_uniequipId import characterId_to_uniequipId
 
 # from .cal_full_trained_character_info import calculate_fully_trained_character_data
 from .cal_buff_list import get_character_skill_id
-from ..utils.alias.characterId_to_uniequipId import characterId_to_uniequipId
 
 
 async def calculate_character_damage(
@@ -75,9 +75,7 @@ async def calculate_character_damage(
         elif buff["key"] == "damage_scale":
             damage_scale = damage_scale * (1 + buff["value"])
         elif buff["key"] == "attack_speed":
-            character_attribute_info["attack_speed"] = (
-                character_attribute_info["attack_speed"] + buff["value"]
-            )
+            character_attribute_info["attack_speed"] = character_attribute_info["attack_speed"] + buff["value"]
 
     # 再计算天赋 buff 加成
     talent_buff_list = buff_list["talent_buff_list"]
@@ -86,13 +84,9 @@ async def calculate_character_damage(
             if buff["key"] == "atk":
                 add_atk += base_atk * buff["value"]
             elif buff["key"] == "max_hp":
-                character_attribute_info["max_hp"] = character_attribute_info[
-                    "max_hp"
-                ] * (1 + buff["value"])
+                character_attribute_info["max_hp"] = character_attribute_info["max_hp"] * (1 + buff["value"])
             elif buff["key"] == "attack_speed":
-                character_attribute_info["attack_speed"] = (
-                    character_attribute_info["attack_speed"] + buff["value"]
-                )
+                character_attribute_info["attack_speed"] = character_attribute_info["attack_speed"] + buff["value"]
             elif buff["key"] == "atk_scale":
                 talent_atk_scale = atk_scale * buff["value"]
             elif buff["key"] == "surtr_t_2[withdraw].interval":  # 史尔特尔 2 天赋,锁血
@@ -133,16 +127,10 @@ async def calculate_character_damage(
         elif buff["key"] == "attack@times":  # attack@times 为攻击次数(连击)
             combo_attack_times += buff["value"]
         elif buff["key"] == "base_attack_time":  # base_attack_time 为攻击间隔
-            if (
-                characterId == "char_103_angel" and skill_id == "skchr_angel_3"
-            ):  # 能天使 3 技能攻击间隔双倍减少
-                character_attribute_info["attack_time"] = (
-                    character_attribute_info["attack_time"] + buff["value"] * 2
-                )
+            if characterId == "char_103_angel" and skill_id == "skchr_angel_3":  # 能天使 3 技能攻击间隔双倍减少
+                character_attribute_info["attack_time"] = character_attribute_info["attack_time"] + buff["value"] * 2
             else:
-                character_attribute_info["attack_time"] = (
-                    character_attribute_info["attack_time"] + buff["value"]
-                )
+                character_attribute_info["attack_time"] = character_attribute_info["attack_time"] + buff["value"]
         elif buff["key"] == "atk":
             add_atk += base_atk * buff["value"]
         elif buff["key"] == "atk_scale":
@@ -150,15 +138,11 @@ async def calculate_character_damage(
         elif buff["key"] == "damage_scale":
             damage_scale = damage_scale * buff["value"]
         elif buff["key"] == "max_hp":
-            character_attribute_info["max_hp"] = (
-                character_attribute_info["max_hp"] + buff["value"]
-            )
+            character_attribute_info["max_hp"] = character_attribute_info["max_hp"] + buff["value"]
         elif buff["key"] == "attack@surtr_s_2[critical].atk_scale":
             atk_scale = atk_scale * buff["value"]
         elif buff["key"] == "attack_speed":
-            character_attribute_info["attack_speed"] = (
-                character_attribute_info["attack_speed"] + buff["value"]
-            )
+            character_attribute_info["attack_speed"] = character_attribute_info["attack_speed"] + buff["value"]
 
     # 剔除暴击 buff 下的伤害倍率加成
     for buff in skill_buff_list:
@@ -189,14 +173,10 @@ async def calculate_character_damage(
                 if buff["key"] == "spareshot_chen.prob":
                     spareshot_chen_prob = buff["value"]
                 elif buff["key"] == "chen2_t_2[common].attack_speed":
-                    character_attribute_info["attack_speed"] = (
-                        character_attribute_info["attack_speed"] + buff["value"]
-                    )
+                    character_attribute_info["attack_speed"] = character_attribute_info["attack_speed"] + buff["value"]
 
     # 特殊处理
-    if (
-        characterId == "char_4055_bgsnow" and skill_id == "skchr_bgsnow_2"
-    ):  # 鸿雪 2 技能造成 3 连击
+    if characterId == "char_4055_bgsnow" and skill_id == "skchr_bgsnow_2":  # 鸿雪 2 技能造成 3 连击
         combo_attack_times += 3
 
     print(atk_scale)
@@ -214,12 +194,8 @@ async def calculate_character_damage(
     else:
         final_atk_scale_with_crit = final_atk_scale_without_crit
     final_atk = character_attribute_info["atk"] * final_atk_scale_with_crit
-    im.append(
-        f"最终攻击力 (攻击力 * 倍率) 为 ({base_atk} + {add_atk}) * {final_atk_scale_with_crit} = {final_atk}\n"
-    )
-    print(
-        f"最终攻击力 (攻击力 * 倍率) 为 ({base_atk} + {add_atk}) * {final_atk_scale_with_crit} = {final_atk}"
-    )
+    im.append(f"最终攻击力 (攻击力 * 倍率) 为 ({base_atk} + {add_atk}) * {final_atk_scale_with_crit} = {final_atk}\n")
+    print(f"最终攻击力 (攻击力 * 倍率) 为 ({base_atk} + {add_atk}) * {final_atk_scale_with_crit} = {final_atk}")
     raw_attack_time = character_attribute_info["attack_time"]
     print(f"攻击间隔为 {raw_attack_time}")
     final_attack_speed = character_attribute_info["attack_speed"]
@@ -237,29 +213,19 @@ async def calculate_character_damage(
         Decimal("0"), rounding=decimal.ROUND_HALF_UP
     )
     frame_alignment_attack_time = frame_alignment_attack_interval / frame_rate
-    im.append(
-        f"帧对齐后的攻击间隔: {frame_alignment_attack_interval} 帧, {frame_alignment_attack_time} 秒\n"
-    )
-    print(
-        f"帧对齐攻击间隔: {frame_alignment_attack_interval} 帧, {frame_alignment_attack_time} 秒"
-    )
+    im.append(f"帧对齐后的攻击间隔: {frame_alignment_attack_interval} 帧, {frame_alignment_attack_time} 秒\n")
+    print(f"帧对齐攻击间隔: {frame_alignment_attack_interval} 帧, {frame_alignment_attack_time} 秒")
 
     default_skill_forward = 12  # 默认前摇为 12 帧
 
     # 获取技能数据
     skill_type = await get_skill_basic_info(characterId, skill_id, "skillType")  # 技能类型
-    skill_duration_type = await get_skill_basic_info(
-        characterId, skill_id, "durationType"
-    )  # 持续类型
+    skill_duration_type = await get_skill_basic_info(characterId, skill_id, "durationType")  # 持续类型
     sp_type = await get_skill_basic_info(characterId, skill_id, "spType")  # sp 类型
     sp_cost = await get_skill_basic_info(characterId, skill_id, "spCost")  # sp 消耗
     init_sp = await get_skill_basic_info(characterId, skill_id, "initSp")  # 初始 sp
-    sp_increment = await get_skill_basic_info(
-        characterId, skill_id, "increment"
-    )  # sp 增长
-    skill_duration = await get_skill_basic_info(
-        characterId, skill_id, "duration"
-    )  # 技能持续时间
+    sp_increment = await get_skill_basic_info(characterId, skill_id, "increment")  # sp 增长
+    skill_duration = await get_skill_basic_info(characterId, skill_id, "duration")  # 技能持续时间
     print(f"技能持续时间为 {skill_duration} 秒")
 
     time_line = []
@@ -314,12 +280,8 @@ async def calculate_character_damage(
                 damage = first_stage_damage + second_stage_damage
             else:
                 total_skill_duration = skill_duration
-                attack_trigger_time = (
-                    skill_duration * frame_rate / float(frame_alignment_attack_interval)
-                )
-                attack_time = Decimal(attack_trigger_time / 2).quantize(
-                    Decimal("0"), rounding=decimal.ROUND_CEILING
-                )
+                attack_trigger_time = skill_duration * frame_rate / float(frame_alignment_attack_interval)
+                attack_time = Decimal(attack_trigger_time / 2).quantize(Decimal("0"), rounding=decimal.ROUND_CEILING)
                 im.append(f"攻击次数为 {attack_time} 次\n")
                 im.append(f"技能持续时间为 {total_skill_duration} 秒\n")
                 damage = final_atk * int(attack_time) * damage_scale
@@ -331,28 +293,17 @@ async def calculate_character_damage(
             if characterId == "char_1013_chen2":  # 天赋多计入 4 发弹药
                 prob_add_attack_trigger_time = 4
                 im.append("水陈天赋多计入 4 发弹药\n")
-            attack_time = (
-                attack_trigger_time / 2 + prob_add_attack_trigger_time
-            ) * 2  # 一次消耗 2 发弹药
+            attack_time = (attack_trigger_time / 2 + prob_add_attack_trigger_time) * 2  # 一次消耗 2 发弹药
             attack_interval = int(frame_alignment_attack_interval)  # 帧对齐后的攻击间隔(帧)
-            total_skill_duration = (
-                attack_time * attack_interval + hand_up_time
-            ) / frame_rate  # 技能持续时间(秒)
+            total_skill_duration = (attack_time * attack_interval + hand_up_time) / frame_rate  # 技能持续时间(秒)
             im.append(f"攻击次数为 {attack_time} 次\n")
             im.append(f"技能持续时间为 {total_skill_duration} 秒\n")
             damage = final_atk * int(attack_time) * damage_scale
     elif skill_duration > 0 and not is_special_treatment:
         total_duration_frame = skill_duration * frame_rate
-        attack_times = (total_duration_frame - default_skill_forward) / int(
-            frame_alignment_attack_interval
-        )
+        attack_times = (total_duration_frame - default_skill_forward) / int(frame_alignment_attack_interval)
         total_attack_times = (
-            int(
-                Decimal(attack_times).quantize(
-                    Decimal("0"), rounding=decimal.ROUND_CEILING
-                )
-            )
-            * combo_attack_times
+            int(Decimal(attack_times).quantize(Decimal("0"), rounding=decimal.ROUND_CEILING)) * combo_attack_times
         )
         damage = final_atk * total_attack_times * damage_scale + off_string_damage
     elif skill_duration == -1 and not is_special_treatment:  # -1 表示为永续技能或者是次数技能
@@ -373,11 +324,7 @@ async def calculate_character_damage(
         # 特殊处理史尔特尔的技能
         if characterId == "char_350_surtr" and skill_id == "skchr_surtr_3":
             max_hp = character_attribute_info["max_hp"]
-            (
-                loss_time,
-                blood_lock_time,
-                attack_interval,
-            ) = await deal_with_surtr_third_skill(
+            (loss_time, blood_lock_time, attack_interval,) = await deal_with_surtr_third_skill(
                 max_hp,
                 surtr_t_2_interval,
                 frame_rate,
@@ -410,12 +357,7 @@ async def calculate_character_damage(
                     f"技能次数为 {combo_attack_times}连击 * {skill_attack_number} = {skill_attack_number * combo_attack_times} 次\n"
                 )
             basic_attack_number = basic_attack_damage * basic_attack_number
-            skill_attack_number = (
-                final_atk
-                * total_attack_times
-                * skill_attack_number
-                * combo_attack_times
-            )
+            skill_attack_number = final_atk * total_attack_times * skill_attack_number * combo_attack_times
             damage = basic_attack_number + skill_attack_number
             im.append(f"普攻伤害为 {basic_attack_number}\n")
             im.append(f"技能伤害为 {skill_attack_number}\n")
@@ -708,10 +650,7 @@ async def deal_with_ebnhlz_skill_damage(
     # 假如攒满 3 个球再攻击
     # 则此次伤害为 3 个球的伤害加上刚转好的 1 个球的伤害
     # 再加上天赋 2 的伤害
-    mata_full_damage = (
-        final_atk * talent_1_scale_multiplied * default_combo_attack_times
-        + talent_2_append_damage
-    )
+    mata_full_damage = final_atk * talent_1_scale_multiplied * default_combo_attack_times + talent_2_append_damage
 
     # 假设攻击模式为 攒满球 + 1 次普攻 循环
     single_attack_damage = mata_full_damage + final_atk * talent_2_atk_scale * 1
@@ -733,9 +672,7 @@ async def deal_with_horn_skill_damage(
     for buff in skill_buff_list:
         if buff["key"] == "horn_s_3[overload_start].atk":
             horn_s_3_overload_start_atk = buff["value"]
-            overload_add_atk = (
-                base_atk * horn_s_3_overload_start_atk * (1 + talent_1_buff_atk)
-            )
+            overload_add_atk = base_atk * horn_s_3_overload_start_atk * (1 + talent_1_buff_atk)
         elif buff["key"] == "horn_s_3[overload_start].interval":
             horn_s_3_overload_start_interval = buff["value"]
         elif buff["key"] == "horn_s_3[overload_start].hp_ratio":
@@ -745,9 +682,7 @@ async def deal_with_horn_skill_damage(
     # 号角伤害分为两段, 第一段不触发过载, 第二段触发过载
     # 第一段伤害
     first_stage_atk = final_atk  # 第一段伤害的攻击力
-    first_stage_duration = (
-        skill_duration - horn_s_3_overload_start_damage_duration
-    )  # 第一段持续时间
+    first_stage_duration = skill_duration - horn_s_3_overload_start_damage_duration  # 第一段持续时间
     first_stage_atk_times = Decimal(
         first_stage_duration * frame_rate / float(frame_alignment_attack_interval)
     ).quantize(
@@ -755,9 +690,7 @@ async def deal_with_horn_skill_damage(
     )  # 第一段攻击次数
     first_stage_damage = first_stage_atk * int(first_stage_atk_times)  # 第一段伤害
     # 第二段伤害
-    second_stage_atk = (
-        base_atk + overload_add_atk
-    ) * final_atk_scale_with_crit  # 第二段伤害的攻击力
+    second_stage_atk = (base_atk + overload_add_atk) * final_atk_scale_with_crit  # 第二段伤害的攻击力
     second_stage_duration = horn_s_3_overload_start_damage_duration  # 第二段持续时间
     second_stage_atk_times = Decimal(
         second_stage_duration * frame_rate / float(frame_alignment_attack_interval)

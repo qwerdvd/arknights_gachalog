@@ -1,14 +1,12 @@
+from base64 import b64encode
 from io import BytesIO
 from pathlib import Path
 from typing import Union
-from base64 import b64encode
 
 from PIL import Image
 
 
-async def convert_img(
-    img: Union[Image.Image, str, Path, bytes], is_base64: bool = False
-):
+async def convert_img(img: Union[Image.Image, str, Path, bytes], is_base64: bool = False):
     """
     :说明:
       将PIL.Image对象转换为bytes或者base64格式。

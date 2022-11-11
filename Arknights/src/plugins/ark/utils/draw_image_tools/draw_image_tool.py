@@ -2,10 +2,10 @@ import math
 import random
 from io import BytesIO
 from pathlib import Path
-from typing import Tuple, Union, Optional
+from typing import Optional, Tuple, Union
 
-from PIL import Image
 from httpx import get
+from PIL import Image
 
 # from ..download_resource.RESOURCE_PATH import TEXT2D_PATH
 
@@ -43,9 +43,7 @@ SP_BG_PATH = BG_PATH / "sp_bg"
 #     return Image.open(LEVEL_PATH / f'level_{level}.png')
 
 
-async def get_qq_avatar(
-    qid: Optional[Union[int, str]] = None, avatar_url: Optional[str] = None
-) -> Image.Image:
+async def get_qq_avatar(qid: Optional[Union[int, str]] = None, avatar_url: Optional[str] = None) -> Image.Image:
     if qid:
         avatar_url = f"http://q1.qlogo.cn/g?b=qq&nk={qid}&s=640"
     elif avatar_url is None:
@@ -96,9 +94,7 @@ def crop_center_img(img: Image.Image, based_w: int, based_h: int) -> Image.Image
     return crop_img
 
 
-async def get_color_bg(
-    based_w: int, based_h: int, bg: Optional[str] = None
-) -> Image.Image:
+async def get_color_bg(based_w: int, based_h: int, bg: Optional[str] = None) -> Image.Image:
     image = ""
     if bg:
         path = SP_BG_PATH / f"{bg}.jpg"
@@ -113,9 +109,7 @@ async def get_color_bg(
     return img
 
 
-async def get_simple_bg(
-    based_w: int, based_h: int, image: Union[str, None, Image.Image] = None
-) -> Image.Image:
+async def get_simple_bg(based_w: int, based_h: int, image: Union[str, None, Image.Image] = None) -> Image.Image:
     if image:
         if isinstance(image, str):
             edit_bg = Image.open(BytesIO(get(image).content)).convert("RGBA")
@@ -131,9 +125,7 @@ async def get_simple_bg(
 
 
 class CustomizeImage:
-    def __init__(
-        self, image: Union[str, Image.Image], based_w: int, based_h: int
-    ) -> None:
+    def __init__(self, image: Union[str, Image.Image], based_w: int, based_h: int) -> None:
 
         self.bg_img = self.get_image(image, based_w, based_h)
         self.bg_color = self.get_bg_color(self.bg_img, is_light=True)
@@ -144,9 +136,7 @@ class CustomizeImage:
         self.char_high_color = self.get_char_high_color(self.bg_color)
 
     @staticmethod
-    def get_image(
-        image: Union[str, Image.Image], based_w: int, based_h: int
-    ) -> Image.Image:
+    def get_image(image: Union[str, Image.Image], based_w: int, based_h: int) -> Image.Image:
         # 获取背景图片
         if isinstance(image, Image.Image):
             edit_bg = image
@@ -169,9 +159,7 @@ class CustomizeImage:
         return dominant_color
 
     @staticmethod
-    def get_bg_color(
-        edit_bg: Image.Image, is_light: Optional[bool] = False
-    ) -> Tuple[int, int, int]:
+    def get_bg_color(edit_bg: Image.Image, is_light: Optional[bool] = False) -> Tuple[int, int, int]:
         # 获取背景主色
         color = 8
         q = edit_bg.quantize(colors=color, method=2)

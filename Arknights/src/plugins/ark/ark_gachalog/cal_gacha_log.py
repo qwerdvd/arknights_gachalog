@@ -1,11 +1,10 @@
 import time
 from typing import Optional
+
 from nonebot.log import logger
 
 
-async def calculate_average_star_probability(
-    star: int, gacha_logs: Optional[dict] = None
-) -> int:
+async def calculate_average_star_probability(star: int, gacha_logs: Optional[dict] = None) -> int:
     """
     计算某星级出货概率
     :param star: 星级。

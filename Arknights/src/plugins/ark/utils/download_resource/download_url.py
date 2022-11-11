@@ -1,23 +1,22 @@
-from typing import Tuple, Optional
+from typing import Optional, Tuple
 
 import aiofiles
-from nonebot.log import logger
 from aiohttp.client import ClientSession
 from aiohttp.client_exceptions import ClientConnectorError
+from nonebot.log import logger
 
+from .RESOURCE_PATH import BUILDING_SKILL_PATH  # MAP_PATH,
 from .RESOURCE_PATH import (
-    RESOURCE_PATH,
     AVATAR_PATH,
+    ENEMY_PATH,
     ITEM_PATH,
+    ITEM_RARITY_IMG_PATH,
+    PLAYER_PATH,
     PORTRAIT_PATH,
     PROFESSION_PATH,
-    BUILDING_SKILL_PATH,
-    ENEMY_PATH,
-    ITEM_RARITY_IMG_PATH,
-    # MAP_PATH,
+    RESOURCE_PATH,
     SKIN_PATH,
     TEMP_PATH,
-    PLAYER_PATH,
 )
 
 PATH_MAP = {
@@ -32,9 +31,7 @@ PATH_MAP = {
 }
 
 
-async def download_file(
-    sess: ClientSession, url: str, path: int, name: str
-) -> Optional[Tuple[str, int, str]]:
+async def download_file(sess: ClientSession, url: str, path: int, name: str) -> Optional[Tuple[str, int, str]]:
     """
     :说明:
       下载URL保存入目录

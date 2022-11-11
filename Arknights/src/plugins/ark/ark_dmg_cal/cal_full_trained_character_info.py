@@ -1,12 +1,11 @@
 import json
 from typing import Optional
+
 from ..utils.alias.characterId_to_uniequipId import characterId_to_uniequipId
 
 
 async def get_data_version() -> str:
-    mata_path = (
-        "C:\\Users\\qwerdvd\\PycharmProjects\\pythonProject\\Arknights\\data\\gamedata"
-    )
+    mata_path = "C:\\Users\\qwerdvd\\PycharmProjects\\pythonProject\\Arknights\\data\\gamedata"
     data_version_path = mata_path + "\\excel\\data_version.txt"
     with open(data_version_path, "r", encoding="utf-8") as f:
         raw_data_version = f.read().splitlines()
@@ -15,9 +14,7 @@ async def get_data_version() -> str:
 
 
 # Calculate the data of fully trained operators
-async def calculate_fully_trained_character_data(
-    characterId: str, is_equip: bool, uniequip_id: str
-):
+async def calculate_fully_trained_character_data(characterId: str, is_equip: bool, uniequip_id: str):
     with open(
         f"src/plugins/ark/tool/data/basic_character_info/{characterId}.json",
         encoding="UTF-8",
@@ -52,17 +49,11 @@ async def calculate_fully_trained_character_data(
         elif uniequip_id == "二模":
             uniequip_id = 2
         # 模组属性加成数据
-        uniequip_attribute_data = await get_uniequip_attribute_data(
-            characterId, uniequip_id
-        )
+        uniequip_attribute_data = await get_uniequip_attribute_data(characterId, uniequip_id)
         # 天赋覆写数据
-        uniequip_talent_override = await get_uniequip_talent_adjustment(
-            characterId, uniequip_id, target="TALENT"
-        )
+        uniequip_talent_override = await get_uniequip_talent_adjustment(characterId, uniequip_id, target="TALENT")
         # 特性覆写数据
-        uniequip_trait_override = await get_uniequip_trait_adjustment(
-            characterId, uniequip_id, target="TRAIT"
-        )
+        uniequip_trait_override = await get_uniequip_trait_adjustment(characterId, uniequip_id, target="TRAIT")
 
     # 获取干员潜能信息数据
     potential_data = await get_potential_data(characterId)
@@ -71,52 +62,25 @@ async def calculate_fully_trained_character_data(
     favor_data = await get_favor_data(characterId)
 
     # 计算干员基础数据
-    add_hp = (
-        potential_data["potential_hp"]
-        + favor_data["favor_hp"]
-        + uniequip_attribute_data["uniequip_hp"]
-    )
-    add_atk = (
-        potential_data["potential_atk"]
-        + favor_data["favor_atk"]
-        + uniequip_attribute_data["uniequip_atk"]
-    )
-    add_def = (
-        potential_data["potential_def"]
-        + favor_data["favor_def"]
-        + uniequip_attribute_data["uniequip_def"]
-    )
+    add_hp = potential_data["potential_hp"] + favor_data["favor_hp"] + uniequip_attribute_data["uniequip_hp"]
+    add_atk = potential_data["potential_atk"] + favor_data["favor_atk"] + uniequip_attribute_data["uniequip_atk"]
+    add_def = potential_data["potential_def"] + favor_data["favor_def"] + uniequip_attribute_data["uniequip_def"]
     add_magic_resistance = (
-        potential_data["potential_magic_resistance"]
-        + uniequip_attribute_data["uniequip_magic_resistance"]
+        potential_data["potential_magic_resistance"] + uniequip_attribute_data["uniequip_magic_resistance"]
     )
-    add_cost = (
-        potential_data["potential_cost"] + uniequip_attribute_data["uniequip_cost"]
-    )
-    add_attack_speed = (
-        potential_data["potential_attack_speed"]
-        + uniequip_attribute_data["uniequip_attack_speed"]
-    )
-    add_respawn_time = (
-        potential_data["potential_respawn_time"]
-        + uniequip_attribute_data["uniequip_respawn_time"]
-    )
+    add_cost = potential_data["potential_cost"] + uniequip_attribute_data["uniequip_cost"]
+    add_attack_speed = potential_data["potential_attack_speed"] + uniequip_attribute_data["uniequip_attack_speed"]
+    add_respawn_time = potential_data["potential_respawn_time"] + uniequip_attribute_data["uniequip_respawn_time"]
 
     # 计算干员满练数据
     character_info["base_hp"] = character_info["base_hp"] + add_hp
     character_info["base_atk"] = character_info["base_atk"] + add_atk
     character_info["base_def"] = character_info["base_def"] + add_def
-    character_info["base_magic_resistance"] = (
-        character_info["base_magic_resistance"] + add_magic_resistance
-    )
+    character_info["base_magic_resistance"] = character_info["base_magic_resistance"] + add_magic_resistance
     character_info["base_cost"] = character_info["base_cost"] + add_cost
-    character_info["base_attack_speed"] = (
-        character_info["base_attack_speed"] + add_attack_speed
-    )
+    character_info["base_attack_speed"] = character_info["base_attack_speed"] + add_attack_speed
     character_info["base_attack_time"] = character_info["base_attack_time"]
-    character_info["base_respawn_time"] = (
-        character_info["base_respawn_time"] + add_respawn_time
-    )
+    character_info["base_respawn_time"] = character_info["base_respawn_time"] + add_respawn_time
 
     return character_info
 
@@ -138,9 +102,7 @@ async def get_potential_data(characterId: str) -> Optional[dict]:
     potential_cost, potential_attack_speed, potential_respawn_time = 0, 0, 0
     for potential in character_potential_info.items():
         if potential[1]["type"] == 0:
-            attributeModifiers = potential[1]["buff"]["attributes"][
-                "attributeModifiers"
-            ]
+            attributeModifiers = potential[1]["buff"]["attributes"]["attributeModifiers"]
             for attributeModifier in attributeModifiers:
                 if attributeModifier["attributeType"] == 0:
                     potential_hp += attributeModifier["value"]
@@ -188,13 +150,9 @@ async def get_favor_data(characterId: str) -> Optional[dict]:
 
 
 # 获取干员模组基础属性数据
-async def get_uniequip_attribute_data(
-    characterId: str, uniequip_id: int
-) -> Optional[dict]:
+async def get_uniequip_attribute_data(characterId: str, uniequip_id: int) -> Optional[dict]:
     equip_id = await characterId_to_uniequipId(characterId, uniequip_id)
-    with open(
-        f"src/plugins/ark/tool/data/uniequip_info/{equip_id}.json", encoding="UTF-8"
-    ) as f:
+    with open(f"src/plugins/ark/tool/data/uniequip_info/{equip_id}.json", encoding="UTF-8") as f:
         character_uniequip_info = json.load(f)
     uniequip_attribute_data = {}
     uniequip_base_attribute = character_uniequip_info["attributeBlackboard"]
@@ -227,42 +185,28 @@ async def get_uniequip_attribute_data(
 
 
 # 获取干员模组特性调整数据
-async def get_uniequip_trait_adjustment(
-    characterId: str, uniequip_id: int, target: str
-) -> Optional[dict]:
+async def get_uniequip_trait_adjustment(characterId: str, uniequip_id: int, target: str) -> Optional[dict]:
     equip_id = await characterId_to_uniequipId(characterId, uniequip_id)
     override_trait_data = {}
-    with open(
-        f"src/plugins/ark/tool/data/uniequip_info/{equip_id}.json", encoding="UTF-8"
-    ) as f:
+    with open(f"src/plugins/ark/tool/data/uniequip_info/{equip_id}.json", encoding="UTF-8") as f:
         character_uniequip_info = json.load(f)
     uniequip_parts_info = character_uniequip_info["parts"]
     have_trait_addition = False
     added_trait_have_property = False
     for i in range(len(uniequip_parts_info)):
         if target == "TRAIT" and uniequip_parts_info[i]["target"] == target:
-            raw_override_trait_data = uniequip_parts_info[i]["overrideTraitDataBundle"][
-                "candidates"
-            ][-1]
+            raw_override_trait_data = uniequip_parts_info[i]["overrideTraitDataBundle"]["candidates"][-1]
             override_trait_data = raw_override_trait_data["blackboard"]
         elif (
             uniequip_parts_info[i]["target"] == target
-            and uniequip_parts_info[i]["overrideTraitDataBundle"]["candidates"][0][
-                "prefabKey"
-            ]
-            is not None
+            and uniequip_parts_info[i]["overrideTraitDataBundle"]["candidates"][0]["prefabKey"] is not None
         ):
             # 假如 target 为 DISPLAY, 若 prefabKey 为 null, 则此时为模组触发有条件的特性
-            raw_override_trait_data = uniequip_parts_info[i]["overrideTraitDataBundle"][
-                "candidates"
-            ][-1]
+            raw_override_trait_data = uniequip_parts_info[i]["overrideTraitDataBundle"]["candidates"][-1]
             override_trait_data = raw_override_trait_data["blackboard"]
         elif (
             uniequip_parts_info[i]["target"] == target
-            and uniequip_parts_info[i]["overrideTraitDataBundle"]["candidates"][0][
-                "prefabKey"
-            ]
-            is None
+            and uniequip_parts_info[i]["overrideTraitDataBundle"]["candidates"][0]["prefabKey"] is None
         ):
             have_trait_addition = True
             if uniequip_parts_info[i]["resKey"] is None:
@@ -275,54 +219,34 @@ async def get_uniequip_trait_adjustment(
                 print("此模组有特性追加且有特性追加资源")
             if (
                 uniequip_parts_info[i]["target"] == target
-                and uniequip_parts_info[i]["addOrOverrideTalentDataBundle"][
-                    "candidates"
-                ][0]["talentIndex"]
-                == -1
+                and uniequip_parts_info[i]["addOrOverrideTalentDataBundle"]["candidates"][0]["talentIndex"] == -1
             ):
-                raw_override_trait_data = uniequip_parts_info[i][
-                    "addOrOverrideTalentDataBundle"
-                ]["candidates"][-1]
+                raw_override_trait_data = uniequip_parts_info[i]["addOrOverrideTalentDataBundle"]["candidates"][-1]
                 override_trait_data = raw_override_trait_data["blackboard"]
 
     return override_trait_data
 
 
 # 获取干员模组天赋调整数据
-async def get_uniequip_talent_adjustment(
-    characterId: str, uniequip_id: int, target: str
-) -> Optional[dict]:
+async def get_uniequip_talent_adjustment(characterId: str, uniequip_id: int, target: str) -> Optional[dict]:
     equip_id = await characterId_to_uniequipId(characterId, uniequip_id)
     override_talent_data = {}
     print(f"equip_id = {equip_id}")
-    with open(
-        f"src/plugins/ark/tool/data/uniequip_info/{equip_id}.json", encoding="UTF-8"
-    ) as f:
+    with open(f"src/plugins/ark/tool/data/uniequip_info/{equip_id}.json", encoding="UTF-8") as f:
         character_uniequip_info = json.load(f)
     uniequip_parts_info = character_uniequip_info["parts"]
     print(len(uniequip_parts_info))
     for i in range(len(uniequip_parts_info)):
         if (
             uniequip_parts_info[i]["target"] == target
-            and uniequip_parts_info[i]["addOrOverrideTalentDataBundle"]["candidates"][
-                -1
-            ]["prefabKey"]
-            != "10"
+            and uniequip_parts_info[i]["addOrOverrideTalentDataBundle"]["candidates"][-1]["prefabKey"] != "10"
         ):
-            raw_override_talent_data = uniequip_parts_info[i][
-                "addOrOverrideTalentDataBundle"
-            ]["candidates"][-1]
-            override_talent_data["talent_index"] = raw_override_talent_data[
-                "talentIndex"
-            ]
+            raw_override_talent_data = uniequip_parts_info[i]["addOrOverrideTalentDataBundle"]["candidates"][-1]
+            override_talent_data["talent_index"] = raw_override_talent_data["talentIndex"]
             override_talent_data["blackboard"] = raw_override_talent_data["blackboard"]
         elif uniequip_parts_info[i]["target"] == "TALENT_DATA_ONLY":
-            raw_override_talent_data = uniequip_parts_info[i][
-                "addOrOverrideTalentDataBundle"
-            ]["candidates"][-1]
-            override_talent_data["talent_index"] = raw_override_talent_data[
-                "talentIndex"
-            ]
+            raw_override_talent_data = uniequip_parts_info[i]["addOrOverrideTalentDataBundle"]["candidates"][-1]
+            override_talent_data["talent_index"] = raw_override_talent_data["talentIndex"]
             override_talent_data["blackboard"] = raw_override_talent_data["blackboard"]
 
     return override_talent_data

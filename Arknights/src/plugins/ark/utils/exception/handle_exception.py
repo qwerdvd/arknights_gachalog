@@ -1,15 +1,13 @@
 from functools import wraps
 from typing import Optional
 
+from nonebot.adapters.onebot.v11 import ActionFailed
+from nonebot.exception import FinishedException
 from nonebot.log import logger
 from nonebot.matcher import Matcher
-from nonebot.exception import FinishedException
-from nonebot.adapters.onebot.v11 import ActionFailed
 
 
-def handle_exception(
-    name: str, log_msg: Optional[str] = None, fail_msg: Optional[str] = None
-):
+def handle_exception(name: str, log_msg: Optional[str] = None, fail_msg: Optional[str] = None):
     """
     :说明:
       捕获命令执行过程中发生的异常并回报。
