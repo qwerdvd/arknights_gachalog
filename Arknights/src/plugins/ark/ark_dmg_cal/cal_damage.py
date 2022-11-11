@@ -215,16 +215,69 @@ async def calculate_character_damage(
     time_line = []
     if combo_attack_times == 0:
         combo_attack_times = 1
-    if skill_duration > 0:
+
+    is_special_treatment = False
+
+    # 特殊处理弹药类技能
+    if characterId in ["char_1013_chen2", "char_4039_horn"]:
+        im.append("弹药类技能特殊处理\n")
+        is_special_treatment = True
+        str_time_line = ""
+        skill_buff_list = buff_list["skill_buff_list"]
+        attack_trigger_time = 0
+        hand_up_time = 12  # 抬手 12 帧
+        prob_add_attack_trigger_time = 0
+        if skill_duration > 0:
+            if characterId == "char_4039_horn":  # 号角触发血战
+                first_stage_duration, first_stage_atk_times, first_stage_damage, overload_add_atk, \
+                second_stage_atk, second_stage_duration, second_stage_atk_times, second_stage_damage = \
+                    await deal_with_horn_skill_damage(
+                        skill_buff_list, base_atk, final_atk, skill_duration, frame_rate,
+                        frame_alignment_attack_interval,
+                        final_atk_scale_with_crit
+                    )
+                im.append("号角默认触发血战,过载伤害分两段计算\n")
+                im.append(
+                    f"不触发过载时攻击力(攻击力 * 倍率)为 ({base_atk} + {add_atk}) * {final_atk_scale_with_crit} = {final_atk}\n")
+                im.append(f"不触发过载时持续时间为 {first_stage_duration}\n")
+                im.append(f"不触发过载时攻击次数为 {first_stage_atk_times}\n")
+                im.append(f"不触发过载时伤害为 {first_stage_damage}\n")
+                im.append(
+                    f"触发过载时攻击力(攻击力 * 倍率)为 ({base_atk} + {overload_add_atk}) * {final_atk_scale_with_crit} = {second_stage_atk}\n")
+                im.append(f"触发过载时持续时间为 {second_stage_duration}\n")
+                im.append(f"触发过载时攻击次数为 {second_stage_atk_times}\n")
+                im.append(f"触发过载时伤害为 {second_stage_damage}\n")
+                # 总伤害
+                damage = first_stage_damage + second_stage_damage
+            else:
+                total_skill_duration = skill_duration
+                attack_trigger_time = skill_duration * frame_rate / float(frame_alignment_attack_interval)
+                attack_time = Decimal(attack_trigger_time / 2).quantize(
+                    Decimal("0"), rounding=decimal.ROUND_CEILING)
+                im.append(f"攻击次数为 {attack_time} 次\n")
+                im.append(f"技能持续时间为 {total_skill_duration} 秒\n")
+                damage = final_atk * int(attack_time) * damage_scale
+
+        else:
+            for buff in skill_buff_list:
+                if buff["key"] == "attack@trigger_time":  # 弹药总量
+                    attack_trigger_time = buff["value"]
+            if characterId == "char_1013_chen2":  # 天赋多计入 4 发弹药
+                prob_add_attack_trigger_time = 4
+                im.append("水陈天赋多计入 4 发弹药\n")
+            attack_time = (attack_trigger_time / 2 + prob_add_attack_trigger_time) * 2  # 一次消耗 2 发弹药
+            attack_interval = int(frame_alignment_attack_interval)  # 帧对齐后的攻击间隔(帧)
+            total_skill_duration = (attack_time * attack_interval + hand_up_time) / frame_rate  # 技能持续时间(秒)
+            im.append(f"攻击次数为 {attack_time} 次\n")
+            im.append(f"技能持续时间为 {total_skill_duration} 秒\n")
+            damage = final_atk * int(attack_time) * damage_scale
+    elif skill_duration > 0 and not is_special_treatment:
         total_duration_frame = skill_duration * frame_rate
-        print(f"技能总持续帧数为 {total_duration_frame} 帧")
         attack_times = (total_duration_frame - default_skill_forward) / int(frame_alignment_attack_interval)
-        print(f"攻击次数为 {attack_times} 次")
         total_attack_times = int(
             Decimal(attack_times).quantize(Decimal("0"), rounding=decimal.ROUND_CEILING)) * combo_attack_times
-        print(f"总攻击次数为 {total_attack_times} 次")
         damage = final_atk * total_attack_times * damage_scale + off_string_damage
-    elif skill_duration == -1:  # -1 表示为永续技能或者是次数技能
+    elif skill_duration == -1 and not is_special_treatment:  # -1 表示为永续技能或者是次数技能
         default_simulation_time = 120
         im.append(f"技能持续时间为永久, 模拟时间为 {default_simulation_time} 秒\n")
         total_duration_frame = default_simulation_time * frame_rate
@@ -233,25 +286,26 @@ async def calculate_character_damage(
         str_time_line = await get_time_line(default_simulation_time, frame_alignment_attack_interval, sp_cost,
                                             sp_increment, sp_type, frame_rate)
 
-        # 特殊处理弹药类技能伤害
-        if characterId in ["char_1013_chen2"]:
-            im.append("弹药类技能特殊处理\n")
-            str_time_line = ""
-            skill_buff_list = buff_list["skill_buff_list"]
-            attack_trigger_time = 0
-            prob_add_attack_trigger_time = 0
-            for buff in skill_buff_list:
-                if buff["key"] == "attack@trigger_time":  # 弹药总量
-                    attack_trigger_time = buff["value"]
-            if characterId == "char_1013_chen2":  # 天赋多计入 4 发弹药
-                prob_add_attack_trigger_time = 4
-                im.append("水陈天赋多计入 4 发弹药\n")
-            attack_time = attack_trigger_time / 2 + prob_add_attack_trigger_time  # 一次消耗 2 发弹药
-            attack_interval = int(frame_alignment_attack_interval)  # 帧对齐后的攻击间隔(帧)
-            hand_up_time = 12  # 抬手 12 帧
-            total_skill_duration = (attack_time * attack_interval + hand_up_time) / frame_rate  # 技能持续时间(秒)
-            im.append(f"技能持续时间为 {total_skill_duration} 秒\n")
-            damage = final_atk * (attack_time * 2) * damage_scale
+        # # 特殊处理弹药类技能伤害
+        # if characterId in ["char_1013_chen2", "char_4039_horn"]:
+        #     im.append("弹药类技能特殊处理\n")
+        #     str_time_line = ""
+        #     skill_buff_list = buff_list["skill_buff_list"]
+        #     attack_trigger_time = 0
+        #     prob_add_attack_trigger_time = 0
+        #     for buff in skill_buff_list:
+        #         if buff["key"] == "attack@trigger_time":  # 弹药总量
+        #             attack_trigger_time = buff["value"]
+        #     if characterId == "char_1013_chen2":  # 天赋多计入 4 发弹药
+        #         prob_add_attack_trigger_time = 4
+        #         im.append("水陈天赋多计入 4 发弹药\n")
+        #     attack_time = attack_trigger_time / 2 + prob_add_attack_trigger_time  # 一次消耗 2 发弹药
+        #     im.append(f"攻击次数为 {attack_time} 次\n")
+        #     attack_interval = int(frame_alignment_attack_interval)  # 帧对齐后的攻击间隔(帧)
+        #     hand_up_time = 12  # 抬手 12 帧
+        #     total_skill_duration = (attack_time * attack_interval + hand_up_time) / frame_rate  # 技能持续时间(秒)
+        #     im.append(f"技能持续时间为 {total_skill_duration} 秒\n")
+        #     damage = final_atk * (attack_time * 2) * damage_scale
 
         # 特殊处理史尔特尔的技能
         if characterId == "char_350_surtr" and skill_id == "skchr_surtr_3":
@@ -556,3 +610,41 @@ async def deal_with_ebnhlz_skill_damage(
     single_attack_damage = mata_full_damage + final_atk * talent_2_atk_scale * 1
 
     return single_attack_damage, mata_full_damage
+
+
+async def deal_with_horn_skill_damage(
+        skill_buff_list: dict, base_atk: int, final_atk: int, skill_duration: int,
+        frame_rate: int, frame_alignment_attack_interval: Decimal, final_atk_scale_with_crit: int
+):
+    talent_1_buff_atk = 0.23
+    talent_2_buff_attack_speed = 21
+    for buff in skill_buff_list:
+        if buff["key"] == "horn_s_3[overload_start].atk":
+            horn_s_3_overload_start_atk = buff["value"]
+            overload_add_atk = base_atk * horn_s_3_overload_start_atk * (1 + talent_1_buff_atk)
+        elif buff["key"] == "horn_s_3[overload_start].interval":
+            horn_s_3_overload_start_interval = buff["value"]
+        elif buff["key"] == "horn_s_3[overload_start].hp_ratio":
+            horn_s_3_overload_start_hp_ratio = buff["value"]
+        elif buff["key"] == "horn_s_3[overload_start].damage_duration":
+            horn_s_3_overload_start_damage_duration = buff["value"]
+    # 号角伤害分为两段, 第一段不触发过载, 第二段触发过载
+    # 第一段伤害
+    first_stage_atk = final_atk  # 第一段伤害的攻击力
+    first_stage_duration = skill_duration - horn_s_3_overload_start_damage_duration  # 第一段持续时间
+    first_stage_atk_times = Decimal(
+        first_stage_duration * frame_rate / float(frame_alignment_attack_interval)).quantize(
+        Decimal("0"), rounding=decimal.ROUND_CEILING
+    )  # 第一段攻击次数
+    first_stage_damage = first_stage_atk * int(first_stage_atk_times)  # 第一段伤害
+    # 第二段伤害
+    second_stage_atk = (base_atk + overload_add_atk) * final_atk_scale_with_crit  # 第二段伤害的攻击力
+    second_stage_duration = horn_s_3_overload_start_damage_duration  # 第二段持续时间
+    second_stage_atk_times = Decimal(
+        second_stage_duration * frame_rate / float(frame_alignment_attack_interval)).quantize(
+        Decimal("0"), rounding=decimal.ROUND_CEILING
+    )  # 第二段攻击次数
+    second_stage_damage = second_stage_atk * int(second_stage_atk_times)  # 第二段伤害
+
+    return first_stage_duration, first_stage_atk_times, first_stage_damage, overload_add_atk, second_stage_atk, \
+           second_stage_duration, second_stage_atk_times, second_stage_damage
