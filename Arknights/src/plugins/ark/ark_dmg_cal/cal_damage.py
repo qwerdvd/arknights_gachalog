@@ -7,6 +7,65 @@ from ..utils.alias.characterId_to_uniequipId import characterId_to_uniequipId
 # from .cal_full_trained_character_info import calculate_fully_trained_character_data
 from .cal_buff_list import get_character_skill_id
 
+uniequip_buff_id_list = ["atk_scale", "damage_scale", "attack_speed"]
+talent_buff_id_list = ["atk", "max_hp", "atk_speed", "surtr_t_2[withdraw].interval", "damage_scale"]
+sub_profession_trait_buff_id_list = ["atk_scale"]
+skill_buff_id_list = []
+
+
+class CharacterBasicInfo:
+    """
+    CharacterBasicInfo: 角色基础信息
+    max_hp: 最大生命值
+    atk: 攻击力
+    defense: 防御力
+    magic_resistance: 魔抗
+    cost: 花费
+    respawn_time: 复活时间
+    attack_speed: 攻击速度
+    attack_time: 攻击间隔
+    """
+
+    def __init__(self, character_info):
+        self.max_hp = character_info["base_hp"]
+        self.atk = character_info["base_atk"]
+        self.defense = character_info["base_def"]
+        self.magic_resistance = character_info["base_magic_resistance"]
+        self.cost = character_info["base_cost"]
+        self.respawn_time = character_info["base_respawn_time"]
+        self.attack_speed = character_info["base_attack_speed"]
+        self.attack_time = character_info["base_attack_time"]
+        self.attack_scale = 1
+
+
+class UniequipBuff:
+    def __init__(self, characterId, uniequip_buff_list):
+        self.characterId = characterId
+        for uniequip_buff in uniequip_buff_list:
+            setattr(self, uniequip_buff["key"], uniequip_buff["value"])
+
+
+class TalentBuff:
+    def __init__(self, characterId, talent_buff_list):
+        self.characterId = characterId
+        for talent_buff in talent_buff_list:
+            for buff in talent_buff:
+                setattr(self, buff["key"], buff["value"])
+
+
+class SubProfessionTraitBuff:
+    def __init__(self, characterId, sub_profession_trait_buff_list):
+        self.characterId = characterId
+        for sub_profession_trait_buff in sub_profession_trait_buff_list:
+            setattr(self, sub_profession_trait_buff["key"], sub_profession_trait_buff["value"])
+
+
+class SkillBuff:
+    def __init__(self, characterId, skill_buff_list):
+        self.characterId = characterId
+        for skill_buff in skill_buff_list:
+            setattr(self, skill_buff["key"], skill_buff["value"])
+
 
 async def calculate_character_damage(
     characterId: str,
@@ -33,6 +92,8 @@ async def calculate_character_damage(
         uniequip_id = None
 
     im.append(f"计算{characterId}的{skill_id}技能带{uniequip_id}模组的伤害\n")
+    character = CharacterBasicInfo(character_info)
+    print(character.max_hp)
 
     character_attribute_info = {
         "max_hp": character_info["base_hp"],
@@ -69,6 +130,8 @@ async def calculate_character_damage(
     surtr_t_2_interval = 0
     # 先计算模组 buff 加成
     uniequip_buff_list = buff_list["uniequip_buff_list"]
+    uniequip_test = UniequipBuff(characterId, uniequip_buff_list)
+    print(dir(uniequip_test))
     for buff in uniequip_buff_list:
         if buff["key"] == "atk_scale":  # atk_scale 为攻击力倍率
             uniequip_atk_scale = atk_scale * buff["value"]
@@ -79,6 +142,8 @@ async def calculate_character_damage(
 
     # 再计算天赋 buff 加成
     talent_buff_list = buff_list["talent_buff_list"]
+    talent_test = TalentBuff(characterId, talent_buff_list)
+    print(dir(talent_test))
     for talent in talent_buff_list:
         for buff in talent:
             if buff["key"] == "atk":
@@ -94,6 +159,8 @@ async def calculate_character_damage(
 
     # 再计算子职业特性 buff 加成
     sub_profession_trait_buff_list = buff_list["sub_profession_trait_buff_list"]
+    sub_profession_trait_test = SubProfessionTraitBuff(characterId, sub_profession_trait_buff_list)
+    print(dir(sub_profession_trait_test))
     for buff in sub_profession_trait_buff_list:
         if buff["key"] == "atk_scale":
             sub_profession_talent_atk_scale = atk_scale * buff["value"]
@@ -120,6 +187,8 @@ async def calculate_character_damage(
 
     # 再计算技能 buff 加成
     skill_buff_list = buff_list["skill_buff_list"]
+    skill_test = SkillBuff(characterId, skill_buff_list)
+    print(dir(skill_test))
     for buff in skill_buff_list:
         print(buff)
         if buff["key"] == "attack@atk_scale":
@@ -194,8 +263,16 @@ async def calculate_character_damage(
     else:
         final_atk_scale_with_crit = final_atk_scale_without_crit
     final_atk = character_attribute_info["atk"] * final_atk_scale_with_crit
-    im.append(f"最终攻击力 (攻击力 * 倍率) 为 ({base_atk} + {add_atk}) * {final_atk_scale_with_crit} = {final_atk}\n")
-    print(f"最终攻击力 (攻击力 * 倍率) 为 ({base_atk} + {add_atk}) * {final_atk_scale_with_crit} = {final_atk}")
+    if skill_id == "skchr_amgoat_2":
+        # 技能实际效果为先削减主攻击目标的法术抗性，再对爆炸范围内所有敌人造成½倍率的伤害(包括主攻击目标)
+        # 最后对主攻击目标额外造成一次½倍率的伤害
+        final_atk = final_atk * 2
+        im.append(f"艾雅法拉二技能实际效果为先削减主攻击目标的法术抗性,再对爆炸范围内所有敌人造成½倍率的伤害(包括主攻击目标),最后对主攻击目标额外造成一次½倍率的伤害\n")
+        im.append(f"最终攻击力 (攻击力 * 倍率) 为 ({base_atk} + {add_atk}) * {final_atk_scale_with_crit * 2} = {final_atk}\n")
+        print(f"最终攻击力 (攻击力 * 倍率) 为 ({base_atk} + {add_atk}) * {final_atk_scale_with_crit * 2} = {final_atk}")
+    else:
+        im.append(f"最终攻击力 (攻击力 * 倍率) 为 ({base_atk} + {add_atk}) * {final_atk_scale_with_crit} = {final_atk}\n")
+        print(f"最终攻击力 (攻击力 * 倍率) 为 ({base_atk} + {add_atk}) * {final_atk_scale_with_crit} = {final_atk}")
     raw_attack_time = character_attribute_info["attack_time"]
     print(f"攻击间隔为 {raw_attack_time}")
     final_attack_speed = character_attribute_info["attack_speed"]
@@ -212,9 +289,16 @@ async def calculate_character_damage(
     frame_alignment_attack_interval = Decimal(final_attack_time_in_frame).quantize(
         Decimal("0"), rounding=decimal.ROUND_HALF_UP
     )
-    frame_alignment_attack_time = frame_alignment_attack_interval / frame_rate
-    im.append(f"帧对齐后的攻击间隔: {frame_alignment_attack_interval} 帧, {frame_alignment_attack_time} 秒\n")
-    print(f"帧对齐攻击间隔: {frame_alignment_attack_interval} 帧, {frame_alignment_attack_time} 秒")
+    if skill_id in ["skchr_amgoat_3", "skchr_amgoat_2"]:
+        frame_alignment_attack_interval += 1
+        frame_alignment_attack_time = frame_alignment_attack_interval / frame_rate
+        print(f"技能 {skill_id} 由于需要补帧, 所以补正后的攻击间隔为 {frame_alignment_attack_interval}")
+        im.append(
+            f"技能 {skill_id} 由于需要补帧, 所以补正后的攻击间隔为 {frame_alignment_attack_interval} 帧, {frame_alignment_attack_time} 秒\n"
+        )
+    else:
+        frame_alignment_attack_time = frame_alignment_attack_interval / frame_rate
+        im.append(f"帧对齐后的攻击间隔: {frame_alignment_attack_interval} 帧, {frame_alignment_attack_time} 秒\n")
 
     default_skill_forward = 12  # 默认前摇为 12 帧
 
@@ -226,6 +310,7 @@ async def calculate_character_damage(
     init_sp = await get_skill_basic_info(characterId, skill_id, "initSp")  # 初始 sp
     sp_increment = await get_skill_basic_info(characterId, skill_id, "increment")  # sp 增长
     skill_duration = await get_skill_basic_info(characterId, skill_id, "duration")  # 技能持续时间
+    max_charge_time = await get_skill_basic_info(characterId, skill_id, "maxChargeTime")  # 最大蓄力次数
     print(f"技能持续时间为 {skill_duration} 秒")
 
     time_line = []
@@ -308,6 +393,9 @@ async def calculate_character_damage(
         damage = final_atk * total_attack_times * damage_scale + off_string_damage
     elif skill_duration == -1 and not is_special_treatment:  # -1 表示为永续技能或者是次数技能
         default_simulation_time = 120
+        default_spine_duration_frame = 48  # 默认动画持续时间(帧)
+        if skill_id == "skchr_amgoat_2":
+            default_spine_duration_frame = 36
         im.append(f"技能持续时间为永久, 模拟时间为 {default_simulation_time} 秒\n")
         total_duration_frame = default_simulation_time * frame_rate
         im.append(f"在模拟的情况下技能总持续帧数为 {total_duration_frame} 帧\n")
@@ -319,6 +407,8 @@ async def calculate_character_damage(
             sp_increment,
             sp_type,
             frame_rate,
+            default_spine_duration_frame,
+            max_charge_time,
         )
 
         # 特殊处理史尔特尔的技能
@@ -424,9 +514,11 @@ async def get_skill_basic_info(characterId: str, skill_id: int, params: str) -> 
     elif params == "increment":
         info = skill_basic_info[skill_id]["spData"][params]
     elif params == "skillType":
-        info = skill_basic_info[skill_id]["skillType"]
+        info = skill_basic_info[skill_id][params]
     elif params == "durationType":
-        info = skill_basic_info[skill_id]["durationType"]
+        info = skill_basic_info[skill_id][params]
+    elif params == "maxChargeTime":
+        info = skill_basic_info[skill_id]["spData"][params]
     else:
         info = 0
     return info
@@ -439,27 +531,36 @@ async def get_time_line(
     sp_increment: int,
     sp_type: int,
     frame_rate: int,
+    default_spine_duration_frame: int,
+    max_charge_time: int,
 ) -> str:
     time_line = []
 
     # 总帧数
     total_duration_frame = default_simulation_time * frame_rate
-    # 默认取技能动画为 48 帧
-    default_spine_duration_frame = 48
     # 默认取攻击动画为 4 帧
     default_attack_frame = 4
     # 攻击间隔 (帧)
     attack_interval = frame_alignment_attack_interval
     # 达到技能所需 sp 的帧数
     reach_sp_frame = sp_cost / sp_increment * frame_rate
+    print(f"达到技能所需 sp 的帧数为 {reach_sp_frame}")
     frame = 1
     timer = 0  # 初始化计时器
+    i = 0
     while frame <= total_duration_frame:
-        # 默认第一帧开技能
+        # 默认第一帧开技能, 放完所有蓄力的次数
         is_first_skill_spine = True if frame == 1 else False
         if is_first_skill_spine:
             frame = frame + default_spine_duration_frame
             time_line.append("+")  # "+"表示技能
+        while i < max_charge_time - 1:
+            frame = frame + default_spine_duration_frame
+            time_line.append("+")  # "+"表示技能
+            i = i + 1
+            timer = 0
+            print(123)
+        print(frame)
         while 1:
             if frame <= total_duration_frame:
                 basic_attack_number = 0  # 初始化普攻计数器
