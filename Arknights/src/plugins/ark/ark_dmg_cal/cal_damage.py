@@ -11,6 +11,8 @@ uniequip_buff_id_list = []
 talent_buff_id_list = []
 sub_profession_trait_buff_id_list = []
 skill_buff_id_list = []
+direct_addition_buff_list = ["attack_speed", "base_attack_time"]
+direct_multiplication_buff_list = ["atk", "max_hp"]
 
 
 class CharacterBasicInfo:
@@ -37,23 +39,56 @@ class CharacterBasicInfo:
         self.attack_time = character_info["base_attack_time"]
         self.atk_scale = 1
 
-    def update_attribute_by_direct_addition(self, value, character):
-        key = str(self)
-        append_key = self.__add__("_append")
-        setattr(character, append_key, character.__dict__[key] * (1 + value))
+    def update_basic_attribute_by_direct_addition(self, key, value):
+        add_atk = 0
+        if key in direct_addition_buff_list:
+            if key == "def":
+                key = "defense"
+            if key == "base_attack_time":
+                key = "attack_time"
+                value = value * 2
+            if key == "atk":
+                add_atk += self.__dict__[key] + value
+            setattr(self, key, self.__dict__[key] + value)
+        return add_atk
 
-    def update_attribute_by_direct_multiplication(self, value, character):
-        key = str(self)
-        append_key = self.__add__("_append")
-        setattr(character, append_key, character.__dict__[key] * value)
+    def update_attribute_by_direct_multiplication(self, key, value):
+        add_atk = 0
+        if key in direct_multiplication_buff_list:
+            if key == "atk":
+                add_atk += self.__dict__[key] * value
+            setattr(self, key, self.__dict__[key] * (1 + value))
+        return add_atk
 
-    def __add__(self, other):
-        _self = self + other
-        return _self
+    def update_basic_attribute_with_skill_by_direct_addition(self, key, value):
+        if key in direct_addition_buff_list:
+            if key == "def":
+                key = "defense"
+            if key == "base_attack_time":
+                key = "attack_time"
+                value = value * 2
+            setattr(self, key, self.__dict__[key] + value)
 
-    def __mul__(self, other):
-        _self = self * other
-        return _self
+    def update_attribute_with_skill_by_direct_multiplication(self, key, value):
+        if key in direct_multiplication_buff_list:
+            setattr(self, key, self.__dict__[key] * (1 + value))
+
+    def update_attack_scale(self, value):
+        self.atk_scale *= value
+
+
+class CharacterSkillInfo:
+    def __init__(self, skill_basic_info, skill_id):
+        self.skillType = skill_basic_info[skill_id]["skillType"]
+        self.durationType = skill_basic_info[skill_id]["durationType"]
+        self.duration = skill_basic_info[skill_id]["duration"]
+        self.spType = skill_basic_info[skill_id]["spData"]["spType"]
+        self.levelUpCost = skill_basic_info[skill_id]["spData"]["levelUpCost"]
+        self.maxChargeTime = skill_basic_info[skill_id]["spData"]["maxChargeTime"]
+        self.spCost = skill_basic_info[skill_id]["spData"]["spCost"]
+        self.initSp = skill_basic_info[skill_id]["spData"]["initSp"]
+        self.increment = skill_basic_info[skill_id]["spData"]["increment"]
+        self.blackboard = skill_basic_info[skill_id]["blackboard"]
 
 
 def save_buff_key(key, buff_id):
@@ -130,7 +165,14 @@ async def calculate_character_damage(
 
     im.append(f"计算{characterId}的{skill_id}技能带{uniequip_id}模组的伤害\n")
     character = CharacterBasicInfo(character_info)
-    print(character.max_hp)
+
+    with open(
+        f"src/plugins/ark/tool/data/character_skill_info/{characterId}.json",
+        encoding="utf-8",
+    ) as f:
+        skill_basic_info = json.load(f)
+    skill = CharacterSkillInfo(skill_basic_info, skill_id)
+    print(skill.__dict__)
 
     character_attribute_info = {
         "max_hp": character_info["base_hp"],
@@ -152,14 +194,11 @@ async def calculate_character_damage(
     damage_scale = 1
 
     total_duration_frame = 0
-    attack_times = 1
-    default_simulation_time = 0
 
     base_atk = character_info["base_atk"]
     add_atk = 0
     combo_attack_times = 0
     total_attack_times = 1
-    is_off_string = False
     is_crit = False
 
     off_string_damage = 0
@@ -201,8 +240,6 @@ async def calculate_character_damage(
     for buff in sub_profession_trait_buff_list:
         if buff["key"] == "atk_scale":
             sub_profession_talent_atk_scale = atk_scale * buff["value"]
-
-    CharacterBasicInfo.atk = base_atk + add_atk
 
     # 计算普攻伤害
     basic_attack_damage = (
@@ -288,18 +325,32 @@ async def calculate_character_damage(
         combo_attack_times += 3
 
     print(uniequip_buff_id_list)
-    print(talent_buff_id_list)
-    print(sub_profession_trait_buff_id_list)
-    print(skill_buff_id_list)
-    for buff_key in uniequip_buff_id_list:
-        CharacterBasicInfo.update_attribute_by_direct_addition(buff_key, uniequip_test.__dict__[buff_key], character)
+    print(character.__dict__)
+    # 基础属性的计算
+    # 并记录原始攻击力与增加的攻击力
+    base_atk_teat, add_atk_test = await update_character_attribute_info(
+        character,
+        uniequip_test,
+        talent_test,
+        sub_profession_trait_test,
+        skill_test,
+    )
+    print(f"base_atk_teat: {base_atk_teat} add_atk: {add_atk_test}")
 
     print(uniequip_test.__dict__)
     print(talent_test.__dict__)
     print(sub_profession_trait_test.__dict__)
     print(skill_test.__dict__)
+    print(character.__dict__)
 
-    print(atk_scale)
+    await update_character_atk_scale(
+        character,
+        uniequip_test,
+        talent_test,
+        sub_profession_trait_test,
+        skill_test,
+    )
+    print(character.atk_scale)
     character_attribute_info["atk"] = add_atk + base_atk
     print(character_attribute_info)
     final_atk_scale_without_crit = (
@@ -861,3 +912,62 @@ async def deal_with_horn_skill_damage(
         second_stage_atk_times,
         second_stage_damage,
     )
+
+
+async def update_character_attribute_info(
+    character: CharacterBasicInfo,
+    uniequip_test: UniequipBuff,
+    talent_test: TalentBuff,
+    sub_profession_trait_test: SubProfessionTraitBuff,
+    skill_test: SkillBuff,
+):
+    atk = character.atk
+    add_atk = 0
+    # 属性中的直接加算部分
+    for buff_key in uniequip_buff_id_list:
+        add_atk += character.update_basic_attribute_by_direct_addition(buff_key, uniequip_test.__dict__[buff_key])
+    for buff_key in talent_buff_id_list:
+        add_atk += character.update_basic_attribute_by_direct_addition(buff_key, talent_test.__dict__[buff_key])
+    for buff_key in sub_profession_trait_buff_id_list:
+        add_atk += character.update_basic_attribute_by_direct_addition(
+            buff_key, sub_profession_trait_test.__dict__[buff_key]
+        )
+    for buff_key in skill_buff_id_list:
+        character.update_basic_attribute_with_skill_by_direct_addition(buff_key, skill_test.__dict__[buff_key])
+
+    # 属性中的直接乘算部分
+    for buff_key in uniequip_buff_id_list:
+        add_atk += character.update_attribute_by_direct_multiplication(buff_key, uniequip_test.__dict__[buff_key])
+    for buff_key in talent_buff_id_list:
+        add_atk += character.update_attribute_by_direct_multiplication(buff_key, talent_test.__dict__[buff_key])
+    for buff_key in sub_profession_trait_buff_id_list:
+        add_atk += character.update_attribute_by_direct_multiplication(
+            buff_key, sub_profession_trait_test.__dict__[buff_key]
+        )
+    for buff_key in skill_buff_id_list:
+        character.update_basic_attribute_with_skill_by_direct_addition(buff_key, skill_test.__dict__[buff_key])
+
+    return atk, add_atk
+
+
+async def update_character_atk_scale(
+    character: CharacterBasicInfo,
+    uniequip_test: UniequipBuff,
+    talent_test: TalentBuff,
+    sub_profession_trait_test: SubProfessionTraitBuff,
+    skill_test: SkillBuff,
+):
+    for buff_key in uniequip_buff_id_list:
+        if buff_key == "atk_scale":
+            character.atk_scale = character.atk_scale * uniequip_test.__dict__[buff_key]
+    for buff_key in talent_buff_id_list:
+        if buff_key == "atk_scale":
+            character.atk_scale = character.atk_scale * talent_test.__dict__[buff_key]
+    for buff_key in sub_profession_trait_buff_id_list:
+        if buff_key == "atk_scale":
+            character.atk_scale = character.atk_scale * sub_profession_trait_test.__dict__[buff_key]
+    for buff_key in skill_buff_id_list:
+        if buff_key == "atk_scale":
+            character.atk_scale = character.atk_scale * skill_test.__dict__[buff_key]
+        elif buff_key == "attack@atk_scale":
+            character.atk_scale = character.atk_scale * skill_test.__dict__[buff_key]
