@@ -4,7 +4,6 @@ from decimal import Decimal
 
 from ..utils.alias.characterId_to_uniequipId import characterId_to_uniequipId
 
-# from .cal_full_trained_character_info import calculate_fully_trained_character_data
 from .cal_buff_list import get_character_skill_id
 
 uniequip_buff_id_list = []
@@ -13,6 +12,13 @@ sub_profession_trait_buff_id_list = []
 skill_buff_id_list = []
 direct_addition_buff_list = ["attack_speed", "base_attack_time"]
 direct_multiplication_buff_list = ["atk", "max_hp"]
+
+
+async def clear_buff_list():
+    uniequip_buff_id_list.clear()
+    talent_buff_id_list.clear()
+    sub_profession_trait_buff_id_list.clear()
+    skill_buff_id_list.clear()
 
 
 class CharacterBasicInfo:
@@ -60,18 +66,23 @@ class CharacterBasicInfo:
             setattr(self, key, self.__dict__[key] * (1 + value))
         return add_atk
 
-    def update_basic_attribute_with_skill_by_direct_addition(self, key, value):
+    def update_basic_attribute_with_skill_by_direct_addition(self, key, value, skill_id):
         if key in direct_addition_buff_list:
             if key == "def":
                 key = "defense"
             if key == "base_attack_time":
                 key = "attack_time"
-                value = value * 2
+                if skill_id == "skchr_angel_3":
+                    value = value * 2
             setattr(self, key, self.__dict__[key] + value)
 
     def update_attribute_with_skill_by_direct_multiplication(self, key, value):
+        skill_add_atk = 0
         if key in direct_multiplication_buff_list:
+            if key == "atk":
+                skill_add_atk += self.__dict__[key] * value
             setattr(self, key, self.__dict__[key] * (1 + value))
+        return skill_add_atk
 
     def update_attack_scale(self, value):
         self.atk_scale *= value
@@ -187,23 +198,10 @@ async def calculate_character_damage(
     skill = CharacterSkillInfo(skill_basic_info, skill_id)
     print(skill.__dict__)
 
-    # character_attribute_info = {
-    #     "max_hp": character_info["base_hp"],
-    #     "atk": character_info["base_atk"],
-    #     "def": character_info["base_def"],
-    #     "magic_resistance": character_info["base_magic_resistance"],
-    #     "cost": character_info["base_cost"],
-    #     "respawn_time": character_info["base_respawn_time"],
-    #     "attack_speed": character_info["base_attack_speed"],
-    #     "attack_time": character_info["base_attack_time"],
-    # }
-
     atk_scale = 1
-    skill_attack_atk_scale = 1
     sub_profession_talent_atk_scale = 1
     uniequip_atk_scale = 1
     talent_atk_scale = 1
-    skill_atk_scale = 1
     damage_scale = 1
 
     total_duration_frame = 0
@@ -212,7 +210,6 @@ async def calculate_character_damage(
     add_atk = 0
     combo_attack_times = 0
     total_attack_times = 1
-    is_crit = False
 
     off_string_damage = 0
     damage = 0
@@ -221,126 +218,30 @@ async def calculate_character_damage(
     uniequip_buff_list = buff_list["uniequip_buff_list"]
     uniequip_test = UniequipBuff(characterId, uniequip_buff_list)
     print(dir(uniequip_test))
-    # for buff in uniequip_buff_list:
-    #     if buff["key"] == "atk_scale":  # atk_scale 为攻击力倍率
-    #         uniequip_atk_scale = atk_scale * buff["value"]
-    #     elif buff["key"] == "damage_scale":
-    #         damage_scale = damage_scale * (1 + buff["value"])
-    #     elif buff["key"] == "attack_speed":
-    #         character.["attack_speed"] = character_attribute_info["attack_speed"] + buff["value"]
-    #
+
     # 再计算天赋 buff 加成
     talent_buff_list = buff_list["talent_buff_list"]
     talent_test = TalentBuff(characterId, talent_buff_list)
     print(dir(talent_test))
-    # for talent in talent_buff_list:
-    #     for buff in talent:
-    #         if buff["key"] == "atk":
-    #             add_atk += base_atk * buff["value"]
-    #         elif buff["key"] == "max_hp":
-    #             character_attribute_info["max_hp"] = character_attribute_info["max_hp"] * (1 + buff["value"])
-    #         elif buff["key"] == "attack_speed":
-    #             character_attribute_info["attack_speed"] = character_attribute_info["attack_speed"] + buff["value"]
-    #         elif buff["key"] == "atk_scale":
-    #             talent_atk_scale = atk_scale * buff["value"]
-    #         elif buff["key"] == "surtr_t_2[withdraw].interval":  # 史尔特尔 2 天赋,锁血
-    #             surtr_t_2_interval = buff["value"]
-    #
+
     # # 再计算子职业特性 buff 加成
     sub_profession_trait_buff_list = buff_list["sub_profession_trait_buff_list"]
     sub_profession_trait_test = SubProfessionTraitBuff(characterId, sub_profession_trait_buff_list)
     print(dir(sub_profession_trait_test))
-    # for buff in sub_profession_trait_buff_list:
-    #     if buff["key"] == "atk_scale":
-    #         sub_profession_talent_atk_scale = atk_scale * buff["value"]
 
-    # 计算普攻伤害
-
-    # # 计算离弦伤害
-    # if characterId == "char_340_shwaz" and skill_id == "skchr_shwaz_3":  # 黑 3 技能离弦 1 枪
-    #     is_off_string = True
-    #     off_string_num = 1
-    #     basic_attack_atk = character_attribute_info["atk"] + add_atk
-    #     basic_attack_atk_scale = uniequip_atk_scale * talent_atk_scale * damage_scale
-    #     off_string_damage = basic_attack_atk * basic_attack_atk_scale * off_string_num
-    #     im.append(f"是否离弦 {is_off_string} \n")
-    #     im.append(f"离弦伤害: {off_string_damage}\n")
-    #
     # 再计算技能 buff 加成
     skill_buff_list = buff_list["skill_buff_list"]
     skill_test = SkillBuff(characterId, skill_buff_list)
     print(dir(skill_test))
-    # for buff in skill_buff_list:
-    #     print(buff)
-    #     if buff["key"] == "attack@atk_scale":
-    #         skill_attack_atk_scale = buff["value"]
-    #     elif buff["key"] == "attack@times":  # attack@times 为攻击次数(连击)
-    #         combo_attack_times += buff["value"]
-    #     elif buff["key"] == "base_attack_time":  # base_attack_time 为攻击间隔
-    #         if characterId == "char_103_angel" and skill_id == "skchr_angel_3":  # 能天使 3 技能攻击间隔双倍减少
-    #             character_attribute_info["attack_time"] = character_attribute_info["attack_time"] + buff["value"] * 2
-    #         else:
-    #             character_attribute_info["attack_time"] = character_attribute_info["attack_time"] + buff["value"]
-    #     elif buff["key"] == "atk":
-    #         add_atk += base_atk * buff["value"]
-    #     elif buff["key"] == "atk_scale":
-    #         skill_atk_scale = atk_scale * buff["value"]
-    #     elif buff["key"] == "damage_scale":
-    #         damage_scale = damage_scale * buff["value"]
-    #     elif buff["key"] == "max_hp":
-    #         character_attribute_info["max_hp"] = character_attribute_info["max_hp"] + buff["value"]
-    #     elif buff["key"] == "attack@surtr_s_2[critical].atk_scale":
-    #         atk_scale = atk_scale * buff["value"]
-    #     elif buff["key"] == "attack_speed":
-    #         character_attribute_info["attack_speed"] = character_attribute_info["attack_speed"] + buff["value"]
-    #
-    # # 剔除暴击 buff 下的伤害倍率加成
-    # for buff in skill_buff_list:
-    #     if buff["key"] == "prob" and buff["atk_scale"] in skill_buff_list:
-    #         skill_atk_scale = skill_atk_scale / buff["atk_scale"].value
-    #
-    # # 计算技能概率暴击 buff
-    # skill_crit_buff_list = buff_list["skill_buff_list"]
-    # for buff in skill_crit_buff_list:
-    #     if buff["key"] == "prob":
-    #         prob = buff["value"]
-    #         is_crit = True
-    #     elif buff["key"] == "atk_scale":
-    #         atk_scale = buff["value"]
-    #
-    # # 计算覆写的天赋
-    # for buff in skill_buff_list:
-    #     if buff["key"] == "bgsnow_s_3[atk_up].atk_scale":
-    #         skill_atk_scale = buff["value"]
-    #     elif buff["key"] == "hit_interval":
-    #         character_attribute_info["attack_time"] = buff["value"]
-    #
-    # # 特殊处理弹药技能
-    # if characterId in ["char_1013_chen2"]:
-    #     talent_buff_list = buff_list["talent_buff_list"]
-    #     for talent in talent_buff_list:
-    #         for buff in talent:
-    #             if buff["key"] == "spareshot_chen.prob":
-    #                 spareshot_chen_prob = buff["value"]
-    #             elif buff["key"] == "chen2_t_2[common].attack_speed":
-    #                 character_attribute_info["attack_speed"] = character_attribute_info["attack_speed"] + buff["value"]
-    #
-    # # 特殊处理
-    # if characterId == "char_4055_bgsnow" and skill_id == "skchr_bgsnow_2":  # 鸿雪 2 技能造成 3 连击
-    #     combo_attack_times += 3
 
     print(uniequip_buff_id_list)
     print(character.__dict__)
     # 基础属性的计算
     # 并记录原始攻击力与增加的攻击力
-    base_atk_teat, add_atk_test = await update_character_attribute_info(
-        character,
-        uniequip_test,
-        talent_test,
-        sub_profession_trait_test,
-        skill_test,
+    base_atk_teat, add_atk_test, skill_add_atk = await update_character_attribute_info(
+        character, uniequip_test, talent_test, sub_profession_trait_test, skill_test, skill_id
     )
-    print(f"base_atk_teat: {base_atk_teat} add_atk: {add_atk_test}")
+    print(f"base_atk_teat: {base_atk_teat} add_atk: {add_atk_test} skill_add_atk: {skill_add_atk}")
 
     await update_character_atk_scale(
         character,
@@ -360,17 +261,24 @@ async def calculate_character_damage(
     )
 
     print(character.atk_scale)
+    print(character.__dict__)
     final_atk = character.atk * character.atk_scale
     if skill_id == "skchr_amgoat_2":
         # 技能实际效果为先削减主攻击目标的法术抗性，再对爆炸范围内所有敌人造成½倍率的伤害(包括主攻击目标)
         # 最后对主攻击目标额外造成一次½倍率的伤害
         final_atk = final_atk * 2
         im.append(f"艾雅法拉二技能实际效果为先削减主攻击目标的法术抗性,再对爆炸范围内所有敌人造成½倍率的伤害(包括主攻击目标),最后对主攻击目标额外造成一次½倍率的伤害\n")
-        im.append(f"最终攻击力 (攻击力 * 倍率) 为 ({base_atk} + {add_atk}) * {character.atk_scale * 2} = {final_atk}\n")
-        print(f"最终攻击力 (攻击力 * 倍率) 为 ({base_atk} + {add_atk}) * {character.atk_scale * 2} = {final_atk}")
+        im.append(
+            f"最终攻击力 (攻击力 * 倍率) 为 ({base_atk} + {add_atk} + {skill_add_atk}) * {character.atk_scale * 2} = {final_atk}\n"
+        )
+        print(
+            f"最终攻击力 (攻击力 * 倍率) 为 ({base_atk} + {add_atk} + {skill_add_atk}) * {character.atk_scale * 2} = {final_atk}"
+        )
     else:
-        im.append(f"最终攻击力 (攻击力 * 倍率) 为 ({base_atk} + {add_atk}) * {character.atk_scale} = {final_atk}\n")
-        print(f"最终攻击力 (攻击力 * 倍率) 为 ({base_atk} + {add_atk}) * {character.atk_scale} = {final_atk}")
+        im.append(
+            f"最终攻击力 (攻击力 * 倍率) 为 ({base_atk} + {add_atk} + {skill_add_atk}) * {character.atk_scale} = {final_atk}\n"
+        )
+        print(f"最终攻击力 (攻击力 * 倍率) 为 ({base_atk} + {add_atk} + {skill_add_atk}) * {character.atk_scale} = {final_atk}")
     raw_attack_time = character.attack_time
     print(f"攻击间隔为 {raw_attack_time}")
     final_attack_speed = character.attack_speed
@@ -402,7 +310,6 @@ async def calculate_character_damage(
 
     print(f"技能持续时间为 {skill.duration} 秒")
 
-    time_line = []
     if combo_attack_times == 0:
         combo_attack_times = 1
 
@@ -505,7 +412,7 @@ async def calculate_character_damage(
         # 特殊处理史尔特尔的技能
         if characterId == "char_350_surtr" and skill_id == "skchr_surtr_3":
             max_hp = character.max_hp
-            (loss_time, blood_lock_time, attack_interval,) = await deal_with_surtr_third_skill(
+            loss_time, blood_lock_time, attack_interval = await deal_with_surtr_third_skill(
                 max_hp,
                 surtr_t_2_interval,
                 frame_rate,
@@ -585,34 +492,9 @@ async def calculate_character_damage(
             f"总伤害为 {damage}"
         )
 
+    await clear_buff_list()
+
     return im
-
-
-# async def get_skill_basic_info(characterId: str, skill_id: int, params: str) -> int:
-#     with open(
-#         f"src/plugins/ark/tool/data/character_skill_info/{characterId}.json",
-#         encoding="utf-8",
-#     ) as f:
-#         skill_basic_info = json.load(f)
-#     if params == "duration":
-#         info = skill_basic_info[skill_id][params]
-#     elif params == "spType":
-#         info = skill_basic_info[skill_id]["spData"][params]
-#     elif params == "initSp":
-#         info = skill_basic_info[skill_id]["spData"][params]
-#     elif params == "spCost":
-#         info = skill_basic_info[skill_id]["spData"][params]
-#     elif params == "increment":
-#         info = skill_basic_info[skill_id]["spData"][params]
-#     elif params == "skillType":
-#         info = skill_basic_info[skill_id][params]
-#     elif params == "durationType":
-#         info = skill_basic_info[skill_id][params]
-#     elif params == "maxChargeTime":
-#         info = skill_basic_info[skill_id]["spData"][params]
-#     else:
-#         info = 0
-#     return info
 
 
 async def get_time_line(
@@ -906,15 +788,16 @@ async def update_character_attribute_info(
     talent_test: TalentBuff,
     sub_profession_trait_test: SubProfessionTraitBuff,
     skill_test: SkillBuff,
+    skill_id: str,
 ):
     atk = character.atk
     add_atk = 0
+    skill_add_atk = 0
     # 属性中的直接加算部分
     for buff_key in uniequip_buff_id_list:
         if buff_key in uniequip_test.__dict__:
             add_atk += character.update_basic_attribute_by_direct_addition(buff_key, uniequip_test.__dict__[buff_key])
     for buff_key in talent_buff_id_list:
-        print(talent_buff_id_list)
         if buff_key in talent_test.__dict__:
             add_atk += character.update_basic_attribute_by_direct_addition(buff_key, talent_test.__dict__[buff_key])
     for buff_key in sub_profession_trait_buff_id_list:
@@ -924,7 +807,9 @@ async def update_character_attribute_info(
             )
     for buff_key in skill_buff_id_list:
         if buff_key in skill_test.__dict__:
-            character.update_basic_attribute_with_skill_by_direct_addition(buff_key, skill_test.__dict__[buff_key])
+            character.update_basic_attribute_with_skill_by_direct_addition(
+                buff_key, skill_test.__dict__[buff_key], skill_id
+            )
 
     # 属性中的直接乘算部分
     for buff_key in uniequip_buff_id_list:
@@ -940,9 +825,11 @@ async def update_character_attribute_info(
             )
     for buff_key in skill_buff_id_list:
         if buff_key in skill_test.__dict__:
-            character.update_attribute_with_skill_by_direct_multiplication(buff_key, skill_test.__dict__[buff_key])
+            skill_add_atk += character.update_attribute_with_skill_by_direct_multiplication(
+                buff_key, skill_test.__dict__[buff_key]
+            )
 
-    return atk, add_atk
+    return atk, add_atk, skill_add_atk
 
 
 async def update_character_atk_scale(
