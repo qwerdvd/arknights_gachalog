@@ -20,7 +20,7 @@ async def calculate_talent_buff(characterId: str, is_uniequip: bool, uniequip_id
             elif uniequip_id == "二模":
                 uniequip_id = 2
             override_talent_data = await get_uniequip_talent_adjustment(characterId, uniequip_id, target)
-            print(f"override_talent_data {override_talent_data}")
+            # print(f"override_talent_data {override_talent_data}")
             override_talent_index = override_talent_data["talent_index"]  # 覆写的天赋索引
             override_talent = override_talent_data["blackboard"]  # 覆写的天赋加成
 
@@ -41,6 +41,6 @@ async def calculate_talent_buff(characterId: str, is_uniequip: bool, uniequip_id
             if i == override_talent_index:
                 talent["blackboard"] = override_talent
         character_talent_info[f"{i + 1}"]["candidates"][-1] = talent
-    print(f"c_t_i: {character_talent_info}")
+    # print(f"c_t_i: {character_talent_info}")
 
     return character_talent_info
