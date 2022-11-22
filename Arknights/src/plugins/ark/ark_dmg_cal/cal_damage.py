@@ -3,6 +3,7 @@ import json
 import re
 from decimal import Decimal
 
+from .time_line import simulation_time_line
 from ..utils.alias.characterId_to_uniequipId import characterId_to_uniequipId
 
 from .cal_buff_list import get_character_skill_id
@@ -208,7 +209,7 @@ async def calculate_character_damage(
 
     total_duration_frame = 0
 
-    base_atk = character_info["base_atk"]
+    base_atk = character.base_atk
     add_atk = 0
     combo_attack_times = 0
     total_attack_times = 1
@@ -216,6 +217,7 @@ async def calculate_character_damage(
     off_string_damage = 0
     damage = 0
 
+    print(buff_list["uniequip_buff_list"])
     uniequip_test, talent_test, sub_profession_trait_test, skill_test = await update_character_arb_info(
         characterId, buff_list
     )
@@ -416,13 +418,6 @@ async def calculate_character_damage(
         )
         print(f"攻击次数为 {total_attack_times} 次")
         damage = final_atk * total_attack_times * damage_scale + off_string_damage
-        # damage = await calculate_damage_by_final_multiplication(
-        #     base_damage,
-        #     uniequip_test,
-        #     talent_test,
-        #     sub_profession_trait_test,
-        #     skill_test,
-        # )
     elif skill.duration == -1 and not is_special_treatment:  # -1 表示为永续技能或者是次数技能
         default_simulation_time = 120
         default_spine_duration_frame = 48  # 默认动画持续时间(帧)
@@ -432,14 +427,12 @@ async def calculate_character_damage(
         total_duration_frame = default_simulation_time * frame_rate
         im.append(f"在模拟的情况下技能总持续帧数为 {total_duration_frame} 帧\n")
         str_time_line = ""
-        str_time_line = await get_time_line(
-            default_simulation_time,
-            frame_alignment_attack_interval,
+        str_time_line = await simulation_time_line(
+            character,
             skill,
-            frame_rate,
+            frame_alignment_attack_time,
             default_spine_duration_frame,
         )
-
         # 特殊处理史尔特尔的技能
         if characterId == "char_350_surtr" and skill_id == "skchr_surtr_3":
             max_hp = character.max_hp
@@ -523,81 +516,6 @@ async def calculate_character_damage(
         )
 
     await clear_buff_list()
-
-    return im
-
-
-async def get_time_line(
-    default_simulation_time: int,
-    frame_alignment_attack_interval: Decimal,
-    skill: CharacterSkillInfo,
-    frame_rate: int,
-    default_spine_duration_frame: int,
-) -> str:
-    time_line = []
-
-    # 总帧数
-    total_duration_frame = default_simulation_time * frame_rate
-    # 默认取攻击动画为 4 帧
-    default_attack_frame = 4
-    # 攻击间隔 (帧)
-    attack_interval = frame_alignment_attack_interval
-    # 达到技能所需 sp 的帧数
-    reach_sp_frame = skill.spCost / skill.increment * frame_rate
-    print(f"达到技能所需 sp 的帧数为 {reach_sp_frame}")
-    frame = 1
-    timer = 0  # 初始化计时器
-    i = 0
-    while frame <= total_duration_frame:
-        # 默认第一帧开技能, 放完所有蓄力的次数
-        is_first_skill_spine = True if frame == 1 else False
-        if is_first_skill_spine:
-            frame = frame + default_spine_duration_frame
-            time_line.append("+")  # "+"表示技能
-        while i < skill.maxChargeTime - 1:
-            frame = frame + default_spine_duration_frame
-            time_line.append("+")  # "+"表示技能
-            i = i + 1
-            timer = 0
-            print(123)
-        print(frame)
-        while 1:
-            if frame <= total_duration_frame:
-                basic_attack_number = 0  # 初始化普攻计数器
-                skill_attack_number = 1  # 初始化技能计数器
-                # 进行一次普攻
-                # timer += attack_interval + default_attack_frame
-                # frame += attack_interval + default_attack_frame
-                timer += attack_interval
-                frame += attack_interval
-                # 普攻计数器 +1
-                basic_attack_number += 1
-                time_line.append("-")  # "-"表示普攻
-                # 对 spType 进行判断
-                if skill.spType == 1:  # 1 表示为自动回复技能
-                    # 判断是否达到技能所需 sp
-                    if timer >= reach_sp_frame:
-                        # 进行一次技能攻击
-                        frame += attack_interval
-                        # 技能计数器 +1
-                        skill_attack_number += 1
-                        time_line.append("+")  # "+"表示技能
-                        # 计时器清零
-                        timer = 0
-                elif skill.spType == 2:  # 2 表示为攻击回复技能
-                    # 如果普攻计数器达到 3 次
-                    if basic_attack_number == 3:
-                        # 进行一次技能攻击
-                        timer += attack_interval
-                        # 技能计数器 +1
-                        skill_attack_number += 1
-                        time_line.append("+")  # "+"表示技能
-                        # 普攻计数器清零
-                        basic_attack_number = 0
-            else:
-                break
-    str_time_line = "".join(time_line)
-    im = str_time_line
 
     return im
 
@@ -880,26 +798,6 @@ async def update_character_atk_scale(
     for buff_key in skill_buff_id_list:
         if buff_key == "atk_scale" and buff_key in skill_test.__dict__:
             character.skill_atk_scale = character.skill_atk_scale * skill_test.__dict__[buff_key]
-
-
-# async def calculate_damage_by_final_multiplication(
-#         damage: int,
-#         uniequip_test: UniequipBuff,
-#         talent_test: TalentBuff,
-#         sub_profession_trait_test: SubProfessionTraitBuff,
-#         skill_test: SkillBuff,
-# ):
-#     for buff_key in uniequip_buff_id_list:
-#         if buff_key == "final_damage_multiplication" and buff_key in uniequip_test.__dict__:
-#             damage = damage * uniequip_test.__dict__[buff_key]
-#     for buff_key in talent_buff_id_list:
-#         if buff_key == "final_damage_multiplication" and buff_key in talent_test.__dict__:
-#             damage = damage * talent_test.__dict__[buff_key]
-#     for buff_key in sub_profession_trait_buff_id_list:
-#         if buff_key == "final_damage_multiplication" and buff_key in sub_profession_trait_test.__dict__:
-#             damage = damage * sub_profession_trait_test.__dict__[buff_key]
-#
-#     return damage
 
 
 async def update_character_arb_info(characterId: str, buff_list: dict):

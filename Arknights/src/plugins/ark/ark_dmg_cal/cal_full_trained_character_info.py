@@ -53,7 +53,7 @@ async def calculate_fully_trained_character_data(characterId: str, is_equip: boo
         # 天赋覆写数据
         uniequip_talent_override = await get_uniequip_talent_adjustment(characterId, uniequip_id, target="TALENT")
         # 特性覆写数据
-        uniequip_trait_override = await get_uniequip_trait_adjustment(characterId, uniequip_id, target="TRAIT")
+        uniequip_trait_override = await get_uniequip_adjustment(characterId, uniequip_id, target="TRAIT")
 
     # 获取干员潜能信息数据
     potential_data = await get_potential_data(characterId)
@@ -185,7 +185,7 @@ async def get_uniequip_attribute_data(characterId: str, uniequip_id: int) -> Opt
 
 
 # 获取干员模组特性调整数据
-async def get_uniequip_trait_adjustment(characterId: str, uniequip_id: int, target: str) -> Optional[dict]:
+async def get_uniequip_adjustment(characterId: str, uniequip_id: int, target: str) -> Optional[dict]:
     equip_id = await characterId_to_uniequipId(characterId, uniequip_id)
     override_trait_data = {}
     with open(f"src/plugins/ark/tool/data/uniequip_info/{equip_id}.json", encoding="UTF-8") as f:
@@ -222,6 +222,12 @@ async def get_uniequip_trait_adjustment(characterId: str, uniequip_id: int, targ
                 and uniequip_parts_info[i]["addOrOverrideTalentDataBundle"]["candidates"][0]["talentIndex"] == -1
             ):
                 raw_override_trait_data = uniequip_parts_info[i]["addOrOverrideTalentDataBundle"]["candidates"][-1]
+                override_trait_data = raw_override_trait_data["blackboard"]
+        target = "DISPLAY"
+        for i in range(len(uniequip_parts_info)):
+            if uniequip_parts_info[i]["target"] == target:
+                print("此模组有特性追加且有触发条件")
+                raw_override_trait_data = uniequip_parts_info[i]["overrideTraitDataBundle"]["candidates"][-1]
                 override_trait_data = raw_override_trait_data["blackboard"]
 
     return override_trait_data
