@@ -71,7 +71,7 @@ async def get_buff_list(characterId: str, is_uniequip: bool, uniequip_id: str, s
     return buff_list
 
 
-async def get_character_skill_id(characterId: str, skill_id: int):
+async def get_character_skill_id(characterId: str, skill_id: str):
     with open(
         f"src/plugins/ark/tool/data/skill_number_to_skill_id/{characterId}.json",
         encoding="UTF-8",
