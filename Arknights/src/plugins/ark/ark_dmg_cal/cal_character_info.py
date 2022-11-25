@@ -4,15 +4,6 @@ from typing import Optional
 from ..utils.alias.characterId_to_uniequipId import characterId_to_uniequipId
 
 
-async def get_data_version() -> str:
-    mata_path = "C:\\Users\\qwerdvd\\PycharmProjects\\pythonProject\\Arknights\\data\\gamedata"
-    data_version_path = mata_path + "\\excel\\data_version.txt"
-    with open(data_version_path, "r", encoding="utf-8") as f:
-        raw_data_version = f.read().splitlines()
-    data_version = raw_data_version[2].split(":")[1]
-    return data_version
-
-
 # Calculate the data of fully trained operators
 async def calculate_fully_trained_character_data(characterId: str, is_equip: bool, uniequip_id: str):
     with open(

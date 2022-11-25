@@ -16,9 +16,9 @@ from .cal_single_damage.char_103_angel import calculate_angel_damage
 from ..config import priority
 from ..utils.alias.chName_to_CharacterId_list import chName_to_CharacterId
 from .cal_buff_list import get_buff_list, get_character_skill_id
-from .cal_damage import calculate_character_damage
-from .cal_full_trained_character_info import calculate_fully_trained_character_data
+from .cal_character_info import calculate_fully_trained_character_data
 from .calculate_character_talent_buff import calculate_talent_buff
+from ..utils.alias.characterId_to_uniequipId import characterId_to_uniequipId
 
 dmg_cal = on_command("伤害计算", priority=priority, block=True)
 
@@ -49,38 +49,17 @@ async def send_dmg_cal_msg(event: MessageEvent, matcher: Matcher, args: Message 
     elif skill_id == "三技能":
         skill_id = "3"
 
-    characterId = await chName_to_CharacterId(character)
-    print(characterId)
+    char_id = await chName_to_CharacterId(character)
+    print(char_id)
     with open(
-        f"src/plugins/ark/tool/data/basic_character_info/{characterId}.json",
+        f"src/plugins/ark/tool/data/basic_character_info/{char_id}.json",
         encoding="UTF-8",
     ) as f:
         basic_character_info = json.load(f)
     profession = basic_character_info["profession"]
-    character_info = await calculate_fully_trained_character_data(characterId, is_uniequip, uniequip_id)
-    talent_buff = await calculate_talent_buff(characterId, is_uniequip, uniequip_id)
-    buff_list = await get_buff_list(characterId, is_uniequip, uniequip_id, skill_id)
-    # im = await calculate_character_damage(
-    #     characterId,
-    #     character_info,
-    #     buff_list,
-    #     skill_id,
-    #     profession,
-    #     is_uniequip,
-    #     uniequip_id,
-    # )
-    im = await calculate_angel_damage(characterId, character_info, buff_list, skill_id, is_uniequip, uniequip_id)
+    character_info = await calculate_fully_trained_character_data(char_id, is_uniequip, uniequip_id)
+    talent_buff = await calculate_talent_buff(char_id, is_uniequip, uniequip_id)
+    buff_list = await get_buff_list(char_id, is_uniequip, uniequip_id, skill_id)
+    im = await calculate_angel_damage(char_id, character_info, buff_list, skill_id)
     im.append("finish")
     await matcher.finish(im)
-    # if profession in ['VANGUARD', 'SNIPER', 'DEFENDER', 'CASTER', 'GUARD']:
-    #     damage_type = 'physical'
-    #     print(damage_type)
-    #     character_info = await calculate_fully_trained_character_data(characterId, is_uniequip, uniequip_id)
-    #     talent_buff = await calculate_talent_buff(characterId, is_uniequip, uniequip_id)
-    #     buff_list = await get_buff_list(characterId, is_uniequip, uniequip_id, skill_id)
-    #     damage = await calculate_physical_character_damage(character_info)
-    # elif profession in ['SUPPORTER', 'MEDIC', 'SPECIALIST']:
-    #     damage_type = 'magical'
-    #     print(damage_type)
-    #     character_info = await calculate_fully_trained_character_data(characterId, is_equip, uniequip_id)
-    #     damage = await calculate_magical_character_damage(character_info)

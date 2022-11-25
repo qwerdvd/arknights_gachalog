@@ -1,6 +1,6 @@
 import json
 
-from .cal_full_trained_character_info import get_uniequip_talent_adjustment
+from .cal_character_info import get_uniequip_talent_adjustment
 
 
 async def calculate_talent_buff(characterId: str, is_uniequip: bool, uniequip_id: str):

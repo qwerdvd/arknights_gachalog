@@ -1,7 +1,7 @@
 import json
 from typing import Optional
 
-from .cal_full_trained_character_info import get_uniequip_adjustment
+from .cal_character_info import get_uniequip_adjustment
 from .calculate_character_talent_buff import calculate_talent_buff
 
 
