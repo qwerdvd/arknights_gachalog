@@ -60,6 +60,6 @@ async def send_dmg_cal_msg(event: MessageEvent, matcher: Matcher, args: Message 
     character_info = await calculate_fully_trained_character_data(char_id, is_uniequip, uniequip_id)
     talent_buff = await calculate_talent_buff(char_id, is_uniequip, uniequip_id)
     buff_list = await get_buff_list(char_id, is_uniequip, uniequip_id, skill_id)
-    im = await calculate_angel_damage(char_id, character_info, buff_list, skill_id)
+    im = await calculate_angel_damage(char_id, character_info, buff_list, skill_id, uniequip_id)
     im.append("finish")
     await matcher.finish(im)
